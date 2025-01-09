@@ -20,7 +20,9 @@ Two lipid probes, PA and PE for a single cell line
 
 **DOI:** <https://doi.org/10.1039/D4CC03599B>
 
-## Publication overview
+## Abstract
+
+Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initial-ly concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interac-tome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
 
 ## Data visualization
  
