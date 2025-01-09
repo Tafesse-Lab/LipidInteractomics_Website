@@ -1,5 +1,5 @@
 ---
-title: "Alix Thomas, PA & PE lipid interactomics"
+title: "Thomas et al. 2025"
 format: 
   html:
     embed-resources: true
@@ -12,17 +12,21 @@ Two lipid probes, PA and PE for a single cell line
 
 ## Publication information
 
-**Authors:**
+**Title:** Trifunctional lipid derivatives: PE’s mitochondrial interactome
 
-**Date published:**
+**Authors:** Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz*
 
-**Journal, issue, CRBN:** Chemical Communications
+(* corresponding: <schulcar@ohsu.edu>{target="_blank"})
 
-**DOI:** <https://doi.org/10.1039/D4CC03599B>
+**Date published:** 
+
+**Journal, ISSN:** Chemical Communications, 1359-7345, 1364-548X
+
+**DOI:** <https://doi.org/10.1039/D4CC03599B>{target="_blank"}
 
 ## Abstract
 
-Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initial-ly concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interac-tome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
+Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
 
 ## Data visualization
  
