@@ -1,6 +1,9 @@
 ---
 title: "Alix Thomas, PA & PE lipid interactomics"
-format: html
+format: 
+  html:
+    embed-resources: true
+standalone: true
 ---
 
 <!-- Data overview
@@ -9,7 +12,13 @@ Two lipid probes, PA and PE for a single cell line
 
 ## Publication information
 
-DOI: <https://doi.org/10.1039/D4CC03599B>
+**Authors:**
+
+**Date published:**
+
+**Journal, issue, CRBN:** Chemical Communications
+
+**DOI:** <https://doi.org/10.1039/D4CC03599B>
 
 ## Publication overview
 
