@@ -45,10 +45,17 @@ library(gt)
 library(crosstalk)
 library(DT)
 
-## Read the data to a df
+## Set up the source for the standardized ggplot styles
+source("ggplot_styles.R")
+```
+
+```{r, echo=FALSE, include=FALSE}
+
+# Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
+# Read the data to a df
 AT_2025_data <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025.csv")
 
-## Pivot the data to be longer
+# Pivot the data to be longer
 AT_2025_Long <- AT_2025_data |>
 	pivot_longer(cols = -gene_name,
 				names_to = c(".value", "Sample"),
@@ -59,155 +66,41 @@ print(unique(AT_2025_Long$hit_annotation))
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
 
-```
 
-```{r, echo=FALSE, include=FALSE}
-
+# Building an ID column to maintain the order on the x-axis
 ID <- c()
 for(i in 0:(nrow(AT_2025_Long)/2)){
 	ID[i] = i
 }
 
-### The ggplot customizations that make the ranked order plots
+# Applies the ID column to the PE results
 AT_2025_ranked_PE <- AT_2025_Long |>
     arrange(logFC) |>
 	filter(Sample == "PE") |>
 	mutate(ID = ID) 
 
+# Applies the ID column to the PA results
 AT_2025_ranked_PA <- AT_2025_Long |>
     arrange(logFC) |>
 	filter(Sample == "PA") |>
 	mutate(ID = ID) 
 
+# Assembles the dataset to plot
 AT_2025_ranked <- rbind(AT_2025_ranked_PE, AT_2025_ranked_PA)
 
-?merge.data.frame()
 
-RankedOrderPlots <- AT_2025_ranked |>
-    ggplot(aes(
-        x = ID,
-        y = logFC,
-        color = factor(hit_annotation),
-        fill = factor(hit_annotation),
-        shape = factor(hit_annotation),
-        alpha = factor(hit_annotation),
-        size = factor(hit_annotation)
-    )) +
-    geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
-                                 "LogFC: ", logFC, "\n",
-                                 "p-value: ", pvalue, "\n"))) +
-    geom_hline(yintercept = 0, linetype = 2) +
-    geom_vline(xintercept = 0, linetype = 2) +
-    scale_shape_manual(values = c("enriched hit" = 21,
-                                  "enriched candidate" = 24,
-                                  "no hit" = 22), 
-                       name = "Trend") +
-    scale_color_manual(values = c("enriched hit" = "black",
-                                  "enriched candidate" = "black",
-                                  "no hit" = "black"), 
-                       name = "Trend") +
-    scale_fill_manual(values = c("enriched hit" = "orange",
-                                 "enriched candidate" = "purple",
-                                 "no hit" = "black"), 
-                      name = "Trend") +
-    scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                  "enriched candidate" = 0.5,
-                                  "no hit" = 0.25), 
-                       name = "Trend") +
-    scale_size_manual(values = c("enriched hit" = 4,
-                                 "enriched candidate" = 2,
-                                 "no hit" = 0.75), 
-                      name = "Trend") +
-    facet_wrap(~Sample) +
-	ylab("Log2 fold-change") +
-	xlab("Ranked-order gene") +
-    theme_minimal() +
-    theme(panel.border = element_rect(color = "#cfcfcf", fill = NA)) +
-    theme(legend.title = element_text(size = 12, face = "bold")) +
-    theme(axis.title = element_text(size = 12, face = "bold")) +
-    theme(legend.text = element_text(size = 12))
-
-m <- list(l=50, r = 50, b= 100, pad = 4)
-	
-RankedOrderPlotly <- ggplotly(RankedOrderPlots,
-						  tooltip = c("text", dynamicTicks = TRUE),
-						  hovermode = "closest",
-						  autosize = T,
-						  margin = m) |>
-				layout(showlegend = FALSE)
 
 ```
 
 #### Ranked-order Log2 Fold-change
 
 :::{.border}
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold). "
 
-RankedOrderPlotly
+RankedOrderPlotStandard(AT_2025_ranked)
 ```
 :::
-
-```{r, echo=FALSE, include=FALSE}
-
-### The ggplot customizations that make the volcano plots
-VolcanoPlots <- AT_2025_Long |>
-	ggplot(aes(x = logFC,
-			   y = -log10(pvalue),
-			   color = factor(hit_annotation), 
-			   fill = factor(hit_annotation), 
-			   shape = factor(hit_annotation),
-			   alpha = factor(hit_annotation),
-			   size = factor(hit_annotation))) +
-	geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
-								 "LogFC: ", logFC, "\n",
-								 "p-value: ", pvalue, "\n"))) +
-	geom_hline(yintercept = 0, linetype = 2) +
-	geom_vline(xintercept = 0, linetype = 2) +
-	scale_x_continuous(limits=c(-1.1 * max(abs(AT_2025_Long$logFC)), 1.1* max(abs(AT_2025_Long$logFC)))) +
-    scale_y_continuous(limits=c(0, max(-log10(AT_2025_Long$pvalue)))) +
-	scale_shape_manual(values = c("enriched hit" = 21,
-								  "enriched candidate" = 24,
-								  "no hit" = 22), 
-					   name = "Trend") +
-	scale_color_manual(values = c("enriched hit" = "black",
-								 "enriched candidate" = "black",
-								 "no hit" = "black"), 
-								 name = "Trend") +
-	scale_fill_manual(values = c("enriched hit" = "orange",
-								  "enriched candidate" = "purple",
-								  "no hit" = "black"), 
-					   name = "Trend") +
-	scale_alpha_manual(values = c("enriched hit" = 0.8,
-								  "enriched candidate" = 0.5,
-								  "no hit" = 0.25), 
-					   name = "Trend") +
-	scale_size_manual(values = c("enriched hit" = 4,
-								  "enriched candidate" = 2,
-								  "no hit" = 0.75), 
-					   name = "Trend") +
-	facet_wrap(~Sample) +
-	xlab("Log2 fold-change") +
-	ylab("-log10(p-value)") +
-	theme_minimal() +
-	theme(panel.border = element_rect(color = "#cfcfcf", fill = NA))+
-	theme(strip.text = element_text(size = 12, face = "bold")) +
-	theme(legend.title = element_text(size = 12, face = "bold")) +
-	theme(axis.title = element_text(size = 12, face = "bold")) +
-	theme(legend.text = element_text(size = 12))
-
-m <- list(l=50, r = 50, b= 100, pad = 10)
-
-VolcanoPlotly <- ggplotly(VolcanoPlots,
-						  tooltip = c("text", dynamicTicks = TRUE),
-						  hovermode = "closest",
-						  autosize = T,
-						  margin = m) |>
-				layout(showlegend = FALSE)
-
-VolcanoPlotly
-
-```
 
 #### Volcano plots
 
@@ -215,7 +108,7 @@ VolcanoPlotly
 ```{r, echo=FALSE}
 #| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)"
 
-VolcanoPlotly
+VolcanoPlotStandardized(AT_2025_Long)
 ```
 :::
 
