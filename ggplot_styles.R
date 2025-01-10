@@ -56,7 +56,8 @@ RankedOrderPlotStandard <- function(data) {
         ylab("Log2 fold-change") +
         xlab("Ranked-order gene") +
         theme_minimal() +
-        theme(panel.border = element_rect(color = "#cfcfcf", fill = NA)) +
+        theme(text = element_text(family = "serif")) +
+        theme(panel.border = element_rect(color = NA, fill = NA)) +
         theme(legend.title = element_text(size = 12, face = "bold")) +
         theme(axis.title = element_text(size = 12, face = "bold")) +
         theme(legend.text = element_text(size = 12))
@@ -125,7 +126,8 @@ VolcanoPlotStandardized <- function(data) {
         xlab("Log2 fold-change") +
         ylab("-log10(p-value)") +
         theme_minimal() +
-        theme(panel.border = element_rect(color = "#cfcfcf", fill = NA))+
+        theme(text = element_text(family = "serif")) +
+        theme(panel.border = element_rect(color = NA, fill = NA))+
         theme(strip.text = element_text(size = 12, face = "bold")) +
         theme(legend.title = element_text(size = 12, face = "bold")) +
         theme(axis.title = element_text(size = 12, face = "bold")) +

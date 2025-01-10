@@ -1,5 +1,6 @@
 ---
 title: "Farley et al. 2024"
+subtitle: "Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function"
 format: 
   html:
     embed-resources: true
@@ -44,6 +45,10 @@ SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels
 # Organize the probes as factors
 SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
 
+
+write.csv(x = SF_2024_data, file = "DataTables/SF_ACS-Chem-Bio_2024_download.csv")
+
+
 # Building an ID column to maintain the order on the x-axis
 ID <- c()
 for(i in 0:(nrow(SF_2024_data)/4)){
@@ -84,19 +89,15 @@ unique(SF_2024_data$hit_annotation)
 print(head(SF_2024_data))
 ```
 
-## Publication information
+Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*
 
-**Title:** Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function
+Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
-**Authors:** Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*
+2024-02-16
 
-(* corresponding: <schulcar@ohsu.edu>{target="_blank"})
+[ACS Chemical Biology](https://pubs.acs.org/doi/10.1021/acschembio.3c00554){target="_blank"}
 
-**Date published:** 
-
-**Journal, ISSN:** [ACS Chemical Biology](https://pubs.acs.org/doi/10.1021/acschembio.3c00554){target="_blank"}, 1554-8929, 1554-8937
-
-**DOI:** <https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
 
 ## Abstract
 
@@ -107,7 +108,7 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 #### Ranked-order Log2 Fold-change plots
 
 :::{.border}
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: ""
 
 RankedOrderPlotStandard(SF_2024_ranked)
@@ -117,7 +118,7 @@ RankedOrderPlotStandard(SF_2024_ranked)
 #### Volcano plots
 
 :::{.border}
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: ""
 
 VolcanoPlotStandardized(SF_2024_data)
@@ -150,3 +151,8 @@ filter_select(id = "hit_annotation",
 datatable(SF_2024_data_reactive)
 ```
 :::
+
+## Data download
+
+{{< downloadthis DataTables/SF_ACS-Chem-Bio_2024_download.csv dname="SF_ACS-Chem-Bio_2024">}}
+

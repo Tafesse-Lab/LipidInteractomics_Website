@@ -15,19 +15,7 @@
     "href": "AT_2025.html",
     "title": "Thomas et al. 2025",
     "section": "",
-    "text": "Title: Trifunctional lipid derivatives: PE’s mitochondrial interactome\nAuthors: Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz*\n(* corresponding: schulcar@ohsu.edu)\nDate published:\nJournal, ISSN: Chemical Communications, 1359-7345, 1364-548X\nDOI: https://doi.org/10.1039/D4CC03599B",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Thomas et al., 2025"
-    ]
-  },
-  {
-    "objectID": "AT_2025.html#publication-information",
-    "href": "AT_2025.html#publication-information",
-    "title": "Thomas et al. 2025",
-    "section": "",
-    "text": "Title: Trifunctional lipid derivatives: PE’s mitochondrial interactome\nAuthors: Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz*\n(* corresponding: schulcar@ohsu.edu)\nDate published:\nJournal, ISSN: Chemical Communications, 1359-7345, 1364-548X\nDOI: https://doi.org/10.1039/D4CC03599B",
+    "text": "Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -101,19 +89,7 @@
     "href": "SF_2024.html",
     "title": "Farley et al. 2024",
     "section": "",
-    "text": "Title: Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function\nAuthors: Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\n(* corresponding: schulcar@ohsu.edu)\nDate published:\nJournal, ISSN: ACS Chemical Biology, 1554-8929, 1554-8937\nDOI: https://doi.org/10.1021/acschembio.3c00554",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
-  },
-  {
-    "objectID": "SF_2024.html#publication-information",
-    "href": "SF_2024.html#publication-information",
-    "title": "Farley et al. 2024",
-    "section": "",
-    "text": "Title: Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function\nAuthors: Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\n(* corresponding: schulcar@ohsu.edu)\nDate published:\nJournal, ISSN: ACS Chemical Biology, 1554-8929, 1554-8937\nDOI: https://doi.org/10.1021/acschembio.3c00554",
+    "text": "Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n2024-02-16\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -137,7 +113,7 @@
     "href": "SF_2024.html#data-visualization",
     "title": "Farley et al. 2024",
     "section": "Data visualization",
-    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\nWarning in geom_point(aes(text = paste0(\"Gene name: \", gene_name, \"\\n\", :\nIgnoring unknown aesthetics: text\n\n\n\n\n\n\n\n\n\nVolcano plots\n\n\n\nWarning in geom_point(aes(text = paste0(\"Gene name: \", gene_name, \"\\n\", :\nIgnoring unknown aesthetics: text",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\n\n\n\n\n\nVolcano plots",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -150,6 +126,18 @@
     "title": "Farley et al. 2024",
     "section": "Enriched Proteins",
     "text": "Enriched Proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "SF_2024.html#data-download",
+    "href": "SF_2024.html#data-download",
+    "title": "Farley et al. 2024",
+    "section": "Data download",
+    "text": "Data download\n Download",
     "crumbs": [
       "Home",
       "Individual Studies",

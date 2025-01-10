@@ -1,5 +1,6 @@
 ---
 title: "Thomas et al. 2025"
+subtitle: "Trifunctional lipid derivatives: PE’s mitochondrial interactome"
 format: 
   html:
     embed-resources: true
@@ -10,19 +11,13 @@ standalone: true
 Two lipid probes, PA and PE for a single cell line
  -->
 
-## Publication information
+Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
 
-**Title:** Trifunctional lipid derivatives: PE’s mitochondrial interactome
+Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
-**Authors:** Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz*
+Chemical Communications
 
-(* corresponding: <schulcar@ohsu.edu>{target="_blank"})
-
-**Date published:** 
-
-**Journal, ISSN:** Chemical Communications, 1359-7345, 1364-548X
-
-**DOI:** <https://doi.org/10.1039/D4CC03599B>{target="_blank"}
+<https://doi.org/10.1039/D4CC03599B>{target="_blank"}
 
 ## Abstract
 
@@ -60,12 +55,15 @@ AT_2025_Long <- AT_2025_data |>
 	pivot_longer(cols = -gene_name,
 				names_to = c(".value", "LipidProbe"),
 				names_pattern = "^(logFC|pvalue|hit_annotation)_(.+)$")
-				
+
 
 print(unique(AT_2025_Long$hit_annotation))
 
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
+
+
+
 
 
 # Building an ID column to maintain the order on the x-axis
@@ -140,6 +138,6 @@ datatable(AT_2025_Long_reactive)
 
 ## Data download
 
-{{< downloadthis DataTables/AT_ChemicalCommunications_2025.csv dname="AT_ChemicalCommunications_2025">}}
+{{< downloadthis DataTables/AT_ChemicalCommunications_2025_download.csv dname="AT_ChemicalCommunications_2025">}}
 
 
