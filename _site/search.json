@@ -1,0 +1,147 @@
+[
+  {
+    "objectID": "study_survey.html",
+    "href": "study_survey.html",
+    "title": "Lipid interactomics study survey",
+    "section": "",
+    "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.",
+    "crumbs": [
+      "Home",
+      "Lipid interactomics study survey"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LipidInteractomics_Website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html",
+    "href": "IndividualStudies/AT_2025.html",
+    "title": "Thomas et al. 2025",
+    "section": "",
+    "text": "Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html#abstract",
+    "href": "IndividualStudies/AT_2025.html#abstract",
+    "title": "Thomas et al. 2025",
+    "section": "Abstract",
+    "text": "Abstract\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html#data-visualization",
+    "href": "IndividualStudies/AT_2025.html#data-visualization",
+    "title": "Thomas et al. 2025",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\nVolcano plots\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html#enriched-proteins",
+    "href": "IndividualStudies/AT_2025.html#enriched-proteins",
+    "title": "Thomas et al. 2025",
+    "section": "Enriched proteins",
+    "text": "Enriched proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html#data-download",
+    "href": "IndividualStudies/AT_2025.html#data-download",
+    "title": "Thomas et al. 2025",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html",
+    "href": "IndividualStudies/SF_2024.html",
+    "title": "Farley et al. 2024",
+    "section": "",
+    "text": "Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n2024-02-16\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#abstract",
+    "href": "IndividualStudies/SF_2024.html#abstract",
+    "title": "Farley et al. 2024",
+    "section": "Abstract",
+    "text": "Abstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
+    "href": "IndividualStudies/SF_2024.html#data-visualization",
+    "title": "Farley et al. 2024",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\n\n\n\n\n\nVolcano plots",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "title": "Farley et al. 2024",
+    "section": "Enriched Proteins",
+    "text": "Enriched Proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-download",
+    "href": "IndividualStudies/SF_2024.html#data-download",
+    "title": "Farley et al. 2024",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
