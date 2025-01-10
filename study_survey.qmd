@@ -2,7 +2,7 @@
 title: "Lipid interactomics study survey"
 format: 
   html:
-    embed-resources: true
+    embed-resources: false
 standalone: true
 ---
 

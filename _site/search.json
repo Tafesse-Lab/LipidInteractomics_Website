@@ -11,11 +11,64 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "LipidInteractomics Website",
+    "objectID": "IndividualStudies/SF_2024.html",
+    "href": "IndividualStudies/SF_2024.html",
+    "title": "Farley et al. 2024",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n2024-02-16\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#abstract",
+    "href": "IndividualStudies/SF_2024.html#abstract",
+    "title": "Farley et al. 2024",
+    "section": "Abstract",
+    "text": "Abstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
+    "href": "IndividualStudies/SF_2024.html#data-visualization",
+    "title": "Farley et al. 2024",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\n\n\n\n\n\nVolcano plots",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "title": "Farley et al. 2024",
+    "section": "Enriched Proteins",
+    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSpa\n\n\n\n\n\nSph\n\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-download",
+    "href": "IndividualStudies/SF_2024.html#data-download",
+    "title": "Farley et al. 2024",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "Home",
+      "Individual Studies",
+      "Farley et al., 2024"
+    ]
   },
   {
     "objectID": "IndividualStudies/AT_2025.html",
@@ -58,7 +111,7 @@
     "href": "IndividualStudies/AT_2025.html#enriched-proteins",
     "title": "Thomas et al. 2025",
     "section": "Enriched proteins",
-    "text": "Enriched proteins\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "text": "Enriched proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -78,64 +131,11 @@
     ]
   },
   {
-    "objectID": "IndividualStudies/SF_2024.html",
-    "href": "IndividualStudies/SF_2024.html",
-    "title": "Farley et al. 2024",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LipidInteractomics Website",
     "section": "",
-    "text": "Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n2024-02-16\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#abstract",
-    "href": "IndividualStudies/SF_2024.html#abstract",
-    "title": "Farley et al. 2024",
-    "section": "Abstract",
-    "text": "Abstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
-    "href": "IndividualStudies/SF_2024.html#data-visualization",
-    "title": "Farley et al. 2024",
-    "section": "Data visualization",
-    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\n\n\n\n\n\nVolcano plots",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "title": "Farley et al. 2024",
-    "section": "Enriched Proteins",
-    "text": "Enriched Proteins\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSpa\n\n\n\n\n\nSph\n\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#data-download",
-    "href": "IndividualStudies/SF_2024.html#data-download",
-    "title": "Farley et al. 2024",
-    "section": "Data download",
-    "text": "Data download\n Download",
-    "crumbs": [
-      "Home",
-      "Individual Studies",
-      "Farley et al., 2024"
-    ]
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",

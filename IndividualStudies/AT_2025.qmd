@@ -3,8 +3,8 @@ title: "Thomas et al. 2025"
 subtitle: "Trifunctional lipid derivatives: PE’s mitochondrial interactome"
 format: 
   html:
-    embed-resources: true
-standalone: true
+    embed-resources: false
+standalone: false
 ---
 
 <!-- Data overview
@@ -113,11 +113,14 @@ VolcanoPlotStandardized(AT_2025_Long)
 
 ## Enriched proteins
 
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
 :::{.border}
 ```{r, echo=FALSE}
-### Here is the code to make the filterable lists shown in the crosstalk table below
 
-# Creates a reactive dataframe
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+## Creates a reactive dataframe
 AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
 
 
@@ -133,7 +136,10 @@ htmltools::tags$div(
                   group = ~hit_annotation)
 )
 
-datatable(AT_2025_Long_reactive)
+?crosstalk::filter_checkbox()
+
+## Displays the reactive dataframe
+datatable(AT_2025_Long_reactive, options = list(pageLength = 20))
 
 ```
 :::

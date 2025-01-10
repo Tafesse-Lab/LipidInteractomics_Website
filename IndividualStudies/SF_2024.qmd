@@ -3,8 +3,8 @@ title: "Farley et al. 2024"
 subtitle: "Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function"
 format: 
   html:
-    embed-resources: true
-standalone: true
+    embed-resources: false
+standalone: false
 ---
 
 ```{r setup, echo=FALSE, include=FALSE}
@@ -131,11 +131,15 @@ VolcanoPlotStandardized(SF_2024_data)
 ## Enriched Proteins
 
 
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
+
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-### Here is the code to make the filterable lists shown in the crosstalk table below
 
-# Creates a reactive dataframe
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+## Creates a reactive dataframe
 SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
 
 htmltools::tags$div(
@@ -150,8 +154,9 @@ htmltools::tags$div(
                   group = ~hit_annotation)
 )
 
+## Displays the reactive dataframe
+datatable(SF_2024_data_reactive, options = list(pageLength = 25))
 
-datatable(SF_2024_data_reactive)
 ```
 :::
 

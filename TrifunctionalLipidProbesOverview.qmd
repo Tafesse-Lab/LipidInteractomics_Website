@@ -1,0 +1,8 @@
+---
+title: "Trifunctional Lipid Probes Primer"
+author: "Gaelen Guzman"
+format: 
+  html:
+    embed-resources: false
+standalone: true
+---
