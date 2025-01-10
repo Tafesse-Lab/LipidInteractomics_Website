@@ -1,0 +1,37 @@
+---
+title: "Farley et al. 2024"
+format: 
+  html:
+    embed-resources: true
+standalone: true
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+
+
+## Publication information
+
+**Title:** Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function
+
+**Authors:** Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*
+
+(* corresponding: <schulcar@ohsu.edu>{target="_blank"})
+
+**Date published:** 
+
+**Journal, ISSN:** [ACS Chemical Biology](https://pubs.acs.org/doi/10.1021/acschembio.3c00554){target="_blank"}, 1554-8929, 1554-8937
+
+**DOI:** <https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+
+## Abstract
+
+Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
+
+## Data visualization
+
+#### Ranked-order Log2 Fold-change plots
+
+#### Volcano plots
+
+## Enriched Proteins
+

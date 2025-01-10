@@ -1,24 +1,39 @@
 project:
   type: website
   
-
 website:
-  title: "LipidInteractomics_Website"
+  title: "Lipid Interactomics Repository"
   navbar:
     left:
       - href: index.qmd
         text: Home
-
+      
       - href: AT_2025.qmd
         text: "Thomas, 2025"
 
-      - about.qmd
+      - href: about.qmd
+        text: "About"
+  sidebar:
+    search: true
+    collapse-level: 2
+    contents:
+      - href: study_survey.qmd
+        text: "Lipid interactomics study survey"
+          
+      - section: "Individual Studies"
+        contents:
+          - href: AT_2025.qmd
+            text: "Thomas et al., 2025"
 
+          - href: SF_2024.qmd
+            text: "Farley et al., 2024"
 format:
   html:
+    mainfont: Charter
     theme: Lux
     css: styles.css
     toc: true
+    sidebar: true
 
 
 
