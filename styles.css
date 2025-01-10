@@ -1,1 +1,10 @@
 /* css styles */
+
+.filter-container {
+  display: flex;
+  gap: 20px; /* Adjust spacing between filters */
+}
+
+.filter-container .crosstalk-input {
+  flex: 1; /* Make filters take equal width if desired */
+}

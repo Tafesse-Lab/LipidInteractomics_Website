@@ -121,15 +121,17 @@ VolcanoPlotStandardized(AT_2025_Long)
 AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
 
 
-filter_select(id = "LipidProbe",
-				label = "Functional probe used in pulldown:", 
-				sharedData = AT_2025_Long_reactive,
-				group = ~LipidProbe)
-
-filter_select(id = "hit_annotation",
-				label = "Enrichment criteria:", 
-				sharedData = AT_2025_Long_reactive,
-				group = ~hit_annotation)
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = AT_2025_Long_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = AT_2025_Long_reactive,
+                  group = ~hit_annotation)
+)
 
 datatable(AT_2025_Long_reactive)
 

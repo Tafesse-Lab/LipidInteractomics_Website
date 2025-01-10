@@ -13,7 +13,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "LipidInteractomics_Website",
+    "title": "LipidInteractomics Website",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
@@ -58,7 +58,7 @@
     "href": "IndividualStudies/AT_2025.html#enriched-proteins",
     "title": "Thomas et al. 2025",
     "section": "Enriched proteins",
-    "text": "Enriched proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
+    "text": "Enriched proteins\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -118,7 +118,7 @@
     "href": "IndividualStudies/SF_2024.html#enriched-proteins",
     "title": "Farley et al. 2024",
     "section": "Enriched Proteins",
-    "text": "Enriched Proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
+    "text": "Enriched Proteins\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSpa\n\n\n\n\n\nSph\n\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "Home",
       "Individual Studies",

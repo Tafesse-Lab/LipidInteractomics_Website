@@ -20,6 +20,7 @@ library(emojifont)
 library(gt)
 library(crosstalk)
 library(DT)
+library(htmltools)
 
 ## Opening the source file for the ggplot custom theme
 source("ggplot_styles.R")
@@ -137,16 +138,18 @@ VolcanoPlotStandardized(SF_2024_data)
 # Creates a reactive dataframe
 SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
 
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~hit_annotation)
+)
 
-filter_select(id = "LipidProbe",
-				label = "Functional probe used in pulldown:", 
-				sharedData = SF_2024_data_reactive,
-				group = ~LipidProbe)
-
-filter_select(id = "hit_annotation",
-				label = "Enrichment criteria:", 
-				sharedData = SF_2024_data_reactive,
-				group = ~hit_annotation)
 
 datatable(SF_2024_data_reactive)
 ```

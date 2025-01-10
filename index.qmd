@@ -1,5 +1,5 @@
 ---
-title: "LipidInteractomics_Website"
+title: "LipidInteractomics Website"
 ---
 
 This is a Quarto website.
