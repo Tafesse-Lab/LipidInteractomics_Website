@@ -7,7 +7,18 @@ standalone: true
 ---
 
 ```{r setup, echo=FALSE, include=FALSE}
+source("ggplot_styles.R")
 
+SF_2024_data <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
+
+SF_2024_data_2 <- SF_2024_data |>
+	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
+	filter(keep_Huh7 == TRUE) |>
+	select(-keep_Huh7) |>
+	glimpse()
+
+print(head(SF_2024_data_2))
+```
 
 ## Publication information
 

@@ -53,13 +53,14 @@ source("ggplot_styles.R")
 
 # Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
 # Read the data to a df
-AT_2025_data <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025.csv")
+AT_2025_data <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025.csv") 
 
 # Pivot the data to be longer
 AT_2025_Long <- AT_2025_data |>
 	pivot_longer(cols = -gene_name,
-				names_to = c(".value", "Sample"),
+				names_to = c(".value", "LipidProbe"),
 				names_pattern = "^(logFC|pvalue|hit_annotation)_(.+)$")
+				
 
 print(unique(AT_2025_Long$hit_annotation))
 
@@ -76,13 +77,13 @@ for(i in 0:(nrow(AT_2025_Long)/2)){
 # Applies the ID column to the PE results
 AT_2025_ranked_PE <- AT_2025_Long |>
     arrange(logFC) |>
-	filter(Sample == "PE") |>
+	filter(LipidProbe == "PE") |>
 	mutate(ID = ID) 
 
 # Applies the ID column to the PA results
 AT_2025_ranked_PA <- AT_2025_Long |>
     arrange(logFC) |>
-	filter(Sample == "PA") |>
+	filter(LipidProbe == "PA") |>
 	mutate(ID = ID) 
 
 # Assembles the dataset to plot
@@ -122,10 +123,10 @@ VolcanoPlotStandardized(AT_2025_Long)
 AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
 
 
-filter_select(id = "Sample",
+filter_select(id = "LipidProbe",
 				label = "Functional probe used in pulldown:", 
 				sharedData = AT_2025_Long_reactive,
-				group = ~Sample)
+				group = ~LipidProbe)
 
 filter_select(id = "hit_annotation",
 				label = "Enrichment criteria:", 

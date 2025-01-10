@@ -42,7 +42,7 @@ RankedOrderPlotStandard <- function(data) {
                                     "enriched candidate" = 2,
                                     "no hit" = 0.75), 
                         name = "Trend") +
-        facet_wrap(~Sample) +
+        facet_wrap(~LipidProbe) +
         ylab("Log2 fold-change") +
         xlab("Ranked-order gene") +
         theme_minimal() +
@@ -101,7 +101,7 @@ VolcanoPlotStandardized <- function(data) {
                                     "enriched candidate" = 2,
                                     "no hit" = 0.75), 
                         name = "Trend") +
-        facet_wrap(~Sample) +
+        facet_wrap(~LipidProbe) +
         xlab("Log2 fold-change") +
         ylab("-log10(p-value)") +
         theme_minimal() +
