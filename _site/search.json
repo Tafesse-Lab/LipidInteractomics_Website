@@ -137,7 +137,7 @@
     "href": "SF_2024.html#data-visualization",
     "title": "Farley et al. 2024",
     "section": "Data visualization",
-    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\nVolcano plots",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\nWarning in geom_point(aes(text = paste0(\"Gene name: \", gene_name, \"\\n\", :\nIgnoring unknown aesthetics: text\n\n\n\n\n\n\n\n\n\nVolcano plots\n\n\n\nWarning in geom_point(aes(text = paste0(\"Gene name: \", gene_name, \"\\n\", :\nIgnoring unknown aesthetics: text",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -149,7 +149,7 @@
     "href": "SF_2024.html#enriched-proteins",
     "title": "Farley et al. 2024",
     "section": "Enriched Proteins",
-    "text": "Enriched Proteins",
+    "text": "Enriched Proteins\n\n\n\n\nFunctional probe used in pulldown:\n\n\n\n\n\n\n\n\nEnrichment criteria:",
     "crumbs": [
       "Home",
       "Individual Studies",

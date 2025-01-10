@@ -7,17 +7,81 @@ standalone: true
 ---
 
 ```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+
+## Opening the source file for the ggplot custom theme
 source("ggplot_styles.R")
 
-SF_2024_data <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
+## Some data wrangling to clean up Scotty's data
+SF_2024_data_raw <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
 
-SF_2024_data_2 <- SF_2024_data |>
+SF_2024_data <- SF_2024_data_raw |>
 	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
 	filter(keep_Huh7 == TRUE) |>
 	select(-keep_Huh7) |>
+	mutate(LipidProbe = case_when(comparison == "FA_8_3_UV - FA_8_3_noUV" ~ "8-3 FA",
+															 comparison == "FA_1_10_UV - FA_1_10_noUV" ~ "1-10 FA",
+															 comparison == "Spa_UV - Spa_noUV" ~ "Spa",
+															 comparison == "Sph_UV - Sph_noUV" ~ "Sph")) |>
+	filter(LipidProbe == "8-3 FA" | LipidProbe == "1-10 FA" | LipidProbe == "Spa" | LipidProbe == "Sph") |>
+	select(-comparison) |>
 	glimpse()
 
-print(head(SF_2024_data_2))
+# Organize the hit annotations as factors
+SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+# Organize the probes as factors
+SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
+
+# Building an ID column to maintain the order on the x-axis
+ID <- c()
+for(i in 0:(nrow(SF_2024_data)/4)){
+	ID[i] = i
+}
+
+# Applies the ID column to the 1-10 FA results
+SF_2024_ranked_1_10_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "1-10 FA") |>
+	mutate(ID = ID) 
+
+# Applies the ID column to the 8-3 FA results
+SF_2024_ranked_8_3_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "8-3 FA") |>
+	mutate(ID = ID) 
+
+# Applies the ID column to the Spa results
+SF_2024_ranked_Spa <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "Spa") |>
+	mutate(ID = ID) 
+
+# Applies the ID column to the Sph results
+SF_2024_ranked_Sph <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "Sph") |>
+	mutate(ID = ID) 
+
+# Assembles the dataset to plot
+SF_2024_ranked <- rbind(SF_2024_ranked_Sph, SF_2024_ranked_Spa, SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
+
+
+
+unique(SF_2024_data$hit_annotation)
+
+print(head(SF_2024_data))
 ```
 
 ## Publication information
@@ -42,7 +106,47 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 #### Ranked-order Log2 Fold-change plots
 
+:::{.border}
+```{r, echo=FALSE}
+#| fig-cap: ""
+
+RankedOrderPlotStandard(SF_2024_ranked)
+```
+:::
+
 #### Volcano plots
+
+:::{.border}
+```{r, echo=FALSE}
+#| fig-cap: ""
+
+VolcanoPlotStandardized(SF_2024_data)
+
+
+```
+:::
 
 ## Enriched Proteins
 
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+### Here is the code to make the filterable lists shown in the crosstalk table below
+
+# Creates a reactive dataframe
+SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+
+
+filter_select(id = "LipidProbe",
+				label = "Functional probe used in pulldown:", 
+				sharedData = SF_2024_data_reactive,
+				group = ~LipidProbe)
+
+filter_select(id = "hit_annotation",
+				label = "Enrichment criteria:", 
+				sharedData = SF_2024_data_reactive,
+				group = ~hit_annotation)
+
+datatable(SF_2024_data_reactive)
+```
+:::
