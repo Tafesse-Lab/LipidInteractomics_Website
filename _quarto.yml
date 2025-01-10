@@ -20,10 +20,10 @@ website:
           
       - section: "Individual Studies"
         contents:
-          - href: AT_2025.qmd
+          - href: IndividualStudies/AT_2025.qmd
             text: "Thomas et al., 2025"
 
-          - href: SF_2024.qmd
+          - href: IndividualStudies/SF_2024.qmd
             text: "Farley et al., 2024"
 format:
   html:
