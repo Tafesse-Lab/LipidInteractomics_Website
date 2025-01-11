@@ -56,9 +56,6 @@ AT_2025_Long <- AT_2025_data |>
 				names_to = c(".value", "LipidProbe"),
 				names_pattern = "^(logFC|pvalue|hit_annotation)_(.+)$")
 
-
-print(unique(AT_2025_Long$hit_annotation))
-
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
 
@@ -95,7 +92,7 @@ AT_2025_ranked <- rbind(AT_2025_ranked_PE, AT_2025_ranked_PA)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold). "
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
 
 RankedOrderPlotStandard(AT_2025_ranked)
 ```
@@ -105,7 +102,7 @@ RankedOrderPlotStandard(AT_2025_ranked)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)"
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
 
 VolcanoPlotStandardized(AT_2025_Long)
 ```

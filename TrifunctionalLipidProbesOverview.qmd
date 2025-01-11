@@ -6,3 +6,5 @@ format:
     embed-resources: false
 standalone: true
 ---
+
+I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here -- but I think it would be nice to have a novel description with figures for this site.

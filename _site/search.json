@@ -11,6 +11,13 @@
     ]
   },
   {
+    "objectID": "TrifunctionalLipidProbesOverview.html",
+    "href": "TrifunctionalLipidProbesOverview.html",
+    "title": "Trifunctional Lipid Probes Primer",
+    "section": "",
+    "text": "I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here – but I think it would be nice to have a novel description with figures for this site."
+  },
+  {
     "objectID": "IndividualStudies/SF_2024.html",
     "href": "IndividualStudies/SF_2024.html",
     "title": "Farley et al. 2024",
@@ -39,7 +46,7 @@
     "href": "IndividualStudies/SF_2024.html#data-visualization",
     "title": "Farley et al. 2024",
     "section": "Data visualization",
-    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\n\n\n\n\n\nVolcano plots",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\nVolcano plots\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -71,6 +78,27 @@
     ]
   },
   {
+    "objectID": "MaintenanceInstructions.html",
+    "href": "MaintenanceInstructions.html",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#site-organization",
+    "href": "MaintenanceInstructions.html#site-organization",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#maintenance",
+    "href": "MaintenanceInstructions.html#maintenance",
+    "title": "Maintenance Instructions",
+    "section": "Maintenance",
+    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\nAny changes can then be pushed to the github repository; Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access. It will be TBD how GitHub ownership is transferred after I leave.\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (if you don’t it’ll be unlinked and you’ll need to know the whole path to find it, like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
+  },
+  {
     "objectID": "IndividualStudies/AT_2025.html",
     "href": "IndividualStudies/AT_2025.html",
     "title": "Thomas et al. 2025",
@@ -99,7 +127,7 @@
     "href": "IndividualStudies/AT_2025.html#data-visualization",
     "title": "Thomas et al. 2025",
     "section": "Data visualization",
-    "text": "Data visualization\n\nRanked-order Log2 Fold-change\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\nVolcano plots\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\nVolcano plots\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).",
     "crumbs": [
       "Home",
       "Individual Studies",
@@ -133,7 +161,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "LipidInteractomics Website",
+    "title": "Lipid Interactomics Website",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },

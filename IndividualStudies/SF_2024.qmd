@@ -28,6 +28,7 @@ source("ggplot_styles.R")
 ## Some data wrangling to clean up Scotty's data
 SF_2024_data_raw <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
 
+## This is a little messy, but converts the raw data Scotty received from Frank and Per to a clean and minimal dataframe.
 SF_2024_data <- SF_2024_data_raw |>
 	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
 	filter(keep_Huh7 == TRUE) |>
@@ -45,10 +46,6 @@ SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels
 
 # Organize the probes as factors
 SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
-
-
-write.csv(x = SF_2024_data, file = "DataTables/SF_ACS-Chem-Bio_2024_download.csv")
-
 
 # Building an ID column to maintain the order on the x-axis
 ID <- c()
@@ -82,12 +79,6 @@ SF_2024_ranked_Sph <- SF_2024_data |>
 
 # Assembles the dataset to plot
 SF_2024_ranked <- rbind(SF_2024_ranked_Sph, SF_2024_ranked_Spa, SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
-
-
-
-unique(SF_2024_data$hit_annotation)
-
-print(head(SF_2024_data))
 ```
 
 Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*
@@ -110,7 +101,7 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: ""
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
 
 RankedOrderPlotStandard(SF_2024_ranked)
 ```
@@ -120,10 +111,9 @@ RankedOrderPlotStandard(SF_2024_ranked)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: ""
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
 
 VolcanoPlotStandardized(SF_2024_data)
-
 
 ```
 :::
