@@ -1,5 +1,5 @@
 ---
-title: "Maintenance Instructions/README"
+title: "README"
 author: "Gaelen Guzman"
 date: 2025/01/09
 format: 
@@ -7,6 +7,8 @@ format:
     embed-resources: true
 standalone: true
 ---
+
+(You can also see these instructions at <https://lipidinteractomicsrepository.netlify.app/maintenanceinstructions.html>)
 
 ## Site Organization
 

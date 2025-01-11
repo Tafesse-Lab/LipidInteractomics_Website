@@ -38,7 +38,7 @@ I honestly get the most confused when it comes to formatting the _quarto.yml fil
 
 If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (if you don't it'll be unlinked and you'll need to know the whole path to find it, like this maintenance page).
 
-If your data looks at all like [Alix's](IndividualStudies/DataTables/AT_ChemicalCommunications_2025.csv){target="_blank"} or [Scotty's](IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting. 
+If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting. 
 
 There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
 
