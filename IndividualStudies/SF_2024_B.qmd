@@ -1,0 +1,145 @@
+---
+title: "Farley et al. 2024 B"
+subtitle: "Trifunctional fatty acid derivatives: the impact of diazirine placement"
+format: 
+  html:
+    embed-resources: false
+standalone: false
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+library(htmltools)
+
+## Opening the source file for the ggplot custom theme
+source("ggplot_styles.R")
+
+## Some data wrangling to clean up Scotty's data
+SF_2024_data_raw <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
+
+## This is a little messy, but converts the raw data Scotty received from Frank and Per to a clean and minimal dataframe.
+SF_2024_data <- SF_2024_data_raw |>
+	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
+	filter(keep_Huh7 == TRUE) |>
+	select(-keep_Huh7) |>
+	mutate(LipidProbe = case_when(comparison == "FA_8_3_UV - FA_8_3_noUV" ~ "8-3 FA",
+															 comparison == "FA_1_10_UV - FA_1_10_noUV" ~ "1-10 FA")) |>
+	filter(LipidProbe == "8-3 FA" | LipidProbe == "1-10 FA" | LipidProbe == "Spa" | LipidProbe == "Sph") |>
+	select(-comparison) |>
+	glimpse()
+
+# Organize the hit annotations as factors
+SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+# Organize the probes as factors
+SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
+
+#write.csv(SF_2024_data, "IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
+
+# Building an ID column to maintain the order on the x-axis
+ID <- c()
+for(i in 0:(nrow(SF_2024_data)/2)){
+	ID[i] = i
+}
+
+# Applies the ID column to the 1-10 FA results
+SF_2024_ranked_1_10_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "1-10 FA") |>
+	mutate(ID = ID) 
+
+# Applies the ID column to the 8-3 FA results
+SF_2024_ranked_8_3_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "8-3 FA") |>
+	mutate(ID = ID) 
+
+
+# Assembles the dataset to plot
+SF_2024_ranked <- rbind(SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
+```
+
+Scotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz*
+
+Correspondence: <schulcar@ohsu.edu>{target="_blank"}
+
+2024-05-25
+
+[Chemical Communications](https://xlink.rsc.org/?DOI=D4CC00974F){target="_blank"}
+
+<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+
+## Abstract
+
+Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.
+
+## Data visualization
+
+#### Ranked-order Log2 Fold-change plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
+
+RankedOrderPlotStandard(SF_2024_ranked)
+```
+:::
+
+#### Volcano plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
+
+VolcanoPlotStandardized(SF_2024_data)
+
+```
+:::
+
+## Enriched Proteins
+
+
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+## Creates a reactive dataframe
+SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~hit_annotation)
+)
+
+## Displays the reactive dataframe
+datatable(SF_2024_data_reactive, options = list(pageLength = 25))
+
+```
+:::
+
+## Data download
+
+{{< downloadthis DataTables/SF_Chem_Comm_2024_download.csv dname="SF_Chem_Comm_2024">}}
+
