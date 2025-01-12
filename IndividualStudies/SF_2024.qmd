@@ -33,9 +33,7 @@ SF_2024_data <- SF_2024_data_raw |>
 	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
 	filter(keep_Huh7 == TRUE) |>
 	select(-keep_Huh7) |>
-	mutate(LipidProbe = case_when(comparison == "FA_8_3_UV - FA_8_3_noUV" ~ "8-3 FA",
-															 comparison == "FA_1_10_UV - FA_1_10_noUV" ~ "1-10 FA",
-															 comparison == "Spa_UV - Spa_noUV" ~ "Spa",
+	mutate(LipidProbe = case_when(comparison == "Spa_UV - Spa_noUV" ~ "Spa",
 															 comparison == "Sph_UV - Sph_noUV" ~ "Sph")) |>
 	filter(LipidProbe == "8-3 FA" | LipidProbe == "1-10 FA" | LipidProbe == "Spa" | LipidProbe == "Sph") |>
 	select(-comparison) |>
@@ -49,21 +47,10 @@ SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Sp
 
 # Building an ID column to maintain the order on the x-axis
 ID <- c()
-for(i in 0:(nrow(SF_2024_data)/4)){
+for(i in 0:(nrow(SF_2024_data)/2)){
 	ID[i] = i
 }
 
-# Applies the ID column to the 1-10 FA results
-SF_2024_ranked_1_10_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "1-10 FA") |>
-	mutate(ID = ID) 
-
-# Applies the ID column to the 8-3 FA results
-SF_2024_ranked_8_3_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "8-3 FA") |>
-	mutate(ID = ID) 
 
 # Applies the ID column to the Spa results
 SF_2024_ranked_Spa <- SF_2024_data |>
@@ -78,7 +65,7 @@ SF_2024_ranked_Sph <- SF_2024_data |>
 	mutate(ID = ID) 
 
 # Assembles the dataset to plot
-SF_2024_ranked <- rbind(SF_2024_ranked_Sph, SF_2024_ranked_Spa, SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
+SF_2024_ranked <- rbind(SF_2024_ranked_Sph, SF_2024_ranked_Spa)
 ```
 
 Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*

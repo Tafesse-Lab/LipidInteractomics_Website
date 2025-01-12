@@ -8,7 +8,7 @@ format:
 standalone: true
 ---
 
-(You can also see these instructions at <https://lipidinteractomicsrepository.netlify.app/maintenanceinstructions.html>)
+(You can also see these instructions at <https://lipidinteractomicsrepository.netlify.app/maintenanceinstructions.html>{target="_blank"})
 
 ## Site Organization
 

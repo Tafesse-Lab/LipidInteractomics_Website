@@ -22,9 +22,10 @@ website:
         contents:
           - href: IndividualStudies/AT_2025.qmd
             text: "Thomas et al., 2025"
-
           - href: IndividualStudies/SF_2024.qmd
-            text: "Farley et al., 2024"
+            text: "Farley et al., 2024; A"
+          - href: IndividualStudies/SF_2024_B.qmd
+            text: "Farley et al., 2024; B"
 format:
   html:
     lightbox:

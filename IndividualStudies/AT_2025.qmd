@@ -6,7 +6,6 @@ format:
     embed-resources: false
 standalone: false
 ---
-s
 <!-- Data overview
 Two lipid probes, PA and PE for a single cell line
  -->
@@ -58,8 +57,6 @@ AT_2025_Long <- AT_2025_data |>
 
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
-
-
 
 
 

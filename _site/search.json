@@ -26,7 +26,7 @@
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
-      "Farley et al., 2024"
+      "Farley et al., 2024; A"
     ]
   },
   {
@@ -38,7 +38,7 @@
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
-      "Farley et al., 2024"
+      "Farley et al., 2024; A"
     ]
   },
   {
@@ -50,7 +50,7 @@
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
-      "Farley et al., 2024"
+      "Farley et al., 2024; A"
     ]
   },
   {
@@ -58,11 +58,11 @@
     "href": "IndividualStudies/SF_2024.html#enriched-proteins",
     "title": "Farley et al. 2024",
     "section": "Enriched Proteins",
-    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSpa\n\n\n\n\n\nSph\n\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSpa\n\n\n\n\n\nSph\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
-      "Farley et al., 2024"
+      "Farley et al., 2024; A"
     ]
   },
   {
@@ -74,7 +74,67 @@
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
-      "Farley et al., 2024"
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html",
+    "href": "IndividualStudies/SF_2024_B.html",
+    "title": "Farley et al. 2024 B",
+    "section": "",
+    "text": "Scotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n2024-05-25\nChemical Communications\nhttps://doi.org/10.1021/acschembio.3c00554",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html#abstract",
+    "href": "IndividualStudies/SF_2024_B.html#abstract",
+    "title": "Farley et al. 2024 B",
+    "section": "Abstract",
+    "text": "Abstract\nFunctionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html#data-visualization",
+    "href": "IndividualStudies/SF_2024_B.html#data-visualization",
+    "title": "Farley et al. 2024 B",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nRanked-order Log2 Fold-change plots\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\nVolcano plots\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html#enriched-proteins",
+    "href": "IndividualStudies/SF_2024_B.html#enriched-proteins",
+    "title": "Farley et al. 2024 B",
+    "section": "Enriched Proteins",
+    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html#data-download",
+    "href": "IndividualStudies/SF_2024_B.html#data-download",
+    "title": "Farley et al. 2024 B",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
     ]
   },
   {
@@ -103,7 +163,7 @@
     "href": "IndividualStudies/AT_2025.html",
     "title": "Thomas et al. 2025",
     "section": "",
-    "text": "s\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B",
+    "text": "Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B",
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
@@ -163,7 +223,7 @@
     "href": "index.html",
     "title": "Lipid Interactomics Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "A blurb about the objective of this site, maybe a gallery of images from select publications to put here."
   },
   {
     "objectID": "about.html",
