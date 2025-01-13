@@ -84,6 +84,14 @@ Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
 Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.
 
+## Study details
+
+### Lipid probes utilized
+
+### Cell line analyzed
+
+### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+
 ## Data visualization
 
 #### Ranked-order Log2 Fold-change plots
@@ -134,7 +142,7 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive, options = list(pageLength = 25))
+datatable(SF_2024_data_reactive, options = list(pageLength = 20))
 
 ```
 :::

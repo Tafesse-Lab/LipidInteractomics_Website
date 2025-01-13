@@ -8,3 +8,16 @@
 .filter-container .crosstalk-input {
   flex: 1; /* Make filters take equal width if desired */
 }
+
+.help-symbol {
+  cursor: pointer;
+  color: blue;
+  background-color: rgba(173, 216, 230, 0.2); /* Light blue highlight */
+  border-radius: 84px; /* Rounded corners */
+  padding: 2px 2px; /* Add some padding for better visibility */
+  text-decoration: bold;
+}
+
+.help-symbol:hover {
+  color: darkblue;
+}

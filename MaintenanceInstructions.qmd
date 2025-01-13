@@ -6,6 +6,8 @@ format:
   html:
     embed-resources: true
 standalone: true
+meta:
+  robots: "noindex"
 ---
 
 ## Site Organization

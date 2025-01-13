@@ -42,6 +42,18 @@
     ]
   },
   {
+    "objectID": "IndividualStudies/SF_2024.html#study-details",
+    "href": "IndividualStudies/SF_2024.html#study-details",
+    "title": "Farley et al. 2024",
+    "section": "Study details",
+    "text": "Study details\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nAdditional sample preparation ?",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
     "objectID": "IndividualStudies/SF_2024.html#data-visualization",
     "href": "IndividualStudies/SF_2024.html#data-visualization",
     "title": "Farley et al. 2024",
@@ -95,6 +107,18 @@
     "title": "Farley et al. 2024 B",
     "section": "Abstract",
     "text": "Abstract\nFunctionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Farley et al., 2024; B"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024_B.html#study-details",
+    "href": "IndividualStudies/SF_2024_B.html#study-details",
+    "title": "Farley et al. 2024 B",
+    "section": "Study details",
+    "text": "Study details\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nAdditional sample preparation ?",
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
@@ -176,6 +200,18 @@
     "title": "Thomas et al. 2025",
     "section": "Abstract",
     "text": "Abstract\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.",
+    "crumbs": [
+      "Trifunctional Lipid Probes Primer",
+      "Individual Studies",
+      "Thomas et al., 2025"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/AT_2025.html#study-details",
+    "href": "IndividualStudies/AT_2025.html#study-details",
+    "title": "Thomas et al. 2025",
+    "section": "Study details",
+    "text": "Study details\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nAdditional sample preparation ?",
     "crumbs": [
       "Trifunctional Lipid Probes Primer",
       "Individual Studies",
