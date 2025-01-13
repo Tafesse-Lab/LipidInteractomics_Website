@@ -25,20 +25,9 @@ library(htmltools)
 ## Opening the source file for the ggplot custom theme
 source("ggplot_styles.R")
 
-## Some data wrangling to clean up Scotty's data
-SF_2024_data_raw <- readr::read_csv("DataTables/SF_ACS-ChemBio_2024_Limma_results_V3.csv") 
-
-## This is a little messy, but converts the raw data Scotty received from Frank and Per to a clean and minimal dataframe.
-SF_2024_data <- SF_2024_data_raw |>
-	select(gene_name, keep_Huh7, comparison, logFC, pvalue, hit_annotation) |>
-	filter(keep_Huh7 == TRUE) |>
-	select(-keep_Huh7) |>
-	mutate(LipidProbe = case_when(comparison == "Spa_UV - Spa_noUV" ~ "Spa",
-															 comparison == "Sph_UV - Sph_noUV" ~ "Sph")) |>
-	filter(LipidProbe == "8-3 FA" | LipidProbe == "1-10 FA" | LipidProbe == "Spa" | LipidProbe == "Sph") |>
-	select(-comparison) |>
-	glimpse()
-
+# Opening the datatable for this page
+SF_2024_data <- readr::read_csv("DataTables/SF_ACS-Chem-Bio_2024_download.csv")
+ 
 # Organize the hit annotations as factors
 SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
@@ -83,13 +72,16 @@ Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
 
 
+::: {.callout-note collapse="true"}
+
 ## Study details
 
-### Lipid probes utilized
+#### Lipid probes utilized
 
-### Cell line analyzed
+#### Cell line analyzed
 
-### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+:::
 
 
 ## Data visualization
@@ -142,7 +134,7 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive, options = list(pageLength = 25))
+datatable(SF_2024_data_reactive, options = list(pageLength = 20))
 
 ```
 :::

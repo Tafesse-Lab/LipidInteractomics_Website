@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -40,6 +60,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -202,10 +225,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here – but I think it would be nice to have a novel description with figures for this site.</p>
+<p>I have a few example figures, but I am open to using whichever figures seem best – if that is a new figure, I’ll need guidance on what it should look like.</p>
+<div class="border">
+<p><a href="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
+</div>
+<p>(Here’s an example of what references would look like on the site:<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025 schultzFlashClickMultifunctionalized2022a schultzChemicalToolsLipid2023"><sup><a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">1</a>–<a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">3</a></sup></span>)</p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-schultzFlashClickMultifunctionalized2022a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Schultz, C., Farley, S. E. &amp; Tafesse, F. G. <a href="https://doi.org/10.1021/jacs.2c02705"><span>“<span>Flash</span> &amp; <span>Click</span>”</span>: <span>Multifunctionalized Lipid Derivatives</span> as <span>Tools To Study Viral Infections</span></a>. <em>J. Am. Chem. Soc.</em> <strong>144</strong>, 13987–13995 (2022).</div>
+</div>
+<div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -594,6 +633,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":true,"closeEffect":"fade","openEffect":"fade","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

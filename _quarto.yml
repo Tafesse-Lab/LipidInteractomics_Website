@@ -1,6 +1,10 @@
 project:
   type: website
-  
+
+bibliography: TrifunctionalLipidProbes_bibliography.bib
+csl: nature.csl
+format-links: true
+
 website:
   title: "Lipid Interactomics Repository"
   navbar:
@@ -26,6 +30,7 @@ website:
             text: "Farley et al., 2024; A"
           - href: IndividualStudies/SF_2024_B.qmd
             text: "Farley et al., 2024; B"
+
 format:
   html:
     lightbox:

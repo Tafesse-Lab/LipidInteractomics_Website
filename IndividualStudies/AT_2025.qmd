@@ -10,25 +10,30 @@ standalone: false
 Two lipid probes, PA and PE for a single cell line
  -->
 
+::: {.callout-note collapse="true"}
+
+## Study details
+
+
+#### Authors:
 Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
 
 Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
+#### Journal:
 Chemical Communications
 
 <https://doi.org/10.1039/D4CC03599B>{target="_blank"}
 
-## Abstract
-
+#### Abstract
 Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
 
-## Study details
+#### Lipid probes utilized
 
-### Lipid probes utilized
+#### Cell line analyzed
 
-### Cell line analyzed
-
-### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+:::
 
 ## Data visualization
  
@@ -55,18 +60,11 @@ source("ggplot_styles.R")
 
 # Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
 # Read the data to a df
-AT_2025_data <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025.csv") 
 
-# Pivot the data to be longer
-AT_2025_Long <- AT_2025_data |>
-	pivot_longer(cols = -gene_name,
-				names_to = c(".value", "LipidProbe"),
-				names_pattern = "^(logFC|pvalue|hit_annotation)_(.+)$")
+AT_2025_Long <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025_download.csv") 
 
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
-
-
 
 # Building an ID column to maintain the order on the x-axis
 ID <- c()

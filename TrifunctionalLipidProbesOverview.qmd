@@ -8,3 +8,13 @@ standalone: true
 ---
 
 I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here -- but I think it would be nice to have a novel description with figures for this site.
+
+I have a few example figures, but I am open to using whichever figures seem best -- if that is a new figure, I'll need guidance on what it should look like.
+
+:::{.border}
+![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+:::
+
+\br
+
+(Here's an example of what references would look like on the site: [@thomasTrifunctionalLipidDerivatives2025; @schultzFlashClickMultifunctionalized2022a; @schultzChemicalToolsLipid2023])
