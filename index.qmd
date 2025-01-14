@@ -5,12 +5,3 @@ title: "Lipid Interactomics Website"
 A blurb about the objective of this site, maybe a gallery of images from select publications to put here.
 
 
-
-Possible site names: 
-
-* CLiP Database -- **C**lickable **Li**pid **P**roteomics Database
-
-* TriP Database -- **Tri**functional lipid **P**roteome Database
-
-* TriLiP Database -- **Tri**functional **L**ipid **P**roteome: A Resource for Trifunctional Lipid-Based Proteomics Data
-

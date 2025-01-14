@@ -10,7 +10,7 @@ website:
   navbar:
     left:
       - href: TrifunctionalLipidProbesOverview.qmd
-        text: "Trifunctional Lipid Probes Primer"
+        text: "What are trifunctional lipid probes?"
 
     right:
       - href: about.qmd
@@ -19,13 +19,35 @@ website:
     search: true
     collapse-level: 2
     contents:
-      - href: study_survey.qmd
-        text: "Lipid interactomics study survey"
-          
+      - href: index.qmd
+        text: "Home"
+      - section: "Lipid Probes"
+        contents: 
+          - section: "Phospholipids"
+            contents:
+              - href: LipidProbe/PhosphatidicAcid.qmd
+                text: "Phosphatidic Acid"
+              - href: LipidProbe/Phosphatidylethanolamine.qmd
+                text: "Phosphatidylethanolamine"
+          - section: "Sphingolipids"
+            contents:
+              - href: LipidProbe/Sphinganine.qmd
+                text: "Sphinganine"
+              - href: LipidProbe/Sphingosine.qmd
+                text: "Sphingosine"
+          - section: "Fatty Acids"
+            contents:
+              - href: LipidProbe/FattyAcids.qmd
+                text: "Fatty Acids"
+          - section: "Glycerolipids"
+            contents:
+
       - section: "Individual Studies"
         contents:
+          - href: IndividualStudies/StudyOverview.qmd
+            text: "Overview"
           - href: IndividualStudies/AT_2025.qmd
-            text: "Thomas et al., 2025"
+            text: "Thomas et al. 2025"
           - href: IndividualStudies/SF_2024.qmd
             text: "Farley et al., 2024; A"
           - href: IndividualStudies/SF_2024_B.qmd
@@ -44,7 +66,7 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     mainfont: Charter
-    theme: Lux
+    theme: Yeti
     css: styles.css
     toc: true
     sidebar: true
