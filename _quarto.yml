@@ -29,6 +29,10 @@ website:
                 text: "Phosphatidic Acid"
               - href: LipidProbe/Phosphatidylethanolamine.qmd
                 text: "Phosphatidylethanolamine"
+          - section: "Glycerolipids"
+            contents:
+              - href: LipidProbe/Diacylglycerol.qmd
+                text: "Diacylglycerol"
           - section: "Sphingolipids"
             contents:
               - href: LipidProbe/Sphinganine.qmd

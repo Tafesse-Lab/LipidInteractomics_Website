@@ -32,6 +32,12 @@ Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes
 
 #### Cell line analyzed
 
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+
+#### Mass spectrometry quantification method
+
+16-channel Tandem Mass Tagging (TMT16)
+
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 

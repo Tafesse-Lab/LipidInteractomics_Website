@@ -83,6 +83,10 @@ Functionalized lipid probes are a critical new tool to interrogate the function 
 
 [Huh7](https://huh7.com){target="_blank"}
 
+#### Mass spectrometry quantification method
+
+16-channel Tandem Mass Tagging (TMT16)
+
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 

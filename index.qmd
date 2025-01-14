@@ -1,8 +1,47 @@
 ---
-title: "Lipid Interactomics Website"
+title: "The Lipid Interactome Repository"
+format: 
+  html:
+    embed-resources: false
+standalone: false
 ---
 
 A blurb about the objective of this site, maybe a gallery of images from select publications to put here.
 
-A site map with big buttons leading to each of the lipid classes.
 
+```{=html}
+<div style="text-align: center; margin: 20px;">
+    <a href="LipidProbe/PhosphatidicAcid.qmd" style="text-decoration: none;">
+        <button style="background-color: #3498db; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Phosphatidic Acid
+        </button>
+    </a>
+    <a href="LipidProbe/Phosphatidylethanolamine.qmd" style="text-decoration: none;">
+        <button style="background-color: #e74c3c; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Phosphatidylethanolamine
+        </button>
+    </a>
+		<br>
+		<a href="LipidProbe/Diacylglycerol.qmd" style="text-decoration: none;">
+        <button style="background-color: #3277a8; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Diacylglycerol
+        </button>
+    </a>
+		<br>
+    <a href="LipidProbe/Sphinganine.qmd" style="text-decoration: none;">
+        <button style="background-color: #2ecc71; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Sphinganine
+        </button>
+    </a>
+		<a href="LipidProbe/Sphingosine.qmd" style="text-decoration: none;">
+        <button style="background-color: #eba434; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Sphingosine
+        </button>
+    </a>
+		<a href="LipidProbe/FattyAcids.qmd" style="text-decoration: none;">
+        <button style="background-color: #ba34eb; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Fatty Acid
+        </button>
+    </a>
+</div>
+```
