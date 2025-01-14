@@ -15,12 +15,12 @@ Two lipid probes, PA and PE for a single cell line
 ## Study details
 
 
-#### Authors:
+#### Authors
 Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
 
 Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
-#### Journal:
+#### Journal
 Chemical Communications
 
 <https://doi.org/10.1039/D4CC03599B>{target="_blank"}

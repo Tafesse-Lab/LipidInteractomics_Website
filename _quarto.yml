@@ -56,6 +56,8 @@ website:
             text: "Farley et al., 2024; A"
           - href: IndividualStudies/SF_2024_B.qmd
             text: "Farley et al., 2024; B"
+          - href: IndividualStudies/DH_2017.qmd
+            text: "Höglinger et al., 2017"
 
 format:
   html:
@@ -70,7 +72,7 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     mainfont: Charter
-    theme: Yeti
+    theme: Materia
     css: styles.css
     toc: true
     sidebar: true
