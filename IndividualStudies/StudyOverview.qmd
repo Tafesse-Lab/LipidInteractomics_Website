@@ -1,5 +1,5 @@
 ---
-title: "Lipid interactomics study survey"
+title: "Overview of Interactomics Studies"
 format: 
   html:
     embed-resources: false

@@ -38,9 +38,16 @@ A blurb about the objective of this site, maybe a gallery of images from select 
             Sphingosine
         </button>
     </a>
-		<a href="LipidProbe/FattyAcids.qmd" style="text-decoration: none;">
+
+	<a href="LipidProbe/8-3_FattyAcid.qmd" style="text-decoration: none;">
         <button style="background-color: #ba34eb; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
-            Fatty Acid
+            8-3 Fatty Acid
+        </button>
+    </a>
+
+    <a href="LipidProbe/1-10_FattyAcid.qmd" style="text-decoration: none;">
+        <button style="background-color: #a83260; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            1-10 Fatty Acid
         </button>
     </a>
 </div>

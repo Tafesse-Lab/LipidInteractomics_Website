@@ -17,7 +17,7 @@ website:
         text: "About"
   sidebar:
     search: true
-    collapse-level: 2
+    collapse-level: 3
     contents:
       - href: index.qmd
         text: "Home"
@@ -41,13 +41,13 @@ website:
                 text: "Sphingosine"
           - section: "Fatty Acids"
             contents:
-              - href: LipidProbe/FattyAcids.qmd
-                text: "Fatty Acids"
+              - href: LipidProbe/8-3_FattyAcid.qmd
+                text: "8-3 Fatty Acid"
+              - href: LipidProbe/1-10_FattyAcid.qmd
+                text: "1-10 Fatty Acid"
 
-      - section: "Individual Studies"
+      - section: "IndividualStudies/StudyOverview.qmd"
         contents:
-          - href: IndividualStudies/StudyOverview.qmd
-            text: "Overview"
           - href: IndividualStudies/AT_2025.qmd
             text: "Thomas et al. 2025"
           - href: IndividualStudies/SF_2024.qmd
@@ -74,3 +74,4 @@ format:
     css: styles.css
     toc: true
     sidebar: true
+

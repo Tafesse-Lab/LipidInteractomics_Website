@@ -4,6 +4,30 @@ title: "Trifunctional Sphingosine"
 
 ## Structure
 
+:::{.callout collapse="true"}
+
+#### Option 1: Static png
+
+![](/LipidProbe/Structures/SphingosineStructure.png)
+
+:::
+
+:::{.callout collapse="true"}
+#### Option 2: pubchem viewer embed
+
+```{=html}
+<iframe 
+    src="https://pubchem.ncbi.nlm.nih.gov/compound/Sphingosine#section=3D-Conformer&fullscreen=true" 
+    width="100%" 
+    height="1000" 
+    style="border:none;">
+</iframe>
+
+```
+:::
+
+(This might not be possible if the structure is not published to pubchem, there may be other options for embedding, but I don't know them right now)
+
 ## Subcellular localization
 
 ## Protein interactome
