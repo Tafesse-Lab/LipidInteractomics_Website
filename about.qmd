@@ -3,3 +3,7 @@ title: "About"
 ---
 
 About this site
+
+Contact the site administrators for additional information about protocols, experimental design, and website feedback:
+
+(I am working on making a comment submission form which will send an email to a site admin -- something like ContactUs\@LipidInteractome.org)
