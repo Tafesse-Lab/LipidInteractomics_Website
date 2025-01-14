@@ -2,3 +2,10 @@
 title: "Trifunctional Phosphatidylethanolamine"
 ---
 
+
+## Structure
+
+## Subcellular localization
+
+## Protein interactome
+

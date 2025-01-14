@@ -43,8 +43,6 @@ website:
             contents:
               - href: LipidProbe/FattyAcids.qmd
                 text: "Fatty Acids"
-          - section: "Glycerolipids"
-            contents:
 
       - section: "Individual Studies"
         contents:

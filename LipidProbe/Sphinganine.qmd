@@ -1,3 +1,11 @@
 ---
 title: "Trifunctional sphinganine"
 ---
+
+
+## Structure
+
+## Subcellular localization
+
+## Protein interactome
+

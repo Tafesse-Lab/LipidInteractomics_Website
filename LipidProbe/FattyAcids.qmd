@@ -3,3 +3,10 @@ title: "Trifunctional Fatty Acid Analogs"
 ---
 
 Here I think it makes sense to list both in the same place? Then the diazirine can be discussed?
+
+## Structure
+
+## Subcellular localization
+
+## Protein interactome
+
