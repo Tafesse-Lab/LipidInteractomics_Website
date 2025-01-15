@@ -6,7 +6,7 @@ csl: nature.csl
 format-links: true
 
 website:
-  title: "Lipid Interactomics Repository"
+  title: "Lipid Interactome Repository"
   navbar:
     left:
       - href: TrifunctionalLipidProbesOverview.qmd
@@ -19,8 +19,6 @@ website:
     search: true
     collapse-level: 3
     contents:
-      - href: index.qmd
-        text: "Home"
       - section: "Lipid Probes"
         contents: 
           - section: "Phospholipids"
@@ -29,6 +27,12 @@ website:
                 text: "Phosphatidic Acid"
               - href: LipidProbe/Phosphatidylethanolamine.qmd
                 text: "Phosphatidylethanolamine"
+          - section: "Phosphatidylinositols"
+            contents:
+              - href: LipidProbe/PhosphatidylinositolBisphosphate.qmd
+                text: "PI(4,5)P~2~"
+              - href: LipidProbe/PhosphatidylinositolTrisphosphate.qmd
+                text: "PI(3,4,5)P~3~"
           - section: "Glycerolipids"
             contents:
               - href: LipidProbe/Diacylglycerol.qmd
@@ -65,12 +69,12 @@ format:
       desc-position: bottom
       loop: true
     grid:
-      sidebar-width: 300px
+      
       body-width: 900px
       margin-width: 300px
       gutter-width: 1.5rem
     mainfont: Charter
-    theme: Materia
+    theme: [Materia, theme_customizations.scss]
     css: styles.css
     toc: true
     sidebar: true

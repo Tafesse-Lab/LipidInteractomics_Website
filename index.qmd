@@ -21,6 +21,19 @@ A blurb about the objective of this site, maybe a gallery of images from select 
             Phosphatidylethanolamine
         </button>
     </a>
+
+    <a href="LipidProbe/PhosphatidylinositolBisphosphate.qmd" style="text-decoration: none;">
+        <button style="background-color: #a86532; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            PI(4,5)P~2~
+        </button>
+    </a>
+
+    <a href="LipidProbe/PhosphatidylinositolTrisphosphate.qmd" style="text-decoration: none;">
+        <button style="background-color: #8732a8; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            PI(3,4,5)P~3~
+        </button>
+    </a>
+
 		<br>
 		<a href="LipidProbe/Diacylglycerol.qmd" style="text-decoration: none;">
         <button style="background-color: #3277a8; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">

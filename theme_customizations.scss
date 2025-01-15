@@ -1,3 +1,9 @@
 /*-- scss:defaults --*/
 // Base document colors
-$sidebar-bg: #3275a8;
+//$sidebar-bg: #3275a8;
+
+/*-- scss:rules --*/
+h1 {
+  font-weight: bold;
+	font-size: 50
+}
