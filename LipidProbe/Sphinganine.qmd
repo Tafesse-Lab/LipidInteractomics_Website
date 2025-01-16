@@ -6,3 +6,158 @@ title: "Trifunctional sphinganine"
 
 ## Protein interactome
 
+### Cell background: Huh7
+
+::: {.callout-note collapse="true"}
+
+#### Study details
+
+##### Authors
+Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
+
+
+##### Journal
+ACS Chemical Biology
+
+<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+
+##### Abstract
+
+Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
+
+##### Lipid probes utilized
+
+##### Cell line analyzed
+
+[Huh7](https://huh7.com){target="_blank"}
+
+##### Mass spectrometry quantification method
+
+16-channel Tandem Mass Tagging (TMT16)
+
+##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+:::
+
+
+::: {.panel-tabset}
+
+```{r setup, echo=FALSE, warning=FALSE, include = FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+
+## Set up the source for the standardized ggplot styles
+source("ggplot_styles.R")
+
+
+#  SF_2024_data <- readr::read_csv("LipidProbe/DataSets/SF_ACS-Chem-Bio_2024_download.csv") |>
+#  	filter(LipidProbe == "Spa")
+
+# 	write.csv(SF_2024_data, "LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")
+
+# Opening the datatable for this page
+SF_2024_data <- readr::read_csv("DataSets/Spa_Huh7_SF_2024.csv") |>
+	filter(LipidProbe == "Spa")
+
+	
+
+# Organizing the hit annotations as factors
+SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+
+# Building an ID column to maintain the order on the x-axis
+ID <- c()
+for(i in 0:(nrow(SF_2024_data))){
+	ID[i] = i
+}
+
+
+# Applies the ID column to the Spa results
+SF_2024_ranked <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "Spa") |>
+	mutate(ID = ID) 
+
+```
+
+
+##### Volcano plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+VolcanoPlotStandardized(SF_2024_data)
+```
+:::
+
+##### Ranked order plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+RankedOrderPlotStandard(SF_2024_ranked)
+```
+:::
+
+
+##### MA Plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+MAStandard(SF_2024_data)
+
+```
+:::
+:::
+
+
+
+Check the boxes below to filter by significance thresholds.
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+SF_2024_data <- SF_2024_data |>
+  select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+          fdr = signif(fdr, digits = 3)) |>
+  arrange(hit_annotation) |>
+  arrange(LipidProbe)
+
+## Creates a reactive dataframe
+SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~hit_annotation)
+)
+
+## Displays the reactive dataframe
+datatable(SF_2024_data_reactive, 
+          options = list(pageLength = 10),
+                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
+:::
+
+
+{{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download.csv">}}
