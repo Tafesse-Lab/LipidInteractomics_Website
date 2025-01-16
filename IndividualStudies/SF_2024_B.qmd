@@ -25,8 +25,13 @@ library(htmltools)
 ## Opening the source file for the ggplot custom theme
 source("ggplot_styles.R")
 
-# Opening the datatable for this page
+
+# Opening the datatable for this page IN FINAL RENDER
 SF_2024_data <- readr::read_csv("DataTables/SF_Chem_Comm_2024_download.csv")
+
+# # # Opening the datatable for this page WHILE EDITING
+# SF_2024_data <- readr::read_csv("IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
+
 
 # Organizing the hit annotations as factors
 SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
@@ -92,26 +97,45 @@ Functionalized lipid probes are a critical new tool to interrogate the function 
 
 ## Data visualization
 
-#### Ranked-order Log2 Fold-change plots
-
-:::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
-
-RankedOrderPlotStandard(SF_2024_ranked)
-```
-:::
+::: {.panel-tabset}
 
 #### Volcano plots
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 VolcanoPlotStandardized(SF_2024_data)
 
 ```
 :::
+
+
+#### Ranked-order plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+RankedOrderPlotStandard(SF_2024_ranked)
+```
+:::
+
+
+#### MA Plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+MAStandard(SF_2024_data)
+
+```
+
+:::
+:::
+
+
 
 ## Enriched Proteins
 
@@ -123,6 +147,15 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 ```{r, echo=FALSE, warning=FALSE}
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
+
+
+SF_2024_data <- SF_2024_data |>
+  select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+          fdr = signif(fdr, digits = 3)) |>
+  arrange(hit_annotation) |>
+  arrange(LipidProbe)
 
 ## Creates a reactive dataframe
 SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
@@ -140,7 +173,7 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive, options = list(pageLength = 20))
+datatable(SF_2024_data_reactive, options = list(pageLength = 15))
 
 ```
 :::

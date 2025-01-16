@@ -25,38 +25,12 @@ library(htmltools)
 ## Opening the source file for the ggplot custom theme
 source("ggplot_styles.R")
 
-# Opening the datatable for this page
-SF_2024_data <- readr::read_csv("DataTables/SF_Chem_Comm_2024_download.csv")
+# Opening the datatable for this page WHILE TESTING
+# RM_2021_data <- readr::read_csv("IndividualStudies/DataTables/RM_Angewandte_2021_download.csv")
 
-# Organizing the hit annotations as factors
-SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+# Opening the datatable for this page WHILE RENDERING
+RM_2021_data <- readr::read_csv("DataTables/RM_Angewandte_2021_download.csv")
 
-# Organize the probes as factors
-SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
-
-#write.csv(SF_2024_data, "IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
-
-# Building an ID column to maintain the order on the x-axis
-ID <- c()
-for(i in 0:(nrow(SF_2024_data)/2)){
-	ID[i] = i
-}
-
-# Applies the ID column to the 1-10 FA results
-SF_2024_ranked_1_10_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "1-10 FA") |>
-	mutate(ID = ID) 
-
-# Applies the ID column to the 8-3 FA results
-SF_2024_ranked_8_3_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "8-3 FA") |>
-	mutate(ID = ID) 
-
-
-# Assembles the dataset to plot
-SF_2024_ranked <- rbind(SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
 ```
 
 ::: {.callout-note collapse="true"}
