@@ -121,9 +121,8 @@ MAStandard(SF_2024_data)
 
 ```
 :::
-:::
 
-
+##### Data
 
 Check the boxes below to filter by significance thresholds.
 
@@ -161,3 +160,5 @@ datatable(SF_2024_data_reactive,
 
 
 {{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download.csv">}}
+
+:::
