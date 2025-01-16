@@ -117,11 +117,11 @@
     ]
   },
   {
-    "objectID": "LipidProbe/1-10_FattyAcid.html#subcellular-localization",
-    "href": "LipidProbe/1-10_FattyAcid.html#subcellular-localization",
+    "objectID": "LipidProbe/1-10_FattyAcid.html#protein-interactome",
+    "href": "LipidProbe/1-10_FattyAcid.html#protein-interactome",
     "title": "Trifunctional 1-10 Fatty Acid",
-    "section": "Subcellular localization",
-    "text": "Subcellular localization",
+    "section": "Protein interactome",
+    "text": "Protein interactome\n\nHuh7 cells\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Lipid Probes",
@@ -130,11 +130,11 @@
     ]
   },
   {
-    "objectID": "LipidProbe/1-10_FattyAcid.html#protein-interactome",
-    "href": "LipidProbe/1-10_FattyAcid.html#protein-interactome",
+    "objectID": "LipidProbe/1-10_FattyAcid.html#enriched-hits",
+    "href": "LipidProbe/1-10_FattyAcid.html#enriched-hits",
     "title": "Trifunctional 1-10 Fatty Acid",
-    "section": "Protein interactome",
-    "text": "Protein interactome",
+    "section": "Enriched hits",
+    "text": "Enriched hits",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Lipid Probes",
@@ -154,14 +154,28 @@
     "href": "index.html",
     "title": "The Lipid Interactome Repository",
     "section": "",
-    "text": "A blurb about the objective of this site, maybe a gallery of images from select publications to put here.\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n        \n    \n        \n            Sphinganine\n        \n    \n        \n        \n            Sphingosine\n        \n    \n\n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid"
+    "text": "A blurb about the objective of this site, maybe a gallery of images from select publications to put here."
+  },
+  {
+    "objectID": "index.html#site-overview",
+    "href": "index.html#site-overview",
+    "title": "The Lipid Interactome Repository",
+    "section": "",
+    "text": "A blurb about the objective of this site, maybe a gallery of images from select publications to put here."
+  },
+  {
+    "objectID": "index.html#lipid-interactomes",
+    "href": "index.html#lipid-interactomes",
+    "title": "The Lipid Interactome Repository",
+    "section": "Lipid Interactomes",
+    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid"
   },
   {
     "objectID": "IndividualStudies/AT_2025.html",
     "href": "IndividualStudies/AT_2025.html",
     "title": "Thomas et al. 2025",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
@@ -205,68 +219,47 @@
     ]
   },
   {
-    "objectID": "IndividualStudies/DH_2017.html",
-    "href": "IndividualStudies/DH_2017.html",
-    "title": "Höglinger et al. 2017",
+    "objectID": "IndividualStudies/RM_2021.html",
+    "href": "IndividualStudies/RM_2021.html",
+    "title": "Muller et al. 2021",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\nCorrespondence: schulcar@ohsu.edu\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
+    "text": "Study details\n\n\n\n\n\n\n\nRainer Muller, Ana Kojic, Mevlut Citir, Carsten Schultz\n\n\n\nAngewandte Chemie\nhttps://doi.org/10.1002/anie.202103599\n\n\n\nWe synthesized the first multifunctionalized phosphoinositide polyphosphate derivatives featuring a photo-removable protecting group (“cage”), a photo-crosslinkable diazirine group, and a terminal alkyne group useful for click chemistry. We demonstrate that the lipid derivatives readily enter cells. After photo-crosslinking, cell fixation and fluorescent tagging via click chemistry, we determined the intracellular location of the lipid derivatives before and after uncaging of the lipids. We find that there is rapid trafficking of PI(3,4)P2 and PI(3,4,5)P3 derivatives to the plasma membrane, opening the intriguing possibility that there is active transport of these lipids involved. We employed the photo-crosslinking and click chemistry functions to analyze the proteome of PI(3,4,5)P3-binding proteins. From the latter, we validated by RNAi that the putative lipid binding proteins ATP11A and MPP6 are involved in the transport of PI(3,4,5)P3 to the plasma membrane.\n\n\n\nPI(3,4,5)P3\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
   },
   {
-    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
-    "href": "IndividualStudies/DH_2017.html#data-visualization",
-    "title": "Höglinger et al. 2017",
+    "objectID": "IndividualStudies/RM_2021.html#data-visualization",
+    "href": "IndividualStudies/RM_2021.html#data-visualization",
+    "title": "Muller et al. 2021",
     "section": "Data visualization",
     "text": "Data visualization\n\nHeat map\n\n\nVenn Diagram",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
   },
   {
-    "objectID": "IndividualStudies/DH_2017.html#data-download",
-    "href": "IndividualStudies/DH_2017.html#data-download",
-    "title": "Höglinger et al. 2017",
+    "objectID": "IndividualStudies/RM_2021.html#data-download",
+    "href": "IndividualStudies/RM_2021.html#data-download",
+    "title": "Muller et al. 2021",
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
-  },
-  {
-    "objectID": "MaintenanceInstructions.html",
-    "href": "MaintenanceInstructions.html",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#site-organization",
-    "href": "MaintenanceInstructions.html#site-organization",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#maintenance",
-    "href": "MaintenanceInstructions.html#maintenance",
-    "title": "Maintenance Instructions",
-    "section": "Maintenance",
-    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\nAny changes can then be pushed to the github repository; Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access. It will be TBD how GitHub ownership is transferred after I leave.\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
   },
   {
     "objectID": "IndividualStudies/SF_2024_B.html",
     "href": "IndividualStudies/SF_2024_B.html",
     "title": "Farley et al. 2024 B",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n\n\n\nChemical Communications\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.\n\n\n\n8-3 Fatty Acid\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
@@ -310,6 +303,63 @@
     ]
   },
   {
+    "objectID": "MaintenanceInstructions.html",
+    "href": "MaintenanceInstructions.html",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#site-organization",
+    "href": "MaintenanceInstructions.html#site-organization",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#maintenance",
+    "href": "MaintenanceInstructions.html#maintenance",
+    "title": "Maintenance Instructions",
+    "section": "Maintenance",
+    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\nAny changes can then be pushed to the github repository; Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access. It will be TBD how GitHub ownership is transferred after I leave.\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
+  },
+  {
+    "objectID": "IndividualStudies/DH_2017.html",
+    "href": "IndividualStudies/DH_2017.html",
+    "title": "Höglinger et al. 2017",
+    "section": "",
+    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
+    "crumbs": [
+      "What are trifunctional lipid probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
+    "href": "IndividualStudies/DH_2017.html#data-visualization",
+    "title": "Höglinger et al. 2017",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\nVenn Diagram",
+    "crumbs": [
+      "What are trifunctional lipid probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/DH_2017.html#data-download",
+    "href": "IndividualStudies/DH_2017.html#data-download",
+    "title": "Höglinger et al. 2017",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "What are trifunctional lipid probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
+  },
+  {
     "objectID": "IndividualStudies/StudyOverview.html",
     "href": "IndividualStudies/StudyOverview.html",
     "title": "Overview of Interactomics Studies",
@@ -325,7 +375,7 @@
     "href": "IndividualStudies/SF_2024.html",
     "title": "Farley et al. 2024",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*\nCorrespondence: schulcar@ohsu.edu\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
@@ -429,11 +479,11 @@
     ]
   },
   {
-    "objectID": "LipidProbe/8-3_FattyAcid.html#subcellular-localization",
-    "href": "LipidProbe/8-3_FattyAcid.html#subcellular-localization",
+    "objectID": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
+    "href": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
     "title": "Trifunctional 8-3 Fatty Acid",
-    "section": "Subcellular localization",
-    "text": "Subcellular localization",
+    "section": "Protein interactome",
+    "text": "Protein interactome\n\nHuh7 cells\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Lipid Probes",
@@ -442,11 +492,11 @@
     ]
   },
   {
-    "objectID": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
-    "href": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
+    "objectID": "LipidProbe/8-3_FattyAcid.html#enriched-hits",
+    "href": "LipidProbe/8-3_FattyAcid.html#enriched-hits",
     "title": "Trifunctional 8-3 Fatty Acid",
-    "section": "Protein interactome",
-    "text": "Protein interactome",
+    "section": "Enriched hits",
+    "text": "Enriched hits",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Lipid Probes",

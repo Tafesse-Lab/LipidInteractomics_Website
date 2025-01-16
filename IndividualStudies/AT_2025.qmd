@@ -18,8 +18,6 @@ Two lipid probes, PA and PE for a single cell line
 #### Authors
 Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
 
-Correspondence: <schulcar@ohsu.edu>{target="_blank"}
-
 #### Journal
 Chemical Communications
 

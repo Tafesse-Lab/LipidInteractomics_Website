@@ -1,0 +1,105 @@
+---
+title: "Muller et al. 2021"
+subtitle: "Synthesis and Cellular Labeling of Multifunctional Phosphatidylinositol *Bis*- and *Tris*phosphate Derivatives"
+format: 
+  html:
+    embed-resources: false
+standalone: false
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+library(htmltools)
+
+## Opening the source file for the ggplot custom theme
+source("ggplot_styles.R")
+
+# Opening the datatable for this page
+SF_2024_data <- readr::read_csv("DataTables/SF_Chem_Comm_2024_download.csv")
+
+# Organizing the hit annotations as factors
+SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+# Organize the probes as factors
+SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
+
+#write.csv(SF_2024_data, "IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
+
+# Building an ID column to maintain the order on the x-axis
+ID <- c()
+for(i in 0:(nrow(SF_2024_data)/2)){
+	ID[i] = i
+}
+
+# Applies the ID column to the 1-10 FA results
+SF_2024_ranked_1_10_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "1-10 FA") |>
+	mutate(ID = ID) 
+
+# Applies the ID column to the 8-3 FA results
+SF_2024_ranked_8_3_FA <- SF_2024_data |>
+    arrange(logFC) |>
+	filter(LipidProbe == "8-3 FA") |>
+	mutate(ID = ID) 
+
+
+# Assembles the dataset to plot
+SF_2024_ranked <- rbind(SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
+```
+
+::: {.callout-note collapse="true"}
+
+## Study details
+
+#### Authors
+Rainer Muller, Ana Kojic, Mevlut Citir, Carsten Schultz
+
+#### Journal
+Angewandte Chemie
+
+<https://doi.org/10.1002/anie.202103599>{target="_blank"}
+
+#### Abstract
+
+We synthesized the first multifunctionalized phosphoinositide polyphosphate derivatives featuring a photo-removable protecting group (“cage”), a photo-crosslinkable diazirine group, and a terminal alkyne group useful for click chemistry. We demonstrate that the lipid derivatives readily enter cells. After photo-crosslinking, cell fixation and fluorescent tagging via click chemistry, we determined the intracellular location of the lipid derivatives before and after uncaging of the lipids. We find that there is rapid trafficking of PI(3,4)P2 and PI(3,4,5)P3 derivatives to the plasma membrane, opening the intriguing possibility that there is active transport of these lipids involved. We employed the photo-crosslinking and click chemistry functions to analyze the proteome of PI(3,4,5)P3-binding proteins. From the latter, we validated by RNAi that the putative lipid binding proteins ATP11A and MPP6 are involved in the transport of PI(3,4,5)P3 to the plasma membrane.
+
+#### Lipid probes utilized
+
+[PI(3,4,5)P~3~](/LipidProbe/PhosphatidylinositolTrisphosphate.qmd)
+
+#### Cell line analyzed
+
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+
+#### Mass spectrometry quantification method
+
+Peptide spectral counting
+
+#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+:::
+
+
+## Data visualization
+
+#### Heat map
+
+#### Venn Diagram
+
+## Data download
+
+
+{{< downloadthis DataTables/RM_Angewandte_2021_download.csv dname="RM_Angewandte_2021">}}
+
+

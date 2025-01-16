@@ -64,9 +64,7 @@ SF_2024_ranked <- rbind(SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
 ## Study details
 
 #### Authors
-Scotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz*
-
-Correspondence: <schulcar@ohsu.edu>{target="_blank"}
+Scotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz
 
 #### Journal
 Chemical Communications
@@ -78,6 +76,8 @@ Chemical Communications
 Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.
 
 #### Lipid probes utilized
+
+[8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd)
 
 #### Cell line analyzed
 

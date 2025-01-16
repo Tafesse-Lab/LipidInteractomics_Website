@@ -62,9 +62,8 @@ SF_2024_ranked <- rbind(SF_2024_ranked_Sph, SF_2024_ranked_Spa)
 ## Study details
 
 #### Authors
-Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz*
+Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
 
-Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
 #### Journal
 ACS Chemical Biology

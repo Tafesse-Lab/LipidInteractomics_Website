@@ -3,9 +3,54 @@ title: "Trifunctional 1-10 Fatty Acid"
 ---
 
 
-## Structure
+<!-- R setup, reading dataframes and minor data wrangling -->
+```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+library(htmltools)
 
-## Subcellular localization
+## Opening the source file for the ggplot custom theme
+source("ggplot_styles.R")
+
+
+# Opening the datatable for this page
+SF_2024_data <- readr::read_csv("DataSets/1-10_FA_Huh7_SF_2024.csv") |>
+	filter(LipidProbe == "1-10 FA")
+
+	
+
+# Organizing the hit annotations as factors
+SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+```
+
+## Structure
 
 ## Protein interactome
 
+::: {.panel-tabset}
+
+## Huh7 cells
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd)"
+VolcanoPlotStandardized(SF_2024_data)
+```
+
+:::
+
+## Enriched hits
+
+```{r, echo=FALSE}
+
+```

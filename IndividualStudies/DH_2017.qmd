@@ -6,6 +6,37 @@ format:
     embed-resources: false
 standalone: false
 ---
+<!-- R setup, reading data tables, wrangling data -->
+```{r setup, echo=FALSE, include=FALSE}
+
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+library(stringr)
+library(pheatmap)
+
+DH_2017_data <- read.csv("DataTables/DH_PNAS_2017_download.csv") |>
+  mutate(gene_name = str_extract(Description, "GN=([^\\s]+)") |> str_remove("GN=")) |>
+  mutate(Species = str_extract(Description, "OS=([^=]+?)\\sGN=") |> str_remove("OS=") |> str_remove("GN=")) |>
+  filter(Species == "Homo sapiens ") |>
+  mutate(PSM_Sph = (PSM_Sph1 + PSM_Sph2) / 2,
+         PSM_FA = (PSM_FA1 + PSM_FA2) / 2,
+         PSM_DAG = (PSM_DAG1 + PSM_DAG2) /2) |>
+  select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
+  
+  glimpse() 
+
+```
+
 
 ::: {.callout-note collapse="true"}
 
@@ -14,8 +45,6 @@ standalone: false
 #### Authors
 
 Doris Höglinger, André Nadler,  Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz
-
-Correspondence: <schulcar@ohsu.edu>{target="_blank"}
 
 #### Journal
 
@@ -48,6 +77,38 @@ Peptide spectral counting
 ## Data visualization
 
 #### Heat map
+
+```{r, echo=FALSE, warning=FALSE, fig.height=15}
+
+DH_2017_data_long <- read.csv("DataTables/DH_PNAS_2017_long.csv")
+
+DH_2017_data_long$name <- factor(pull(DH_2017_data_long, name), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
+
+m <- list(l=50, r = 50, b= 100, pad = 4)
+
+heatmap <- DH_2017_data_long |>
+  ggplot(aes(y = id, x = name)) +
+  theme(panel.border = element_rect(color = NA, fill = "grey25")) +
+  geom_tile(aes(fill = value, text = paste0("Gene name: ", gene_name, '\n', "Lipid Probe:", name, "\n", "PSM: ", value))) +
+  scale_fill_gradientn(colors = c("grey95", "purple", "orange"),
+  values = scales::rescale(c(0, 10, 25))) +
+  ylab("Gene") +
+  xlab("Lipid Probe") +
+  theme_minimal() +
+  theme(text = element_text(family = "serif")) +
+  
+  theme(legend.title = element_text(size = 12, face = "bold")) +
+  theme(axis.title = element_text(size = 12, face = "bold")) +
+  theme(legend.text = element_text(size = 12))
+
+ggplotly(heatmap,
+        tooltip = c("text", dynamicTicks = TRUE),
+        hovermode = "closest",
+        autosize = T,
+        margin = m) |>
+  layout(showlegend = FALSE)
+
+```
 
 #### Venn Diagram
 
