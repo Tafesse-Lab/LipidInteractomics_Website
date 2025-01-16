@@ -10,8 +10,6 @@ title: "Trifunctional Sphingosine"
 ![](/LipidProbe/Structures/SphingosineStructure.png)
 
 
-(This might not be possible if the structure is not published to pubchem, there may be other options for embedding, but I don't know them right now)
-
 ## Subcellular localization
 
 ## Protein interactome

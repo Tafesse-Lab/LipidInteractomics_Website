@@ -5,7 +5,165 @@ title: "Trifunctional Phosphatidylethanolamine"
 
 ## Structure
 
-## Subcellular localization
+![](Structures/PhosphatidylethanolamineStructure.png)
 
 ## Protein interactome
 
+### Cell background: HeLa
+
+::: {.callout-note collapse="true"}
+
+#### Study details
+
+
+##### Authors
+Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
+
+##### Journal
+Chemical Communications
+
+<https://doi.org/10.1039/D4CC03599B>{target="_blank"}
+
+##### Abstract
+Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
+
+##### Lipid probes utilized
+
+##### Cell line analyzed
+
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+
+##### Mass spectrometry quantification method
+
+16-channel Tandem Mass Tagging (TMT16)
+
+##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+:::
+
+#### Data visualization
+ 
+```{r setup, echo=FALSE, include=FALSE}
+
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+
+## Set up the source for the standardized ggplot styles
+source("ggplot_styles.R")
+```
+
+```{r, echo=FALSE, include=FALSE}
+
+# Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
+# Read the data to a df
+
+# AT_2025_Long <- readr::read_csv("LipidProbe/DataSets/AT_ChemicalCommunications_2025_download.csv") |>
+# 	filter(LipidProbe == "PE")
+
+# write.csv(AT_2025_Long, "LipidProbe/DataSets/PE_HeLa_AT_2025.csv")
+
+
+AT_2025_Long <- readr::read_csv("DataSets/PE_HeLa_AT_2025.csv") 
+
+# Organize the hit annotations as factors
+AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
+
+# Building an ID column to maintain the order on the x-axis
+ID <- c()
+for(i in 0:(nrow(AT_2025_Long))){
+	ID[i] = i
+}
+
+# Applies the ID column to the PE results
+AT_2025_ranked <- AT_2025_Long |>
+    arrange(logFC) |>
+	filter(LipidProbe == "PE") |>
+	mutate(ID = ID) 
+
+```
+
+::: {.panel-tabset}
+
+##### Volcano plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+VolcanoPlotStandardized(AT_2025_Long)
+
+```
+:::
+
+
+##### Ranked-order plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+RankedOrderPlotStandard(AT_2025_ranked)
+```
+:::
+
+
+##### MA Plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+print("Data not yet provided.")
+
+```
+
+:::
+:::
+
+
+
+#### Enriched proteins
+
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
+:::{.border}
+```{r, echo=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+## Creates a reactive dataframe
+AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
+
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = AT_2025_Long_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = AT_2025_Long_reactive,
+                  group = ~hit_annotation)
+)
+
+?crosstalk::filter_checkbox()
+
+## Displays the reactive dataframe
+datatable(AT_2025_Long_reactive, options = list(pageLength = 10))
+
+```
+:::
+
+#### Data download
+
+{{< downloadthis DataSets/PE_HeLa_AT_2025.csv dname="PE_HeLa_AT_ChemComm_download.csv">}}
