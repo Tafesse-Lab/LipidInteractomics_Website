@@ -80,26 +80,29 @@ Peptide spectral counting
 
 ```{r, echo=FALSE, warning=FALSE, fig.height=15}
 
-DH_2017_data_long <- read.csv("DataTables/DH_PNAS_2017_long.csv")
+DH_2017_data_long <- read.csv("DataTables/DH_PNAS_2017_long.csv") |>
+  mutate(PSM = value, sample = name) |>
+  group_by(gene_name, sample) |>
+  summarise(PSM = mean(PSM, na.rm = TRUE), .groups = "drop") |>
+  distinct()
 
-DH_2017_data_long$name <- factor(pull(DH_2017_data_long, name), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
-
-m <- list(l=50, r = 50, b= 100, pad = 4)
+DH_2017_data_long$sample <- factor(pull(DH_2017_data_long, sample), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
 
 heatmap <- DH_2017_data_long |>
-  ggplot(aes(y = id, x = name)) +
+  ggplot(aes(y = gene_name, x = sample)) +
   theme(panel.border = element_rect(color = NA, fill = "grey25")) +
-  geom_tile(aes(fill = value, text = paste0("Gene name: ", gene_name, '\n', "Lipid Probe:", name, "\n", "PSM: ", value))) +
+  geom_tile(aes(fill = PSM, text = paste0("Gene name: ", gene_name, '\n', "Lipid Probe:", sample, "\n", "PSM: ", PSM))) +
   scale_fill_gradientn(colors = c("grey95", "purple", "orange"),
   values = scales::rescale(c(0, 10, 25))) +
   ylab("Gene") +
   xlab("Lipid Probe") +
   theme_minimal() +
   theme(text = element_text(family = "serif")) +
-  
   theme(legend.title = element_text(size = 12, face = "bold")) +
   theme(axis.title = element_text(size = 12, face = "bold")) +
   theme(legend.text = element_text(size = 12))
+
+m <- list(l=50, r = 50, b= 100, pad = 4)
 
 ggplotly(heatmap,
         tooltip = c("text", dynamicTicks = TRUE),
