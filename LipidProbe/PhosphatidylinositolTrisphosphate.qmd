@@ -5,5 +5,10 @@ subtitle: "PI(3,4,5)P~3~"
 
 ## Structure
 
+
+:::{.border}
+![](/LipidProbe/Structures/PIP3_Structure.png)
+:::
+
 ## Protein interactome
 

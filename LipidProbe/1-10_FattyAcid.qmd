@@ -56,50 +56,54 @@ SF_2024_ranked <- SF_2024_data |>
 
 ## Structure
 
+:::{.border}
+![](/LipidProbe/Structures/1-10_FattyAcid_Structure.png)
+:::
+
 ## Protein interactome
 
-### Cell background: HeLa
+### Cell background: Huh7
 
 
 ::: {.callout-note collapse="true"}
 
-### Study details
+#### Study details
 
-#### Authors
+##### Authors
 Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
 
 
-#### Journal
+##### Journal
 ACS Chemical Biology
 
 <https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
 
-#### Abstract
+##### Abstract
 
 Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
 
-#### Lipid probes utilized
+##### Lipid probes utilized
 
 1-10 Fatty acid
 
 8-3 Fatty acid
 
-#### Cell line analyzed
+##### Cell line analyzed
 
 [Huh7](https://huh7.com){target="_blank"}
 
-#### Mass spectrometry quantification method
+##### Mass spectrometry quantification method
 
 16-channel Tandem Mass Tagging (TMT16)
 
-#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
 
 
-::: {.panel-tabset}
+:::: {.panel-tabset}
 
-## Volcano plot
+##### Volcano plot
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
@@ -109,7 +113,7 @@ VolcanoPlotStandardized(SF_2024_data)
 ```
 :::
 
-## Ranked order plot
+##### Ranked order plot
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
@@ -120,7 +124,7 @@ RankedOrderPlotStandard(SF_2024_ranked)
 :::
 
 
-## MA Plots
+##### MA Plots
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
@@ -130,11 +134,9 @@ MAStandard(SF_2024_data)
 
 ```
 :::
-:::
 
 
-
-## Enriched hits
+##### Data
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
@@ -163,13 +165,14 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(SF_2024_data_reactive, 
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
 
 ```
 :::
 
-## Data download
 
-{{< downloadthis DataSets/1-10_FA_Huh7_SF_2024.csv dname="1-10_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
+{{< downloadthis DataSets/1-10_FA_Huh7_SF_2024.csv dname="1-10_FA_Huh7_SF_ACS-Chem-Bio_2024.csv">}}
 
+::::

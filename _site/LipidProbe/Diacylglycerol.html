@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -301,8 +301,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#structure" id="toc-structure" class="nav-link active" data-scroll-target="#structure">Structure</a></li>
-  <li><a href="#subcellular-localization" id="toc-subcellular-localization" class="nav-link" data-scroll-target="#subcellular-localization">Subcellular localization</a></li>
-  <li><a href="#protein-interactome" id="toc-protein-interactome" class="nav-link" data-scroll-target="#protein-interactome">Protein interactome</a></li>
+  <li><a href="#protein-interactome" id="toc-protein-interactome" class="nav-link" data-scroll-target="#protein-interactome">Protein interactome</a>
+  <ul class="collapse">
+  <li><a href="#cell-background-hela" id="toc-cell-background-hela" class="nav-link" data-scroll-target="#cell-background-hela">Cell background: HeLa</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -330,14 +332,59 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="structure" class="level2">
 <h2 class="anchored" data-anchor-id="structure">Structure</h2>
-</section>
-<section id="subcellular-localization" class="level2">
-<h2 class="anchored" data-anchor-id="subcellular-localization">Subcellular localization</h2>
+<div class="border">
+
+</div>
 </section>
 <section id="protein-interactome" class="level2">
 <h2 class="anchored" data-anchor-id="protein-interactome">Protein interactome</h2>
+<section id="cell-background-hela" class="level3">
+<h3 class="anchored" data-anchor-id="cell-background-hela">Cell background: HeLa</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Study details
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="authors" class="level4">
+<h4 class="anchored" data-anchor-id="authors">Authors</h4>
+<p>Doris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz</p>
+</section>
+<section id="journal" class="level4">
+<h4 class="anchored" data-anchor-id="journal">Journal</h4>
+<p>PNAS</p>
+<p><a href="https://doi.org/10.1073/pnas.1611096114" target="_blank">https://doi.org/10.1073/pnas.1611096114</a></p>
+</section>
+<section id="abstract" class="level4">
+<h4 class="anchored" data-anchor-id="abstract">Abstract</h4>
+<p>Lipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.</p>
+</section>
+<section id="lipid-probes-utilized" class="level4">
+<h4 class="anchored" data-anchor-id="lipid-probes-utilized">Lipid probes utilized</h4>
+<p>Sphinganine</p>
+<p>Diacylglycerol</p>
+<p>8-3 Fatty acid</p>
+</section>
+<section id="cell-line-analyzed" class="level4">
+<h4 class="anchored" data-anchor-id="cell-line-analyzed">Cell line analyzed</h4>
+<p><a href="https://www.atcc.org/products/ccl-2" target="_blank">HeLa</a></p>
+</section>
+<section id="mass-spectrometry-quantification-method" class="level4">
+<h4 class="anchored" data-anchor-id="mass-spectrometry-quantification-method">Mass spectrometry quantification method</h4>
+<p>Peptide spectral counting</p>
+</section>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

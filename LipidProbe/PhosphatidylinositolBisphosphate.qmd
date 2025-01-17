@@ -5,5 +5,9 @@ subtitle: "PI(4,5)P~2~"
 
 ## Structure
 
+:::{.border}
+![](/LipidProbe/Structures/PIP2_Structure.png)
+:::
+
 ## Protein interactome
 

@@ -5,7 +5,9 @@ title: "Trifunctional Phosphatidylethanolamine"
 
 ## Structure
 
+:::{.border}
 ![](Structures/PhosphatidylethanolamineStructure.png)
+:::
 
 ## Protein interactome
 
@@ -116,7 +118,7 @@ RankedOrderPlotStandard(AT_2025_ranked)
 :::
 
 
-##### MA Plots
+##### MA Plot
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
@@ -127,11 +129,10 @@ print("Data not yet provided.")
 ```
 
 :::
-:::
 
 
 
-#### Enriched proteins
+##### Data
 
 Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
 
@@ -140,30 +141,34 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
+AT_2025_Long <- AT_2025_Long |>
+  select(gene_name, hit_annotation, logFC, pvalue) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3)) |>
+  arrange(hit_annotation)
+  
 ## Creates a reactive dataframe
 AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
 
 
 htmltools::tags$div(
   class = "filter-container",
-  filter_checkbox(id = "LipidProbe",
-                  label = "Lipid probe in pulldown:", 
-                  sharedData = AT_2025_Long_reactive,
-                  group = ~LipidProbe),
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
                   sharedData = AT_2025_Long_reactive,
-                  group = ~hit_annotation)
+                  group = ~hit_annotation,
+                  inline="true")
 )
 
 ?crosstalk::filter_checkbox()
 
 ## Displays the reactive dataframe
-datatable(AT_2025_Long_reactive, options = list(pageLength = 10))
-
+datatable(AT_2025_Long_reactive,
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+          options = list(pageLength = 10))
 ```
 :::
 
-#### Data download
-
 {{< downloadthis DataSets/PE_HeLa_AT_2025.csv dname="PE_HeLa_AT_ChemComm_download.csv">}}
+
+:::

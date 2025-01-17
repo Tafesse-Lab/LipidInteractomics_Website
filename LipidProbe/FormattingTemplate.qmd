@@ -1,0 +1,230 @@
+---
+title: "Formatting Template"
+subtitle: "HTML page of individual lipid probe data"
+---
+
+## Structure
+
+:::{.border}
+![]()
+:::
+
+## Protein interactome
+
+### Cell background: ???
+
+<!-- Author information likely assembled in the relevant study page as well -->
+:::: {.callout-note collapse="true"}
+
+#### Study details
+
+##### Authors
+
+##### Journal
+
+##### Abstract
+
+##### Lipid probes utilized
+
+##### Cell line analyzed
+
+##### Mass spectrometry quantification method
+
+::::
+
+<!-- Below is the default organization of the tabset with the standard Per/Frank TMT16 ratiometric data structure -->
+
+::::{.panel-tabset}
+
+<!-- R setup, reading dataframes and minor data wrangling -->
+```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(emojifont)
+library(gt)
+library(crosstalk)
+library(DT)
+library(htmltools)
+
+## Opening the source file for the ggplot custom theme
+source("ggplot_styles.R")
+
+# # Opening the datatable for this page
+# data <- readr::read_csv("/path/to/data")
+
+# # Organizing the hit annotations as factors
+# data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+# # Building an ID column to maintain the order on the x-axis
+# ID <- c()
+# for(i in 0:(nrow(data))){
+# 	ID[i] = i
+# }
+
+# # Applies the ID column to the Spa results
+# data_ranked <- data |>
+#     arrange(logFC) |>
+# 	filter(LipidProbe == "1-10 FA") |>
+# 	mutate(ID = ID) 
+
+```
+
+##### Volcano plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: ""
+
+# VolcanoPlotStandardized(data)
+```
+:::
+
+##### Ranked order plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: ""
+
+#RankedOrderPlotStandard(data)
+```
+:::
+
+##### MA plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: ""
+
+#MAStandard(data)
+
+```
+:::
+
+
+##### Data
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+# data <- data |>
+#   select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+#   mutate(logFC = signif(logFC, digits=3),
+#           pvalue = signif(pvalue, digits=3),
+#           fdr = signif(fdr, digits = 3)) |>
+#   arrange(hit_annotation) |>
+#   arrange(LipidProbe)
+
+## Creates a reactive dataframe
+# data_reactive <- crosstalk::SharedData$new(data)
+
+# htmltools::tags$div(
+#   class = "filter-container",
+#   filter_checkbox(id = "hit_annotation",
+#                   label = "Enrichment criteria:", 
+#                   sharedData = data_reactive,
+#                   group = ~hit_annotation,
+# 									inline=TRUE)
+# )
+
+# ## Displays the reactive dataframe
+# datatable(data_reactive, 
+#           options = list(pageLength = 10),
+#                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
+:::
+
+
+{{< downloadthis /path/to/file dname="filename.csv">}}
+
+::::
+
+<!-- And here is the default organization of a heatmap-based visualization -->
+
+
+### Cell background: ???
+
+
+<!-- Author information likely assembled in the relevant study page as well -->
+
+:::: {.callout-note collapse="true"}
+
+#### Study details
+
+##### Authors
+
+##### Journal
+
+##### Abstract
+
+##### Lipid probes utilized
+
+##### Cell line analyzed
+
+##### Mass spectrometry quantification method
+
+::::
+
+
+::::{.panel-tabset}
+
+<!-- R chunk, reading dataframes and minor data wrangling -->
+```{r, echo=FALSE, include=FALSE}
+
+```
+
+
+##### Heatmap
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: ""
+
+#RankedOrderPlotStandard(data)
+```
+:::
+
+
+##### Data
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+# data <- data |>
+#   select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+#   mutate(logFC = signif(logFC, digits=3),
+#           pvalue = signif(pvalue, digits=3),
+#           fdr = signif(fdr, digits = 3)) |>
+#   arrange(hit_annotation) |>
+#   arrange(LipidProbe)
+
+## Creates a reactive dataframe
+# data_reactive <- crosstalk::SharedData$new(data)
+
+# htmltools::tags$div(
+#   class = "filter-container",
+#   filter_checkbox(id = "hit_annotation",
+#                   label = "Enrichment criteria:", 
+#                   sharedData = data_reactive,
+#                   group = ~hit_annotation,
+# 									inline=TRUE)
+# )
+
+# ## Displays the reactive dataframe
+# datatable(data_reactive, 
+#           options = list(pageLength = 10),
+#                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
+:::
+
+::::

@@ -55,6 +55,10 @@ SF_2024_ranked <- SF_2024_data |>
 
 ## Structure
 
+:::{.border}
+![](/LipidProbe/Structures/8-3_FattyAcid_Structure.png)
+:::
+
 ## Protein interactome
 
 ### Cell background: Huh7
@@ -94,8 +98,7 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 ##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
-
-::: {.panel-tabset}
+:::: {.panel-tabset}
 
 ##### Volcano plot
 
@@ -122,41 +125,75 @@ RankedOrderPlotStandard(SF_2024_ranked)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+#| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
 
 MAStandard(SF_2024_data)
 
 ```
 :::
+
+##### Data
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+SF_2024_data <- SF_2024_data |>
+  select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+          fdr = signif(fdr, digits = 3)) |>
+  arrange(hit_annotation) |>
+  arrange(LipidProbe)
+
+## Creates a reactive dataframe
+SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = SF_2024_data_reactive,
+                  group = ~hit_annotation,
+									inline=TRUE)
+)
+
+## Displays the reactive dataframe
+datatable(SF_2024_data_reactive,
+				  caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+          options = list(pageLength = 10),
+                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
 :::
 
+{{< downloadthis DataSets/8-3_FA_Huh7_SF_2024.csv dname="8-3_FA_Huh7_SF_ACS-Chem-Bio_2024.csv">}}
 
-#### Huh7 Data download
-
-{{< downloadthis DataSets/8-3_FA_Huh7_SF_2024.csv dname="8-3_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
-
+::::
 
 ### Cell background: HeLa
 
-::: {.callout-note collapse="true"}
+:::: {.callout-note collapse="true"}
 
-## Study details
+#### Study details
 
-#### Authors
+##### Authors
 
 Doris Höglinger, André Nadler,  Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz
 
-#### Journal
+##### Journal
 
 PNAS
 
 <https://doi.org/10.1073/pnas.1611096114>{target="_blank"}
 
-#### Abstract
+##### Abstract
 
 Lipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.
 
-#### Lipid probes utilized
+##### Lipid probes utilized
 
 Sphinganine
 
@@ -164,12 +201,12 @@ Diacylglycerol
 
 8-3 Fatty acid
 
-#### Cell line analyzed
+##### Cell line analyzed
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
 
-#### Mass spectrometry quantification method
+##### Mass spectrometry quantification method
 
 Peptide spectral counting
 
-:::
+::::
