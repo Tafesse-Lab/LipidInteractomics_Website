@@ -86,120 +86,88 @@
     "text": "I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here – but I think it would be nice to have a novel description with figures for this site.\nI have a few example figures, but I am open to using whichever figures seem best – if that is a new figure, I’ll need guidance on what it should look like.\n\n\n\n(Here’s an example of what references would look like on the site:1–3)\n\n\n\n\nReferences\n\n1. Thomas, A. et al. Trifunctional lipid derivatives: PE’s mitochondrial interactome. Chem. Commun. 10.1039.D4CC03599B (2025) doi:10.1039/D4CC03599B.\n\n\n2. Schultz, C., Farley, S. E. & Tafesse, F. G. “Flash & Click”: Multifunctionalized Lipid Derivatives as Tools To Study Viral Infections. J. Am. Chem. Soc. 144, 13987–13995 (2022).\n\n\n3. Schultz, C. Chemical Tools for Lipid Cell Biology. Acc. Chem. Res. 56, 1168–1177 (2023)."
   },
   {
-    "objectID": "IndividualStudies/SF_2024.html",
-    "href": "IndividualStudies/SF_2024.html",
-    "title": "Farley et al. 2024",
+    "objectID": "IndividualStudies/AT_2025.html",
+    "href": "IndividualStudies/AT_2025.html",
+    "title": "Thomas et al. 2025",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
+      "Thomas et al. 2025"
     ]
   },
   {
-    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
-    "href": "IndividualStudies/SF_2024.html#data-visualization",
-    "title": "Farley et al. 2024",
+    "objectID": "IndividualStudies/AT_2025.html#data-visualization",
+    "href": "IndividualStudies/AT_2025.html#data-visualization",
+    "title": "Thomas et al. 2025",
     "section": "Data visualization",
-    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nMA plots",
+    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
+      "Thomas et al. 2025"
     ]
   },
   {
-    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "title": "Farley et al. 2024",
-    "section": "Enriched Proteins",
-    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSph\n\n\n\n\n\nSpa\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "objectID": "IndividualStudies/AT_2025.html#enriched-proteins",
+    "href": "IndividualStudies/AT_2025.html#enriched-proteins",
+    "title": "Thomas et al. 2025",
+    "section": "Enriched proteins",
+    "text": "Enriched proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
+      "Thomas et al. 2025"
     ]
   },
   {
-    "objectID": "IndividualStudies/SF_2024.html#data-download",
-    "href": "IndividualStudies/SF_2024.html#data-download",
-    "title": "Farley et al. 2024",
+    "objectID": "IndividualStudies/AT_2025.html#data-download",
+    "href": "IndividualStudies/AT_2025.html#data-download",
+    "title": "Thomas et al. 2025",
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
+      "Thomas et al. 2025"
     ]
   },
   {
-    "objectID": "IndividualStudies/StudyOverview.html",
-    "href": "IndividualStudies/StudyOverview.html",
-    "title": "Overview of Interactomics Studies",
+    "objectID": "IndividualStudies/RM_2021.html",
+    "href": "IndividualStudies/RM_2021.html",
+    "title": "Muller et al. 2021",
     "section": "",
-    "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.",
-    "crumbs": [
-      "What are trifunctional lipid probes?",
-      "Overview of Interactomics Studies"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/DH_2017.html",
-    "href": "IndividualStudies/DH_2017.html",
-    "title": "Höglinger et al. 2017",
-    "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
+    "text": "Study details\n\n\n\n\n\n\n\nRainer Muller, Ana Kojic, Mevlut Citir, Carsten Schultz\n\n\n\nAngewandte Chemie\nhttps://doi.org/10.1002/anie.202103599\n\n\n\nWe synthesized the first multifunctionalized phosphoinositide polyphosphate derivatives featuring a photo-removable protecting group (“cage”), a photo-crosslinkable diazirine group, and a terminal alkyne group useful for click chemistry. We demonstrate that the lipid derivatives readily enter cells. After photo-crosslinking, cell fixation and fluorescent tagging via click chemistry, we determined the intracellular location of the lipid derivatives before and after uncaging of the lipids. We find that there is rapid trafficking of PI(3,4)P2 and PI(3,4,5)P3 derivatives to the plasma membrane, opening the intriguing possibility that there is active transport of these lipids involved. We employed the photo-crosslinking and click chemistry functions to analyze the proteome of PI(3,4,5)P3-binding proteins. From the latter, we validated by RNAi that the putative lipid binding proteins ATP11A and MPP6 are involved in the transport of PI(3,4,5)P3 to the plasma membrane.\n\n\n\nPI(3,4,5)P3\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
   },
   {
-    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
-    "href": "IndividualStudies/DH_2017.html#data-visualization",
-    "title": "Höglinger et al. 2017",
+    "objectID": "IndividualStudies/RM_2021.html#data-visualization",
+    "href": "IndividualStudies/RM_2021.html#data-visualization",
+    "title": "Muller et al. 2021",
     "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\nVenn Diagram",
+    "text": "Data visualization\n\nHeat map\n\n\nVenn Diagram",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
   },
   {
-    "objectID": "IndividualStudies/DH_2017.html#data-download",
-    "href": "IndividualStudies/DH_2017.html#data-download",
-    "title": "Höglinger et al. 2017",
+    "objectID": "IndividualStudies/RM_2021.html#data-download",
+    "href": "IndividualStudies/RM_2021.html#data-download",
+    "title": "Muller et al. 2021",
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
+      "Muller et al., 2021"
     ]
-  },
-  {
-    "objectID": "MaintenanceInstructions.html",
-    "href": "MaintenanceInstructions.html",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#site-organization",
-    "href": "MaintenanceInstructions.html#site-organization",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#maintenance",
-    "href": "MaintenanceInstructions.html#maintenance",
-    "title": "Maintenance Instructions",
-    "section": "Maintenance",
-    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\nAny changes can then be pushed to the github repository; Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access. It will be TBD how GitHub ownership is transferred after I leave.\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
   },
   {
     "objectID": "IndividualStudies/SF_2024_B.html",
@@ -250,87 +218,119 @@
     ]
   },
   {
-    "objectID": "IndividualStudies/RM_2021.html",
-    "href": "IndividualStudies/RM_2021.html",
-    "title": "Muller et al. 2021",
+    "objectID": "MaintenanceInstructions.html",
+    "href": "MaintenanceInstructions.html",
+    "title": "Maintenance Instructions",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nRainer Muller, Ana Kojic, Mevlut Citir, Carsten Schultz\n\n\n\nAngewandte Chemie\nhttps://doi.org/10.1002/anie.202103599\n\n\n\nWe synthesized the first multifunctionalized phosphoinositide polyphosphate derivatives featuring a photo-removable protecting group (“cage”), a photo-crosslinkable diazirine group, and a terminal alkyne group useful for click chemistry. We demonstrate that the lipid derivatives readily enter cells. After photo-crosslinking, cell fixation and fluorescent tagging via click chemistry, we determined the intracellular location of the lipid derivatives before and after uncaging of the lipids. We find that there is rapid trafficking of PI(3,4)P2 and PI(3,4,5)P3 derivatives to the plasma membrane, opening the intriguing possibility that there is active transport of these lipids involved. We employed the photo-crosslinking and click chemistry functions to analyze the proteome of PI(3,4,5)P3-binding proteins. From the latter, we validated by RNAi that the putative lipid binding proteins ATP11A and MPP6 are involved in the transport of PI(3,4,5)P3 to the plasma membrane.\n\n\n\nPI(3,4,5)P3\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#site-organization",
+    "href": "MaintenanceInstructions.html#site-organization",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder.\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#maintenance",
+    "href": "MaintenanceInstructions.html#maintenance",
+    "title": "Maintenance Instructions",
+    "section": "Maintenance",
+    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\nAny changes can then be pushed to the github repository; Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access. It will be TBD how GitHub ownership is transferred after I leave.\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard() and VolcanoPlotStandardized() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
+  },
+  {
+    "objectID": "IndividualStudies/DH_2017.html",
+    "href": "IndividualStudies/DH_2017.html",
+    "title": "Höglinger et al. 2017",
+    "section": "",
+    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Muller et al., 2021"
+      "Höglinger et al., 2017"
     ]
   },
   {
-    "objectID": "IndividualStudies/RM_2021.html#data-visualization",
-    "href": "IndividualStudies/RM_2021.html#data-visualization",
-    "title": "Muller et al. 2021",
+    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
+    "href": "IndividualStudies/DH_2017.html#data-visualization",
+    "title": "Höglinger et al. 2017",
     "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\n\n\nVenn Diagram",
+    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\nVenn Diagram",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Muller et al., 2021"
+      "Höglinger et al., 2017"
     ]
   },
   {
-    "objectID": "IndividualStudies/RM_2021.html#data-download",
-    "href": "IndividualStudies/RM_2021.html#data-download",
-    "title": "Muller et al. 2021",
+    "objectID": "IndividualStudies/DH_2017.html#data-download",
+    "href": "IndividualStudies/DH_2017.html#data-download",
+    "title": "Höglinger et al. 2017",
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Muller et al., 2021"
+      "Höglinger et al., 2017"
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html",
-    "href": "IndividualStudies/AT_2025.html",
-    "title": "Thomas et al. 2025",
+    "objectID": "IndividualStudies/StudyOverview.html",
+    "href": "IndividualStudies/StudyOverview.html",
+    "title": "Overview of Interactomics Studies",
     "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.",
     "crumbs": [
       "What are trifunctional lipid probes?",
-      "Overview of Interactomics Studies",
-      "Thomas et al. 2025"
+      "Overview of Interactomics Studies"
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html#data-visualization",
-    "href": "IndividualStudies/AT_2025.html#data-visualization",
-    "title": "Thomas et al. 2025",
+    "objectID": "IndividualStudies/SF_2024.html",
+    "href": "IndividualStudies/SF_2024.html",
+    "title": "Farley et al. 2024",
+    "section": "",
+    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "crumbs": [
+      "What are trifunctional lipid probes?",
+      "Overview of Interactomics Studies",
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
+    "href": "IndividualStudies/SF_2024.html#data-visualization",
+    "title": "Farley et al. 2024",
     "section": "Data visualization",
-    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
+    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nMA plots",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Thomas et al. 2025"
+      "Farley et al., 2024; A"
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html#enriched-proteins",
-    "href": "IndividualStudies/AT_2025.html#enriched-proteins",
-    "title": "Thomas et al. 2025",
-    "section": "Enriched proteins",
-    "text": "Enriched proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "title": "Farley et al. 2024",
+    "section": "Enriched Proteins",
+    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSph\n\n\n\n\n\nSpa\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Thomas et al. 2025"
+      "Farley et al., 2024; A"
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html#data-download",
-    "href": "IndividualStudies/AT_2025.html#data-download",
-    "title": "Thomas et al. 2025",
+    "objectID": "IndividualStudies/SF_2024.html#data-download",
+    "href": "IndividualStudies/SF_2024.html#data-download",
+    "title": "Farley et al. 2024",
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
       "What are trifunctional lipid probes?",
       "Overview of Interactomics Studies",
-      "Thomas et al. 2025"
+      "Farley et al., 2024; A"
     ]
   },
   {

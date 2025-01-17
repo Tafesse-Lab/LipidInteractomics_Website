@@ -1,0 +1,26 @@
+---
+---
+
+```{=html}
+
+<div style="text-align: center;">
+
+<h2 style> Ooops! </h2>
+
+<br>
+
+<b> The page you're looking for doesn't (perhaps it was moved or renamed, or perhaps the site is still under construction and you can check back soon).</b>
+
+<br>
+<br>
+
+You may want to try again or contact  <a href="site.admin@lipidinteractome.org" target="_blank">Site Admin</a> if you're looking for something specific.
+
+<br>
+<br>
+
+<div> <a href="/index.html" target="_blank">Take me back to the Lipid Interactome </a> </div>
+
+</div>
+
+```
