@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+This repository is still under construction (as you can probably tell). Someday soon this page will have details about the founders of this resource, as well as a data submission form. Until then, please contact the site administrators for additional information about protocols, experimental design, and website feedback:
 
-Contact the site administrators for additional information about protocols, experimental design, and website feedback:
-
-(I am working on making a comment submission form which will send an email to a site admin -- something like ContactUs\@LipidInteractome.org)
+ <contact.us@LipidInteractome.org>{target="_blank"}
