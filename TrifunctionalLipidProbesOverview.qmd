@@ -1,5 +1,5 @@
 ---
-title: "Trifunctional Lipid Probes Primer"
+title: "Multifunctional Lipid Probes Primer"
 author: "Gaelen Guzman"
 format: 
   html:
@@ -10,6 +10,36 @@ standalone: true
 I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here -- but I think it would be nice to have a novel description with figures for this site.
 
 I have a few example figures, but I am open to using whichever figures seem best -- if that is a new figure, I'll need guidance on what it should look like.
+
+## Functional moieties
+
+:::{.border}
+![](/LipidProbe/Structures/SphingosineStructure.png){group="ProbePrimer"}
+:::
+
+### Terminal Alkyne
+
+### Diazirine: A photo-activated crosslinker
+
+### Coumarin Cage: A photo-activated protection moiety
+
+## *P*hoto*a*ctivatable & *C*lickable Probes
+
+## Trifunctional Lipid Probes
+
+## Experimental schema
+
+### Cell treatment
+
+### Protein collection
+
+### Mass spectrometry analysis
+
+#### Spectral counting
+
+#### Isobaric mass tagging
+
+
 
 :::{.border}
 ![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}

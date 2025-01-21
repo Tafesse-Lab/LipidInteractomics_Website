@@ -10,7 +10,7 @@ website:
   navbar:
     left:
       - href: TrifunctionalLipidProbesOverview.qmd
-        text: "What are trifunctional lipid probes?"
+        text: "What are Multifunctional Lipid Probes?"
 
     right:
       - href: about.qmd
@@ -70,11 +70,6 @@ format:
       effect: fade
       desc-position: bottom
       loop: true
-    grid:
-      
-      body-width: 900px
-      margin-width: 300px
-      gutter-width: 1.5rem
     mainfont: Charter
     theme: [Materia, theme_customizations.scss]
     css: styles.css
