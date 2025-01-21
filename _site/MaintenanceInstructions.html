@@ -4637,6 +4637,36 @@ text-decoration: bold;
 }
 .help-symbol:hover {
 color: darkblue;
+}
+
+.hover-preview {
+position: relative;
+text-decoration: underline;
+cursor: pointer;
+}
+.hover-image {
+position: absolute;
+top: 120%; 
+left: 50%;
+transform: translateX(-10%);
+width: 300px;
+height: auto;
+display: none;
+z-index: 1000;
+background: white;
+border: 1px solid black;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover-image img {
+width: 300px; 
+height: auto; 
+max-width: 100%; 
+}
+
+.hover-preview:hover + .hover-image {
+display: block;
 }</style>
 </head>
 

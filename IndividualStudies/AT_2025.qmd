@@ -28,6 +28,17 @@ Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes
 
 #### Lipid probes utilized
 
+
+<a href="/LipidProbe/PhosphatidicAcid.qmd" class="hover-preview">Phosphatidic Acid</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/PhosphatidicAcid_Structure.png" alt="Phosphatidic Acid" />
+</span>
+
+<a href="/LipidProbe/Phosphatidylethanolamine.qmd" class="hover-preview">Phosphatidic Acid</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/PhosphatidylethanolamineStructure.png" alt="Phosphatidic Acid" />
+</span>
+
 #### Cell line analyzed
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 

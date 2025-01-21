@@ -3,6 +3,40 @@ title: "Weekly meeting notes"
 ---
 
 
+## 2025/21/01
+
+### To discuss
+- What to do with datasets with no logFC-type data
+	- Ana's PI paper has heat maps that I can replicate, but no enrichment data
+	- Doris's early tf-Sph/tf-DAG paper also has heat maps that I've tried to replicate, but it looks terrible with all the proteins displayed (filter hits to significant?)
+	
+### Feedback?
+- FT mentioned structure images are too large - can make them smaller?
+- Consistency of structure cartoons?
+	- need standard format
+- Features we should add?
+
+### Email plan
+
+- current email service is through Zoho, and I can add free accounts for up to users. The problem is that there is zero forwarding, so the users will need to check the Zoho site regularly to make sure there aren't comments/submissions.
+
+### CS to-do
+- Find experiment p numbers for Frank to reanalyze or share data.
+	- Asking Andre Nadler for dataset numbers
+- Find further studies to incorporate
+
+### FT to-do
+- Logo
+
+### GG to-do
+- Decide on format for non-TMT data (heat maps? Venn diagrams?)
+- Data submission form
+- Incorporate new data once sent from Frank
+- Link to PRIDE database for non-curated datasets in each study
+- Hover preview of chemical structure when referenced
+- Sign up for paid zoho accounts for Fikadu and Carsten
+- Add detailed structure cartoons with hover interactivity - especially for 8-3/1-10 FA.
+
 ## 2025/14/01
 
 ### Feedback
@@ -67,3 +101,4 @@ title: "Weekly meeting notes"
 * Build a probe comparison page
 	- Ideally we want a select list of proteins which only interact with a given probe (and not with any other probe), regardless of cell line
 	- Probe comparison plotter?
+
