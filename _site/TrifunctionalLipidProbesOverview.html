@@ -90,6 +90,15 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -369,44 +378,103 @@ div.csl-indent {
 </header>
 
 
-<p>I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here – but I think it would be nice to have a novel description with figures for this site.</p>
-<p>I have a few example figures, but I am open to using whichever figures seem best – if that is a new figure, I’ll need guidance on what it should look like.</p>
+<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be linked below for greater detail.</p>
 <section id="functional-moieties" class="level2">
 <h2 class="anchored" data-anchor-id="functional-moieties">Functional moieties</h2>
 <div class="border">
-<p><a href="./LipidProbe/Structures/SphingosineStructure.png" class="lightbox" data-gallery="ProbePrimer"><img src="./LipidProbe/Structures/SphingosineStructure.png" class="img-fluid"></a></p>
+<div class="cell" data-warnings="false">
+<div class="cell-output cell-output-stderr">
+<pre><code>No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -&gt; https://plotly.com/r/reference/#scatter</code></pre>
 </div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-82dace813a57d42ff0a1" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-82dace813a57d42ff0a1">{"x":{"visdat":{"4147455c2782":["function () ","plotlyVisDat"],"41472525eb61":["function () ","data"]},"cur_data":"41472525eb61","attrs":{"41472525eb61":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"text":{},"mode":"markers","marker":{"opacity":0},"hoverinfo":"text","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"rect","x0":0,"x1":32,"y0":50,"y1":85,"line":{"color":"red","width":2},"fillcolor":"rgba(255, 0, 0, 0.1)","name":"Region 1","hoverinfo":"none"},{"type":"rect","x0":50,"x1":70,"y0":40,"y1":60,"line":{"color":"blue","width":2},"fillcolor":"rgba(0, 0, 255, 0.1)","name":"Region 2","hoverinfo":"none"}],"images":[{"source":"LipidProbe/Structures/SphingosineStructure.png","xref":"x","yref":"y","x":0,"y":100,"sizex":100,"sizey":100,"xanchor":"left","yanchor":"top","layer":"below"}],"xaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[20,60],"y":[80,50],"text":["Region 1 Info","Region 2 Info"],"mode":"markers","marker":{"color":"rgba(31,119,180,1)","opacity":0,"line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text"],"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div class="border">
+<div style="position: relative; display: inline-block;">
+  <img src="LipidProbe/Structures/SphingosineStructure.png" alt="Interactive Image" style="width: 500px;">
+  
+  <!-- Popup 1 -->
+  <div style="position: absolute; top: 20%; left: 10%; cursor: pointer;">
+    <span class="popup-hover" title="Popup for Point 1">🔴</span>
+  </div>
+
+  <!-- Popup 2 -->
+  <div style="position: absolute; top: 70%; left: 50%; cursor: pointer;">
+    <span class="popup-hover" title="Popup for Point 2">🔵</span>
+  </div>
+
+  <!-- Hover region 1 -->
+  <div style="position: absolute; top: 20%; left: 10%; width: 15%; height: 15%; border: 2px solid red; box-sizing: border-box;" title="Region 1 Info"></div>
+
+  <!-- Hover region 2 -->
+  <div style="position: absolute; top: 50%; left: 50%; width: 20%; height: 20%; border: 2px solid blue; box-sizing: border-box;" title="Region 2 Info"></div>
+</div>
+</div>
+
+<style>
+  .popup-hover:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-schultzFlashClickMultifunctionalized2022a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Schultz, C., Farley, S. E. &amp; Tafesse, F. G. <a href="https://doi.org/10.1021/jacs.2c02705"><span>“<span>Flash</span> &amp; <span>Click</span>”</span>: <span>Multifunctionalized Lipid Derivatives</span> as <span>Tools To Study Viral Infections</span></a>. <em>J. Am. Chem. Soc.</em> <strong>144</strong>, 13987–13995 (2022).</div>
+</div>
+<div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
+</div>
+</div></section></div></main></div>
 <section id="terminal-alkyne" class="level3">
-<h3 class="anchored" data-anchor-id="terminal-alkyne">Terminal Alkyne</h3>
+<h3 data-anchor-id="terminal-alkyne">Terminal Alkyne</h3>
 </section>
 <section id="diazirine-a-photo-activated-crosslinker" class="level3">
-<h3 class="anchored" data-anchor-id="diazirine-a-photo-activated-crosslinker">Diazirine: A photo-activated crosslinker</h3>
+<h3 data-anchor-id="diazirine-a-photo-activated-crosslinker">Diazirine: A photo-activated crosslinker</h3>
 </section>
 <section id="coumarin-cage-a-photo-activated-protection-moiety" class="level3">
-<h3 class="anchored" data-anchor-id="coumarin-cage-a-photo-activated-protection-moiety">Coumarin Cage: A photo-activated protection moiety</h3>
+<h3 data-anchor-id="coumarin-cage-a-photo-activated-protection-moiety">Coumarin Cage: A photo-activated protection moiety</h3>
 </section>
-</section>
+
 <section id="photoactivatable-clickable-probes" class="level2">
-<h2 class="anchored" data-anchor-id="photoactivatable-clickable-probes"><em>P</em>hoto<em>a</em>ctivatable &amp; <em>C</em>lickable Probes</h2>
+<h2 data-anchor-id="photoactivatable-clickable-probes"><em>P</em>hoto<em>a</em>ctivatable &amp; <em>C</em>lickable Probes</h2>
 </section>
 <section id="trifunctional-lipid-probes" class="level2">
-<h2 class="anchored" data-anchor-id="trifunctional-lipid-probes">Trifunctional Lipid Probes</h2>
+<h2 data-anchor-id="trifunctional-lipid-probes">Trifunctional Lipid Probes</h2>
 </section>
 <section id="experimental-schema" class="level2">
-<h2 class="anchored" data-anchor-id="experimental-schema">Experimental schema</h2>
+<h2 data-anchor-id="experimental-schema">Experimental schema</h2>
 <section id="cell-treatment" class="level3">
-<h3 class="anchored" data-anchor-id="cell-treatment">Cell treatment</h3>
+<h3 data-anchor-id="cell-treatment">Cell treatment</h3>
 </section>
 <section id="protein-collection" class="level3">
-<h3 class="anchored" data-anchor-id="protein-collection">Protein collection</h3>
+<h3 data-anchor-id="protein-collection">Protein collection</h3>
 </section>
 <section id="mass-spectrometry-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
+<h3 data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
 <section id="spectral-counting" class="level4">
-<h4 class="anchored" data-anchor-id="spectral-counting">Spectral counting</h4>
+<h4 data-anchor-id="spectral-counting">Spectral counting</h4>
 </section>
 <section id="isobaric-mass-tagging" class="level4">
-<h4 class="anchored" data-anchor-id="isobaric-mass-tagging">Isobaric mass tagging</h4>
+<h4 data-anchor-id="isobaric-mass-tagging">Isobaric mass tagging</h4>
 <div class="border">
 <p><a href="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
 </div>
@@ -418,17 +486,7 @@ div.csl-indent {
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
-</div>
-<div id="ref-schultzFlashClickMultifunctionalized2022a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Schultz, C., Farley, S. E. &amp; Tafesse, F. G. <a href="https://doi.org/10.1021/jacs.2c02705"><span>“<span>Flash</span> &amp; <span>Click</span>”</span>: <span>Multifunctionalized Lipid Derivatives</span> as <span>Tools To Study Viral Infections</span></a>. <em>J. Am. Chem. Soc.</em> <strong>144</strong>, 13987–13995 (2022).</div>
-</div>
-<div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
-</div>
-</div></section></div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -816,8 +874,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","openEffect":"fade","loop":true,"descPosition":"bottom","selector":".lightbox"});
+ <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","selector":".lightbox","loop":true,"closeEffect":"fade","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

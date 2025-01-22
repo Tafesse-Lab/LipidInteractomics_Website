@@ -8,7 +8,11 @@ standalone: false
 
 ## Site Overview
 
-A blurb about the objective of this site, maybe a gallery of images from select publications to put here.
+The goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids. 
+
+Explore the lipids below to see their published interactomes.
+
+See our [Functional Lipid Probes Overview](/TrifunctionalLipidProbesOverview.qmd) for more details about how these lipid analogs are used.
 
 ## Lipid Interactomes
 

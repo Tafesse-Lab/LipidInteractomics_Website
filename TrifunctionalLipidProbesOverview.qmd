@@ -7,14 +7,120 @@ format:
 standalone: true
 ---
 
-I could use help writing a succinct article here to describe the use of these probes. We can additionally reference prior publications here -- but I think it would be nice to have a novel description with figures for this site.
-
-I have a few example figures, but I am open to using whichever figures seem best -- if that is a new figure, I'll need guidance on what it should look like.
+Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be linked below for greater detail.
 
 ## Functional moieties
 
 :::{.border}
-![](/LipidProbe/Structures/SphingosineStructure.png){group="ProbePrimer"}
+
+```{r setup, echo=FALSE, include=FALSE}
+library(plotly)
+
+library(plotly)
+
+# Load your image
+image_url <- "LipidProbe/Structures/SphingosineStructure.png"
+
+# Define hover regions (as rectangles)
+shapes <- list(
+  list(type = "rect", x0 = 0, x1 = 32, y0 = 50, y1 = 85,
+       line = list(color = "red", width = 2),
+       fillcolor = "rgba(255, 0, 0, 0.1)",  # Transparent fill
+       name = "Region 1", hoverinfo = "none"),
+  list(type = "rect", x0 = 50, x1 = 70, y0 = 40, y1 = 60,
+       line = list(color = "blue", width = 2),
+       fillcolor = "rgba(0, 0, 255, 0.1)",  # Transparent fill
+       name = "Region 2", hoverinfo = "none")
+)
+
+# Define hover annotations
+hover_annotations <- data.frame(
+  x = c(20, 60),  # Midpoints of rectangles
+  y = c(80, 50),
+  text = c("Region 1 Info", "Region 2 Info")
+)
+
+# Create the plot
+plot <- plot_ly() %>%
+  add_trace(
+    data = hover_annotations,
+    x = ~x, y = ~y, text = ~text,
+    mode = "markers",
+    marker = list(opacity = 0),  # Invisible markers
+    hoverinfo = "text"  # Show hover text
+  ) %>%
+  layout(
+    shapes = shapes,
+    images = list(
+      list(
+        source = image_url,
+        xref = "x",
+        yref = "y",
+        x = 0,
+        y = 100,
+        sizex = 100,
+        sizey = 100,
+        xanchor = "left",
+        yanchor = "top",
+        layer = "below"
+      )
+    ),
+    xaxis = list(visible = FALSE, range = c(0, 100)),
+    yaxis = list(visible = FALSE, range = c(0, 100))
+  )
+```
+
+```{r, echo=FALSE, warnings=FALSE}
+# Render the plot
+plot
+
+```
+:::
+
+:::{.border}
+```{=html}
+<div style="position: relative; display: inline-block;">
+  <img src="LipidProbe/Structures/SphingosineStructure.png" alt="Interactive Image" style="width: 500px;">
+  
+  <!-- Popup 1 -->
+  <div style="position: absolute; top: 20%; left: 10%; cursor: pointer;">
+    <span class="popup-hover" title="Popup for Point 1">🔴</span>
+  </div>
+
+  <!-- Popup 2 -->
+  <div style="position: absolute; top: 70%; left: 50%; cursor: pointer;">
+    <span class="popup-hover" title="Popup for Point 2">🔵</span>
+  </div>
+
+  <!-- Hover region 1 -->
+  <div style="position: absolute; top: 20%; left: 10%; width: 15%; height: 15%; border: 2px solid red; box-sizing: border-box;"
+       title="Region 1 Info"></div>
+
+  <!-- Hover region 2 -->
+  <div style="position: absolute; top: 50%; left: 50%; width: 20%; height: 20%; border: 2px solid blue; box-sizing: border-box;"
+       title="Region 2 Info"></div>
+</div>
+</div>
+
+<style>
+  .popup-hover:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+
+```
+
 :::
 
 ### Terminal Alkyne
