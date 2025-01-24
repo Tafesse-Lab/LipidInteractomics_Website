@@ -8,6 +8,8 @@ standalone: false
 
 ## Site Overview
 
+**This repository is still under construction, please forgive us for incomplete sections as we build features!**
+
 The goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids. 
 
 Explore the lipids below to see their published interactomes.

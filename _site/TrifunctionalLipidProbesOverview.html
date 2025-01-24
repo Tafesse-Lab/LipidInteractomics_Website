@@ -337,7 +337,7 @@ div.csl-indent {
   <li><a href="#why-are-functional-modifications-necessary-in-studying-lipid-interactions" id="toc-why-are-functional-modifications-necessary-in-studying-lipid-interactions" class="nav-link" data-scroll-target="#why-are-functional-modifications-necessary-in-studying-lipid-interactions">Why are functional modifications necessary in studying lipid interactions?</a>
   <ul class="collapse">
   <li><a href="#terminal-alkyne" id="toc-terminal-alkyne" class="nav-link" data-scroll-target="#terminal-alkyne">Terminal Alkyne</a></li>
-  <li><a href="#diazirine-a-photo-activated-crosslinker" id="toc-diazirine-a-photo-activated-crosslinker" class="nav-link" data-scroll-target="#diazirine-a-photo-activated-crosslinker">Diazirine: A photo-activated crosslinker</a></li>
+  <li><a href="#sec-DiazirinePlacement" id="toc-sec-DiazirinePlacement" class="nav-link" data-scroll-target="#sec-DiazirinePlacement">Diazirine: A photo-activated crosslinker</a></li>
   <li><a href="#coumarin-cage-a-photo-activated-protection-moiety" id="toc-coumarin-cage-a-photo-activated-protection-moiety" class="nav-link" data-scroll-target="#coumarin-cage-a-photo-activated-protection-moiety">Coumarin Cage: A photo-activated protection moiety</a></li>
   </ul></li>
   <li><a href="#photoactivatable-clickable-probes" id="toc-photoactivatable-clickable-probes" class="nav-link" data-scroll-target="#photoactivatable-clickable-probes"><em>P</em>hoto<em>a</em>ctivatable &amp; <em>C</em>lickable Probes</a></li>
@@ -379,9 +379,16 @@ div.csl-indent {
 </header>
 
 
+<p><strong>This repository is still under construction, please forgive us for incomplete sections as we build features!</strong></p>
 <p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.</p>
 <section id="introduction-why-study-lipid-interactomes" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-why-study-lipid-interactomes">Introduction: Why study lipid interactomes?</h2>
+<ul>
+<li><p>Because at its core biology is just complex chemistry, all biological reactions are mediated through the physical interaction of two or more molecules</p></li>
+<li><p>Lipid::Lipid interactomes can provide insight into which of these physical contacts mediate these membrane properties. Lipids are most commonly enmeshed within membrane bilayers and lipid-lipid interactions confer membrane properties such as rigidity or detergent resistance.</p></li>
+<li><p>In recent decades, many select lipid species have gained recognition for being crucial signaling molecules. For one example, the sphingolipid sphingosine-1-phosphate (S1P) is potently recognized by an array of S1P receptors which cause T cells to extravasate and chemotax toward sites of infection.</p></li>
+<li><p>Understanding the proteins that a given lipid interacts with can reveal great insight into the wide-ranging cellular signaling effects that a lipid can have.</p></li>
+</ul>
 </section>
 <section id="why-are-functional-modifications-necessary-in-studying-lipid-interactions" class="level2">
 <h2 class="anchored" data-anchor-id="why-are-functional-modifications-necessary-in-studying-lipid-interactions">Why are functional modifications necessary in studying lipid interactions?</h2>
@@ -390,58 +397,59 @@ div.csl-indent {
 <p>Lipids, however, are an entirely different story altogether. Foremost of these differences is that lipids are the product of enzymatic synthesis and thus their structure cannot be directly modified within a living biological system. For much of the history of lipid research, studies utilized whole gene knockout or knock-in paradigms to alter the global lipid composition of the cell. Through these methods, we know much about the localization and broad behavior of lipid classes – but the biological roles of select lipid species are historically challenging to explore [REF].</p>
 <p>Further, lipids are significantly smaller than even the smallest protein – composed of dozens of atoms, as opposed to hundreds or thousands – and, thus, their biophysical properties are much more sensitive to modification. It is nearly impossible to fuse a lipid with a fluorescent protein (such as GFP) or classical affinity handle (such as an HA tag) without drastically affecting the biological activity of the lipid [REF].</p>
 <p>Finally, each of the tens of thousands of distinct lipid structures is a part of a rapidly shifting metabolic network: any given lipid can be cleaved, modified, or converted into other lipid species within short time frames. Some lipids, such as sphingosine have half-lives in the minutes [REF].</p>
-<p>For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository</p>
+<p>For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository (highlighted in the figure below) are: 1. A diazirine ring 2. A terminal alkyne 3. A coumarin cage.</p>
+<p>These modifications allow for the stabilization of protein::lipid interactions and the affinity enrichment of protein::lipid conjugates, all with tight spatiotemporal control. These modifications are described in greater detail below.</p>
 <div class="border">
-<div class="cell" data-warnings="false">
-<div class="cell-output cell-output-stderr">
-<pre><code>No trace type specified:
-  Based on info supplied, a 'scatter' trace seems appropriate.
-  Read more about this trace type -&gt; https://plotly.com/r/reference/#scatter</code></pre>
-</div>
+<div class="cell" data-warnings="false" height="500px" width="100%">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-ee7f967a72ef87e9c5d6" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ee7f967a72ef87e9c5d6">{"x":{"visdat":{"9d361d47d6f3":["function () ","plotlyVisDat"],"9d365770fa89":["function () ","data"]},"cur_data":"9d365770fa89","attrs":{"9d365770fa89":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"text":{},"mode":"markers","marker":{"opacity":0},"hoverinfo":"text","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"rect","x0":0,"x1":32,"y0":50,"y1":85,"line":{"color":"red","width":2},"fillcolor":"rgba(255, 0, 0, 0.1)","name":"Region 1","hoverinfo":"none"},{"type":"rect","x0":50,"x1":70,"y0":40,"y1":60,"line":{"color":"blue","width":2},"fillcolor":"rgba(0, 0, 255, 0.1)","name":"Region 2","hoverinfo":"none"}],"images":[{"source":"LipidProbe/Structures/SphingosineStructure.png","xref":"x","yref":"y","x":0,"y":100,"sizex":100,"sizey":100,"xanchor":"left","yanchor":"top","layer":"below"}],"xaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[20,60],"y":[80,50],"text":["Region 1 Info","Region 2 Info"],"mode":"markers","marker":{"color":"rgba(31,119,180,1)","opacity":0,"line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text"],"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-61c034247fffb6c8b5d0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-61c034247fffb6c8b5d0">{"x":{"visdat":{"bac7378c2fcc":["function () ","plotlyVisDat"]},"cur_data":"bac7378c2fcc","attrs":{"bac7378c2fcc":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0.40000000000000002,0.40000000000000002,0,0],"y":[0.80000000000000004,0.80000000000000004,0.59999999999999998,0.59999999999999998,0.80000000000000004],"type":"scatter","mode":"lines","line":{"color":"blue","width":2},"fill":"none","hoverinfo":"text","text":"Region 1 Info","inherit":true},"bac7378c2fcc.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0.69999999999999996,0.90000000000000002,0.90000000000000002,0.69999999999999996,0.69999999999999996],"y":[0.69999999999999996,0.69999999999999996,0.59999999999999998,0.59999999999999998,0.69999999999999996],"type":"scatter","mode":"lines","line":{"color":"blue","width":2},"fill":"none","hoverinfo":"text","text":"Region 2 Info","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"images":[{"source":"LipidProbe/Structures/SphingosineStructure.png","xref":"paper","yref":"paper","x":0,"y":1,"sizex":1,"sizey":1,"xanchor":"left","yanchor":"top","layer":"below"}],"xaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,1],"title":[]},"yaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,1],"title":[]},"shapes":[{"type":"line","x0":0,"x1":0,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0,"y1":0,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.10000000000000001,"x1":0.10000000000000001,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.10000000000000001,"y1":0.10000000000000001,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.20000000000000001,"x1":0.20000000000000001,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.20000000000000001,"y1":0.20000000000000001,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.30000000000000004,"x1":0.30000000000000004,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.30000000000000004,"y1":0.30000000000000004,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.40000000000000002,"x1":0.40000000000000002,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.40000000000000002,"y1":0.40000000000000002,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.5,"x1":0.5,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.5,"y1":0.5,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.60000000000000009,"x1":0.60000000000000009,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.60000000000000009,"y1":0.60000000000000009,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.70000000000000007,"x1":0.70000000000000007,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.70000000000000007,"y1":0.70000000000000007,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.80000000000000004,"x1":0.80000000000000004,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.80000000000000004,"y1":0.80000000000000004,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0.90000000000000002,"x1":0.90000000000000002,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":0.90000000000000002,"y1":0.90000000000000002,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":1,"x1":1,"y0":0,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}},{"type":"line","x0":0,"x1":1,"y0":1,"y1":1,"line":{"color":"gray","width":1,"dash":"dot"}}],"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0,0.40000000000000002,0.40000000000000002,0,0],"y":[0.80000000000000004,0.80000000000000004,0.59999999999999998,0.59999999999999998,0.80000000000000004],"type":"scatter","mode":"lines","line":{"color":"blue","width":2},"fill":"none","hoverinfo":["text","text","text","text","text"],"text":["Region 1 Info","Region 1 Info","Region 1 Info","Region 1 Info","Region 1 Info"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.69999999999999996,0.90000000000000002,0.90000000000000002,0.69999999999999996,0.69999999999999996],"y":[0.69999999999999996,0.69999999999999996,0.59999999999999998,0.59999999999999998,0.69999999999999996],"type":"scatter","mode":"lines","line":{"color":"blue","width":2},"fill":"none","hoverinfo":["text","text","text","text","text"],"text":["Region 2 Info","Region 2 Info","Region 2 Info","Region 2 Info","Region 2 Info"],"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
+<section id="terminal-alkyne" class="level3">
+<h3 class="anchored" data-anchor-id="terminal-alkyne">Terminal Alkyne</h3>
+</section>
+<section id="sec-DiazirinePlacement" class="level3">
+<h3 class="anchored" data-anchor-id="sec-DiazirinePlacement">Diazirine: A photo-activated crosslinker</h3>
+</section>
+<section id="coumarin-cage-a-photo-activated-protection-moiety" class="level3">
+<h3 class="anchored" data-anchor-id="coumarin-cage-a-photo-activated-protection-moiety">Coumarin Cage: A photo-activated protection moiety</h3>
+</section>
+</section>
+<section id="photoactivatable-clickable-probes" class="level2">
+<h2 class="anchored" data-anchor-id="photoactivatable-clickable-probes"><em>P</em>hoto<em>a</em>ctivatable &amp; <em>C</em>lickable Probes</h2>
+</section>
+<section id="trifunctional-lipid-probes" class="level2">
+<h2 class="anchored" data-anchor-id="trifunctional-lipid-probes">Trifunctional Lipid Probes</h2>
+</section>
+<section id="experimental-schema" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-schema">Experimental schema</h2>
 <div class="border">
-<div style="position: relative; display: inline-block;">
-  <img src="LipidProbe/Structures/SphingosineStructure.png" alt="Interactive Image" style="width: 500px;">
-  
-  <!-- Popup 1 -->
-  <div style="position: absolute; top: 20%; left: 10%; cursor: pointer;">
-    <span class="popup-hover" title="Popup for Point 1">🔴</span>
-  </div>
-
-  <!-- Popup 2 -->
-  <div style="position: absolute; top: 70%; left: 50%; cursor: pointer;">
-    <span class="popup-hover" title="Popup for Point 2">🔵</span>
-  </div>
-
-  <!-- Hover region 1 -->
-  <div style="position: absolute; top: 20%; left: 10%; width: 15%; height: 15%; border: 2px solid red; box-sizing: border-box;" title="Region 1 Info"></div>
-
-  <!-- Hover region 2 -->
-  <div style="position: absolute; top: 50%; left: 50%; width: 20%; height: 20%; border: 2px solid blue; box-sizing: border-box;" title="Region 2 Info"></div>
+<p><a href="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
 </div>
-</div>
+<section id="cell-treatment" class="level3">
+<h3 class="anchored" data-anchor-id="cell-treatment">Cell treatment</h3>
+</section>
+<section id="protein-collection" class="level3">
+<h3 class="anchored" data-anchor-id="protein-collection">Protein collection</h3>
+</section>
+<section id="mass-spectrometry-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
+<section id="spectral-counting" class="level4">
+<h4 class="anchored" data-anchor-id="spectral-counting">Spectral counting</h4>
+</section>
+<section id="isobaric-mass-tagging" class="level4">
+<h4 class="anchored" data-anchor-id="isobaric-mass-tagging">Isobaric mass tagging</h4>
+<p>(Here’s an example of what references would look like on the site:<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025 schultzFlashClickMultifunctionalized2022a schultzChemicalToolsLipid2023"><sup><a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">1</a>–<a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">3</a></sup></span>)</p>
 
-<style>
-  .popup-hover:hover::after {
-    content: attr(title);
-    position: absolute;
-    top: -30px;
-    left: 0;
-    background: white;
-    color: black;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    white-space: nowrap;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-</style>
-</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
 </div>
@@ -451,50 +459,7 @@ div.csl-indent {
 <div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
 </div>
-</div></section></div></main></div>
-<section id="terminal-alkyne" class="level3">
-<h3 data-anchor-id="terminal-alkyne">Terminal Alkyne</h3>
-</section>
-<section id="diazirine-a-photo-activated-crosslinker" class="level3">
-<h3 data-anchor-id="diazirine-a-photo-activated-crosslinker">Diazirine: A photo-activated crosslinker</h3>
-</section>
-<section id="coumarin-cage-a-photo-activated-protection-moiety" class="level3">
-<h3 data-anchor-id="coumarin-cage-a-photo-activated-protection-moiety">Coumarin Cage: A photo-activated protection moiety</h3>
-</section>
-
-<section id="photoactivatable-clickable-probes" class="level2">
-<h2 data-anchor-id="photoactivatable-clickable-probes"><em>P</em>hoto<em>a</em>ctivatable &amp; <em>C</em>lickable Probes</h2>
-</section>
-<section id="trifunctional-lipid-probes" class="level2">
-<h2 data-anchor-id="trifunctional-lipid-probes">Trifunctional Lipid Probes</h2>
-</section>
-<section id="experimental-schema" class="level2">
-<h2 data-anchor-id="experimental-schema">Experimental schema</h2>
-<section id="cell-treatment" class="level3">
-<h3 data-anchor-id="cell-treatment">Cell treatment</h3>
-</section>
-<section id="protein-collection" class="level3">
-<h3 data-anchor-id="protein-collection">Protein collection</h3>
-</section>
-<section id="mass-spectrometry-analysis" class="level3">
-<h3 data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
-<section id="spectral-counting" class="level4">
-<h4 data-anchor-id="spectral-counting">Spectral counting</h4>
-</section>
-<section id="isobaric-mass-tagging" class="level4">
-<h4 data-anchor-id="isobaric-mass-tagging">Isobaric mass tagging</h4>
-<div class="border">
-<p><a href="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="SiteFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
-</div>
-<p>(Here’s an example of what references would look like on the site:<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025 schultzFlashClickMultifunctionalized2022a schultzChemicalToolsLipid2023"><sup><a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">1</a>–<a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">3</a></sup></span>)</p>
-
-
-
-</section>
-</section>
-</section>
-
- <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -882,8 +847,21 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"fade","openEffect":"fade","selector":".lightbox"});
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025, Fikadu Tafesse and Carsten Schultz</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"fade","closeEffect":"fade","loop":true,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

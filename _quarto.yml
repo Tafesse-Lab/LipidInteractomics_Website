@@ -6,7 +6,9 @@ csl: nature.csl
 format-links: true
 
 website:
+  
   title: "Lipid Interactome Repository"
+  page-footer: "Copyright 2025, Fikadu Tafesse and Carsten Schultz" 
   navbar:
     left:
       - href: TrifunctionalLipidProbesOverview.qmd
@@ -15,6 +17,7 @@ website:
     right:
       - href: about.qmd
         text: "About"
+   
   sidebar:
     style: "docked"
     search: true

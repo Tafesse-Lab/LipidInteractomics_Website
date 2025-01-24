@@ -5,11 +5,23 @@ format:
   html:
     embed-resources: false
 standalone: true
+crossref: 
+  ref-hyperlink: true # (default is true)
 ---
+
+**This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
 Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.
 
 ## Introduction: Why study lipid interactomes?
+
+* Because at its core biology is just complex chemistry, all biological reactions are mediated through the physical interaction of two or more molecules
+
+* Lipid::Lipid interactomes can provide insight into which of these physical contacts mediate these membrane properties. Lipids are most commonly enmeshed within membrane bilayers and lipid-lipid interactions confer membrane properties such as rigidity or detergent resistance. 
+
+* In recent decades, many select lipid species have gained recognition for being crucial signaling molecules. For one example, the sphingolipid sphingosine-1-phosphate (S1P) is potently recognized by an array of S1P receptors which cause T cells to extravasate and chemotax toward sites of infection. 
+
+* Understanding the proteins that a given lipid interacts with can reveal great insight into the wide-ranging cellular signaling effects that a lipid can have. 
 
 ## Why are functional modifications necessary in studying lipid interactions?
 
@@ -23,119 +35,116 @@ Further, lipids are significantly smaller than even the smallest protein -- comp
 
 Finally, each of the tens of thousands of distinct lipid structures is a part of a rapidly shifting metabolic network: any given lipid can be cleaved, modified, or converted into other lipid species within short time frames. Some lipids, such as sphingosine have half-lives in the minutes [REF].
 
-For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository
+For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository (highlighted in the figure below) are: 
+1. A diazirine ring 
+2. A terminal alkyne
+3. A coumarin cage. 
+
+These modifications allow for the stabilization of protein::lipid interactions and the affinity enrichment of protein::lipid conjugates, all with tight spatiotemporal control. These modifications are described in greater detail below.
 
 :::{.border}
 ```{r setup, echo=FALSE, include=FALSE}
 library(plotly)
-
-library(plotly)
+library(tidyr)
 
 # Load your image
 image_url <- "LipidProbe/Structures/SphingosineStructure.png"
 
-# Define hover regions (as rectangles)
-shapes <- list(
-  list(type = "rect", x0 = 0, x1 = 32, y0 = 50, y1 = 85,
-       line = list(color = "red", width = 2),
-       fillcolor = "rgba(255, 0, 0, 0.1)",  # Transparent fill
-       name = "Region 1", hoverinfo = "none"),
-  list(type = "rect", x0 = 50, x1 = 70, y0 = 40, y1 = 60,
-       line = list(color = "blue", width = 2),
-       fillcolor = "rgba(0, 0, 255, 0.1)",  # Transparent fill
-       name = "Region 2", hoverinfo = "none")
-)
-
-# Define hover annotations
-hover_annotations <- data.frame(
-  x = c(20, 60),  # Midpoints of rectangles
-  y = c(80, 50),
+# Define hover regions (rectangles) with coordinates based on the top of the image
+hover_regions <- data.frame(
+  x_start = c(0.0, 0.7),  # Left side of rectangles (fraction of width)
+  x_end = c(0.4, 0.9),    # Right side of rectangles (fraction of width)
+  y_top = c(0.2, 0.3),    # Top side of rectangles (fraction of height, from top of image)
+  y_bottom = c(0.4, 0.4), # Bottom side of rectangles (fraction of height, from top of image)
   text = c("Region 1 Info", "Region 2 Info")
 )
 
+# Create grid lines at every 10% for both x and y
+grid_lines <- list()
+for (i in seq(0, 1, by = 0.1)) {
+  # Add vertical grid line
+  grid_lines <- c(grid_lines, list(
+    list(
+      type = "line",
+      x0 = i, x1 = i,
+      y0 = 0, y1 = 1,
+      line = list(color = "gray", width = 1, dash = "dot")
+    )
+  ))
+  
+  # Add horizontal grid line
+  grid_lines <- c(grid_lines, list(
+    list(
+      type = "line",
+      x0 = 0, x1 = 1,
+      y0 = i, y1 = i,
+      line = list(color = "gray", width = 1, dash = "dot")
+    )
+  ))
+}
+
 # Create the plot
-plot <- plot_ly() %>%
-  add_trace(
-    data = hover_annotations,
-    x = ~x, y = ~y, text = ~text,
-    mode = "markers",
-    marker = list(opacity = 0),  # Invisible markers
-    hoverinfo = "text"  # Show hover text
-  ) %>%
+plot <- plot_ly()
+
+# Add each rectangle as a separate trace
+for (i in 1:nrow(hover_regions)) {
+  region <- hover_regions[i, ]
+  x_coords <- c(region$x_start, region$x_end, region$x_end, region$x_start, region$x_start)
+  y_coords <- c(1 - region$y_top, 1 - region$y_top, 1 - region$y_bottom, 1 - region$y_bottom, 1 - region$y_top)
+  
+  plot <- plot %>%
+    add_trace(
+      x = x_coords,
+      y = y_coords,
+      type = "scatter",
+      mode = "lines",
+      line = list(
+        color = "blue",     # Border color
+        width = 2           # Border width
+      ),
+      fill = "none",         # No fill color inside the rectangle
+      hoverinfo = "text",    # Show text on hover
+      text = region$text
+    )
+}
+
+# Add the image
+plot <- plot %>%
   layout(
-    shapes = shapes,
     images = list(
       list(
         source = image_url,
-        xref = "x",
-        yref = "y",
-        x = 0,
-        y = 100,
-        sizex = 100,
-        sizey = 100,
+        xref = "paper",  # Normalized to percentage
+        yref = "paper",  # Normalized to percentage
+        x = 0,           # Start at 0% of the plot width
+        y = 1,           # Start at 100% of the plot height
+        sizex = 1,       # Cover 100% of the plot width
+        sizey = 1,       # Cover 100% of the plot height
         xanchor = "left",
         yanchor = "top",
         layer = "below"
       )
     ),
-    xaxis = list(visible = FALSE, range = c(0, 100)),
-    yaxis = list(visible = FALSE, range = c(0, 100))
+    xaxis = list(visible = FALSE, range = c(0, 1)),  # Normalized from 0 to 1
+    yaxis = list(visible = FALSE, range = c(0, 1)),
+    shapes = grid_lines # Add the grid lines to the layout
   )
+
+
 ```
 
 ```{r, echo=FALSE, warnings=FALSE}
+#| height: 500px
+#| width: 100%
 # Render the plot
 plot
 
 ```
 :::
 
-:::{.border}
-```{=html}
-<div style="position: relative; display: inline-block;">
-  <img src="LipidProbe/Structures/SphingosineStructure.png" alt="Interactive Image" style="width: 500px;">
-  
-  <!-- Popup 1 -->
-  <div style="position: absolute; top: 20%; left: 10%; cursor: pointer;">
-    <span class="popup-hover" title="Popup for Point 1">🔴</span>
-  </div>
-
-  <!-- Popup 2 -->
-  <div style="position: absolute; top: 70%; left: 50%; cursor: pointer;">
-    <span class="popup-hover" title="Popup for Point 2">🔵</span>
-  </div>
-
-  <!-- Hover region 1 -->
-  <div style="position: absolute; top: 20%; left: 10%; width: 15%; height: 15%; border: 2px solid red; box-sizing: border-box;"
-       title="Region 1 Info"></div>
-
-  <!-- Hover region 2 -->
-  <div style="position: absolute; top: 50%; left: 50%; width: 20%; height: 20%; border: 2px solid blue; box-sizing: border-box;"
-       title="Region 2 Info"></div>
-</div>
-</div>
-
-<style>
-  .popup-hover:hover::after {
-    content: attr(title);
-    position: absolute;
-    top: -30px;
-    left: 0;
-    background: white;
-    color: black;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    white-space: nowrap;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-</style>
-```
-:::
-
 ### Terminal Alkyne
 
-### Diazirine: A photo-activated crosslinker
+### Diazirine: A photo-activated crosslinker {#sec-DiazirinePlacement}
 
 ### Coumarin Cage: A photo-activated protection moiety
 
@@ -144,6 +153,10 @@ plot
 ## Trifunctional Lipid Probes
 
 ## Experimental schema
+
+:::{.border}
+![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+:::
 
 ### Cell treatment
 
@@ -157,9 +170,6 @@ plot
 
 
 
-:::{.border}
-![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
-:::
 
 \br
 
