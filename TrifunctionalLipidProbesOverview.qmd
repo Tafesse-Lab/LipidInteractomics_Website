@@ -7,12 +7,25 @@ format:
 standalone: true
 ---
 
-Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be linked below for greater detail.
+Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.
 
-## Functional moieties
+## Introduction: Why study lipid interactomes?
+
+## Why are functional modifications necessary in studying lipid interactions?
+
+Synthetic lipid analogs have greatly enabled the exploration of lipid biology. However, it may not be obvious why such analogs are such valuable tools. 
+
+While, genetic editing has enabled vast advances in the study of nucleic acids and proteins, there has been no obvious parallel for studying lipids. Using CRISPR or *de novo* gene synthesis, one can subtly alter a sequence to enable visualization and pulldown without greatly affecting the structure or function of the target gene. To name a few examples, one can: mutate the active site of a protein to change substrate specificity, swap in a different subcellular localization sequence to translocate the target protein to a different organelle, swap domains to alter protein::protein binding, fuse the target protein to any number of fluorescent domains to visualize a protein's localization, or add an affinity handle to enable the enrichment of the target protein and any other protein interactors [REF].
+
+Lipids, however, are an entirely different story altogether. Foremost of these differences is that lipids are the product of enzymatic synthesis and thus their structure cannot be directly modified within a living biological system. For much of the history of lipid research, studies utilized whole gene knockout or knock-in paradigms to alter the global lipid composition of the cell. Through these methods, we know much about the localization and broad behavior of lipid classes -- but the biological roles of select lipid species are historically challenging to explore [REF]. 
+
+Further, lipids are significantly smaller than even the smallest protein -- composed of dozens of atoms, as opposed to hundreds or thousands -- and, thus, their biophysical properties are much more sensitive to modification. It is nearly impossible to fuse a lipid with a fluorescent protein (such as GFP) or classical affinity handle (such as an HA tag) without drastically affecting the biological activity of the lipid [REF]. 
+
+Finally, each of the tens of thousands of distinct lipid structures is a part of a rapidly shifting metabolic network: any given lipid can be cleaved, modified, or converted into other lipid species within short time frames. Some lipids, such as sphingosine have half-lives in the minutes [REF].
+
+For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository
 
 :::{.border}
-
 ```{r setup, echo=FALSE, include=FALSE}
 library(plotly)
 
@@ -117,10 +130,7 @@ plot
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 </style>
-
-
 ```
-
 :::
 
 ### Terminal Alkyne

@@ -333,7 +333,8 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#functional-moieties" id="toc-functional-moieties" class="nav-link active" data-scroll-target="#functional-moieties">Functional moieties</a>
+  <li><a href="#introduction-why-study-lipid-interactomes" id="toc-introduction-why-study-lipid-interactomes" class="nav-link active" data-scroll-target="#introduction-why-study-lipid-interactomes">Introduction: Why study lipid interactomes?</a></li>
+  <li><a href="#why-are-functional-modifications-necessary-in-studying-lipid-interactions" id="toc-why-are-functional-modifications-necessary-in-studying-lipid-interactions" class="nav-link" data-scroll-target="#why-are-functional-modifications-necessary-in-studying-lipid-interactions">Why are functional modifications necessary in studying lipid interactions?</a>
   <ul class="collapse">
   <li><a href="#terminal-alkyne" id="toc-terminal-alkyne" class="nav-link" data-scroll-target="#terminal-alkyne">Terminal Alkyne</a></li>
   <li><a href="#diazirine-a-photo-activated-crosslinker" id="toc-diazirine-a-photo-activated-crosslinker" class="nav-link" data-scroll-target="#diazirine-a-photo-activated-crosslinker">Diazirine: A photo-activated crosslinker</a></li>
@@ -378,9 +379,18 @@ div.csl-indent {
 </header>
 
 
-<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be linked below for greater detail.</p>
-<section id="functional-moieties" class="level2">
-<h2 class="anchored" data-anchor-id="functional-moieties">Functional moieties</h2>
+<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.</p>
+<section id="introduction-why-study-lipid-interactomes" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-why-study-lipid-interactomes">Introduction: Why study lipid interactomes?</h2>
+</section>
+<section id="why-are-functional-modifications-necessary-in-studying-lipid-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-functional-modifications-necessary-in-studying-lipid-interactions">Why are functional modifications necessary in studying lipid interactions?</h2>
+<p>Synthetic lipid analogs have greatly enabled the exploration of lipid biology. However, it may not be obvious why such analogs are such valuable tools.</p>
+<p>While, genetic editing has enabled vast advances in the study of nucleic acids and proteins, there has been no obvious parallel for studying lipids. Using CRISPR or <em>de novo</em> gene synthesis, one can subtly alter a sequence to enable visualization and pulldown without greatly affecting the structure or function of the target gene. To name a few examples, one can: mutate the active site of a protein to change substrate specificity, swap in a different subcellular localization sequence to translocate the target protein to a different organelle, swap domains to alter protein::protein binding, fuse the target protein to any number of fluorescent domains to visualize a protein’s localization, or add an affinity handle to enable the enrichment of the target protein and any other protein interactors [REF].</p>
+<p>Lipids, however, are an entirely different story altogether. Foremost of these differences is that lipids are the product of enzymatic synthesis and thus their structure cannot be directly modified within a living biological system. For much of the history of lipid research, studies utilized whole gene knockout or knock-in paradigms to alter the global lipid composition of the cell. Through these methods, we know much about the localization and broad behavior of lipid classes – but the biological roles of select lipid species are historically challenging to explore [REF].</p>
+<p>Further, lipids are significantly smaller than even the smallest protein – composed of dozens of atoms, as opposed to hundreds or thousands – and, thus, their biophysical properties are much more sensitive to modification. It is nearly impossible to fuse a lipid with a fluorescent protein (such as GFP) or classical affinity handle (such as an HA tag) without drastically affecting the biological activity of the lipid [REF].</p>
+<p>Finally, each of the tens of thousands of distinct lipid structures is a part of a rapidly shifting metabolic network: any given lipid can be cleaved, modified, or converted into other lipid species within short time frames. Some lipids, such as sphingosine have half-lives in the minutes [REF].</p>
+<p>For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository</p>
 <div class="border">
 <div class="cell" data-warnings="false">
 <div class="cell-output cell-output-stderr">
@@ -389,8 +399,8 @@ div.csl-indent {
   Read more about this trace type -&gt; https://plotly.com/r/reference/#scatter</code></pre>
 </div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-82dace813a57d42ff0a1" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-82dace813a57d42ff0a1">{"x":{"visdat":{"4147455c2782":["function () ","plotlyVisDat"],"41472525eb61":["function () ","data"]},"cur_data":"41472525eb61","attrs":{"41472525eb61":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"text":{},"mode":"markers","marker":{"opacity":0},"hoverinfo":"text","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"rect","x0":0,"x1":32,"y0":50,"y1":85,"line":{"color":"red","width":2},"fillcolor":"rgba(255, 0, 0, 0.1)","name":"Region 1","hoverinfo":"none"},{"type":"rect","x0":50,"x1":70,"y0":40,"y1":60,"line":{"color":"blue","width":2},"fillcolor":"rgba(0, 0, 255, 0.1)","name":"Region 2","hoverinfo":"none"}],"images":[{"source":"LipidProbe/Structures/SphingosineStructure.png","xref":"x","yref":"y","x":0,"y":100,"sizex":100,"sizey":100,"xanchor":"left","yanchor":"top","layer":"below"}],"xaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[20,60],"y":[80,50],"text":["Region 1 Info","Region 2 Info"],"mode":"markers","marker":{"color":"rgba(31,119,180,1)","opacity":0,"line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text"],"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-ee7f967a72ef87e9c5d6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ee7f967a72ef87e9c5d6">{"x":{"visdat":{"9d361d47d6f3":["function () ","plotlyVisDat"],"9d365770fa89":["function () ","data"]},"cur_data":"9d365770fa89","attrs":{"9d365770fa89":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"text":{},"mode":"markers","marker":{"opacity":0},"hoverinfo":"text","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"rect","x0":0,"x1":32,"y0":50,"y1":85,"line":{"color":"red","width":2},"fillcolor":"rgba(255, 0, 0, 0.1)","name":"Region 1","hoverinfo":"none"},{"type":"rect","x0":50,"x1":70,"y0":40,"y1":60,"line":{"color":"blue","width":2},"fillcolor":"rgba(0, 0, 255, 0.1)","name":"Region 2","hoverinfo":"none"}],"images":[{"source":"LipidProbe/Structures/SphingosineStructure.png","xref":"x","yref":"y","x":0,"y":100,"sizex":100,"sizey":100,"xanchor":"left","yanchor":"top","layer":"below"}],"xaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"visible":false,"range":[0,100],"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[20,60],"y":[80,50],"text":["Region 1 Info","Region 2 Info"],"mode":"markers","marker":{"color":"rgba(31,119,180,1)","opacity":0,"line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text"],"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -431,8 +441,6 @@ div.csl-indent {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 </style>
-
-
 </section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
@@ -875,7 +883,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
  <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"fade","selector":".lightbox","loop":true,"closeEffect":"fade","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"fade","openEffect":"fade","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
