@@ -28,7 +28,7 @@ Functionalized lipid probes are at the intersection of several niche biotechnolo
 
 Synthetic lipid analogs have greatly enabled the exploration of lipid biology. However, it may not be obvious why such analogs are such valuable tools. 
 
-While, genetic editing has enabled vast advances in the study of nucleic acids and proteins, there has been no obvious parallel for studying lipids. Using CRISPR or *de novo* gene synthesis, one can subtly alter a sequence to enable visualization and pulldown without greatly affecting the structure or function of the target gene. To name a few examples, one can: mutate the active site of a protein to change substrate specificity, swap in a different subcellular localization sequence to translocate the target protein to a different organelle, swap domains to alter protein::protein binding, fuse the target protein to any number of fluorescent domains to visualize a protein's localization, or add an affinity handle to enable the enrichment of the target protein and any other protein interactors [REF].
+While, genetic editing has enabled vast advances in the study of nucleic acids and proteins, there has been no obvious parallel for studying lipids. Using CRISPR or *de novo* gene synthesis, one can subtly alter a sequence to enable visualization and pulldown without greatly affecting the structure or function of the target gene. To name a few examples, one can: mutate the active site of a protein to change substrate specificity, swap in a different subcellular localization sequence to translocate the target protein to a different organelle, swap domains to alter protein::protein binding, fuse the target protein to any number of fluorescent domains to visualize a protein's localization, or add an affinity handle to enable the enrichment of the target protein and any other protein interactors [@schultzChemicalToolsLipid2023].
 
 Lipids, however, are an entirely different story altogether. Foremost of these differences is that lipids are the product of enzymatic synthesis and thus their structure cannot be directly modified within a living biological system. For much of the history of lipid research, studies utilized whole gene knockout or knock-in paradigms to alter the global lipid composition of the cell. Through these methods, we know much about the localization and broad behavior of lipid classes -- but the biological roles of select lipid species are historically challenging to explore [REF]. 
 
@@ -194,9 +194,29 @@ References to include:
 
 #### Spectral counting
 
+* Isolating peptide-like ions in MS1 scan, fragmenting in MS2 scan to record peptide sequence, consolidating the sum total of individual scans for each peptide mapped to each protein. This sum can be used as a proxy for the absolute abundance of the protein when comparing two samples prepared in identical manners and run on the same LC-MS/MS protocol.
+
+Pros:
+* Widely used, though not strictly a direct measurement of relative abundance. Highly accessible, as label-free quantification is much less costly and sample preparation is much more simple.
+
+Cons:
+* Co-elution of high- and low-abundance peptides can cause significant issues in the number of peptides can be isolated in MS1. 
+* Samples are necessarily run at different times. Instrument calibration can drift, contaminants in the liquid chromatography can build, and errors can accrue in the preparation of each sample. Unless great care is taken, substantial differences between MS runs can result in the reporting of artificial differences between the samples.
+
+
 #### Isobaric mass tagging
 
+* Chemically adding a mass tag to each peptide in a sample, pooling with other samples, running as combined sample group in a single MS run. As before, peptide isolation in MS1, fragmentation and sequence identification in MS2. Additional identification of fragmented mass tags in MS2 reveals the relative abundances of the peptide in each contributing sample. 
 
+Pros:
+* Because many (16+ in the case of Tandem Mass Tags^TM^) samples can be pooled in each experimental group, the total number of MS runs can be reduced. Alternatively, the pooled experimental group can be fractionated (typically orthogonally to the reverse phase chromatography used in the LC injection method; e.g. cation exchange) so that high-abundance and low-abundance proteins can be spaced out. 
+  * For example, instead of performing 16 individual low-depth MS runs using label-free methods, one may run 6 fractionated MS runs of the pooled experimental group, resulting in significantly greater depth of MS1 peptide coverage.
+
+Cons:
+* Cost
+* Increased number of sample preparation steps, higher probability to introduce variation in sample handling.
+* Requirement for normalizing total protein input: when comparing +UV to -UV in diazirine enrichment, one necessarily must artificially combine disproportionate sample quantities. [We might not want to mention this here, it's a niche issue...]
+* Need for greater precision in MS scanning -- more expensive instruments and outsourcing of sample analysis.
 
 
 \br
