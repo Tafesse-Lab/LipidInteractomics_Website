@@ -9,6 +9,7 @@ crossref:
   ref-hyperlink: true # (default is true)
 ---
 
+
 **This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
 Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.
@@ -38,7 +39,7 @@ Finally, each of the tens of thousands of distinct lipid structures is a part of
 For these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository (highlighted in the figure below) are: 
 1. A diazirine ring 
 2. A terminal alkyne
-3. A coumarin cage. 
+3. A coumarin photocage
 
 These modifications allow for the stabilization of protein::lipid interactions and the affinity enrichment of protein::lipid conjugates, all with tight spatiotemporal control. These modifications are described in greater detail below.
 
@@ -144,15 +145,42 @@ plot
 
 ### Terminal Alkyne
 
+* Affinity handle
+* Affix fluorophore post-hoc
+
 ### Diazirine: A photo-activated crosslinker {#sec-DiazirinePlacement}
 
-### Coumarin Cage: A photo-activated protection moiety
+* Crosslinking motif activated by 355nm UV light. 
+* Irradiation of the ring produces a reactive carbene radical which covalently bonds with any nearby molecule. This radical can form linkages by inserting into carbo-hydrogen, heteroatom-hydrogen (SH, NH~2~, or OH) or double bonds[@haberkantFatFabulousBifunctional2014].
+* This chemical group is the smallest available photoactivatable crosslinking motif [@haberkantFatFabulousBifunctional2014]
 
-## *P*hoto*a*ctivatable & *C*lickable Probes
+References to include: 
+* [@schultzFlashClickMultifunctionalized2022a]
+* [@schultzChemicalToolsLipid2023]
+* [@farleyTrifunctionalSphinganineNew2024a]
+* [@hoglingerTrifunctionalLipidProbes2017]
+
+### Coumarin Photocage: A photo-activated protection moiety
+
+* Many native lipids of interest are rapidly synthesized, catabolized, and interconverted throughout the vast lipid metabolic network. 
+* The coumarin cage is a photolabile protection group. Upon stimulation with 400nm light, this group is released to expose the native structure of the lipid headgroup.
+* The exposure of the native headgroup allows for recognition by protein binders. For example, Hoglinger et al. showed in 2015 that the release of caged sphingosine resulted in potent lysosomal calcium release -- a finding which greatly expanded the understanding of the intracellular sphingosine signaling cascade[@hoglingerIntracellularSphingosineReleases2015a]. In this and other studies, sub-cellular irradiation using a scanning laser allows for the select spatial control of uncaging. While not compatible with large-scale interaction studies, this method enables the assessment of biological activity via fluorescence microscopy.
+* An additional boon of using coumarin as the caging moiety is its inherent fluorescence: one can simply use a fluorescence microscope to rapidly assess the intercalation of the functionalized lipid into the target cell.
+
+## Photoactivatable & Clickable Probes / Bifunctional Lipid Probes
+
+* The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties. 
+
+References to include: 
+* [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014
+
 
 ## Trifunctional Lipid Probes
 
-## Experimental schema
+References to include:
+* 
+
+## Interactomics Experimental schema
 
 :::{.border}
 ![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
