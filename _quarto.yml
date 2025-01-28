@@ -53,6 +53,8 @@ website:
                 text: "8-3 Fatty Acid"
               - href: LipidProbe/1-10_FattyAcid.qmd
                 text: "1-10 Fatty Acid"
+          - href: LipidProbe/EnrichedHitsComparison.qmd
+            text: "Probe vs Probe Comparisons"
 
       - section: "IndividualStudies/StudyOverview.qmd"
         contents:

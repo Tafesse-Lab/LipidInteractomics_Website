@@ -1,0 +1,61 @@
+---
+title: "Comparing the Enriched Hits of Different Probes"
+---
+
+<!-- Data wrangling, will comment out most of this when it's all done. 
+Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->
+```{r setup, echo=FALSE,include=FALSE}
+library(dplyr)
+library(tidyr)
+library(readr)
+
+# # Making a big shared dataset with all of the TMT-quantified lipid probes - this is a little hand-wavey because some were run at different times... TBD if we want to keep this.
+# PA_data <- read_csv("LipidProbe/DataSets/PA_HeLa_AT_2025.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# PE_data <- read_csv("LipidProbe/DataSets/PE_HeLa_AT_2025.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# Spa_data <- read_csv("LipidProbe/DataSets/Spa_Huh7_SF_2024.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# Sph_data <- read_csv("LipidProbe/DataSets/Sph_Huh7_SF_2024.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# FA_8_3_data <- read_csv("LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# FA_1_10_data <- read_csv("LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv") |>
+# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+
+# combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
+
+#write.csv(combinedDataset, "LipidProbe/DataSets/combinedProbeDatasets_TMT.csv")
+```
+
+:::{.border}
+:::{#fig-ShinyEmbed}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiny App Embedding</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://gaelen-guzman.shinyapps.io/lipidinteractomics_shinyapp/"></iframe>
+</body>
+</html>
+```
+
+Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. Depicted are only the proteins present in the datasets of both probes.
+:::
+:::

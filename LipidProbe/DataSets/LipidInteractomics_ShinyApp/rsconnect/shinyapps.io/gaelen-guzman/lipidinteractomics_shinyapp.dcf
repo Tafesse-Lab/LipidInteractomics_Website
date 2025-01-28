@@ -1,0 +1,10 @@
+name: lipidinteractomics_shinyapp
+title:
+username: gaelen-guzman
+account: gaelen-guzman
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13835781
+bundleId: 9713656
+url: https://gaelen-guzman.shinyapps.io/lipidinteractomics_shinyapp/
+version: 1
