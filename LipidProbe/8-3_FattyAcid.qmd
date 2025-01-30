@@ -1,5 +1,6 @@
 ---
 title: "Trifunctional 8-3 Fatty Acid"
+html: default
 ---
 
 <!-- R setup, reading dataframes and minor data wrangling -->

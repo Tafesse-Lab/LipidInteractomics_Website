@@ -2,6 +2,7 @@
 title: "Trifunctional 1-10 Fatty Acid"
 crossref: 
   ref-hyperlink: true # (default is true)
+html: default
 ---
 
 

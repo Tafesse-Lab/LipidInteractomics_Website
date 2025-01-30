@@ -74,6 +74,7 @@ website:
             text: "Muller et al., 2021"
           - href: IndividualStudies/DH_2017.qmd
             text: "Höglinger et al., 2017"
+prefer-html: true
 format:
   html:
     lightbox:
@@ -86,8 +87,4 @@ format:
     css: styles.css
     toc: true
     sidebar: true
-  docx:
-    fig-height: 5
-    reference-doc: custom-reference-doc.docx
-   
 

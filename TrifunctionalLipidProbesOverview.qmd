@@ -11,8 +11,6 @@ crossref:
 
 **This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
-# Multifunctional Lipid Probes Background
-
 Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced and linked below for greater detail.
 
 ## Introduction: Why Study Lipid Interactomes?
@@ -51,13 +49,9 @@ To overcome these challenges, researchers have developed synthetic lipid analogs
 
 To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include:
 
-1.  Diazirine Rings – Enable covalent crosslinking to interacting proteins upon UV activation.
-2.  Terminal Alkynes – Allow for affinity enrichment using click chemistry.
-3.  Coumarin Photocages – Provide spatiotemporal control over lipid activity through light-triggered release.
 
-These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.
-
-#### Diazirine: Stabilizing Lipid-Protein Interactions with Covalent Crosslinking {#sec-DiazirinePlacement}
+:::{.callout-note collapse="true"}
+#### Diazirine ring
 
 Lipid-protein interactions are inherently transient and dynamic, making them particularly challenging to capture and study. Unlike protein-protein interactions, which often rely on extensive surface interfaces and hydrogen bonding, most lipids have minimal hydrogen bonding potential and lack a substantial structural framework for stable interactions. As a result, even biologically relevant lipid-protein contacts may be too fleeting to detect under standard biochemical conditions.
 
@@ -75,13 +69,23 @@ Among the various crosslinking motifs, the diazirine ring is the smallest, makin
 
 The small size and high reactivity of diazirine crosslinking make it an invaluable tool for capturing lipid-protein interactions while minimizing perturbations to native lipid function.
 
+##### The effect of Diazirine placement on crosslinking targets {#sec-DiazirinePlacement}
+
+- The reactive carbene produced upon irradiation will bond with whatever molecule is nearest -- thus, the location of the diazirine ring can have a dramatic effect on what protein interactors are stabilized via crosslinking.
+
+- The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, [8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd) has the acyl chain only 3 carbons from the end. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.
+
+- In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is [1-10 Fatty Acid](/LipidProbe/1-10_FattyAcid.qmd), in which the diazirine ring was placed 10 carbons from the terminus of the chain.
+:::
+
+:::{.callout-note collapse="true"}
 #### Terminal Alkyne
 
 When studying proteins, researchers often use genetic methods to tag or modify them, making them easier to visualize or isolate. For example, adding a green fluorescent protein (GFP) domain to a protein allows it to be seen under a fluorescence microscope, whereas incorporating an HA tag enables enrichment using antibody pulldown techniques. These approaches work well for proteins because they are encoded by genes and can be modified at the DNA level.
 
 Lipids, however, cannot be modified in the same way. Their synthesis occurs enzymatically, meaning there is no genetic sequence to alter. Large additions, like a GFP or HA domain, would drastically change a lipid’s properties, making it unrecognizable to the proteins and pathways that typically interact with it. Instead, a much smaller modification is needed—one that allows researchers to track and manipulate lipids without interfering with their biological function.
 
-##### The Terminal Alkyne: A Versatile Bioorthogonal Handle
+##### A Versatile Bioorthogonal Handle
 
 One of the smallest and most effective modifications for this purpose is the terminal alkyne. This functional group consists of a simple triple bond at the end of a carbon chain, a minor structural change that does not significantly alter the lipid’s behavior. Despite its small size, the terminal alkyne serves as a powerful chemical handle, allowing researchers to attach various probes after the lipid has been introduced into a biological system.
 
@@ -94,30 +98,35 @@ One major application of the terminal alkyne is fluorescence labeling. A functio
 Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.
 
 By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. It bridges the gap between traditional lipid research and modern bioorthogonal chemistry, allowing for precise studies of lipid function in living systems.
+:::
 
-### Coumarin Photocage: Controlling Lipid Activity with Light
-
+:::{.callout-note collapse="true"}
+#### Coumarin Photocage
 Lipids play an essential role in cellular signaling, yet their biological study presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. This rapid turnover makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.
 
 One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength "uncages" the analog to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.
 
-#### A Light-Activated Protection Group
+##### A Light-Activated Protection Group
 
 One of the most effective tools for photocaging lipids is the coumarin cage, a photolabile protection group that can be removed upon exposure to 400 nm light. When attached to a lipid’s headgroup, the coumarin moiety temporarily blocks interactions with proteins, preventing the lipid from participating in its normal biological pathways. However, upon photoactivation, the coumarin group is cleaved, restoring the lipid to its native structure and allowing it to engage with its biological targets.
 
 This approach is useful for studying lipid-protein interactions, as uncaging the lipid in a controlled manner ensures that protein binders recognize the native lipid structure only when and where the researcher intends.
 
-#### Applications in Cellular Signaling Studies
+##### Applications in Cellular Signaling Studies
 
 The power of coumarin-caged lipids has been demonstrated in studies examining intracellular lipid signaling. For example, in 2015, Högliner et al. used a caged sphingosine analog to investigate the role of sphingosine in calcium signaling. They found that upon photoactivation of the caged sphingosine, lysosomal calcium release was triggered, revealing a crucial link between sphingosine metabolism and intracellular calcium dynamics [@hoglingerIntracellularSphingosineReleases2015a]. This discovery significantly expanded the understanding of the sphingosine signaling cascade and its downstream effects.
 
 Beyond biochemical studies, coumarin-caged lipids enable live-cell imaging approaches. Selectively irradiating specific subcellular regions allows the researcher to uncage lipids in a highly localized manner and assess their effects in real time. While this approach is not well-suited for large-scale proteomic studies, it provides a powerful method for investigating lipid function via fluorescence microscopy.
 
-#### An Additional Benefit: Coumarin’s Inherent Fluorescence
+##### An Additional Benefit: Coumarin’s Inherent Fluorescence
 
 A unique advantage of using coumarin as a photocaging group is its intrinsic fluorescence. This means that before the lipid is even uncaged, its cellular incorporation can be directly visualized using a fluorescence microscope. By tracking fluorescence intensity and distribution, researchers can quickly determine whether a functionalized lipid has successfully intercalated into the target cell’s membrane or accumulated in specific subcellular compartments.
 
 This dual functionality—serving as both a caging group and a fluorescent probe—makes coumarin a useful tool for studying lipid localization, uptake, and bioactivity.
+:::
+
+These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.
+
 
 ## Photoactivatable & Clickable Probes / Bifunctional Lipid Probes
 
@@ -141,6 +150,7 @@ References to include:
 
 ### Mass spectrometry analysis
 
+:::{.callout-note collapse="true"}
 #### Label-Free Quantification
 
 Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.
@@ -170,7 +180,8 @@ Label-free quantification (LFQ) is a widely used mass spectrometry-based proteom
 ##### Conclusion
 
 Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.
-
+:::
+:::{.callout-note collapse="true"}
 #### Quantitative Mass Spectrometry with Tandem Mass Tagging {#sec-TMT}
 
 Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.
@@ -212,3 +223,4 @@ Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry tech
 ##### Conclusion
 
 TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.
+:::
