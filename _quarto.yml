@@ -17,8 +17,12 @@ website:
         text: "What are Multifunctional Lipid Probes?"
 
     right:
-      - href: about.qmd
-        text: "About"
+      - text: "Contact us"
+        menu: 
+        - href: about.qmd
+          text: "About"
+        - href: DataSubmission.qmd
+          text: "Submit your data"
    
   sidebar:
     # style: "docked"

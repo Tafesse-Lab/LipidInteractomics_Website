@@ -118,10 +118,21 @@ div.csl-indent {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Contact us</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-contact-us">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./DataSubmission.html">
+ <span class="dropdown-text">Submit your data</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -330,7 +341,9 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction-why-study-lipid-interactomes" id="toc-introduction-why-study-lipid-interactomes" class="nav-link active" data-scroll-target="#introduction-why-study-lipid-interactomes">Introduction: Why Study Lipid Interactomes?</a>
+  <li><a href="#multifunctional-lipid-probes-background" id="toc-multifunctional-lipid-probes-background" class="nav-link active" data-scroll-target="#multifunctional-lipid-probes-background">Multifunctional Lipid Probes Background</a>
+  <ul class="collapse">
+  <li><a href="#introduction-why-study-lipid-interactomes" id="toc-introduction-why-study-lipid-interactomes" class="nav-link" data-scroll-target="#introduction-why-study-lipid-interactomes">Introduction: Why Study Lipid Interactomes?</a>
   <ul class="collapse">
   <li><a href="#lipid-lipid-interactions-and-membrane-properties" id="toc-lipid-lipid-interactions-and-membrane-properties" class="nav-link" data-scroll-target="#lipid-lipid-interactions-and-membrane-properties">Lipid-Lipid Interactions and Membrane Properties</a></li>
   <li><a href="#lipids-as-signaling-molecules" id="toc-lipids-as-signaling-molecules" class="nav-link" data-scroll-target="#lipids-as-signaling-molecules">Lipids as Signaling Molecules</a></li>
@@ -340,9 +353,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#why-lipids-require-a-different-approach" id="toc-why-lipids-require-a-different-approach" class="nav-link" data-scroll-target="#why-lipids-require-a-different-approach">Why Lipids Require a Different Approach</a></li>
   <li><a href="#the-role-of-synthetic-lipid-analogs" id="toc-the-role-of-synthetic-lipid-analogs" class="nav-link" data-scroll-target="#the-role-of-synthetic-lipid-analogs">The Role of Synthetic Lipid Analogs</a></li>
-  <li><a href="#sec-DiazirinePlacement" id="toc-sec-DiazirinePlacement" class="nav-link" data-scroll-target="#sec-DiazirinePlacement">Diazirine: A photo-activated crosslinker</a></li>
-  <li><a href="#terminal-alkyne" id="toc-terminal-alkyne" class="nav-link" data-scroll-target="#terminal-alkyne">Terminal Alkyne</a></li>
-  <li><a href="#coumarin-photocage-a-photo-activated-protection-moiety" id="toc-coumarin-photocage-a-photo-activated-protection-moiety" class="nav-link" data-scroll-target="#coumarin-photocage-a-photo-activated-protection-moiety">Coumarin Photocage: A photo-activated protection moiety</a></li>
+  <li><a href="#coumarin-photocage-controlling-lipid-activity-with-light" id="toc-coumarin-photocage-controlling-lipid-activity-with-light" class="nav-link" data-scroll-target="#coumarin-photocage-controlling-lipid-activity-with-light">Coumarin Photocage: Controlling Lipid Activity with Light</a></li>
   </ul></li>
   <li><a href="#photoactivatable-clickable-probes-bifunctional-lipid-probes" id="toc-photoactivatable-clickable-probes-bifunctional-lipid-probes" class="nav-link" data-scroll-target="#photoactivatable-clickable-probes-bifunctional-lipid-probes">Photoactivatable &amp; Clickable Probes / Bifunctional Lipid Probes</a></li>
   <li><a href="#trifunctional-lipid-probes" id="toc-trifunctional-lipid-probes" class="nav-link" data-scroll-target="#trifunctional-lipid-probes">Trifunctional Lipid Probes</a></li>
@@ -351,6 +362,7 @@ div.csl-indent {
   <li><a href="#cell-treatment" id="toc-cell-treatment" class="nav-link" data-scroll-target="#cell-treatment">Cell treatment</a></li>
   <li><a href="#protein-collection" id="toc-protein-collection" class="nav-link" data-scroll-target="#protein-collection">Protein collection</a></li>
   <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis" class="nav-link" data-scroll-target="#mass-spectrometry-analysis">Mass spectrometry analysis</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -384,17 +396,19 @@ div.csl-indent {
 
 
 <p><strong>This repository is still under construction, please forgive us for incomplete sections as we build features!</strong></p>
-<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail.</p>
+<section id="multifunctional-lipid-probes-background" class="level1">
+<h1>Multifunctional Lipid Probes Background</h1>
+<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced and linked below for greater detail.</p>
 <section id="introduction-why-study-lipid-interactomes" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-why-study-lipid-interactomes">Introduction: Why Study Lipid Interactomes?</h2>
-<p>At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often under-appreciated role in cellular function.</p>
+<p>At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function.</p>
 <section id="lipid-lipid-interactions-and-membrane-properties" class="level3">
 <h3 class="anchored" data-anchor-id="lipid-lipid-interactions-and-membrane-properties">Lipid-Lipid Interactions and Membrane Properties</h3>
 <p>Lipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactomes, researchers can gain deeper insight into how these physical interactions influence membrane architecture and dynamics. Understanding these interactions is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.</p>
 </section>
 <section id="lipids-as-signaling-molecules" class="level3">
 <h3 class="anchored" data-anchor-id="lipids-as-signaling-molecules">Lipids as Signaling Molecules</h3>
-<p>Beyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can have far-reaching effects on cellular behavior and physiological responses.</p>
+<p>Beyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can affect cellular behavior and physiological responses.</p>
 </section>
 <section id="lipid-protein-interactions-unlocking-cellular-communication" class="level3">
 <h3 class="anchored" data-anchor-id="lipid-protein-interactions-unlocking-cellular-communication">Lipid-Protein Interactions: Unlocking Cellular Communication</h3>
@@ -403,36 +417,14 @@ div.csl-indent {
 </section>
 <section id="synthetic-lipid-analogs-powerful-tools-for-lipid-biology" class="level2">
 <h2 class="anchored" data-anchor-id="synthetic-lipid-analogs-powerful-tools-for-lipid-biology">Synthetic Lipid Analogs: Powerful Tools for Lipid Biology</h2>
-<p>The study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are so essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.</p>
+<p>The study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.</p>
 <section id="why-lipids-require-a-different-approach" class="level3">
 <h3 class="anchored" data-anchor-id="why-lipids-require-a-different-approach">Why Lipids Require a Different Approach</h3>
-<p>Advances in genetic engineering—such as CRISPR and de novo gene synthesis—have revolutionized the study of nucleic acids and proteins. These techniques allow researchers to introduce precise modifications, such as:</p>
-<ul>
-<li>Altering enzyme activity by mutating active sites to change substrate specificity.</li>
-<li>Redirecting proteins by swapping subcellular localization sequences.</li>
-<li>Modifying protein interactions by swapping or removing binding domains.</li>
-<li>Visualizing proteins by fusing them with fluorescent tags (e.g., GFP).</li>
-<li>Isolating protein complexes by adding affinity handles for purification.</li>
-</ul>
-<p>In contrast, lipids pose distinct challenges that make such genetic manipulations impractical:</p>
-<ol type="1">
-<li>Lipids Are Synthesized Enzymatically
-<ul>
-<li>Unlike proteins, whose sequences are encoded in DNA, lipids are the product of enzymatic pathways. Their structures cannot be directly altered within a living system in the same way that gene sequences can be modified.</li>
-<li>Early lipid research relied on gene knockouts and knock-ins to globally alter lipid composition, which provided broad insights into lipid classes but was less effective for studying individual lipid species.</li>
-</ul></li>
-<li>Lipids Are Small and Structurally Sensitive
-<ul>
-<li>Compared to proteins, which consist of hundreds or thousands of atoms, lipids are much smaller (often composed of just a few dozen atoms).</li>
-<li>Because of their size, even small modifications can dramatically alter their biophysical properties and biological function.</li>
-<li>For example, unlike proteins, lipids cannot be tagged with large fluorescent proteins (e.g., GFP) or classical affinity tags (e.g., HA tags) without completely disrupting their activity.</li>
-</ul></li>
-<li>Lipids Are Metabolically Dynamic
-<ul>
-<li>Lipids exist within a highly dynamic metabolic network, where they can be rapidly modified, cleaved, or converted into other lipid species.</li>
-<li>Some lipids, like sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track and study in real time.</li>
-</ul></li>
-</ol>
+<p>Advances in genetic engineering—such as CRISPR and de novo gene synthesis—have revolutionized the study of nucleic acids and proteins. These techniques enable precise modifications, such as altering enzyme activity, redirecting proteins to different subcellular locations, modifying binding domains, and tagging proteins for visualization or isolation.</p>
+<p>In contrast, lipids present unique challenges that make genetic approaches impractical. Unlike proteins, which are directly encoded in DNA, lipids are synthesized enzymatically. Their structures cannot be modified in living cells through genetic manipulation alone. Traditional approaches, such as gene knockouts or knock-ins, can broadly alter lipid composition but do not allow for precise control over individual lipid species.</p>
+<p>Lipids are also much smaller than proteins, often composed of just a few dozen atoms. Even minor modifications can significantly alter their biophysical properties and biological function. Unlike proteins, which can tolerate the addition of large fluorescent or affinity tags, lipids require minimal chemical modifications to preserve their activity.</p>
+<p>Additionally, lipids exist within a highly dynamic metabolic network, where they are continuously synthesized, modified, and degraded. Some signaling lipids, such as sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track in real-time.</p>
+<p>To overcome these challenges, researchers have developed synthetic lipid analogs with chemical modifications that allow for targeted investigation while preserving essential biological properties. The following sections detail key modifications used in functional lipid probes.</p>
 </section>
 <section id="the-role-of-synthetic-lipid-analogs" class="level3">
 <h3 class="anchored" data-anchor-id="the-role-of-synthetic-lipid-analogs">The Role of Synthetic Lipid Analogs</h3>
@@ -443,38 +435,57 @@ div.csl-indent {
 <li>Coumarin Photocages – Provide spatiotemporal control over lipid activity through light-triggered release.</li>
 </ol>
 <p>These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.</p>
+<section id="sec-DiazirinePlacement" class="level4">
+<h4 class="anchored" data-anchor-id="sec-DiazirinePlacement">Diazirine: Stabilizing Lipid-Protein Interactions with Covalent Crosslinking</h4>
+<p>Lipid-protein interactions are inherently transient and dynamic, making them particularly challenging to capture and study. Unlike protein-protein interactions, which often rely on extensive surface interfaces and hydrogen bonding, most lipids have minimal hydrogen bonding potential and lack a substantial structural framework for stable interactions. As a result, even biologically relevant lipid-protein contacts may be too fleeting to detect under standard biochemical conditions.</p>
+<p>To effectively identify and analyze lipid-binding proteins, it is necessary to stabilize these interactions in a way that allows their subsequent enrichment and detection. While affinity enrichment approaches (e.g., lipid pulldown assays) can be used, they often require detergents to solubilize membrane-associated complexes, which can introduce artifacts or disrupt weak lipid-protein interactions. Covalent crosslinking, on the other hand, offers a far more reliable method to “freeze” these interactions in place, preserving their native binding state even during rigorous purification steps before mass spectrometry analysis.</p>
+<section id="why-use-diazirine-as-a-crosslinking-motif" class="level5">
+<h5 class="anchored" data-anchor-id="why-use-diazirine-as-a-crosslinking-motif">Why Use Diazirine as a Crosslinking Motif?</h5>
+<p>Several chemical groups can be used for covalent crosslinking, but diazirine rings are particularly well-suited for lipid studies due to their small size and minimal structural interference. Other crosslinking motifs may alter the lipid’s physicochemical properties, potentially changing its interaction profile. Diazirine, however, is the smallest known photoactivatable crosslinking group, making it an ideal choice for studying delicate lipid-protein interactions.</p>
 </section>
-<section id="sec-DiazirinePlacement" class="level3">
-<h3 class="anchored" data-anchor-id="sec-DiazirinePlacement">Diazirine: A photo-activated crosslinker</h3>
-<p>Lipid interactions are typically highly transient – few opportunities for</p>
-<ul>
-<li>Crosslinking motif activated by 355nm UV light.</li>
-<li>Irradiation of the ring produces a reactive carbene radical which covalently bonds with any nearby molecule. This radical can form linkages by inserting into carbo-hydrogen, heteroatom-hydrogen (SH, NH<sub>2</sub>, or OH) or double bonds<span class="citation" data-cites="haberkantFatFabulousBifunctional2014"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a></sup></span>.</li>
-<li>This chemical group is the smallest available photoactivatable crosslinking motif<span class="citation" data-cites="haberkantFatFabulousBifunctional2014"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a></sup></span></li>
-</ul>
-<p>References to include:</p>
-<ul>
-<li><span class="citation" data-cites="schultzFlashClickMultifunctionalized2022a"><sup><a href="#ref-schultzFlashClickMultifunctionalized2022a" role="doc-biblioref">2</a></sup></span></li>
-<li><span class="citation" data-cites="schultzChemicalToolsLipid2023"><sup><a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">3</a></sup></span></li>
-<li><span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">4</a></sup></span></li>
-<li><span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">5</a></sup></span></li>
-</ul>
+<section id="key-properties-of-diazirine-crosslinking" class="level5">
+<h5 class="anchored" data-anchor-id="key-properties-of-diazirine-crosslinking">Key properties of diazirine crosslinking:</h5>
+<p>Lipid interactions are typically transient, as most lipids lack opportunities for strong hydrogen bonding and are too small to provide a significant binding interface. Identifying interacting proteins requires stabilizing these interactions to allow for enrichment and analysis. While affinity-based approaches can help, covalent crosslinking is the most effective method, as it enables the removal of impurities and detergents before mass spectrometry analysis.</p>
+<p>Among the various crosslinking motifs, the diazirine ring is the smallest, making it the least likely to interfere with a lipid’s natural interactions. Upon exposure to 355 nm UV light, the diazirine ring forms a reactive carbene radical, which rapidly covalently bonds with nearby molecules. This reaction is highly versatile, as the carbene can insert into carbon-hydrogen, sulfur-hydrogen, nitrogen-hydrogen, oxygen-hydrogen, or double bonds, allowing for broad coverage of potential interaction partners[@haberkantFatFabulousBifunctional2014].</p>
+<p>The small size and high reactivity of diazirine crosslinking make it an invaluable tool for capturing lipid-protein interactions while minimizing perturbations to native lipid function.</p>
 </section>
-<section id="terminal-alkyne" class="level3">
-<h3 class="anchored" data-anchor-id="terminal-alkyne">Terminal Alkyne</h3>
-<ul>
-<li>Affinity handle</li>
-<li>Affix fluorophore post-hoc</li>
-</ul>
 </section>
-<section id="coumarin-photocage-a-photo-activated-protection-moiety" class="level3">
-<h3 class="anchored" data-anchor-id="coumarin-photocage-a-photo-activated-protection-moiety">Coumarin Photocage: A photo-activated protection moiety</h3>
-<ul>
-<li>Many native lipids of interest are rapidly synthesized, catabolized, and interconverted throughout the vast lipid metabolic network.</li>
-<li>The coumarin cage is a photolabile protection group. Upon stimulation with 400nm light, this group is released to expose the native structure of the lipid headgroup.</li>
-<li>The exposure of the native headgroup allows for recognition by protein binders. For example, Hoglinger et al.&nbsp;showed in 2015 that the release of caged sphingosine resulted in potent lysosomal calcium release – a finding which greatly expanded the understanding of the intracellular sphingosine signaling cascade<span class="citation" data-cites="hoglingerIntracellularSphingosineReleases2015a"><sup><a href="#ref-hoglingerIntracellularSphingosineReleases2015a" role="doc-biblioref">6</a></sup></span>. In this and other studies, sub-cellular irradiation using a scanning laser allows for the select spatial control of uncaging. While not compatible with large-scale interaction studies, this method enables the assessment of biological activity via fluorescence microscopy.</li>
-<li>An additional boon of using coumarin as the caging moiety is its inherent fluorescence: one can simply use a fluorescence microscope to rapidly assess the intercalation of the functionalized lipid into the target cell.</li>
-</ul>
+<section id="terminal-alkyne" class="level4">
+<h4 class="anchored" data-anchor-id="terminal-alkyne">Terminal Alkyne</h4>
+<p>When studying proteins, researchers often use genetic methods to tag or modify them, making them easier to visualize or isolate. For example, adding a green fluorescent protein (GFP) domain to a protein allows it to be seen under a fluorescence microscope, whereas incorporating an HA tag enables enrichment using antibody pulldown techniques. These approaches work well for proteins because they are encoded by genes and can be modified at the DNA level.</p>
+<p>Lipids, however, cannot be modified in the same way. Their synthesis occurs enzymatically, meaning there is no genetic sequence to alter. Large additions, like a GFP or HA domain, would drastically change a lipid’s properties, making it unrecognizable to the proteins and pathways that typically interact with it. Instead, a much smaller modification is needed—one that allows researchers to track and manipulate lipids without interfering with their biological function.</p>
+<section id="the-terminal-alkyne-a-versatile-bioorthogonal-handle" class="level5">
+<h5 class="anchored" data-anchor-id="the-terminal-alkyne-a-versatile-bioorthogonal-handle">The Terminal Alkyne: A Versatile Bioorthogonal Handle</h5>
+<p>One of the smallest and most effective modifications for this purpose is the terminal alkyne. This functional group consists of a simple triple bond at the end of a carbon chain, a minor structural change that does not significantly alter the lipid’s behavior. Despite its small size, the terminal alkyne serves as a powerful chemical handle, allowing researchers to attach various probes after the lipid has been introduced into a biological system.</p>
+<p>The terminal alkyne is particularly useful because it undergoes azide-alkyne cycloaddition, a type of click chemistry reaction. This reaction is highly specific, rapid, and bio-orthogonal, meaning it does not interfere with natural cellular processes. By reacting the alkyne with an azide-containing probe, researchers can introduce fluorescent markers for imaging or affinity tags for isolating lipid-protein complexes.</p>
+</section>
+<section id="applications-in-lipid-research" class="level5">
+<h5 class="anchored" data-anchor-id="applications-in-lipid-research">Applications in Lipid Research</h5>
+<p>One major application of the terminal alkyne is fluorescence labeling. A functionalized lipid can be introduced into cells and later reacted with a fluorophore-conjugated azide, allowing researchers to visualize its distribution and movement under a microscope. This approach provides insights into lipid localization and trafficking.</p>
+<p>Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.</p>
+<p>By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. It bridges the gap between traditional lipid research and modern bioorthogonal chemistry, allowing for precise studies of lipid function in living systems.</p>
+</section>
+</section>
+</section>
+<section id="coumarin-photocage-controlling-lipid-activity-with-light" class="level3">
+<h3 class="anchored" data-anchor-id="coumarin-photocage-controlling-lipid-activity-with-light">Coumarin Photocage: Controlling Lipid Activity with Light</h3>
+<p>Lipids play an essential role in cellular signaling, yet their biological study presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. This rapid turnover makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.</p>
+<p>One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength “uncages” the analog to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.</p>
+<section id="a-light-activated-protection-group" class="level4">
+<h4 class="anchored" data-anchor-id="a-light-activated-protection-group">A Light-Activated Protection Group</h4>
+<p>One of the most effective tools for photocaging lipids is the coumarin cage, a photolabile protection group that can be removed upon exposure to 400 nm light. When attached to a lipid’s headgroup, the coumarin moiety temporarily blocks interactions with proteins, preventing the lipid from participating in its normal biological pathways. However, upon photoactivation, the coumarin group is cleaved, restoring the lipid to its native structure and allowing it to engage with its biological targets.</p>
+<p>This approach is useful for studying lipid-protein interactions, as uncaging the lipid in a controlled manner ensures that protein binders recognize the native lipid structure only when and where the researcher intends.</p>
+</section>
+<section id="applications-in-cellular-signaling-studies" class="level4">
+<h4 class="anchored" data-anchor-id="applications-in-cellular-signaling-studies">Applications in Cellular Signaling Studies</h4>
+<p>The power of coumarin-caged lipids has been demonstrated in studies examining intracellular lipid signaling. For example, in 2015, Högliner et al.&nbsp;used a caged sphingosine analog to investigate the role of sphingosine in calcium signaling. They found that upon photoactivation of the caged sphingosine, lysosomal calcium release was triggered, revealing a crucial link between sphingosine metabolism and intracellular calcium dynamics<span class="citation" data-cites="hoglingerIntracellularSphingosineReleases2015a"><sup><a href="#ref-hoglingerIntracellularSphingosineReleases2015a" role="doc-biblioref">1</a></sup></span>. This discovery significantly expanded the understanding of the sphingosine signaling cascade and its downstream effects.</p>
+<p>Beyond biochemical studies, coumarin-caged lipids enable live-cell imaging approaches. Selectively irradiating specific subcellular regions allows the researcher to uncage lipids in a highly localized manner and assess their effects in real time. While this approach is not well-suited for large-scale proteomic studies, it provides a powerful method for investigating lipid function via fluorescence microscopy.</p>
+</section>
+<section id="an-additional-benefit-coumarins-inherent-fluorescence" class="level4">
+<h4 class="anchored" data-anchor-id="an-additional-benefit-coumarins-inherent-fluorescence">An Additional Benefit: Coumarin’s Inherent Fluorescence</h4>
+<p>A unique advantage of using coumarin as a photocaging group is its intrinsic fluorescence. This means that before the lipid is even uncaged, its cellular incorporation can be directly visualized using a fluorescence microscope. By tracking fluorescence intensity and distribution, researchers can quickly determine whether a functionalized lipid has successfully intercalated into the target cell’s membrane or accumulated in specific subcellular compartments.</p>
+<p>This dual functionality—serving as both a caging group and a fluorescent probe—makes coumarin a useful tool for studying lipid localization, uptake, and bioactivity.</p>
+</section>
 </section>
 </section>
 <section id="photoactivatable-clickable-probes-bifunctional-lipid-probes" class="level2">
@@ -484,7 +495,7 @@ div.csl-indent {
 </ul>
 <p>References to include:</p>
 <ul>
-<li><span class="citation" data-cites="haberkantFatFabulousBifunctional2014"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a></sup></span> - Haberkant et al.&nbsp;2014</li>
+<li><span class="citation" data-cites="haberkantFatFabulousBifunctional2014"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">2</a></sup></span> - Haberkant et al.&nbsp;2014</li>
 </ul>
 </section>
 <section id="trifunctional-lipid-probes" class="level2">
@@ -505,107 +516,87 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
 <section id="label-free-quantification" class="level4">
 <h4 class="anchored" data-anchor-id="label-free-quantification">Label-Free Quantification</h4>
-<p>Label-free quantification (LFQ) is a widely used approach in mass spectrometry-based proteomics that estimates protein abundance without the need for chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.</p>
+<p>Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.</p>
 <section id="how-it-works" class="level5">
 <h5 class="anchored" data-anchor-id="how-it-works">How It Works</h5>
-<p>MS1 (Peptide Detection): Peptides are first isolated and detected based on their mass-to-charge ratio (m/z). MS2 (Peptide Sequencing): Selected peptide ions are fragmented, and the resulting spectra are used to determine peptide sequences. Quantification: The total signal intensity of all identified peptides corresponding to a given protein is summed, serving as a proxy for the protein’s absolute abundance. Comparison Across Samples: When two or more samples are prepared and analyzed using the same LC-MS/MS protocol, their relative protein abundances can be compared.</p>
+<ol type="1">
+<li><p><strong>Peptide Detection (MS1):</strong>&nbsp;Peptides are isolated and detected based on their mass-to-charge ratio (m/z).</p></li>
+<li><p><strong>Peptide Sequencing (MS2):</strong>&nbsp;Selected peptide ions are fragmented, and the resulting spectra determine peptide sequences.</p></li>
+<li><p><strong>Quantification:</strong>&nbsp;The total signal intensity of all identified peptides corresponding to a protein is summed as a proxy for its abundance.</p></li>
+<li><p><strong>Comparison Across Samples:</strong>&nbsp;Samples prepared and analyzed using the same LC-MS/MS protocol can be compared using peptide-spectrum match (PSM) counts as an abundance proxy.</p></li>
+</ol>
 </section>
 <section id="advantages-of-label-free-quantification" class="level5">
 <h5 class="anchored" data-anchor-id="advantages-of-label-free-quantification">Advantages of Label-Free Quantification</h5>
 <ul>
-<li><em>Cost-Effective &amp; Simple Sample Preparation</em>
-<ul>
-<li>Unlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex chemical modifications.</li>
-<li>Sample preparation is straightforward, making LFQ accessible to a wide range of researchers.</li>
-</ul></li>
-<li><em>Widely Used &amp; Flexible</em>
-<ul>
-<li>LFQ is a common approach in proteomics, compatible with various experimental designs.</li>
-<li>It allows for comparisons across a large number of samples without being limited by multiplexing constraints.</li>
-</ul></li>
+<li><p><strong>Cost-Effective &amp; Simple Sample Preparation:</strong>&nbsp;Unlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex modifications, making it more accessible.</p></li>
+<li><p><strong>Flexible &amp; Widely Used:</strong>&nbsp;Compatible with various experimental designs and allows for comparisons across many samples without multiplexing constraints.</p></li>
 </ul>
 </section>
 <section id="challenges-considerations" class="level5">
 <h5 class="anchored" data-anchor-id="challenges-considerations">Challenges &amp; Considerations</h5>
 <ul>
-<li><em>Potential Bias from Co-Elution:</em>
-<ul>
-<li>In complex samples, high-abundance peptides can overshadow low-abundance peptides, limiting the number of peptides that can be reliably isolated and quantified in the MS1 scan.</li>
-</ul></li>
-<li><em>Run-to-Run Variability:</em>
-<ul>
-<li>Unlike TMT-based methods, where all samples are analyzed together in a single run, LFQ requires separate MS runs for each sample.</li>
-</ul></li>
-<li>Differences in instrument calibration, chromatography conditions, or sample preparation can introduce variability, potentially leading to artificial differences between samples if not carefully controlled.</li>
+<li><p><strong>Potential Bias from Co-Elution:</strong>&nbsp;High-abundance peptides can overshadow low-abundance ones, reducing the number of reliably quantified peptides.</p></li>
+<li><p><strong>Run-to-Run Variability:</strong>&nbsp;LFQ requires separate MS runs for each sample, making it susceptible to differences in instrument calibration, chromatography conditions, or sample handling. Careful quality control is necessary to minimize artificial differences.</p></li>
 </ul>
 </section>
 <section id="conclusion" class="level5">
 <h5 class="anchored" data-anchor-id="conclusion">Conclusion</h5>
-<p>Label-free quantification is a practical and widely used approach for proteomics research, offering a cost-effective and simple method for estimating protein abundance. However, careful experimental design and quality control are essential to minimize variability and ensure reliable quantification across different runs.</p>
+<p>Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.</p>
 </section>
 </section>
 <section id="sec-TMT" class="level4">
 <h4 class="anchored" data-anchor-id="sec-TMT">Quantitative Mass Spectrometry with Tandem Mass Tagging</h4>
-<p>Tandem Mass Tag (TMT) labeling is a powerful technique in quantitative mass spectrometry (MS) that allows for the simultaneous analysis of multiple samples in a single MS run. This method enhances efficiency and enables precise relative quantification of proteins across different experimental conditions.</p>
+<p>Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.</p>
 <section id="how-it-works-1" class="level5">
 <h5 class="anchored" data-anchor-id="how-it-works-1">How It Works</h5>
-<ul>
-<li><p><strong>Chemical Labeling</strong>: Each peptide in a sample is chemically tagged with a unique TMT label, which consists of an identical reactive group that binds to peptides and a mass reporter region that differentiates samples.</p></li>
-<li><p><strong>Sample Pooling:</strong> Once labeled, samples are combined into a single pooled sample group, reducing the need for separate MS runs.</p></li>
+<ol type="1">
+<li><p><strong>Chemical Labeling:</strong>&nbsp;Each sample is chemically tagged with a unique TMT label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.</p></li>
+<li><p><strong>Sample Pooling:</strong>&nbsp;Labeled samples are combined into a single pooled group, reducing the need for separate MS runs.</p></li>
 <li><p><strong>Mass Spectrometry Analysis:</strong></p>
 <ul>
-<li><em>MS1 (Peptide Isolation):</em> Peptides are first separated and detected based on their mass-to-charge ratio (m/z).</li>
-<li><em>MS2 (Peptide Sequencing &amp; Tag Fragmentation):</em> Peptides are fragmented, allowing for sequence identification. At the same time, the mass tags also fragment, producing unique reporter ions.</li>
-<li><em>Quantification:</em> The intensity of these reporter ions reveals the relative abundance of each peptide across the original samples.</li>
+<li><p><strong>MS1 (Peptide Isolation):</strong>&nbsp;Peptides are separated and detected based on their mass-to-charge ratio (m/z).</p></li>
+<li><p><strong>MS2 (Peptide Sequencing &amp; Tag Fragmentation):</strong>&nbsp;Peptides are fragmented for sequence identification, and TMT mass tags fragment to generate reporter ions.</p></li>
 </ul></li>
-</ul>
+<li><p><strong>Quantification:</strong>&nbsp;The intensity of reporter ions reveals the relative abundance of peptides across the original samples.</p></li>
+<li><p><strong>Comparison Across Samples:</strong>&nbsp;Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing up to 30 samples to be analyzed in a single experiment.</p></li>
+</ol>
 </section>
 <section id="advantages-of-tmt-labeling" class="level5">
 <h5 class="anchored" data-anchor-id="advantages-of-tmt-labeling">Advantages of TMT Labeling</h5>
 <ul>
-<li>Increased Throughput &amp; Efficiency TMT allows for the multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs needed. Instead of running 16 individual samples separately, they can be pooled and analyzed together, increasing experimental efficiency.</li>
-<li>Deeper Proteome Coverage The pooled sample can be further fractionated (e.g., using cation exchange chromatography), which helps separate high-abundance and low-abundance peptides before MS analysis. This results in greater depth of peptide detection compared to running multiple low-depth, individual label-free MS analyses.</li>
-<li>Improved Quantification Accuracy Since all samples are analyzed together in the same MS run, technical variability between runs is minimized, leading to more accurate relative quantification.</li>
+<li><p><strong>Increased Throughput &amp; Efficiency:</strong>&nbsp;Enables multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs.</p></li>
+<li><p><strong>Deeper Proteome Coverage:</strong>&nbsp;Pooled samples can be fractionated (e.g., by cation exchange chromatography), enhancing detection of low-abundance peptides.</p></li>
+<li><p><strong>Improved Quantification Accuracy:</strong>&nbsp;Since all samples are analyzed in the same MS run, technical variability between runs is minimized.</p></li>
 </ul>
 </section>
 <section id="challenges-considerations-1" class="level5">
 <h5 class="anchored" data-anchor-id="challenges-considerations-1">Challenges &amp; Considerations</h5>
 <ul>
-<li>Higher Cost TMT reagents and the need for higher-end mass spectrometers contribute to increased costs.</li>
-<li>Complex Sample Preparation Additional steps are required for labeling, pooling, and fractionation, which increases the risk of sample handling variability.</li>
-<li>Normalization Requirement Total protein input must be carefully controlled to ensure accurate quantification. Unequal sample amounts (e.g., when comparing conditions with highly different protein yields) may require artificial balancing, which can introduce biases.</li>
-<li>Demanding Instrumentation &amp; Expertise The technique requires high-resolution mass spectrometers with precise scanning capabilities, often necessitating outsourcing to specialized facilities.</li>
+<li><p><strong>Higher Cost:</strong>&nbsp;TMT reagents and high-end mass spectrometers add to the expense.</p></li>
+<li><p><strong>Complex Sample Preparation:</strong>&nbsp;Requires additional steps for labeling, pooling, and fractionation, increasing the risk of sample handling variability.</p></li>
+<li><p><strong>Normalization Requirement:</strong>&nbsp;Accurate quantification requires equal protein input across samples to avoid artificial balancing biases.</p></li>
+<li><p><strong>Demanding Instrumentation &amp; Expertise:</strong>&nbsp;Requires high-resolution mass spectrometers, often necessitating specialized facilities.</p></li>
 </ul>
 </section>
 <section id="conclusion-1" class="level5">
 <h5 class="anchored" data-anchor-id="conclusion-1">Conclusion</h5>
-<p>TMT-based quantitative mass spectrometry is a valuable tool for large-scale proteomics studies, providing high-throughput, precise, and deep proteome coverage. While it requires careful sample preparation and advanced instrumentation, its ability to multiplex multiple samples in a single run makes it an attractive option for researchers aiming for high-confidence protein quantification.</p>
+<p>TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.</p>
 
 
 
+</section>
 </section>
 </section>
 </section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-haberkantFatFabulousBifunctional2014" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Haberkant, P. &amp; Holthuis, J. C. M. <a href="https://doi.org/10.1016/j.bbalip.2014.01.003">Fat &amp; fabulous: <span>Bifunctional</span> lipids in the spotlight</a>. <em>Biochimica et Biophysica Acta - Molecular and Cell Biology of Lipids</em> <strong>1841</strong>, 1022–1030 (2014).</div>
-</div>
-<div id="ref-schultzFlashClickMultifunctionalized2022a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Schultz, C., Farley, S. E. &amp; Tafesse, F. G. <a href="https://doi.org/10.1021/jacs.2c02705"><span>“<span>Flash</span> &amp; <span>Click</span>”</span>: <span>Multifunctionalized Lipid Derivatives</span> as <span>Tools To Study Viral Infections</span></a>. <em>J. Am. Chem. Soc.</em> <strong>144</strong>, 13987–13995 (2022).</div>
-</div>
-<div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
-</div>
-<div id="ref-farleyTrifunctionalSphinganineNew2024a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
-</div>
-<div id="ref-hoglingerTrifunctionalLipidProbes2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
-</div>
 <div id="ref-hoglingerIntracellularSphingosineReleases2015a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.7554/eLife.10616">Intracellular sphingosine releases calcium from lysosomes</a>. <em>eLife</em> <strong>4</strong>, (2015).</div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.7554/eLife.10616">Intracellular sphingosine releases calcium from lysosomes</a>. <em>eLife</em> <strong>4</strong>, (2015).</div>
+</div>
+<div id="ref-haberkantFatFabulousBifunctional2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Haberkant, P. &amp; Holthuis, J. C. M. <a href="https://doi.org/10.1016/j.bbalip.2014.01.003">Fat &amp; fabulous: <span>Bifunctional</span> lipids in the spotlight</a>. <em>Biochimica et Biophysica Acta - Molecular and Cell Biology of Lipids</em> <strong>1841</strong>, 1022–1030 (2014).</div>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1009,7 +1000,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","openEffect":"fade","selector":".lightbox","loop":true});
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","loop":true,"selector":".lightbox","descPosition":"bottom","closeEffect":"fade"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

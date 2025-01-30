@@ -97,10 +97,21 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Contact us</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-contact-us">    
+        <li>
+    <a class="dropdown-item" href="../about.html">
+ <span class="dropdown-text">About</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../DataSubmission.html">
+ <span class="dropdown-text">Submit your data</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -751,7 +762,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","openEffect":"fade","selector":".lightbox","loop":true,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"openEffect":"fade","closeEffect":"fade","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -1,0 +1,32 @@
+---
+title: "Lipid Interactomics Repository"
+subtitle: "An interactive and open access platform for exploring multifunctional lipid interactomes"
+authors:
+  - name: "Fikadu Tafesse"
+    affiliation: "Oregon Health & Science University"
+    orcid: 0000-0002-8575-4164
+  - name: "Carsten Schultz"
+    affiliation: "Oregon Health & Science University"
+    orcid: 0000-0002-5824-2171
+  - name: "Gaelen Guzman"
+    affiliation: "Oregon Health & Science University"
+    orcid: 0000-0002-7696-6034
+    corresponding: true
+    email: gaelenguzman@lipidinteractome.org
+page-navigation: false
+format: html
+---
+
+## Outline
+
+- Abstract
+  * Summary
+  * Availability: This site can be viewed at [lipidinteractome.org](lipidinteractome.org); all data is available for download. 
+  * Data Submission: If you would like to submit a relevant dataset, see [Data Submission](https://www.lipidinteractome.org/DataSubmission.html) for details and instructions.
+
+- Introduction
+
+- Description
+
+- Acknowledgements
+

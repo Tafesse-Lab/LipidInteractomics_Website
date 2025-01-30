@@ -1,0 +1,27 @@
+---
+title: "Submit a dataset to the Lipid Interactome Repository"
+
+---
+
+**This repository is still under construction, please forgive us for incomplete sections as we build features!**
+
+We are in the process of building a data submission form here -- check back soon for this functionality!
+
+In the meantime, email us at <contact.us@LipidInteractome.org>{target="_blank"} to discuss data handoff and study details. 
+
+### Data formatting
+
+The ideal dataset to incorporate into this site will have the following columns:
+
+* **gene_name** 
+* **LipidProbe** - Which lipid probe was applied in the analysis (especially if there are several)
+* **comparison** - The ratiometric comparison reflected by the logFC (i.e. +UV versus -UV)
+* **logFC** - the log2 transformed fold-change between the conditions in the comparison
+* **pvalue** - the results of an appropriate statistical test. Ideally share the methods used
+* **AveExpr** - the average ion intensity between the two conditions in the reported comparison (for MA plots)
+* **hit_annotation** - A statistical representation of the significance of each protein. The standardized nomenclature used in Thomas et al. 2025, Farley et al. 2024, and Farley et al. 2024 has the following:
+	* **"no hit"** = unenriched or depleted in the presence of probe
+	* **"enriched candidates"** are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold
+	* **"enriched hits"** are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.
+* **FDR** - The false discovery rate of the protein.
+

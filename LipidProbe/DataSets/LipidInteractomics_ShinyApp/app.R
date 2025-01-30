@@ -4,9 +4,12 @@ library(ggplot2)
 library(plotly)
 library(readr)
 library(shiny)
-library(amVennDiagram5)
 
-df <- read_csv("combinedProbeDatasets_TMT.csv")
+# File path for testing
+df <- read_csv("/LipidProbe/DataSets/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv")
+
+# File path for deploying to Shinyapps.io
+#df <- read_csv("combinedProbeDatasets_TMT.csv")
 
 probeOptions <- unique(df$LipidProbe)
 
@@ -27,37 +30,44 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
 	
+	# Creating filtered datasets for the probes selected
 	xData <- reactive({
-		xData<- df |>
+		xData <- df |>
 			filter(LipidProbe == input$probe1) 
 		return(xData)
 	})
 
 	yData <- reactive({
-		yData<- df |>
+		yData <- df |>
 			filter(LipidProbe == input$probe2) 
 		return(yData)
 	})
 
+	# The output call for making the plot - includes some data wrangling to make sure the selected probes are handled properly. A
+	## Also makes the linear regression line to add to the plot.
   output$logFCPlot <- renderPlotly({
+
+		# Isolating the probes selected by the user
 		probe1Name <- input$probe1
 		probe2Name <- input$probe2
 
 		# Create a new dataframe for plotting
 		xData <- xData()
 		yData <- yData()
-
-		plot_data <- merge(xData, yData, by="gene_name") |>
+    
+		# handles the NAs by placing them on the appropriate axes.
+		plot_data <- full_join(xData,yData,by="gene_name") |>
+			mutate(logFC.x=if_else(is.na(logFC.x),0,logFC.x))|>
+			mutate(logFC.y=if_else(is.na(logFC.y),0,logFC.y)) |>
+			mutate(hit_annotation.x=if_else(is.na(hit_annotation.x),"no hit",hit_annotation.x)) |>
+			mutate(hit_annotation.y=if_else(is.na(hit_annotation.y),"no hit",hit_annotation.y)) |>
 			mutate(combined_hit_annotation = case_when(hit_annotation.x == "enriched hit" & hit_annotation.y == "enriched hit" ~ "enriched on both axes",
                                                    hit_annotation.x != "enriched hit" & hit_annotation.y == "enriched hit" ~ "enriched y-axis only",
                                                    hit_annotation.x == "enriched hit" & hit_annotation.y != "enriched hit" ~ "enriched x-axis only",
                                                    .default = "enriched on neither axis")) |>
         mutate_if(is.numeric, ~replace(., is.na(.), 0)) |>
         mutate_if(is.character, ~replace(., is.na(.), "no id")) |>
-				arrange(combined_hit_annotation) |>
-				glimpse()
-
-		print(head(plot_data))
+				arrange(combined_hit_annotation)
 
 		plot_data$combined_hit_annotation <- factor(pull(plot_data, combined_hit_annotation),
                                                      levels = c("enriched on both axes",
@@ -75,6 +85,39 @@ server <- function(input, output, session) {
 ## The plotting function
 
 ProbeVSProbePlotter <- function(data, probe1Name, probe2Name) {
+
+	## Prepares the linear regression overlaid on the plot
+
+	lmData <- data |>
+        filter(hit_annotation.x != "no id" & hit_annotation.y != "no id")
+      
+	lm_xvsy <- lm(formula = lmData$logFC.y ~ lmData$logFC.x)
+	#print(summary(lm_xvsy))
+	
+	pStars <- if(summary(lm_xvsy)$coef[2, 4] < 0.0001){
+		"****"
+	}else{
+		if(summary(lm_xvsy)$coef[2, 4] < 0.001){ 
+			"***"
+		}else{
+			if(summary(lm_xvsy)$coef[2, 4] < 0.01){
+				"**"
+			}else{
+				if(summary(lm_xvsy)$coef[2, 4] < 0.05){
+					"*"
+				}else(
+					"ns"
+				)
+			}
+		}
+	}
+      
+      
+	lmLabel <- ifelse(lm_xvsy$coef[[1]] > 0, paste0("\ny =", signif(lm_xvsy$coef[[2]], 3), "x + ", signif(lm_xvsy$coef[[1]], 3), "\n",
+																									"Adj R^2 = ", signif(summary(lm_xvsy)$adj.r.squared, 5), "; ",
+																									"p: ", pStars),
+										paste0("\ny =", signif(lm_xvsy$coef[[2]], 3), "x - ", abs(signif(lm_xvsy$coef[[1]], 3)), "\n",
+														"Adj R^2 = ", signif(summary(lm_xvsy)$adj.r.squared, 5)))
 	
 
 	limits <- max(abs(max(data$logFC.x, na.rm = TRUE)),
@@ -91,6 +134,7 @@ ProbeVSProbePlotter <- function(data, probe1Name, probe2Name) {
 			geom_point(aes(text = paste0("Gene name: ", gene_name))) +
 			geom_hline(yintercept = 0, linetype = 2) +
 			geom_vline(xintercept = 0, linetype = 2) +
+			geom_abline(slope = signif(lm_xvsy$coef[[2]]), intercept = signif(lm_xvsy$coef[[1]]), color = "red", linetype = 2) +
 			scale_x_continuous(limits= c(-1.1*limits, 1.1*limits)) +
 			scale_y_continuous(limits= c(-1.1*limits, 1.1*limits)) +
 			scale_shape_manual(values = c("enriched on neither axis" = 22, 
@@ -138,7 +182,16 @@ ProbeVSProbePlotter <- function(data, probe1Name, probe2Name) {
 													hovermode = "closest",
 													autosize = T,
 													margin = m) |>
-									layout(showlegend = FALSE)
+									layout(showlegend = FALSE) |>
+									add_annotations(x = 0.05,
+																	y = 0.95,
+																	xref = "paper",
+																	yref = "paper",
+																	text = lmLabel,
+																	showarrow = FALSE,
+																	font = list(color = "red",
+																							size = 12)
+																)
 
 	return(ggplotly)
 }
