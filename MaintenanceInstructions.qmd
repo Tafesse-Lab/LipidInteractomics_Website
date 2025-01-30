@@ -50,4 +50,5 @@ If your data looks at all like [Alix's](https://lipidinteractomicsrepository.net
 
 There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
 
+In order to make sure the author information is identical on all appropriate pages, I made an "include" folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they're somehow different.
 

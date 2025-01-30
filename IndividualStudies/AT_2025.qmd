@@ -12,58 +12,8 @@ Two lipid probes, PA and PE for a single cell line
 
 ::: {.callout-note collapse="true"}
 
-## Study details
+{{< include /StudyInformation_includes/AT_2025_include.qmd >}}
 
-
-#### Authors
-Alix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz
-
-#### Journal
-Chemical Communications
-
-<https://doi.org/10.1039/D4CC03599B>{target="_blank"}
-
-#### Abstract
-Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.
-
-#### Lipid probes utilized
-
-
-<a href="/LipidProbe/PhosphatidicAcid.qmd" class="hover-preview">Phosphatidic Acid</a>
-<span class="hover-image">
-  <img src="/LipidProbe/Structures/PhosphatidicAcid_Structure.png" alt="Phosphatidic Acid" />
-</span>
-
-<a href="/LipidProbe/Phosphatidylethanolamine.qmd" class="hover-preview">Phosphatidic Acid</a>
-<span class="hover-image">
-  <img src="/LipidProbe/Structures/PhosphatidylethanolamineStructure.png" alt="Phosphatidic Acid" />
-</span>
-
-#### Cell line analyzed
-
-[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
-
-#### Mass spectrometry quantification method
-
-16-channel Tandem Mass Tagging (TMT16)
-
-::: {.callout-note collapse="true"}
-##### ProteomeXchange details
-
-**ProteomeXchange title:** Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome
-
-**ProteomeXchange accession:** PXD059960
-
-**PubMed ID:** Not applicable
-
-**Publication DOI:** 10.1039/D4CC03599B
-
-**Project Webpage:** http://www.ebi.ac.uk/pride/archive/projects/PXD059960
-
-**FTP Download:** https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960
-:::
-
-#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
 ## Data visualization

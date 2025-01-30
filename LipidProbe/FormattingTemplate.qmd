@@ -16,19 +16,8 @@ subtitle: "HTML page of individual lipid probe data"
 <!-- Author information likely assembled in the relevant study page as well -->
 :::: {.callout-note collapse="true"}
 
-#### Study details
+{{< include /StudyInformation_includes/template_include.qmd >}}
 
-##### Authors
-
-##### Journal
-
-##### Abstract
-
-##### Lipid probes utilized
-
-##### Cell line analyzed
-
-##### Mass spectrometry quantification method
 
 ::::
 

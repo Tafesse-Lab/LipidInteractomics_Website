@@ -1,6 +1,8 @@
 project:
   type: website
-
+  render:
+    - "*.qmd"
+    - "!StudyInformation_includes/"
 bibliography: TrifunctionalLipidProbes_bibliography.bib
 csl: nature.csl
 format-links: true
@@ -80,4 +82,8 @@ format:
     css: styles.css
     toc: true
     sidebar: true
+  docx:
+    fig-height: 5
+    reference-doc: custom-reference-doc.docx
+   
 

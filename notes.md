@@ -1,7 +1,19 @@
 ---
 title: "Weekly meeting notes"
 ---
+## 2025/29/01
 
+- Combine glycerophospholipids into one category
+- Message Andre Nadler to give them basic format for how to receive the data 
+- Add points on axes for proteins identified in only one or the other datasets
+- Email service
+
+- Write brief communications paper
+	- Database Journal
+	- Nuclear acid sub-base journal
+	- Bioinformatics Journal Application note
+
+	- If I write the paper, I get to be the last author!
 
 ## 2025/21/01
 

@@ -1,5 +1,94 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Lipid Interactome Repository",
+    "section": "",
+    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
+  },
+  {
+    "objectID": "index.html#site-overview",
+    "href": "index.html#site-overview",
+    "title": "The Lipid Interactome Repository",
+    "section": "",
+    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
+  },
+  {
+    "objectID": "index.html#lipid-interactomes",
+    "href": "index.html#lipid-interactomes",
+    "title": "The Lipid Interactome Repository",
+    "section": "Lipid Interactomes",
+    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid"
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html",
+    "href": "TrifunctionalLipidProbesOverview.html",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "",
+    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nFunctionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail."
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html#introduction-why-study-lipid-interactomes",
+    "href": "TrifunctionalLipidProbesOverview.html#introduction-why-study-lipid-interactomes",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "Introduction: Why Study Lipid Interactomes?",
+    "text": "Introduction: Why Study Lipid Interactomes?\nAt its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often under-appreciated role in cellular function.\n\nLipid-Lipid Interactions and Membrane Properties\nLipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactomes, researchers can gain deeper insight into how these physical interactions influence membrane architecture and dynamics. Understanding these interactions is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.\n\n\nLipids as Signaling Molecules\nBeyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can have far-reaching effects on cellular behavior and physiological responses.\n\n\nLipid-Protein Interactions: Unlocking Cellular Communication\nA single lipid species can interact with a diverse array of proteins, influencing everything from receptor activation to intracellular signaling cascades. Mapping these lipid-protein interactions provides a powerful approach to understanding how lipids exert their wide-ranging effects on cellular processes. By deciphering lipid interactomes, researchers can uncover novel regulatory mechanisms and potentially identify new therapeutic targets in diseases where lipid signaling is dysregulated."
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html#synthetic-lipid-analogs-powerful-tools-for-lipid-biology",
+    "href": "TrifunctionalLipidProbesOverview.html#synthetic-lipid-analogs-powerful-tools-for-lipid-biology",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "Synthetic Lipid Analogs: Powerful Tools for Lipid Biology",
+    "text": "Synthetic Lipid Analogs: Powerful Tools for Lipid Biology\nThe study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are so essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.\n\nWhy Lipids Require a Different Approach\nAdvances in genetic engineering—such as CRISPR and de novo gene synthesis—have revolutionized the study of nucleic acids and proteins. These techniques allow researchers to introduce precise modifications, such as:\n\nAltering enzyme activity by mutating active sites to change substrate specificity.\nRedirecting proteins by swapping subcellular localization sequences.\nModifying protein interactions by swapping or removing binding domains.\nVisualizing proteins by fusing them with fluorescent tags (e.g., GFP).\nIsolating protein complexes by adding affinity handles for purification.\n\nIn contrast, lipids pose distinct challenges that make such genetic manipulations impractical:\n\nLipids Are Synthesized Enzymatically\n\nUnlike proteins, whose sequences are encoded in DNA, lipids are the product of enzymatic pathways. Their structures cannot be directly altered within a living system in the same way that gene sequences can be modified.\nEarly lipid research relied on gene knockouts and knock-ins to globally alter lipid composition, which provided broad insights into lipid classes but was less effective for studying individual lipid species.\n\nLipids Are Small and Structurally Sensitive\n\nCompared to proteins, which consist of hundreds or thousands of atoms, lipids are much smaller (often composed of just a few dozen atoms).\nBecause of their size, even small modifications can dramatically alter their biophysical properties and biological function.\nFor example, unlike proteins, lipids cannot be tagged with large fluorescent proteins (e.g., GFP) or classical affinity tags (e.g., HA tags) without completely disrupting their activity.\n\nLipids Are Metabolically Dynamic\n\nLipids exist within a highly dynamic metabolic network, where they can be rapidly modified, cleaved, or converted into other lipid species.\nSome lipids, like sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track and study in real time.\n\n\n\n\nThe Role of Synthetic Lipid Analogs\nTo overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include:\n\nDiazirine Rings – Enable covalent crosslinking to interacting proteins upon UV activation.\nTerminal Alkynes – Allow for affinity enrichment using click chemistry.\nCoumarin Photocages – Provide spatiotemporal control over lipid activity through light-triggered release.\n\nThese modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.\n\n\nDiazirine: A photo-activated crosslinker\nLipid interactions are typically highly transient – few opportunities for\n\nCrosslinking motif activated by 355nm UV light.\nIrradiation of the ring produces a reactive carbene radical which covalently bonds with any nearby molecule. This radical can form linkages by inserting into carbo-hydrogen, heteroatom-hydrogen (SH, NH2, or OH) or double bonds1.\nThis chemical group is the smallest available photoactivatable crosslinking motif1\n\nReferences to include:\n\n2\n3\n4\n5\n\n\n\nTerminal Alkyne\n\nAffinity handle\nAffix fluorophore post-hoc\n\n\n\nCoumarin Photocage: A photo-activated protection moiety\n\nMany native lipids of interest are rapidly synthesized, catabolized, and interconverted throughout the vast lipid metabolic network.\nThe coumarin cage is a photolabile protection group. Upon stimulation with 400nm light, this group is released to expose the native structure of the lipid headgroup.\nThe exposure of the native headgroup allows for recognition by protein binders. For example, Hoglinger et al. showed in 2015 that the release of caged sphingosine resulted in potent lysosomal calcium release – a finding which greatly expanded the understanding of the intracellular sphingosine signaling cascade6. In this and other studies, sub-cellular irradiation using a scanning laser allows for the select spatial control of uncaging. While not compatible with large-scale interaction studies, this method enables the assessment of biological activity via fluorescence microscopy.\nAn additional boon of using coumarin as the caging moiety is its inherent fluorescence: one can simply use a fluorescence microscope to rapidly assess the intercalation of the functionalized lipid into the target cell."
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html#photoactivatable-clickable-probes-bifunctional-lipid-probes",
+    "href": "TrifunctionalLipidProbesOverview.html#photoactivatable-clickable-probes-bifunctional-lipid-probes",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "Photoactivatable & Clickable Probes / Bifunctional Lipid Probes",
+    "text": "Photoactivatable & Clickable Probes / Bifunctional Lipid Probes\n\nThe conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.\n\nReferences to include:\n\n1 - Haberkant et al. 2014"
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html#trifunctional-lipid-probes",
+    "href": "TrifunctionalLipidProbesOverview.html#trifunctional-lipid-probes",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "Trifunctional Lipid Probes",
+    "text": "Trifunctional Lipid Probes"
+  },
+  {
+    "objectID": "TrifunctionalLipidProbesOverview.html#interactomics-experimental-schema",
+    "href": "TrifunctionalLipidProbesOverview.html#interactomics-experimental-schema",
+    "title": "Multifunctional Lipid Probes Background",
+    "section": "Interactomics Experimental schema",
+    "text": "Interactomics Experimental schema\n\n\n\n\nCell treatment\n\n\nProtein collection\n\n\nMass spectrometry analysis\n\nLabel-Free Quantification\nLabel-free quantification (LFQ) is a widely used approach in mass spectrometry-based proteomics that estimates protein abundance without the need for chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.\n\nHow It Works\nMS1 (Peptide Detection): Peptides are first isolated and detected based on their mass-to-charge ratio (m/z). MS2 (Peptide Sequencing): Selected peptide ions are fragmented, and the resulting spectra are used to determine peptide sequences. Quantification: The total signal intensity of all identified peptides corresponding to a given protein is summed, serving as a proxy for the protein’s absolute abundance. Comparison Across Samples: When two or more samples are prepared and analyzed using the same LC-MS/MS protocol, their relative protein abundances can be compared.\n\n\nAdvantages of Label-Free Quantification\n\nCost-Effective & Simple Sample Preparation\n\nUnlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex chemical modifications.\nSample preparation is straightforward, making LFQ accessible to a wide range of researchers.\n\nWidely Used & Flexible\n\nLFQ is a common approach in proteomics, compatible with various experimental designs.\nIt allows for comparisons across a large number of samples without being limited by multiplexing constraints.\n\n\n\n\nChallenges & Considerations\n\nPotential Bias from Co-Elution:\n\nIn complex samples, high-abundance peptides can overshadow low-abundance peptides, limiting the number of peptides that can be reliably isolated and quantified in the MS1 scan.\n\nRun-to-Run Variability:\n\nUnlike TMT-based methods, where all samples are analyzed together in a single run, LFQ requires separate MS runs for each sample.\n\nDifferences in instrument calibration, chromatography conditions, or sample preparation can introduce variability, potentially leading to artificial differences between samples if not carefully controlled.\n\n\n\nConclusion\nLabel-free quantification is a practical and widely used approach for proteomics research, offering a cost-effective and simple method for estimating protein abundance. However, careful experimental design and quality control are essential to minimize variability and ensure reliable quantification across different runs.\n\n\n\nQuantitative Mass Spectrometry with Tandem Mass Tagging\nTandem Mass Tag (TMT) labeling is a powerful technique in quantitative mass spectrometry (MS) that allows for the simultaneous analysis of multiple samples in a single MS run. This method enhances efficiency and enables precise relative quantification of proteins across different experimental conditions.\n\nHow It Works\n\nChemical Labeling: Each peptide in a sample is chemically tagged with a unique TMT label, which consists of an identical reactive group that binds to peptides and a mass reporter region that differentiates samples.\nSample Pooling: Once labeled, samples are combined into a single pooled sample group, reducing the need for separate MS runs.\nMass Spectrometry Analysis:\n\nMS1 (Peptide Isolation): Peptides are first separated and detected based on their mass-to-charge ratio (m/z).\nMS2 (Peptide Sequencing & Tag Fragmentation): Peptides are fragmented, allowing for sequence identification. At the same time, the mass tags also fragment, producing unique reporter ions.\nQuantification: The intensity of these reporter ions reveals the relative abundance of each peptide across the original samples.\n\n\n\n\nAdvantages of TMT Labeling\n\nIncreased Throughput & Efficiency TMT allows for the multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs needed. Instead of running 16 individual samples separately, they can be pooled and analyzed together, increasing experimental efficiency.\nDeeper Proteome Coverage The pooled sample can be further fractionated (e.g., using cation exchange chromatography), which helps separate high-abundance and low-abundance peptides before MS analysis. This results in greater depth of peptide detection compared to running multiple low-depth, individual label-free MS analyses.\nImproved Quantification Accuracy Since all samples are analyzed together in the same MS run, technical variability between runs is minimized, leading to more accurate relative quantification.\n\n\n\nChallenges & Considerations\n\nHigher Cost TMT reagents and the need for higher-end mass spectrometers contribute to increased costs.\nComplex Sample Preparation Additional steps are required for labeling, pooling, and fractionation, which increases the risk of sample handling variability.\nNormalization Requirement Total protein input must be carefully controlled to ensure accurate quantification. Unequal sample amounts (e.g., when comparing conditions with highly different protein yields) may require artificial balancing, which can introduce biases.\nDemanding Instrumentation & Expertise The technique requires high-resolution mass spectrometers with precise scanning capabilities, often necessitating outsourcing to specialized facilities.\n\n\n\nConclusion\nTMT-based quantitative mass spectrometry is a valuable tool for large-scale proteomics studies, providing high-throughput, precise, and deep proteome coverage. While it requires careful sample preparation and advanced instrumentation, its ability to multiplex multiple samples in a single run makes it an attractive option for researchers aiming for high-confidence protein quantification."
+  },
+  {
+    "objectID": "LipidProbe/Sphingosine.html#protein-interactome",
+    "href": "LipidProbe/Sphingosine.html#protein-interactome",
+    "title": "Trifunctional Sphingosine",
+    "section": "Protein interactome",
+    "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA PlotData\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\nCheck the boxes below to filter by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n\n\n\n\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Lipid Probes",
+      "Sphingolipids",
+      "Sphingosine"
+    ]
+  },
+  {
+    "objectID": "LipidProbe/PhosphatidylinositolTrisphosphate.html#protein-interactome",
+    "href": "LipidProbe/PhosphatidylinositolTrisphosphate.html#protein-interactome",
+    "title": "Trifunctional Phosphatidylinositol 3,4,5-bisphosphate",
+    "section": "Protein interactome",
+    "text": "Protein interactome",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Lipid Probes",
+      "Phosphatidylinositols",
+      "PI(3,4,5)P~3~"
+    ]
+  },
+  {
     "objectID": "LipidProbe/Phosphatidylethanolamine.html#protein-interactome",
     "href": "LipidProbe/Phosphatidylethanolamine.html#protein-interactome",
     "title": "Trifunctional Phosphatidylethanolamine",
@@ -13,50 +102,18 @@
     ]
   },
   {
-    "objectID": "LipidProbe/PhosphatidylinositolBisphosphate.html#protein-interactome",
-    "href": "LipidProbe/PhosphatidylinositolBisphosphate.html#protein-interactome",
-    "title": "Trifunctional Phosphatidylinositol 4,5-bisphosphate",
+    "objectID": "LipidProbe/FormattingTemplate.html#protein-interactome",
+    "href": "LipidProbe/FormattingTemplate.html#protein-interactome",
+    "title": "Formatting Template",
     "section": "Protein interactome",
-    "text": "Protein interactome",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Lipid Probes",
-      "Phosphatidylinositols",
-      "PI(4,5)P~2~"
-    ]
-  },
-  {
-    "objectID": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
-    "href": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
-    "title": "Trifunctional 8-3 Fatty Acid",
-    "section": "Protein interactome",
-    "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n1-10 Fatty acid\n8-3 Fatty acid\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA PlotsData\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n\n\n\n\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Lipid Probes",
-      "Fatty Acids",
-      "8-3 Fatty Acid"
-    ]
-  },
-  {
-    "objectID": "LipidProbe/Sphingosine.html#protein-interactome",
-    "href": "LipidProbe/Sphingosine.html#protein-interactome",
-    "title": "Trifunctional Sphingosine",
-    "section": "Protein interactome",
-    "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA PlotData\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\nCheck the boxes below to filter by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n\n\n\n\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Lipid Probes",
-      "Sphingolipids",
-      "Sphingosine"
-    ]
+    "text": "Protein interactome\n\nCell background: ???\n\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\n\n\nJournal\n\n\nAbstract\n\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nMass spectrometry quantification method\n\n\n\n\n\n\nVolcano plotRanked order plotMA plotData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCell background: ???\n\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\n\n\nJournal\n\n\nAbstract\n\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nMass spectrometry quantification method\n\n\n\n\n\nHeatmapData"
   },
   {
     "objectID": "LipidProbe/Diacylglycerol.html#protein-interactome",
     "href": "LipidProbe/Diacylglycerol.html#protein-interactome",
     "title": "Trifunctional Diacylglycerol",
     "section": "Protein interactome",
-    "text": "Protein interactome\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
+    "text": "Protein interactome\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
     "crumbs": [
       "What are Multifunctional Lipid Probes?",
       "Lipid Probes",
@@ -102,150 +159,6 @@
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This repository is still under construction (as you can probably tell). Someday soon this page will have details about the founders of this resource, as well as a data submission form. Until then, please contact the site administrators for additional information about protocols, experimental design, and website feedback:\ncontact.us@LipidInteractome.org"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Lipid Interactome Repository",
-    "section": "",
-    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
-  },
-  {
-    "objectID": "index.html#site-overview",
-    "href": "index.html#site-overview",
-    "title": "The Lipid Interactome Repository",
-    "section": "",
-    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
-  },
-  {
-    "objectID": "index.html#lipid-interactomes",
-    "href": "index.html#lipid-interactomes",
-    "title": "The Lipid Interactome Repository",
-    "section": "Lipid Interactomes",
-    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid"
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html",
-    "href": "IndividualStudies/SF_2024.html",
-    "title": "Farley et al. 2024",
-    "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
-    "href": "IndividualStudies/SF_2024.html#data-visualization",
-    "title": "Farley et al. 2024",
-    "section": "Data visualization",
-    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nMA plots",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
-    "title": "Farley et al. 2024",
-    "section": "Enriched Proteins",
-    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSph\n\n\n\n\n\nSpa\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/SF_2024.html#data-download",
-    "href": "IndividualStudies/SF_2024.html#data-download",
-    "title": "Farley et al. 2024",
-    "section": "Data download",
-    "text": "Data download\n Download",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Farley et al., 2024; A"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/StudyOverview.html",
-    "href": "IndividualStudies/StudyOverview.html",
-    "title": "Overview of Interactomics Studies",
-    "section": "",
-    "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/DH_2017.html",
-    "href": "IndividualStudies/DH_2017.html",
-    "title": "Höglinger et al. 2017",
-    "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphinganine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
-    "href": "IndividualStudies/DH_2017.html#data-visualization",
-    "title": "Höglinger et al. 2017",
-    "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\nVenn Diagram",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
-    ]
-  },
-  {
-    "objectID": "IndividualStudies/DH_2017.html#data-download",
-    "href": "IndividualStudies/DH_2017.html#data-download",
-    "title": "Höglinger et al. 2017",
-    "section": "Data download",
-    "text": "Data download\n Download",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Overview of Interactomics Studies",
-      "Höglinger et al., 2017"
-    ]
-  },
-  {
-    "objectID": "MaintenanceInstructions.html",
-    "href": "MaintenanceInstructions.html",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder. Under the “LipidProbe” folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#site-organization",
-    "href": "MaintenanceInstructions.html#site-organization",
-    "title": "Maintenance Instructions",
-    "section": "",
-    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder. Under the “LipidProbe” folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
-  },
-  {
-    "objectID": "MaintenanceInstructions.html#maintenance",
-    "href": "MaintenanceInstructions.html#maintenance",
-    "title": "Maintenance Instructions",
-    "section": "Maintenance",
-    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\n\n\nGitHub repository\nAfter changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: git@github.com:gaelenDG/LipidInteractomics_Website.git. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.\nCloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Gaelen, the repository administrator. More details will go here once a more formal pull request workflow is in place!\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look."
   },
   {
     "objectID": "IndividualStudies/SF_2024_B.html",
@@ -380,105 +293,111 @@
     ]
   },
   {
-    "objectID": "TrifunctionalLipidProbesOverview.html",
-    "href": "TrifunctionalLipidProbesOverview.html",
-    "title": "Multifunctional Lipid Probes Background",
+    "objectID": "IndividualStudies/DH_2017.html",
+    "href": "IndividualStudies/DH_2017.html",
+    "title": "Höglinger et al. 2017",
     "section": "",
-    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nFunctionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a brief summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced throughout and linked below for greater detail."
+    "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
   },
   {
-    "objectID": "TrifunctionalLipidProbesOverview.html#introduction-why-study-lipid-interactomes",
-    "href": "TrifunctionalLipidProbesOverview.html#introduction-why-study-lipid-interactomes",
-    "title": "Multifunctional Lipid Probes Background",
-    "section": "Introduction: Why Study Lipid Interactomes?",
-    "text": "Introduction: Why Study Lipid Interactomes?\nAt its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function.\n\nLipid-Lipid Interactions and Membrane Properties\nLipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactomes, researchers can gain deeper insight into how these physical interactions influence membrane architecture and dynamics. Understanding these interactions is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.\n\n\nLipids as Signaling Molecules\nBeyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can have far-reaching effects on cellular behavior and physiological responses.\n\n\nLipid-Protein Interactions: Unlocking Cellular Communication\nA single lipid species can interact with a diverse array of proteins, influencing everything from receptor activation to intracellular signaling cascades. Mapping these lipid-protein interactions provides a powerful approach to understanding how lipids exert their wide-ranging effects on cellular processes. By deciphering lipid interactomes, researchers can uncover novel regulatory mechanisms and potentially identify new therapeutic targets in diseases where lipid signaling is dysregulated."
+    "objectID": "IndividualStudies/DH_2017.html#data-visualization",
+    "href": "IndividualStudies/DH_2017.html#data-visualization",
+    "title": "Höglinger et al. 2017",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\nVenn Diagram",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
   },
   {
-    "objectID": "TrifunctionalLipidProbesOverview.html#synthetic-lipid-analogs-powerful-tools-for-lipid-biology",
-    "href": "TrifunctionalLipidProbesOverview.html#synthetic-lipid-analogs-powerful-tools-for-lipid-biology",
-    "title": "Multifunctional Lipid Probes Background",
-    "section": "Synthetic Lipid Analogs: Powerful Tools for Lipid Biology",
-    "text": "Synthetic Lipid Analogs: Powerful Tools for Lipid Biology\nThe study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are so essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.\n\nWhy Lipids Require a Different Approach\nAdvances in genetic engineering—such as CRISPR and de novo gene synthesis—have revolutionized the study of nucleic acids and proteins. These techniques allow researchers to introduce precise modifications, such as: * Altering enzyme activity by mutating active sites to change substrate specificity. * Redirecting proteins by swapping subcellular localization sequences. * Modifying protein interactions by swapping or removing binding domains. * Visualizing proteins by fusing them with fluorescent tags (e.g., GFP).\nIsolating protein complexes by adding affinity handles for purification. In contrast, lipids pose distinct challenges that make such genetic manipulations impractical: Lipids Are Synthesized Enzymatically Unlike proteins, whose sequences are encoded in DNA, lipids are the product of enzymatic pathways. Their structures cannot be directly altered within a living system in the same way that gene sequences can be modified. Early lipid research relied on gene knockouts and knock-ins to globally alter lipid composition, which provided broad insights into lipid classes but was less effective for studying individual lipid species. Lipids Are Small and Structurally Sensitive Compared to proteins, which consist of hundreds or thousands of atoms, lipids are much smaller (often composed of just a few dozen atoms). Because of their size, even small modifications can dramatically alter their biophysical properties and biological function. For example, unlike proteins, lipids cannot be tagged with large fluorescent proteins (e.g., GFP) or classical affinity tags (e.g., HA tags) without completely disrupting their activity. Lipids Are Metabolically Dynamic Lipids exist within a highly dynamic metabolic network, where they can be rapidly modified, cleaved, or converted into other lipid species. Some lipids, like sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track and study in real time. The Role of Synthetic Lipid Analogs To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include: Diazirine Rings – Enable covalent crosslinking to interacting proteins upon UV activation. Terminal Alkynes – Allow for affinity enrichment using click chemistry. Coumarin Photocages – Provide spatiotemporal control over lipid activity through light-triggered release. These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.\nSynthetic lipid analogs have greatly enabled the exploration of lipid biology. However, it may not be obvious why such analogs are such valuable tools.\nWhile, genetic editing has enabled vast advances in the study of nucleic acids and proteins, there has been no obvious parallel for studying lipids. Using CRISPR or de novo gene synthesis, one can subtly alter a sequence to enable visualization and pulldown without greatly affecting the structure or function of the target gene. To name a few examples, one can: mutate the active site of a protein to change substrate specificity, swap in a different subcellular localization sequence to translocate the target protein to a different organelle, swap domains to alter protein::protein binding, fuse the target protein to any number of fluorescent domains to visualize a protein’s localization, or add an affinity handle to enable the enrichment of the target protein and any other protein interactors1.\nLipids, however, are an entirely different story altogether. Foremost of these differences is that lipids are the product of enzymatic synthesis and thus their structure cannot be directly modified within a living biological system. For much of the history of lipid research, studies utilized whole gene knockout or knock-in paradigms to alter the global lipid composition of the cell. Through these methods, we know much about the localization and broad behavior of lipid classes – but the biological roles of select lipid species are historically challenging to explore [REF].\nFurther, lipids are significantly smaller than even the smallest protein – composed of dozens of atoms, as opposed to hundreds or thousands – and, thus, their biophysical properties are much more sensitive to modification. It is nearly impossible to fuse a lipid with a fluorescent protein (such as GFP) or classical affinity handle (such as an HA tag) without drastically affecting the biological activity of the lipid [REF].\nFinally, each of the tens of thousands of distinct lipid structures is a part of a rapidly shifting metabolic network: any given lipid can be cleaved, modified, or converted into other lipid species within short time frames. Some lipids, such as sphingosine have half-lives in the minutes [REF].\nFor these reasons, synthetic analogs to native lipids have been a great utility toward probing the biological function of select lipid species. The chief modifications described in this repository (highlighted in the figure below) are: 1. A diazirine ring 2. A terminal alkyne 3. A coumarin photocage\nThese modifications allow for the stabilization of protein::lipid interactions and the affinity enrichment of protein::lipid conjugates, all with tight spatiotemporal control. These modifications are described in greater detail below.\n\n\n\n\n\n\n\n\n\n\nDiazirine: A photo-activated crosslinker\nLipid interactions are typically highly transient – few opportunities for\n\nCrosslinking motif activated by 355nm UV light.\nIrradiation of the ring produces a reactive carbene radical which covalently bonds with any nearby molecule. This radical can form linkages by inserting into carbo-hydrogen, heteroatom-hydrogen (SH, NH2, or OH) or double bonds2.\nThis chemical group is the smallest available photoactivatable crosslinking motif2\n\nReferences to include:\n\n3\n1\n4\n5\n\n\n\nTerminal Alkyne\n\nAffinity handle\nAffix fluorophore post-hoc\n\n\n\nCoumarin Photocage: A photo-activated protection moiety\n\nMany native lipids of interest are rapidly synthesized, catabolized, and interconverted throughout the vast lipid metabolic network.\nThe coumarin cage is a photolabile protection group. Upon stimulation with 400nm light, this group is released to expose the native structure of the lipid headgroup.\nThe exposure of the native headgroup allows for recognition by protein binders. For example, Hoglinger et al. showed in 2015 that the release of caged sphingosine resulted in potent lysosomal calcium release – a finding which greatly expanded the understanding of the intracellular sphingosine signaling cascade6. In this and other studies, sub-cellular irradiation using a scanning laser allows for the select spatial control of uncaging. While not compatible with large-scale interaction studies, this method enables the assessment of biological activity via fluorescence microscopy.\nAn additional boon of using coumarin as the caging moiety is its inherent fluorescence: one can simply use a fluorescence microscope to rapidly assess the intercalation of the functionalized lipid into the target cell."
+    "objectID": "IndividualStudies/DH_2017.html#data-download",
+    "href": "IndividualStudies/DH_2017.html#data-download",
+    "title": "Höglinger et al. 2017",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Höglinger et al., 2017"
+    ]
   },
   {
-    "objectID": "TrifunctionalLipidProbesOverview.html#photoactivatable-clickable-probes-bifunctional-lipid-probes",
-    "href": "TrifunctionalLipidProbesOverview.html#photoactivatable-clickable-probes-bifunctional-lipid-probes",
-    "title": "Multifunctional Lipid Probes Background",
-    "section": "Photoactivatable & Clickable Probes / Bifunctional Lipid Probes",
-    "text": "Photoactivatable & Clickable Probes / Bifunctional Lipid Probes\n\nThe conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.\n\nReferences to include:\n\n2 - Haberkant et al. 2014"
-  },
-  {
-    "objectID": "TrifunctionalLipidProbesOverview.html#trifunctional-lipid-probes",
-    "href": "TrifunctionalLipidProbesOverview.html#trifunctional-lipid-probes",
-    "title": "Multifunctional Lipid Probes Background",
-    "section": "Trifunctional Lipid Probes",
-    "text": "Trifunctional Lipid Probes\nReferences to include: *"
-  },
-  {
-    "objectID": "TrifunctionalLipidProbesOverview.html#interactomics-experimental-schema",
-    "href": "TrifunctionalLipidProbesOverview.html#interactomics-experimental-schema",
-    "title": "Multifunctional Lipid Probes Background",
-    "section": "Interactomics Experimental schema",
-    "text": "Interactomics Experimental schema\n\n\n\n\nCell treatment\n\n\nProtein collection\n\n\nMass spectrometry analysis\n\nLabel-Free Quantification\nLabel-free quantification (LFQ) is a widely used approach in mass spectrometry-based proteomics that estimates protein abundance without the need for chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.\n\nHow It Works\nMS1 (Peptide Detection): Peptides are first isolated and detected based on their mass-to-charge ratio (m/z). MS2 (Peptide Sequencing): Selected peptide ions are fragmented, and the resulting spectra are used to determine peptide sequences. Quantification: The total signal intensity of all identified peptides corresponding to a given protein is summed, serving as a proxy for the protein’s absolute abundance. Comparison Across Samples: When two or more samples are prepared and analyzed using the same LC-MS/MS protocol, their relative protein abundances can be compared.\n\n\nAdvantages of Label-Free Quantification\n\nCost-Effective & Simple Sample Preparation\n\nUnlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex chemical modifications.\nSample preparation is straightforward, making LFQ accessible to a wide range of researchers.\n\nWidely Used & Flexible\n\nLFQ is a common approach in proteomics, compatible with various experimental designs.\nIt allows for comparisons across a large number of samples without being limited by multiplexing constraints.\n\n\n\n\nChallenges & Considerations\n\nPotential Bias from Co-Elution:\n\nIn complex samples, high-abundance peptides can overshadow low-abundance peptides, limiting the number of peptides that can be reliably isolated and quantified in the MS1 scan.\n\nRun-to-Run Variability:\n\nUnlike TMT-based methods, where all samples are analyzed together in a single run, LFQ requires separate MS runs for each sample.\n\nDifferences in instrument calibration, chromatography conditions, or sample preparation can introduce variability, potentially leading to artificial differences between samples if not carefully controlled.\n\n\n\nConclusion\nLabel-free quantification is a practical and widely used approach for proteomics research, offering a cost-effective and simple method for estimating protein abundance. However, careful experimental design and quality control are essential to minimize variability and ensure reliable quantification across different runs.\n\n\n\nQuantitative Mass Spectrometry with Tandem Mass Tagging\nTandem Mass Tag (TMT) labeling is a powerful technique in quantitative mass spectrometry (MS) that allows for the simultaneous analysis of multiple samples in a single MS run. This method enhances efficiency and enables precise relative quantification of proteins across different experimental conditions.\n\nHow It Works\n\nChemical Labeling: Each peptide in a sample is chemically tagged with a unique TMT label, which consists of an identical reactive group that binds to peptides and a mass reporter region that differentiates samples.\nSample Pooling: Once labeled, samples are combined into a single pooled sample group, reducing the need for separate MS runs.\nMass Spectrometry Analysis:\n\nMS1 (Peptide Isolation): Peptides are first separated and detected based on their mass-to-charge ratio (m/z).\nMS2 (Peptide Sequencing & Tag Fragmentation): Peptides are fragmented, allowing for sequence identification. At the same time, the mass tags also fragment, producing unique reporter ions.\nQuantification: The intensity of these reporter ions reveals the relative abundance of each peptide across the original samples.\n\n\n\n\nAdvantages of TMT Labeling\n\nIncreased Throughput & Efficiency TMT allows for the multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs needed. Instead of running 16 individual samples separately, they can be pooled and analyzed together, increasing experimental efficiency.\nDeeper Proteome Coverage The pooled sample can be further fractionated (e.g., using cation exchange chromatography), which helps separate high-abundance and low-abundance peptides before MS analysis. This results in greater depth of peptide detection compared to running multiple low-depth, individual label-free MS analyses.\nImproved Quantification Accuracy Since all samples are analyzed together in the same MS run, technical variability between runs is minimized, leading to more accurate relative quantification.\n\n\n\nChallenges & Considerations\n\nHigher Cost TMT reagents and the need for higher-end mass spectrometers contribute to increased costs.\nComplex Sample Preparation Additional steps are required for labeling, pooling, and fractionation, which increases the risk of sample handling variability.\nNormalization Requirement Total protein input must be carefully controlled to ensure accurate quantification. Unequal sample amounts (e.g., when comparing conditions with highly different protein yields) may require artificial balancing, which can introduce biases.\nDemanding Instrumentation & Expertise The technique requires high-resolution mass spectrometers with precise scanning capabilities, often necessitating outsourcing to specialized facilities.\n\n\n\nConclusion\nTMT-based quantitative mass spectrometry is a valuable tool for large-scale proteomics studies, providing high-throughput, precise, and deep proteome coverage. While it requires careful sample preparation and advanced instrumentation, its ability to multiplex multiple samples in a single run makes it an attractive option for researchers aiming for high-confidence protein quantification."
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Weekly meeting notes",
+    "objectID": "IndividualStudies/SF_2024.html",
+    "href": "IndividualStudies/SF_2024.html",
+    "title": "Farley et al. 2024",
     "section": "",
-    "text": "What to do with datasets with no logFC-type data\n\nAna’s PI paper has heat maps that I can replicate, but no enrichment data\nDoris’s early tf-Sph/tf-DAG paper also has heat maps that I’ve tried to replicate, but it looks terrible with all the proteins displayed (filter hits to significant?)\n\n\n\n\n\n\nFT mentioned structure images are too large - can make them smaller?\nConsistency of structure cartoons?\n\nneed standard format\n\nFeatures we should add?\n\n\n\n\n\ncurrent email service is through Zoho, and I can add free accounts for up to users. The problem is that there is zero forwarding, so the users will need to check the Zoho site regularly to make sure there aren’t comments/submissions.\n\n\n\n\n\nFind experiment p numbers for Frank to reanalyze or share data.\n\nAsking Andre Nadler for dataset numbers\n\nFind further studies to incorporate\n\n\n\n\n\nLogo\n\n\n\n\n\nDecide on format for non-TMT data (heat maps? Venn diagrams?)\nData submission form\nIncorporate new data once sent from Frank\nLink to PRIDE database for non-curated datasets in each study\nHover preview of chemical structure when referenced\nSign up for paid zoho accounts for Fikadu and Carsten\nAdd detailed structure cartoons with hover interactivity - especially for 8-3/1-10 FA."
+    "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Farley et al., 2024; A"
+    ]
   },
   {
-    "objectID": "notes.html#section",
-    "href": "notes.html#section",
-    "title": "Weekly meeting notes",
+    "objectID": "IndividualStudies/SF_2024.html#data-visualization",
+    "href": "IndividualStudies/SF_2024.html#data-visualization",
+    "title": "Farley et al. 2024",
+    "section": "Data visualization",
+    "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nMA plots",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "href": "IndividualStudies/SF_2024.html#enriched-proteins",
+    "title": "Farley et al. 2024",
+    "section": "Enriched Proteins",
+    "text": "Enriched Proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSph\n\n\n\n\n\nSpa\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/SF_2024.html#data-download",
+    "href": "IndividualStudies/SF_2024.html#data-download",
+    "title": "Farley et al. 2024",
+    "section": "Data download",
+    "text": "Data download\n Download",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies",
+      "Farley et al., 2024; A"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/StudyOverview.html",
+    "href": "IndividualStudies/StudyOverview.html",
+    "title": "Overview of Interactomics Studies",
     "section": "",
-    "text": "What to do with datasets with no logFC-type data\n\nAna’s PI paper has heat maps that I can replicate, but no enrichment data\nDoris’s early tf-Sph/tf-DAG paper also has heat maps that I’ve tried to replicate, but it looks terrible with all the proteins displayed (filter hits to significant?)\n\n\n\n\n\n\nFT mentioned structure images are too large - can make them smaller?\nConsistency of structure cartoons?\n\nneed standard format\n\nFeatures we should add?\n\n\n\n\n\ncurrent email service is through Zoho, and I can add free accounts for up to users. The problem is that there is zero forwarding, so the users will need to check the Zoho site regularly to make sure there aren’t comments/submissions.\n\n\n\n\n\nFind experiment p numbers for Frank to reanalyze or share data.\n\nAsking Andre Nadler for dataset numbers\n\nFind further studies to incorporate\n\n\n\n\n\nLogo\n\n\n\n\n\nDecide on format for non-TMT data (heat maps? Venn diagrams?)\nData submission form\nIncorporate new data once sent from Frank\nLink to PRIDE database for non-curated datasets in each study\nHover preview of chemical structure when referenced\nSign up for paid zoho accounts for Fikadu and Carsten\nAdd detailed structure cartoons with hover interactivity - especially for 8-3/1-10 FA."
+    "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Overview of Interactomics Studies"
+    ]
   },
   {
-    "objectID": "notes.html#section-1",
-    "href": "notes.html#section-1",
-    "title": "Weekly meeting notes",
-    "section": "2025/14/01",
-    "text": "2025/14/01\n\nFeedback\n\nWhat do we want from this database?\n\nreference: people can compare interactomes in different cell lines\n\nSubcellular localization is maybe too complicated to have on this site\n\nHow to communicate nuance?\n\nCaged vs uncaged\n\nDescribe time-course?\n\n\n\nThings we like\n\nInteractivity\nCleanliness of theme\n\n\n\nThings we don’t like\n\nRemove subcellular localization\nMake font size for heirarchy of sidebar menu more clear\n\n\n\nThings to add\n\nAdd inset tabs of each cell type analyzed to each probe page\nBifunctional sphingosine papers from Per\nWrite article about how probes are used\n\n\n\nFormatting options\n\ntheme\norganization\nreferences\nStructure depiction\n\nStatic image\nEmbedded model (will need more work)\n\n\n\n\n\nCS to-do\n\nShare list of relevant studies\n\nMessage Frank Stein for data\n\nShare structures of probes\nIn what journal would a commentary about this site fit best?\n\n\n\nFT to-do\n\nThink about site logo\n\nDo you want Tephra to design?\nLipidMaps logo might be good inspiration, but we want better\nCarsten wants simple, modern\n\n\n\n\nGG to-do\n\nAdd new data, as provided by CS\n\n\n\nAdd structures of each probe, as provided by CS\nAdd Contact Us submission form\nCommentary about site\n\nTitle: Lipid Interactome Repository\nLook for journal\n\nJournal of Lipid Research?\n\n\nBuild a probe comparison page\n\nIdeally we want a select list of proteins which only interact with a given probe (and not with any other probe), regardless of cell line\nProbe comparison plotter?"
-  },
-  {
-    "objectID": "LipidProbe/PhosphatidylinositolTrisphosphate.html#protein-interactome",
-    "href": "LipidProbe/PhosphatidylinositolTrisphosphate.html#protein-interactome",
-    "title": "Trifunctional Phosphatidylinositol 3,4,5-bisphosphate",
+    "objectID": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
+    "href": "LipidProbe/8-3_FattyAcid.html#protein-interactome",
+    "title": "Trifunctional 8-3 Fatty Acid",
     "section": "Protein interactome",
-    "text": "Protein interactome",
+    "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA PlotsData\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n\n\n\n\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
     "crumbs": [
       "What are Multifunctional Lipid Probes?",
       "Lipid Probes",
-      "Phosphatidylinositols",
-      "PI(3,4,5)P~3~"
-    ]
-  },
-  {
-    "objectID": "LipidProbe/PhosphatidicAcid.html",
-    "href": "LipidProbe/PhosphatidicAcid.html",
-    "title": "Trifunctional Phosphatidic Acid",
-    "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA PlotData\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"\n\n\n\n\n\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Lipid Probes",
-      "Phospholipids",
-      "Phosphatidic Acid"
-    ]
-  },
-  {
-    "objectID": "LipidProbe/PhosphatidicAcid.html#structure",
-    "href": "LipidProbe/PhosphatidicAcid.html#structure",
-    "title": "Trifunctional Phosphatidic Acid",
-    "section": "",
-    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA PlotData\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"\n\n\n\n\n\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
-    "crumbs": [
-      "What are Multifunctional Lipid Probes?",
-      "Lipid Probes",
-      "Phospholipids",
-      "Phosphatidic Acid"
+      "Fatty Acids",
+      "8-3 Fatty Acid"
     ]
   },
   {
@@ -518,6 +437,45 @@
     ]
   },
   {
+    "objectID": "LipidProbe/PhosphatidicAcid.html",
+    "href": "LipidProbe/PhosphatidicAcid.html",
+    "title": "Trifunctional Phosphatidic Acid",
+    "section": "",
+    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA PlotData\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"\n\n\n\n\n\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Lipid Probes",
+      "Phospholipids",
+      "Phosphatidic Acid"
+    ]
+  },
+  {
+    "objectID": "LipidProbe/PhosphatidicAcid.html#structure",
+    "href": "LipidProbe/PhosphatidicAcid.html#structure",
+    "title": "Trifunctional Phosphatidic Acid",
+    "section": "",
+    "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA PlotData\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"\n\n\n\n\n\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Lipid Probes",
+      "Phospholipids",
+      "Phosphatidic Acid"
+    ]
+  },
+  {
+    "objectID": "LipidProbe/PhosphatidylinositolBisphosphate.html#protein-interactome",
+    "href": "LipidProbe/PhosphatidylinositolBisphosphate.html#protein-interactome",
+    "title": "Trifunctional Phosphatidylinositol 4,5-bisphosphate",
+    "section": "Protein interactome",
+    "text": "Protein interactome",
+    "crumbs": [
+      "What are Multifunctional Lipid Probes?",
+      "Lipid Probes",
+      "Phosphatidylinositols",
+      "PI(4,5)P~2~"
+    ]
+  },
+  {
     "objectID": "LipidProbe/Sphinganine.html#protein-interactome",
     "href": "LipidProbe/Sphinganine.html#protein-interactome",
     "title": "Trifunctional sphinganine",
@@ -531,10 +489,31 @@
     ]
   },
   {
-    "objectID": "LipidProbe/FormattingTemplate.html#protein-interactome",
-    "href": "LipidProbe/FormattingTemplate.html#protein-interactome",
-    "title": "Formatting Template",
-    "section": "Protein interactome",
-    "text": "Protein interactome\n\nCell background: ???\n\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\n\n\nJournal\n\n\nAbstract\n\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nMass spectrometry quantification method\n\n\n\n\n\n\nVolcano plotRanked order plotMA plotData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCell background: ???\n\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\n\n\nJournal\n\n\nAbstract\n\n\nLipid probes utilized\n\n\nCell line analyzed\n\n\nMass spectrometry quantification method\n\n\n\n\n\nHeatmapData"
+    "objectID": "MaintenanceInstructions.html",
+    "href": "MaintenanceInstructions.html",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder. Under the “LipidProbe” folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#site-organization",
+    "href": "MaintenanceInstructions.html#site-organization",
+    "title": "Maintenance Instructions",
+    "section": "",
+    "text": "I’ve done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that…\nUnder the “IndividualStudies” folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the “DataTables” subfolder. Under the “LipidProbe” folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!\nThe _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site."
+  },
+  {
+    "objectID": "MaintenanceInstructions.html#maintenance",
+    "href": "MaintenanceInstructions.html#maintenance",
+    "title": "Maintenance Instructions",
+    "section": "Maintenance",
+    "text": "Maintenance\n\nBasic overview\nThis site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: https://quarto.org/docs/websites.\nThe overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of Bootswatch themes, or if you’re feeling ambitious you can design your own theme.\nWhen making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.\n\n\nGitHub repository\nAfter changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: git@github.com:gaelenDG/LipidInteractomics_Website.git. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.\nCloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Gaelen, the repository administrator. More details will go here once a more formal pull request workflow is in place!\n\n\nQuarto formatting\nI have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).\nAs a reference to help get you started, I very much appreciated this blog post by Richard Posert about using Quarto.\nI honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.\nIf you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).\nIf your data looks at all like Alix’s or Scotty’s, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.\nThere are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look.\nIn order to make sure the author information is identical on all appropriate pages, I made an “include” folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they’re somehow different."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This repository is still under construction (as you can probably tell). Someday soon this page will have details about the founders of this resource, as well as a data submission form. Until then, please contact the site administrators for additional information about protocols, experimental design, and website feedback:\ncontact.us@LipidInteractome.org"
   }
 ]

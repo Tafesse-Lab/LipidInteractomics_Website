@@ -14,32 +14,8 @@ title: "Trifunctional sphinganine"
 
 ::: {.callout-note collapse="true"}
 
-#### Study details
+{{< include /StudyInformation_includes/SF_2024_A_include.qmd >}}
 
-##### Authors
-Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
-
-
-##### Journal
-ACS Chemical Biology
-
-<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
-
-##### Abstract
-
-Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
-
-##### Lipid probes utilized
-
-##### Cell line analyzed
-
-[Huh7](https://huh7.com){target="_blank"}
-
-##### Mass spectrometry quantification method
-
-16-channel Tandem Mass Tagging (TMT16)
-
-##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
 

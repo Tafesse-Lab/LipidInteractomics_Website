@@ -16,32 +16,8 @@ title: "Trifunctional Sphingosine"
 
 ::: {.callout-note collapse="true"}
 
-#### Study details
+{{< include /StudyInformation_includes/SF_2024_A_include.qmd >}}
 
-##### Authors
-Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
-
-
-##### Journal
-ACS Chemical Biology
-
-<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
-
-##### Abstract
-
-Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
-
-##### Lipid probes utilized
-
-##### Cell line analyzed
-
-[Huh7](https://huh7.com){target="_blank"}
-
-##### Mass spectrometry quantification method
-
-16-channel Tandem Mass Tagging (TMT16)
-
-##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
 
@@ -176,36 +152,6 @@ datatable(SF_2024_data_reactive,
 
 ::: {.callout-note collapse="true"}
 
-#### Study details
-
-##### Authors
-
-Doris Höglinger, André Nadler,  Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz
-
-##### Journal
-
-PNAS
-
-<https://doi.org/10.1073/pnas.1611096114>{target="_blank"}
-
-##### Abstract
-
-Lipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.
-
-##### Lipid probes utilized
-
-Sphinganine
-
-Diacylglycerol
-
-8-3 Fatty acid
-
-##### Cell line analyzed
-
-[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
-
-##### Mass spectrometry quantification method
-
-Peptide spectral counting
+{{< include /StudyInformation_includes/DH_2017_include.qmd >}}
 
 :::
