@@ -302,7 +302,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ratiometric-data" id="toc-ratiometric-data" class="nav-link active" data-scroll-target="#ratiometric-data">Ratiometric data</a></li>
+  <li><a href="#shared-hits" id="toc-shared-hits" class="nav-link" data-scroll-target="#shared-hits">Shared hits</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -326,12 +333,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="ratiometric-data" class="level2">
+<h2 class="anchored" data-anchor-id="ratiometric-data">Ratiometric data</h2>
+<p>For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via <a href="@sec-TMT">Tandem Mass Tagging</a>.</p>
+<p>Use the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.</p>
 <!-- Data wrangling, will comment out most of this when it's all done. 
 Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->
 <div class="border">
-<div id="fig-ShinyEmbed" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ShinyEmbed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 
 
@@ -351,14 +359,12 @@ Pulling the enriched hits from each probe, then making a long dataframe that can
 
 
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ShinyEmbed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.
-</figcaption>
-</figure>
-</div>
-</div>
+</section>
+<section id="shared-hits" class="level2">
+<h2 class="anchored" data-anchor-id="shared-hits">Shared hits</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
