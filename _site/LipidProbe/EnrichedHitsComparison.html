@@ -88,10 +88,21 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../TrifunctionalLipidProbesOverview.html"> 
-<span class="menu-text">What are Multifunctional Lipid Probes?</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-background" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Background</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-background">    
+        <li>
+    <a class="dropdown-item" href="../Background/TrifunctionalLipidProbesOverview.html">
+ <span class="dropdown-text">Multifunctional Lipid Probes Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../Background/ExperimentalSchemaAndAnalysis.html">
+ <span class="dropdown-text">Mass spectrometry Overview</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -100,11 +111,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-contact-us">    
         <li>
-    <a class="dropdown-item" href="../about.html">
+    <a class="dropdown-item" href="../ContactUs/about.html">
  <span class="dropdown-text">About</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../DataSubmission.html">
+    <a class="dropdown-item" href="../ContactUs/DataSubmission.html">
  <span class="dropdown-text">Submit your data</span></a>
   </li>  
     </ul>
@@ -346,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="ratiometric-data" class="level2">
 <h2 class="anchored" data-anchor-id="ratiometric-data">Ratiometric data</h2>
-<p>For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via <a href="@sec-TMT">Tandem Mass Tagging</a>.</p>
+<p>For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via <a href="../TrifunctionalLipidProbesOverview.qmd#sec-TMT">Tandem Mass Tagging</a>.</p>
 <p>Use the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.</p>
 <!-- Data wrangling, will comment out most of this when it's all done. 
 Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->

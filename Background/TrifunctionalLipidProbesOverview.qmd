@@ -1,5 +1,5 @@
 ---
-title: "Multifunctional Lipid Probes Background"
+title: "Background: Multifunctional Lipid Probes"
 author: "Gaelen Guzman"
 format: 
   html:
@@ -146,7 +146,7 @@ References to include:
 ## Interactomics Experimental schema
 
 ::: border
-![](SiteFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+![](/Background/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
 :::
 
 ### Cell treatment

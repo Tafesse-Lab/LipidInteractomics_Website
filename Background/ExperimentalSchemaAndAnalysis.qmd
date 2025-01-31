@@ -1,0 +1,88 @@
+---
+title: "Background: Using multifunctional probes for proteomics"
+---
+
+
+## Interactomics Experimental schema
+
+::: border
+![](/Background/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+:::
+
+### Cell treatment
+
+### Protein collection
+
+### Mass spectrometry analysis
+
+#### Label-Free Quantification
+
+Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.
+
+##### How It Works
+
+1.  **Peptide Detection (MS1):** Peptides are isolated and detected based on their mass-to-charge ratio (m/z).
+
+2.  **Peptide Sequencing (MS2):** Selected peptide ions are fragmented, and the resulting spectra determine peptide sequences.
+
+3.  **Quantification:** The total signal intensity of all identified peptides corresponding to a protein is summed as a proxy for its abundance.
+
+4.  **Comparison Across Samples:** Samples prepared and analyzed using the same LC-MS/MS protocol can be compared using peptide-spectrum match (PSM) counts as an abundance proxy.
+
+##### Advantages of Label-Free Quantification
+
+-   **Cost-Effective & Simple Sample Preparation:** Unlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex modifications, making it more accessible.
+
+-   **Flexible & Widely Used:** Compatible with various experimental designs and allows for comparisons across many samples without multiplexing constraints.
+
+##### Challenges & Considerations
+
+-   **Potential Bias from Co-Elution:** High-abundance peptides can overshadow low-abundance ones, reducing the number of reliably quantified peptides.
+
+-   **Run-to-Run Variability:** LFQ requires separate MS runs for each sample, making it susceptible to differences in instrument calibration, chromatography conditions, or sample handling. Careful quality control is necessary to minimize artificial differences.
+
+##### Conclusion
+
+Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.
+
+#### Quantitative Mass Spectrometry with Tandem Mass Tagging
+
+Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.
+
+##### How It Works
+
+1.  **Chemical Labeling:** Each sample is chemically tagged with a unique TMT label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.
+
+2.  **Sample Pooling:** Labeled samples are combined into a single pooled group, reducing the need for separate MS runs.
+
+3.  **Mass Spectrometry Analysis:**
+
+    -   **MS1 (Peptide Isolation):** Peptides are separated and detected based on their mass-to-charge ratio (m/z).
+
+    -   **MS2 (Peptide Sequencing & Tag Fragmentation):** Peptides are fragmented for sequence identification, and TMT mass tags fragment to generate reporter ions.
+
+4.  **Quantification:** The intensity of reporter ions reveals the relative abundance of peptides across the original samples.
+
+5.  **Comparison Across Samples:** Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing many samples to be analyzed in a single experiment or large-scale study.
+
+##### Advantages of TMT Labeling
+
+-   **Increased Throughput & Efficiency:** Enables multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs.
+
+-   **Deeper Proteome Coverage:** Pooled samples can be fractionated (e.g., by cation exchange chromatography), enhancing detection of low-abundance peptides.
+
+-   **Improved Quantification Accuracy:** Since all samples are analyzed in the same MS run, technical variability between runs is minimized.
+
+##### Challenges & Considerations
+
+-   **Higher Cost:** TMT reagents and high-end mass spectrometers add to the expense.
+
+-   **Complex Sample Preparation:** Requires additional steps for labeling, pooling, and fractionation, increasing the risk of sample handling variability.
+
+-   **Normalization Requirement:** Accurate quantification requires equal protein input across samples to avoid artificial balancing biases.
+
+-   **Demanding Instrumentation & Expertise:** Requires high-resolution mass spectrometers, often necessitating specialized facilities.
+
+##### Conclusion
+
+TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.

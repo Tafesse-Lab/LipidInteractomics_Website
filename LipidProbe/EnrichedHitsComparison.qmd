@@ -4,7 +4,7 @@ title: "Comparing the Enriched Hits of Different Probes"
 
 ## Ratiometric data
 
-For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via [Tandem Mass Tagging](@sec-TMT). 
+For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via [Tandem Mass Tagging](/TrifunctionalLipidProbesOverview.qmd#sec-TMT). 
 
 Use the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. Depicted are only the proteins present in the datasets of both probes.
 

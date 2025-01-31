@@ -14,15 +14,19 @@ website:
   page-footer: "Copyright 2025, Fikadu Tafesse and Carsten Schultz" 
   navbar:
     left:
-      - href: TrifunctionalLipidProbesOverview.qmd
-        text: "What are Multifunctional Lipid Probes?"
+      - text: "Background"
+        menu:
+          - href: Background/TrifunctionalLipidProbesOverview.qmd
+            text: "Multifunctional Lipid Probes Overview"
+          - href: Background/ExperimentalSchemaAndAnalysis.qmd
+            text: "Mass spectrometry Overview"
 
     right:
       - text: "Contact us"
         menu: 
-        - href: about.qmd
+        - href: ContactUs/about.qmd
           text: "About"
-        - href: DataSubmission.qmd
+        - href: ContactUs/DataSubmission.qmd
           text: "Submit your data"
    
   sidebar:

@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.4.549" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="author" content="Gaelen Guzman" />
+
+<title>Lipid Interactome Repository – Background: Multifunctional Lipid Probes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="/index.html">
+    <span class="navbar-title">Lipid Interactome Repository</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-background" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Background</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-background">    
+        <li>
+    <a class="dropdown-item" href="/Background/TrifunctionalLipidProbesOverview.html">
+ <span class="dropdown-text">Multifunctional Lipid Probes Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/Background/ExperimentalSchemaAndAnalysis.html">
+ <span class="dropdown-text">Mass spectrometry Overview</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact-us" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Contact us</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-contact-us">    
+        <li>
+    <a class="dropdown-item" href="/ContactUs/about.html">
+ <span class="dropdown-text">About</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/ContactUs/DataSubmission.html">
+ <span class="dropdown-text">Submit your data</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" 
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Lipid Probes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Phospholipids</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/PhosphatidicAcid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phosphatidic Acid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/Phosphatidylethanolamine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phosphatidylethanolamine</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Phosphatidylinositols</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/PhosphatidylinositolBisphosphate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PI(4,5)P~2~</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/PhosphatidylinositolTrisphosphate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PI(3,4,5)P~3~</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Glycerolipids</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/Diacylglycerol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Diacylglycerol</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Sphingolipids</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/Sphinganine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sphinganine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/Sphingosine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sphingosine</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">Fatty Acids</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/8-3_FattyAcid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8-3 Fatty Acid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/1-10_FattyAcid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1-10 Fatty Acid</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Probe vs Probe Comparisons</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/IndividualStudies/StudyOverview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview of Interactomics Studies</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/IndividualStudies/AT_2025.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thomas et al. 2025</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/IndividualStudies/SF_2024.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Farley et al., 2024; A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/IndividualStudies/SF_2024_B.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Farley et al., 2024; B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/IndividualStudies/RM_2021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Muller et al., 2021</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/IndividualStudies/DH_2017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Höglinger et al., 2017</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Background: Multifunctional Lipid Probes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gaelen Guzman </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-why-study-lipid-interactomes" id="toc-introduction-why-study-lipid-interactomes">Introduction: Why Study Lipid Interactomes?</a>
+  <ul>
+  <li><a href="#lipid-lipid-interactions-and-membrane-properties" id="toc-lipid-lipid-interactions-and-membrane-properties">Lipid-Lipid Interactions and Membrane Properties</a></li>
+  <li><a href="#lipids-as-signaling-molecules" id="toc-lipids-as-signaling-molecules">Lipids as Signaling Molecules</a></li>
+  <li><a href="#lipid-protein-interactions-unlocking-cellular-communication" id="toc-lipid-protein-interactions-unlocking-cellular-communication">Lipid-Protein Interactions: Unlocking Cellular Communication</a></li>
+  </ul></li>
+  <li><a href="#synthetic-lipid-analogs-powerful-tools-for-lipid-biology" id="toc-synthetic-lipid-analogs-powerful-tools-for-lipid-biology">Synthetic Lipid Analogs: Powerful Tools for Lipid Biology</a>
+  <ul>
+  <li><a href="#why-lipids-require-a-different-approach" id="toc-why-lipids-require-a-different-approach">Why Lipids Require a Different Approach</a></li>
+  <li><a href="#the-role-of-synthetic-lipid-analogs" id="toc-the-role-of-synthetic-lipid-analogs">The Role of Synthetic Lipid Analogs</a></li>
+  </ul></li>
+  <li><a href="#photoactivatable-clickable-probes-bifunctional-lipid-probes" id="toc-photoactivatable-clickable-probes-bifunctional-lipid-probes">Photoactivatable &amp; Clickable Probes / Bifunctional Lipid Probes</a></li>
+  <li><a href="#trifunctional-lipid-probes" id="toc-trifunctional-lipid-probes">Trifunctional Lipid Probes</a></li>
+  <li><a href="#interactomics-experimental-schema" id="toc-interactomics-experimental-schema">Interactomics Experimental schema</a>
+  <ul>
+  <li><a href="#cell-treatment" id="toc-cell-treatment">Cell treatment</a></li>
+  <li><a href="#protein-collection" id="toc-protein-collection">Protein collection</a></li>
+  <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis">Mass spectrometry analysis</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<p><strong>This repository is still under construction, please forgive us for incomplete sections as we build features!</strong></p>
+<p>Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced and linked below for greater detail.</p>
+<section id="introduction-why-study-lipid-interactomes" class="level2">
+<h2>Introduction: Why Study Lipid Interactomes?</h2>
+<p>At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function.</p>
+<section id="lipid-lipid-interactions-and-membrane-properties" class="level3">
+<h3>Lipid-Lipid Interactions and Membrane Properties</h3>
+<p>Lipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactomes, researchers can gain deeper insight into how these physical interactions influence membrane architecture and dynamics. Understanding these interactions is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.</p>
+</section>
+<section id="lipids-as-signaling-molecules" class="level3">
+<h3>Lipids as Signaling Molecules</h3>
+<p>Beyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can affect cellular behavior and physiological responses.</p>
+</section>
+<section id="lipid-protein-interactions-unlocking-cellular-communication" class="level3">
+<h3>Lipid-Protein Interactions: Unlocking Cellular Communication</h3>
+<p>A single lipid species can interact with a diverse array of proteins, influencing everything from receptor activation to intracellular signaling cascades. Mapping these lipid-protein interactions provides a powerful approach to understanding how lipids exert their wide-ranging effects on cellular processes. By deciphering lipid interactomes, researchers can uncover novel regulatory mechanisms and potentially identify new therapeutic targets in diseases where lipid signaling is dysregulated.</p>
+</section>
+</section>
+<section id="synthetic-lipid-analogs-powerful-tools-for-lipid-biology" class="level2">
+<h2>Synthetic Lipid Analogs: Powerful Tools for Lipid Biology</h2>
+<p>The study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.</p>
+<section id="why-lipids-require-a-different-approach" class="level3">
+<h3>Why Lipids Require a Different Approach</h3>
+<p>Advances in genetic engineering—such as CRISPR and de novo gene synthesis—have revolutionized the study of nucleic acids and proteins. These techniques enable precise modifications, such as altering enzyme activity, redirecting proteins to different subcellular locations, modifying binding domains, and tagging proteins for visualization or isolation.</p>
+<p>In contrast, lipids present unique challenges that make genetic approaches impractical. Unlike proteins, which are directly encoded in DNA, lipids are synthesized enzymatically. Their structures cannot be modified in living cells through genetic manipulation alone. Traditional approaches, such as gene knockouts or knock-ins, can broadly alter lipid composition but do not allow for precise control over individual lipid species.</p>
+<p>Lipids are also much smaller than proteins, often composed of just a few dozen atoms. Even minor modifications can significantly alter their biophysical properties and biological function. Unlike proteins, which can tolerate the addition of large fluorescent or affinity tags, lipids require minimal chemical modifications to preserve their activity.</p>
+<p>Additionally, lipids exist within a highly dynamic metabolic network, where they are continuously synthesized, modified, and degraded. Some signaling lipids, such as sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track in real-time.</p>
+<p>To overcome these challenges, researchers have developed synthetic lipid analogs with chemical modifications that allow for targeted investigation while preserving essential biological properties. The following sections detail key modifications used in functional lipid probes.</p>
+</section>
+<section id="the-role-of-synthetic-lipid-analogs" class="level3">
+<h3>The Role of Synthetic Lipid Analogs</h3>
+<p>To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Diazirine ring
+</div>
+<div class='callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end'><i class='callout-toggle'></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lipid-protein interactions are inherently transient and dynamic, making them particularly challenging to capture and study. Unlike protein-protein interactions, which often rely on extensive surface interfaces and hydrogen bonding, most lipids have minimal hydrogen bonding potential and lack a substantial structural framework for stable interactions. As a result, even biologically relevant lipid-protein contacts may be too fleeting to detect under standard biochemical conditions.</p>
+<p>To effectively identify and analyze lipid-binding proteins, it is necessary to stabilize these interactions in a way that allows their subsequent enrichment and detection. While affinity enrichment approaches (e.g., lipid pulldown assays) can be used, they often require detergents to solubilize membrane-associated complexes, which can introduce artifacts or disrupt weak lipid-protein interactions. Covalent crosslinking, on the other hand, offers a far more reliable method to “freeze” these interactions in place, preserving their native binding state even during rigorous purification steps before mass spectrometry analysis.</p>
+<section id="why-use-diazirine-as-a-crosslinking-motif" class="level5">
+<h5>Why Use Diazirine as a Crosslinking Motif?</h5>
+<p>Several chemical groups can be used for covalent crosslinking, but diazirine rings are particularly well-suited for lipid studies due to their small size and minimal structural interference. Other crosslinking motifs may alter the lipid’s physicochemical properties, potentially changing its interaction profile. Diazirine, however, is the smallest known photoactivatable crosslinking group, making it an ideal choice for studying delicate lipid-protein interactions.</p>
+</section>
+<section id="key-properties-of-diazirine-crosslinking" class="level5">
+<h5>Key properties of diazirine crosslinking:</h5>
+<p>Lipid interactions are typically transient, as most lipids lack opportunities for strong hydrogen bonding and are too small to provide a significant binding interface. Identifying interacting proteins requires stabilizing these interactions to allow for enrichment and analysis. While affinity-based approaches can help, covalent crosslinking is the most effective method, as it enables the removal of impurities and detergents before mass spectrometry analysis.</p>
+<p>Among the various crosslinking motifs, the diazirine ring is the smallest, making it the least likely to interfere with a lipid’s natural interactions. Upon exposure to 355 nm UV light, the diazirine ring forms a reactive carbene radical, which rapidly covalently bonds with nearby molecules. This reaction is highly versatile, as the carbene can insert into carbon-hydrogen, sulfur-hydrogen, nitrogen-hydrogen, oxygen-hydrogen, or double bonds, allowing for broad coverage of potential interaction partners[@haberkantFatFabulousBifunctional2014].</p>
+<p>The small size and high reactivity of diazirine crosslinking make it an invaluable tool for capturing lipid-protein interactions while minimizing perturbations to native lipid function.</p>
+</section>
+<section id="sec-DiazirinePlacement" class="level5">
+<h5>The effect of Diazirine placement on crosslinking targets</h5>
+<ul>
+<li><p>The reactive carbene produced upon irradiation will bond with whatever molecule is nearest – thus, the location of the diazirine ring can have a dramatic effect on what protein interactors are stabilized via crosslinking.</p></li>
+<li><p>The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, <a href="../LipidProbe/8-3_FattyAcid.qmd">8-3 Fatty Acid</a> has the acyl chain only 3 carbons from the end. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.</p></li>
+<li><p>In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is <a href="../LipidProbe/1-10_FattyAcid.qmd">1-10 Fatty Acid</a>, in which the diazirine ring was placed 10 carbons from the terminus of the chain.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Terminal Alkyne
+</div>
+<div class='callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end'><i class='callout-toggle'></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>When studying proteins, researchers often use genetic methods to tag or modify them, making them easier to visualize or isolate. For example, adding a green fluorescent protein (GFP) domain to a protein allows it to be seen under a fluorescence microscope, whereas incorporating an HA tag enables enrichment using antibody pulldown techniques. These approaches work well for proteins because they are encoded by genes and can be modified at the DNA level.</p>
+<p>Lipids, however, cannot be modified in the same way. Their synthesis occurs enzymatically, meaning there is no genetic sequence to alter. Large additions, like a GFP or HA domain, would drastically change a lipid’s properties, making it unrecognizable to the proteins and pathways that typically interact with it. Instead, a much smaller modification is needed—one that allows researchers to track and manipulate lipids without interfering with their biological function.</p>
+<section id="a-versatile-bioorthogonal-handle" class="level5">
+<h5>A Versatile Bioorthogonal Handle</h5>
+<p>One of the smallest and most effective modifications for this purpose is the terminal alkyne. This functional group consists of a simple triple bond at the end of a carbon chain, a minor structural change that does not significantly alter the lipid’s behavior. Despite its small size, the terminal alkyne serves as a powerful chemical handle, allowing researchers to attach various probes after the lipid has been introduced into a biological system.</p>
+<p>The terminal alkyne is particularly useful because it undergoes azide-alkyne cycloaddition, a type of click chemistry reaction. This reaction is highly specific, rapid, and bio-orthogonal, meaning it does not interfere with natural cellular processes. By reacting the alkyne with an azide-containing probe, researchers can introduce fluorescent markers for imaging or affinity tags for isolating lipid-protein complexes.</p>
+</section>
+<section id="applications-in-lipid-research" class="level5">
+<h5>Applications in Lipid Research</h5>
+<p>One major application of the terminal alkyne is fluorescence labeling. A functionalized lipid can be introduced into cells and later reacted with a fluorophore-conjugated azide, allowing researchers to visualize its distribution and movement under a microscope. This approach provides insights into lipid localization and trafficking.</p>
+<p>Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.</p>
+<p>By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. It bridges the gap between traditional lipid research and modern bioorthogonal chemistry, allowing for precise studies of lipid function in living systems.</p>
+</section>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Coumarin Photocage
+</div>
+<div class='callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end'><i class='callout-toggle'></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lipids play an essential role in cellular signaling, yet their biological study presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. This rapid turnover makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.</p>
+<p>One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength “uncages” the analog to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.</p>
+<section id="a-light-activated-protection-group" class="level5">
+<h5>A Light-Activated Protection Group</h5>
+<p>One of the most effective tools for photocaging lipids is the coumarin cage, a photolabile protection group that can be removed upon exposure to 400 nm light. When attached to a lipid’s headgroup, the coumarin moiety temporarily blocks interactions with proteins, preventing the lipid from participating in its normal biological pathways. However, upon photoactivation, the coumarin group is cleaved, restoring the lipid to its native structure and allowing it to engage with its biological targets.</p>
+<p>This approach is useful for studying lipid-protein interactions, as uncaging the lipid in a controlled manner ensures that protein binders recognize the native lipid structure only when and where the researcher intends.</p>
+</section>
+<section id="applications-in-cellular-signaling-studies" class="level5">
+<h5>Applications in Cellular Signaling Studies</h5>
+<p>The power of coumarin-caged lipids has been demonstrated in studies examining intracellular lipid signaling. For example, in 2015, Högliner et al. used a caged sphingosine analog to investigate the role of sphingosine in calcium signaling. They found that upon photoactivation of the caged sphingosine, lysosomal calcium release was triggered, revealing a crucial link between sphingosine metabolism and intracellular calcium dynamics<span class="citation" data-cites="hoglingerIntracellularSphingosineReleases2015a"><sup><a href="#ref-hoglingerIntracellularSphingosineReleases2015a" role="doc-biblioref">1</a></sup></span>. This discovery significantly expanded the understanding of the sphingosine signaling cascade and its downstream effects.</p>
+<p>Beyond biochemical studies, coumarin-caged lipids enable live-cell imaging approaches. Selectively irradiating specific subcellular regions allows the researcher to uncage lipids in a highly localized manner and assess their effects in real time. While this approach is not well-suited for large-scale proteomic studies, it provides a powerful method for investigating lipid function via fluorescence microscopy.</p>
+</section>
+<section id="an-additional-benefit-coumarins-inherent-fluorescence" class="level5">
+<h5>An Additional Benefit: Coumarin’s Inherent Fluorescence</h5>
+<p>A unique advantage of using coumarin as a photocaging group is its intrinsic fluorescence. This means that before the lipid is even uncaged, its cellular incorporation can be directly visualized using a fluorescence microscope. By tracking fluorescence intensity and distribution, researchers can quickly determine whether a functionalized lipid has successfully intercalated into the target cell’s membrane or accumulated in specific subcellular compartments.</p>
+<p>This dual functionality—serving as both a caging group and a fluorescent probe—makes coumarin a useful tool for studying lipid localization, uptake, and bioactivity.</p>
+</section>
+</div>
+</div>
+</div>
+<p>These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.</p>
+</section>
+</section>
+<section id="photoactivatable-clickable-probes-bifunctional-lipid-probes" class="level2">
+<h2>Photoactivatable &amp; Clickable Probes / Bifunctional Lipid Probes</h2>
+<!-- -   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
+
+References to include:
+
+-   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014 -->
+</section>
+<section id="trifunctional-lipid-probes" class="level2">
+<h2>Trifunctional Lipid Probes</h2>
+</section>
+<section id="interactomics-experimental-schema" class="level2">
+<h2>Interactomics Experimental schema</h2>
+<div class="border">
+<p><a href="../Background/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="../Background/BaselineProteomics_ExperimentalDesign.png" class="img-fluid" /></a></p>
+</div>
+<section id="cell-treatment" class="level3">
+<h3>Cell treatment</h3>
+</section>
+<section id="protein-collection" class="level3">
+<h3>Protein collection</h3>
+</section>
+<section id="mass-spectrometry-analysis" class="level3">
+<h3>Mass spectrometry analysis</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Label-Free Quantification
+</div>
+<div class='callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end'><i class='callout-toggle'></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.</p>
+<section id="how-it-works" class="level5">
+<h5>How It Works</h5>
+<ol type="1">
+<li><p><strong>Peptide Detection (MS1):</strong> Peptides are isolated and detected based on their mass-to-charge ratio (m/z).</p></li>
+<li><p><strong>Peptide Sequencing (MS2):</strong> Selected peptide ions are fragmented, and the resulting spectra determine peptide sequences.</p></li>
+<li><p><strong>Quantification:</strong> The total signal intensity of all identified peptides corresponding to a protein is summed as a proxy for its abundance.</p></li>
+<li><p><strong>Comparison Across Samples:</strong> Samples prepared and analyzed using the same LC-MS/MS protocol can be compared using peptide-spectrum match (PSM) counts as an abundance proxy.</p></li>
+</ol>
+</section>
+<section id="advantages-of-label-free-quantification" class="level5">
+<h5>Advantages of Label-Free Quantification</h5>
+<ul>
+<li><p><strong>Cost-Effective &amp; Simple Sample Preparation:</strong> Unlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex modifications, making it more accessible.</p></li>
+<li><p><strong>Flexible &amp; Widely Used:</strong> Compatible with various experimental designs and allows for comparisons across many samples without multiplexing constraints.</p></li>
+</ul>
+</section>
+<section id="challenges-considerations" class="level5">
+<h5>Challenges &amp; Considerations</h5>
+<ul>
+<li><p><strong>Potential Bias from Co-Elution:</strong> High-abundance peptides can overshadow low-abundance ones, reducing the number of reliably quantified peptides.</p></li>
+<li><p><strong>Run-to-Run Variability:</strong> LFQ requires separate MS runs for each sample, making it susceptible to differences in instrument calibration, chromatography conditions, or sample handling. Careful quality control is necessary to minimize artificial differences.</p></li>
+</ul>
+</section>
+<section id="conclusion" class="level5">
+<h5>Conclusion</h5>
+<p>Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.</p>
+</section>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quantitative Mass Spectrometry with Tandem Mass Tagging
+</div>
+<div class='callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end'><i class='callout-toggle'></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.</p>
+<section id="how-it-works-1" class="level5">
+<h5>How It Works</h5>
+<ol type="1">
+<li><p><strong>Chemical Labeling:</strong> Each sample is chemically tagged with a unique TMT label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.</p></li>
+<li><p><strong>Sample Pooling:</strong> Labeled samples are combined into a single pooled group, reducing the need for separate MS runs.</p></li>
+<li><p><strong>Mass Spectrometry Analysis:</strong></p>
+<ul>
+<li><p><strong>MS1 (Peptide Isolation):</strong> Peptides are separated and detected based on their mass-to-charge ratio (m/z).</p></li>
+<li><p><strong>MS2 (Peptide Sequencing &amp; Tag Fragmentation):</strong> Peptides are fragmented for sequence identification, and TMT mass tags fragment to generate reporter ions.</p></li>
+</ul></li>
+<li><p><strong>Quantification:</strong> The intensity of reporter ions reveals the relative abundance of peptides across the original samples.</p></li>
+<li><p><strong>Comparison Across Samples:</strong> Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing up to 30 samples to be analyzed in a single experiment.</p></li>
+</ol>
+</section>
+<section id="advantages-of-tmt-labeling" class="level5">
+<h5>Advantages of TMT Labeling</h5>
+<ul>
+<li><p><strong>Increased Throughput &amp; Efficiency:</strong> Enables multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs.</p></li>
+<li><p><strong>Deeper Proteome Coverage:</strong> Pooled samples can be fractionated (e.g., by cation exchange chromatography), enhancing detection of low-abundance peptides.</p></li>
+<li><p><strong>Improved Quantification Accuracy:</strong> Since all samples are analyzed in the same MS run, technical variability between runs is minimized.</p></li>
+</ul>
+</section>
+<section id="challenges-considerations-1" class="level5">
+<h5>Challenges &amp; Considerations</h5>
+<ul>
+<li><p><strong>Higher Cost:</strong> TMT reagents and high-end mass spectrometers add to the expense.</p></li>
+<li><p><strong>Complex Sample Preparation:</strong> Requires additional steps for labeling, pooling, and fractionation, increasing the risk of sample handling variability.</p></li>
+<li><p><strong>Normalization Requirement:</strong> Accurate quantification requires equal protein input across samples to avoid artificial balancing biases.</p></li>
+<li><p><strong>Demanding Instrumentation &amp; Expertise:</strong> Requires high-resolution mass spectrometers, often necessitating specialized facilities.</p></li>
+</ul>
+</section>
+<section id="conclusion-1" class="level5">
+<h5>Conclusion</h5>
+<p>TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.</p>
+</section>
+</div>
+</div>
+</div>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden" data-render-id="quarto-int-sidebar-title">Lipid Interactome Repository</span> <span class="hidden" data-render-id="quarto-int-navbar-title">Lipid Interactome Repository</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-1">Lipid Probes</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-2">Phospholipids</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/PhosphatidicAcid.htmlPhosphatidic-Acid">Phosphatidic Acid</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/Phosphatidylethanolamine.htmlPhosphatidylethanolamine">Phosphatidylethanolamine</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-3">Phosphatidylinositols</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/PhosphatidylinositolBisphosphate.htmlPI(4,5)P~2~">PI(4,5)P<sub>2</sub></span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/PhosphatidylinositolTrisphosphate.htmlPI(3,4,5)P~3~">PI(3,4,5)P<sub>3</sub></span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-4">Glycerolipids</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/Diacylglycerol.htmlDiacylglycerol">Diacylglycerol</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-5">Sphingolipids</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/Sphinganine.htmlSphinganine">Sphinganine</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/Sphingosine.htmlSphingosine">Sphingosine</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-6">Fatty Acids</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/8-3_FattyAcid.html8-3-Fatty-Acid">8-3 Fatty Acid</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/1-10_FattyAcid.html1-10-Fatty-Acid">1-10 Fatty Acid</span> <span class="hidden" data-render-id="quarto-int-sidebar:/LipidProbe/EnrichedHitsComparison.htmlProbe-vs-Probe-Comparisons">Probe vs Probe Comparisons</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-7">Overview of Interactomics Studies</span> <span class="hidden" data-render-id="quarto-int-sidebar:/IndividualStudies/AT_2025.htmlThomas-et-al.-2025">Thomas et al. 2025</span> <span class="hidden" data-render-id="quarto-int-sidebar:/IndividualStudies/SF_2024.htmlFarley-et-al.,-2024;-A">Farley et al., 2024; A</span> <span class="hidden" data-render-id="quarto-int-sidebar:/IndividualStudies/SF_2024_B.htmlFarley-et-al.,-2024;-B">Farley et al., 2024; B</span> <span class="hidden" data-render-id="quarto-int-sidebar:/IndividualStudies/RM_2021.htmlMuller-et-al.,-2021">Muller et al., 2021</span> <span class="hidden" data-render-id="quarto-int-sidebar:/IndividualStudies/DH_2017.htmlHöglinger-et-al.,-2017">Höglinger et al., 2017</span> <span class="hidden" data-render-id="quarto-int-navbar:Background">Background</span> <span class="hidden" data-render-id="quarto-int-navbar:Multifunctional Lipid Probes Overview">Multifunctional Lipid Probes Overview</span> <span class="hidden" data-render-id="quarto-int-navbar:/Background/TrifunctionalLipidProbesOverview.html">/Background/TrifunctionalLipidProbesOverview.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Mass spectrometry Overview">Mass spectrometry Overview</span> <span class="hidden" data-render-id="quarto-int-navbar:/Background/ExperimentalSchemaAndAnalysis.html">/Background/ExperimentalSchemaAndAnalysis.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Contact us">Contact us</span> <span class="hidden" data-render-id="quarto-int-navbar:About">About</span> <span class="hidden" data-render-id="quarto-int-navbar:/ContactUs/about.html">/ContactUs/about.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Submit your data">Submit your data</span> <span class="hidden" data-render-id="quarto-int-navbar:/ContactUs/DataSubmission.html">/ContactUs/DataSubmission.html</span></p>
+<div class="hidden" data-render-id="footer-center">
+<p>Copyright 2025, Fikadu Tafesse and Carsten Schultz</p>
+</div>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden" data-render-id="quarto-metatitle">Lipid Interactome Repository - Background: Multifunctional Lipid Probes</span> <span class="hidden" data-render-id="quarto-twittercardtitle">Lipid Interactome Repository - Background: Multifunctional Lipid Probes</span> <span class="hidden" data-render-id="quarto-ogcardtitle">Lipid Interactome Repository - Background: Multifunctional Lipid Probes</span> <span class="hidden" data-render-id="quarto-metasitename">Lipid Interactome Repository</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
+</div>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-hoglingerIntracellularSphingosineReleases2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.7554/eLife.10616">Intracellular sphingosine releases calcium from lysosomes</a>. <em>eLife</em> <strong>4</strong>, (2015).</div>
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <div class='footer-contents'>Copyright 2025, Fikadu Tafesse and Carsten Schultz</div>  
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"loop":true,"openEffect":"fade","selector":".lightbox","descPosition":"bottom","closeEffect":"fade"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+</body>
+
+</html>
