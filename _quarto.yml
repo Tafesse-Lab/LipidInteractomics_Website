@@ -6,6 +6,7 @@ project:
 bibliography: TrifunctionalLipidProbes_bibliography.bib
 csl: nature.csl
 format-links: true
+prefer-html: true
 
 website:
   
@@ -74,7 +75,7 @@ website:
             text: "Muller et al., 2021"
           - href: IndividualStudies/DH_2017.qmd
             text: "Höglinger et al., 2017"
-prefer-html: true
+
 format:
   html:
     lightbox:
@@ -87,4 +88,3 @@ format:
     css: styles.css
     toc: true
     sidebar: true
-

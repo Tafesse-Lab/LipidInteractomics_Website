@@ -319,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="GG_2025_applicationNote.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -376,15 +376,41 @@ ul.task-list li input[type="checkbox"] {
 <section id="outline" class="level2">
 <h2 class="anchored" data-anchor-id="outline">Outline</h2>
 <ul>
-<li><p>Abstract</p>
+<li>Abstract
 <ul>
-<li>Summary</li>
-<li>Availability: This site can be viewed at <a href="lipidinteractome.org">lipidinteractome.org</a>; all data is available for download.</li>
-<li>Data Submission: If you would like to submit a relevant dataset, see <a href="https://www.lipidinteractome.org/DataSubmission.html">Data Submission</a> for details and instructions.</li>
+<li>Summary
+<ul>
+<li>Lipid probes are a recent advent of lipid biology which allow for the identification of lipid::protein interactions. A growing number of lipid interactomes have been published, but there has not yet been an effort to coordinate or compare the findings between such studies. The LipidInteractome is an effort to expand the findability, accessibility, interoperability, and reproducibility of these studies according to the FAIR principles [REF https://www.go-fair.org/fair-principles/]. This site seeks to enable researchers to explore the biological function of lipids by interrogating their protein interaction partners.</li>
 </ul></li>
-<li><p>Introduction</p></li>
-<li><p>Description</p></li>
-<li><p>Acknowledgements</p></li>
+<li>Availability: This site can be viewed at <a href="lipidinteractome.org">LipidInteractome.org</a>; all data is available for download.</li>
+<li>Data Submission: If you would like to submit a relevant dataset, see our <a href="https://www.lipidinteractome.org/DataSubmission.html">Data Submission Page</a> for details, contact info, and instructions.</li>
+</ul></li>
+<li>Introduction
+<ul>
+<li>What is this repository for?</li>
+<li>Why did we make it?</li>
+<li>Who will benefit from it?</li>
+<li>Are there alternatives?
+<ul>
+<li>No, there is no centralized repository for lipid interactions data – the <a href="https://bioplex.hms.harvard.edu">BioPlex</a> web platform serves as an excellent repository for protein::protein interactions and we have sought to build similar functionality for lipid::protein interactions.</li>
+</ul></li>
+</ul></li>
+<li>Description
+<ul>
+<li><p>A site built using <a href="https://quarto.org">Quarto</a></p></li>
+<li><p>FAIR data principles</p></li>
+<li><p>An interactive discovery platform intended to guide lipid research</p></li>
+<li><p>Contains data from 5 studies thus far, though framework for expanding to many more.</p></li>
+<li><p>Enables the direct comparison of different studies, and is an invaluable addition to the understanding of how proteins interact with lipids</p></li>
+<li><p>A summary of the data vis/download modules</p>
+<ul>
+<li><p>Each study which produced data depicted on this site has a dedicated page in which the user can explore the results published therein. This includes Volcano, Ranked-Order, and MA plots to visualize the probes reported. These plots were built using the R packages plotly and htmlwidgets to enable interactive exploration of these data[REF plotly and htmlwidgets]. Additionally, the entirety of the data reported can be downloaded.</p></li>
+<li><p>The data from each study was then broken into the composite lipid probes – these data are depicted on respectively-named lipid probe pages. Each probe page contains information about the contributing studies and is partitioned by cell type analyzed.</p></li>
+<li><p>Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at <a href="../LipidProbe/EnrichedHitsComparison.html">Probe vs Probe Comparisons</a>. These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset – or both datasets.</p></li>
+</ul></li>
+<li><p>The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs.</p></li>
+</ul></li>
+<li>Acknowledgements</li>
 </ul>
 
 

@@ -4,6 +4,11 @@ author: "Gaelen Guzman"
 format: 
   html:
     embed-resources: false
+  docx:
+    fig-height: 5
+    reference-doc: custom-reference-doc.docx
+   
+
 standalone: true
 crossref: 
   ref-hyperlink: true
@@ -130,11 +135,11 @@ These modifications stabilize protein-lipid interactions and enable the selectiv
 
 ## Photoactivatable & Clickable Probes / Bifunctional Lipid Probes
 
--   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
+<!-- -   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
 
 References to include:
 
--   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014
+-   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014 -->
 
 ## Trifunctional Lipid Probes
 

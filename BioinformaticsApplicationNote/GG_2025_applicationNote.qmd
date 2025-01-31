@@ -13,20 +13,44 @@ authors:
     orcid: 0000-0002-7696-6034
     corresponding: true
     email: gaelenguzman@lipidinteractome.org
+format:
+  html:
+    embed-resources: false
+  docx:
+    fig-height: 5
+    reference-doc: custom-reference-doc.docx
 page-navigation: false
-format: html
+
 ---
 
 ## Outline
 
 - Abstract
   * Summary
-  * Availability: This site can be viewed at [lipidinteractome.org](lipidinteractome.org); all data is available for download. 
-  * Data Submission: If you would like to submit a relevant dataset, see [Data Submission](https://www.lipidinteractome.org/DataSubmission.html) for details and instructions.
+    - Lipid probes are a recent advent of lipid biology which allow for the identification of lipid::protein interactions. A growing number of lipid interactomes have been published, but there has not yet been an effort to coordinate or compare the findings between such studies. The LipidInteractome is an effort to expand the findability, accessibility, interoperability, and reproducibility of these studies according to the FAIR principles [REF https://www.go-fair.org/fair-principles/]. This site seeks to enable researchers to explore the biological function of lipids by interrogating their protein interaction partners.
+  * Availability: This site can be viewed at [LipidInteractome.org](lipidinteractome.org); all data is available for download.
+  * Data Submission: If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions.
 
 - Introduction
+  * What is this repository for?
+  * Why did we make it?
+  * Who will benefit from it?
+  * Are there alternatives?
+    - No, there is no centralized repository for lipid interactions data -- the [BioPlex](https://bioplex.hms.harvard.edu) web platform serves as an excellent repository for protein::protein interactions and we have sought to build similar functionality for lipid::protein interactions.
 
 - Description
+  * A site built using [Quarto](https://quarto.org)
+  * FAIR data principles
+  * An interactive discovery platform intended to guide lipid research
+  * Contains data from 5 studies thus far, though framework for expanding to many more.
+  * Enables the direct comparison of different studies, and is an invaluable addition to the understanding of how proteins interact with lipids
+
+  * A summary of the data vis/download modules
+    - Each study which produced data depicted on this site has a dedicated page in which the user can explore the results published therein. This includes Volcano, Ranked-Order, and MA plots to visualize the probes reported. These plots were built using the R packages plotly and htmlwidgets to enable interactive exploration of these data[REF plotly and htmlwidgets]. Additionally, the entirety of the data reported can be downloaded.
+    - The data from each study was then broken into the composite lipid probes -- these data are depicted on respectively-named lipid probe pages. Each probe page contains information about the contributing studies and is partitioned by cell type analyzed.
+
+    - Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at [Probe vs Probe Comparisons](/LipidProbe/EnrichedHitsComparison.qmd). These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset -- or both datasets.
+  * The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs.
 
 - Acknowledgements
 
