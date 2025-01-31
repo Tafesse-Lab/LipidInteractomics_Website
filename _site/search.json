@@ -4,21 +4,30 @@
     "href": "index.html",
     "title": "The Lipid Interactome Repository",
     "section": "",
-    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
+    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used.",
+    "crumbs": [
+      "Lipid Probes"
+    ]
   },
   {
     "objectID": "index.html#site-overview",
     "href": "index.html#site-overview",
     "title": "The Lipid Interactome Repository",
     "section": "",
-    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used."
+    "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used.",
+    "crumbs": [
+      "Lipid Probes"
+    ]
   },
   {
     "objectID": "index.html#lipid-interactomes",
     "href": "index.html#lipid-interactomes",
     "title": "The Lipid Interactome Repository",
     "section": "Lipid Interactomes",
-    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid"
+    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
+    "crumbs": [
+      "Lipid Probes"
+    ]
   },
   {
     "objectID": "LipidProbe/Sphingosine.html#protein-interactome",

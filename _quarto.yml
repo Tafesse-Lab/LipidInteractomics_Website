@@ -36,6 +36,7 @@ website:
     collapse-level: 3
     contents:
       - section: "Lipid Probes"
+        href: index.qmd
         contents: 
           - section: "Glycerophospholipids"
             contents:

@@ -10,7 +10,7 @@ Use the dropdown menu below to select two lipid probes to plot against each othe
 
 <!-- Data wrangling, will comment out most of this when it's all done. 
 Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->
-```{r setup, echo=FALSE,include=FALSE}
+```{r setup, echo=FALSE, include=FALSE}
 library(dplyr)
 library(tidyr)
 library(readr)
