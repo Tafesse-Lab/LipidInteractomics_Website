@@ -3,8 +3,8 @@ project:
   render:
     - "*.qmd"
     - "!StudyInformation_includes/"
-bibliography: TrifunctionalLipidProbes_bibliography.bib
-csl: nature.csl
+bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
+csl: Resources/nature.csl
 format-links: true
 prefer-html: true
 
@@ -16,10 +16,12 @@ website:
     left:
       - text: "Background"
         menu:
-          - href: Background/TrifunctionalLipidProbesOverview.qmd
+          - href: Background/MultifunctionalLipidProbesOverview.qmd
             text: "Multifunctional Lipid Probes Overview"
-          - href: Background/ExperimentalSchemaAndAnalysis.qmd
+          - href: Background/ProteomicsUsingMultifunctionalProbes.qmd
             text: "Mass spectrometry Overview"
+          - href: Background/DataAnalysisAndStatistics.qmd
+            text: "Data analysis and statistical testing"
 
     right:
       - text: "Contact us"
@@ -30,26 +32,21 @@ website:
           text: "Submit your data"
    
   sidebar:
-    # style: "docked"
     search: true
     collapse-level: 3
     contents:
       - section: "Lipid Probes"
         contents: 
-          - section: "Phospholipids"
+          - section: "Glycerophospholipids"
             contents:
               - href: LipidProbe/PhosphatidicAcid.qmd
                 text: "Phosphatidic Acid"
               - href: LipidProbe/Phosphatidylethanolamine.qmd
                 text: "Phosphatidylethanolamine"
-          - section: "Phosphatidylinositols"
-            contents:
               - href: LipidProbe/PhosphatidylinositolBisphosphate.qmd
                 text: "PI(4,5)P~2~"
               - href: LipidProbe/PhosphatidylinositolTrisphosphate.qmd
                 text: "PI(3,4,5)P~3~"
-          - section: "Glycerolipids"
-            contents:
               - href: LipidProbe/Diacylglycerol.qmd
                 text: "Diacylglycerol"
           - section: "Sphingolipids"
@@ -89,6 +86,6 @@ format:
       loop: true
     mainfont: Charter
     theme: [Materia, theme_customizations.scss]
-    css: styles.css
+    css: Resources/styles.css
     toc: true
     sidebar: true

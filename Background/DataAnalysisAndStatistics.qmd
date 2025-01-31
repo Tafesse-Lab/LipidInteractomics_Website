@@ -1,0 +1,17 @@
+---
+title: "Data Analysis and Statistics"
+---
+
+## TMT quantitative mass spec pipeline
+
+* Studies included in this repository which used identical FRAG Pipe TMT pipeline:
+	- Thomas et al., 2025[@thomasTrifunctionalLipidDerivatives2025]
+	- Farley et al., 2024 (A)[@farleyTrifunctionalSphinganineNew2024a]
+	- Farley et al., 2024 (B)[@farleyTrifunctionalFattyAcid2024]
+
+## PSM quantitative mass spec analysis
+
+* Studies included in this repository which used a PSM-based analysis pipeline
+	- Hoglinger et al., 2017[@hoglingerTrifunctionalLipidProbes2017]
+	- Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
+

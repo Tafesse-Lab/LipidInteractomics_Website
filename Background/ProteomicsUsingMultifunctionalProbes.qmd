@@ -1,12 +1,18 @@
 ---
 title: "Background: Using multifunctional probes for proteomics"
+format: 
+  html:
+    embed-resources: false
+  docx:
+    fig-height: 5
+    reference-doc: /custom-reference-doc.docx
 ---
 
 
 ## Interactomics Experimental schema
 
 ::: border
-![](/Background/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+![](/Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
 :::
 
 ### Cell treatment

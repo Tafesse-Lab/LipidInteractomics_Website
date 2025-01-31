@@ -36,14 +36,16 @@ Cloning the GitHub repository should be sufficient for gaining access to all of 
 
 ### Quarto formatting
 
-I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).
+I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer). 
 
 As a reference to help get you started, I very much appreciated [this blog post](https://blog.posertinlab.com/posts/2023-06-09-writing-a-dissertation-in-quarto/){target="_blank"} by Richard Posert about using Quarto.
 
 I honestly get the most confused when it comes to formatting the _quarto.yml file because there aren't many fully-fleshed examples out there for all the options. This is where I've (embarrassingly) leaned on ChatGPT for help -- it's not always right, but it's usually close enough that you can make it work properly anyways.
 
-If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the _quarto.yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
+If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
 
-If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.
+If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting. 
 
-There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look. Examples of html divs can be found in the index.qmd -- here is where the buttons on the homepage are defined.
+There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
+
+In order to make sure the author information is identical on all appropriate pages, I made an "include" folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they're somehow different.

@@ -6,5 +6,72 @@ This repository is still under construction (as you can probably tell). Someday 
 
  <contact.us@LipidInteractome.org>{target="_blank"}
 
+<br>
+<hr>
+
+
+### Github repository
 
 This site was written by Gaelen Guzman and was built using Quarto. Find out more about Quarto [here](https://quarto.org){target="_blank"}.
+
+This site can be pulled from GitHub at: <https://github.com/gaelenDG/LipidInteractomics_Website>
+
+	
+### Site structure
+
+::::{.callout-note collapse="true"}
+
+<!-- Run this to get a tree of the file structure, need to do some research on how this is depicted or if this is necessary -->
+```{r setup, include=FALSE, echo=FALSE}
+library(fs)
+
+tree <- fs::dir_tree(path = ".", recurse = TRUE, depth = 3) |>
+  stringr::str_subset("(^\\.|_site/|\\.git|\\.Rproj|\\.quarto|\\.cache)", negate = TRUE)
+
+```
+
+_site                                                
+	├── 404.html                                         
+	├── Background                                       
+	│   ├── BackgroundFigures                            
+	│   │   └── BaselineProteomics_ExperimentalDesign.png
+	│   ├── BaselineProteomics_ExperimentalDesign.png    
+	│   ├── DataAnalysisAndStatistics.html               
+	│   ├── MultifunctionalLipidProbesOverview.html      
+	│   └── ProteomicsUsingMultifunctionalProbes.html                
+	├── ContactUs                                        
+	│   ├── DataSubmission.html                          
+	│   └── about.html                                   
+	├── IndividualStudies                                
+	│   ├── AT_2025.html                                 
+	│   ├── DH_2017.html                                 
+	│   ├── RM_2021.html                                 
+	│   ├── SF_2024.html                                 
+	│   ├── SF_2024_B.html                               
+	│   └── StudyOverview.html                           
+	├── LipidProbe                                       
+	│   ├── 1-10_FattyAcid.html                          
+	│   ├── 8-3_FattyAcid.html                           
+	│   ├── Diacylglycerol.html                          
+	│   ├── EnrichedHitsComparison.html                  
+	│   ├── FormattingTemplate.html                      
+	│   ├── PhosphatidicAcid.html                        
+	│   ├── Phosphatidylethanolamine.html                
+	│   ├── PhosphatidylinositolBisphosphate.html        
+	│   ├── PhosphatidylinositolTrisphosphate.html       
+	│   ├── Sphinganine.html                             
+	│   ├── Sphingosine.html                             
+	│   └── Structures                                   
+	│       ├── 1-10_FattyAcid_Structure.png             
+	│       ├── 8-3_FattyAcid_Structure.png              
+	│       ├── PIP3_Structure.png                       
+	│       ├── PhosphatidicAcid_Structure.png           
+	│       ├── PhosphatidylethanolamineStructure.png    
+	│       ├── SphinganineStructure.png                 
+	│       └── SphingosineStructure.png                 
+	├── MaintenanceInstructions.html                     
+	├── Resources                                        
+	│   └── styles.css                                   
+	├── index.html
+
+::::

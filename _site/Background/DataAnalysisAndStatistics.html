@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lipid Interactome Repository - Overview of Interactomics Studies</title>
+<title>Lipid Interactome Repository - Data Analysis and Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -135,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../IndividualStudies/StudyOverview.html">Overview of Interactomics Studies</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data Analysis and Statistics</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -261,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../IndividualStudies/StudyOverview.html" class="sidebar-item-text sidebar-link active">
+            <a href="../IndividualStudies/StudyOverview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview of Interactomics Studies</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -306,14 +326,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tmt-quantitative-mass-spec-pipeline" id="toc-tmt-quantitative-mass-spec-pipeline" class="nav-link active" data-scroll-target="#tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</a></li>
+  <li><a href="#psm-quantitative-mass-spec-analysis" id="toc-psm-quantitative-mass-spec-analysis" class="nav-link" data-scroll-target="#psm-quantitative-mass-spec-analysis">PSM quantitative mass spec analysis</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Overview of Interactomics Studies</h1>
+<h1 class="title">Data Analysis and Statistics</h1>
 </div>
 
 
@@ -330,11 +357,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.</p>
+<section id="tmt-quantitative-mass-spec-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</h2>
+<ul>
+<li>Studies included in this repository which used identical FRAG Pipe TMT pipeline:
+<ul>
+<li>Thomas et al., 2025<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">1</a></sup></span></li>
+<li>Farley et al., 2024 (A)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">2</a></sup></span></li>
+<li>Farley et al., 2024 (B)<span class="citation" data-cites="farleyTrifunctionalFattyAcid2024"><sup><a href="#ref-farleyTrifunctionalFattyAcid2024" role="doc-biblioref">3</a></sup></span></li>
+</ul></li>
+</ul>
+</section>
+<section id="psm-quantitative-mass-spec-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="psm-quantitative-mass-spec-analysis">PSM quantitative mass spec analysis</h2>
+<ul>
+<li>Studies included in this repository which used a PSM-based analysis pipeline
+<ul>
+<li>Hoglinger et al., 2017<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">4</a></sup></span></li>
+<li>Muller et al., 2021<span class="citation" data-cites="mullerSynthesisCellularLabeling2021"><sup><a href="#ref-mullerSynthesisCellularLabeling2021" role="doc-biblioref">5</a></sup></span></li>
+</ul></li>
+</ul>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-farleyTrifunctionalSphinganineNew2024a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
+</div>
+<div id="ref-farleyTrifunctionalFattyAcid2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
+</div>
+<div id="ref-hoglingerTrifunctionalLipidProbes2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
+</div>
+<div id="ref-mullerSynthesisCellularLabeling2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Müller, R., Kojic, A., Citir, M. &amp; Schultz, C. <a href="https://doi.org/10.1002/anie.202103599">Synthesis and <span>Cellular Labeling</span> of <span>Multifunctional Phosphatidylinositol Bis</span>‐ and <span>Trisphosphate Derivatives</span></a>. <em>Angew Chem Int Ed</em> <strong>60</strong>, 19759–19765 (2021).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

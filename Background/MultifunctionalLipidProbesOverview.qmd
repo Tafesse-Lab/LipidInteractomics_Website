@@ -6,7 +6,7 @@ format:
     embed-resources: false
   docx:
     fig-height: 5
-    reference-doc: custom-reference-doc.docx
+    reference-doc: /custom-reference-doc.docx
    
 
 standalone: true
@@ -143,10 +143,16 @@ References to include:
 
 ## Trifunctional Lipid Probes
 
+## Limitations of multifunctionalized lipid probes
+
+* While significant effort has minimized the effect that each modification has on the biophysical properties of the lipid analogs, it remains the case that adding a diazirine and a terminal alkyne will necessarily affect their physical properties -- perhaps affecting sub-cellular localization and binding. 
+* The coumarin cage has been repeatedly shown to protect lipid analogs from premature metabolism, but it should be recognized that this comes with some distinct changes to the behavior of the native lipid. 
+  - For example, when a cell is treated with a photocaged lipid probe, every membrane in the cell appears to 
+
 ## Interactomics Experimental schema
 
 ::: border
-![](/Background/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+![](/Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
 :::
 
 ### Cell treatment

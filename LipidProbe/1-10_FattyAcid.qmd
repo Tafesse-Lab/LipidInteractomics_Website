@@ -57,13 +57,15 @@ SF_2024_ranked <- SF_2024_data |>
 
 ```
 
+
+*Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the [Diazirine Overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*
+
+
 ## Structure
 
 :::{.border}
 ![](/LipidProbe/Structures/1-10_FattyAcid_Structure.png)
 :::
-
-*Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes in the [Diazirine Overview](/Background/TrifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*
 
 ## Protein interactome
 

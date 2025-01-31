@@ -1,6 +1,16 @@
 ---
 title: "Weekly meeting notes"
 ---
+## 2025/31/01
+
+To-do today
+- combine glycerophospholipid into one category
+- Determine metadata to incorporate into data download files
+- Build site documentation page
+	- Site/file structure
+	- Github repository
+	- 
+
 ## 2025/29/01
 
 - Combine glycerophospholipids into one category
@@ -12,8 +22,6 @@ title: "Weekly meeting notes"
 	- Database Journal
 	- Nuclear acid sub-base journal
 	- Bioinformatics Journal Application note
-
-	- If I write the paper, I get to be the last author!
 
 ## 2025/21/01
 
