@@ -1,12 +1,12 @@
 ---
-title: ""
+title: "   "
 ---
 
 ```{=html}
 
 <div style="text-align: center;">
 
-<h2 style> Ooops! </h2>
+<h1 style> Ooops! </h1>
 
 <br>
 

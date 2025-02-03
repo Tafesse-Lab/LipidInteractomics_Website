@@ -3,13 +3,28 @@ title: "Lipid Interactomics Repository"
 subtitle: "An interactive and open access platform for exploring multifunctional lipid interactomes"
 authors:
   - name: "Fikadu Tafesse"
-    affiliation: "Oregon Health & Science University"
+    affiliations:
+      - name:  "Oregon Health & Science University"
+        address: 3222 SW Research Dr
+        city: Portland
+        state: OR
+        postal-code: 97239
     orcid: 0000-0002-8575-4164
   - name: "Carsten Schultz"
-    affiliation: "Oregon Health & Science University"
+    affiliations:
+      - name:  "Oregon Health & Science University"
+        address: 3222 SW Research Dr
+        city: Portland
+        state: OR
+        postal-code: 97239
     orcid: 0000-0002-5824-2171
   - name: "Gaelen Guzman"
-    affiliation: "Oregon Health & Science University"
+    affiliations:
+      - name:  "Oregon Health & Science University"
+        address: 3222 SW Research Dr
+        city: Portland
+        state: OR
+        postal-code: 97239
     orcid: 0000-0002-7696-6034
     corresponding: true
     email: gaelenguzman@lipidinteractome.org
@@ -18,7 +33,7 @@ format:
     embed-resources: true
   docx:
     fig-height: 5
-    reference-doc: custom-reference-doc.docx
+    reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
 page-navigation: false
 
 ---
@@ -41,7 +56,7 @@ page-navigation: false
     - No, there is no centralized repository for lipid interactions data -- the [BioPlex](https://bioplex.hms.harvard.edu) web platform serves as an excellent repository for protein::protein interactions and we have sought to build similar functionality for lipid::protein interactions.
 
 - Description
-  * A site built using [Quarto](https://quarto.org)
+  * A site built using [Quarto](https://quarto.org). The R scripts which define the rendered figures is embedded in the source material for each page.
   * FAIR data principles
     - *Findable:* We sought to create a platform to centralize the studies of this type. The site is organized such that one can interact with the results of individual published studies or explore the combined results of all studies which investigated a given lipid. Because this site is a living document, we invite researchers to contribute their results by contacting us with the details delineated at our [Data Submission](/ContactUs/DataSubmission.qmd) page. 
     - *Accessible:* To enhance the accessibility of these data, we have made the results of all studies and lipid probes downloadable in .csv format. We have provided a [detailed overview of the data production and analysis](/Background/ProteomicsUsingMultifunctionalProbes.qmd), a description of the content in all columns, and a [nuanced discussion about the limitations of these probes](/Background/MultifunctionalLipidProbesOverview.qmd). To maximize the reliability of each reported interactome, we have focused on amassing only peer-reviewed proteomics results.
@@ -55,8 +70,21 @@ page-navigation: false
     - Each study which produced data depicted on this site has a dedicated page in which the user can explore the results published therein. This includes Volcano, Ranked-Order, and MA plots to visualize the probes reported. These plots were built using the R packages plotly and htmlwidgets to enable interactive exploration of these data[REF plotly and htmlwidgets]. Additionally, the entirety of the data reported can be downloaded.
     - The data from each study was then broken into the composite lipid probes -- these data are depicted on respectively-named lipid probe pages. Each probe page contains information about the contributing studies and is partitioned by cell type analyzed.
 
-    - Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at [Probe vs Probe Comparisons](/LipidProbe/EnrichedHitsComparison.qmd). These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset -- or both datasets.
-  * The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs.
+    - Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at [Probe vs Probe Comparisons](/LipidProbe/EnrichedHitsComparison.qmd). These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset -- or in both datasets. We seek for this functionality to enable researchers to identify targets of interest when studying bioactive lipids. 
+  * The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs. We have prepared a [Data Submission page](/ContactUs/DataSubmission.qmd) for any researchers with similar datasets who wish to contribute to this repository.
+
+- Discussion
+  *	What we hope this resource enables researchers to do
+  *	Longevity – this site is designed to expand with the acquisition of this types of proteomics analyses
+
 
 - Acknowledgements
+  * Andre Nadler
+  * Frank Stein
+  * Per Haberkant
+  * 
 
+- Conflicts of Interest
+  * None
+
+- References

@@ -1,4 +1,6 @@
-﻿StudyShortName,CellType,LipidProbes
-Thomas_ChemComm_2025,,
-Farley_ACSChemBio_2024,,
-Farley_ChemComm_2024,,
+﻿StudyShortName, CellType, LipidProbes
+Thomas_ChemComm_2025,HeLa, "PA | PE"
+Farley_ACSChemBio_2024, Huh7, "Sph | Spa" 
+Farley_ChemComm_2024, Huh7, "8-3 FA | 1-10 FA"
+Hoglinger_PNAS_2017, HeLa, "8-3 FA | Sph | DAG"
+Muller_Angewandte_2021, HeLa, "PI(3,4,5)P3"

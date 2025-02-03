@@ -141,11 +141,11 @@ server <- function(input, output, session) {
 
 		# Corrected opacity mapping (now properly ordered)
 		plot_data$opacity <- case_when(
-			plot_data$combined_hit_annotation == "enriched on all axes" ~ 1.0,
-			plot_data$combined_hit_annotation %in% c("enriched on x- and y- axes", "enriched on x- and z- axes", "enriched on y- and z- axes") ~ 0.75,
-			plot_data$combined_hit_annotation %in% c("enriched x-axis only", "enriched y-axis only", "enriched z-axis only") ~ 0.5,
-			plot_data$combined_hit_annotation == "enriched on no axes" ~ 0.25,
-			TRUE ~ 0.25 # Default case
+			plot_data$combined_hit_annotation == "enriched on all axes" ~ 0.25,
+			plot_data$combined_hit_annotation %in% c("enriched on x- and y- axes", "enriched on x- and z- axes", "enriched on y- and z- axes") ~ 0.5,
+			plot_data$combined_hit_annotation %in% c("enriched x-axis only", "enriched y-axis only", "enriched z-axis only") ~ 0.75,
+			plot_data$combined_hit_annotation == "enriched on no axes" ~ 1.0,
+			TRUE ~ 0.75 # Default case
 		)
 		# Define color mapping similar to ggplot
 		color_mapping <- c(
