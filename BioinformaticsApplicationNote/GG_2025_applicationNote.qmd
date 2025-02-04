@@ -27,7 +27,7 @@ authors:
         postal-code: 97239
     orcid: 0000-0002-7696-6034
     corresponding: true
-    email: gaelenguzman@lipidinteractome.org
+    email: gaelen.guzman@lipidinteractome.org
 format:
   html:
     embed-resources: true
@@ -38,53 +38,59 @@ page-navigation: false
 
 ---
 
-## Outline
 
-- Abstract
-  * Summary
-    - Lipid probes are a recent advent of lipid biology which allow for the identification of lipid::protein interactions. A growing number of lipid interactomes have been published, but there has not yet been an effort to coordinate or compare the findings between such studies. The LipidInteractome is an effort to expand the findability, accessibility, interoperability, and reproducibility of these studies according to the FAIR principles [REF https://www.go-fair.org/fair-principles/]. This site seeks to enable researchers to explore the biological function of lipids by interrogating their protein interaction partners.
-  * Availability: This site can be viewed at [LipidInteractome.org](lipidinteractome.org); all data is available for download.
-  * Data Submission: If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions.
+## Summary
+### Abstract
+Lipid probes are a recent advent of lipid biology which allow for the identification of lipid::protein interactions. A growing number of lipid interactomes have been published, but there has not yet been an effort to coordinate or compare the findings between such studies. The LipidInteractome is an effort to expand the findability, accessibility, interoperability, and reproducibility of these studies according to the FAIR principles [REF <https://www.go-fair.org/fair-principles/>]. This site seeks to enable researchers to explore the biological function of lipids by interrogating their protein interaction partners. 
 
-- Introduction
-  * In recent years, the biological roles that lipids play have garnered significant attention. While analyses of protein::protein interactions using proteomics has become nearly routine, it was nearly impossible to assess the protein interactors of lipids because of their small size and sensitive biophysical properties. However, the advent of multifunctionalized lipid analogs (lipid probes) has the potential to spur a revolution in the study of bioactive lipids. Numerous studies have reported the "interactome" of select lipid species using these lipid probes, though no resource to date has amassed these results for centralized comparison. We present here the LipidInteractome repository as a tool to enable lipid biologists to explore and compare the protein interactors of a variety of biologically interesting lipids. 
+### Availability
+This site can be viewed at [LipidInteractome.org](lipidinteractome.org); all data is available for download.
 
-  * What is this repository for?
-  * Why did we make it?
-  * Who will benefit from it?
-  * Are there alternatives?
-    - No, there is no centralized repository for lipid interactions data -- the [BioPlex](https://bioplex.hms.harvard.edu) web platform serves as an excellent repository for protein::protein interactions and we have sought to build similar functionality for lipid::protein interactions.
+### Data Submission
+If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions.
 
-- Description
-  * A site built using [Quarto](https://quarto.org). The R scripts which define the rendered figures is embedded in the source material for each page.
-  * FAIR data principles
-    - *Findable:* We sought to create a platform to centralize the studies of this type. The site is organized such that one can interact with the results of individual published studies or explore the combined results of all studies which investigated a given lipid. Because this site is a living document, we invite researchers to contribute their results by contacting us with the details delineated at our [Data Submission](/ContactUs/DataSubmission.qmd) page. 
-    - *Accessible:* To enhance the accessibility of these data, we have made the results of all studies and lipid probes downloadable in .csv format. We have provided a [detailed overview of the data production and analysis](/Background/ProteomicsUsingMultifunctionalProbes.qmd), a description of the content in all columns, and a [nuanced discussion about the limitations of these probes](/Background/MultifunctionalLipidProbesOverview.qmd). To maximize the reliability of each reported interactome, we have focused on amassing only peer-reviewed proteomics results.
-    - *Interoperable:* We have sought to coordinate the formatting of the data collected from a variety of research teams. While many studies utilized identical data analysis pipelines, some of our included publications used distinct mass spectrometry protocols and we have attempted to provide a parallel data structure and visualization -- while also [explaining the differences in methodology](/Background/ProteomicsUsingMultifunctionalProbes.qmd).
-    - *Reusable:* We have provided extensive documentation on the production, analyses, and caveats of these data; in these documentations, we have sought to limit technical language and to give these results an accessible interpretation. Additionally, we have referenced numerous publications which go into much greater depth on the synthesis of these lipid probes and the methodology used in each proteomics analysis. 
-  * An interactive discovery platform intended to guide lipid research
-  * Contains data from 5 studies thus far, though framework for expanding to many more.
-  * Enables the direct comparison of different studies, and is an invaluable addition to the understanding of how proteins interact with lipids
+## Introduction
+* In recent years, the biological roles that lipids play have garnered significant attention. While analyses of protein::protein interactions using proteomics has become nearly routine, it was very nearly impossible to assess the protein interactors of lipids because of their small size and sensitive biophysical properties. However, the advent of synthetic, multifunctionalized lipid analogs (lipid probes) has the potential to spur a revolution in the study of bioactive lipids. Numerous studies have reported the "interactome" of select lipid species using these lipid probes, though no resource to date has amassed these results for centralized comparison. We present here the LipidInteractome repository as a tool to enable lipid biologists to explore and compare the protein interactors of a variety of biologically interesting lipids. 
+* This growing family of multifunctionalized lipid probes incorporates two to three of the following synthetic chemical additions: (1) A diazirine ring, which enables photoactivatable crosslinking to stabilize lipid::protein interactions upon irradiation with 355 nm light; (2) A terminal alkyne, which enables post-hoc azide cycloaddition (click chemistry) to affix an affinity handle for enrichment; and (3) A coumarin photocage, which protects the lipid analog from premature enzymatic modification until the sample is irradiated with 405 nm light (present only in the so-called "trifunctional" lipid probes) [@haberkantFatFabulousBifunctional2014; @schultzChemicalToolsLipid2023; @farleyTrifunctionalSphinganineNew2024a]. 
+* This repository serves as a centralized point for access, interactive exploration, and download of publicly-available proteomics datasets utilizing multifunctionalized lipid analogs to identify the protein interactors of select bioactive lipids. At present, analyses of trifunctionalized phosphatidic acid, phosphatidylethanolamine, sphingosine, and sphinganine are presented in our repository, with the interactomes of either HeLa or Huh7 cells[@thomasTrifunctionalLipidDerivatives2025; @farleyTrifunctionalSphinganineNew2024a]. Additionally, we have presented the results of two fatty acid probes which serves as a control for non-specific lipid-binding proteins[@farleyTrifunctionalFattyAcid2024].
+* Previously, there was no centralized repository for lipid interactions data. This database enables comparative analysis of the interactomes of these lipid probes, significantly reducing the barriers to target selection for researchers who seek to explore the signaling roles that lipids such as sphingosine, phosphatidylethanolamine, and diacylglycerol play throughout the cell.
 
-  * A summary of the data vis/download modules
-    - Each study which produced data depicted on this site has a dedicated page in which the user can explore the results published therein. This includes Volcano, Ranked-Order, and MA plots to visualize the probes reported. These plots were built using the R packages plotly and htmlwidgets to enable interactive exploration of these data[REF plotly and htmlwidgets]. Additionally, the entirety of the data reported can be downloaded.
-    - The data from each study was then broken into the composite lipid probes -- these data are depicted on respectively-named lipid probe pages. Each probe page contains information about the contributing studies and is partitioned by cell type analyzed.
+## Description
 
-    - Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at [Probe vs Probe Comparisons](/LipidProbe/EnrichedHitsComparison.qmd). These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset -- or in both datasets. We seek for this functionality to enable researchers to identify targets of interest when studying bioactive lipids. 
-  * The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs. We have prepared a [Data Submission page](/ContactUs/DataSubmission.qmd) for any researchers with similar datasets who wish to contribute to this repository.
+### Overview
+* A site built using [Quarto](https://quarto.org). The R scripts which define the rendered figures is embedded in the source material for each page.
+* An interactive discovery platform intended to guide lipid research
+* Contains data from 5 studies thus far, though framework for expanding to many more.
+* Enables the direct comparison of different studies, and is an invaluable addition to the understanding of how proteins interact with lipids
+* The site is a living document and is expected to grow as future studies utilize these functionalized lipid analogs. We have prepared a [Data Submission page](/ContactUs/DataSubmission.qmd) for any researchers with similar datasets who wish to contribute to this repository.
 
-- Discussion
-  *	What we hope this resource enables researchers to do
-  *	Longevity – this site is designed to expand with the acquisition of this types of proteomics analyses
+### FAIR data principles
+- *Findable:* We sought to create a platform to centralize the studies of this type. The site is organized such that one can interact with the results of individual published studies or explore the combined results of all studies which investigated a given lipid. Because this site is a living document, we invite researchers to contribute their results by contacting us with the details delineated at our [Data Submission](/ContactUs/DataSubmission.qmd) page. 
+- *Accessible:* To enhance the accessibility of these data, we have made the results of all studies and lipid probes downloadable in .csv format. We have provided a [detailed overview of the data production and analysis](/Background/ProteomicsUsingMultifunctionalProbes.qmd), a description of the content in all columns, and a [nuanced discussion about the limitations of these probes](/Background/MultifunctionalLipidProbesOverview.qmd). To maximize the reliability of each reported interactome, we have focused on amassing only peer-reviewed proteomics results.
+- *Interoperable:* We have sought to coordinate the formatting of the data collected from a variety of research teams. While many studies utilized identical data analysis pipelines, some of our included publications used distinct mass spectrometry protocols and we have attempted to provide a parallel data structure and visualization -- while also [explaining the differences in methodology](/Background/ProteomicsUsingMultifunctionalProbes.qmd).
+- *Reusable:* We have provided extensive documentation on the production, analyses, and caveats of these data; in these documentations, we have sought to limit technical language and to give these results an accessible interpretation. Additionally, we have referenced numerous publications which go into much greater depth on the synthesis of these lipid probes and the methodology used in each proteomics analysis. 
 
+### A summary of the data vis/download modules
+- Each study which produced data depicted on this site has a dedicated page in which the user can explore the results published therein. This includes Volcano, Ranked-Order, and MA plots to visualize the probes reported. These plots were built using the R packages plotly and htmlwidgets to enable interactive exploration of these data[REF plotly and htmlwidgets]. Additionally, the entirety of the data reported can be downloaded.
 
-- Acknowledgements
-  * Andre Nadler
-  * Frank Stein
-  * Per Haberkant
-  * 
+- The data from each study was then broken into the composite lipid probes -- these data are depicted on respectively-named lipid probe pages. Each probe page contains information about the contributing studies and is partitioned by cell type analyzed. In the future, we intend to enable the user to perform comparisons between the interactomes of different cell types with the same lipid probe.
 
-- Conflicts of Interest
-  * None
+- Where similar study design allows, data is incorporated into a Shiny app for interactive selection of probes for exploration at [Probe vs Probe Comparisons](/LipidProbe/EnrichedHitsComparison.qmd). These plots incorporate linear regression analysis to describe the similarity of the datasets, and highlight proteins which were significantly enriched in one or the other dataset -- or in both datasets. We seek for this functionality to enable researchers to identify targets of interest when studying bioactive lipids. 
 
-- References
+## Discussion
+*	What we hope this resource enables researchers to do:
+  - Explore previously-published results and guide ongoing research.
+  - Orthogonally verify and characterize the interactions of bioactive lipid species and enriched proteins.
+*	Longevity – this site is designed to expand as more researchers utilize functionalized lipid probes as targets for interactomics. 
+  * We plan to incorporate a section for each lipid interactome in which validating studies may be referenced -- allowing rapid cross-referencing of research which has already been done. 
+  * Data submission - with the provided [data submission format](/ContactUs/DataSubmission.qmd), researchers can submit their data for inclusion in this database.
+
+## Acknowledgements
+* Andre Nadler
+* Frank Stein
+* Per Haberkant
+* 
+
+## Conflicts of Interest
+The authors have no conflicts of interest to declare.
+
