@@ -44,7 +44,7 @@ page-navigation: false
 Lipid probes are a recent advent of lipid biology which allow for the identification of lipid::protein interactions. A growing number of lipid interactomes have been published, but there has not yet been an effort to coordinate or compare the findings between such studies. The LipidInteractome is an effort to expand the findability, accessibility, interoperability, and reproducibility of these studies according to the FAIR principles [REF <https://www.go-fair.org/fair-principles/>]. This site seeks to enable researchers to explore the biological function of lipids by interrogating their protein interaction partners. 
 
 ### Availability
-This site can be viewed at [LipidInteractome.org](lipidinteractome.org); all data is available for download.
+This site can be viewed at [LipidInteractome.org](lipidinteractome.org); all data is available for download. No user information is collected or necessary for data navigation and interaction.
 
 ### Data Submission
 If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions.
@@ -52,8 +52,8 @@ If you would like to submit a relevant dataset, see our [Data Submission Page](h
 ## Introduction
 * In recent years, the biological roles that lipids play have garnered significant attention. While analyses of protein::protein interactions using proteomics has become nearly routine, it was very nearly impossible to assess the protein interactors of lipids because of their small size and sensitive biophysical properties. However, the advent of synthetic, multifunctionalized lipid analogs (lipid probes) has the potential to spur a revolution in the study of bioactive lipids. Numerous studies have reported the "interactome" of select lipid species using these lipid probes, though no resource to date has amassed these results for centralized comparison. We present here the LipidInteractome repository as a tool to enable lipid biologists to explore and compare the protein interactors of a variety of biologically interesting lipids. 
 * This growing family of multifunctionalized lipid probes incorporates two to three of the following synthetic chemical additions: (1) A diazirine ring, which enables photoactivatable crosslinking to stabilize lipid::protein interactions upon irradiation with 355 nm light; (2) A terminal alkyne, which enables post-hoc azide cycloaddition (click chemistry) to affix an affinity handle for enrichment; and (3) A coumarin photocage, which protects the lipid analog from premature enzymatic modification until the sample is irradiated with 405 nm light (present only in the so-called "trifunctional" lipid probes) [@haberkantFatFabulousBifunctional2014; @schultzChemicalToolsLipid2023; @farleyTrifunctionalSphinganineNew2024a]. 
-* This repository serves as a centralized point for access, interactive exploration, and download of publicly-available proteomics datasets utilizing multifunctionalized lipid analogs to identify the protein interactors of select bioactive lipids. At present, analyses of trifunctionalized phosphatidic acid, phosphatidylethanolamine, sphingosine, and sphinganine are presented in our repository, with the interactomes of either HeLa or Huh7 cells[@thomasTrifunctionalLipidDerivatives2025; @farleyTrifunctionalSphinganineNew2024a]. Additionally, we have presented the results of two fatty acid probes which serves as a control for non-specific lipid-binding proteins[@farleyTrifunctionalFattyAcid2024].
 * Previously, there was no centralized repository for lipid interactions data. This database enables comparative analysis of the interactomes of these lipid probes, significantly reducing the barriers to target selection for researchers who seek to explore the signaling roles that lipids such as sphingosine, phosphatidylethanolamine, and diacylglycerol play throughout the cell.
+* This repository serves as a centralized point for access, interactive exploration, and download of publicly-available proteomics datasets utilizing multifunctionalized lipid analogs to identify the protein interactors of select bioactive lipids. At present, analyses of trifunctionalized phosphatidic acid, phosphatidylethanolamine, sphingosine, and sphinganine are presented in our repository, with the interactomes of either HeLa or Huh7 cells[@thomasTrifunctionalLipidDerivatives2025; @farleyTrifunctionalSphinganineNew2024a]. Additionally, we have presented the results of two fatty acid probes which serves as a control for non-specific lipid-binding proteins[@farleyTrifunctionalFattyAcid2024].
 
 ## Description
 
@@ -89,7 +89,6 @@ If you would like to submit a relevant dataset, see our [Data Submission Page](h
 * Andre Nadler
 * Frank Stein
 * Per Haberkant
-* 
 
 ## Conflicts of Interest
 The authors have no conflicts of interest to declare.

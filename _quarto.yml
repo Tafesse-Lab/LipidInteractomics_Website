@@ -3,7 +3,6 @@ project:
   render:
     - "*.qmd"
     - "!StudyInformation_includes/"
-    - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
 bibliography: TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
 format-links: true
