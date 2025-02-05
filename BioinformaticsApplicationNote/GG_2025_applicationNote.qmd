@@ -72,7 +72,7 @@ Lipid-protein interactions, proteomics, interactomics, database, multifunctional
 
 Lipids are more than passive structural components of cellular membranes—they are active participants in signaling pathways, cellular homeostasis, organellar communications, and membrane dynamics. Despite their critical biological roles, lipid–protein interactions have historically been challenging to study. The small size and biophysical properties of lipids make conventional proteomics approaches unsuitable for mapping their interactors. Unlike proteins, which can be readily tagged or immobilized for affinity-based interaction studies, lipids require specialized chemical modifications to enable selective and controlled interaction profiling.
 
-Recent advances in developing multifunctionalized lipid analogs have revolutionized the field, enabling the systematic interrogation of lipid interactomes. These probes incorporate strategically designed functional groups that enable covalent crosslinking, affinity enrichment, and controlled activation. Most commonly, these include: (1) a diazirine ring for photoactivatable crosslinking upon exposure to 355 nm UV light, stabilizing lipid–protein interactions; (2) a terminal alkyne, permitting click chemistry-based enrichment; and, in some cases, (3) a coumarin photocage, which shields the lipid probe from premature enzymatic modification until selectively released by 405 nm light. Together, these modifications enable direct proteomic identification of lipid interactors, distinguishing true binding partners from transient or non-specific associations[@haberkantFatFabulousBifunctional2014; @schultzChemicalToolsLipid2023; @farleyTrifunctionalSphinganineNew2024a].
+Recent advances in developing multifunctionalized lipid analogs have revolutionized the field, enabling the systematic interrogation of lipid interactomes. These probes incorporate strategically designed functional groups that enable covalent crosslinking, affinity enrichment, and controlled activation. Most commonly, these include: (1) a diazirine ring for photoactivatable crosslinking upon exposure to 355 nm ultraviolet (UV) light, stabilizing lipid–protein interactions; (2) a terminal alkyne, permitting click chemistry-based enrichment; and, in some cases, (3) a coumarin photocage, which shields the lipid probe from premature enzymatic modification until selectively released by 405 nm light. Together, these modifications enable direct proteomic identification of lipid interactors, distinguishing true binding partners from transient or non-specific associations[@haberkantFatFabulousBifunctional2014; @schultzChemicalToolsLipid2023; @farleyTrifunctionalSphinganineNew2024a].
 
 Several studies have already employed these lipid probes to elucidate the interactomes of key bioactive lipids, including diacylglycerol, sphingosine, sphinganine, phosphatidic acid, and phosphatidylethanolamine[@hoglingerTrifunctionalLipidProbes2017; @farleyTrifunctionalSphinganineNew2024a; @farleyTrifunctionalFattyAcid2024; @thomasTrifunctionalLipidDerivatives2025]. These studies have followed a comparative proteomics workflow, wherein crosslinked (“+UV”) and non-crosslinked (“-UV”) samples are analyzed side by side to minimize artifacts and confirm specificity[@haberkantFatFabulousBifunctional2014; @schultzChemicalToolsLipid2023]. However, despite the growing number of lipid interactome datasets, no centralized resource has existed to compile, compare, and standardize these findings.
 
@@ -144,25 +144,32 @@ While there are numerous ways to quantify the mass spectrometry (MS) data, the s
 :::
 
 -   Column descriptions:
-    -   Gene name or Accession Number
-    -   Enrichment value (Experimental versus Control fold-change, typically log2-transformed)
-    -   p value: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing
-    -   AveExpr: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)
-    -   False-discovery rate of protein identification
+    -   *Gene name or Accession Number*
+    -   *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods.
+    -   *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing
+    -   *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)
+    -   *FDR*: False-discovery rate of protein identification
 -   We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes.
 
 ## Discussion
 
-- What we hope this resource enables researchers to do:
-  - Explore previously-published results and guide ongoing research.
-  - Orthogonally verify and characterize the interactions of bioactive lipid species and enriched proteins.
--   Longevity – this site is designed to expand as more researchers utilize functionalized lipid probes as targets for interactomics.
-  - We plan to incorporate a section for each lipid interactome in which validating studies may be referenced -- allowing rapid cross-referencing of research which has already been done.
-  - Data submission - with the provided [data submission format](/ContactUs/DataSubmission.qmd), researchers can submit their data for inclusion in this database.
+The advent of functionalized lipid probes has fundamentally transformed lipid biology by enabling the proteomic identification of lipid-binding proteins with unprecedented specificity. However, as the number of published lipid interactome studies grows, the lack of a centralized framework for comparing and integrating these datasets presents a significant challenge. The Lipid Interactome was developed to address this need by providing researchers with a structured platform to explore, cross-reference, and build upon previous findings. By aggregating and standardizing lipid–protein interaction data, this resource facilitates the rapid identification of candidate lipid-binding proteins and supports orthogonal validation efforts.
+
+Designed as a continuously expanding repository, the Lipid Interactome will evolve alongside advances in lipid probe technologies and interactomics. Future iterations will incorporate validation studies for each lipid probe, offering researchers a dedicated space to compare findings across experimental contexts. This functionality will not only reduce redundancy in experimental design but also strengthen the reproducibility and biological interpretation of lipid interactome research. To support this vision, we invite researchers to contribute their datasets via our [Data Submission page](https://www.lipidinteractome.org/DataSubmission.html), fostering a collaborative and transparent approach to lipid biology.
 
 ## Abbreviations
-MS 
 
+UV
+: *U*ltra *V*iolet
+
+MS
+: *M*ass *S*pectrometry
+
+LIMMA
+: *Li*near *M*odels for *M*icro*a*rray and RNA-Seq Data
+
+ANOVA
+: *An*alysis *o*f *Va*riance
 
 ## Acknowledgements
 

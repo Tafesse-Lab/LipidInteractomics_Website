@@ -3,23 +3,51 @@ title: "Background: Using multifunctional probes for proteomics"
 format: 
   html:
     embed-resources: false
+    toc: true
+    toc-depth: 4
   docx:
     fig-height: 5
-    reference-doc: /custom-reference-doc.docx
+    reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
 ---
 
 
 ## Interactomics Experimental schema
 
+In this overview, we aim to explain the fundamental procedures of utilizing lipid probes in proteomics analysis. [@fig-ExperimentalSchema] depicts the steps described below
+
 ::: border
-![](/Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png){group="Overview_gallery"}
+![](/Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png){#fig-ExperimentalSchema group="Overview_gallery"}
 :::
 
 ### Cell treatment
 
+As has been reported previously by Höglinger et al. (2017), Muller et al. (2021), Farley et al. (2024), Farley et al. (2024), and Thomas et al. (2025), lipid probes are readily taken up by cell membranes within minutes upon treatment with lipid probes at concentrations ranging from 2 \muM (as for trifunctional sphingosine and sphinganine) to 5 \muM (as for trifunctional phosphatidic acid and phosphatidylethanolamine) to 100 \muM (as for trifunctional diacylglycerol)[@hoglingerTrifunctionalLipidProbes2017; @mullerSynthesisCellularLabeling2021; @farleyTrifunctionalFattyAcid2024; @farleyTrifunctionalSphinganineNew2024a; @thomasTrifunctionalLipidDerivatives2025]. These studies utilized the inherent fluorescence of the coumarin cage to validate the uptake and wide intercalation of the lipid probes throughout the cell[@schultzChemicalToolsLipid2023]. 
+
+### Uncaging
+
+- Irradiation with 405 nm wavelength light induces the release of the coumarin photocage and thus allows for the recognition and metabolism of the headgroup of the lipid probe.
+
+- Substantial work has validated that these lipid probes are recognized by the cell as their native counterparts, as the remaining functional groups have minimal effect on the probes'  biophysical properties. This has been validated in numerous studies, including Höglinger et al. (2015) and Höglinger et al. (2017), Muller et al. (2020) and Muller et al. (2020), and Farley et al. (2024) and Farley et al. (2024)[@hoglingerIntracellularSphingosineReleases2015a; @hoglingerTrifunctionalLipidProbes2017; @mullerSynthesisCellularLabeling2020; @mullerSynthesisCellularLabeling2021]. 
+
+### Crosslinking 
+
+- Irradiation with 355 nm wavelength light ()
+
 ### Protein collection
 
+- Cell lysis
+
+- Affinity purification of probe-conjugated proteins
+  * Example using azide beads: Perform click chemistry reaction in presence of beads coated with picolyl-azide functional groups for covalent capture
+  * Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated washes of 8 M urea and 20 % acetonitrile. 
+* Captured proteins can be reduced and alkylated on-bead. 
+* Peptides can be digested off the protein-lipid-bead conjugates via tryptic digest. Digested peptides are then desalted to remove any remaining contaminants using reverse phase desalting columns.
+
 ### Mass spectrometry analysis
+
+Broadly, all mass spectrometry techniques for proteomic identification of differentially-enriched proteins will involve injection into a mass spectrometer via liquid chromatography. Within the mass spectrometer, individual peptides can be isolated and fragmented to determine their sequence. 
+
+There are several methodologies commonly used to quantify mass spectrometry data. At the highest level, these may be separated into label-free and label-based quantification techniques. Both categories are valid for reporting differential enrichment, and each has pros and cons -- discussed in detail below.
 
 #### Label-Free Quantification
 
@@ -51,9 +79,13 @@ Label-free quantification (LFQ) is a widely used mass spectrometry-based proteom
 
 Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.
 
-#### Quantitative Mass Spectrometry with Tandem Mass Tagging
+#### Label-based quantification
 
-Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.
+All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to cost and difficult sample preparation. 
+
+Modern label-based techniques such as iTRAQ (isotopic Tagging for Relative and Absolute  Quantification) and TMT (Tandem Mass Tagging) have become the norm. For the purposes of this overview, we will focus on TMT as it has greater capacity for samples per experiment (16+ as opposed to 8), and the techniques are fundamentally similar.
+
+TMT labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.
 
 ##### How It Works
 
@@ -92,3 +124,4 @@ Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry tech
 ##### Conclusion
 
 TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.
+

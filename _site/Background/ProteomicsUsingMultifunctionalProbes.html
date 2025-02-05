@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -314,10 +334,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#interactomics-experimental-schema" id="toc-interactomics-experimental-schema" class="nav-link active" data-scroll-target="#interactomics-experimental-schema">Interactomics Experimental schema</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#cell-treatment" id="toc-cell-treatment" class="nav-link" data-scroll-target="#cell-treatment">Cell treatment</a></li>
+  <li><a href="#uncaging" id="toc-uncaging" class="nav-link" data-scroll-target="#uncaging">Uncaging</a></li>
+  <li><a href="#crosslinking" id="toc-crosslinking" class="nav-link" data-scroll-target="#crosslinking">Crosslinking</a></li>
   <li><a href="#protein-collection" id="toc-protein-collection" class="nav-link" data-scroll-target="#protein-collection">Protein collection</a></li>
-  <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis" class="nav-link" data-scroll-target="#mass-spectrometry-analysis">Mass spectrometry analysis</a></li>
+  <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis" class="nav-link" data-scroll-target="#mass-spectrometry-analysis">Mass spectrometry analysis</a>
+  <ul class="collapse">
+  <li><a href="#label-free-quantification" id="toc-label-free-quantification" class="nav-link" data-scroll-target="#label-free-quantification">Label-Free Quantification</a></li>
+  <li><a href="#label-based-quantification" id="toc-label-based-quantification" class="nav-link" data-scroll-target="#label-based-quantification">Label-based quantification</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ProteomicsUsingMultifunctionalProbes.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
@@ -346,17 +372,53 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="interactomics-experimental-schema" class="level2">
 <h2 class="anchored" data-anchor-id="interactomics-experimental-schema">Interactomics Experimental schema</h2>
+<p>In this overview, we aim to explain the fundamental procedures of utilizing lipid probes in proteomics analysis. <a href="#fig-ExperimentalSchema" class="quarto-xref">Figure&nbsp;1</a> depicts the steps described below</p>
 <div class="border">
-<p><a href="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
+<div id="fig-ExperimentalSchema" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="Overview_gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ExperimentalSchema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery" data-glightbox="description: .lightbox-desc-1"><img src="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" id="fig-ExperimentalSchema" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-ExperimentalSchema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
 </div>
 <section id="cell-treatment" class="level3">
 <h3 class="anchored" data-anchor-id="cell-treatment">Cell treatment</h3>
+<p>As has been reported previously by Höglinger et al.&nbsp;(2017), Muller et al.&nbsp;(2021), Farley et al.&nbsp;(2024), Farley et al.&nbsp;(2024), and Thomas et al.&nbsp;(2025), lipid probes are readily taken up by cell membranes within minutes upon treatment with lipid probes at concentrations ranging from 2 (as for trifunctional sphingosine and sphinganine) to 5 (as for trifunctional phosphatidic acid and phosphatidylethanolamine) to 100 (as for trifunctional diacylglycerol)<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017 mullerSynthesisCellularLabeling2021 farleyTrifunctionalFattyAcid2024 farleyTrifunctionalSphinganineNew2024a thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">1</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">5</a></sup></span>. These studies utilized the inherent fluorescence of the coumarin cage to validate the uptake and wide intercalation of the lipid probes throughout the cell<span class="citation" data-cites="schultzChemicalToolsLipid2023"><sup><a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">6</a></sup></span>.</p>
+</section>
+<section id="uncaging" class="level3">
+<h3 class="anchored" data-anchor-id="uncaging">Uncaging</h3>
+<ul>
+<li><p>Irradiation with 405 nm wavelength light induces the release of the coumarin photocage and thus allows for the recognition and metabolism of the headgroup of the lipid probe.</p></li>
+<li><p>Substantial work has validated that these lipid probes are recognized by the cell as their native counterparts, as the remaining functional groups have minimal effect on the probes’ biophysical properties. This has been validated in numerous studies, including Höglinger et al.&nbsp;(2015) and Höglinger et al.&nbsp;(2017), Muller et al.&nbsp;(2020) and Muller et al.&nbsp;(2020), and Farley et al.&nbsp;(2024) and Farley et al.&nbsp;(2024)<span class="citation" data-cites="hoglingerIntracellularSphingosineReleases2015a hoglingerTrifunctionalLipidProbes2017 mullerSynthesisCellularLabeling2020 mullerSynthesisCellularLabeling2021"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">1</a>,<a href="#ref-mullerSynthesisCellularLabeling2021" role="doc-biblioref">2</a>,<a href="#ref-hoglingerIntracellularSphingosineReleases2015a" role="doc-biblioref">7</a>,<a href="#ref-mullerSynthesisCellularLabeling2020" role="doc-biblioref"><strong>mullerSynthesisCellularLabeling2020?</strong></a></sup></span>.</p></li>
+</ul>
+</section>
+<section id="crosslinking" class="level3">
+<h3 class="anchored" data-anchor-id="crosslinking">Crosslinking</h3>
+<ul>
+<li>Irradiation with 355 nm wavelength light ()</li>
+</ul>
 </section>
 <section id="protein-collection" class="level3">
 <h3 class="anchored" data-anchor-id="protein-collection">Protein collection</h3>
+<ul>
+<li><p>Cell lysis</p></li>
+<li><p>Affinity purification of probe-conjugated proteins</p>
+<ul>
+<li>Example using azide beads: Perform click chemistry reaction in presence of beads coated with picolyl-azide functional groups for covalent capture</li>
+<li>Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated washes of 8 M urea and 20 % acetonitrile.</li>
+</ul></li>
+<li><p>Captured proteins can be reduced and alkylated on-bead.</p></li>
+<li><p>Peptides can be digested off the protein-lipid-bead conjugates via tryptic digest. Digested peptides are then desalted to remove any remaining contaminants using reverse phase desalting columns.</p></li>
+</ul>
 </section>
 <section id="mass-spectrometry-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
+<p>Broadly, all mass spectrometry techniques for proteomic identification of differentially-enriched proteins will involve injection into a mass spectrometer via liquid chromatography. Within the mass spectrometer, individual peptides can be isolated and fragmented to determine their sequence.</p>
+<p>There are several methodologies commonly used to quantify mass spectrometry data. At the highest level, these may be separated into label-free and label-based quantification techniques. Both categories are valid for reporting differential enrichment, and each has pros and cons – discussed in detail below.</p>
 <section id="label-free-quantification" class="level4">
 <h4 class="anchored" data-anchor-id="label-free-quantification">Label-Free Quantification</h4>
 <p>Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.</p>
@@ -388,9 +450,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.</p>
 </section>
 </section>
-<section id="quantitative-mass-spectrometry-with-tandem-mass-tagging" class="level4">
-<h4 class="anchored" data-anchor-id="quantitative-mass-spectrometry-with-tandem-mass-tagging">Quantitative Mass Spectrometry with Tandem Mass Tagging</h4>
-<p>Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.</p>
+<section id="label-based-quantification" class="level4">
+<h4 class="anchored" data-anchor-id="label-based-quantification">Label-based quantification</h4>
+<p>All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to cost and difficult sample preparation.</p>
+<p>Modern label-based techniques such as iTRAQ (isotopic Tagging for Relative and Absolute Quantification) and TMT (Tandem Mass Tagging) have become the norm. For the purposes of this overview, we will focus on TMT as it has greater capacity for samples per experiment (16+ as opposed to 8), and the techniques are fundamentally similar.</p>
+<p>TMT labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.</p>
 <section id="how-it-works-1" class="level5">
 <h5 class="anchored" data-anchor-id="how-it-works-1">How It Works</h5>
 <ol type="1">
@@ -427,12 +491,38 @@ ul.task-list li input[type="checkbox"] {
 <p>TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.</p>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: </span>
+</div>
+
 </section>
 </section>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-hoglingerTrifunctionalLipidProbes2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
+</div>
+<div id="ref-mullerSynthesisCellularLabeling2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Müller, R., Kojic, A., Citir, M. &amp; Schultz, C. <a href="https://doi.org/10.1002/anie.202103599">Synthesis and <span>Cellular Labeling</span> of <span>Multifunctional Phosphatidylinositol Bis</span>‐ and <span>Trisphosphate Derivatives</span></a>. <em>Angew Chem Int Ed</em> <strong>60</strong>, 19759–19765 (2021).</div>
+</div>
+<div id="ref-farleyTrifunctionalFattyAcid2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
+</div>
+<div id="ref-farleyTrifunctionalSphinganineNew2024a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
+</div>
+<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-schultzChemicalToolsLipid2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Schultz, C. <a href="https://doi.org/10.1021/acs.accounts.2c00851">Chemical <span>Tools</span> for <span>Lipid Cell Biology</span></a>. <em>Acc. Chem. Res.</em> <strong>56</strong>, 1168–1177 (2023).</div>
+</div>
+<div id="ref-hoglingerIntracellularSphingosineReleases2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.7554/eLife.10616">Intracellular sphingosine releases calcium from lysosomes</a>. <em>eLife</em> <strong>4</strong>, (2015).</div>
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -821,7 +911,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","selector":".lightbox","openEffect":"fade","loop":true,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":true,"closeEffect":"fade","openEffect":"fade"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

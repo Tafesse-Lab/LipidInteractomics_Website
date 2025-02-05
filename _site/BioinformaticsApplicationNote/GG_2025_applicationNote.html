@@ -5061,7 +5061,7 @@ font-weight: normal;
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Lipids are more than passive structural components of cellular membranes—they are active participants in signaling pathways, cellular homeostasis, organellar communications, and membrane dynamics. Despite their critical biological roles, lipid–protein interactions have historically been challenging to study. The small size and biophysical properties of lipids make conventional proteomics approaches unsuitable for mapping their interactors. Unlike proteins, which can be readily tagged or immobilized for affinity-based interaction studies, lipids require specialized chemical modifications to enable selective and controlled interaction profiling.</p>
-<p>Recent advances in developing multifunctionalized lipid analogs have revolutionized the field, enabling the systematic interrogation of lipid interactomes. These probes incorporate strategically designed functional groups that enable covalent crosslinking, affinity enrichment, and controlled activation. Most commonly, these include: (1) a diazirine ring for photoactivatable crosslinking upon exposure to 355 nm UV light, stabilizing lipid–protein interactions; (2) a terminal alkyne, permitting click chemistry-based enrichment; and, in some cases, (3) a coumarin photocage, which shields the lipid probe from premature enzymatic modification until selectively released by 405 nm light. Together, these modifications enable direct proteomic identification of lipid interactors, distinguishing true binding partners from transient or non-specific associations<span class="citation" data-cites="haberkantFatFabulousBifunctional2014 schultzChemicalToolsLipid2023 farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a>–<a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">3</a></sup></span>.</p>
+<p>Recent advances in developing multifunctionalized lipid analogs have revolutionized the field, enabling the systematic interrogation of lipid interactomes. These probes incorporate strategically designed functional groups that enable covalent crosslinking, affinity enrichment, and controlled activation. Most commonly, these include: (1) a diazirine ring for photoactivatable crosslinking upon exposure to 355 nm ultraviolet (UV) light, stabilizing lipid–protein interactions; (2) a terminal alkyne, permitting click chemistry-based enrichment; and, in some cases, (3) a coumarin photocage, which shields the lipid probe from premature enzymatic modification until selectively released by 405 nm light. Together, these modifications enable direct proteomic identification of lipid interactors, distinguishing true binding partners from transient or non-specific associations<span class="citation" data-cites="haberkantFatFabulousBifunctional2014 schultzChemicalToolsLipid2023 farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a>–<a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">3</a></sup></span>.</p>
 <p>Several studies have already employed these lipid probes to elucidate the interactomes of key bioactive lipids, including diacylglycerol, sphingosine, sphinganine, phosphatidic acid, and phosphatidylethanolamine<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017 farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">3</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">6</a></sup></span>. These studies have followed a comparative proteomics workflow, wherein crosslinked (“+UV”) and non-crosslinked (“-UV”) samples are analyzed side by side to minimize artifacts and confirm specificity<span class="citation" data-cites="haberkantFatFabulousBifunctional2014 schultzChemicalToolsLipid2023"><sup><a href="#ref-haberkantFatFabulousBifunctional2014" role="doc-biblioref">1</a>,<a href="#ref-schultzChemicalToolsLipid2023" role="doc-biblioref">2</a></sup></span>. However, despite the growing number of lipid interactome datasets, no centralized resource has existed to compile, compare, and standardize these findings.</p>
 <p>To address this gap, we present the Lipid Interactome database – a curated repository designed to facilitate the comparative analysis of lipid–protein interactions from multiple studies. This resource consolidates proteomics data from multifunctional lipid probes, enabling researchers to efficiently explore and contextualize lipid-binding proteins across different lipid species and cellular models. Currently, the repository hosts interactomes derived from trifunctionalized phosphatidic acid, phosphatidylethanolamine, sphingosine, and sphinganine in HeLa and Huh7 cells<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025 farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">3</a>,<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">6</a></sup></span>. Additionally, it includes control datasets from two fatty acid probes to distinguish specific from non-specific lipid-binding proteins<span class="citation" data-cites="farleyTrifunctionalFattyAcid2024"><sup><a href="#ref-farleyTrifunctionalFattyAcid2024" role="doc-biblioref">5</a></sup></span>.</p>
 <p>By providing a centralized platform for lipid interactome data, the Lipid Interactome significantly lowers the barriers to entry for researchers investigating lipid signaling pathways. This repository represents a necessary step toward systematizing lipid–protein interaction studies, ensuring that bioactive lipids are afforded the same level of proteomic scrutiny as their protein counterparts.</p>
@@ -5162,11 +5162,11 @@ Table 1: Example data table for smooth incorporation into Lipid Interactome.
 <ul>
 <li>Column descriptions:
 <ul>
-<li>Gene name or Accession Number</li>
-<li>Enrichment value (Experimental versus Control fold-change, typically log2-transformed)</li>
-<li>p value: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing</li>
-<li>AveExpr: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)</li>
-<li>False-discovery rate of protein identification</li>
+<li><em>Gene name or Accession Number</em></li>
+<li><em>Enrichment value</em>: Fold change of Experimental versus Control fold-change, typically log2-transformed – ideally the product of TMT or other quantitative mass spectrometry methods.</li>
+<li><em>p value</em>: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing</li>
+<li><em>AveExpr</em>: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)</li>
+<li><em>FDR</em>: False-discovery rate of protein identification</li>
 </ul></li>
 <li>We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes.</li>
 </ul>
@@ -5174,20 +5174,29 @@ Table 1: Example data table for smooth incorporation into Lipid Interactome.
 </section>
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-<ul>
-<li>What we hope this resource enables researchers to do:
-<ul>
-<li>Explore previously-published results and guide ongoing research.</li>
-<li>Orthogonally verify and characterize the interactions of bioactive lipid species and enriched proteins.</li>
-</ul></li>
-<li>Longevity – this site is designed to expand as more researchers utilize functionalized lipid probes as targets for interactomics.</li>
-<li>We plan to incorporate a section for each lipid interactome in which validating studies may be referenced – allowing rapid cross-referencing of research which has already been done.</li>
-<li>Data submission - with the provided <a href="../ContactUs/DataSubmission.html">data submission format</a>, researchers can submit their data for inclusion in this database.</li>
-</ul>
+<p>The advent of functionalized lipid probes has fundamentally transformed lipid biology by enabling the proteomic identification of lipid-binding proteins with unprecedented specificity. However, as the number of published lipid interactome studies grows, the lack of a centralized framework for comparing and integrating these datasets presents a significant challenge. The Lipid Interactome was developed to address this need by providing researchers with a structured platform to explore, cross-reference, and build upon previous findings. By aggregating and standardizing lipid–protein interaction data, this resource facilitates the rapid identification of candidate lipid-binding proteins and supports orthogonal validation efforts.</p>
+<p>Designed as a continuously expanding repository, the Lipid Interactome will evolve alongside advances in lipid probe technologies and interactomics. Future iterations will incorporate validation studies for each lipid probe, offering researchers a dedicated space to compare findings across experimental contexts. This functionality will not only reduce redundancy in experimental design but also strengthen the reproducibility and biological interpretation of lipid interactome research. To support this vision, we invite researchers to contribute their datasets via our <a href="https://www.lipidinteractome.org/DataSubmission.html">Data Submission page</a>, fostering a collaborative and transparent approach to lipid biology.</p>
 </section>
 <section id="abbreviations" class="level2">
 <h2 class="anchored" data-anchor-id="abbreviations">Abbreviations</h2>
-<p>MS</p>
+<dl>
+<dt>UV</dt>
+<dd>
+<em>U</em>ltra <em>V</em>iolet
+</dd>
+<dt>MS</dt>
+<dd>
+<em>M</em>ass <em>S</em>pectrometry
+</dd>
+<dt>LIMMA</dt>
+<dd>
+<em>Li</em>near <em>M</em>odels for <em>M</em>icro<em>a</em>rray and RNA-Seq Data
+</dd>
+<dt>ANOVA</dt>
+<dd>
+<em>An</em>alysis <em>o</em>f <em>Va</em>riance
+</dd>
+</dl>
 </section>
 <section id="acknowledgements" class="level2">
 <h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
