@@ -7,11 +7,14 @@ bibliography: TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
 format-links: true
 prefer-html: true
+license: "CC by"
+copyright:
+  holder: Gaelen Guzman
+  year: 2025
 
 website:
   
   title: "Lipid Interactome Repository"
-  page-footer: "Copyright 2025, Fikadu Tafesse and Carsten Schultz" 
   navbar:
     left:
       - text: "Background"
