@@ -37,7 +37,7 @@ datawhole <- data |>
 limits <- c(max(abs(datawhole$logFC), na.rm=TRUE) , max(-log10(datawhole$pvalue), na.rm=TRUE))
 
 
-datawhole$LipidProbe <- factor(pull(data, LipidProbe), levels = c("PA", "PE", "Sph", "Spa", "1-10 FA", "8-3 FA"), ordered = TRUE)
+# datawhole$LipidProbe <- factor(pull(data, LipidProbe), levels = c("PA", "PE", "Sph", "Spa", "1-10 FA", "8-3 FA"), ordered = TRUE)
 
 	## Creates a reactive dataframe
 datawhole_reactive <- crosstalk::SharedData$new(datawhole)
