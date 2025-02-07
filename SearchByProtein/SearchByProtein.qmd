@@ -71,7 +71,7 @@ datatable(datawhole_reactive,
 ## Data vis of selected proteins
 
 **Still in beta: a plot that highlights the selected protein out of all the datasets on our site**
-```{r, warning=FALSE, echo=FALSE}
+```{r, warning=FALSE, echo=FALSE, fig.height=10}
 
 VolcanoPlotStandardized(datawhole_reactive)
 

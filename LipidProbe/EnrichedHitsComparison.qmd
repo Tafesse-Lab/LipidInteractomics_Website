@@ -20,33 +20,35 @@ library(VennDiagram)
 library(htmlwidgets)
 library(plotly)
 library(DT)
+library(here)
+
 # Making a big shared dataset with all of the TMT-quantified lipid probes - this is a little hand-wavey because some were run at different times... TBD if we want to keep this.
 
-PA_data <- read_csv("LipidProbe/DataSets/PA_HeLa_AT_2025.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
-  mutate(fdr = "Data not available")
+# PA_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
+#   mutate(fdr = "Data not available")
 
-PE_data <- read_csv("LipidProbe/DataSets/PE_HeLa_AT_2025.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
-  mutate(fdr = "Data not available")
+# PE_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
+#   mutate(fdr = "Data not available")
 
-Spa_data <- read_csv("LipidProbe/DataSets/Spa_Huh7_SF_2024.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
+# Spa_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
-Sph_data <- read_csv("LipidProbe/DataSets/Sph_Huh7_SF_2024.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
+# Sph_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
-FA_8_3_data <- read_csv("LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
+# FA_8_3_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
-FA_1_10_data <- read_csv("LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv") |>
-	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
+# FA_1_10_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv")) |>
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
-combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
+# combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
 
-# write.csv(combinedDataset, "LipidProbe/DataSets/combinedProbeDatasets_TMT.csv")
+# # write.csv(combinedDataset, "LipidProbe/DataSets/combinedProbeDatasets_TMT.csv")
 
-write.csv(combinedDataset, "/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/SearchByProtein/combinedProbeDatasets_TMT.csv")
+# write.csv(combinedDataset, paste0(here(), "/SearchByProtein/combinedProbeDatasets_TMT.csv"))
 ```
 
 :::{.border}
@@ -77,31 +79,31 @@ write.csv(combinedDataset, "/Users/gaelenguzman/LipidInteractomics_Website_local
 ```{r, echo=FALSE, warning=FALSE, include=FALSE}
 # Making a dataset for a venn diagram maker! This will all be commented out at the end.
 
-# PA_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/PA_HeLa_AT_2025.csv") |>
-#   filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+PA_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) |>
+  filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# PE_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/PE_HeLa_AT_2025.csv") |>
-# 	filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+PE_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv")) |>
+	filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# Spa_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv") |>
-# 	filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+Spa_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
+	filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# Sph_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv") |>
-# 	filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+Sph_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
+	filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# FA_8_3_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv") |>
-# 	filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+FA_8_3_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
+	filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# FA_1_10_data <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv") |>
-# 	filter(hit_annotation == "enriched hit") |>
-# 	select(LipidProbe, gene_name)
+FA_1_10_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv")) |>
+	filter(hit_annotation == "enriched hit") |>
+	select(LipidProbe, gene_name)
 
-# combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
+combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
 
-# write.csv(combinedDataset, "/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/combinedProbeDatasets_VennDiagram.csv")
+# write.csv(combinedDataset, paste0(here(), "/LipidProbe/DataSets/combinedProbeDatasets_VennDiagram.csv"))
 ```
