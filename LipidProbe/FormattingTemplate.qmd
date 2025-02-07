@@ -31,7 +31,7 @@ subtitle: "HTML page of individual lipid probe data"
 library(dplyr)
 library(tidyr)
 library(plotly)
-library(ggplot2)
+library(ggplot2)git
 library(grid)
 library(readr)
 library(rmarkdown)
@@ -40,9 +40,10 @@ library(gt)
 library(crosstalk)
 library(DT)
 library(htmltools)
+library(here)
 
 ## Opening the source file for the ggplot custom theme
-source("ggplot_styles.R")
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 # # Opening the datatable for this page
 # data <- readr::read_csv("/path/to/data")

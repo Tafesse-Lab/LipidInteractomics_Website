@@ -21,27 +21,30 @@ library(htmlwidgets)
 library(plotly)
 library(DT)
 # # Making a big shared dataset with all of the TMT-quantified lipid probes - this is a little hand-wavey because some were run at different times... TBD if we want to keep this.
+
 # PA_data <- read_csv("LipidProbe/DataSets/PA_HeLa_AT_2025.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
+#   mutate(fdr = "Data not available")
 
 # PE_data <- read_csv("LipidProbe/DataSets/PE_HeLa_AT_2025.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue) |>
+#   mutate(fdr = "Data not available")
 
 # Spa_data <- read_csv("LipidProbe/DataSets/Spa_Huh7_SF_2024.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
 # Sph_data <- read_csv("LipidProbe/DataSets/Sph_Huh7_SF_2024.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
 # FA_8_3_data <- read_csv("LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
 # FA_1_10_data <- read_csv("LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv") |>
-# 	select(LipidProbe, gene_name, logFC, pvalue, hit_annotation)
+# 	select(LipidProbe, gene_name, hit_annotation, logFC, pvalue, fdr)
 
 # combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
 
-#write.csv(combinedDataset, "LipidProbe/DataSets/combinedProbeDatasets_TMT.csv")
+# write.csv(combinedDataset, "LipidProbe/DataSets/combinedProbeDatasets_TMT.csv")
 ```
 
 :::{.border}

@@ -39,9 +39,10 @@ library(emojifont)
 library(gt)
 library(crosstalk)
 library(DT)
+library(here)
 
-## Set up the source for the standardized ggplot styles
-source("ggplot_styles.R")
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 
 #  SF_2024_data <- readr::read_csv("LipidProbe/DataSets/SF_ACS-Chem-Bio_2024_download.csv") |>

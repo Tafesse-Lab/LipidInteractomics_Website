@@ -1,0 +1,71 @@
+---
+title: "Search enrichment by protein"
+---
+
+```{r setup, include=FALSE}
+library(DT)
+library(crosstalk)
+library(tidyverse)
+library(readr)
+library(ggplot2)
+library(plotly)
+
+source("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/ggplot_styles.R")
+
+# Read call for testing, comment out for rendering
+data <- read_csv("combinedProbeDatasets_TMT.csv")
+
+data <- data |>
+	select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+	mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+					Study = case_when(LipidProbe == "1-10 FA" ~ "Farley et al. 2024 B; DOI: 10.1021/acschembio.3c00554",
+														LipidProbe == "8-3 FA" ~ "Farley et al. 2024 B; DOI: 10.1021/acschembio.3c00554",
+														LipidProbe == "Sph" ~ "Farley et al. 2024 A; DOI: 10.1021/acschembio.3c00554",
+														LipidProbe == "Spa" ~ "Farley et al. 2024 A; DOI: 10.1021/acschembio.3c00554",
+														LipidProbe == "PE" ~ "Thomas et al. 2025; DOI: 10.1039/D4CC03599B",
+														LipidProbe == "PA" ~ "Thomas et al. 2025; DOI: 10.1039/D4CC03599B",
+														LipidProbe == "PA" ~ "Thomas et al. 2025; DOI: 10.1039/D4CC03599B",
+														)) |>
+  arrange(hit_annotation) |>
+  arrange(LipidProbe) |>
+	glimpse()
+
+	## Creates a reactive dataframe
+data_reactive <- crosstalk::SharedData$new(data)
+
+
+
+
+```
+
+**Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification**
+
+```{r, echo=FALSE}
+htmltools::tags$div(
+  class = "filter-container",
+  filter_select(id = "gene_name",
+                  label = "Protein name:", 
+                  sharedData = data_reactive,
+                  group = ~gene_name)
+)
+
+## Displays the reactive dataframe
+datatable(data_reactive,
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+          options = list(pageLength = 10,
+												 dom = "l<t>ipr"))
+
+
+
+
+
+```
+
+
+**Still in beta: a plot that highlights the selected protein out of all the datasets on our site**
+```{r, warning=FALSE, echo=FALSE}
+data |>
+	VolcanoPlotStandardized()
+
+```

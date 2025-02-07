@@ -38,7 +38,11 @@ website:
     search: true
     collapse-level: 3
     contents:
-      - section: "Lipid Probes"
+      - href: SearchByProtein/SearchByProtein.qmd
+        text: "Search by Protein"
+        contents:
+          - section: ""
+      - section: "Explore  by Lipid Probes"
         href: index.qmd
         contents: 
           - section: "Glycerophospholipids"

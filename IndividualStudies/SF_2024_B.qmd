@@ -20,10 +20,10 @@ library(emojifont)
 library(gt)
 library(crosstalk)
 library(DT)
-library(htmltools)
+library(here)
 
 ## Opening the source file for the ggplot custom theme
-source("ggplot_styles.R")
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 
 # Opening the datatable for this page IN FINAL RENDER

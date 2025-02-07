@@ -23,6 +23,10 @@ library(crosstalk)
 library(DT)
 library(stringr)
 library(pheatmap)
+library(here)
+
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 DH_2017_data <- read.csv("DataTables/DH_PNAS_2017_download.csv") |>
   mutate(gene_name = str_extract(Description, "GN=([^\\s]+)") |> str_remove("GN=")) |>

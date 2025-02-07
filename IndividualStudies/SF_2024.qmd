@@ -22,9 +22,10 @@ library(crosstalk)
 library(DT)
 library(htmltools)
 library(scales)
+library(here)
 
 ## Opening the source file for the ggplot custom theme
-source("ggplot_styles.R")
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 # Opening the datatable for this page IN FINAL RENDER
 SF_2024_data <- readr::read_csv("DataTables/SF_ACS-Chem-Bio_2024_download.csv")

@@ -21,9 +21,10 @@ library(gt)
 library(crosstalk)
 library(DT)
 library(htmltools)
+library(here)
 
 ## Opening the source file for the ggplot custom theme
-source("ggplot_styles.R")
+source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 # Opening the datatable for this page WHILE TESTING
 # RM_2021_data <- readr::read_csv("IndividualStudies/DataTables/RM_Angewandte_2021_download.csv")

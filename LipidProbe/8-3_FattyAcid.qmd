@@ -20,7 +20,7 @@ library(DT)
 library(htmltools)
 
 ## Opening the source file for the ggplot custom theme
-source("ggplot_styles.R")
+source("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/ggplot_styles.R")
 
 # SF_2024_data <- readr::read_csv("LipidProbe/DataSets/SF_Chem_Comm_2024_download.csv") |>
 # 	filter(LipidProbe == "8-3 FA")
