@@ -60,13 +60,15 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(datawhole_reactive,
-          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+datatable(datawhole_reactive, 
           options = list(pageLength = 6,
-												 dom = "l<t>ipr"))
+												 dom = "l<t>ipr"),
+												 colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "logFC", "pvalue", "FDR", "Study Details"))
 
 
 ```
+
+"No hit" proteins are unenriched or depleted in the presence of probe, "enriched candidates" are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and "enriched hits" are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV
 
 ## Data vis of selected proteins
 

@@ -350,7 +350,7 @@ div.csl-indent {
   <li><a href="#uncaging" id="toc-uncaging" class="nav-link" data-scroll-target="#uncaging">Uncaging</a></li>
   <li><a href="#crosslinking" id="toc-crosslinking" class="nav-link" data-scroll-target="#crosslinking">Crosslinking</a></li>
   <li><a href="#protein-collection" id="toc-protein-collection" class="nav-link" data-scroll-target="#protein-collection">Protein collection</a></li>
-  <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis" class="nav-link" data-scroll-target="#mass-spectrometry-analysis">Mass spectrometry analysis</a>
+  <li><a href="#sec-MassSpectrometryAnalysis" id="toc-sec-MassSpectrometryAnalysis" class="nav-link" data-scroll-target="#sec-MassSpectrometryAnalysis">Mass spectrometry analysis</a>
   <ul class="collapse">
   <li><a href="#label-free-quantification" id="toc-label-free-quantification" class="nav-link" data-scroll-target="#label-free-quantification">Label-Free Quantification</a></li>
   <li><a href="#label-based-quantification" id="toc-label-based-quantification" class="nav-link" data-scroll-target="#label-based-quantification">Label-based quantification</a></li>
@@ -388,7 +388,7 @@ div.csl-indent {
 <div id="fig-ExperimentalSchema" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="Overview_gallery">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ExperimentalSchema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="Overview_gallery"><img src="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" id="fig-ExperimentalSchema" class="img-fluid figure-img"></a>
+<a href="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery" data-glightbox="description: .lightbox-desc-1"><img src="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" id="fig-ExperimentalSchema" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-ExperimentalSchema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1
@@ -410,24 +410,33 @@ Figure&nbsp;1
 <section id="crosslinking" class="level3">
 <h3 class="anchored" data-anchor-id="crosslinking">Crosslinking</h3>
 <ul>
-<li>Irradiation with 355 nm wavelength light ()</li>
+<li>Irradiation with 355 nm wavelength light induces the production of a reactive carbene which readily inserts itself into any nearby biochemical bond.
+<ul>
+<li>Notably, the majority of probes will likely crosslink with either water or with neighboring lipids. Quantitative proteomics analysis will fully ignore these conjugates, as only enriched peptides will be measured in the final mass spectrometry analysis (described below in <a href="#sec-MassSpectrometryAnalysis" class="quarto-xref">Section&nbsp;1.5</a>).</li>
+</ul></li>
+<li>The covalently bound lipid protein conjugates which form after crosslinking are highly stable and thus are ideally amenable toward stringent enrichment and washing, producing a high-quality sample with few non-specific proteins tagging along.</li>
 </ul>
 </section>
 <section id="protein-collection" class="level3">
 <h3 class="anchored" data-anchor-id="protein-collection">Protein collection</h3>
 <ul>
-<li><p>Cell lysis</p></li>
-<li><p>Affinity purification of probe-conjugated proteins</p>
+<li>Cell lysis
+<ul>
+<li>Depending on application, may want to perform a membrane prep or otherwise isolate an organelle of interest (e.g.&nbsp;mitochondrial enrichment, if one is seeking mitochondrial interactions)</li>
+<li>Due to the high stability of the diazirine crosslinking bond, no extra steps need to be taken to ensure that interactions are maintained – lysis can be as aggressive as one wishes.</li>
+<li>In general, samples due for mass spectrometry analysis should be kept with as little detergent as possible to protect the instrument – however, because the crosslinking bond is covalent and the downstream affinity purification is covalent, these samples may be washed very stringently and thus remove effectively all contaminating detergents. Thus, a mild detergent such as NP-40 can be included in the lysis buffer of these samples.</li>
+</ul></li>
+<li>Affinity purification of probe-conjugated proteins
 <ul>
 <li>Example using azide beads: Perform click chemistry reaction in presence of beads coated with picolyl-azide functional groups for covalent capture</li>
-<li>Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated washes of 8 M urea and 20 % acetonitrile.</li>
+<li>Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated high volume washes of 8 M urea and 20 % acetonitrile.</li>
 </ul></li>
-<li><p>Captured proteins can be reduced and alkylated on-bead.</p></li>
-<li><p>Peptides can be digested off the protein-lipid-bead conjugates via tryptic digest. Digested peptides are then desalted to remove any remaining contaminants using reverse phase desalting columns.</p></li>
+<li>Captured proteins are then reduced and alkylated on-bead.</li>
+<li>Peptides are digested off the protein-lipid-bead conjugates via tryptic digest. Digested peptides are then desalted to remove any remaining contaminants using reverse phase desalting columns.</li>
 </ul>
 </section>
-<section id="mass-spectrometry-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
+<section id="sec-MassSpectrometryAnalysis" class="level3">
+<h3 class="anchored" data-anchor-id="sec-MassSpectrometryAnalysis">Mass spectrometry analysis</h3>
 <p>Broadly, all mass spectrometry techniques for proteomic identification of differentially-enriched proteins will involve injection into a mass spectrometer via liquid chromatography. Within the mass spectrometer, individual peptides can be isolated and fragmented to determine their sequence.</p>
 <p>There are several methodologies commonly used to quantify mass spectrometry data. At the highest level, these may be separated into label-free and label-based quantification techniques. Both categories are valid for reporting differential enrichment, and each has pros and cons – discussed in detail below.</p>
 <section id="label-free-quantification" class="level4">
@@ -922,7 +931,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":true,"descPosition":"bottom","selector":".lightbox","closeEffect":"fade","openEffect":"fade"});
+<script>var lightboxQuarto = GLightbox({"loop":true,"openEffect":"fade","selector":".lightbox","descPosition":"bottom","closeEffect":"fade"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

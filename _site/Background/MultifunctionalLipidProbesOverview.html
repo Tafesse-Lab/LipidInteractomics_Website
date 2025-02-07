@@ -60,9 +60,6 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -356,15 +353,7 @@ div.csl-indent {
   <li><a href="#why-lipids-require-a-different-approach" id="toc-why-lipids-require-a-different-approach" class="nav-link" data-scroll-target="#why-lipids-require-a-different-approach">Why Lipids Require a Different Approach</a></li>
   <li><a href="#the-role-of-synthetic-lipid-analogs" id="toc-the-role-of-synthetic-lipid-analogs" class="nav-link" data-scroll-target="#the-role-of-synthetic-lipid-analogs">The Role of Synthetic Lipid Analogs</a></li>
   </ul></li>
-  <li><a href="#photoactivatable-clickable-probes-bifunctional-lipid-probes" id="toc-photoactivatable-clickable-probes-bifunctional-lipid-probes" class="nav-link" data-scroll-target="#photoactivatable-clickable-probes-bifunctional-lipid-probes">Photoactivatable &amp; Clickable Probes / Bifunctional Lipid Probes</a></li>
-  <li><a href="#trifunctional-lipid-probes" id="toc-trifunctional-lipid-probes" class="nav-link" data-scroll-target="#trifunctional-lipid-probes">Trifunctional Lipid Probes</a></li>
   <li><a href="#limitations-of-multifunctionalized-lipid-probes" id="toc-limitations-of-multifunctionalized-lipid-probes" class="nav-link" data-scroll-target="#limitations-of-multifunctionalized-lipid-probes">Limitations of multifunctionalized lipid probes</a></li>
-  <li><a href="#interactomics-experimental-schema" id="toc-interactomics-experimental-schema" class="nav-link" data-scroll-target="#interactomics-experimental-schema">Interactomics Experimental schema</a>
-  <ul class="collapse">
-  <li><a href="#cell-treatment" id="toc-cell-treatment" class="nav-link" data-scroll-target="#cell-treatment">Cell treatment</a></li>
-  <li><a href="#protein-collection" id="toc-protein-collection" class="nav-link" data-scroll-target="#protein-collection">Protein collection</a></li>
-  <li><a href="#mass-spectrometry-analysis" id="toc-mass-spectrometry-analysis" class="nav-link" data-scroll-target="#mass-spectrometry-analysis">Mass spectrometry analysis</a></li>
-  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="MultifunctionalLipidProbesOverview.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -524,18 +513,18 @@ Coumarin Photocage
 </div>
 </div>
 <p>These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.</p>
-</section>
-</section>
-<section id="photoactivatable-clickable-probes-bifunctional-lipid-probes" class="level2">
-<h2 class="anchored" data-anchor-id="photoactivatable-clickable-probes-bifunctional-lipid-probes">Photoactivatable &amp; Clickable Probes / Bifunctional Lipid Probes</h2>
-<!-- -   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
+<!--
+## Photoactivatable & Clickable Probes / Bifunctional Lipid Probes
+
+ -   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
 
 References to include:
 
--   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014 -->
+-   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014 
+
+## Trifunctional Lipid Probes
+-->
 </section>
-<section id="trifunctional-lipid-probes" class="level2">
-<h2 class="anchored" data-anchor-id="trifunctional-lipid-probes">Trifunctional Lipid Probes</h2>
 </section>
 <section id="limitations-of-multifunctionalized-lipid-probes" class="level2">
 <h2 class="anchored" data-anchor-id="limitations-of-multifunctionalized-lipid-probes">Limitations of multifunctionalized lipid probes</h2>
@@ -543,126 +532,29 @@ References to include:
 <li>While significant effort has minimized the effect that each modification has on the biophysical properties of the lipid analogs, it remains the case that adding a diazirine and a terminal alkyne will necessarily affect their physical properties – perhaps affecting sub-cellular localization and binding.</li>
 <li>The coumarin cage has been repeatedly shown to protect lipid analogs from premature metabolism, but it should be recognized that this comes with some distinct changes to the behavior of the native lipid.
 <ul>
-<li>For example, when a cell is treated with a photocaged lipid probe, every membrane in the cell appears to</li>
+<li>For example, when a cell is treated with a photocaged lipid probe, the probe intercalates into every membrane in the cell – including membranes which the native lipid would not enter. This may lead to the identification of non-biologically-relevant hits.</li>
+</ul></li>
+<li>Similarly, the diazirine and alkyne groups may have minor effects on the biophysical properties of the lipid probe as it interacts with other lipids and proteins within the membrane bilayer. This may be more relevant for proteins which preferentially bind to the acyl chain.
+<ul>
+<li>For example, Some work has been done to demonstrate that the placement of the diazirine ring along the length of the acyl chain can have impacts on the interactome of the lipid probe<span class="citation" data-cites="farleyTrifunctionalFattyAcid2024"><sup><a href="#ref-farleyTrifunctionalFattyAcid2024" role="doc-biblioref">2</a></sup></span>. Farley et al (2024) demonstrated this using trifunctional Fatty Acid probes by placing the diazirine either 3 carbons from the terminus (8-3 FA) or 10 carbons from the terminus (1-10 FA). They identified several proteins with distinct enrichment profiles, including VDAC1 and VDAC2 (which are preferentially enriched to the 8-3 FA probe), and ACAD9 and UBB (which are preferentially enriched to the 1-10 FA probe).</li>
+</ul></li>
+<li>Quantification of +UV versus -UV
+<ul>
+<li>The details of the quantitative mass spectrometry are describe in our <a href="Background/ProteomicsUsingMultifunctionalProbes.qmd">Overview of Proteomics Methods</a>, however, we hope to succinctly describe that quantitative mass spectrometry techniques necessarily require normalization at sample input level – thereby exaggerating the abundance of proteins in the -UV control samples.</li>
+<li>It should be noted, therefore, that there is little meaning to a protein which is “enriched” toward the -UV condition. For this reason, all proteins which are “depleted” following irradiation with UV have been designated as “no hit” in our analyses.</li>
 </ul></li>
 </ul>
-</section>
-<section id="interactomics-experimental-schema" class="level2">
-<h2 class="anchored" data-anchor-id="interactomics-experimental-schema">Interactomics Experimental schema</h2>
-<div class="border">
-<p><a href="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="lightbox" data-gallery="Overview_gallery"><img src="../Background/BackgroundFigures/BaselineProteomics_ExperimentalDesign.png" class="img-fluid"></a></p>
-</div>
-<section id="cell-treatment" class="level3">
-<h3 class="anchored" data-anchor-id="cell-treatment">Cell treatment</h3>
-</section>
-<section id="protein-collection" class="level3">
-<h3 class="anchored" data-anchor-id="protein-collection">Protein collection</h3>
-</section>
-<section id="mass-spectrometry-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="mass-spectrometry-analysis">Mass spectrometry analysis</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Label-Free Quantification
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Label-free quantification (LFQ) is a widely used mass spectrometry-based proteomics approach that estimates protein abundance without chemical labeling. Instead, it relies on comparing the summed intensity of detected peptides across different samples analyzed under identical conditions.</p>
-<section id="how-it-works" class="level5">
-<h5 class="anchored" data-anchor-id="how-it-works">How It Works</h5>
-<ol type="1">
-<li><p><strong>Peptide Detection (MS1):</strong>&nbsp;Peptides are isolated and detected based on their mass-to-charge ratio (m/z).</p></li>
-<li><p><strong>Peptide Sequencing (MS2):</strong>&nbsp;Selected peptide ions are fragmented, and the resulting spectra determine peptide sequences.</p></li>
-<li><p><strong>Quantification:</strong>&nbsp;The total signal intensity of all identified peptides corresponding to a protein is summed as a proxy for its abundance.</p></li>
-<li><p><strong>Comparison Across Samples:</strong>&nbsp;Samples prepared and analyzed using the same LC-MS/MS protocol can be compared using peptide-spectrum match (PSM) counts as an abundance proxy.</p></li>
-</ol>
-</section>
-<section id="advantages-of-label-free-quantification" class="level5">
-<h5 class="anchored" data-anchor-id="advantages-of-label-free-quantification">Advantages of Label-Free Quantification</h5>
-<ul>
-<li><p><strong>Cost-Effective &amp; Simple Sample Preparation:</strong>&nbsp;Unlike labeling methods (e.g., TMT), LFQ does not require expensive reagents or complex modifications, making it more accessible.</p></li>
-<li><p><strong>Flexible &amp; Widely Used:</strong>&nbsp;Compatible with various experimental designs and allows for comparisons across many samples without multiplexing constraints.</p></li>
-</ul>
-</section>
-<section id="challenges-considerations" class="level5">
-<h5 class="anchored" data-anchor-id="challenges-considerations">Challenges &amp; Considerations</h5>
-<ul>
-<li><p><strong>Potential Bias from Co-Elution:</strong>&nbsp;High-abundance peptides can overshadow low-abundance ones, reducing the number of reliably quantified peptides.</p></li>
-<li><p><strong>Run-to-Run Variability:</strong>&nbsp;LFQ requires separate MS runs for each sample, making it susceptible to differences in instrument calibration, chromatography conditions, or sample handling. Careful quality control is necessary to minimize artificial differences.</p></li>
-</ul>
-</section>
-<section id="conclusion" class="level5">
-<h5 class="anchored" data-anchor-id="conclusion">Conclusion</h5>
-<p>Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.</p>
-</section>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Quantitative Mass Spectrometry with Tandem Mass Tagging
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Tandem Mass Tag (TMT) labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.</p>
-<section id="how-it-works-1" class="level5">
-<h5 class="anchored" data-anchor-id="how-it-works-1">How It Works</h5>
-<ol type="1">
-<li><p><strong>Chemical Labeling:</strong>&nbsp;Each sample is chemically tagged with a unique TMT label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.</p></li>
-<li><p><strong>Sample Pooling:</strong>&nbsp;Labeled samples are combined into a single pooled group, reducing the need for separate MS runs.</p></li>
-<li><p><strong>Mass Spectrometry Analysis:</strong></p>
-<ul>
-<li><p><strong>MS1 (Peptide Isolation):</strong>&nbsp;Peptides are separated and detected based on their mass-to-charge ratio (m/z).</p></li>
-<li><p><strong>MS2 (Peptide Sequencing &amp; Tag Fragmentation):</strong>&nbsp;Peptides are fragmented for sequence identification, and TMT mass tags fragment to generate reporter ions.</p></li>
-</ul></li>
-<li><p><strong>Quantification:</strong>&nbsp;The intensity of reporter ions reveals the relative abundance of peptides across the original samples.</p></li>
-<li><p><strong>Comparison Across Samples:</strong>&nbsp;Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing up to 30 samples to be analyzed in a single experiment.</p></li>
-</ol>
-</section>
-<section id="advantages-of-tmt-labeling" class="level5">
-<h5 class="anchored" data-anchor-id="advantages-of-tmt-labeling">Advantages of TMT Labeling</h5>
-<ul>
-<li><p><strong>Increased Throughput &amp; Efficiency:</strong>&nbsp;Enables multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs.</p></li>
-<li><p><strong>Deeper Proteome Coverage:</strong>&nbsp;Pooled samples can be fractionated (e.g., by cation exchange chromatography), enhancing detection of low-abundance peptides.</p></li>
-<li><p><strong>Improved Quantification Accuracy:</strong>&nbsp;Since all samples are analyzed in the same MS run, technical variability between runs is minimized.</p></li>
-</ul>
-</section>
-<section id="challenges-considerations-1" class="level5">
-<h5 class="anchored" data-anchor-id="challenges-considerations-1">Challenges &amp; Considerations</h5>
-<ul>
-<li><p><strong>Higher Cost:</strong>&nbsp;TMT reagents and high-end mass spectrometers add to the expense.</p></li>
-<li><p><strong>Complex Sample Preparation:</strong>&nbsp;Requires additional steps for labeling, pooling, and fractionation, increasing the risk of sample handling variability.</p></li>
-<li><p><strong>Normalization Requirement:</strong>&nbsp;Accurate quantification requires equal protein input across samples to avoid artificial balancing biases.</p></li>
-<li><p><strong>Demanding Instrumentation &amp; Expertise:</strong>&nbsp;Requires high-resolution mass spectrometers, often necessitating specialized facilities.</p></li>
-</ul>
-</section>
-<section id="conclusion-1" class="level5">
-<h5 class="anchored" data-anchor-id="conclusion-1">Conclusion</h5>
-<p>TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.</p>
-</section>
-</div>
-</div>
-</div>
 
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-hoglingerIntracellularSphingosineReleases2015a" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.7554/eLife.10616">Intracellular sphingosine releases calcium from lysosomes</a>. <em>eLife</em> <strong>4</strong>, (2015).</div>
+</div>
+<div id="ref-farleyTrifunctionalFattyAcid2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1053,31 +945,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"fade","descPosition":"bottom","closeEffect":"fade","selector":".lightbox","loop":true});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
