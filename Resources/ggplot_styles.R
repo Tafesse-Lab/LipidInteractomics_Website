@@ -6,6 +6,25 @@ library(emojifont)
 library(dplyr)
 library(tidyr)
 
+# Define a helper function that safely applies abs()
+safe_abs <- function(x, default = NA) {
+  tryCatch({
+    # Ensure that x is numeric before taking abs()
+    abs(as.numeric(x))
+  }, error = function(e) {
+    default
+  })
+}
+
+safe_log10 <- function(x, default = NA) {
+    tryCatch({
+        # Ensure that x is numeric before taking log10()
+        log10(as.numeric(x))
+    }, error = function(e) {
+        default
+    })
+}
+
 # A standardized MA plot function
 
 MAStandard <- function(data) {
@@ -153,6 +172,10 @@ RankedOrderPlotStandard <- function(data) {
 # A standardized Volcano plot theme
 
 VolcanoPlotStandardized <- function(data) {
+
+    limits <- c(max(c(safe_abs(data$logFC), 4), na.rm=TRUE) , max(c(-safe_log10(data$pvalue), 6), na.rm=TRUE))
+
+
     VolcanoPlots <- data |>
         ggplot(aes(x = logFC,
                    y = -log10(pvalue),
@@ -166,8 +189,8 @@ VolcanoPlotStandardized <- function(data) {
                                      "p-value: ", pvalue, "\n"))) +
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
-        scale_x_continuous(limits=c(-1.1 * max(abs(data$logFC)), 1.1* max(abs(data$logFC)))) +
-        scale_y_continuous(limits=c(0, max(-log10(data$pvalue)))) +
+        scale_x_continuous(limits=c(-1.1 * limits[1], 1.1* limits[1])) +
+        scale_y_continuous(limits=c(0, 1.1 * limits[2])) +
         scale_shape_manual(values = c("enriched hit" = 21,
                                     "hit" = 21,
                                     "enriched candidate" = 24,
@@ -198,7 +221,7 @@ VolcanoPlotStandardized <- function(data) {
                                     "candidate" = 2, 
                                     "no hit" = 0.75), 
                         name = "Trend") +
-        facet_wrap(~LipidProbe) +
+        facet_wrap(~LipidProbe, ncol = 2) +
         xlab("Log2 fold-change") +
         ylab("-log10(p-value)") +
         theme_minimal() +

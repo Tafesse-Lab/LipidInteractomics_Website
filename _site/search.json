@@ -625,7 +625,17 @@
     "href": "SearchByProtein/SearchByProtein.html",
     "title": "Search enrichment by protein",
     "section": "",
-    "text": "Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification\n\n\n\n\nProtein name:\n\n\n\n\n\n\n\n\n\n\n\n\nStill in beta: a plot that highlights the selected protein out of all the datasets on our site\n\n\n\n\n\n\n\n\n\nReuseCC BY 4.0",
+    "text": "Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification\nProtein name:",
+    "crumbs": [
+      "Search by Protein"
+    ]
+  },
+  {
+    "objectID": "SearchByProtein/SearchByProtein.html#data-vis-of-selected-proteins",
+    "href": "SearchByProtein/SearchByProtein.html#data-vis-of-selected-proteins",
+    "title": "Search enrichment by protein",
+    "section": "Data vis of selected proteins",
+    "text": "Data vis of selected proteins\nStill in beta: a plot that highlights the selected protein out of all the datasets on our site",
     "crumbs": [
       "Search by Protein"
     ]

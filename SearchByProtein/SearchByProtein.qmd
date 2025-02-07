@@ -9,13 +9,16 @@ library(tidyverse)
 library(readr)
 library(ggplot2)
 library(plotly)
+library(here)
 
-source("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/ggplot_styles.R")
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
+
 
 # Read call for testing, comment out for rendering
-data <- read_csv("combinedProbeDatasets_TMT.csv")
+data <- read_csv(paste0(here(), "/SearchByProtein/combinedProbeDatasets_TMT.csv"))
 
-data <- data |>
+datawhole <- data |>
 	select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
 	mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
@@ -31,13 +34,19 @@ data <- data |>
   arrange(LipidProbe) |>
 	glimpse()
 
+limits <- c(max(abs(datawhole$logFC), na.rm=TRUE) , max(-log10(datawhole$pvalue), na.rm=TRUE))
+
+
+datawhole$LipidProbe <- factor(pull(data, LipidProbe), levels = c("PA", "PE", "Sph", "Spa", "1-10 FA", "8-3 FA"), ordered = TRUE)
+
 	## Creates a reactive dataframe
-data_reactive <- crosstalk::SharedData$new(data)
+datawhole_reactive <- crosstalk::SharedData$new(datawhole)
 
 
 
 
 ```
+
 
 **Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification**
 
@@ -46,26 +55,24 @@ htmltools::tags$div(
   class = "filter-container",
   filter_select(id = "gene_name",
                   label = "Protein name:", 
-                  sharedData = data_reactive,
+                  sharedData = datawhole_reactive,
                   group = ~gene_name)
 )
 
 ## Displays the reactive dataframe
-datatable(data_reactive,
+datatable(datawhole_reactive,
           caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
-          options = list(pageLength = 10,
+          options = list(pageLength = 6,
 												 dom = "l<t>ipr"))
-
-
-
 
 
 ```
 
+## Data vis of selected proteins
 
 **Still in beta: a plot that highlights the selected protein out of all the datasets on our site**
 ```{r, warning=FALSE, echo=FALSE}
-data |>
-	VolcanoPlotStandardized()
+
+VolcanoPlotStandardized(datawhole_reactive)
 
 ```
