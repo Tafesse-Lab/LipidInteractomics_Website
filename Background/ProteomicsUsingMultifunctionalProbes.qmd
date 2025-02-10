@@ -1,5 +1,5 @@
 ---
-title: "Background: Using multifunctional probes for proteomics"
+title: "Background: Proteomics with multifunctionalized lipid probes"
 format: 
   html:
     embed-resources: false
@@ -9,6 +9,8 @@ format:
     fig-height: 5
     reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
 ---
+
+**This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
 ## Interactomics Experimental schema
 
@@ -24,26 +26,30 @@ As has been reported previously by Höglinger et al. (2017), Muller et al. (2021
 
 ### Uncaging
 
-- Irradiation with 405 nm wavelength light induces the release of the coumarin photocage and thus allows for the recognition and metabolism of the headgroup of the lipid probe.
+Irradiation with 405 nm wavelength light induces the release of the coumarin photocage and thus allows for the recognition and metabolism of the headgroup of the lipid probe (See our [Coumarin overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-Coumarin) for more background on using the coumarin photocage).
 
-- Substantial work has validated that these lipid probes are recognized by the cell as their native counterparts, as the remaining functional groups have minimal effect on the probes'  biophysical properties. This has been validated in numerous studies, including Höglinger et al. (2015) and Höglinger et al. (2017), Muller et al. (2020) and Muller et al. (2020), and Farley et al. (2024) and Farley et al. (2024)[@hoglingerIntracellularSphingosineReleases2015a; @hoglingerTrifunctionalLipidProbes2017; @mullerSynthesisCellularLabeling2020; @mullerSynthesisCellularLabeling2021]. 
+Substantial work has validated that these lipid probes are recognized by the cell as their native counterparts, as the remaining functional groups have minimal effect on the probes'  biophysical properties. This has been validated in numerous studies, including Höglinger et al. (2015) and Höglinger et al. (2017), Muller et al. (2020) and Muller et al. (2020), and Farley et al. (2024) and Farley et al. (2024)[@hoglingerIntracellularSphingosineReleases2015a; @hoglingerTrifunctionalLipidProbes2017; @mullerSynthesisCellularLabeling2020; @mullerSynthesisCellularLabeling2021]. 
 
 ### Crosslinking 
 
-- Irradiation with 355 nm wavelength light induces the production of a reactive carbene which readily inserts itself into any nearby biochemical bond. 
-  - Notably, the majority of probes will likely crosslink with either water or with neighboring lipids. Quantitative proteomics analysis will fully ignore these conjugates, as only enriched peptides will be measured in the final mass spectrometry analysis (described below in [@sec-MassSpectrometryAnalysis]). 
-- The covalently bound lipid protein conjugates which form after crosslinking are highly stable and thus are ideally amenable toward stringent enrichment and washing, producing a high-quality sample with few non-specific proteins tagging along.
+Irradiation with 355 nm wavelength light induces the production of a reactive carbene which readily inserts itself into any nearby biochemical bond (See our [Diazirine overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-Diazirine) for more background on diazirine crosslinking). Notably, the majority of probes will likely crosslink with either water or with neighboring lipids. Quantitative proteomics analysis will fully ignore these conjugates, as only enriched peptides will be measured in the final mass spectrometry analysis (described below in our [Mass spectrometry overview](@sec-MassSpectrometryAnalysis)). 
 
-### Protein collection
+The covalently bound lipid protein conjugates which form after crosslinking are highly stable and thus are ideally amenable toward stringent enrichment and washing, producing a high-quality sample with few non-specific proteins tagging along.
 
-- Cell lysis 
-  - Depending on application, may want to perform a membrane prep or otherwise isolate an organelle of interest (e.g. mitochondrial enrichment, if one is seeking mitochondrial interactions)
-  - Due to the high stability of the diazirine crosslinking bond, no extra steps need to be taken to ensure that interactions are maintained -- lysis can be as aggressive as one wishes.
-  - In general, samples due for mass spectrometry analysis should be kept with as little detergent as possible to protect the instrument -- however, because the crosslinking bond is covalent and the downstream affinity purification is covalent, these samples may be washed very stringently and thus remove effectively all contaminating detergents. Thus, a mild detergent such as NP-40 can be included in the lysis buffer of these samples. 
+### Cell lysis and sample collection 
 
-- Affinity purification of probe-conjugated proteins
-  * Example using azide beads: Perform click chemistry reaction in presence of beads coated with picolyl-azide functional groups for covalent capture
-  * Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated high volume washes of 8 M urea and 20 % acetonitrile. 
+Depending on application, may want to perform a membrane prep or otherwise isolate an organelle of interest (e.g. mitochondrial enrichment, if one is seeking mitochondrial interactions)
+
+Due to the high stability of the diazirine crosslinking bond, no extra steps need to be taken to ensure that interactions are maintained -- lysis can be as aggressive as one wishes.
+
+In general, samples due for mass spectrometry analysis should be kept with as little detergent as possible to protect the instrument -- however, because the crosslinking bond is covalent and the downstream affinity purification is covalent, these samples may be washed very stringently and thus remove effectively all contaminating detergents. Thus, a mild detergent such as NP-40 can be included in the lysis buffer of these samples. 
+
+### Affinity purification of probe-conjugated proteins
+
+(See our [Alkyne overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-Alkyne) for more background on alkyne click chemistry)
+
+* Example using azide beads: Perform click chemistry reaction in presence of beads coated with picolyl-azide functional groups for covalent capture
+* Conjugates of protein-lipid-bead are covalently bound and can thus be stringently washed with detergent solutions to remove non-specific proteins. Detergent can then be removed with repeated high volume washes of 8 M urea and 20 % acetonitrile. 
 * Captured proteins are then reduced and alkylated on-bead. 
 * Peptides are digested off the protein-lipid-bead conjugates via tryptic digest. Digested peptides are then desalted to remove any remaining contaminants using reverse phase desalting columns.
 
@@ -83,13 +89,11 @@ Label-free quantification (LFQ) is a widely used mass spectrometry-based proteom
 
 Label-free quantification is a practical and widely used method for proteomics research. While cost-effective and flexible, its accuracy depends on careful experimental design and quality control to reduce variability.
 
-#### Label-based quantification
+#### Isotopic Label-based quantification
 
-All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to cost and difficult sample preparation. 
+All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to significant cost and difficult sample preparation. 
 
-Modern label-based techniques such as iTRAQ (isotopic Tagging for Relative and Absolute  Quantification) and TMT (Tandem Mass Tagging) have become the norm. For the purposes of this overview, we will focus on TMT as it has greater capacity for samples per experiment (16+ as opposed to 8), and the techniques are fundamentally similar.
-
-TMT labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions.
+Modern isotopic label-based techniques such as iTRAQ (isotopic Tagging for Relative and Absolute  Quantification) and TMT (Tandem Mass Tagging) have become the norm. Isotopic labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions. For the purposes of this overview, we will focus on TMT as it has greater capacity for samples per experiment (16+ as opposed to 8), and the techniques are fundamentally similar.
 
 ##### How It Works
 

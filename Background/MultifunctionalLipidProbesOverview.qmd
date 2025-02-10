@@ -6,7 +6,7 @@ format:
     embed-resources: false
   docx:
     fig-height: 5
-    reference-doc: /custom-reference-doc.docx
+    reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
    
 
 standalone: true
@@ -54,9 +54,7 @@ To overcome these challenges, researchers have developed synthetic lipid analogs
 
 To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include:
 
-
-:::{.callout-note collapse="true"}
-#### Diazirine ring
+#### Diazirine ring {#sec-Diazirine}
 
 Lipid-protein interactions are inherently transient and dynamic, making them particularly challenging to capture and study. Unlike protein-protein interactions, which often rely on extensive surface interfaces and hydrogen bonding, most lipids have minimal hydrogen bonding potential and lack a substantial structural framework for stable interactions. As a result, even biologically relevant lipid-protein contacts may be too fleeting to detect under standard biochemical conditions.
 
@@ -76,15 +74,13 @@ The small size and high reactivity of diazirine crosslinking make it an invaluab
 
 ##### The effect of Diazirine placement on crosslinking targets {#sec-DiazirinePlacement}
 
-- The reactive carbene produced upon irradiation will bond with whatever molecule is nearest -- thus, the location of the diazirine ring can have a dramatic effect on what protein interactors are stabilized via crosslinking.
+The reactive carbene produced upon irradiation will bond with whatever molecule is nearest -- thus, the location of the diazirine ring can have a dramatic effect on what protein interactors are stabilized via crosslinking.
 
-- The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, [8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd) has the acyl chain only 3 carbons from the end. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.
+The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, [8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd) has the acyl chain only 3 carbons from the end. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.
 
-- In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is [1-10 Fatty Acid](/LipidProbe/1-10_FattyAcid.qmd), in which the diazirine ring was placed 10 carbons from the terminus of the chain.
-:::
+In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is [1-10 Fatty Acid](/LipidProbe/1-10_FattyAcid.qmd), in which the diazirine ring was placed 10 carbons from the terminus of the chain.
 
-:::{.callout-note collapse="true"}
-#### Terminal Alkyne
+#### Terminal Alkyne {#sec-Alkyne}
 
 When studying proteins, researchers often use genetic methods to tag or modify them, making them easier to visualize or isolate. For example, adding a green fluorescent protein (GFP) domain to a protein allows it to be seen under a fluorescence microscope, whereas incorporating an HA tag enables enrichment using antibody pulldown techniques. These approaches work well for proteins because they are encoded by genes and can be modified at the DNA level.
 
@@ -103,10 +99,8 @@ One major application of the terminal alkyne is fluorescence labeling. A functio
 Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.
 
 By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. It bridges the gap between traditional lipid research and modern bioorthogonal chemistry, allowing for precise studies of lipid function in living systems.
-:::
 
-:::{.callout-note collapse="true"}
-#### Coumarin Photocage
+#### Coumarin Photocage {#sec-Coumarin}
 Lipids play an essential role in cellular signaling, yet their biological study presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. This rapid turnover makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.
 
 One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength "uncages" the analog to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.
@@ -128,7 +122,6 @@ Beyond biochemical studies, coumarin-caged lipids enable live-cell imaging appro
 A unique advantage of using coumarin as a photocaging group is its intrinsic fluorescence. This means that before the lipid is even uncaged, its cellular incorporation can be directly visualized using a fluorescence microscope. By tracking fluorescence intensity and distribution, researchers can quickly determine whether a functionalized lipid has successfully intercalated into the target cell’s membrane or accumulated in specific subcellular compartments.
 
 This dual functionality—serving as both a caging group and a fluorescent probe—makes coumarin a useful tool for studying lipid localization, uptake, and bioactivity.
-:::
 
 These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.
 
@@ -152,6 +145,6 @@ References to include:
 * Similarly, the diazirine and alkyne groups may have minor effects on the biophysical properties of the lipid probe as it interacts with other lipids and proteins within the membrane bilayer. This may be more relevant for proteins which preferentially bind to the acyl chain. 
   - For example, Some work has been done to demonstrate that the placement of the diazirine ring along the length of the acyl chain can have impacts on the interactome of the lipid probe[@farleyTrifunctionalFattyAcid2024]. Farley et al (2024) demonstrated this using trifunctional Fatty Acid probes by placing the diazirine either 3 carbons from the terminus (8-3 FA) or 10 carbons from the terminus (1-10 FA). They identified several proteins with distinct enrichment profiles, including VDAC1 and VDAC2 (which are preferentially enriched to the 8-3 FA probe), and ACAD9 and UBB (which are preferentially enriched to the 1-10 FA probe). 
 * Quantification of +UV versus -UV
-  - The details of the quantitative mass spectrometry are describe in our [Overview of Proteomics Methods](Background/ProteomicsUsingMultifunctionalProbes.qmd), however, we hope to succinctly describe that quantitative mass spectrometry techniques necessarily require normalization at sample input level -- thereby exaggerating the abundance of proteins in the -UV control samples. 
+  - The details of the quantitative mass spectrometry are describe in our [Overview of Proteomics Methods](ProteomicsUsingMultifunctionalProbes.qmd), however, we hope to succinctly describe that quantitative mass spectrometry techniques necessarily require normalization at sample input level -- thereby exaggerating the abundance of proteins in the -UV control samples. 
   - It should be noted, therefore, that there is little meaning to a protein which is "enriched" toward the -UV condition. For this reason, all proteins which are "depleted" following irradiation with UV have been designated as "no hit" in our analyses.
   

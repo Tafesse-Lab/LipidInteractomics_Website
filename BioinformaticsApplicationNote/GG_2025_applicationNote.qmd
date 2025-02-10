@@ -142,14 +142,17 @@ While there are numerous ways to quantify the mass spectrometry (MS) data, the s
 : Example data table for smooth incorporation into Lipid Interactome. {#tbl-1 .striped}
 
 :::
+</br>
 
--   Column descriptions:
-    -   *Gene name or Accession Number*
-    -   *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods.
-    -   *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing
-    -   *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)
-    -   *FDR*: False-discovery rate of protein identification
--   We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes.
+**Column descriptions:**
+  
+  -   *Gene name or Accession Number*
+  -   *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods.
+  -   *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing
+  -   *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)
+  -   *FDR*: False-discovery rate of protein identification
+
+We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes.
 
 ## Discussion
 
