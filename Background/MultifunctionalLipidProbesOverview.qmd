@@ -20,7 +20,7 @@ Functionalized lipid probes are at the intersection of several niche biotechnolo
 
 ## Introduction: Why Study Lipid Interactomes?
 
-At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function. Therefore, there is a need for detailed knowledge of lipid-protein interactions (the lipid interactome), in healthy and diseased cells and tissue. 
+At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often under-appreciated role in cellular function. Therefore, there is a need for detailed knowledge of lipid-protein interactions (the lipid interactome), in healthy and diseased cells and tissue. 
 
 ### Lipid-Lipid Interactions and Membrane Properties
 
@@ -52,7 +52,7 @@ To overcome these challenges, researchers have developed synthetic lipid analogs
 
 ### The Role of Synthetic Lipid Analogs
 
-To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include a photo-crosslinking group (usually a diazirine), an alkyne group for click chemistry, and a photo-removable (cage) group for preventing premature probe metabolism.:
+To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include a photo-crosslinking group (usually a diazirine), an alkyne group for click chemistry, and a photo-removable (cage) group for preventing premature probe metabolism.
 
 #### Diazirine group {#sec-Diazirine}
 
@@ -86,7 +86,7 @@ When studying proteins, researchers often use genetic methods to tag or modify t
 
 Lipids, however, cannot be modified in the same way. Their synthesis occurs enzymatically, meaning there is no genetic sequence to alter. Large additions, like a GFP or HA domain, would drastically change a lipid’s properties, making it unrecognizable to the proteins and pathways that typically interact with it. Instead, a much smaller modification is needed—one that allows researchers to track and manipulate lipids without interfering with their biological function.
 
-##### A Versatile Bioorthogonal Handle
+##### A versatile bioorthogonal handle
 
 One of the smallest and most effective modifications for this purpose is the terminal alkyne. This functional group consists of a simple triple bond at the end of a carbon chain, a minor structural change that does not significantly alter the lipid’s behavior. Despite its small size, the terminal alkyne serves as a powerful chemical handle, allowing researchers to attach various probes after the lipid has been introduced into a biological system.
 
@@ -113,7 +113,7 @@ An alternative to coumarin-based caging groups are o-nitrobenzyl.
 
 ##### Applications in Cellular Signaling Studies
 
-The power of coumarin-caged lipids has been demonstrated in studies examining intracellular lipid signaling. For example, in 2015, Högliner et al. used a caged sphingosine analog to investigate the role of sphingosine in calcium signaling. They found that upon photoactivation of the caged sphingosine, lysosomal calcium release was triggered, revealing a crucial link between sphingosine metabolism and intracellular calcium dynamics [@hoglingerIntracellularSphingosineReleases2015a]. This discovery significantly expanded the understanding of the sphingosine signaling cascade and its downstream effects.
+The power of coumarin-caged lipids has been demonstrated in studies examining intracellular lipid signaling. For example, in 2015, Höglinger et al. used a caged sphingosine analog to investigate the role of sphingosine in calcium signaling. They found that upon photoactivation of the caged sphingosine, lysosomal calcium release was triggered, revealing a crucial link between sphingosine metabolism and intracellular calcium dynamics [@hoglingerIntracellularSphingosineReleases2015a]. This discovery significantly expanded the understanding of the sphingosine signaling cascade and its downstream effects.
 
 Beyond biochemical studies, coumarin-caged lipids enable live-cell imaging approaches. Selectively irradiating specific subcellular regions allows the researcher to uncage lipids in a highly localized manner and assess their effects in real time. While this approach is not well-suited for large-scale proteomic studies, it provides a powerful method for investigating lipid function via fluorescence microscopy.
 
@@ -124,18 +124,6 @@ A unique advantage of using coumarin as a photocaging group is its intrinsic flu
 This dual functionality—serving as both a caging group and a fluorescent probe—makes coumarin a useful tool for studying lipid localization, uptake, and bioactivity.
 
 These modifications stabilize protein-lipid interactions and enable the selective enrichment of lipid-bound proteins, all while maintaining tight spatial and temporal control. Each of these tools is described in further detail below.
-
-<!--
-## Photoactivatable & Clickable Probes / Bifunctional Lipid Probes
-
- -   The conceptual precursor to the so-called trifunctional probes, these typically include only the diazirine and the terminal alkyne moieties.
-
-References to include:
-
--   [@haberkantFatFabulousBifunctional2014] - Haberkant et al. 2014 
-
-## Trifunctional Lipid Probes
--->
 
 ## Limitations of multifunctionalized lipid probes
 

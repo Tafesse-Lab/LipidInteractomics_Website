@@ -3,7 +3,8 @@ project:
   render:
     - "*.qmd"
     - "!StudyInformation_includes/"
-bibliography: TrifunctionalLipidProbes_bibliography.bib
+    - "!WeeklyTeamMeeting_notes.md"
+bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
 format-links: true
 prefer-html: true
@@ -97,3 +98,6 @@ format:
     css: Resources/styles.css
     toc: true
     sidebar: true
+  docx:
+    fig-height: 5
+    reference-doc: Resources/custom-reference-doc.docx

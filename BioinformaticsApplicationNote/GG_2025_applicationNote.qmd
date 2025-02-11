@@ -39,12 +39,7 @@ authors:
         state: OR
         postal-code: 97239
     orcid: 0000-0002-8575-4164
-format:
-  html:
-    embed-resources: true
-  docx:
-    fig-height: 5
-    reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
+
 page-navigation: false
 ---
 
@@ -72,9 +67,9 @@ The Lipid Interactome addresses this gap by providing a structured, interactive 
 
 This site can be viewed at [LipidInteractome.org](lipidinteractome.org) all data is available for download. No user information is collected or necessary for data navigation and interaction.
 
-### Data Submission
+### Data Submission & Contact
 
-If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions.
+If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions. For site feedback and additional questions, please email the site administrators at <Contact.Us@lipidinteractome.org>
 
 ### Keywords
 
@@ -151,20 +146,12 @@ While there are numerous ways to quantify the mass spectrometry (MS) data, the s
 | GeneA     |           1.2            |  0.001  | 1.0x10^18^ | 0.0001 |
 | GeneB     |           0.1            |   0.6   | 1.0x10^5^  | 0.005  |
 | ...       |           ...            |   ...   |    ...     |  ...   |
-: Example data table for smooth incorporation into Lipid Interactome. {#tbl-1 .striped}
+: **Example data table for smooth incorporation into Lipid Interactome.** ***Column descriptions:*** *Gene name*: The identifier for genes identified in the dataset (or Accession Number). *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods. *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing. *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control). *FDR*: False-discovery rate of protein identification. {#tbl-1 .striped}
 
 :::
 </br>
 
-**Column descriptions:**
-  
-  -   *Gene name or Accession Number*
-  -   *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods.
-  -   *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing
-  -   *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control)
-  -   *FDR*: False-discovery rate of protein identification
-
-We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes.
+We are working on providing visualization functionality for studies which utilized Peptide Spectral Matching to report enrichment toward lipid probes. 
 
 ## Discussion
 
@@ -186,16 +173,11 @@ LIMMA
 ANOVA
 : *An*alysis *o*f *Va*riance
 
-## Acknowledgements
+## Contributions
 
--   Andre Nadler
--   Frank Stein
--   Per Haberkant
+GG designed, implemented, and wrote the majority of the LipidInteractome site and manuscript. FS wrote the data analysis section of the site, provided significant intellectual contribution to the site design, and edited the manuscript. AN provided substantial editing of the site and manuscript. CS and FT provided significant intellectual contribution and text editing of the site and manuscript, and oversaw the site development. 
 
 ## Conflicts of Interest
 
 The authors have no conflicts of interest to declare.
 
-{{< pagebreak >}}
-
-## References
