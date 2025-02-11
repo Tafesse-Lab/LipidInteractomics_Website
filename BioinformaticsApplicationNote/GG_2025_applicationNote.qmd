@@ -13,22 +13,6 @@ copyright:
   holder: "Gaelen Guzman"
   year: 2025
 authors:
-  - name: "Fikadu Tafesse"
-    affiliations:
-      - name:  "Oregon Health & Science University"
-        address: 3222 SW Research Dr
-        city: Portland
-        state: OR
-        postal-code: 97239
-    orcid: 0000-0002-8575-4164
-  - name: "Carsten Schultz"
-    affiliations:
-      - name:  "Oregon Health & Science University"
-        address: 3222 SW Research Dr
-        city: Portland
-        state: OR
-        postal-code: 97239
-    orcid: 0000-0002-5824-2171
   - name: "Gaelen Guzman"
     affiliations:
       - name:  "Oregon Health & Science University"
@@ -39,6 +23,22 @@ authors:
     orcid: 0000-0002-7696-6034
     corresponding: true
     email: gaelen.guzman@lipidinteractome.org
+  - name: "Carsten Schultz"
+    affiliations:
+      - name:  "Oregon Health & Science University"
+        address: 3222 SW Research Dr
+        city: Portland
+        state: OR
+        postal-code: 97239
+    orcid: 0000-0002-5824-2171
+  - name: "Fikadu Tafesse"
+    affiliations:
+      - name:  "Oregon Health & Science University"
+        address: 3222 SW Research Dr
+        city: Portland
+        state: OR
+        postal-code: 97239
+    orcid: 0000-0002-8575-4164
 format:
   html:
     embed-resources: true
@@ -47,6 +47,18 @@ format:
     reference-doc: /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/Resources/custom-reference-doc.docx
 page-navigation: false
 ---
+
+:::{.content-hidden when-format="html"}
+
+___
+<br>
+
+## Authors
+
+Gaelen Guzman^1,^*, Carsten Schulz^1^, Fikadu G. Tafesse^1^
+
+^1^ = Oregon Health & Science University; * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
+:::
 
 ## Summary
 

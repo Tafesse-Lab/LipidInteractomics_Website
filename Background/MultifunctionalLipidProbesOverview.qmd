@@ -16,19 +16,19 @@ crossref:
 
 **This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
-Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and caveats of their utility. Additional resources and published review articles will be referenced and linked below for greater detail.
+Functionalized lipid probes are at the intersection of several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and limitations of their utility. Additional resources and published review articles will be referenced and linked below for greater detail.
 
 ## Introduction: Why Study Lipid Interactomes?
 
-At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function.
+At its core, biology is a complex network of chemical interactions. Every biological process—from metabolism to signaling—depends on the physical interactions between molecules, including proteins, nucleic acids, and lipids. While proteins have long been the primary focus of interaction studies, lipids play an equally crucial yet often underappreciated role in cellular function. Therefore, there is a need for detailed knowledge of lipid-protein interactions (the lipid interactome), in healthy and diseased cells and tissue. 
 
 ### Lipid-Lipid Interactions and Membrane Properties
 
-Lipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactomes, researchers can gain deeper insight into how these physical interactions influence membrane architecture and dynamics. Understanding these interactions is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.
+Lipids are primarily organized within membrane bilayers, where their interactions define critical membrane properties such as rigidity, fluidity, and resistance to detergents. By studying lipid-lipid interactions and lipid interactomes, researchers will gain deeper insight into how these molecular interactions influence local and global membrane architecture and dynamics. Understanding these interactions and interactomes is essential for unraveling fundamental processes like vesicle trafficking, cell signaling, and membrane compartmentalization.
 
 ### Lipids as Signaling Molecules
 
-Beyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. This highlights how lipid signaling can affect cellular behavior and physiological responses.
+Beyond their structural roles, many lipids have been increasingly recognized as key signaling molecules. For example, the sphingolipid sphingosine-1-phosphate (S1P) plays a pivotal role in immune function. S1P binds to a specific family of receptors, triggering T cell migration (extravasation) and guiding their movement toward sites of infection. Rapidly turned-over phosphatidylinositol 3,4,5-*tris*phosphate triggers cell survival, growth, movement, and proliferation. These examples  highlights how lipid signaling can affect cellular behavior and physiological responses.
 
 ### Lipid-Protein Interactions: Unlocking Cellular Communication
 
@@ -36,7 +36,7 @@ A single lipid species can interact with a diverse array of proteins, influencin
 
 ## Synthetic Lipid Analogs: Powerful Tools for Lipid Biology
 
-The study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are essential. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function.
+The study of lipid biology has been greatly advanced by synthetic lipid analogs. However, it may not be immediately clear why such analogs are essential research tools. Unlike proteins and nucleic acids, lipids present unique challenges that make traditional genetic tools less effective in studying their function. In addition, synthetic lipid tools are designed to provide a defined composition of fatty acids and carbon backbones connected to a specific head group while genetic and pharmacological methods are more likely to produce a diverse group of lipid species. 
 
 ### Why Lipids Require a Different Approach
 
@@ -44,17 +44,17 @@ Advances in genetic engineering—such as CRISPR and de novo gene synthesis—ha
 
 In contrast, lipids present unique challenges that make genetic approaches impractical. Unlike proteins, which are directly encoded in DNA, lipids are synthesized enzymatically. Their structures cannot be modified in living cells through genetic manipulation alone. Traditional approaches, such as gene knockouts or knock-ins, can broadly alter lipid composition but do not allow for precise control over individual lipid species.
 
-Lipids are also much smaller than proteins, often composed of just a few dozen atoms. Even minor modifications can significantly alter their biophysical properties and biological function. Unlike proteins, which can tolerate the addition of large fluorescent or affinity tags, lipids require minimal chemical modifications to preserve their activity.
+Lipids are also much smaller than proteins, often composed of just a few dozen atoms. Even minor modifications can significantly alter their biophysical properties and biological function. Unlike proteins, which can tolerate the addition of large fluorescent or affinity tags, lipids tolerate only minimal chemical modifications to preserve their activity.
 
-Additionally, lipids exist within a highly dynamic metabolic network, where they are continuously synthesized, modified, and degraded. Some signaling lipids, such as sphingosine, have extremely short half-lives—sometimes only minutes—making them difficult to track in real-time.
+Additionally, lipids exist within a highly dynamic metabolic network, where they are continuously synthesized, modified, and degraded. Some signaling lipids, such as sphingosine, ceramide, and phosphatidic acid, have extremely short half-lives -- sometimes less than a minute -— making them difficult to track in real-time.
 
 To overcome these challenges, researchers have developed synthetic lipid analogs with chemical modifications that allow for targeted investigation while preserving essential biological properties. The following sections detail key modifications used in functional lipid probes.
 
 ### The Role of Synthetic Lipid Analogs
 
-To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include:
+To overcome these challenges, researchers have developed synthetic analogs of native lipids. These modified lipids allow for precise investigation of lipid function while preserving their essential biological properties. The key modifications used in this approach include a photo-crosslinking group (usually a diazirine), an alkyne group for click chemistry, and a photo-removable (cage) group for preventing premature probe metabolism.:
 
-#### Diazirine ring {#sec-Diazirine}
+#### Diazirine group {#sec-Diazirine}
 
 Lipid-protein interactions are inherently transient and dynamic, making them particularly challenging to capture and study. Unlike protein-protein interactions, which often rely on extensive surface interfaces and hydrogen bonding, most lipids have minimal hydrogen bonding potential and lack a substantial structural framework for stable interactions. As a result, even biologically relevant lipid-protein contacts may be too fleeting to detect under standard biochemical conditions.
 
@@ -62,23 +62,23 @@ To effectively identify and analyze lipid-binding proteins, it is necessary to s
 
 ##### Why Use Diazirine as a Crosslinking Motif?
 
-Several chemical groups can be used for covalent crosslinking, but diazirine rings are particularly well-suited for lipid studies due to their small size and minimal structural interference. Other crosslinking motifs may alter the lipid’s physicochemical properties, potentially changing its interaction profile. Diazirine, however, is the smallest known photoactivatable crosslinking group, making it an ideal choice for studying delicate lipid-protein interactions.
+Several chemical groups can be used for covalent crosslinking, but diazirine rings are particularly well-suited for lipid studies due to their small size and minimal structural interference. Other crosslinking devices are mostly aromatic and hence may alter the lipid’s physicochemical properties, potentially changing its location and interaction profile. Non-aromatic diazirine, however, is the smallest known photoactivatable crosslinking group, making it an ideal choice for studying delicate lipid-protein interactions.
 
 ##### Key properties of diazirine crosslinking:
 
-Lipid interactions are typically transient, as most lipids lack opportunities for strong hydrogen bonding and are too small to provide a significant binding interface. Identifying interacting proteins requires stabilizing these interactions to allow for enrichment and analysis. While affinity-based approaches can help, covalent crosslinking is the most effective method, as it enables the removal of impurities and detergents before mass spectrometry analysis.
+Lipid interactions are typically transient, as most lipid backbones lack opportunities for strong hydrogen bonding and are too small to provide a significant binding interface. Identifying interacting proteins requires stabilizing these interactions to allow for enrichment and analysis. While affinity-based approaches can help, covalent crosslinking is the most effective method, as it enables the removal of impurities and detergents before mass spectrometry analysis.
 
-Among the various crosslinking motifs, the diazirine ring is the smallest, making it the least likely to interfere with a lipid’s natural interactions. Upon exposure to 355 nm UV light, the diazirine ring forms a reactive carbene radical, which rapidly covalently bonds with nearby molecules. This reaction is highly versatile, as the carbene can insert into carbon-hydrogen, sulfur-hydrogen, nitrogen-hydrogen, oxygen-hydrogen, or double bonds, allowing for broad coverage of potential interaction partners\[\@haberkantFatFabulousBifunctional2014\].
+Among the various crosslinking motifs, the diazirine ring is the smallest, making it the least likely to interfere with a lipid’s natural interactions. Upon exposure to 355 nm UV light, the diazirine ring forms a reactive carbene radical, which rapidly covalently bonds with nearby molecules. This reaction is highly versatile, as the carbene can insert into carbon-hydrogen, sulfur-hydrogen, nitrogen-hydrogen, oxygen-hydrogen, or double bonds, allowing for broad coverage of potential interaction partners[@haberkantFatFabulousBifunctional2014].Despite these numerous options, reaction with glutamate seems to be modestly preferred [@westDesignEvaluationCyclobutane2022]. 
 
 The small size and high reactivity of diazirine crosslinking make it an invaluable tool for capturing lipid-protein interactions while minimizing perturbations to native lipid function.
 
-##### The effect of Diazirine placement on crosslinking targets {#sec-DiazirinePlacement}
+##### The effect of diazirine placement on crosslinking targets {#sec-DiazirinePlacement}
 
 The reactive carbene produced upon irradiation will bond with whatever molecule is nearest -- thus, the location of the diazirine ring can have a dramatic effect on what protein interactors are stabilized via crosslinking.
 
-The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, [8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd) has the acyl chain only 3 carbons from the end. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.
+The majority of lipid analogs produced to date were synthesized with the diazirine ring near the terminal end of an acyl chain. For example, [8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd) has diazirine on carbon 10 of the fatty acid. These lipid analogs may be expected to preferentially crosslink to proteins which penetrate far into the hydrophobic region between the leaflets of a membrane bilayer, such as transmembrane proteins.
 
-In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is [1-10 Fatty Acid](/LipidProbe/1-10_FattyAcid.qmd), in which the diazirine ring was placed 10 carbons from the terminus of the chain.
+In comparison, moving the diazirine ring closer to the hydrophilic headgroup may increase the partiality of crosslinking towards peripheral membrane proteins in addition to transmembrane proteins. An example of this shift is [1-10 Fatty Acid](/LipidProbe/1-10_FattyAcid.qmd), in which the diazirine ring was diazirine on carbon 3 of the fatty acid.
 
 #### Terminal Alkyne {#sec-Alkyne}
 
@@ -90,26 +90,26 @@ Lipids, however, cannot be modified in the same way. Their synthesis occurs enzy
 
 One of the smallest and most effective modifications for this purpose is the terminal alkyne. This functional group consists of a simple triple bond at the end of a carbon chain, a minor structural change that does not significantly alter the lipid’s behavior. Despite its small size, the terminal alkyne serves as a powerful chemical handle, allowing researchers to attach various probes after the lipid has been introduced into a biological system.
 
-The terminal alkyne is particularly useful because it undergoes azide-alkyne cycloaddition, a type of click chemistry reaction. This reaction is highly specific, rapid, and bio-orthogonal, meaning it does not interfere with natural cellular processes. By reacting the alkyne with an azide-containing probe, researchers can introduce fluorescent markers for imaging or affinity tags for isolating lipid-protein complexes.
+The terminal alkyne is particularly useful because it undergoes azide-alkyne cycloaddition, the prototypical click chemistry reaction. This reaction is highly specific, rapid, and bio-orthogonal, meaning it does not interfere with natural cellular processes. By reacting the alkyne with an azide-containing probe, researchers can introduce fluorescent markers for imaging or affinity tags for isolating lipid-protein complexes. The reaction requires catalysis by copper (I) ions and is therefore usually not suitable for intact cells and tissues but works well in fixed or lysed samples. 
 
 ##### Applications in Lipid Research
 
-One major application of the terminal alkyne is fluorescence labeling. A functionalized lipid can be introduced into cells and later reacted with a fluorophore-conjugated azide, allowing researchers to visualize its distribution and movement under a microscope. This approach provides insights into lipid localization and trafficking.
+By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. One major application of the terminal alkyne is fluorescence labeling. A functionalized lipid can be introduced into cells and later reacted with a fluorophore-conjugated, ideally fluorogenic,  azide, allowing researchers to visualize the lipid's location in fixed cells. By using pulse-chase experiments, lipid movement is also trackable.
 
-Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.
-
-By providing a simple yet effective means of modifying lipids without disrupting their native properties, the terminal alkyne has become an essential tool in lipidomics and chemical biology. It bridges the gap between traditional lipid research and modern bioorthogonal chemistry, allowing for precise studies of lipid function in living systems.
+Another important use is affinity-based enrichment. Lipids containing a terminal alkyne can be captured using azide-functionalized beads, enabling the isolation of lipid-protein complexes after photo-crosslinking for analysis by mass spectrometry. This method has been instrumental in identifying proteins that interact with specific lipid species, shedding light on lipid signaling pathways and metabolic networks.
 
 #### Coumarin Photocage {#sec-Coumarin}
-Lipids play an essential role in cellular signaling, yet their biological study presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. This rapid turnover makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.
+Lipids play an essential role in cellular signaling which often relies on transient abundance of lipid species. Hence, studying lipids in intact cells presents unique challenges due to their highly dynamic metabolism. Unlike proteins, which are relatively stable once synthesized, many bioactive lipids are continuously synthesized, modified, interconverted, and degraded as part of an extensive and tightly regulated lipid metabolic network. Even lipids so far not associated with cellular signaling show rapid turnover, which makes it difficult to study the effects of a specific lipid species in isolation, as the lipid of interest may be enzymatically altered before it can exert its intended biological function.
 
-One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength "uncages" the analog to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.
+One strategy to overcome this challenge is using photocaged lipid analogs, which remain biologically inert until exposed to a specific wavelength of light. Irradiation with this wavelength "uncages" the lipid derivative within seconds to reveal its native structure. This allows researchers to control the timing and location of lipid activation, enabling targeted investigation of lipid function with high spatiotemporal resolution.
 
-##### A Light-Activated Protection Group
+##### A light-activated protection group
 
-One of the most effective tools for photocaging lipids is the coumarin cage, a photolabile protection group that can be removed upon exposure to 400 nm light. When attached to a lipid’s headgroup, the coumarin moiety temporarily blocks interactions with proteins, preventing the lipid from participating in its normal biological pathways. However, upon photoactivation, the coumarin group is cleaved, restoring the lipid to its native structure and allowing it to engage with its biological targets.
+One of the most effective tools for photocaging lipids is based on 7-diethylamino-4-methylene coumarin, a photolabile protection group that can be removed upon exposure to 400 nm light. When attached to a lipid’s headgroup, the coumarin moiety temporarily blocks interactions with proteins, preventing the lipid from participating in its normal biological pathways. However, upon photoactivation, the coumarin group is cleaved, restoring the lipid to its native structure and allowing it to engage with its biological targets.
 
 This approach is useful for studying lipid-protein interactions, as uncaging the lipid in a controlled manner ensures that protein binders recognize the native lipid structure only when and where the researcher intends.
+
+An alternative to coumarin-based caging groups are o-nitrobenzyl.  
 
 ##### Applications in Cellular Signaling Studies
 
