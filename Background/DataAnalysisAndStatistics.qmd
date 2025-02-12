@@ -4,10 +4,11 @@ title: "Data Analysis and Statistics"
 
 ## TMT quantitative mass spec pipeline
 
-* Studies included in this repository which used identical FRAG Pipe TMT pipeline:
-	- Thomas et al., 2025[@thomasTrifunctionalLipidDerivatives2025]
-	- Farley et al., 2024 (A)[@farleyTrifunctionalSphinganineNew2024a]
-	- Farley et al., 2024 (B)[@farleyTrifunctionalFattyAcid2024]
+Dr. Frank Stein developed and implemented the data analysis pipeline at the European Molecular Biosciences Laboratories in Heidelberg, Germany. The mass spectrometry (MS) data were processed using IsobarQuant[@mateusThermalProteomeProfiling2016] and Mascot V.24 (Matrix Science), following the methodology previously described by Farley et al. (2024, A), Farley et al. (2024, B), and Thomas et al (2025)[@farleyTrifunctionalSphinganineNew2024a; @farleyTrifunctionalFattyAcid2024; @thomasTrifunctionalLipidDerivatives2025]. To ensure robust protein identification, the analysis utilized a reverse UniProt FASTA database that included common contaminants. Proteins were only included in the final analysis if they contained at least two unique peptides, each with a minimum length of seven amino acids, and met a stringent false discovery rate (FDR) threshold of 0.01.
+
+The acquired MS spectra were searched for specific peptide modifications, including fixed modifications (carbamidomethylation of cysteine and TMT-16-plex labeling of lysine) and variable modifications (N-terminal acetylation, methionine oxidation, and N-terminal TMT-16-plex labeling). Mass error tolerances were set to 10 ppm for full-scan MS spectra and 0.02 Da for MS/MS spectra, with a maximum of two missed cleavage sites permitted. To correct for batch effects across experimental replicates, a variance stabilization normalization was applied to log~2~-transformed raw data[@huberVarianceStabilizationApplied2002]. Changes in protein abundance between experimental and control conditions were assessed using LIMMA analysis[@ritchieLimmaPowersDifferential2015].
+
+For the protein-lipid probe interaction experiments presented here (+/- UV exposure), proteins were classified as "enriched hits” if they showed at least a log~2~ fold-change of 1 toward the +UV condition with a p-value < 0.05. Proteins enriched under +UV conditions but with p-values > 0.05 were labeled as “enriched candidates.”
 
 ## PSM quantitative mass spec analysis
 
@@ -15,3 +16,4 @@ title: "Data Analysis and Statistics"
 	- Hoglinger et al., 2017[@hoglingerTrifunctionalLipidProbes2017]
 	- Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
 
+* Need these details.

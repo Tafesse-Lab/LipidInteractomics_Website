@@ -370,23 +370,19 @@ div.csl-indent {
 
 <section id="tmt-quantitative-mass-spec-pipeline" class="level2">
 <h2 class="anchored" data-anchor-id="tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</h2>
-<ul>
-<li>Studies included in this repository which used identical FRAG Pipe TMT pipeline:
-<ul>
-<li>Thomas et al., 2025<span class="citation" data-cites="thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">1</a></sup></span></li>
-<li>Farley et al., 2024 (A)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">2</a></sup></span></li>
-<li>Farley et al., 2024 (B)<span class="citation" data-cites="farleyTrifunctionalFattyAcid2024"><sup><a href="#ref-farleyTrifunctionalFattyAcid2024" role="doc-biblioref">3</a></sup></span></li>
-</ul></li>
-</ul>
+<p>Dr.&nbsp;Frank Stein developed and implemented the data analysis pipeline at the European Molecular Biosciences Laboratories in Heidelberg, Germany. The mass spectrometry (MS) data were processed using IsobarQuant<span class="citation" data-cites="mateusThermalProteomeProfiling2016"><sup><a href="#ref-mateusThermalProteomeProfiling2016" role="doc-biblioref">1</a></sup></span> and Mascot V.24 (Matrix Science), following the methodology previously described by Farley et al.&nbsp;(2024, A), Farley et al.&nbsp;(2024, B), and Thomas et al (2025)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">2</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">4</a></sup></span>. To ensure robust protein identification, the analysis utilized a reverse UniProt FASTA database that included common contaminants. Proteins were only included in the final analysis if they contained at least two unique peptides, each with a minimum length of seven amino acids, and met a stringent false discovery rate (FDR) threshold of 0.01.</p>
+<p>The acquired MS spectra were searched for specific peptide modifications, including fixed modifications (carbamidomethylation of cysteine and TMT-16-plex labeling of lysine) and variable modifications (N-terminal acetylation, methionine oxidation, and N-terminal TMT-16-plex labeling). Mass error tolerances were set to 10 ppm for full-scan MS spectra and 0.02 Da for MS/MS spectra, with a maximum of two missed cleavage sites permitted. To correct for batch effects across experimental replicates, a variance stabilization normalization was applied to log<sub>2</sub>-transformed raw data<span class="citation" data-cites="huberVarianceStabilizationApplied2002"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a></sup></span>. Changes in protein abundance between experimental and control conditions were assessed using LIMMA analysis<span class="citation" data-cites="ritchieLimmaPowersDifferential2015"><sup><a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>.</p>
+<p>For the protein-lipid probe interaction experiments presented here (+/- UV exposure), proteins were classified as “enriched hits” if they showed at least a log<sub>2</sub> fold-change of 1 toward the +UV condition with a p-value &lt; 0.05. Proteins enriched under +UV conditions but with p-values &gt; 0.05 were labeled as “enriched candidates.”</p>
 </section>
 <section id="psm-quantitative-mass-spec-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="psm-quantitative-mass-spec-analysis">PSM quantitative mass spec analysis</h2>
 <ul>
 <li>Studies included in this repository which used a PSM-based analysis pipeline
 <ul>
-<li>Hoglinger et al., 2017<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">4</a></sup></span></li>
-<li>Muller et al., 2021<span class="citation" data-cites="mullerSynthesisCellularLabeling2021"><sup><a href="#ref-mullerSynthesisCellularLabeling2021" role="doc-biblioref">5</a></sup></span></li>
+<li>Hoglinger et al., 2017<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">7</a></sup></span></li>
+<li>Muller et al., 2021<span class="citation" data-cites="mullerSynthesisCellularLabeling2021"><sup><a href="#ref-mullerSynthesisCellularLabeling2021" role="doc-biblioref">8</a></sup></span></li>
 </ul></li>
+<li>Need these details.</li>
 </ul>
 
 
@@ -394,8 +390,8 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+<div id="ref-mateusThermalProteomeProfiling2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Mateus, A., Määttä, T. A. &amp; Savitski, M. M. <a href="https://doi.org/10.1186/s12953-017-0122-4">Thermal proteome profiling: Unbiased assessment of protein state through heat-induced stability changes</a>. <em>Proteome Sci</em> <strong>15</strong>, 13 (2016).</div>
 </div>
 <div id="ref-farleyTrifunctionalSphinganineNew2024a" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
@@ -403,11 +399,20 @@ div.csl-indent {
 <div id="ref-farleyTrifunctionalFattyAcid2024" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
 </div>
+<div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-huberVarianceStabilizationApplied2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Huber, W., Von Heydebreck, A., Sültmann, H., Poustka, A. &amp; Vingron, M. <a href="https://doi.org/10.1093/bioinformatics/18.suppl_1.S96">Variance stabilization applied to microarray data calibration and to the quantification of differential expression</a>. <em>Bioinformatics</em> <strong>18</strong>, S96–S104 (2002).</div>
+</div>
+<div id="ref-ritchieLimmaPowersDifferential2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Ritchie, M. E. <em>et al.</em> <a href="https://doi.org/10.1093/nar/gkv007">Limma powers differential expression analyses for <span class="nocase">RNA-sequencing</span> and microarray studies</a>. <em>Nucleic Acids Research</em> <strong>43</strong>, e47–e47 (2015).</div>
+</div>
 <div id="ref-hoglingerTrifunctionalLipidProbes2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
 </div>
 <div id="ref-mullerSynthesisCellularLabeling2021" class="csl-entry" role="listitem">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Müller, R., Kojic, A., Citir, M. &amp; Schultz, C. <a href="https://doi.org/10.1002/anie.202103599">Synthesis and <span>Cellular Labeling</span> of <span>Multifunctional Phosphatidylinositol Bis</span>‐ and <span>Trisphosphate Derivatives</span></a>. <em>Angew Chem Int Ed</em> <strong>60</strong>, 19759–19765 (2021).</div>
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Müller, R., Kojic, A., Citir, M. &amp; Schultz, C. <a href="https://doi.org/10.1002/anie.202103599">Synthesis and <span>Cellular Labeling</span> of <span>Multifunctional Phosphatidylinositol Bis</span>‐ and <span>Trisphosphate Derivatives</span></a>. <em>Angew Chem Int Ed</em> <strong>60</strong>, 19759–19765 (2021).</div>
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

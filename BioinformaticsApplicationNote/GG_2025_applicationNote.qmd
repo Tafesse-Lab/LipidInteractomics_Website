@@ -141,12 +141,12 @@ While there are numerous ways to quantify the mass spectrometry (MS) data, the s
 
 :::{.border}
 
-| Gene name | Enrichment value (logFC) | p value |  AveExpr   |  FDR   |
+| Gene name | logFC | p value |  AveExpr   |  FDR   |
 |:----------|:------------------------:|:-------:|:----------:|:------:|
 | GeneA     |           1.2            |  0.001  | 1.0x10^18^ | 0.0001 |
 | GeneB     |           0.1            |   0.6   | 1.0x10^5^  | 0.005  |
 | ...       |           ...            |   ...   |    ...     |  ...   |
-: **Example data table for smooth incorporation into Lipid Interactome.** ***Column descriptions:*** *Gene name*: The identifier for genes identified in the dataset (or Accession Number). *Enrichment value*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods. *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing. *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control). *FDR*: False-discovery rate of protein identification. {#tbl-1 .striped}
+: **Example data table for smooth incorporation into Lipid Interactome.** ***Column descriptions:*** *Gene name*: The identifier for genes identified in the dataset (or Accession Number). *logFC*: Fold change of Experimental versus Control fold-change, typically log2-transformed -- ideally the product of TMT or other quantitative mass spectrometry methods. *p value*: the results of an ANOVA or LIMMA analysis, corrected for multiple hypothesis testing. *AveExpr*: An averaged value of the m/z ion intensity of the Experimental condition and Control condition used for the enrichment value (used to prepare MA plots for quality control). *FDR*: False-discovery rate of protein identification. {#tbl-1 .striped}
 
 :::
 </br>
