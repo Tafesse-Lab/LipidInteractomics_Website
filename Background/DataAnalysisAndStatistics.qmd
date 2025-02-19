@@ -13,11 +13,11 @@ For the protein-lipid probe interaction experiments (+/- UV exposure), proteins 
 
 To better understand the biological significance of the detected proteins, we conducted gene ontology (GO) enrichment analysis using the 'compareCluster' function from the 'clusterProfiler' package[@yuClusterProfilerPackageComparing2012]. This method evaluates whether specific GO terms are overrepresented in the dataset compared to a background gene set. We performed enrichment analysis for three GO categories: Cellular Component (CC), Molecular Function (MF), and Biological Process (BP). The reference database used was 'org.Pf.plasmo.db.' To quantify enrichment, we calculated the odds ratio by comparing the proportion of genes associated with each GO term in our dataset ('GeneRatio') with the proportion in the reference background set ('BgRatio'). A value greater than 1 suggests that a given GO term is more prevalent in our dataset than expected by chance.
 
-
+<!-- 
 ## PSM quantitative mass spec analysis
 
 * Studies included in this repository which used a PSM-based analysis pipeline
 	- Hoglinger et al., 2017[@hoglingerTrifunctionalLipidProbes2017]
 	- Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
 
-* Need these details.
+* Need these details. -->

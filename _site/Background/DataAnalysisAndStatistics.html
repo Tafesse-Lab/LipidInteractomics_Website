@@ -342,7 +342,6 @@ div.csl-indent {
    
   <ul>
   <li><a href="#tmt-quantitative-mass-spec-pipeline" id="toc-tmt-quantitative-mass-spec-pipeline" class="nav-link active" data-scroll-target="#tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</a></li>
-  <li><a href="#psm-quantitative-mass-spec-analysis" id="toc-psm-quantitative-mass-spec-analysis" class="nav-link" data-scroll-target="#psm-quantitative-mass-spec-analysis">PSM quantitative mass spec analysis</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="DataAnalysisAndStatistics.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -374,17 +373,14 @@ div.csl-indent {
 <p>To account for potential technical variations across experiments, we applied a normalization step using the ‘removeBatchEffect’ function from the limma package, stabilizing variance in log2-transformed TMT reporter ion intensities<span class="citation" data-cites="huberVarianceStabilizationApplied2002 ritchieLimmaPowersDifferential2015"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a>,<a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>. Further normalization was carried out using the ‘normalizeVSN’ function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the ‘lmFit’ function.</p>
 <p>For the protein-lipid probe interaction experiments (+/- UV exposure), proteins were categorized based on their enrichment in the +UV condition. Proteins showing a log2 fold-change of at least 1 and a p-value below 0.05 were classified as “enriched hits,” while those showing similar enrichment trends but with p-values above 0.05 were labeled as “enriched candidates.”</p>
 <p>To better understand the biological significance of the detected proteins, we conducted gene ontology (GO) enrichment analysis using the ‘compareCluster’ function from the ‘clusterProfiler’ package<span class="citation" data-cites="yuClusterProfilerPackageComparing2012"><sup><a href="#ref-yuClusterProfilerPackageComparing2012" role="doc-biblioref">7</a></sup></span>. This method evaluates whether specific GO terms are overrepresented in the dataset compared to a background gene set. We performed enrichment analysis for three GO categories: Cellular Component (CC), Molecular Function (MF), and Biological Process (BP). The reference database used was ‘org.Pf.plasmo.db.’ To quantify enrichment, we calculated the odds ratio by comparing the proportion of genes associated with each GO term in our dataset (‘GeneRatio’) with the proportion in the reference background set (‘BgRatio’). A value greater than 1 suggests that a given GO term is more prevalent in our dataset than expected by chance.</p>
-</section>
-<section id="psm-quantitative-mass-spec-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="psm-quantitative-mass-spec-analysis">PSM quantitative mass spec analysis</h2>
-<ul>
-<li>Studies included in this repository which used a PSM-based analysis pipeline
-<ul>
-<li>Hoglinger et al., 2017<span class="citation" data-cites="hoglingerTrifunctionalLipidProbes2017"><sup><a href="#ref-hoglingerTrifunctionalLipidProbes2017" role="doc-biblioref">8</a></sup></span></li>
-<li>Muller et al., 2021<span class="citation" data-cites="mullerSynthesisCellularLabeling2021"><sup><a href="#ref-mullerSynthesisCellularLabeling2021" role="doc-biblioref">9</a></sup></span></li>
-</ul></li>
-<li>Need these details.</li>
-</ul>
+<!-- 
+## PSM quantitative mass spec analysis
+
+* Studies included in this repository which used a PSM-based analysis pipeline
+    - Hoglinger et al., 2017[@hoglingerTrifunctionalLipidProbes2017]
+    - Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
+
+* Need these details. -->
 
 
 
@@ -411,12 +407,6 @@ div.csl-indent {
 </div>
 <div id="ref-yuClusterProfilerPackageComparing2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">7. </div><div class="csl-right-inline">Yu, G., Wang, L.-G., Han, Y. &amp; He, Q.-Y. <a href="https://doi.org/10.1089/omi.2011.0118"><span class="nocase">clusterProfiler</span>: An <span>R Package</span> for <span>Comparing Biological Themes Among Gene Clusters</span></a>. <em>OMICS: A Journal of Integrative Biology</em> <strong>16</strong>, 284–287 (2012).</div>
-</div>
-<div id="ref-hoglingerTrifunctionalLipidProbes2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline">Höglinger, D. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.1611096114">Trifunctional lipid probes for comprehensive studies of single lipid species in living cells</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>114</strong>, 1566–1571 (2017).</div>
-</div>
-<div id="ref-mullerSynthesisCellularLabeling2021" class="csl-entry" role="listitem">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline">Müller, R., Kojic, A., Citir, M. &amp; Schultz, C. <a href="https://doi.org/10.1002/anie.202103599">Synthesis and <span>Cellular Labeling</span> of <span>Multifunctional Phosphatidylinositol Bis</span>‐ and <span>Trisphosphate Derivatives</span></a>. <em>Angew Chem Int Ed</em> <strong>60</strong>, 19759–19765 (2021).</div>
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
