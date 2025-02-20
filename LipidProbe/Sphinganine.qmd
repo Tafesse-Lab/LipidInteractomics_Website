@@ -1,5 +1,6 @@
 ---
 title: "Trifunctional sphinganine"
+prefer-html: true
 ---
 
 ## Structure

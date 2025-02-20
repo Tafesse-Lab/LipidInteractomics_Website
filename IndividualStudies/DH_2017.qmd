@@ -24,11 +24,14 @@ library(DT)
 library(stringr)
 library(pheatmap)
 library(here)
+library(heatmaply)
+library(ggvenn)
+library(scales)
 
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
-DH_2017_data <- read.csv("DataTables/DH_PNAS_2017_download.csv") |>
+DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_2017_download.csv")) |>
   mutate(gene_name = str_extract(Description, "GN=([^\\s]+)") |> str_remove("GN=")) |>
   mutate(Species = str_extract(Description, "OS=([^=]+?)\\sGN=") |> str_remove("OS=") |> str_remove("GN=")) |>
   filter(Species == "Homo sapiens ") |>
@@ -36,9 +39,11 @@ DH_2017_data <- read.csv("DataTables/DH_PNAS_2017_download.csv") |>
          PSM_FA = (PSM_FA1 + PSM_FA2) / 2,
          PSM_DAG = (PSM_DAG1 + PSM_DAG2) /2) |>
   select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
-  
-  glimpse() 
-
+  arrange(gene_name) |>
+  group_by(gene_name) |>
+  summarise(PSM_DAG = mean(PSM_DAG),
+            PSM_FA = mean(PSM_FA),
+            PSM_Sph = mean(PSM_Sph))
 ```
 
 
@@ -51,43 +56,63 @@ DH_2017_data <- read.csv("DataTables/DH_PNAS_2017_download.csv") |>
 ## Data visualization
 
 #### Heat map
+:::{.border}
+```{r, echo=FALSE, fig.height=10}
 
-```{r, echo=FALSE, warning=FALSE, fig.height=15}
+DH_2017_data_long <- DH_2017_data |>
+  pivot_longer(cols = starts_with("PSM_"),
+              names_to = "variable",
+              names_prefix = "PSM_",
+              values_to = "value") |>
+  mutate(name = gene_name) |>
+  select(name, variable, value)
+  # mutate(OriginalValues = value) |>
+  # mutate(value = case_when(value < 20 ~ value,
+  #                           value >= 20 ~ 20))
+  
+DH_2017_data_long$variable <- factor(pull(DH_2017_data_long, variable), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
 
-DH_2017_data_long <- read.csv("DataTables/DH_PNAS_2017_long.csv") |>
-  mutate(PSM = value, sample = name) |>
-  group_by(gene_name, sample) |>
-  summarise(PSM = mean(PSM, na.rm = TRUE), .groups = "drop") |>
-  distinct()
-
-DH_2017_data_long$sample <- factor(pull(DH_2017_data_long, sample), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
-
-heatmap <- DH_2017_data_long |>
-  ggplot(aes(y = gene_name, x = sample)) +
-  theme(panel.border = element_rect(color = NA, fill = "grey25")) +
-  geom_tile(aes(fill = PSM, text = paste0("Gene name: ", gene_name, '\n', "Lipid Probe:", sample, "\n", "PSM: ", PSM))) +
-  scale_fill_gradientn(colors = c("grey95", "purple", "orange"),
-  values = scales::rescale(c(0, 10, 25))) +
-  ylab("Gene") +
-  xlab("Lipid Probe") +
-  theme_minimal() +
-  theme(text = element_text(family = "serif")) +
-  theme(legend.title = element_text(size = 12, face = "bold")) +
-  theme(axis.title = element_text(size = 12, face = "bold")) +
-  theme(legend.text = element_text(size = 12))
-
-m <- list(l=50, r = 50, b= 100, pad = 4)
-
-ggplotly(heatmap,
-        tooltip = c("text", dynamicTicks = TRUE),
-        hovermode = "closest",
-        autosize = T,
-        margin = m) |>
-  layout(showlegend = FALSE)
+# Create the heatmap
+heatmaply(long_data = DH_2017_data_long,
+          xlab = "Probe",
+          ylab = "Gene name",
+          label_names = c("Gene name", "Probe", "PSM count"),
+          scale_fill_gradient_fun = ggplot2::scale_fill_gradientn(colours = c("grey95", "purple", "orange", "orange", "orange", "orange", "orange", "red", "red","red"), breaks = c(0, 5, 20, 200)),
+          showticklabels = F)
 
 ```
+:::
+
+<hr>
 
 #### Venn Diagram
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE, height = 5}
+
+# Ensure the data is in the correct format
+DH_2017_data <- as.data.frame(DH_2017_data)
+rownames(DH_2017_data) <- DH_2017_data[,1]
+DH_2017_data[,1] <- NULL
+
+Sph_proteins <- DH_2017_data |>
+  filter(PSM_Sph > 0) |>
+  select(PSM_Sph)
+
+FA_proteins <- DH_2017_data |>
+  filter(PSM_FA > 0) |>
+  select(PSM_FA)
+
+DAG_proteins <- DH_2017_data |>
+  filter(PSM_DAG > 0) |>
+  select(PSM_DAG)
+
+combined_venn_proteins <- list("Sph proteins" = rownames(Sph_proteins), "FA proteins" = rownames(FA_proteins), "DAG proteins" = rownames(DAG_proteins))
+
+ggvenn(combined_venn_proteins)
+
+```
+:::
 
 ## Data download
 

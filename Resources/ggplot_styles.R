@@ -5,11 +5,16 @@ library(ggrepel)
 library(emojifont)
 library(dplyr)
 library(tidyr)
+library(docstring)
 
 # Define a helper function that safely applies abs()
 safe_abs <- function(x, default = NA) {
+  #' Performs some error handling in the event of NA in joined datasets -- intended to be used while finding the limits of ggplots, as in VolcanoPlotStandardized.
+  #' Takes an input, tries to coerce it into a numeric, performs the abs() operation on it
+  #' Returns an input default value so the user can use trial and error.
+ 
   tryCatch({
-    # Ensure that x is numeric before taking abs()
+    # Ensures that x is numeric before taking abs()
     abs(as.numeric(x))
   }, error = function(e) {
     default
@@ -17,17 +22,25 @@ safe_abs <- function(x, default = NA) {
 }
 
 safe_log10 <- function(x, default = NA) {
-    tryCatch({
-        # Ensure that x is numeric before taking log10()
+  #' Takes an input, tries to coerce it into a numeric, performs the  log10() operation on it
+  #' Performs some error handling in the event of NA in joined datasets -- intended to be used while finding the limits of ggplots, as in VolcanoPlotStandardized.
+  #' Returns an input default value so the user can use trial and error.
+  
+     tryCatch({
+        # Ensures that x is numeric before taking log10()
         log10(as.numeric(x))
     }, error = function(e) {
         default
     })
 }
 
-# A standardized MA plot function
+
 
 MAStandard <- function(data) {
+    #' A standardized MA plot function
+    #' Receives a dataframe. Needs to have the following columns for the aes() to work: AveExpr, logFC, hit_annotation, gene_name.
+    #' Dynamically determines the limits of the plot under the scale_x/y_scontinuous calls
+    #' Produces first a facet-wrapped ggplot, then converts it to a plotly plot.
 
     MAPlots <- data |>
         ggplot(aes(x = AveExpr,
@@ -39,11 +52,12 @@ MAStandard <- function(data) {
                    size = factor(hit_annotation))) +
         geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
                                     "LogFC: ", logFC, "\n",
-                                    "p-value: ", pvalue, "\n"))) +
+                                    "p-value: ", pvalue, "\n",
+                                    "AveExper: ", AveExpr, "\n"))) +
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
-        scale_x_continuous(limits=c(0.9 * min(abs(data$AveExpr)), 1.1* max(abs(data$AveExpr))))+
-        scale_y_continuous(limits=c(-1.1 * max(abs(data$logFC)), 1.1* max(abs(data$logFC))))+
+        scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+
+        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 1.1 * max(abs(data$logFC))))+
         scale_shape_manual(values = c("enriched hit" = 21,
                                     "hit" = 21,
                                     "enriched candidate" = 24,

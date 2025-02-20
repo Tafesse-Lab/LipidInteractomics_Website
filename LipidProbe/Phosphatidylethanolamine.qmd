@@ -1,5 +1,6 @@
 ---
 title: "Trifunctional Phosphatidylethanolamine"
+prefer-html: true
 ---
 
 

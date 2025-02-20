@@ -1,5 +1,6 @@
 ---
 title: "Trifunctional Phosphatidic Acid"
+prefer-html: true
 ---
 
 
