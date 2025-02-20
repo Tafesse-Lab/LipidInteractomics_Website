@@ -4,9 +4,10 @@ library(ggplot2)
 library(plotly)
 library(readr)
 library(shiny)
+library(here)
 
 # File path for testing
-df <- read_csv("LipidProbe/DataSets/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv")
+df <- read_csv(paste0(here(), "/ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))
 
 # File path for deploying to Shinyapps.io
 #df <- read_csv("combinedProbeDatasets_TMT.csv")
@@ -20,13 +21,11 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       selectInput("probe1", "Select First LipidProbe:", choices = probeOptions, selected = probeOptions[1]),
-      selectInput("probe2", "Select Second LipidProbe:", choices = probeOptions, selected = probeOptions[2]),
-			selectInput("probe3", "Select Third LipidProbe (Beta):", choices = probeOptions, selected = probeOptions[3])
+      selectInput("probe2", "Select Second LipidProbe:", choices = probeOptions, selected = probeOptions[2])
     ),
     mainPanel(
       plotlyOutput("logFCPlot"),
 
-			plotlyOutput("logFCPlot3dDemo")
     )
   )
 )

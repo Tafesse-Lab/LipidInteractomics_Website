@@ -8,8 +8,9 @@ library(amVennDiagram5)
 library(ggVennDiagram)
 library(VennDiagram)
 library(ggvenn)
+library(here)
 
-Venn_df <- read_csv("/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/LipidProbe/DataSets/LipidInteractomics_VennDiagramsApp/combinedProbeDatasets_VennDiagram.csv")
+Venn_df <- read_csv(paste0(here(), "/ShinyApps/LipidInteractomics_VennDiagramsApp/combinedProbeDatasets_VennDiagram.csv"))
 
 probeOptions <- unique(Venn_df$LipidProbe)
 

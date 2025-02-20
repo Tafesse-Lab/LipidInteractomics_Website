@@ -7,7 +7,7 @@ format:
 standalone: false
 ---
 <!-- R setup, reading data tables, wrangling data -->
-```{r setup, echo=FALSE, include=FALSE}
+```{r setup, echo=FALSE, include=FALSE, warning=FALSE}
 
 ## intitialize libraries
 library(dplyr)
@@ -57,7 +57,7 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
 
 #### Heat map
 :::{.border}
-```{r, echo=FALSE, fig.height=10}
+```{r, echo=FALSE, fig.height=10, warning=FALSE}
 
 DH_2017_data_long <- DH_2017_data |>
   pivot_longer(cols = starts_with("PSM_"),
@@ -88,31 +88,77 @@ heatmaply(long_data = DH_2017_data_long,
 #### Venn Diagram
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE, height = 5}
+```{r, echo=FALSE, warning=FALSE, width = 8}
 
 # Ensure the data is in the correct format
-DH_2017_data <- as.data.frame(DH_2017_data)
-rownames(DH_2017_data) <- DH_2017_data[,1]
-DH_2017_data[,1] <- NULL
+DH_2017_data_AddingRownames <- as.data.frame(DH_2017_data)
+rownames(DH_2017_data_AddingRownames) <- DH_2017_data_AddingRownames[,1]
+DH_2017_data_AddingRownames[,1] <- NULL
 
-Sph_proteins <- DH_2017_data |>
+Sph_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_Sph > 0) |>
   select(PSM_Sph)
 
-FA_proteins <- DH_2017_data |>
+FA_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_FA > 0) |>
   select(PSM_FA)
 
-DAG_proteins <- DH_2017_data |>
+DAG_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_DAG > 0) |>
   select(PSM_DAG)
 
+
 combined_venn_proteins <- list("Sph proteins" = rownames(Sph_proteins), "FA proteins" = rownames(FA_proteins), "DAG proteins" = rownames(DAG_proteins))
 
-ggvenn(combined_venn_proteins)
+ggvenn <- ggvenn(combined_venn_proteins,
+                      show_percentage = FALSE,
+                      show_elements = FALSE,
+                      fill_color = c("orange", "purple", "blue")) +
+        labs(x = "", y = "") +
+        theme_minimal()
+
+ggvenn
 
 ```
+
+```{r, echo=FALSE, warning=FALSE}
+
+DH_2017_data <- DH_2017_data |>
+  mutate(VennRegion = case_when(
+    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to all probes",
+    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA == 0) ~ "Enriched to Sph only",
+    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to DAG only",
+    (PSM_Sph == 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to FA only",
+    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to Sph and DAG",
+    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to Sph and FA",
+    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to DAG and FA")) 
+
+
+DH_2017_data$VennRegion <- factor(pull(DH_2017_data, VennRegion), ordered = TRUE, levels = c("Enriched to Sph only", "Enriched to DAG only", "Enriched to FA only", "Enriched to Sph and DAG", "Enriched to Sph and FA", "Enriched to DAG and FA", "Enriched to all probes"))
+
+DH_2017_data_reactive <- crosstalk::SharedData$new(DH_2017_data)
+
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "Overlap",
+                  label = "Select overlap regions to see co-enriched proteins:",
+                  sharedData = DH_2017_data_reactive,
+                  group = ~VennRegion,
+                  inline = TRUE)
+)
+
+
+## Displays the reactive dataframe
+datatable(DH_2017_data_reactive, options = list(pageLength = 20))
+
+
+```
+
 :::
+
+
+
 
 ## Data download
 

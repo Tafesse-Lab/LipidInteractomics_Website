@@ -237,7 +237,7 @@
     "href": "IndividualStudies/DH_2017.html#data-visualization",
     "title": "Höglinger et al. 2017",
     "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\n\n\n\nWarning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object '/Library/Frameworks/R.framework/Resources/modules//R_X11.so':\n  dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 0x0006): Library not loaded: /opt/X11/lib/libSM.6.dylib\n  Referenced from: &lt;31EADEB5-0A17-3546-9944-9B3747071FE8&gt; /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/modules/R_X11.so\n  Reason: tried: '/opt/X11/lib/libSM.6.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/X11/lib/libSM.6.dylib' (no such file), '/opt/X11/lib/libSM.6.dylib' (no such file), '/Library/Frameworks/R.framework/Resources/lib/libSM.6.dylib' (no such file), '/Library/Java/JavaVirtualMachines/jdk-11.0.18+10/Contents/Home/lib/server/libSM.6.dylib' (no such file)\n\n\n\n\n\n\n\n\n\n\nVenn Diagram",
+    "text": "Data visualization\n\nHeat map\n\n\n\n\n\n\n\n\n\n\n\nVenn Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect overlap regions to see co-enriched proteins:\n\n\n\nEnriched to Sph only\n\n\n\nEnriched to DAG only\n\n\n\nEnriched to Sph and DAG\n\n\n\nEnriched to Sph and FA\n\n\n\nEnriched to DAG and FA\n\n\n\nEnriched to all probes",
     "crumbs": [
       "Overview of Interactomics Studies",
       "Höglinger et al., 2017"
