@@ -108,12 +108,53 @@ RankedOrderPlotStandard(AT_2025_ranked)
 print("Data not yet provided.")
 
 ```
-
+:::
 :::
 
 
+## Gene Ontology enrichment
 
-##### Data
+**In beta: GO analysis still under development**
+
+::: {.panel-tabset}
+
+#### Cell Compartment
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(CC_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(CC_enrichment_plots(AT_2025_Long, "cnet"))
+```
+:::
+
+#### Molecular Function
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(MF_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(MF_enrichment_plots(AT_2025_Long, "cnet"))
+
+```
+:::
+
+#### Biological Process
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(BP_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(BP_enrichment_plots(AT_2025_Long, "cnet"))
+
+```
+:::
+:::
+
+## Data exploration and download
 
 Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
 
@@ -123,7 +164,7 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 AT_2025_Long <- AT_2025_Long |>
-  select(gene_name, hit_annotation, logFC, pvalue) |>
+  dplyr::select(gene_name, hit_annotation, logFC, pvalue) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
   arrange(hit_annotation)
@@ -152,4 +193,3 @@ datatable(AT_2025_Long_reactive,
 
 {{< downloadthis DataSets/PE_HeLa_AT_2025.csv dname="PE_HeLa_AT_ChemComm_download.csv">}}
 
-:::

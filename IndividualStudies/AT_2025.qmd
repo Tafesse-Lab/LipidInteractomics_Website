@@ -113,6 +113,49 @@ print("Data not yet provided.")
 :::
 
 
+## Gene Ontology enrichment
+
+**In beta: GO analysis still under development**
+
+::: {.panel-tabset}
+
+#### Cell Compartment
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(CC_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(CC_enrichment_plots(AT_2025_Long, "cnet"))
+```
+:::
+
+#### Molecular Function
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(MF_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(MF_enrichment_plots(AT_2025_Long, "cnet"))
+
+```
+:::
+
+#### Biological Process
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+suppressMessages(BP_enrichment_plots(AT_2025_Long, "dot"))
+
+suppressMessages(BP_enrichment_plots(AT_2025_Long, "cnet"))
+
+```
+:::
+
+:::
+
 
 ## Enriched proteins
 
@@ -146,6 +189,7 @@ datatable(AT_2025_Long_reactive, options = list(pageLength = 20))
 
 ```
 :::
+
 
 ## Data download
 

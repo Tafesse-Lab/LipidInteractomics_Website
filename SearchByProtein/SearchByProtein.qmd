@@ -19,7 +19,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 data <- read_csv(paste0(here(), "/SearchByProtein/combinedProbeDatasets_TMT.csv"))
 
 datawhole <- data |>
-	select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+	dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
 	mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
 					Study = case_when(LipidProbe == "1-10 FA" ~ "Farley et al. 2024 B; DOI: 10.1021/acschembio.3c00554",

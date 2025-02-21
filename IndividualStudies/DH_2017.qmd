@@ -22,12 +22,10 @@ library(gt)
 library(crosstalk)
 library(DT)
 library(stringr)
-library(pheatmap)
 library(here)
 library(heatmaply)
 library(ggvenn)
 library(scales)
-
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
@@ -38,7 +36,7 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
   mutate(PSM_Sph = (PSM_Sph1 + PSM_Sph2) / 2,
          PSM_FA = (PSM_FA1 + PSM_FA2) / 2,
          PSM_DAG = (PSM_DAG1 + PSM_DAG2) /2) |>
-  select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
+  dplyr::select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
   arrange(gene_name) |>
   group_by(gene_name) |>
   summarise(PSM_DAG = mean(PSM_DAG),
@@ -56,6 +54,8 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
 ## Data visualization
 
 #### Heat map
+
+Depicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.
 :::{.border}
 ```{r, echo=FALSE, fig.height=10, warning=FALSE}
 
@@ -65,7 +65,7 @@ DH_2017_data_long <- DH_2017_data |>
               names_prefix = "PSM_",
               values_to = "value") |>
   mutate(name = gene_name) |>
-  select(name, variable, value)
+  dplyr::select(name, variable, value)
   # mutate(OriginalValues = value) |>
   # mutate(value = case_when(value < 20 ~ value,
   #                           value >= 20 ~ 20))
@@ -97,15 +97,15 @@ DH_2017_data_AddingRownames[,1] <- NULL
 
 Sph_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_Sph > 0) |>
-  select(PSM_Sph)
+  dplyr::select(PSM_Sph)
 
 FA_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_FA > 0) |>
-  select(PSM_FA)
+  dplyr::select(PSM_FA)
 
 DAG_proteins <- DH_2017_data_AddingRownames |>
   filter(PSM_DAG > 0) |>
-  select(PSM_DAG)
+  dplyr::select(PSM_DAG)
 
 
 combined_venn_proteins <- list("Sph proteins" = rownames(Sph_proteins), "FA proteins" = rownames(FA_proteins), "DAG proteins" = rownames(DAG_proteins))

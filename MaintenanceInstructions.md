@@ -2,12 +2,6 @@
 title: "Maintenance Instructions"
 author: "Gaelen Guzman"
 date: 2025/01/09
-format: 
-  html:
-    embed-resources: true
-standalone: true
-meta:
-  robots: "noindex"
 ---
 
 ## Site Organization
@@ -26,9 +20,7 @@ This site was built using Quarto. This is a form of R Markdown that is highly do
 
 The overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of [Bootswatch](https://bootswatch.com/){target="_blank"} themes, or if you're feeling ambitious you can design your own theme.
 
-When making updates to the site, one first edits/makes a file, then you use the Bash command "quarto render". This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it's nicest to use the IDE Visual Studio Code because there's a terminal in-window and you can see nice previews of what the site will look like without leaving the program. 
-
-
+When making updates to the site, one first edits/makes a file, then you use the Bash command "quarto render". This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it's nicest to use the IDE Visual Studio Code because there's a terminal in-window and you can see nice previews of what the site will look like without leaving the program.
 
 ### GitHub repository
 
@@ -38,7 +30,7 @@ Cloning the GitHub repository should be sufficient for gaining access to all of 
 
 ### Quarto formatting
 
-I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer). 
+I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).
 
 As a reference to help get you started, I very much appreciated [this blog post](https://blog.posertinlab.com/posts/2023-06-09-writing-a-dissertation-in-quarto/){target="_blank"} by Richard Posert about using Quarto.
 
@@ -51,4 +43,8 @@ If your data looks at all like [Alix's](https://lipidinteractomicsrepository.net
 There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
 
 In order to make sure the author information is identical on all appropriate pages, I made an "include" folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they're somehow different.
+
+### Shiny app
+
+The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidProbe/EnrichedHitsComparison.qmd) markdown is defined within "/ShinyApps/LipidInteractomics_ShinyApp". In order to add new studies to this, you will need to update the .csv file saved in Chunk #1 of "LipidProbe/EnrichedHitsComparison.qmd". Save the .csv, make sure it updates in the Shiny App directory, and re-deploy the Shiny App to [shinyapps.io](shinyapps.io). Gaelen will have to manage the permissions to make this possible for other users -- stay tuned for updates here.
 
