@@ -362,7 +362,7 @@ CC_enrichment_plots <- function(data, plotReturnType){
 
     try(
 			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
+		cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
 		# ggtitle("Cellular compartment") +
 		customPlot
     )
@@ -550,7 +550,7 @@ BP_enrichment_plots <- function(data, plotReturnType){
 
     try(
 			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
+		cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
 		# ggtitle("Cellular compartment") +
 		customPlot
     )
