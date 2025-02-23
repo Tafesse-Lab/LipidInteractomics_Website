@@ -44,7 +44,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
 # Read the data to a df
 
-AT_2025_Long <- readr::read_csv("DataTables/AT_ChemicalCommunications_2025_download.csv") 
+AT_2025_Long <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/AT_ChemicalCommunications_2025_download.csv")) 
 
 # Organize the hit annotations as factors
 AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
@@ -123,35 +123,46 @@ print("Data not yet provided.")
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(CC_enrichment_plots(AT_2025_Long, "dot"))
-
-suppressMessages(CC_enrichment_plots(AT_2025_Long, "cnet"))
+# #### These functions make the plots to be displayed in this div - uncomment them to run them again
+# CC_enrichment_plots(AT_2025_Long, "dot", "PE-PA_AT_2025_CC-DOTplot")
+# CC_enrichment_plots(AT_2025_Long, "cnet", "PE-PA_AT_2025_CC-CNETplot")
 ```
+
+<iframe src="/IndividualStudies/GO_plots/PE-PA_AT_2025_CC-DOTplot.html" width="100%" height="500px"></iframe>
+
+![](/IndividualStudies/GO_plots/PE-PA_AT_2025_CC-CNETplot.png)
+
 :::
 
 #### Molecular Function
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(MF_enrichment_plots(AT_2025_Long, "dot"))
-
-suppressMessages(MF_enrichment_plots(AT_2025_Long, "cnet"))
-
+#### These functions make the plots to be displayed in this div - uncomment them to run them again
+# MF_enrichment_plots(AT_2025_Long, "dot", "PE-PA_AT_2025_MF-DOTplot")
+# MF_enrichment_plots(AT_2025_Long, "cnet", "PE-PA_AT_2025_MF-CNETplot")
 ```
+
+<iframe src="/IndividualStudies/GO_plots/PE-PA_AT_2025_MF-DOTplot.html" width="100%" height="500px"></iframe>
+
+![](/IndividualStudies/GO_plots/PE-PA_AT_2025_MF-CNETplot.png)
+
 :::
 
 #### Biological Process
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(BP_enrichment_plots(AT_2025_Long, "dot"))
-
-suppressMessages(BP_enrichment_plots(AT_2025_Long, "cnet"))
-
+#### These functions make the plots to be displayed in this div - uncomment them to run them again
+# BP_enrichment_plots(AT_2025_Long, "dot", "PE-PA_AT_2025_BP-DOTplot")
+# BP_enrichment_plots(AT_2025_Long, "cnet", "PE-PA_AT_2025_BP-CNETplot")
 ```
+
+<iframe src="/IndividualStudies/GO_plots/PE-PA_AT_2025_BP-DOTplot.html" width="100%" height="500px"></iframe>
+
+
+![](/IndividualStudies/GO_plots/PE-PA_AT_2025_BP-CNETplot.png)
+
 :::
 
 :::

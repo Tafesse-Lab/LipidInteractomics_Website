@@ -46,7 +46,7 @@
     "href": "LipidProbe/Sphingosine.html#gene-ontology-enrichment",
     "title": "Trifunctional Sphingosine",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n(No MF pathways identified among enriched hits and candidates.)\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Sphingolipids",
@@ -94,7 +94,7 @@
     "href": "LipidProbe/Phosphatidylethanolamine.html#gene-ontology-enrichment",
     "title": "Trifunctional Phosphatidylethanolamine",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Glycerophospholipids",
@@ -173,7 +173,7 @@
     "href": "LipidProbe/1-10_FattyAcid.html#gene-ontology-enrichment",
     "title": "Trifunctional 1-10 Fatty Acid",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n(No MF pathways identified among enriched hits and candidates.)\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Fatty Acids",
@@ -219,7 +219,7 @@
     "href": "IndividualStudies/SF_2024_B.html#gene-ontology-enrichment",
     "title": "Farley et al. 2024 B",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
       "Overview of Interactomics Studies",
       "Farley et al., 2024; B"
@@ -521,7 +521,7 @@
     "href": "IndividualStudies/SF_2024.html#gene-ontology-enrichment",
     "title": "Farley et al. 2024",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
       "Overview of Interactomics Studies",
       "Farley et al., 2024; A"
@@ -600,7 +600,7 @@
     "href": "LipidProbe/8-3_FattyAcid.html#gene-ontology-enrichment",
     "title": "Trifunctional 8-3 Fatty Acid",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Fatty Acids",
@@ -681,7 +681,7 @@
     "href": "LipidProbe/PhosphatidicAcid.html#gene-ontology-enrichment",
     "title": "Trifunctional Phosphatidic Acid",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Glycerophospholipids",
@@ -729,7 +729,7 @@
     "href": "LipidProbe/Sphinganine.html#gene-ontology-enrichment",
     "title": "Trifunctional sphinganine",
     "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n\n\n\n\nError in rowSums(data[, cols]) : \n  'x' must be an array of at least two dimensions\n\n\n[1] \"Cnet plot failed in production.\"\n\n\n\n\n\n\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"\n\n\n[1] \"No pathways identified among enriched hits and candidates.\"",
+    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
       "Explore  by Lipid Probes",
       "Sphingolipids",

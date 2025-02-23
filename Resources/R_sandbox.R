@@ -8,6 +8,25 @@ library(clusterProfiler)
 library(org.Hs.eg.db)
 library(docstring)
 
+library(ggplot2)
+library(ggrepel)
+library(emojifont)
+library(dplyr)
+library(tidyr)
+library(docstring)
+library(clusterProfiler)
+library(org.Hs.eg.db)
+library(enrichplot)
+library(igraph)
+library(ggtangle)
+library(stringr)
+library(clusterProfiler)
+library(enrichplot)
+library(igraph)
+library(ggtangle)
+library(htmlwidgets)
+library(plotly)
+
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
@@ -60,6 +79,13 @@ library(clusterProfiler)
 library(org.Hs.eg.db)
 library(here)
 
+
+customPlot <- list(
+  theme_bw(base_size = 12), 
+  scale_fill_brewer(palette = "Set1"), 
+  scale_colour_brewer(palette = "Set1")
+)
+
 calculateFE <- function(GeneRatio, BgRatio)
 {
   GeneRatio <- as.numeric(unlist(str_split(GeneRatio, pattern = "/")))
@@ -68,11 +94,6 @@ calculateFE <- function(GeneRatio, BgRatio)
   return(odds_ratio)
 }
 
-customPlot <- list(
-  theme_bw(base_size = 12), 
-  scale_fill_brewer(palette = "Set1"), 
-  scale_colour_brewer(palette = "Set1")
-)
 
 # Data extraction Doris's
 DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_2017_download.csv")) |>
@@ -82,7 +103,7 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
   mutate(PSM_Sph = (PSM_Sph1 + PSM_Sph2) / 2,
          PSM_FA = (PSM_FA1 + PSM_FA2) / 2,
          PSM_DAG = (PSM_DAG1 + PSM_DAG2) /2) |>
-  select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
+  dplyr::select(gene_name, PSM_Sph, PSM_FA, PSM_DAG) |>
   arrange(gene_name) |>
   group_by(gene_name) |>
   summarise(PSM_DAG = mean(PSM_DAG),
@@ -127,8 +148,7 @@ AT_2025_Long <- left_join(AT_2025_Long, ID_LUT)
 ego_Identification_data <- AT_2025_Long %>%
 	mutate(sample = LipidProbe) |>
   dplyr::select(ENTREZID, sample, hit_annotation) %>%
-  unique() |>
-	glimpse()
+  unique()
 
 ego_Identification_data_enriched <- ego_Identification_data |>
 	filter((hit_annotation == "enriched candidate" | hit_annotation == "enriched hit"))
@@ -173,16 +193,15 @@ if (!is.null(ego_results_Identification_CC))
 #         width = 15, height = 15)
 }
 
-ggplotly()
 library(clusterProfiler)
 library(enrichplot)
 library(igraph)
 library(ggtangle)
-?clusterProfiler::geom_cnet_label()
-
+library(htmlwidgets)
+library(plotly)
 data <- AT_2025_Long
 
-CellCompartment_enrichment_plots <- function(data, plotReturnType){
+CellCompartment_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
 	#' Makes some GO enrichment plots of the cellular compartment
@@ -240,31 +259,47 @@ CellCompartment_enrichment_plots <- function(data, plotReturnType){
 			group_by(sample) %>%
 			slice_head(n = 10)
 		
-		
-
 	
 	if(plotReturnType == "cnet") {
-			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
-		ggtitle("Cellular compartment") +
-		customPlot
+		cnet <- NULL
 
-		cnet
+		try(
+			# Makes the cnet plot
+    cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
+      # ggtitle("Cellular compartment") +
+        customPlot
+    )
+
+    if(!is.null(cnet)){
+      ggsave(paste0(here(), "/NewPlots/", filename, ".png"),
+           width = 12, height = 12)
+    } else {
+      return("Cnet plot failed in production.")
+    }
+
+
 	} else {
 			# Makes the dot plot
 			dot <- ggplot(data = ego_sub, aes(sample, Description)) +
 				geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
 				theme_bw(base_size = 12) +
 				scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
-				ggtitle("Cellular compartment") +
+				# ggtitle("Cellular compartment") +
 				ylab("") +
 				xlab("LipidProbe")
 				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
-			ggplotly(dot)
+
+			dot <- ggplotly(dot)
+      # Save as HTML (adjust the path as needed)
+      saveWidget(dot, file = paste0(here(), "/NewPlots/", filename, ".html"), selfcontained = TRUE)
+
 		}
 	}
 }
 
-CellCompartment_enrichment_plots(AT_2025_Long, "cnet")
-CellCompartment_enrichment_plots(AT_2025_Long, "dot")
+CellCompartment_enrichment_plots(AT_2025_Long, "cnet", "PE-PA_AT_B2025_CC-CNETplot")
+CellCompartment_enrichment_plots(AT_2025_Long, "dot", "PE-PA_AT_2025_CC-DOTplot")
 
+data <- AT_2025_Long
+plotReturnType <- "dot"
+filename <- "PE-PA_AT_2025_CC-DOTplot"

@@ -1,6 +1,7 @@
 ---
 title: "Trifunctional sphinganine"
 prefer-html: true
+format: html
 ---
 
 ## Structure
@@ -47,7 +48,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # 	write.csv(SF_2024_data, "LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")
 
 # Opening the datatable for this page
-SF_2024_data <- readr::read_csv("DataSets/Spa_Huh7_SF_2024.csv") |>
+SF_2024_data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
 	filter(LipidProbe == "Spa")
 
 	
@@ -106,45 +107,55 @@ MAStandard(SF_2024_data)
 :::
 
 
+
 ## Gene Ontology enrichment
 
 **In beta: GO analysis still under development**
 
 ::: {.panel-tabset}
 
+
 #### Cell Compartment
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(CC_enrichment_plots(SF_2024_data, "dot"))
-
-suppressMessages(CC_enrichment_plots(SF_2024_data, "cnet"))
+# #### These functions make the plots to be displayed in this div - uncomment them to run them again
+# CC_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Spa_SF_2024_CC-DOTplot")
+# CC_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Spa_SF_2024_CC-CNETplot")
 ```
+
+<iframe src="/LipidProbe/GO_plots/Spa_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
+
+(CC CNET plot failed in production)
 :::
 
 #### Molecular Function
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(MF_enrichment_plots(SF_2024_data, "dot"))
-
-suppressMessages(MF_enrichment_plots(SF_2024_data, "cnet"))
-
+#### These functions make the plots to be displayed in this div - uncomment them to run them again
+# MF_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Spa_SF_2024_MF-DOTplot")
+# MF_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Spa_SF_2024_MF-CNETplot")
 ```
+
+<iframe src="/LipidProbe/GO_plots/Spa_SF_2024_MF-DOTplot.html" width="100%" height="500px"></iframe>
+
+(MF CNET plot failed in production)
 :::
 
 #### Biological Process
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-
-suppressMessages(BP_enrichment_plots(SF_2024_data, "dot"))
-
-suppressMessages(BP_enrichment_plots(SF_2024_data, "cnet"))
-
+#### These functions make the plots to be displayed in this div - uncomment them to run them again
+# BP_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Spa_SF_2024_BP-DOTplot")
+# BP_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Spa_SF_2024_BP-CNETplot")
 ```
+
+(No BP pathways identified among enriched hits and candidates.)
+
+
+(BP CNET plot failed in production)
 :::
 :::
 

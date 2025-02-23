@@ -296,7 +296,7 @@ VolcanoPlotStandardized <- function(data) {
 }
 
 
-CC_enrichment_plots <- function(data, plotReturnType){
+CC_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
 	#' Makes some GO enrichment plots of the Cellular Compartment
@@ -354,25 +354,25 @@ CC_enrichment_plots <- function(data, plotReturnType){
 			group_by(sample) %>%
 			slice_head(n = 10)
 		
-		
-
 	
 	if(plotReturnType == "cnet") {
 		cnet <- NULL
 
-    try(
+		try(
 			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
-		# ggtitle("Cellular compartment") +
-		customPlot
+    cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
+      # ggtitle("Cellular compartment") +
+        customPlot
     )
 
     if(!is.null(cnet)){
-      cnet
+      ggsave(paste0(here(), filename, ".png"),
+           width = 12, height = 12)
     } else {
       return("Cnet plot failed in production.")
     }
-    
+
+
 	} else {
 			# Makes the dot plot
 			dot <- ggplot(data = ego_sub, aes(sample, Description)) +
@@ -383,14 +383,18 @@ CC_enrichment_plots <- function(data, plotReturnType){
 				ylab("") +
 				xlab("LipidProbe")
 				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
-			ggplotly(dot)
+
+			dot <- ggplotly(dot)
+      # Save as HTML (adjust the path as needed)
+      saveWidget(dot, file = paste0(here(), filename, ".html"), selfcontained = TRUE)
+
 		}
 	}
 }
 
 
 
-MF_enrichment_plots <- function(data, plotReturnType){
+MF_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
 	#' Makes some GO enrichment plots of the molecular function
@@ -452,20 +456,22 @@ MF_enrichment_plots <- function(data, plotReturnType){
 
 	
 	if(plotReturnType == "cnet") {
-    cnet <- NULL
+		cnet <- NULL
 
-    try(
+		try(
 			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
-		# ggtitle("Cellular compartment") +
-		customPlot
+    cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
+      # ggtitle("Cellular compartment") +
+        customPlot
     )
 
     if(!is.null(cnet)){
-      cnet
+      ggsave(paste0(here(), filename, ".png"),
+           width = 12, height = 12)
     } else {
       return("Cnet plot failed in production.")
     }
+
 
 	} else {
 			# Makes the dot plot
@@ -477,14 +483,18 @@ MF_enrichment_plots <- function(data, plotReturnType){
 				ylab("") +
 				xlab("LipidProbe")
 				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
-			ggplotly(dot)
+
+			dot <- ggplotly(dot)
+      # Save as HTML (adjust the path as needed)
+      saveWidget(dot, file = paste0(here(), filename, ".html"), selfcontained = TRUE)
+
 		}
 	}
 }
 
 
 
-BP_enrichment_plots <- function(data, plotReturnType){
+BP_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
 	#' Makes some GO enrichment plots of the biological process
@@ -541,37 +551,40 @@ BP_enrichment_plots <- function(data, plotReturnType){
 		ego_sub <- ego_results_Identification_BP_table %>% 
 			group_by(sample) %>%
 			slice_head(n = 10)
-		
-		
-
 	
-	if(plotReturnType == "cnet") {
-		cnet <- NULL
+    if(plotReturnType == "cnet") {
+      cnet <- NULL
 
-    try(
-			# Makes the cnet plot
-		cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
-		# ggtitle("Cellular compartment") +
-		customPlot
-    )
+      try(
+        # Makes the cnet plot
+      cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
+        # ggtitle("Cellular compartment") +
+          customPlot
+      )
 
-    if(!is.null(cnet)){
-      cnet
+      if(!is.null(cnet)){
+        ggsave(paste0(here(), filename, ".png"),
+            width = 12, height = 12)
+      } else {
+        return("Cnet plot failed in production.")
+      }
+
+
     } else {
-      return("Cnet plot failed in production.")
+        # Makes the dot plot
+        dot <- ggplot(data = ego_sub, aes(sample, Description)) +
+          geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
+          theme_bw(base_size = 12) +
+          scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
+          # ggtitle("Cellular compartment") +
+          ylab("") +
+          xlab("LipidProbe")
+          theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
+
+        dot <- ggplotly(dot)
+        # Save as HTML (adjust the path as needed)
+        saveWidget(dot, file = paste0(here(), filename, ".html"), selfcontained = TRUE)
+
     }
-    
-	} else {
-			# Makes the dot plot
-			dot <- ggplot(data = ego_sub, aes(sample, Description)) +
-				geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
-				theme_bw(base_size = 12) +
-				scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
-				# ggtitle("Cellular compartment") +
-				ylab("") +
-				xlab("LipidProbe")
-				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
-			ggplotly(dot)
-		}
 	}
 }
