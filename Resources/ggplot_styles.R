@@ -218,7 +218,7 @@ VolcanoPlotStandardized <- function(data) {
     #' Requires an input dataframe with the columns "gene_name", "LipidProbe", "logFC", "pvalue", and "hit_annotation"
     ################
 
-    limits <- c(max(c(safe_abs(data$logFC), 4), na.rm=TRUE) , max(c(-safe_log10(data$pvalue), 8), na.rm=TRUE))
+    limits <- c(max(c(safe_abs(data$logFC, 4)), na.rm=TRUE) , max(c(-safe_log10(data$pvalue, 8)), na.rm=TRUE))
 
 
     VolcanoPlots <- data |>

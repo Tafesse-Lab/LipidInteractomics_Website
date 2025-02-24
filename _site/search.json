@@ -477,7 +477,7 @@
     "href": "IndividualStudies/DH_2017.html#data-visualization",
     "title": "Höglinger et al. 2017",
     "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\nDepicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA. :::{.border}\n\n\n\n\n\n\n:::\n\n\n\nVenn Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect overlap regions to see co-enriched proteins:\n\n\n\nEnriched to Sph only\n\n\n\nEnriched to DAG only\n\n\n\nEnriched to Sph and DAG\n\n\n\nEnriched to Sph and FA\n\n\n\nEnriched to DAG and FA\n\n\n\nEnriched to all probes",
+    "text": "Data visualization\n\nHeat map\nDepicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.\n\n\n\n\n\n\n\n\n\n\n\nVenn Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect overlap regions to see co-enriched proteins:\n\n\n\nEnriched to Sph only\n\n\n\nEnriched to DAG only\n\n\n\nEnriched to Sph and DAG\n\n\n\nEnriched to Sph and FA\n\n\n\nEnriched to DAG and FA\n\n\n\nEnriched to all probes",
     "crumbs": [
       "Overview of Interactomics Studies",
       "Höglinger et al., 2017"

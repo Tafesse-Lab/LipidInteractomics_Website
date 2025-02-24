@@ -56,7 +56,9 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
 #### Heat map
 
 Depicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.
+
 :::{.border}
+
 ```{r, echo=FALSE, fig.height=10, warning=FALSE}
 
 DH_2017_data_long <- DH_2017_data |>
@@ -88,6 +90,7 @@ heatmaply(long_data = DH_2017_data_long,
 #### Venn Diagram
 
 :::{.border}
+
 ```{r, echo=FALSE, warning=FALSE, width = 8}
 
 # Ensure the data is in the correct format
