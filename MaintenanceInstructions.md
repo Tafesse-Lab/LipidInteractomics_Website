@@ -20,7 +20,7 @@ This site was built using Quarto. This is a form of R Markdown that is highly do
 
 The overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of [Bootswatch](https://bootswatch.com/){target="_blank"} themes, or if you're feeling ambitious you can design your own theme.
 
-When making updates to the site, one first edits/makes a file, then you use the Bash command "quarto render". This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it's nicest to use the IDE Visual Studio Code because there's a terminal in-window and you can see nice previews of what the site will look like without leaving the program.
+When making updates to the site, one first edits/makes a file, then you use the Bash command "quarto render --to html". This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it's nicest to use the IDE Visual Studio Code because there's a terminal in-window and you can see nice previews of what the site will look like without leaving the program.
 
 ### GitHub repository
 
@@ -38,7 +38,7 @@ I honestly get the most confused when it comes to formatting the _quarto.yml fil
 
 If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
 
-If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting. 
+If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting across all the pages.
 
 There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
 
@@ -48,3 +48,44 @@ In order to make sure the author information is identical on all appropriate pag
 
 The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidProbe/EnrichedHitsComparison.qmd) markdown is defined within "/ShinyApps/LipidInteractomics_ShinyApp". In order to add new studies to this, you will need to update the .csv file saved in Chunk #1 of "LipidProbe/EnrichedHitsComparison.qmd". Save the .csv, make sure it updates in the Shiny App directory, and re-deploy the Shiny App to [shinyapps.io](shinyapps.io). Gaelen will have to manage the permissions to make this possible for other users -- stay tuned for updates here.
 
+## Step-by-step instructions for adding a new study
+
+(Assumes that you're adding a new study which utilized TMT and Frank's FragPipe data analysis pipeline. Anything else will have to be somewhat custom made -- as a starting point, just follow these steps as best you can, then adjust from there.)
+
+1) Duplicate the template file under the /StudyInformation_includes folder, populate each section with the appropriate details about the study being added. This "include" file will be linked to the actual data pages and allows for a single point to edit the details across all the pages.
+
+2) Duplicate the template file under the /IndividualStudies folder, edit "include" link to point to the new file made in Step 1. 
+	* Copy full dataset to the /IndividualStudies/DataTables folder with an appropriate name.
+	* Edit the setup/data wrangling R chunk to open and prepare the data -- make sure the read_csv() call points to the location of the dataset being added. If needed, adjust the order of lipid probes depicted under the factor(pull()) function call -- change the values of the levels vector to reflect the probes (the default is simply alphabetical)
+	* Don't yet adjust the Gene Ontology sections - we'll return to this in Step 5.
+
+
+3) If new study utilizes new lipid probes, make as many duplicates as appropriate of the template file under the /LipidProbe folder (i.e., if there are two lipid probes analyzed in the study at hand.)
+	* Prepare individual copies of the dataset filtered for each lipid probe, place them in the /LipidProbe/Datasets folder (I know that the /Datasets folder doesn't match the /DataTable folder, I'll work on fixing that someday).
+	* Make sure the cell type referenced is accurate, link to the appropriate "include" to add the correct study details.
+	* Edit the setup/data wrangling R chunk to open and prepare the data.
+	* Adjust the plotting function calls.
+	* Again, we'll do the Gene Ontology section in step 5.
+
+4) If the new study repeats an analysis of a lipid probe in a new cell type, add the dataset to a new section to the appropriate LipidProbe .qmd file
+	* For example, the Sphingosine probe was used in both Huh7 cells and HeLa -- use this file as a reference to adjust an existing page.
+
+5) To prepare the gene ontology plots for the new study, first make the appropriate plot files using the script under the /Resources/Re-run_GO_plots.R file.
+	* See the instructions in the doc string at the top of the file.
+	* Currently, the sections in the file are organized so that each study and each lipid probe within the study are together in big blocks.
+	* Add a new block for the new data, use read_csv() to open each respective dataframe and apply the three CC, MF, and BP plotting functions to each part of the new data.
+	* The plotting functions will save new files to the designated folders -- make sure the filenames are unique and easily recognizable (e.g. "**1-10FA_SF_2024_**CC-DOTplot.html"), you'll need them shortly
+	* Now go back to the .qmd files under /LipidProbe and /IndividualStudies and make sure the Gene Ontology references point to the correct new files - pay attention to the CC, MF, BP types!
+
+6) Update "Search by protein" page
+	* Add new data to the /SearchByProtein/combinedProbeDatasets_TMT.csv file with rbind().
+	* Add study DOI and short name to the case_when() call.
+
+7) Update Shiny App on "Probe vs Probe Comparisons" page
+	* This will require access to the ShinyApps.io account.
+	* Copy the new version of the combinedProbeDatasets_TMT.csv file to the /ShinyApps/LipidInteractomics_ShinyApp folder.
+	* Make sure the app still works with the new dataset, if it does, redeploy!
+
+6) Finally, we need to update the _quarto.yml file so that the new .qmd files are organized under the correct lipid class
+	* e.g. if the new probe is a sphingolipid, make sure to place its link there
+	* If the new probes are a distinct class, make a new category of probe (use the existing categories as a template)

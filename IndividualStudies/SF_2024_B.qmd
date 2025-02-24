@@ -26,72 +26,20 @@ library(here)
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 # Opening the datatable for this page IN FINAL RENDER
-SF_2024_data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv"))
-
-# # # Opening the datatable for this page WHILE EDITING
-# SF_2024_data <- readr::read_csv("IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
-
+data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv"))
 
 # Organizing the hit annotations as factors
-SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
 # Organize the probes as factors
-SF_2024_data$LipidProbe <- factor(pull(SF_2024_data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
+data$LipidProbe <- factor(pull(data, LipidProbe), levels = c("Spa", "Sph", "8-3 FA", "1-10 FA"), ordered = TRUE)
 
-#write.csv(SF_2024_data, "IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv")
-
-# Building an ID column to maintain the order on the x-axis
-ID <- c()
-for(i in 0:(nrow(SF_2024_data)/2)){
-	ID[i] = i
-}
-
-# Applies the ID column to the 1-10 FA results
-SF_2024_ranked_1_10_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "1-10 FA") |>
-	mutate(ID = ID) 
-
-# Applies the ID column to the 8-3 FA results
-SF_2024_ranked_8_3_FA <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "8-3 FA") |>
-	mutate(ID = ID) 
-
-
-# Assembles the dataset to plot
-SF_2024_ranked <- rbind(SF_2024_ranked_8_3_FA, SF_2024_ranked_1_10_FA)
 ```
 
 ::: {.callout-note collapse="true"}
 
-## Study details
+{{< include /StudyInformation_includes/SF_2024_B_include.qmd >}}
 
-#### Authors
-Scotland E. Farley, Ryu Hashimoto, Judah Evangelista, Frank Stein, Per Haberkant, Kazuya Kikuchi, Fikadu G. Tafesse, Carsten Schultz
-
-#### Journal
-Chemical Communications
-
-<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
-
-#### Abstract
-
-Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Functionalized lipid probes are a critical new tool to interrogate the function of individual lipid species, but the structural parameters that constrain their utility have not been thoroughly described. Here, we synthesize three palmitic acid derivatives with a diazirine at different positions on the acyl chain and examine their metabolism, subcellular localization, and protein interactions. We demonstrate that while they produce very similar metabolites and subcellular distributions, probes with the diazirine at either end pulldown distinct subsets of proteins after photo-crosslinking. This highlights the importance of thoughtful diazirine placement when developing probes based on biological molecules.
-
-#### Lipid probes utilized
-
-[8-3 Fatty Acid](/LipidProbe/8-3_FattyAcid.qmd)
-
-#### Cell line analyzed
-
-[Huh7](https://huh7.com){target="_blank"}
-
-#### Mass spectrometry quantification method
-
-16-channel Tandem Mass Tagging (TMT16)
-
-#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 :::
 
 ## Data visualization
@@ -104,7 +52,7 @@ Functionalized lipid probes are a critical new tool to interrogate the function 
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-VolcanoPlotStandardized(SF_2024_data)
+VolcanoPlotStandardized(data)
 
 ```
 :::
@@ -116,7 +64,7 @@ VolcanoPlotStandardized(SF_2024_data)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-RankedOrderPlotStandard(SF_2024_ranked)
+RankedOrderPlotStandard(data)
 ```
 :::
 
@@ -127,7 +75,7 @@ RankedOrderPlotStandard(SF_2024_ranked)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-MAStandard(SF_2024_data)
+MAStandard(data)
 
 ```
 
@@ -145,11 +93,6 @@ MAStandard(SF_2024_data)
 #### Cell Compartment
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-# #### These functions make the plots to be displayed in this div - uncomment them to run them again
-# CC_enrichment_plots(SF_2024_data, "dot", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_CC-DOTplot")
-# CC_enrichment_plots(SF_2024_data, "cnet", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_CC-CNETplot")
-```
 
 <iframe src="/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -160,11 +103,6 @@ MAStandard(SF_2024_data)
 #### Molecular Function
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# MF_enrichment_plots(SF_2024_data, "dot", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_MF-DOTplot")
-# MF_enrichment_plots(SF_2024_data, "cnet", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_MF-CNETplot")
-```
 
 <iframe src="/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_MF-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -174,11 +112,6 @@ MAStandard(SF_2024_data)
 #### Biological Process
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# BP_enrichment_plots(SF_2024_data, "dot", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_BP-DOTplot")
-# BP_enrichment_plots(SF_2024_data, "cnet", "/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_BP-CNETplot")
-```
 
 <iframe src="/IndividualStudies/GO_plots/8-3FA-1-10FA_SF_2024_BP-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -198,7 +131,7 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 
-SF_2024_data <- SF_2024_data |>
+data <- data |>
   dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
@@ -207,22 +140,22 @@ SF_2024_data <- SF_2024_data |>
   arrange(LipidProbe)
 
 ## Creates a reactive dataframe
-SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+data_reactive <- crosstalk::SharedData$new(data)
 
 htmltools::tags$div(
   class = "filter-container",
   filter_checkbox(id = "LipidProbe",
                   label = "Lipid probe in pulldown:", 
-                  sharedData = SF_2024_data_reactive,
+                  sharedData = data_reactive,
                   group = ~LipidProbe),
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
-                  sharedData = SF_2024_data_reactive,
+                  sharedData = data_reactive,
                   group = ~hit_annotation)
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive, options = list(pageLength = 15))
+datatable(data_reactive, options = list(pageLength = 15))
 
 ```
 :::

@@ -50,27 +50,21 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 ```{r, echo=FALSE, include=FALSE}
 
 # Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
+
 # Read the data to a df
-
-# AT_2025_Long <- readr::read_csv("LipidProbe/DataSets/AT_ChemicalCommunications_2025_download.csv") |>
-# 	filter(LipidProbe == "PE")
-
-# write.csv(AT_2025_Long, "LipidProbe/DataSets/PE_HeLa_AT_2025.csv")
-
-
-AT_2025_Long <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv"))
+data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv"))
 
 # Organize the hit annotations as factors
-AT_2025_Long$hit_annotation <- factor(pull(AT_2025_Long, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
 
 # Building an ID column to maintain the order on the x-axis
 ID <- c()
-for(i in 0:(nrow(AT_2025_Long))){
+for(i in 0:(nrow(data))){
 	ID[i] = i
 }
 
 # Applies the ID column to the PE results
-AT_2025_ranked <- AT_2025_Long |>
+AT_2025_ranked <- data |>
     arrange(logFC) |>
 	filter(LipidProbe == "PE") |>
 	mutate(ID = ID) 
@@ -85,7 +79,7 @@ AT_2025_ranked <- AT_2025_Long |>
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Thomas et al., 2025](/IndividualStudies/AT_2025.qmd). Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-VolcanoPlotStandardized(AT_2025_Long)
+VolcanoPlotStandardized(data)
 
 ```
 :::
@@ -125,11 +119,6 @@ print("Data not yet provided.")
 #### Cell Compartment
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-# #### These functions make the plots to be displayed in this div - uncomment them to run them again
-# CC_enrichment_plots(AT_2025_Long, "dot", "/LipidProbe/GO_plots/PE_AT_2025_CC-DOTplot")
-# CC_enrichment_plots(AT_2025_Long, "cnet", "/LipidProbe/GO_plots/PE_AT_2025_CC-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -139,11 +128,6 @@ print("Data not yet provided.")
 #### Molecular Function
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# MF_enrichment_plots(AT_2025_Long, "dot", "/LipidProbe/GO_plots/PE_AT_2025_MF-DOTplot")
-# MF_enrichment_plots(AT_2025_Long, "cnet", "/LipidProbe/GO_plots/PE_AT_2025_MF-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_MF-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -153,11 +137,6 @@ print("Data not yet provided.")
 #### Biological Process
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# BP_enrichment_plots(AT_2025_Long, "dot", "/LipidProbe/GO_plots/PE_AT_2025_BP-DOTplot")
-# BP_enrichment_plots(AT_2025_Long, "cnet", "/LipidProbe/GO_plots/PE_AT_2025_BP-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_BP-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -175,21 +154,21 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-AT_2025_Long <- AT_2025_Long |>
+data <- data |>
   dplyr::select(gene_name, hit_annotation, logFC, pvalue) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
   arrange(hit_annotation)
   
 ## Creates a reactive dataframe
-AT_2025_Long_reactive <- crosstalk::SharedData$new(AT_2025_Long)
+data_reactive <- crosstalk::SharedData$new(data)
 
 
 htmltools::tags$div(
   class = "filter-container",
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
-                  sharedData = AT_2025_Long_reactive,
+                  sharedData = data_reactive,
                   group = ~hit_annotation,
                   inline="true")
 )
@@ -197,11 +176,11 @@ htmltools::tags$div(
 ?crosstalk::filter_checkbox()
 
 ## Displays the reactive dataframe
-datatable(AT_2025_Long_reactive,
+datatable(data_reactive,
           caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10))
 ```
 :::
 
-{{< downloadthis DataSets/PE_HeLa_AT_2025.csv dname="PE_HeLa_AT_ChemComm_download.csv">}}
+{{< downloadthis DataSets/PE_HeLa_AT_2025.csv dname="PE_HeLa_AT_ChemComm_download">}}
 

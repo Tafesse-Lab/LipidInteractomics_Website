@@ -41,33 +41,10 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # Data wrangling to prepare Alix's data to the standardized inputs for my plotting functions.
 # Read the data to a df
 
-AT_2025 <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/AT_ChemicalCommunications_2025_download.csv")) 
+data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/AT_ChemicalCommunications_2025_download.csv")) 
 
 # Organize the hit annotations as factors
-AT_2025$hit_annotation <- factor(pull(AT_2025, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
-
-# Building an ID column to maintain the order on the x-axis
-ID <- c()
-for(i in 0:(nrow(AT_2025)/2)){
-	ID[i] = i
-}
-
-# Applies the ID column to the PE results
-AT_2025_ranked_PE <- AT_2025 |>
-    arrange(logFC) |>
-	filter(LipidProbe == "PE") |>
-	mutate(ID = ID) 
-
-# Applies the ID column to the PA results
-AT_2025_ranked_PA <- AT_2025 |>
-    arrange(logFC) |>
-	filter(LipidProbe == "PA") |>
-	mutate(ID = ID) 
-
-# Assembles the dataset to plot
-AT_2025_ranked <- rbind(AT_2025_ranked_PE, AT_2025_ranked_PA)
-
-
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
 
 ```
 
@@ -79,7 +56,7 @@ AT_2025_ranked <- rbind(AT_2025_ranked_PE, AT_2025_ranked_PA)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-VolcanoPlotStandardized(AT_2025)
+VolcanoPlotStandardized(data)
 
 ```
 :::
@@ -91,7 +68,7 @@ VolcanoPlotStandardized(AT_2025)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-RankedOrderPlotStandard(AT_2025_ranked)
+RankedOrderPlotStandard(data)
 ```
 :::
 
@@ -159,25 +136,25 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 ## Creates a reactive dataframe
-AT_2025_reactive <- crosstalk::SharedData$new(AT_2025)
+data_reactive <- crosstalk::SharedData$new(data)
 
 
 htmltools::tags$div(
   class = "filter-container",
   filter_checkbox(id = "LipidProbe",
                   label = "Lipid probe in pulldown:", 
-                  sharedData = AT_2025_reactive,
+                  sharedData = data_reactive,
                   group = ~LipidProbe),
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
-                  sharedData = AT_2025_reactive,
+                  sharedData = data_reactive,
                   group = ~hit_annotation)
 )
 
 ?crosstalk::filter_checkbox()
 
 ## Displays the reactive dataframe
-datatable(AT_2025_reactive, options = list(pageLength = 20))
+datatable(data_reactive, options = list(pageLength = 20))
 
 ```
 :::

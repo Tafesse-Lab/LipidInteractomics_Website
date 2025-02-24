@@ -153,6 +153,8 @@ ego_Identification_data <- AT_2025_Long %>%
 ego_Identification_data_enriched <- ego_Identification_data |>
 	filter((hit_annotation == "enriched candidate" | hit_annotation == "enriched hit"))
 
+	
+
 ego_results_Identification_CC <- NULL
 
 try(
@@ -303,3 +305,88 @@ CellCompartment_enrichment_plots(AT_2025_Long, "dot", "PE-PA_AT_2025_CC-DOTplot"
 data <- AT_2025_Long
 plotReturnType <- "dot"
 filename <- "PE-PA_AT_2025_CC-DOTplot"
+
+
+########### Trying the enrichDGN method instead of 
+
+# Making lookup table with ENTREZID identifiers from data
+ID_LUT <- clusterProfiler::bitr(geneID = AT_2025_Long$gene_name, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db)
+names(ID_LUT) <- c("gene_name", "ENTREZID")
+
+glimpse(ID_LUT)
+
+# Merging ENTREZIDs to data
+AT_2025_Long <- left_join(AT_2025_Long, ID_LUT)
+
+ego_Identification_data <- AT_2025_Long %>%
+	mutate(sample = LipidProbe) |>
+  dplyr::select(ENTREZID, sample, hit_annotation, logFC) %>%
+  unique()
+
+ego_Identification_data_enriched <- ego_Identification_data |>
+	filter((hit_annotation == "enriched candidate" | hit_annotation == "enriched hit"))
+
+try(
+	ego_results_Identification_CC <- clusterProfiler::compareCluster(ENTREZID ~ sample,
+                                    data = ego_Identification_data_enriched, fun = "enrichGO",
+                                    OrgDb = org.Hs.eg.db,
+                                    keyType = "ENTREZID",
+                                    ont = "CC",
+                                    readable = TRUE,
+                                    universe = ID_LUT$ENTREZID)
+
+	ego_results_Identification_CC <- enrichGO(gene = ego_Identification_data_enriched, 
+																						universe = names(ego_Identification_data_enriched |> tibble::deframe() |> na.),
+																						OrgDb = org.Hs.eg.db,
+																						ont = "CC",
+																						pAdjustMethod = "BH",
+																						readable = TRUE)																
+)
+
+clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue")
+
+try(
+	ego_results_Identification_CC <- clusterProfiler::compareCluster(geneClusters = ENTREZID ~ sample,
+																	data = ego_Identification_data_enriched,
+																	fun = "enrichKEGG")
+)
+
+cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC,
+																	categorySize = "pvalue",
+																	color_category='firebrick',
+																	color_gene='steelblue',
+																	foldChange = ego_Identification_data_enriched2)
+
+
+library(DOSE)
+data(geneList)
+
+de <- names(geneList)[abs(geneList) > 2]
+
+edo <- enrichDGN(de)
+
+edox <- setReadable(edo, 'org.Hs.eg.db', 'ENTREZID')
+p1 <- cnetplot(edox, foldChange=geneList)
+
+head(AT_2025_Long)
+
+AT_2025 <- AT_2025_Long |>
+	mutate(sample = LipidProbe) |>
+	filter(hit_annotation == "enriched candidate" | hit_annotation == "enriched hit") |>
+	filter(sample == "PA") |>
+	dplyr::select(ENTREZID, logFC) |>
+	arrange(logFC) |>
+	tibble::deframe()
+
+AT_2025 <- na.omit(AT_2025)
+AT_2025_gene <- na.omit(names(AT_2025))
+
+ggo <- groupGO(gene 		= AT_2025_gene,
+								OrgDb 	= org.Hs.eg.db,
+								ont 		= "CC",
+								level = 3,
+								readable = TRUE)
+
+head(ggo)
+
+goplot(ggo)

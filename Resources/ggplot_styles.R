@@ -142,7 +142,14 @@ RankedOrderPlotStandard <- function(data) {
     #' A standardized Ranked Order plot theme
     #' Requires an input dataframe with the columns "gene_name", "LipidProbe", "logFC", "pvalue", and "hit_annotation"
     ################
-    
+
+    # Applies ID column to each probe
+    data <- data |>
+      group_by(LipidProbe) |>
+      arrange(logFC, .by_group = TRUE) |>
+      mutate(ID = row_number()) |>
+      ungroup()
+
     # First makes a ggplot template to later apply ggplotly
     RankedOrderPlots <- data |>
         ggplot(aes(x = ID,

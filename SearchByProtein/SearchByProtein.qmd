@@ -1,5 +1,6 @@
 ---
 title: "Search enrichment by protein"
+prefer-html: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +16,6 @@ library(here)
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 
-# Read call for testing, comment out for rendering
 data <- read_csv(paste0(here(), "/SearchByProtein/combinedProbeDatasets_TMT.csv"))
 
 datawhole <- data |>
@@ -41,8 +41,6 @@ limits <- c(max(abs(datawhole$logFC), na.rm=TRUE) , max(-log10(datawhole$pvalue)
 
 	## Creates a reactive dataframe
 datawhole_reactive <- crosstalk::SharedData$new(datawhole)
-
-
 
 
 ```

@@ -1,6 +1,7 @@
 #######################################
 #' The purpose of this R script is to re-run the GO plotting functions and re-render all of the plots displayed on the IndividualStudies and LipidProbe pages.
-	#' Uncomment some or all of the sections below if any changes are made.
+#' Saves a ton of time in each render because these functions take a while to run.
+	#' Uncomment some or all of the sections below if any changes to the plotting functions are made.
 	#' Add new sections for new datasets using the frameworks below.
 #######################################
 

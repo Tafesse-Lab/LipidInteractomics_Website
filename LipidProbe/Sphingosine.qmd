@@ -52,27 +52,13 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # 	write.csv(SF_2024_data, "LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")
 
 # Opening the datatable for this page
-SF_2024_data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
+data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
 	filter(LipidProbe == "Sph")
 
 	
 
 # Organizing the hit annotations as factors
-SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
-
-
-# Building an ID column to maintain the order on the x-axis
-ID <- c()
-for(i in 0:(nrow(SF_2024_data))){
-	ID[i] = i
-}
-
-
-# Applies the ID column to the Sph results
-SF_2024_ranked <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "Sph") |>
-	mutate(ID = ID) 
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
 ```
 
@@ -82,7 +68,7 @@ SF_2024_ranked <- SF_2024_data |>
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-VolcanoPlotStandardized(SF_2024_data)
+VolcanoPlotStandardized(data)
 ```
 :::
 
@@ -92,7 +78,7 @@ VolcanoPlotStandardized(SF_2024_data)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-RankedOrderPlotStandard(SF_2024_ranked)
+RankedOrderPlotStandard(data)
 ```
 :::
 
@@ -103,7 +89,7 @@ RankedOrderPlotStandard(SF_2024_ranked)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-MAStandard(SF_2024_data)
+MAStandard(data)
 
 ```
 :::
@@ -120,11 +106,6 @@ MAStandard(SF_2024_data)
 #### Cell Compartment
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-# #### These functions make the plots to be displayed in this div - uncomment them to run them again
-# CC_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Sph_SF_2024_CC-DOTplot")
-# CC_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Sph_SF_2024_CC-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/Sph_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -134,11 +115,6 @@ MAStandard(SF_2024_data)
 #### Molecular Function
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# MF_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Sph_SF_2024_MF-DOTplot")
-# MF_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Sph_SF_2024_MF-CNETplot")
-```
 
 (No MF pathways identified among enriched hits and candidates.)
 
@@ -148,11 +124,6 @@ MAStandard(SF_2024_data)
 #### Biological Process
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# BP_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/Sph_SF_2024_BP-DOTplot")
-# BP_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/Sph_SF_2024_BP-CNETplot")
-```
 
 (No BP pathways identified among enriched hits and candidates.)
 
@@ -170,7 +141,7 @@ Check the boxes below to filter by significance thresholds.
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-SF_2024_data <- SF_2024_data |>
+data <- data |>
   dplyr::select(gene_name, hit_annotation, logFC, pvalue, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
@@ -178,28 +149,27 @@ SF_2024_data <- SF_2024_data |>
   arrange(hit_annotation)
   
 ## Creates a reactive dataframe
-SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+data_reactive <- crosstalk::SharedData$new(data)
 
 htmltools::tags$div(
   class = "filter-container",
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
-                  sharedData = SF_2024_data_reactive,
+                  sharedData = data_reactive,
                   group = ~hit_annotation,
                   inline="true")
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive, 
+datatable(data_reactive, 
           caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
 
 ```
-:::
 
 
-{{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download.csv">}}
+{{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download">}}
 
 :::
 

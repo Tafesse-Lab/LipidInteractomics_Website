@@ -26,35 +26,12 @@ library(here)
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
-# SF_2024_data <- readr::read_csv("LipidProbe/DataSets/SF_Chem_Comm_2024_download.csv") |>
-# 	filter(LipidProbe == "8-3 FA")
-
-# write.csv(SF_2024_data, "LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")
-
 # Opening the datatable for this page
-SF_2024_data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
+data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
 	filter(LipidProbe == "8-3 FA")
 
-	
-
 # Organizing the hit annotations as factors
-SF_2024_data$hit_annotation <- factor(pull(SF_2024_data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
-
-
-# Building an ID column to maintain the order on the x-axis
-ID <- c()
-for(i in 0:(nrow(SF_2024_data))){
-	ID[i] = i
-}
-
-
-# Applies the ID column to the Spa results
-SF_2024_ranked <- SF_2024_data |>
-    arrange(logFC) |>
-	filter(LipidProbe == "8-3 FA") |>
-	mutate(ID = ID) 
-
-
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
 ```
 
@@ -87,7 +64,7 @@ SF_2024_ranked <- SF_2024_data |>
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-VolcanoPlotStandardized(SF_2024_data)
+VolcanoPlotStandardized(data)
 ```
 :::
 
@@ -97,7 +74,7 @@ VolcanoPlotStandardized(SF_2024_data)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
-RankedOrderPlotStandard(SF_2024_ranked)
+RankedOrderPlotStandard(data)
 ```
 :::
 
@@ -108,7 +85,7 @@ RankedOrderPlotStandard(SF_2024_ranked)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
 
-MAStandard(SF_2024_data)
+MAStandard(data)
 
 ```
 :::
@@ -125,11 +102,6 @@ MAStandard(SF_2024_data)
 #### Cell Compartment
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-# #### These functions make the plots to be displayed in this div - uncomment them to run them again
-# CC_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/8-3FA_SF_2024_CC-DOTplot")
-# CC_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/8-3FA_SF_2024_CC-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/8-3FA_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -139,11 +111,6 @@ MAStandard(SF_2024_data)
 #### Molecular Function
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# MF_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/8-3FA_SF_2024_MF-DOTplot")
-# MF_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/8-3FA_SF_2024_MF-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/8-3FA_SF_2024_MF-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -153,11 +120,6 @@ MAStandard(SF_2024_data)
 #### Biological Process
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
-#### These functions make the plots to be displayed in this div - uncomment them to run them again
-# BP_enrichment_plots(SF_2024_data, "dot", "/LipidProbe/GO_plots/8-3FA_SF_2024_BP-DOTplot")
-# BP_enrichment_plots(SF_2024_data, "cnet", "/LipidProbe/GO_plots/8-3FA_SF_2024_BP-CNETplot")
-```
 
 <iframe src="/LipidProbe/GO_plots/8-3FA_SF_2024_BP-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -171,7 +133,7 @@ MAStandard(SF_2024_data)
 ```{r, echo=FALSE, warning=FALSE}
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-SF_2024_data <- SF_2024_data |>
+data <- data |>
   dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
@@ -180,19 +142,19 @@ SF_2024_data <- SF_2024_data |>
   arrange(LipidProbe)
 
 ## Creates a reactive dataframe
-SF_2024_data_reactive <- crosstalk::SharedData$new(SF_2024_data)
+data_reactive <- crosstalk::SharedData$new(data)
 
 htmltools::tags$div(
   class = "filter-container",
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
-                  sharedData = SF_2024_data_reactive,
+                  sharedData = data_reactive,
                   group = ~hit_annotation,
 									inline=TRUE)
 )
 
 ## Displays the reactive dataframe
-datatable(SF_2024_data_reactive,
+datatable(data_reactive,
 				  caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
@@ -200,7 +162,7 @@ datatable(SF_2024_data_reactive,
 ```
 :::
 
-{{< downloadthis DataSets/8-3_FA_Huh7_SF_2024.csv dname="8-3_FA_Huh7_SF_ACS-Chem-Bio_2024.csv">}}
+{{< downloadthis DataSets/8-3_FA_Huh7_SF_2024.csv dname="8-3_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
 
 ::::
 
