@@ -137,9 +137,6 @@ MAStandard <- function(data) {
     return(MAPlotly)
 }
 
-
-# 
-
 RankedOrderPlotStandard <- function(data) {
     ################
     #' A standardized Ranked Order plot theme
@@ -295,7 +292,6 @@ VolcanoPlotStandardized <- function(data) {
     return(VolcanoPlotly)
 }
 
-
 CC_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
@@ -382,9 +378,15 @@ CC_enrichment_plots <- function(data, plotReturnType, filename){
 				# ggtitle("Cellular compartment") +
 				ylab("") +
 				xlab("LipidProbe")
-				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
+				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1, size = 12, face = "bold"),
+              axis.text.y = element_text(size = 12))
 
-			dot <- ggplotly(dot)
+      m <- list(l=50, r = 50, b= 100, pad = 10)
+
+			dot <- ggplotly(dot,
+                      autosize = T,
+                      margin = m)
+
       # Save as HTML (adjust the path as needed)
       saveWidget(dot, file = paste0(here(), filename, ".html"), selfcontained = TRUE)
 

@@ -314,11 +314,11 @@
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html#enriched-proteins",
-    "href": "IndividualStudies/AT_2025.html#enriched-proteins",
+    "objectID": "IndividualStudies/AT_2025.html#data-exploration-and-download",
+    "href": "IndividualStudies/AT_2025.html#data-exploration-and-download",
     "title": "Thomas et al. 2025",
-    "section": "Enriched proteins",
-    "text": "Enriched proteins\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
+    "section": "Data exploration and download",
+    "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
       "Overview of Interactomics Studies",
       "Thomas et al. 2025"
