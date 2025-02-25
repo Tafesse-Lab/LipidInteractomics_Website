@@ -8,44 +8,133 @@ format:
 standalone: true
 ---
 
-(You can also see these instructions at <https://lipidinteractomicsrepository.netlify.app/maintenanceinstructions.html>{target="_blank"})
+# Lipid Interactome
 
-## Site Organization
+## Overview
 
-I've done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that... 
+The **Lipid Interactome** is an interactive, centralized resource designed to harmonize, compare, and integrate lipid interactome datasets. It adheres to **FAIR** (Findable, Accessible, Interoperable, and Reusable) data principles, ensuring that lipid–protein interaction data is systematically organized and easily accessible to researchers. By consolidating proteomics data from multifunctional lipid probes, this resource facilitates the systematic study of lipid-binding proteins across different lipid species and cellular models.
 
-Under the "IndividualStudies" folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the "DataTables" subfolder. Under the "LipidProbe" folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!
+## Features
 
-The _quarto.yml page is described further below, but here it should be mentioned that it will need to be modified to add pages to the site, as it defines the linking structure throughout the whole site.
+-   **Standardized Data Repository**: Curates and formats lipid interactome proteomics data from multiple studies.
+-   **Interactive Visualizations**: Enables exploration of lipid–protein interactions via dynamic graphs and comparative tools.
+-   **Cross-Study Comparisons**: Supports direct analysis of lipid interactomes across different experimental datasets.
+-   **Data Download**: Provides `.csv` formatted datasets for computational analysis.
+-   **Community Contributions**: Allows researchers to submit new datasets for inclusion.
 
-## Maintenance
+## FAIR Data Principles
 
-### Basic overview
+### Findable
 
-This site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: <https://quarto.org/docs/websites>{target="_blank"}. 
+-   A structured, user-friendly interface for navigating experimental datasets.
+-   Clear entry points for study-specific and lipid-specific analyses.
+-   Open to contributions from the scientific community.
 
-The overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of [Bootswatch](https://bootswatch.com/){target="_blank"} themes, or if you're feeling ambitious you can design your own theme.
+### Accessible
 
-When making updates to the site, one first edits/makes a file, then you use the Bash command "quarto render". This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it's nicest to use the IDE Visual Studio Code because there's a terminal in-window and you can see nice previews of what the site will look like without leaving the program. 
+-   All data is freely available for download.
+-   Datasets include comprehensive metadata and documentation.
+-   No user registration is required for access.
 
-### GitHub repository
+### Interoperable
 
-After changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: <git@github.com:gaelenDG/LipidInteractomics_Website.git>. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.
+-   Data is standardized for compatibility across different analytical platforms.
+-   Includes methodological documentation to facilitate comparisons between studies.
+-   Supports integration with external lipidomics databases.
 
-Cloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Gaelen, the repository administrator. More details will go here once a more formal pull request workflow is in place!
+### Reusable
 
-### Quarto formatting
+-   Detailed dataset descriptions, workflow documentation, and limitations provided.
+-   Minimization of technical jargon to ensure accessibility across disciplines.
+-   References to key publications for further validation and context.
 
-I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer). 
+## Data Visualization and Interaction
 
-As a reference to help get you started, I very much appreciated [this blog post](https://blog.posertinlab.com/posts/2023-06-09-writing-a-dissertation-in-quarto/){target="_blank"} by Richard Posert about using Quarto.
+The **Lipid Interactome** incorporates interactive data exploration tools to enhance usability and interpretability: - **Study-Specific Data Exploration**: Interactive Volcano, Ranked-Order, and MA plots for detailed analysis. - **Lipid Probe Aggregation**: Cross-study comparison of lipid–protein interactions. - **Shiny Application Integration**: Facilitates real-time data visualization and filtering.
 
-I honestly get the most confused when it comes to formatting the _quarto.yml file because there aren't many fully-fleshed examples out there for all the options. This is where I've (embarrassingly) leaned on ChatGPT for help -- it's not always right, but it's usually close enough that you can make it work properly anyways.
+## Repository Structure
 
-If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
+```         
+_site                                                
+	├── 404.html                                         
+	├── Background                                       
+	│   ├── BackgroundFigures                            
+	│   │   └── BaselineProteomics_ExperimentalDesign.png
+	│   ├── BaselineProteomics_ExperimentalDesign.png    
+	│   ├── DataAnalysisAndStatistics.html               
+	│   ├── MultifunctionalLipidProbesOverview.html      
+	│   └── ProteomicsUsingMultifunctionalProbes.html                
+	├── ContactUs                                        
+	│   ├── DataSubmission.html                          
+	│   └── about.html                                   
+	├── IndividualStudies                                
+	│   ├── AT_2025.html                                 
+	│   ├── DH_2017.html                                 
+	│   ├── RM_2021.html                                 
+	│   ├── SF_2024.html                                 
+	│   ├── SF_2024_B.html                               
+	│   └── StudyOverview.html                           
+	├── LipidProbe                                       
+	│   ├── 1-10_FattyAcid.html                          
+	│   ├── 8-3_FattyAcid.html                           
+	│   ├── Diacylglycerol.html                          
+	│   ├── EnrichedHitsComparison.html                  
+	│   ├── FormattingTemplate.html                      
+	│   ├── PhosphatidicAcid.html                        
+	│   ├── Phosphatidylethanolamine.html                
+	│   ├── PhosphatidylinositolBisphosphate.html        
+	│   ├── PhosphatidylinositolTrisphosphate.html       
+	│   ├── Sphinganine.html                             
+	│   ├── Sphingosine.html                             
+	│   └── Structures                                   
+	│       ├── 1-10_FattyAcid_Structure.png             
+	│       ├── 8-3_FattyAcid_Structure.png              
+	│       ├── PIP3_Structure.png                       
+	│       ├── PhosphatidicAcid_Structure.png           
+	│       ├── PhosphatidylethanolamineStructure.png    
+	│       ├── SphinganineStructure.png                 
+	│       └── SphingosineStructure.png                 
+	├── MaintenanceInstructions.html                     
+	├── Resources                                        
+	│   └── styles.css                                   
+	├── index.html
+```
 
-If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting. 
+## Installation and Usage
 
-There are a ton of things you can do within html divs, but I haven't dipped my toes in those yet - use these to finely adjust how elements of each page look.
+### Prerequisites
 
-In order to make sure the author information is identical on all appropriate pages, I made an "include" folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they're somehow different.
+-   **R (\>= 4.0)**
+-   **Shiny**
+-   **Tidyverse**
+-   **ggplot2**
+-   **plotly**
+-   **clusterProfiler**
+-   **dplyr**
+-   **ggtangle**
+-   **org.Hs.eg.db**
+
+### Running the Shiny App Locally
+
+``` r
+# Clone the repository
+git clone git@github.com:gaelenDG/LipidInteractomics_Website.git
+cd LipidInteractomics_Website
+
+# Launch the Shiny app
+R -e "shiny::runApp('shiny_app')"
+```
+
+## Availability
+
+The **Lipid Interactome** can be accessed at [LipidInteractome.org](https://www.lipidinteractome.org). All datasets are available for download, and no user data is collected for navigation or interaction.
+
+## Data Submission
+
+Researchers are encouraged to contribute their datasets to expand the repository. Submission guidelines and contact details are available on the [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html).
+
+For inquiries, feedback, or additional questions, please email the site administrators at [Contact.Us\@lipidinteractome.org](mailto:Contact.Us@lipidinteractome.org).
+
+## Keywords
+
+Lipid-protein interactions, proteomics, interactomics, database, multifunctionalized lipids, bioinformatics.
