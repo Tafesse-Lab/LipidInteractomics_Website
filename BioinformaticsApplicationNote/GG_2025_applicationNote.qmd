@@ -23,6 +23,13 @@ authors:
     orcid: 0000-0002-7696-6034
     corresponding: true
     email: gaelen.guzman@lipidinteractome.org
+  - name: "Frank Stein"
+    affiliations:
+      - name: "European Molecular Biology Laboratory"
+        city: Heidelberg
+        country: Germany
+        postal-code: 69117
+    orcid: 0000-0001-9695-1692
   - name: "Carsten Schultz"
     affiliations:
       - name:  "Oregon Health & Science University"
@@ -50,9 +57,9 @@ ___
 
 ## Authors
 
-Gaelen Guzman^1,^*, Carsten Schulz^1^, Fikadu G. Tafesse^1^
+Gaelen Guzman^1,^*, Frank Stein^2^, Carsten Schulz^1^, Fikadu G. Tafesse^1^
 
-^1^ = Oregon Health & Science University; * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
+^1^ = Oregon Health & Science University, Portland, OR, USA; ^2^ = European Molecular Biology Laboratory, Heidelberg, Germany * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
 :::
 
 ## Summary
