@@ -14,7 +14,14 @@ The goal of this site is to increase the accessibility of proteomics data utiliz
 
 Explore the lipids below to see their published interactomes.
 
-See our [Functional Lipid Probes Overview](/Background/MultifunctionalLipidProbesOverview.qmd) for more details about how these lipid analogs are used.
+
+## Need more info?
+
+See our [Functional Lipid Probes Overview](/Background/MultifunctionalLipidProbesOverview.qmd) for more details about how these lipid analogs are used. 
+
+See our [Proteomics Methodology Overview](/Background/ProteomicsUsingMultifunctionalProbes.qmd) for more details about the quantification methods used in the data presented in this repository.
+
+See our [Data Analysis Overview](/Background/DataAnalysisAndStatistics.qmd) for more details about the data analysis between the raw mass spectrometry data and the final data presented here.
 
 ## Lipid Interactomes
 

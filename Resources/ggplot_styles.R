@@ -1,5 +1,4 @@
 ################ Library Initialization ################
-
 library(ggplot2)
 library(ggrepel)
 library(emojifont)
@@ -12,6 +11,17 @@ library(enrichplot)
 library(igraph)
 library(ggtangle)
 library(stringr)
+library(crosstalk)
+library(plotly)
+library(grid)
+library(readr)
+library(rmarkdown)
+library(gt)
+library(DT)
+library(heatmaply)
+library(ggvenn)
+library(scales)
+library(htmltools)
 
 ################ Helper Functions ################
 

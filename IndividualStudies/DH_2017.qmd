@@ -10,22 +10,7 @@ standalone: false
 ```{r setup, echo=FALSE, include=FALSE, warning=FALSE}
 
 ## intitialize libraries
-library(dplyr)
-library(tidyr)
-library(plotly)
-library(ggplot2)
-library(grid)
-library(readr)
-library(rmarkdown)
-library(emojifont)
-library(gt)
-library(crosstalk)
-library(DT)
-library(stringr)
 library(here)
-library(heatmaply)
-library(ggvenn)
-library(scales)
 
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))

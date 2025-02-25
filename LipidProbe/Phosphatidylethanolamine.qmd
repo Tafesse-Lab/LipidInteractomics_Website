@@ -29,17 +29,6 @@ format:
 ```{r setup, echo=FALSE, include=FALSE}
 
 ## intitialize libraries
-library(dplyr)
-library(tidyr)
-library(plotly)
-library(ggplot2)
-library(grid)
-library(readr)
-library(rmarkdown)
-library(emojifont)
-library(gt)
-library(crosstalk)
-library(DT)
 library(here)
 
 ## Opening the source file for the ggplot custom theme
