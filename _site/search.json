@@ -6,7 +6,7 @@
     "section": "",
     "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used.",
     "crumbs": [
-      "Explore  by Lipid Probes"
+      "Explore by Lipid Probe"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "",
     "text": "This repository is still under construction, please forgive us for incomplete sections as we build features!\nThe goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid::protein interactions of biologically active lipids.\nExplore the lipids below to see their published interactomes.\nSee our Functional Lipid Probes Overview for more details about how these lipid analogs are used.",
     "crumbs": [
-      "Explore  by Lipid Probes"
+      "Explore by Lipid Probe"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "Lipid Interactomes",
     "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
     "crumbs": [
-      "Explore  by Lipid Probes"
+      "Explore by Lipid Probe"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA Plot\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphingosine"
     ]
@@ -48,7 +48,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n(No MF pathways identified among enriched hits and candidates.)\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphingosine"
     ]
@@ -60,7 +60,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n Download \n\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphingosine"
     ]
@@ -72,7 +72,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "PI(3,4,5)P~3~"
     ]
@@ -84,7 +84,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\nJournal\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\nAbstract\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\nLipid probes utilized\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\nAdditional sample preparation ?\n\n\n\n\n\nData visualization\n\nVolcano plotsRanked-order plotsMA Plot\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidylethanolamine"
     ]
@@ -96,7 +96,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidylethanolamine"
     ]
@@ -108,7 +108,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidylethanolamine"
     ]
@@ -127,7 +127,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Diacylglycerol"
     ]
@@ -139,7 +139,7 @@
     "section": "",
     "text": "Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the Diazirine Overview",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
@@ -151,7 +151,7 @@
     "section": "Structure",
     "text": "Structure",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
@@ -163,7 +163,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n1-10 Fatty acid\n8-3 Fatty acid\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA Plots\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
@@ -175,7 +175,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n(No MF pathways identified among enriched hits and candidates.)\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
@@ -187,7 +187,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n::::",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "1-10 Fatty Acid"
     ]
@@ -199,7 +199,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n1-10 Fatty acid\n8-3 Fatty acid\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; B"
     ]
   },
@@ -210,7 +210,7 @@
     "section": "Data visualization",
     "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nMA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; B"
     ]
   },
@@ -221,7 +221,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; B"
     ]
   },
@@ -232,7 +232,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\n8-3 FA\n\n\n\n\n\n1-10 FA\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; B"
     ]
   },
@@ -243,7 +243,7 @@
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; B"
     ]
   },
@@ -254,7 +254,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nRainer Muller, Ana Kojic, Mevlut Citir, Carsten Schultz\n\n\n\nAngewandte Chemie\nhttps://doi.org/10.1002/anie.202103599\n\n\n\nWe synthesized the first multifunctionalized phosphoinositide polyphosphate derivatives featuring a photo-removable protecting group (“cage”), a photo-crosslinkable diazirine group, and a terminal alkyne group useful for click chemistry. We demonstrate that the lipid derivatives readily enter cells. After photo-crosslinking, cell fixation and fluorescent tagging via click chemistry, we determined the intracellular location of the lipid derivatives before and after uncaging of the lipids. We find that there is rapid trafficking of PI(3,4)P2 and PI(3,4,5)P3 derivatives to the plasma membrane, opening the intriguing possibility that there is active transport of these lipids involved. We employed the photo-crosslinking and click chemistry functions to analyze the proteome of PI(3,4,5)P3-binding proteins. From the latter, we validated by RNAi that the putative lipid binding proteins ATP11A and MPP6 are involved in the transport of PI(3,4,5)P3 to the plasma membrane.\n\n\n\nPI(3,4,5)P3\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Muller et al., 2021"
     ]
   },
@@ -265,7 +265,7 @@
     "section": "Data visualization",
     "text": "Data visualization\n\nHeat map\n\n\nVenn Diagram",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Muller et al., 2021"
     ]
   },
@@ -276,7 +276,7 @@
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Muller et al., 2021"
     ]
   },
@@ -287,7 +287,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Thomas et al. 2025"
     ]
   },
@@ -298,18 +298,18 @@
     "section": "Data visualization",
     "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Thomas et al. 2025"
     ]
   },
   {
-    "objectID": "IndividualStudies/AT_2025.html#gene-ontology-enrichment",
-    "href": "IndividualStudies/AT_2025.html#gene-ontology-enrichment",
+    "objectID": "IndividualStudies/AT_2025.html#gene-ontology-analysis",
+    "href": "IndividualStudies/AT_2025.html#gene-ontology-analysis",
     "title": "Thomas et al. 2025",
-    "section": "Gene Ontology enrichment",
-    "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process",
+    "section": "Gene Ontology Analysis",
+    "text": "Gene Ontology Analysis\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Thomas et al. 2025"
     ]
   },
@@ -320,7 +320,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPA\n\n\n\n\n\nPE\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Thomas et al. 2025"
     ]
   },
@@ -331,7 +331,7 @@
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Thomas et al. 2025"
     ]
   },
@@ -468,7 +468,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\n\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\n\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\n\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\n\nHeLa\n\n\n\nPeptide spectral counting",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Höglinger et al., 2017"
     ]
   },
@@ -477,9 +477,20 @@
     "href": "IndividualStudies/DH_2017.html#data-visualization",
     "title": "Höglinger et al. 2017",
     "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\nDepicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.\n\n\n\n\n\n\n\n\n\n\n\nVenn Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect overlap regions to see co-enriched proteins:\n\n\n\nEnriched to Sph only\n\n\n\nEnriched to DAG only\n\n\n\nEnriched to Sph and DAG\n\n\n\nEnriched to Sph and FA\n\n\n\nEnriched to DAG and FA\n\n\n\nEnriched to all probes",
+    "text": "Data visualization\n\nHeat map\nDepicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.\n\n\n\n\n\n\n\n\n\n\n\nVenn Diagram",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
+      "Höglinger et al., 2017"
+    ]
+  },
+  {
+    "objectID": "IndividualStudies/DH_2017.html#gene-ontology-analysis",
+    "href": "IndividualStudies/DH_2017.html#gene-ontology-analysis",
+    "title": "Höglinger et al. 2017",
+    "section": "Gene Ontology Analysis",
+    "text": "Gene Ontology Analysis\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect overlap regions to see co-enriched proteins:\n\n\n\nEnriched to Sph only\n\n\n\nEnriched to DAG only\n\n\n\nEnriched to Sph and DAG\n\n\n\nEnriched to Sph and FA\n\n\n\nEnriched to DAG and FA\n\n\n\nEnriched to all probes",
+    "crumbs": [
+      "Explore Individual Studies",
       "Höglinger et al., 2017"
     ]
   },
@@ -490,7 +501,7 @@
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Höglinger et al., 2017"
     ]
   },
@@ -501,7 +512,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\n\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\n\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\n\n\n\n\nHuh7\n\n\n\n16-channel Tandem Mass Tagging (TMT16)",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; A"
     ]
   },
@@ -512,7 +523,7 @@
     "section": "Data visualization",
     "text": "Data visualization\n\nVolcano plotsRanked-order plotsMA Plots\n\n\n\n\n\n\n\nVolcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nRanked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold).\n\n\n\n\n\n\n\n\n\n\nMA plots",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; A"
     ]
   },
@@ -523,7 +534,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; A"
     ]
   },
@@ -534,7 +545,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nSph\n\n\n\n\n\nSpa\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\nno hit",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; A"
     ]
   },
@@ -545,7 +556,7 @@
     "section": "Data download",
     "text": "Data download\n Download",
     "crumbs": [
-      "Overview of Interactomics Studies",
+      "Explore Individual Studies",
       "Farley et al., 2024; A"
     ]
   },
@@ -556,7 +567,7 @@
     "section": "",
     "text": "Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.\n\n\n\nReuseCC BY 4.0",
     "crumbs": [
-      "Overview of Interactomics Studies"
+      "Explore Individual Studies"
     ]
   },
   {
@@ -566,7 +577,7 @@
     "section": "",
     "text": "Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the Diazirine Overview",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "8-3 Fatty Acid"
     ]
@@ -578,7 +589,7 @@
     "section": "Structure",
     "text": "Structure",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "8-3 Fatty Acid"
     ]
@@ -590,7 +601,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA Plots\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024(B). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "8-3 Fatty Acid"
     ]
@@ -602,7 +613,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "8-3 Fatty Acid"
     ]
@@ -614,7 +625,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n::::\n\nCell background: HeLa\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nDoris Höglinger, André Nadler, Per Haberkant, Joanna Kirkpatrick, Martina Schifferer, Frank Stein, Sebastian Hauke, Forbes D. Porter, Carsten Schultz\n\n\nJournal\nPNAS\nhttps://doi.org/10.1073/pnas.1611096114\n\n\nAbstract\nLipid-mediated signaling events regulate many cellular processes. Investigations of the complex underlying mechanisms are difficult because several different methods need to be used under varying conditions. Here we introduce multifunctional lipid derivatives to study lipid metabolism, lipid−protein interactions, and intracellular lipid localization with a single tool per target lipid. The probes are equipped with two photoreactive groups to allow photoliberation (uncaging) and photo–cross-linking in a sequential manner, as well as a click-handle for subsequent functionalization. We demonstrate the versatility of the design for the signaling lipids sphingosine and diacylglycerol; uncaging of the probe for these two species triggered calcium signaling and intracellular protein translocation events, respectively. We performed proteomic screens to map the lipid-interacting proteome for both lipids. Finally, we visualized a sphingosine transport deficiency in patient-derived Niemann−Pick disease type C fibroblasts by fluorescence as well as correlative light and electron microscopy, pointing toward the diagnostic potential of such tools. We envision that this type of probe will become important for analyzing and ultimately understanding lipid signaling events in a comprehensive manner.\n\n\nLipid probes utilized\nSphingosine\nDiacylglycerol\n8-3 Fatty acid\n\n\nCell line analyzed\nHeLa\n\n\nMass spectrometry quantification method\nPeptide spectral counting",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Fatty Acids",
       "8-3 Fatty Acid"
     ]
@@ -626,7 +637,7 @@
     "section": "",
     "text": "For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via Tandem Mass Tagging.\nUse the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.\n\n\n\n\n\n  \n  \n  Shiny App Embedding",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Probe vs Probe Comparisons"
     ]
   },
@@ -637,7 +648,7 @@
     "section": "",
     "text": "For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via Tandem Mass Tagging.\nUse the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.\n\n\n\n\n\n  \n  \n  Shiny App Embedding",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Probe vs Probe Comparisons"
     ]
   },
@@ -648,7 +659,7 @@
     "section": "Shared hits",
     "text": "Shared hits",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Probe vs Probe Comparisons"
     ]
   },
@@ -659,7 +670,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA Plot\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidic Acid"
     ]
@@ -671,7 +682,7 @@
     "section": "",
     "text": "Study details\n\n\n\n\n\n\n\nAlix Thomas, Rainer Mueller, Ana Kojic, Scotland E. Farley, Frank Stein, Per Haberkant, Carsten Schultz\n\n\n\nChemical Communications\nhttps://doi.org/10.1039/D4CC03599B\n\n\n\nPhosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes which resides preferentially in mitochondria. Here, we synthesized a multifunctionalized PE derivative (1) de-signed to identify PE-binding proteins in intact cells through photo-crosslinking and subsequent isolation and proteomic analysis of the PE-protein conjugates. Due to its aromatic caging group, 1 is initially concentrating in perinuclear membranes. After uncaging, rapid translocation to mitochondria was observed. Hence, the tool is useful for tracking PE location and for determining the PE interactome. A trifunctional phosphatidic acid (PA) derivative in compari-son was rapidly metabolized and is hence more limited in its use.\n\n\n\nPhosphatidic Acid   \nPhosphatidic Acid   \n\n\n\nHeLa\n\n\n\n16-channel Tandem Mass Tagging (TMT16)\n\n\n\n\n\n\nProteomeXchange details\n\n\n\n\n\nProteomeXchange title: Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome\nProteomeXchange accession: PXD059960\nPubMed ID: Not applicable\nPublication DOI: 10.1039/D4CC03599B\nProject Webpage: http://www.ebi.ac.uk/pride/archive/projects/PXD059960\nFTP Download: https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolcano plotsRanked-order plotsMA Plot\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student’s t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n\n\nData as reported in Thomas et al., 2025. Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.\n\n\n\n\n\n\n\n\n[1] \"Data not yet provided.\"",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidic Acid"
     ]
@@ -683,7 +694,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n\n\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidic Acid"
     ]
@@ -695,7 +706,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "Phosphatidic Acid"
     ]
@@ -707,7 +718,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Glycerophospholipids",
       "PI(4,5)P~2~"
     ]
@@ -719,7 +730,7 @@
     "section": "Protein interactome",
     "text": "Protein interactome\n\nCell background: Huh7\n\n\n\n\n\n\nStudy details\n\n\n\n\n\n\nAuthors\nScotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz\n\n\nJournal\nACS Chemical Biology\nhttps://doi.org/10.1021/acschembio.3c00554\n\n\nAbstract\nFunctions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.\n\n\nLipid probes utilized\n\n\nCell line analyzed\nHuh7\n\n\nMass spectrometry quantification method\n16-channel Tandem Mass Tagging (TMT16)\n\n\nAdditional sample preparation ?\n\n\n\n\n\nVolcano plotRanked order plotMA Plot\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).\n\n\n\n\n\n\n\n\n\n\nData as reported in Farley et al., 2024. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV).",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphinganine"
     ]
@@ -731,7 +742,7 @@
     "section": "Gene Ontology enrichment",
     "text": "Gene Ontology enrichment\nIn beta: GO analysis still under development\n\nCell CompartmentMolecular FunctionBiological Process\n\n\n\n\n\n(CC CNET plot failed in production)\n\n\n\n\n\n\n(MF CNET plot failed in production)\n\n\n\n\n(No BP pathways identified among enriched hits and candidates.)\n(BP CNET plot failed in production)",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphinganine"
     ]
@@ -743,7 +754,7 @@
     "section": "Data exploration and download",
     "text": "Data exploration and download\nCheck the boxes below to filter by significance thresholds.\n\n\n\n\n\nEnrichment criteria:\n\n\n\nenriched hit\n\n\n\nenriched candidate\n\n\n\nno hit\n\n\n\n\n\n\n\n\n\n\n\n\n Download \n:::",
     "crumbs": [
-      "Explore  by Lipid Probes",
+      "Explore by Lipid Probe",
       "Sphingolipids",
       "Sphinganine"
     ]

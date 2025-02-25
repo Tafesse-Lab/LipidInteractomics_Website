@@ -43,7 +43,7 @@ website:
         text: "Search by Protein"
         contents:
           - section: ""
-      - section: "Explore  by Lipid Probes"
+      - section: "Explore by Lipid Probe"
         href: index.qmd
         contents: 
           - section: "Glycerophospholipids"
@@ -74,6 +74,7 @@ website:
             text: "Probe vs Probe Comparisons"
 
       - section: "IndividualStudies/StudyOverview.qmd"
+        text: "Explore Individual Studies"
         contents:
           - href: IndividualStudies/AT_2025.qmd
             text: "Thomas et al. 2025"

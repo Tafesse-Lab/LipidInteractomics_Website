@@ -26,9 +26,11 @@ library(here)
 library(heatmaply)
 library(ggvenn)
 library(scales)
+
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
+###### Wrangling the raw dataset ######
 DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_2017_download.csv")) |>
   mutate(gene_name = str_extract(Description, "GN=([^\\s]+)") |> str_remove("GN=")) |>
   mutate(Species = str_extract(Description, "OS=([^=]+?)\\sGN=") |> str_remove("OS=") |> str_remove("GN=")) |>
@@ -42,6 +44,52 @@ DH_2017_data <- read.csv(paste0(here(),"/IndividualStudies/DataTables/DH_PNAS_20
   summarise(PSM_DAG = mean(PSM_DAG),
             PSM_FA = mean(PSM_FA),
             PSM_Sph = mean(PSM_Sph))
+
+
+###### Wrangling for the DataTable and the GO ######
+
+DH_2017_data <- DH_2017_data |>
+  mutate(VennRegion = case_when(
+    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to all probes",
+    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA == 0) ~ "Enriched to Sph only",
+    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to DAG only",
+    (PSM_Sph == 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to FA only",
+    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to Sph and DAG",
+    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to Sph and FA",
+    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to DAG and FA")) 
+
+DH_2017_data$VennRegion <- factor(pull(DH_2017_data, VennRegion), ordered = TRUE, levels = c("Enriched to Sph only", "Enriched to DAG only", "Enriched to FA only", "Enriched to Sph and DAG", "Enriched to Sph and FA", "Enriched to DAG and FA", "Enriched to all probes"))
+
+
+###### Wrangling for the HeatMap ######
+
+DH_2017_data_HeatMap <- DH_2017_data |>
+  pivot_longer(cols = starts_with("PSM_"),
+              names_to = "variable",
+              names_prefix = "PSM_",
+              values_to = "value") |>
+  mutate(name = gene_name) |>
+  dplyr::select(name, variable, value)
+
+DH_2017_data_HeatMap$variable <- factor(pull(DH_2017_data_HeatMap, variable), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
+
+###### Wrangling for the Venn Diagram ######
+
+# Separates out each of the genesets, then forces them back together in a vectorized list.
+Sph_proteins <- DH_2017_data |>
+  filter(PSM_Sph > 0) |>
+  dplyr::select(gene_name)
+
+FA_proteins <- DH_2017_data |>
+  filter(PSM_FA > 0) |>
+  dplyr::select(gene_name)
+
+DAG_proteins <- DH_2017_data |>
+  filter(PSM_DAG > 0) |>
+  dplyr::select(gene_name)
+
+DH_2017_VennData <- list("Sph proteins" = as.list(Sph_proteins$gene_name), "FA proteins" = as.list(FA_proteins$gene_name), "DAG proteins" = as.list(DAG_proteins$gene_name))
+
 ```
 
 
@@ -59,23 +107,10 @@ Depicted below are the average PSM count for two replicates each of UV-irradiate
 
 :::{.border}
 
-```{r, echo=FALSE, fig.height=10, warning=FALSE}
-
-DH_2017_data_long <- DH_2017_data |>
-  pivot_longer(cols = starts_with("PSM_"),
-              names_to = "variable",
-              names_prefix = "PSM_",
-              values_to = "value") |>
-  mutate(name = gene_name) |>
-  dplyr::select(name, variable, value)
-  # mutate(OriginalValues = value) |>
-  # mutate(value = case_when(value < 20 ~ value,
-  #                           value >= 20 ~ 20))
-  
-DH_2017_data_long$variable <- factor(pull(DH_2017_data_long, variable), ordered = TRUE, levels = c("Sph", "FA", "DAG"))
+```{r Making Heat Map, echo=FALSE, fig.height=10, warning=FALSE}
 
 # Create the heatmap
-heatmaply(long_data = DH_2017_data_long,
+heatmaply(long_data = DH_2017_data_HeatMap,
           xlab = "Probe",
           ylab = "Gene name",
           label_names = c("Gene name", "Probe", "PSM count"),
@@ -91,29 +126,10 @@ heatmaply(long_data = DH_2017_data_long,
 
 :::{.border}
 
-```{r, echo=FALSE, warning=FALSE, width = 8}
-
-# Ensure the data is in the correct format
-DH_2017_data_AddingRownames <- as.data.frame(DH_2017_data)
-rownames(DH_2017_data_AddingRownames) <- DH_2017_data_AddingRownames[,1]
-DH_2017_data_AddingRownames[,1] <- NULL
-
-Sph_proteins <- DH_2017_data_AddingRownames |>
-  filter(PSM_Sph > 0) |>
-  dplyr::select(PSM_Sph)
-
-FA_proteins <- DH_2017_data_AddingRownames |>
-  filter(PSM_FA > 0) |>
-  dplyr::select(PSM_FA)
-
-DAG_proteins <- DH_2017_data_AddingRownames |>
-  filter(PSM_DAG > 0) |>
-  dplyr::select(PSM_DAG)
+```{r Making Venn Diagram, echo=FALSE, warning=FALSE, width = 8}
 
 
-combined_venn_proteins <- list("Sph proteins" = rownames(Sph_proteins), "FA proteins" = rownames(FA_proteins), "DAG proteins" = rownames(DAG_proteins))
-
-ggvenn <- ggvenn(combined_venn_proteins,
+ggvenn <- ggvenn(DH_2017_VennData,
                       show_percentage = FALSE,
                       show_elements = FALSE,
                       fill_color = c("orange", "purple", "blue")) +
@@ -124,21 +140,229 @@ ggvenn
 
 ```
 
-```{r, echo=FALSE, warning=FALSE}
+:::
 
-DH_2017_data <- DH_2017_data |>
-  mutate(VennRegion = case_when(
-    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to all probes",
-    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA == 0) ~ "Enriched to Sph only",
-    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to DAG only",
-    (PSM_Sph == 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to FA only",
-    (PSM_Sph > 0 & PSM_DAG > 0 & PSM_FA == 0) ~ "Enriched to Sph and DAG",
-    (PSM_Sph > 0 & PSM_DAG == 0 & PSM_FA > 0) ~ "Enriched to Sph and FA",
-    (PSM_Sph == 0 & PSM_DAG > 0 & PSM_FA > 0) ~ "Enriched to DAG and FA")) 
+## Gene Ontology Analysis
 
+```{r GO data wrangling, echo=FALSE, warning=FALSE}
 
-DH_2017_data$VennRegion <- factor(pull(DH_2017_data, VennRegion), ordered = TRUE, levels = c("Enriched to Sph only", "Enriched to DAG only", "Enriched to FA only", "Enriched to Sph and DAG", "Enriched to Sph and FA", "Enriched to DAG and FA", "Enriched to all probes"))
+# ID_LUT <- clusterProfiler::bitr(geneID= DH_2017_data$gene_name, 
+#                                 fromType = "SYMBOL",
+#                                 toType = "ENTREZID",
+#                                 OrgDb = org.Hs.eg.db
+# )
 
+# names(ID_LUT) <- c("gene_name", "ENTREZID")
+
+# # Merging ENTREZIDs to data
+# DH_2017_data_GO <- left_join(DH_2017_data, ID_LUT)
+
+# ego_results_Identification_CC <- NULL
+
+# # Attempts to identify pathways in the dataset
+# try(
+#   ego_results_Identification_CC <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
+#                                     data = DH_2017_data_GO, fun = "enrichGO",
+#                                     OrgDb = org.Hs.eg.db,
+#                                     keyType = "ENTREZID",
+#                                     ont = "CC",
+#                                     readable = TRUE,
+#                                     universe = ID_LUT$ENTREZID)
+#                                     ) 
+
+# # If no pathway identified, returns text warning user.
+# if (is.null(ego_results_Identification_CC)) {
+#   print("No pathways identified among enriched hits and candidates.")
+# }
+
+# # If pathways identified, produces both plots for viewing.
+# if (!is.null(ego_results_Identification_CC))
+#   {
+#   ego_results_Identification_CC_table <- ego_results_Identification_CC@compareClusterResult
+#   ego_results_Identification_CC_table <- ego_results_Identification_CC_table %>% 
+#     group_by(ID, VennRegion) %>%
+#     mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
+#   ego_results_Identification_CC_table$Description <- factor(ego_results_Identification_CC_table$Description, levels = unique(rev(ego_results_Identification_CC_table$Description)))
+
+#   ego_sub <- ego_results_Identification_CC_table %>% 
+#     group_by(VennRegion) %>%
+#     slice_head(n = 10)
+
+#   # Makes the dot plot
+#   dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
+#     geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
+#     theme_bw(base_size = 12) +
+#     scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
+#     # ggtitle("Cellular compartment") +
+#     ylab("") +
+#     xlab("Enrichment Profile") +
+#     theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
+
+#   dot <- ggplotly(dot)
+#   # Save as HTML (adjust the path as needed)
+#   saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_CC_DOTPLOT.html"), selfcontained = TRUE)
+
+#   try(
+# 			# Makes the cnet plot
+#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
+#       # ggtitle("Cellular compartment") +
+#         customPlot
+#     )
+
+#   if(!is.null(cnet)){
+#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_CC_CNET.png"),
+#            width = 12, height = 12)
+#   } else {
+#     print("Cnet plot failed in production.")
+#   }
+# }
+
+# ego_results_Identification_MF <- NULL
+
+# # Attempts to identify pathways in the dataset
+# try(
+#   ego_results_Identification_MF <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
+#                                     data = DH_2017_data_GO, fun = "enrichGO",
+#                                     OrgDb = org.Hs.eg.db,
+#                                     keyType = "ENTREZID",
+#                                     ont = "MF",
+#                                     readable = TRUE,
+#                                     universe = ID_LUT$ENTREZID)
+#                                     ) 
+
+# # If no pathway identified, returns text warning user.
+# if (is.null(ego_results_Identification_MF)) {
+#   print("No pathways identified among enriched hits and candidates.")
+# }
+
+# # If pathways identified, produces both plots for viewing.
+# if (!is.null(ego_results_Identification_MF))
+#   {
+  # ego_results_Identification_MF_table <- ego_results_Identification_MF@compareClusterResult
+  # ego_results_Identification_MF_table <- ego_results_Identification_MF_table %>% 
+  #   group_by(ID, VennRegion) %>%
+  #   mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
+  # ego_results_Identification_MF_table$Description <- factor(ego_results_Identification_MF_table$Description, levels = unique(rev(ego_results_Identification_MF_table$Description)))
+
+  # ego_sub <- ego_results_Identification_MF_table %>% 
+  #   group_by(VennRegion) %>%
+  #   slice_head(n = 10)
+
+  # # Makes the dot plot
+  # dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
+  #   geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
+  #   theme_bw(base_size = 12) +
+  #   scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
+  #   # ggtitle("Cellular compartment") +
+  #   ylab("") +
+  #   xlab("Enrichment Profile") +
+  #   theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
+
+  # dot <- ggplotly(dot)
+  # # Save as HTML (adjust the path as needed)
+  # saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_MF_DOTPLOT.html"), selfcontained = TRUE)
+
+#   try(
+# 			# Makes the cnet plot
+#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
+#       # ggtitle("Cellular compartment") +
+#         customPlot
+#     )
+
+#   if(!is.null(cnet)){
+#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_MF_CNET.png"),
+#            width = 12, height = 12)
+#   } else {
+#     print("Cnet plot failed in production.")
+#   }
+# }
+
+# ego_results_Identification_BP <- NULL
+
+# # Attempts to identify pathways in the dataset
+# try(
+#   ego_results_Identification_BP <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
+#                                     data = DH_2017_data_GO, fun = "enrichGO",
+#                                     OrgDb = org.Hs.eg.db,
+#                                     keyType = "ENTREZID",
+#                                     ont = "BP",
+#                                     readable = TRUE,
+#                                     universe = ID_LUT$ENTREZID)
+#                                     ) 
+
+# # If no pathway identified, returns text warning user.
+# if (is.null(ego_results_Identification_BP)) {
+#   print("No pathways identified among enriched hits and candidates.")
+# }
+
+# If pathways identified, produces both plots for viewing.
+# if (!is.null(ego_results_Identification_BP))
+#   {
+#   ego_results_Identification_BP_table <- ego_results_Identification_BP@compareClusterResult
+#   ego_results_Identification_BP_table <- ego_results_Identification_BP_table %>% 
+#     group_by(ID, VennRegion) %>%
+#     mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
+#   ego_results_Identification_BP_table$Description <- factor(ego_results_Identification_BP_table$Description, levels = unique(rev(ego_results_Identification_BP_table$Description)))
+
+#   ego_sub <- ego_results_Identification_BP_table %>% 
+#     group_by(VennRegion) %>%
+#     slice_head(n = 10)
+
+#   # Makes the dot plot
+#   dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
+#     geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
+#     theme_bw(base_size = 12) +
+#     scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
+#     # ggtitle("Cellular compartment") +
+#     ylab("") +
+#     xlab("Enrichment Profile") +
+#     theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
+
+#   dot <- ggplotly(dot)
+#   # Save as HTML (adjust the path as needed)
+#   saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html"), selfcontained = TRUE)
+
+#   try(
+# 			# Makes the cnet plot
+#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
+#       # ggtitle("Cellular compartment") +
+#         customPlot
+#     )
+
+#   if(!is.null(cnet)){
+#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_BP_CNET.png"),
+#            width = 12, height = 12)
+#   } else {
+#     print("Cnet plot failed in production.")
+#   }
+# }
+```
+
+**In beta: GO analysis still under development**
+
+:::: {.panel-tabset}
+
+#### Cell Compartment
+:::{.border}
+<iframe src="/IndividualStudies/GO_plots/DH_2017_CC_DOTPLOT.html" width="100%" height="500px"></iframe>
+
+:::
+
+#### Molecular Function
+:::{.border}
+<iframe src="/IndividualStudies/GO_plots/DH_2017_MF_DOTPLOT.html" width="100%" height="500px"></iframe>
+
+:::
+
+#### Biological Process
+:::{.border}
+<iframe src="/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html" width="100%" height="500px"></iframe>
+
+:::
+::::
+
+:::{.border}
+```{r Building Datatable, echo=FALSE, warning=FALSE}
 DH_2017_data_reactive <- crosstalk::SharedData$new(DH_2017_data)
 
 
@@ -151,20 +375,13 @@ htmltools::tags$div(
                   inline = TRUE)
 )
 
-
 ## Displays the reactive dataframe
 datatable(DH_2017_data_reactive, options = list(pageLength = 20))
-
-
 ```
 
 :::
 
-
-
-
 ## Data download
-
 
 {{< downloadthis DataTables/DH_PNAS_2017_download.csv dname="DH_PNAS_2017">}}
 

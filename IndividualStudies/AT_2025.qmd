@@ -87,7 +87,7 @@ print("Data not yet provided.")
 :::
 
 
-## Gene Ontology enrichment
+## Gene Ontology Analysis
 
 **In beta: GO analysis still under development**
 
