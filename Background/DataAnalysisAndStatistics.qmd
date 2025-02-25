@@ -2,7 +2,7 @@
 title: "Data Analysis and Statistics"
 ---
 
-## TMT quantitative mass spec pipeline
+## TMT quantitative mass spec pipeline {#sec-DataAnalysis_TMTPipeline}
 
 To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr. Frank Stein developed and implemented the data analysis pipeline.
 In summary, we processed the mass spectrometry (MS) data using FragPipe[@yuAnalysisDIAProteomics2023], following established methodologies outlined in Farley et al. (2024, A), Farley et al. (2024, B), and Thomas et al. (2025)[@farleyTrifunctionalSphinganineNew2024a; @farleyTrifunctionalFattyAcid2024; @thomasTrifunctionalLipidDerivatives2025]. To ensure accurate protein identification, we used a UniProt FASTA database that included common contaminants and reversed sequences for validation. Proteins were included in the final dataset only if they contained at least two unique peptides, each at least seven amino acids long.
@@ -21,3 +21,37 @@ To better understand the biological significance of the detected proteins, we co
 	- Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
 
 * Need these details. -->
+
+## Visualizing proteomics data {#sec-DataAnalysis_visualization}
+
+### Volcano Plots
+
+* Visualize enrichment data versus the statistical p value associated with every protein identified in a dataset. 
+* In each of the datasets depicted on this site, data points to the right of the x-axis (logFC > 0) denote proteins which were enriched when the lipid probe was irradiated with UV light -- stimulating chemical crosslinking.
+* The p value of each protein was -log10 transformed, meaning that the smaller the p value, the higher the point is. 
+* In the datasets depicted on this site, there is little meaning to points with logFC < 0; as such, these proteins are ignored regardless of their statistical significance
+
+### Rank-ordered Plots
+
+* Line up each protein identified in the data set from lowest logFC to highest.
+* Enables the viewer to see the shape of the dataset -- for example, some datasets will have only a few proteins substantially enriched, and this is reflected by a sharp "elbow" at the edges of the plot. 
+* This can be helpful in selecting logFC cutoffs when determining significance cutoffs. 
+
+### MA Plots
+
+* Depict the logFC of each protein (**M**) versus the average m/z intensity of the peptides (**A**) that contributed to that proteins identification.
+* Gives greater insight into the quality of a datapoint. For example, a point on the far left of the MA plot had relatively low total abundance and may be more sensitive to dramatic changes in enrichment -- whereas points to the right were substantially more abundant in the sample and will be less sensitive to change. 
+* Thus, "significantly enriched" proteins with higher **A** intensity may be more trustworthy than those with lower **A** values.
+
+### Heat Maps
+
+### Gene Ontology Overview {#sec-DataAnalysis_GeneOntology}
+
+* Gene Ontology (GO) analyses take a list of proteins and determines whether there is a greater than random enrichment of a biological feature. These features can include pathways, molecular functions, cellular compartments or biological processes. 
+* In each of the GO analyses presented on this site, we filtered according to a significance cutoff -- these cutoffs are explained on the respective data pages (either "enriched candidates" or "enriched hits", as in the TMT-based datasets, or unique subsets of probe enrichment, as in the PSM-based datasets). 
+* Enriched pathways are given statistical significance by assessing the likelihood that a pathway would be overrepresented through random chance.
+
+#### Gene Ontology Dot Plots
+
+#### Gene Ontology CNET maps
+

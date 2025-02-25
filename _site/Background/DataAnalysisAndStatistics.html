@@ -188,6 +188,17 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
+            <a href="../LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Probe vs Probe Comparisons</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
             <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explore by Lipid Probe</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
@@ -282,12 +293,6 @@ div.csl-indent {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Probe vs Probe Comparisons</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -341,7 +346,15 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tmt-quantitative-mass-spec-pipeline" id="toc-tmt-quantitative-mass-spec-pipeline" class="nav-link active" data-scroll-target="#tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</a></li>
+  <li><a href="#sec-DataAnalysis_TMTPipeline" id="toc-sec-DataAnalysis_TMTPipeline" class="nav-link active" data-scroll-target="#sec-DataAnalysis_TMTPipeline">TMT quantitative mass spec pipeline</a></li>
+  <li><a href="#sec-DataAnalysis_visualization" id="toc-sec-DataAnalysis_visualization" class="nav-link" data-scroll-target="#sec-DataAnalysis_visualization">Visualizing proteomics data</a>
+  <ul class="collapse">
+  <li><a href="#volcano-plots" id="toc-volcano-plots" class="nav-link" data-scroll-target="#volcano-plots">Volcano Plots</a></li>
+  <li><a href="#rank-ordered-plots" id="toc-rank-ordered-plots" class="nav-link" data-scroll-target="#rank-ordered-plots">Rank-ordered Plots</a></li>
+  <li><a href="#ma-plots" id="toc-ma-plots" class="nav-link" data-scroll-target="#ma-plots">MA Plots</a></li>
+  <li><a href="#heat-maps" id="toc-heat-maps" class="nav-link" data-scroll-target="#heat-maps">Heat Maps</a></li>
+  <li><a href="#sec-DataAnalysis_GeneOntology" id="toc-sec-DataAnalysis_GeneOntology" class="nav-link" data-scroll-target="#sec-DataAnalysis_GeneOntology">Gene Ontology Overview</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="DataAnalysisAndStatistics.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -367,8 +380,8 @@ div.csl-indent {
 </header>
 
 
-<section id="tmt-quantitative-mass-spec-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="tmt-quantitative-mass-spec-pipeline">TMT quantitative mass spec pipeline</h2>
+<section id="sec-DataAnalysis_TMTPipeline" class="level2">
+<h2 class="anchored" data-anchor-id="sec-DataAnalysis_TMTPipeline">TMT quantitative mass spec pipeline</h2>
 <p>To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr.&nbsp;Frank Stein developed and implemented the data analysis pipeline. In summary, we processed the mass spectrometry (MS) data using FragPipe<span class="citation" data-cites="yuAnalysisDIAProteomics2023"><sup><a href="#ref-yuAnalysisDIAProteomics2023" role="doc-biblioref">1</a></sup></span>, following established methodologies outlined in Farley et al.&nbsp;(2024, A), Farley et al.&nbsp;(2024, B), and Thomas et al.&nbsp;(2025)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">2</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">4</a></sup></span>. To ensure accurate protein identification, we used a UniProt FASTA database that included common contaminants and reversed sequences for validation. Proteins were included in the final dataset only if they contained at least two unique peptides, each at least seven amino acids long.</p>
 <p>To account for potential technical variations across experiments, we applied a normalization step using the ‘removeBatchEffect’ function from the limma package, stabilizing variance in log2-transformed TMT reporter ion intensities<span class="citation" data-cites="huberVarianceStabilizationApplied2002 ritchieLimmaPowersDifferential2015"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a>,<a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>. Further normalization was carried out using the ‘normalizeVSN’ function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the ‘lmFit’ function.</p>
 <p>For the protein-lipid probe interaction experiments (+/- UV exposure), proteins were categorized based on their enrichment in the +UV condition. Proteins showing a log2 fold-change of at least 1 and a p-value below 0.05 were classified as “enriched hits,” while those showing similar enrichment trends but with p-values above 0.05 were labeled as “enriched candidates.”</p>
@@ -381,12 +394,57 @@ div.csl-indent {
     - Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
 
 * Need these details. -->
+</section>
+<section id="sec-DataAnalysis_visualization" class="level2">
+<h2 class="anchored" data-anchor-id="sec-DataAnalysis_visualization">Visualizing proteomics data</h2>
+<section id="volcano-plots" class="level3">
+<h3 class="anchored" data-anchor-id="volcano-plots">Volcano Plots</h3>
+<ul>
+<li>Visualize enrichment data versus the statistical p value associated with every protein identified in a dataset.</li>
+<li>In each of the datasets depicted on this site, data points to the right of the x-axis (logFC &gt; 0) denote proteins which were enriched when the lipid probe was irradiated with UV light – stimulating chemical crosslinking.</li>
+<li>The p value of each protein was -log10 transformed, meaning that the smaller the p value, the higher the point is.</li>
+<li>In the datasets depicted on this site, there is little meaning to points with logFC &lt; 0; as such, these proteins are ignored regardless of their statistical significance</li>
+</ul>
+</section>
+<section id="rank-ordered-plots" class="level3">
+<h3 class="anchored" data-anchor-id="rank-ordered-plots">Rank-ordered Plots</h3>
+<ul>
+<li>Line up each protein identified in the data set from lowest logFC to highest.</li>
+<li>Enables the viewer to see the shape of the dataset – for example, some datasets will have only a few proteins substantially enriched, and this is reflected by a sharp “elbow” at the edges of the plot.</li>
+<li>This can be helpful in selecting logFC cutoffs when determining significance cutoffs.</li>
+</ul>
+</section>
+<section id="ma-plots" class="level3">
+<h3 class="anchored" data-anchor-id="ma-plots">MA Plots</h3>
+<ul>
+<li>Depict the logFC of each protein (<strong>M</strong>) versus the average m/z intensity of the peptides (<strong>A</strong>) that contributed to that proteins identification.</li>
+<li>Gives greater insight into the quality of a datapoint. For example, a point on the far left of the MA plot had relatively low total abundance and may be more sensitive to dramatic changes in enrichment – whereas points to the right were substantially more abundant in the sample and will be less sensitive to change.</li>
+<li>Thus, “significantly enriched” proteins with higher <strong>A</strong> intensity may be more trustworthy than those with lower <strong>A</strong> values.</li>
+</ul>
+</section>
+<section id="heat-maps" class="level3">
+<h3 class="anchored" data-anchor-id="heat-maps">Heat Maps</h3>
+</section>
+<section id="sec-DataAnalysis_GeneOntology" class="level3">
+<h3 class="anchored" data-anchor-id="sec-DataAnalysis_GeneOntology">Gene Ontology Overview</h3>
+<ul>
+<li>Gene Ontology (GO) analyses take a list of proteins and determines whether there is a greater than random enrichment of a biological feature. These features can include pathways, molecular functions, cellular compartments or biological processes.</li>
+<li>In each of the GO analyses presented on this site, we filtered according to a significance cutoff – these cutoffs are explained on the respective data pages (either “enriched candidates” or “enriched hits”, as in the TMT-based datasets, or unique subsets of probe enrichment, as in the PSM-based datasets).</li>
+<li>Enriched pathways are given statistical significance by assessing the likelihood that a pathway would be overrepresented through random chance.</li>
+</ul>
+<section id="gene-ontology-dot-plots" class="level4">
+<h4 class="anchored" data-anchor-id="gene-ontology-dot-plots">Gene Ontology Dot Plots</h4>
+</section>
+<section id="gene-ontology-cnet-maps" class="level4">
+
 
 
 
 </section>
+</section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Gene Ontology CNET maps</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-yuAnalysisDIAProteomics2023" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Yu, F. <em>et al.</em> <a href="https://doi.org/10.1038/s41467-023-39869-5">Analysis of <span>DIA</span> proteomics data using <span>MSFragger-DIA</span> and <span>FragPipe</span> computational platform</a>. <em>Nat Commun</em> <strong>14</strong>, 4154 (2023).</div>
 </div>
