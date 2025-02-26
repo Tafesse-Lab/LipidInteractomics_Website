@@ -97,6 +97,8 @@ print("Data not yet provided.")
 
 **In beta: GO analysis still under development**
 
+[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
+
 ::: {.panel-tabset}
 
 #### Cell Compartment

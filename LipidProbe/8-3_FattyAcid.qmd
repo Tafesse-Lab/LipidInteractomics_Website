@@ -37,7 +37,7 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 ::: {.callout-note collapse="true"}
 
-{{< include /StudyInformation_includes/SF_2024_A_include.qmd >}}
+{{< include /StudyInformation_includes/SF_2024_B_include.qmd >}}
 
 :::
 
@@ -80,6 +80,8 @@ MAStandard(data)
 ## Gene Ontology enrichment
 
 **In beta: GO analysis still under development**
+
+[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
 
 ::: {.panel-tabset}
 

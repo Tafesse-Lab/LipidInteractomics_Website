@@ -766,7 +766,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"fade","selector":".lightbox","descPosition":"bottom","openEffect":"fade"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","closeEffect":"fade","loop":true,"descPosition":"bottom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
