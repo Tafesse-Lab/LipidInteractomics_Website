@@ -442,6 +442,8 @@ MF_enrichment_plots <- function(data, plotReturnType, filename){
 	# Initializes a ego results vector as NULL in the event that no pathways get identified
 	ego_results_Identification_MF <- NULL
 
+  clusterProfiler::gseKEGG()
+
 	# Attempts to identify pathways in the dataset
 	try(
 		ego_results_Identification_MF <- clusterProfiler::compareCluster(ENTREZID ~ sample,

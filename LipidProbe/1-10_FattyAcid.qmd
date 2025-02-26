@@ -6,6 +6,20 @@ prefer-html: true
 ---
 
 
+
+*Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the [Diazirine Overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*
+
+
+## Structure
+
+:::{.border}
+![Trifunctional 1-10 Fatty Acid](/LipidProbe/Structures/TF_1-10_fatty_acid.png)
+:::
+
+## Protein interactome
+
+### Cell background: Huh7
+
 <!-- R setup, reading dataframes and minor data wrangling -->
 ```{r setup, echo=FALSE, include=FALSE}
 ## intitialize libraries
@@ -24,21 +38,6 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 
 ```
-
-
-*Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the [Diazirine Overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*
-
-
-## Structure
-
-:::{.border}
-![](/LipidProbe/Structures/1-10_FattyAcid_Structure.png)
-:::
-
-## Protein interactome
-
-### Cell background: Huh7
-
 
 ::: {.callout-note collapse="true"}
 

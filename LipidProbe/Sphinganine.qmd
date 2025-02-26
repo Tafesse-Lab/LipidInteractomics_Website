@@ -1,5 +1,5 @@
 ---
-title: "Trifunctional sphinganine"
+title: "Trifunctional Sphinganine"
 prefer-html: true
 format: html
 ---
@@ -7,7 +7,7 @@ format: html
 ## Structure
 
 :::{.border}
-![](/LipidProbe/Structures/SphinganineStructure.png)
+![Trifunctional Sphinganine](/LipidProbe/Structures/TF_Sphinganine.png)
 :::
 
 ## Protein interactome

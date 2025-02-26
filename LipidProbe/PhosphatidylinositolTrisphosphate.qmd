@@ -6,9 +6,8 @@ prefer-html: true
 
 ## Structure
 
-
 :::{.border}
-![](/LipidProbe/Structures/PIP3_Structure.png)
+![Trifunctional Phosphatidylinositol 3,4,5-*bis*phosphate](/LipidProbe/Structures/TF_PI(3,4,5)P3.png)
 :::
 
 ## Protein interactome

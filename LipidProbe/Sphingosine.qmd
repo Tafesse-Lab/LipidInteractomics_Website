@@ -9,7 +9,7 @@ prefer-html: true
 ## Structure
 
 :::{.border}
-![](/LipidProbe/Structures/SphingosineStructure.png)
+![Trifunctional Sphingosine](/LipidProbe/Structures/TF_Sphingosine.png)
 :::
 
 ## Protein interactome

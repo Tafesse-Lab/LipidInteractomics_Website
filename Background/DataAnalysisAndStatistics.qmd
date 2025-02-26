@@ -53,5 +53,9 @@ To better understand the biological significance of the detected proteins, we co
 
 #### Gene Ontology Dot Plots
 
-#### Gene Ontology CNET maps
+#### Gene Ontology Concept Network (CNET) Plots
+
+* Visualizes the relationships between genes and biological gene ontology terms as a network. Concepts (cellular compartment, molecular function, biological process) are arranged as hub nodes with all related genes arrayed as connecting nodes. Genes associated with multiple concepts can be connected to several concept nodes, highlighting the intersection of the concepts.
+
+
 

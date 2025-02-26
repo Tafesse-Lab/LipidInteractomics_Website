@@ -10,7 +10,7 @@ format:
 ## Structure
 
 :::{.border}
-![](/LipidProbe/Structures/PhosphatidicAcid_Structure.png)
+![Trifunctional Phosphatidic Acid](/LipidProbe/Structures/TF_PA.png)
 :::
 
 ### Cell background: HeLa

@@ -10,7 +10,7 @@ format:
 ## Structure
 
 :::{.border}
-![](Structures/PhosphatidylethanolamineStructure.png)
+![Trifunctional Phosphatidylethanolamine](/LipidProbe/Structures/TF_PE.png)
 :::
 
 ## Protein interactome
