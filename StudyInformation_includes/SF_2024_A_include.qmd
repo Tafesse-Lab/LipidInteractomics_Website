@@ -15,9 +15,27 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 #### Lipid probes utilized
 
+<a href="/LipidProbe/Sphingosine.qmd" class="hover-preview">Trifunctional Sphingosine</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_Sphingosine.png" alt="Trifunctional Sphingosine" />
+</span>
+
+<a href="/LipidProbe/Sphinganine.qmd" class="hover-preview">Trifunctional Sphinganine</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_Sphinganine.png" alt="Trifunctional Sphinganine" />
+</span>
+
 #### Cell line analyzed
 
 [Huh7](https://huh7.com){target="_blank"}
+
+
+#### Uncaging & Crosslinking timeline
+
+| Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| Sph    | 60 min | 5 min  | 15 min | 5 min  |
+| Spa    | 60 min | 5 min  | 15 min | 5 min  |
 
 #### Mass spectrometry quantification method
 

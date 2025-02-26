@@ -7,7 +7,7 @@ Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schul
 ##### Journal
 ACS Chemical Biology
 
-<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+<https://doi.org/10.1039/D4CC00974F>{target="_blank"}
 
 ##### Abstract
 
@@ -15,13 +15,27 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 ##### Lipid probes utilized
 
-[1-10 Fatty acid](/LipidProbe/1-10_FattyAcid.qmd)
+<a href="/LipidProbe/1-10_FattyAcid.qmd" class="hover-preview">Trifunctional 1-10 Fatty Acid</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_1-10_fatty_acid.png" alt="Trifunctional 1-10 Fatty Acid" />
+</span>
 
-[8-3 Fatty acid](/LipidProbe/8-3_FattyAcid.qmd)
+<a href="/LipidProbe/8-3_FattyAcid.qmd" class="hover-preview">Trifunctional 8-3 Fatty Acid</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_8-3_fatty_acid.png" alt="Trifunctional 8-3 Fatty Acide" />
+</span>
 
 ##### Cell line analyzed
 
 [Huh7](https://huh7.com){target="_blank"}
+
+#### Uncaging & Crosslinking timeline
+
+| Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| 1-10 FA|  min |  min  |  min |  min  |
+| 8-3 FA |  min |  min  |  min |  min  |
+
 
 ##### Mass spectrometry quantification method
 
