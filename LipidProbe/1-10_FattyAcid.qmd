@@ -1,10 +1,9 @@
 ---
 title: "Trifunctional 1-10 Fatty Acid"
-crossref: 
-  ref-hyperlink: true # (default is true)
 prefer-html: true
 ---
 
+:::{.content-hidden unless-format="html"}
 
 
 *Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the [Diazirine Overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*
@@ -160,3 +159,5 @@ datatable(data_reactive,
 {{< downloadthis DataSets/1-10_FA_Huh7_SF_2024.csv dname="1-10_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
 
 ::::
+
+:::

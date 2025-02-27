@@ -26,6 +26,14 @@ Lipid-mediated signaling events regulate many cellular processes. Investigations
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
 
+#### Uncaging & Crosslinking timeline
+
+| Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| Sph |  5 min | 2.5 min  | 0 min | 2.5 min  |
+| DAG |  15 min | 2.5 min  | 0 min | 2.5 min  |
+| 8-3 FA |  15 min | 2.5 min  | 0 min | 2.5 min  |
+
 #### Mass spectrometry quantification method
 
 Peptide spectral counting

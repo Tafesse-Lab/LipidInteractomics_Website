@@ -33,8 +33,8 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 | Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
 |:-------|:------:|:------:|:------:|:------:|
-| 1-10 FA|  min |  min  |  min |  min  |
-| 8-3 FA |  min |  min  |  min |  min  |
+| 1-10 FA|  60 min | 5 min  | 60 min | 5 min  |
+| 8-3 FA |  60 min | 5 min  | 60 min | 5 min  |
 
 
 ##### Mass spectrometry quantification method
