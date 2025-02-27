@@ -76,8 +76,6 @@ MAStandard(data)
 
 **In beta: GO analysis still under development**
 
-[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
-
 :::::{.border}
 ::::{#fig-PE_GOplots}
 ::: {.panel-tabset}
@@ -101,7 +99,7 @@ MAStandard(data)
 (BP CNET plot failed in production)
 :::
 
-GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about GO dot plots.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
 ::::
 :::::
 

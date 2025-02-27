@@ -3,7 +3,7 @@ title: "Trifunctional Phosphatidic Acid"
 prefer-html: true
 format:
   html: default
-
+callout-icon: false
 ---
 
 
@@ -13,6 +13,9 @@ format:
 ![Trifunctional Phosphatidic Acid](/LipidProbe/Structures/TF_PA.png)
 :::
 
+## Protein Interactome
+
+::::{.callout-tip}
 ### Cell background: HeLa
 
 
@@ -96,8 +99,6 @@ print("Data not yet provided.")
 
 **In beta: GO analysis still under development**
 
-[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
-
 :::::{.border}
 ::::{#fig-PE_GOplots}
 ::: {.panel-tabset}
@@ -121,7 +122,7 @@ print("Data not yet provided.")
 (BP CNET plot failed in production)
 :::
 
-GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about GO dot plots.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology Analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
 ::::
 :::::
 
@@ -163,5 +164,8 @@ datatable(data_reactive,
 ```
 :::
 
+<br>
 
 {{< downloadthis DataSets/PA_HeLa_AT_2025.csv dname="PA_HeLa_AT_ChemComm_download">}}
+
+::::

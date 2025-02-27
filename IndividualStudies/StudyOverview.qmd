@@ -5,5 +5,3 @@ format:
     embed-resources: false
 standalone: true
 ---
-
-Will assemble some kind of filterable table here for lipid probe, cell type, year, and author. Need more studies for this though.

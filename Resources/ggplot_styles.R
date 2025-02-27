@@ -215,7 +215,7 @@ RankedOrderPlotStandard <- function(data) {
         theme(legend.text = element_text(size = 12))  +
         theme(strip.text = element_text(
     size = 20))
-
+clusterProfiler::gs
     m <- list(l=50, r = 50, b= 100, pad = 4)
 	
     RankedOrderPlotly <- ggplotly(RankedOrderPlots,
@@ -313,11 +313,14 @@ CC_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################
 	#' Makes some GO enrichment plots of the Cellular Compartment
-	#' data must have at least the columns "gene_name", "LipidProbe" and "hit_annotation"
-	#' User must select either a dotplot or a cnet plot to return
-	#' Selects only the proteins which are "enriched candidate" and "enriched hit" and seeks the enriched pathways among them.
+  #' Selects only the proteins which are "enriched candidate" and "enriched hit" and seeks the enriched pathways among them.
 	#' If no pathways enriched, returns a text response to put in the output box
 	#' Basically uses Frank's analysis pipeline to make these plots fresh on each call.
+  #' 
+	#' ARGUMENTS:
+    #' User inputs the dataframe to apply the function to. Data must have at least the columns "gene_name", "LipidProbe" and "hit_annotation"
+    #' User must select either a dotplot or a cnet plot to return
+    #' User then must input the filename to append to the saved files, with the appropriate filepath.
 	################
 
 	# Making lookup table with ENTREZID identifiers from data

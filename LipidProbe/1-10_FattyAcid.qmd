@@ -1,6 +1,7 @@
 ---
 title: "Trifunctional 1-10 Fatty Acid"
 prefer-html: true
+callout-icon: false
 ---
 
 :::{.content-hidden unless-format="html"}
@@ -16,6 +17,8 @@ prefer-html: true
 :::
 
 ## Protein interactome
+
+:::: {.callout-tip}
 
 ### Cell background: Huh7
 
@@ -34,8 +37,6 @@ data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/1-10_FA_Huh7_SF_202
 
 # Organizing the hit annotations as factors
 data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
-
-
 ```
 
 ::: {.callout-note collapse="true"}
@@ -44,14 +45,12 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 :::
 
-
-
 :::: {.panel-tabset}
 
 ##### Volcano plot
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
+```{r volcano_plot, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 VolcanoPlotStandardized(data)
@@ -61,7 +60,7 @@ VolcanoPlotStandardized(data)
 ##### Ranked order plot
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
+```{r ro_plot, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 RankedOrderPlotStandard(data)
@@ -72,7 +71,7 @@ RankedOrderPlotStandard(data)
 ##### MA Plots
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
+```{r MA_plot, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024(B)](/IndividualStudies/SF_2024_B.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 MAStandard(data)
@@ -84,8 +83,6 @@ MAStandard(data)
 ## Gene Ontology Analysis
 
 **In beta: GO analysis still under development**
-
-[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
 
 :::::{.border}
 ::::{#fig-PE_GOplots}
@@ -110,14 +107,15 @@ MAStandard(data)
 (BP CNET plot failed in production)
 :::
 
-GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about GO dot plots.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
+
 ::::
 :::::
 
 ## Data exploration and download
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
+```{r datatable, echo=FALSE, warning=FALSE}
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
@@ -150,6 +148,7 @@ datatable(data_reactive,
 ```
 :::
 
+<br>
 
 {{< downloadthis DataSets/1-10_FA_Huh7_SF_2024.csv dname="1-10_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
 

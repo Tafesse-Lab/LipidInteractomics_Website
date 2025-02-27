@@ -158,17 +158,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Search by Protein</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
-      </ul>
-  </li>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
@@ -766,7 +761,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"fade","closeEffect":"fade","selector":".lightbox","descPosition":"bottom","loop":true});
+<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","openEffect":"fade","descPosition":"bottom","closeEffect":"fade"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

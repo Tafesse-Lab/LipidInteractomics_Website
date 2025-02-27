@@ -1,6 +1,7 @@
 ---
 title: "Trifunctional Diacylglycerol"
 prefer-html: true
+callout-icon: false
 ---
 
 ## Structure
@@ -10,6 +11,7 @@ prefer-html: true
 
 ## Protein interactome
 
+::::{.callout-tip}
 ### Cell background: HeLa
 
 ::: {.callout-note collapse="true"}
@@ -17,3 +19,5 @@ prefer-html: true
 {{< include /StudyInformation_includes/DH_2017_include.qmd >}}
 
 :::
+
+::::
