@@ -1,13 +1,3 @@
----
-title: "README"
-author: "Gaelen Guzman"
-date: 2025/01/09
-format: 
-  html:
-    embed-resources: true
-standalone: true
----
-
 # Lipid Interactome
 
 ## Overview

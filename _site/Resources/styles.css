@@ -31,8 +31,8 @@
 
 .hover-image {
   position: absolute;
-  top: 120%; /* Adjust to position below the link */
-  left: 50%;
+  top: auto; /* Adjust to position below the link */
+  left: auto;
   transform: translateX(-10%);
   width: 300px;
   height: auto;

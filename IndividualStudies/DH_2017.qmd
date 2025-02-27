@@ -129,222 +129,30 @@ ggvenn
 
 ## Gene Ontology Analysis
 
-```{r GO data wrangling, echo=FALSE, warning=FALSE}
-
-# ID_LUT <- clusterProfiler::bitr(geneID= DH_2017_data$gene_name, 
-#                                 fromType = "SYMBOL",
-#                                 toType = "ENTREZID",
-#                                 OrgDb = org.Hs.eg.db
-# )
-
-# names(ID_LUT) <- c("gene_name", "ENTREZID")
-
-# # Merging ENTREZIDs to data
-# DH_2017_data_GO <- left_join(DH_2017_data, ID_LUT)
-
-# ego_results_Identification_CC <- NULL
-
-# # Attempts to identify pathways in the dataset
-# try(
-#   ego_results_Identification_CC <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
-#                                     data = DH_2017_data_GO, fun = "enrichGO",
-#                                     OrgDb = org.Hs.eg.db,
-#                                     keyType = "ENTREZID",
-#                                     ont = "CC",
-#                                     readable = TRUE,
-#                                     universe = ID_LUT$ENTREZID)
-#                                     ) 
-
-# # If no pathway identified, returns text warning user.
-# if (is.null(ego_results_Identification_CC)) {
-#   print("No pathways identified among enriched hits and candidates.")
-# }
-
-# # If pathways identified, produces both plots for viewing.
-# if (!is.null(ego_results_Identification_CC))
-#   {
-#   ego_results_Identification_CC_table <- ego_results_Identification_CC@compareClusterResult
-#   ego_results_Identification_CC_table <- ego_results_Identification_CC_table %>% 
-#     group_by(ID, VennRegion) %>%
-#     mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
-#   ego_results_Identification_CC_table$Description <- factor(ego_results_Identification_CC_table$Description, levels = unique(rev(ego_results_Identification_CC_table$Description)))
-
-#   ego_sub <- ego_results_Identification_CC_table %>% 
-#     group_by(VennRegion) %>%
-#     slice_head(n = 10)
-
-#   # Makes the dot plot
-#   dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
-#     geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
-#     theme_bw(base_size = 12) +
-#     scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
-#     # ggtitle("Cellular compartment") +
-#     ylab("") +
-#     xlab("Enrichment Profile") +
-#     theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
-
-#   dot <- ggplotly(dot)
-#   # Save as HTML (adjust the path as needed)
-#   saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_CC_DOTPLOT.html"), selfcontained = TRUE)
-
-#   try(
-# 			# Makes the cnet plot
-#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
-#       # ggtitle("Cellular compartment") +
-#         customPlot
-#     )
-
-#   if(!is.null(cnet)){
-#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_CC_CNET.png"),
-#            width = 12, height = 12)
-#   } else {
-#     print("Cnet plot failed in production.")
-#   }
-# }
-
-# ego_results_Identification_MF <- NULL
-
-# # Attempts to identify pathways in the dataset
-# try(
-#   ego_results_Identification_MF <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
-#                                     data = DH_2017_data_GO, fun = "enrichGO",
-#                                     OrgDb = org.Hs.eg.db,
-#                                     keyType = "ENTREZID",
-#                                     ont = "MF",
-#                                     readable = TRUE,
-#                                     universe = ID_LUT$ENTREZID)
-#                                     ) 
-
-# # If no pathway identified, returns text warning user.
-# if (is.null(ego_results_Identification_MF)) {
-#   print("No pathways identified among enriched hits and candidates.")
-# }
-
-# # If pathways identified, produces both plots for viewing.
-# if (!is.null(ego_results_Identification_MF))
-#   {
-  # ego_results_Identification_MF_table <- ego_results_Identification_MF@compareClusterResult
-  # ego_results_Identification_MF_table <- ego_results_Identification_MF_table %>% 
-  #   group_by(ID, VennRegion) %>%
-  #   mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
-  # ego_results_Identification_MF_table$Description <- factor(ego_results_Identification_MF_table$Description, levels = unique(rev(ego_results_Identification_MF_table$Description)))
-
-  # ego_sub <- ego_results_Identification_MF_table %>% 
-  #   group_by(VennRegion) %>%
-  #   slice_head(n = 10)
-
-  # # Makes the dot plot
-  # dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
-  #   geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
-  #   theme_bw(base_size = 12) +
-  #   scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
-  #   # ggtitle("Cellular compartment") +
-  #   ylab("") +
-  #   xlab("Enrichment Profile") +
-  #   theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
-
-  # dot <- ggplotly(dot)
-  # # Save as HTML (adjust the path as needed)
-  # saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_MF_DOTPLOT.html"), selfcontained = TRUE)
-
-#   try(
-# 			# Makes the cnet plot
-#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
-#       # ggtitle("Cellular compartment") +
-#         customPlot
-#     )
-
-#   if(!is.null(cnet)){
-#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_MF_CNET.png"),
-#            width = 12, height = 12)
-#   } else {
-#     print("Cnet plot failed in production.")
-#   }
-# }
-
-# ego_results_Identification_BP <- NULL
-
-# # Attempts to identify pathways in the dataset
-# try(
-#   ego_results_Identification_BP <- clusterProfiler::compareCluster(ENTREZID ~ VennRegion,
-#                                     data = DH_2017_data_GO, fun = "enrichGO",
-#                                     OrgDb = org.Hs.eg.db,
-#                                     keyType = "ENTREZID",
-#                                     ont = "BP",
-#                                     readable = TRUE,
-#                                     universe = ID_LUT$ENTREZID)
-#                                     ) 
-
-# # If no pathway identified, returns text warning user.
-# if (is.null(ego_results_Identification_BP)) {
-#   print("No pathways identified among enriched hits and candidates.")
-# }
-
-# If pathways identified, produces both plots for viewing.
-# if (!is.null(ego_results_Identification_BP))
-#   {
-#   ego_results_Identification_BP_table <- ego_results_Identification_BP@compareClusterResult
-#   ego_results_Identification_BP_table <- ego_results_Identification_BP_table %>% 
-#     group_by(ID, VennRegion) %>%
-#     mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
-#   ego_results_Identification_BP_table$Description <- factor(ego_results_Identification_BP_table$Description, levels = unique(rev(ego_results_Identification_BP_table$Description)))
-
-#   ego_sub <- ego_results_Identification_BP_table %>% 
-#     group_by(VennRegion) %>%
-#     slice_head(n = 10)
-
-#   # Makes the dot plot
-#   dot <- ggplot(data = ego_sub, aes(VennRegion, Description)) +
-#     geom_point(aes(size = odds_ratio, colour = -log10(p.adjust))) +
-#     theme_bw(base_size = 12) +
-#     scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
-#     # ggtitle("Cellular compartment") +
-#     ylab("") +
-#     xlab("Enrichment Profile") +
-#     theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
-
-#   dot <- ggplotly(dot)
-#   # Save as HTML (adjust the path as needed)
-#   saveWidget(dot, file = paste0(here(), "/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html"), selfcontained = TRUE)
-
-#   try(
-# 			# Makes the cnet plot
-#     cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
-#       # ggtitle("Cellular compartment") +
-#         customPlot
-#     )
-
-#   if(!is.null(cnet)){
-#       ggsave(paste0(here(), "/IndividualStudies/GO_plots/DH_2017_BP_CNET.png"),
-#            width = 12, height = 12)
-#   } else {
-#     print("Cnet plot failed in production.")
-#   }
-# }
-```
-
 **In beta: GO analysis still under development**
 
-:::: {.panel-tabset}
+[Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
+
+:::::{.border}
+::::{#fig-PE_GOplots}
+::: {.panel-tabset}
 
 #### Cell Compartment
-:::{.border}
+
 <iframe src="/IndividualStudies/GO_plots/DH_2017_CC_DOTPLOT.html" width="100%" height="500px"></iframe>
 
-:::
-
 #### Molecular Function
-:::{.border}
+
 <iframe src="/IndividualStudies/GO_plots/DH_2017_MF_DOTPLOT.html" width="100%" height="500px"></iframe>
 
-:::
-
 #### Biological Process
-:::{.border}
-<iframe src="/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html" width="100%" height="500px"></iframe>
 
+<iframe src="/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html" width="100%" height="500px"></iframe>
 :::
+
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about GO dot plots.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
 ::::
+:::::
 
 :::{.border}
 ```{r Building Datatable, echo=FALSE, warning=FALSE}
