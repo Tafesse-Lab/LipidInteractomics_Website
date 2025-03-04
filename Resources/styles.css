@@ -34,7 +34,7 @@
   top: auto; /* Adjust to position below the link */
   left: auto;
   transform: translateX(-10%);
-  width: 300px;
+  width: auto;
   height: auto;
   display: none;
   z-index: 1000;

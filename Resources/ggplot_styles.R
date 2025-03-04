@@ -215,7 +215,6 @@ RankedOrderPlotStandard <- function(data) {
         theme(legend.text = element_text(size = 12))  +
         theme(strip.text = element_text(
     size = 20))
-clusterProfiler::gs
     m <- list(l=50, r = 50, b= 100, pad = 4)
 	
     RankedOrderPlotly <- ggplotly(RankedOrderPlots,
