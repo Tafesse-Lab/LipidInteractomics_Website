@@ -11,7 +11,7 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-![Trifunctional Phosphatidylethanolamine](/LipidProbe/Structures/TF_PE.png)
+![Trifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PE.png)
 :::
 
 ## Protein Interactome

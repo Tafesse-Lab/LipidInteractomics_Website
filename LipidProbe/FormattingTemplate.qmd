@@ -51,18 +51,6 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # # Organizing the hit annotations as factors
 # data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
-# # Building an ID column to maintain the order on the x-axis
-# ID <- c()
-# for(i in 0:(nrow(data))){
-# 	ID[i] = i
-# }
-
-# # Applies the ID column to the Spa results
-# data_ranked <- data |>
-#     arrange(logFC) |>
-# 	filter(LipidProbe == "1-10 FA") |>
-# 	mutate(ID = ID) 
-
 ```
 
 ##### Volcano plot

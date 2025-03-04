@@ -10,7 +10,7 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-![Trifunctional Phosphatidic Acid](/LipidProbe/Structures/TF_PA.png)
+![Trifunctional Phosphatidic Acid. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PA.png)
 :::
 
 ## Protein Interactome

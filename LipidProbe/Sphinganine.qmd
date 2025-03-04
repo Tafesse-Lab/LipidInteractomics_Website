@@ -8,7 +8,7 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-![Trifunctional Sphinganine](/LipidProbe/Structures/TF_Sphinganine.png)
+![Trifunctional Sphinganine. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_Sphinganine.png)
 :::
 
 ## Protein interactome

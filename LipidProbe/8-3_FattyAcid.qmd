@@ -10,7 +10,7 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-![Trifunctional 8-3 Fatty Acid](/LipidProbe/Structures/TF_8-3_fatty_acid.png)
+![Trifunctional 8-3 Fatty Acid. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_8-3_fatty_acid.png)
 :::
 
 ## Protein interactome

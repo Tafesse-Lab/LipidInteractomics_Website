@@ -17,10 +17,6 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # Opening the datatable for this page IN FINAL RENDER
 data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv"))
 
-# # # Opening the datatable for this page WHILE EDITING
-# data <- readr::read_csv("IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv")
-
- 
 # Organize the hit annotations as factors
 data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 

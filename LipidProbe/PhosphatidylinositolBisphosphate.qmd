@@ -7,7 +7,7 @@ prefer-html: true
 ## Structure
 
 :::{.border}
-![Trifunctional Phosphatidylinositol 4,5-*bis*phosphate](/LipidProbe/Structures/TF_PI(4,5)P2.png)
+![Trifunctional Phosphatidylinositol 4,5-*bis*phosphate. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PI(4,5)P2.png)
 :::
 
 ## Protein interactome
