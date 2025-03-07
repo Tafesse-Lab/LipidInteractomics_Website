@@ -175,12 +175,17 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Search by Protein</span></a>
-  </div>
-</li>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
@@ -377,8 +382,10 @@ div.csl-indent {
 
 <section id="sec-DataAnalysis_TMTPipeline" class="level2">
 <h2 class="anchored" data-anchor-id="sec-DataAnalysis_TMTPipeline">TMT quantitative mass spec pipeline</h2>
-<p>To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr.&nbsp;Frank Stein developed and implemented the data analysis pipeline. In summary, we processed the mass spectrometry (MS) data using FragPipe<span class="citation" data-cites="yuAnalysisDIAProteomics2023"><sup><a href="#ref-yuAnalysisDIAProteomics2023" role="doc-biblioref">1</a></sup></span>, following established methodologies outlined in Farley et al.&nbsp;(2024, A), Farley et al.&nbsp;(2024, B), and Thomas et al.&nbsp;(2025)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">2</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">4</a></sup></span>. To ensure accurate protein identification, we used a UniProt FASTA database that included common contaminants and reversed sequences for validation. Proteins were included in the final dataset only if they contained at least two unique peptides, each at least seven amino acids long.</p>
-<p>To account for potential technical variations across experiments, we applied a normalization step using the ‘removeBatchEffect’ function from the limma package, stabilizing variance in log2-transformed TMT reporter ion intensities<span class="citation" data-cites="huberVarianceStabilizationApplied2002 ritchieLimmaPowersDifferential2015"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a>,<a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>. Further normalization was carried out using the ‘normalizeVSN’ function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the ‘lmFit’ function.</p>
+<p>To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published in Farley et al.&nbsp;(2024, A), Farley et al.&nbsp;(2024, B), and Thomas et al.&nbsp;(2025)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">1</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">3</a></sup></span>. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr.&nbsp;Frank Stein developed and implemented the data analysis pipeline.</p>
+<p>In summary, we processed the mass spectrometry (MS) data using FragPipe<span class="citation" data-cites="yuAnalysisDIAProteomics2023"><sup><a href="#ref-yuAnalysisDIAProteomics2023" role="doc-biblioref">4</a></sup></span>. The protein search was performed using a UniProt FASTA database with one entry per gene, excluding isoforms and minimizing TrEMBL entries. Common contaminants and reversed sequences were also included for validation. Proteins were included in the final dataset if they contained at least two razor peptides, as FragPipe applies the Occam’s Razor principle, assigning shared peptides to the protein with the highest supporting evidence.</p>
+<p>For the database search, we included post-translational modifications (PTMs) such as oxidation (M), acetylation (N-term), and carbamidomethylation (C). The raw files were analyzed using FragPipe’s protein.tsv output, which was used as the basis for downstream quantification.</p>
+<p>To account for potential technical variations across experiments, we applied a normalization step using the ‘removeBatchEffect’ function from the limma package to correct for batch effects in log2-transformed TMT reporter ion intensities<span class="citation" data-cites="huberVarianceStabilizationApplied2002 ritchieLimmaPowersDifferential2015"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a>,<a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>. Further normalization was carried out using the ‘normalizeVSN’ function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the ‘lmFit’ function.</p>
 <p>For the protein-lipid probe interaction experiments (+/- UV exposure), proteins were categorized based on their enrichment in the +UV condition. Proteins showing a log2 fold-change of at least 1 and a p-value below 0.05 were classified as “enriched hits,” while those showing similar enrichment trends but with p-values above 0.05 were labeled as “enriched candidates.”</p>
 <p>To better understand the biological significance of the detected proteins, we conducted gene ontology (GO) enrichment analysis using the ‘compareCluster’ function from the ‘clusterProfiler’ package<span class="citation" data-cites="yuClusterProfilerPackageComparing2012"><sup><a href="#ref-yuClusterProfilerPackageComparing2012" role="doc-biblioref">7</a></sup></span>. This method evaluates whether specific GO terms are overrepresented in the dataset compared to a background gene set. We performed enrichment analysis for three GO categories: Cellular Component (CC), Molecular Function (MF), and Biological Process (BP). The reference database used was ‘org.Pf.plasmo.db.’ To quantify enrichment, we calculated the odds ratio by comparing the proportion of genes associated with each GO term in our dataset (‘GeneRatio’) with the proportion in the reference background set (‘BgRatio’). A value greater than 1 suggests that a given GO term is more prevalent in our dataset than expected by chance.</p>
 <!-- 
@@ -427,33 +434,24 @@ div.csl-indent {
 <li>In each of the GO analyses presented on this site, we filtered according to a significance cutoff – these cutoffs are explained on the respective data pages (either “enriched candidates” or “enriched hits”, as in the TMT-based datasets, or unique subsets of probe enrichment, as in the PSM-based datasets).</li>
 <li>Enriched pathways are given statistical significance by assessing the likelihood that a pathway would be overrepresented through random chance.</li>
 </ul>
-<section id="gene-ontology-dot-plots" class="level4">
-<h4 class="anchored" data-anchor-id="gene-ontology-dot-plots">Gene Ontology Dot Plots</h4>
-</section>
-<section id="gene-ontology-concept-network-cnet-plots" class="level4">
-<h4 class="anchored" data-anchor-id="gene-ontology-concept-network-cnet-plots">Gene Ontology Concept Network (CNET) Plots</h4>
-<ul>
-<li>Visualizes the relationships between genes and biological gene ontology terms as a network. Concepts (cellular compartment, molecular function, biological process) are arranged as hub nodes with all related genes arrayed as connecting nodes. Genes associated with multiple concepts can be connected to several concept nodes, highlighting the intersection of the concepts.</li>
-</ul>
 
 
 
-</section>
 </section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-yuAnalysisDIAProteomics2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Yu, F. <em>et al.</em> <a href="https://doi.org/10.1038/s41467-023-39869-5">Analysis of <span>DIA</span> proteomics data using <span>MSFragger-DIA</span> and <span>FragPipe</span> computational platform</a>. <em>Nat Commun</em> <strong>14</strong>, 4154 (2023).</div>
-</div>
 <div id="ref-farleyTrifunctionalSphinganineNew2024a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Farley, S., Stein, F., Haberkant, P., Tafesse, F. G. &amp; Schultz, C. <a href="https://doi.org/10.1021/acschembio.3c00554">Trifunctional <span>Sphinganine</span>: <span>A New Tool</span> to <span>Dissect Sphingolipid Function</span></a>. <em>ACS Chem. Biol.</em> <strong>19</strong>, 336–347 (2024).</div>
 </div>
 <div id="ref-farleyTrifunctionalFattyAcid2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Farley, S. E. <em>et al.</em> <a href="https://doi.org/10.1039/D4CC00974F">Trifunctional fatty acid derivatives: The impact of diazirine placement</a>. <em>Chem. Commun.</em> <strong>60</strong>, 6651–6654 (2024).</div>
 </div>
 <div id="ref-thomasTrifunctionalLipidDerivatives2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Thomas, A. <em>et al.</em> Trifunctional lipid derivatives: <span>PE</span>’s mitochondrial interactome. <em>Chem. Commun.</em> 10.1039.D4CC03599B (2025) doi:<a href="https://doi.org/10.1039/D4CC03599B">10.1039/D4CC03599B</a>.</div>
+</div>
+<div id="ref-yuAnalysisDIAProteomics2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Yu, F. <em>et al.</em> <a href="https://doi.org/10.1038/s41467-023-39869-5">Analysis of <span>DIA</span> proteomics data using <span>MSFragger-DIA</span> and <span>FragPipe</span> computational platform</a>. <em>Nat Commun</em> <strong>14</strong>, 4154 (2023).</div>
 </div>
 <div id="ref-huberVarianceStabilizationApplied2002" class="csl-entry" role="listitem">
 <div class="csl-left-margin">5. </div><div class="csl-right-inline">Huber, W., Von Heydebreck, A., Sültmann, H., Poustka, A. &amp; Vingron, M. <a href="https://doi.org/10.1093/bioinformatics/18.suppl_1.S96">Variance stabilization applied to microarray data calibration and to the quantification of differential expression</a>. <em>Bioinformatics</em> <strong>18</strong>, S96–S104 (2002).</div>

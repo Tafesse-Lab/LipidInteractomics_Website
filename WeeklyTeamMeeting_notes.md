@@ -1,6 +1,17 @@
 ---
 title: "Weekly meeting notes"
 ---
+
+## 2025/3/4
+
+To-do
+- QR code for site
+- Fix 3,4,5 trisphosphate structure (n-butyl instead of t-butyl)
+- Make slide for Carsten
+- Logo ideas
+
+- When Andre and Frank get back, edit with their suggestions
+
 ## 2025/2/11
 
 Comments

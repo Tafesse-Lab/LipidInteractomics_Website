@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lipid Interactome Repository - Trifunctional Phosphatidylinositol 3,4,5-bisphosphate</title>
+<title>Lipid Interactome Repository - Trifunctional Phosphatidylinositol 3,4,5-trisphosphate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -158,12 +158,17 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../SearchByProtein/SearchByProtein.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Search by Protein</span></a>
-  </div>
-</li>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../LipidProbe/EnrichedHitsComparison.html" class="sidebar-item-text sidebar-link">
@@ -334,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Explore by Lipid Probe</a></li><li class="breadcrumb-item"><a href="../LipidProbe/PhosphatidicAcid.html">Glycerophospholipids</a></li><li class="breadcrumb-item"><a href="../LipidProbe/PhosphatidylinositolTrisphosphate.html">PI(3,4,5)P<sub>3</sub></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Trifunctional Phosphatidylinositol 3,4,5-<em>bis</em>phosphate</h1>
+<h1 class="title">Trifunctional Phosphatidylinositol 3,4,5-<em>tris</em>phosphate</h1>
 <p class="subtitle lead">PI(3,4,5)P<sub>3</sub></p>
 </div>
 
@@ -357,8 +362,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="border">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../LipidProbe/Structures/TF_PI(3,4,5)P3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Trifunctional Phosphatidylinositol 3,4,5-bisphosphate. Chemical structure drawn by Berit Blume."><img src="../LipidProbe/Structures/TF_PI(3,4,5)P3.png" class="img-fluid figure-img" alt="Trifunctional Phosphatidylinositol 3,4,5-bisphosphate. Chemical structure drawn by Berit Blume."></a></p>
-<figcaption>Trifunctional Phosphatidylinositol 3,4,5-<em>bis</em>phosphate. Chemical structure drawn by Berit Blume.</figcaption>
+<p><a href="../LipidProbe/Structures/TF_PI(3,4,5)P3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Trifunctional Phosphatidylinositol 3,4,5-trisphosphate. Chemical structure drawn by Berit Blume."><img src="../LipidProbe/Structures/TF_PI(3,4,5)P3.png" class="img-fluid figure-img" alt="Trifunctional Phosphatidylinositol 3,4,5-trisphosphate. Chemical structure drawn by Berit Blume."></a></p>
+<figcaption>Trifunctional Phosphatidylinositol 3,4,5-<em>tris</em>phosphate. Chemical structure drawn by Berit Blume.</figcaption>
 </figure>
 </div>
 </div>
@@ -368,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Trifunctional Phosphatidylinositol 3,4,5-<em>bis</em>phosphate. Chemical structure drawn by Berit Blume.</span>
+<span class="glightbox-desc lightbox-desc-1">Trifunctional Phosphatidylinositol 3,4,5-<em>tris</em>phosphate. Chemical structure drawn by Berit Blume.</span>
 </div>
 </section>
 
@@ -761,7 +766,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"fade","loop":true,"closeEffect":"fade"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","descPosition":"bottom","selector":".lightbox","closeEffect":"fade","loop":true});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

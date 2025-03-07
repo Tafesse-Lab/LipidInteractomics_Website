@@ -4,10 +4,13 @@ title: "Data Analysis and Statistics"
 
 ## TMT quantitative mass spec pipeline {#sec-DataAnalysis_TMTPipeline}
 
-To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr. Frank Stein developed and implemented the data analysis pipeline.
-In summary, we processed the mass spectrometry (MS) data using FragPipe[@yuAnalysisDIAProteomics2023], following established methodologies outlined in Farley et al. (2024, A), Farley et al. (2024, B), and Thomas et al. (2025)[@farleyTrifunctionalSphinganineNew2024a; @farleyTrifunctionalFattyAcid2024; @thomasTrifunctionalLipidDerivatives2025]. To ensure accurate protein identification, we used a UniProt FASTA database that included common contaminants and reversed sequences for validation. Proteins were included in the final dataset only if they contained at least two unique peptides, each at least seven amino acids long.
+To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published in Farley et al. (2024, A), Farley et al. (2024, B), and Thomas et al. (2025)[@farleyTrifunctionalSphinganineNew2024a; @farleyTrifunctionalFattyAcid2024; @thomasTrifunctionalLipidDerivatives2025]. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr. Frank Stein developed and implemented the data analysis pipeline.
 
-To account for potential technical variations across experiments, we applied a normalization step using the 'removeBatchEffect' function from the limma package, stabilizing variance in log2-transformed TMT reporter ion intensities[@huberVarianceStabilizationApplied2002; @ritchieLimmaPowersDifferential2015]. Further normalization was carried out using the 'normalizeVSN' function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the 'lmFit' function.
+In summary, we processed the mass spectrometry (MS) data using FragPipe[@yuAnalysisDIAProteomics2023]. The protein search was performed using a UniProt FASTA database with one entry per gene, excluding isoforms and minimizing TrEMBL entries. Common contaminants and reversed sequences were also included for validation. Proteins were included in the final dataset if they contained at least two razor peptides, as FragPipe applies the Occam’s Razor principle, assigning shared peptides to the protein with the highest supporting evidence.
+
+For the database search, we included post-translational modifications (PTMs) such as oxidation (M), acetylation (N-term), and carbamidomethylation (C). The raw files were analyzed using FragPipe's protein.tsv output, which was used as the basis for downstream quantification. 
+
+To account for potential technical variations across experiments, we applied a normalization step using the 'removeBatchEffect' function from the limma package to correct for batch effects in log2-transformed TMT reporter ion intensities[@huberVarianceStabilizationApplied2002; @ritchieLimmaPowersDifferential2015]. Further normalization was carried out using the 'normalizeVSN' function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the 'lmFit' function.
 
 For the protein-lipid probe interaction experiments (+/- UV exposure), proteins were categorized based on their enrichment in the +UV condition. Proteins showing a log2 fold-change of at least 1 and a p-value below 0.05 were classified as "enriched hits," while those showing similar enrichment trends but with p-values above 0.05 were labeled as “enriched candidates.”
 
@@ -50,12 +53,4 @@ To better understand the biological significance of the detected proteins, we co
 * Gene Ontology (GO) analyses take a list of proteins and determines whether there is a greater than random enrichment of a biological feature. These features can include pathways, molecular functions, cellular compartments or biological processes. 
 * In each of the GO analyses presented on this site, we filtered according to a significance cutoff -- these cutoffs are explained on the respective data pages (either "enriched candidates" or "enriched hits", as in the TMT-based datasets, or unique subsets of probe enrichment, as in the PSM-based datasets). 
 * Enriched pathways are given statistical significance by assessing the likelihood that a pathway would be overrepresented through random chance.
-
-#### Gene Ontology Dot Plots
-
-#### Gene Ontology Concept Network (CNET) Plots
-
-* Visualizes the relationships between genes and biological gene ontology terms as a network. Concepts (cellular compartment, molecular function, biological process) are arranged as hub nodes with all related genes arrayed as connecting nodes. Genes associated with multiple concepts can be connected to several concept nodes, highlighting the intersection of the concepts.
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Trifunctional Phosphatidylinositol 3,4,5-*bis*phosphate"
+title: "Trifunctional Phosphatidylinositol 3,4,5-*tris*phosphate"
 subtitle: "PI(3,4,5)P~3~"
 prefer-html: true
 ---
@@ -7,7 +7,7 @@ prefer-html: true
 ## Structure
 
 :::{.border}
-![Trifunctional Phosphatidylinositol 3,4,5-*bis*phosphate. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PI(3,4,5)P3.png)
+![Trifunctional Phosphatidylinositol 3,4,5-*tris*phosphate. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PI(3,4,5)P3.png)
 :::
 
 ## Protein interactome
