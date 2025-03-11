@@ -283,8 +283,8 @@ VolcanoPlotStandardized <- function(data) {
                                     "no hit" = 0.75), 
                         name = "Trend") +
         facet_wrap(~LipidProbe, ncol = 2) +
-        xlab("Log2 fold-change") +
-        ylab("-log10(p-value)") +
+        xlab("Log2 Fold-Change") +
+        ylab("-Log10(p-value)") +
         theme_minimal() +
         theme(text = element_text(family = "serif")) +
         theme(panel.border = element_rect(color = NA, fill = NA))+
@@ -396,7 +396,7 @@ CC_enrichment_plots <- function(data, plotReturnType, filename){
 				scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
 				# ggtitle("Cellular compartment") +
 				ylab("") +
-				xlab("LipidProbe")
+				xlab("lipid probe")
 				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1, size = 12, face = "bold"),
               axis.text.y = element_text(size = 12))
 
@@ -504,7 +504,7 @@ MF_enrichment_plots <- function(data, plotReturnType, filename){
 				scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
 				# ggtitle("Cellular compartment") +
 				ylab("") +
-				xlab("LipidProbe")
+				xlab("lipid probe")
 				theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
 
 			dot <- ggplotly(dot)
@@ -601,7 +601,7 @@ BP_enrichment_plots <- function(data, plotReturnType, filename){
           scale_colour_gradientn(colours = c("#377eb8", "#984ea3", "#e41a1c", "#ff7f00", "#ffff33"), ) +
           # ggtitle("Cellular compartment") +
           ylab("") +
-          xlab("LipidProbe")
+          xlab("lipid probe")
           theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
 
         dot <- ggplotly(dot)
