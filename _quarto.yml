@@ -4,6 +4,7 @@ project:
     - "*.qmd"
     - "!StudyInformation_includes/"
     - "!WeeklyTeamMeeting_notes.md"
+    - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
 bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
 format-links: true
