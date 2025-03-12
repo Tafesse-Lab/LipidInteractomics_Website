@@ -1,0 +1,15 @@
+{
+  "hash": "f3f41a9c3a456d2fb73b5418fa13fa36",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Comparing the Enriched Hits of Different Probes\"\n---\n\n\n\n\n\n\n## Ratiometric data\n\nFor a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via [Tandem Mass Tagging](/Background/MultifunctionalLipidProbesOverview.qmd#sec-TMT). \n\nUse the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are \"enriched\" with respect to only the probe on the x-axis; Green proteins are \"enriched\" with respect to only the probe on the y-axis; and Orange proteins are \"enriched\" in both probes. Depicted are only the proteins present in the datasets of both probes.\n\n<!-- Data wrangling, will comment out most of this when it's all done. \nPulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->\n\n\n\n\n\n\n\n\n\n\n\n\n:::{.border}\n\n\n\n\n\n```{=html}\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Shiny App Embedding</title>\n  <style>\n    iframe {\n      width: 100%;\n      height: 90vh;\n      border: none;\n    }\n  </style>\n</head>\n<body>\n  <iframe src=\"https://gaelen-guzman.shinyapps.io/lipidinteractomics_shinyapp/\"></iframe>\n</body>\n</html>\n```\n\n\n\n\n\n:::\n\n## Shared hits\n\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

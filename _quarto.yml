@@ -14,6 +14,9 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 
+execute:
+  freeze: auto
+  
 website:
   
   title: "Lipid Interactome Repository"
@@ -99,7 +102,7 @@ format:
       desc-position: bottom
       loop: true
     mainfont: Charter
-    theme: [Materia, theme_customizations.scss]
+    theme: [Materia, Resources/theme_customizations.scss]
     css: Resources/styles.css
     toc: true
     sidebar: true

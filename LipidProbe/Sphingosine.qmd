@@ -9,9 +9,17 @@ callout-icon: false
 
 ## Structure
 
+
 :::{.border}
-![Trifunctional Sphingosine. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_Sphingosine.png)
+::: {layout="[[100], [100]]"}
+![Native Sphingosine.](/LipidProbe/Structures/Sphingosine.png)
+
+![Trifunctional Sphingosine.](/LipidProbe/Structures/TF_Sphingosine.png)
+
+Chemical structures drawn by Berit Blume.
 :::
+:::
+
 
 ## Protein interactome
 

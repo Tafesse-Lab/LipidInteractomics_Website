@@ -13,7 +13,13 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-![Trifunctional 1-10 Fatty Acid. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_1-10_fatty_acid.png)
+::: {layout="[[-25,75], [100]]"}
+![Native Fatty Acid.](/LipidProbe/Structures/fatty_acid.png)
+
+![Trifunctional 1-10 Fatty Acid.](/LipidProbe/Structures/TF_1-10_fatty_acid.png)
+
+Chemical structures drawn by Berit Blume.
+:::
 :::
 
 ## Protein interactome

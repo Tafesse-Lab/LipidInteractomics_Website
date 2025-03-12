@@ -1,0 +1,223 @@
+---
+title: "Farley et al. 2024"
+subtitle: "Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function"
+format: 
+  html:
+    embed-resources: false
+standalone: false
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+## intitialize libraries
+library(here)
+
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
+
+# Opening the datatable for this page IN FINAL RENDER
+data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv"))
+
+# Organize the hit annotations as factors
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+# Organize the probes as factors
+data$LipidProbe <- factor(pull(data, LipidProbe), levels = c("Sph", "Spa", "8-3 FA", "1-10 FA"), ordered = TRUE)
+
+```
+
+
+
+
+::: {.callout-note collapse="true"}
+
+
+## Study details
+
+#### Authors
+Scotland E. Farley, Frank Stein, Per Haberkant, Fikadu G. Tafesse, Carsten Schultz
+
+
+#### Journal
+ACS Chemical Biology
+
+<https://doi.org/10.1021/acschembio.3c00554>{target="_blank"}
+
+#### Abstract
+
+Functions of the sphingolipids sphingosine and sphinganine in cells are not well established. While some signaling roles for sphingosine have been elucidated, the closely related sphinganine has been described only insofar as it does not elicit many of the same signaling responses. The underlying mechanisms behind the cell biological differences between these lipids are not well understood. Here, we prepared multifunctionalized derivatives of the two lipid species that only differ in a single double bond of the carbon backbone. Using these novel probes, we were able to define their spatiotemporal distribution within cells. Furthermore, we used these tools to systematically map the protein interactomes of both lipids. The lipid-protein conjugates, prepared through photo-crosslinking in live cells and extraction via click chemistry to azide beads, revealed significant differences in the captured proteins, highlighting their distinct roles in various cellular processes. This work elucidates mechanistic differences between these critical lipids and sets the foundation for further studies on the functions of sphingosine and sphinganine.
+
+#### Lipid probes utilized
+
+<a href="/LipidProbe/Sphingosine.qmd" class="hover-preview">Trifunctional Sphingosine</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_Sphingosine.png" alt="Trifunctional Sphingosine" />
+</span>
+
+<a href="/LipidProbe/Sphinganine.qmd" class="hover-preview">Trifunctional Sphinganine</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_Sphinganine.png" alt="Trifunctional Sphinganine" />
+</span>
+
+#### Cell line analyzed
+
+[Huh7](https://huh7.com){target="_blank"}
+
+
+#### Uncaging & Crosslinking timeline
+
+| Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| Sph    | 60 min | 5 min  | 15 min | 5 min  |
+| Spa    | 60 min | 5 min  | 15 min | 5 min  |
+
+#### Mass spectrometry quantification method
+
+16-channel Tandem Mass Tagging (TMT16)
+
+#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+
+
+
+:::
+
+
+## Data visualization
+
+
+::: {.panel-tabset}
+
+
+#### Volcano plots
+
+:::{.border}
+
+
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
+
+VolcanoPlotStandardized(data)
+
+```
+
+
+
+:::
+
+
+#### Ranked-order plots
+
+:::{.border}
+
+
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a FDR or p-value threshold of significance, and Orange proteins surpass the threshold of significance (need details of threshold)."
+
+RankedOrderPlotStandard(data)
+```
+
+
+
+:::
+
+
+#### MA Plots
+
+:::{.border}
+
+
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "MA plots"
+
+MAStandard(data)
+
+```
+
+
+
+
+:::
+:::
+
+
+## Gene Ontology Analysis
+
+**In beta: GO analysis still under development**
+
+:::::{.border}
+::::{#fig-PE_GOplots}
+::: {.panel-tabset}
+
+#### Cell Compartment
+
+<iframe src="/IndividualStudies/GO_plots/Sph-Spa_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
+
+#### Molecular Function
+
+<iframe src="/IndividualStudies/GO_plots/Sph-Spa_SF_2024_MF-DOTplot.html" width="100%" height="500px"></iframe>
+
+#### Biological Process
+
+(No BP pathways identified among enriched hits and candidates.)
+
+:::
+
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
+::::
+:::::
+
+## Data exploration and download
+
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
+
+:::{.border}
+
+
+
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+data <- data |>
+  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+          fdr = signif(fdr, digits = 3)) |>
+  arrange(hit_annotation) |>
+  arrange(LipidProbe)
+
+## Creates a reactive dataframe
+data_reactive <- crosstalk::SharedData$new(data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = data_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = data_reactive,
+                  group = ~hit_annotation)
+)
+
+## Displays the reactive dataframe
+datatable(data_reactive, 
+          options = list(pageLength = 15),
+                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
+
+
+
+:::
+
+
+## Data download
+
+{{< downloadthis DataTables/SF_ACS-Chem-Bio_2024_download.csv dname="SF_ACS-Chem-Bio_2024">}}
+
+
