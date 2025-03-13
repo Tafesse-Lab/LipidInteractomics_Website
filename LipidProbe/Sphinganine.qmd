@@ -9,9 +9,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[100], [100]]"}
-![Native Sphinganine.](/LipidProbe/Structures/Sphinganine.png)
+![(A) Native Sphinganine.](/LipidProbe/Structures/Sphinganine.png)
 
-![Trifunctional Sphinganine.](/LipidProbe/Structures/TF_Sphinganine.png)
+![(B) Trifunctional Sphinganine.](/LipidProbe/Structures/TF_Sphinganine.png)
 
 Chemical structures drawn by Berit Blume.
 :::

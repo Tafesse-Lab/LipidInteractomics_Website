@@ -14,9 +14,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[-25,75], [100]]"}
-![Native Fatty Acid.](/LipidProbe/Structures/fatty_acid.png)
+![(A) Native Fatty Acid.](/LipidProbe/Structures/fatty_acid.png)
 
-![Trifunctional 1-10 Fatty Acid.](/LipidProbe/Structures/TF_1-10_fatty_acid.png)
+![(B) Trifunctional 1-10 Fatty Acid.](/LipidProbe/Structures/TF_1-10_fatty_acid.png)
 
 Chemical structures drawn by Berit Blume.
 :::

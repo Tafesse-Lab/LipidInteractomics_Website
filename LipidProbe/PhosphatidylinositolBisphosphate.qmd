@@ -2,15 +2,16 @@
 title: "Trifunctional Phosphatidylinositol 4,5-*bis*phosphate"
 subtitle: "PI(4,5)P~2~"
 prefer-html: true
+callout-icon: false
 ---
 
 ## Structure
 
 :::{.border}
 ::: {layout="[[-15,85], [100]]"}
-![Native PI(4,5)P~2~.](/LipidProbe/Structures/PI(3,4)P2.png)
+![(A) Native PI(4,5)P~2~.](/LipidProbe/Structures/PI(3,4)P2.png)
 
-![Trifunctional PI(4,5)P~2~.](/LipidProbe/Structures/TF_PI(4,5)P2.png)
+![(B) Trifunctional PI(4,5)P~2~.](/LipidProbe/Structures/TF_PI(4,5)P2.png)
 
 Chemical structures drawn by Berit Blume.
 :::

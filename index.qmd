@@ -27,59 +27,67 @@ See our [Data Analysis Overview](/Background/DataAnalysisAndStatistics.qmd) for 
 
 ```{=html}
 <div style="text-align: center; margin: 20px;">
-    <a href="LipidProbe/PhosphatidicAcid.qmd" style="text-decoration: none;">
-        <button style="background-color: #3498db; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
-            Phosphatidic Acid
-        </button>
-    </a>
-    <a href="LipidProbe/Phosphatidylethanolamine.qmd" style="text-decoration: none;">
-        <button style="background-color: #e74c3c; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
-            Phosphatidylethanolamine
+  <a href="LipidProbe/PhosphatidicAcid.qmd" style="text-decoration: none;">
+      <button style="background-color: #97bdef; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+          Phosphatidic Acid
+      </button>
+  </a>
+  <a href="LipidProbe/Phosphatidylethanolamine.qmd" style="text-decoration: none;">
+      <button style="background-color: #2986cc; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+          Phosphatidylethanolamine
+      </button>
+  </a>
+
+    <br>
+
+    <a href="LipidProbe/Phosphatidylinositol.qmd" style="text-decoration: none;">
+        <button style="background-color: rgb(231, 109, 104); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+            Phosphatidylinositol (PI)
         </button>
     </a>
 
     <br>
 
     <a href="LipidProbe/PhosphatidylinositolBisphosphate.qmd" style="text-decoration: none;">
-        <button style="background-color: #a86532; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color: #f14334; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             PI(4,5)P<sub>2</sub>
         </button>
     </a>
 
     <a href="LipidProbe/PhosphatidylinositolTrisphosphate.qmd" style="text-decoration: none;">
-        <button style="background-color: #8732a8; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color:rgb(223, 21, 21); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             PI(3,4,5)P<sub>3</sub>
         </button>
     </a>
 
     <br>
     <a href="LipidProbe/Diacylglycerol.qmd" style="text-decoration: none;">
-        <button style="background-color: #3277a8; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color: #2ecc71; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             Diacylglycerol
         </button>
     </a>
 
     <br>
     <a href="LipidProbe/Sphinganine.qmd" style="text-decoration: none;">
-        <button style="background-color: #2ecc71; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color:rgb(101, 46, 204); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             Sphinganine
         </button>
     </a>
     <a href="LipidProbe/Sphingosine.qmd" style="text-decoration: none;">
-        <button style="background-color: #eba434; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color:rgb(202, 52, 235); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             Sphingosine
         </button>
     </a>
 
     <br>
 	<a href="LipidProbe/8-3_FattyAcid.qmd" style="text-decoration: none;">
-        <button style="background-color: #ba34eb; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color:rgb(235, 177, 52); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             8-3 Fatty Acid
         </button>
     </a>
 
     <a href="LipidProbe/1-10_FattyAcid.qmd" style="text-decoration: none;">
-        <button style="background-color: #a83260; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+        <button style="background-color:rgb(237, 111, 38); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
             1-10 Fatty Acid
         </button>
     </a>

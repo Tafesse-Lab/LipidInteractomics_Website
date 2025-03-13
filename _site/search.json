@@ -34,7 +34,7 @@
     "href": "index.html#lipid-interactomes",
     "title": "The Lipid Interactome Repository",
     "section": "Lipid Interactomes",
-    "text": "Lipid Interactomes\n\n    \n        \n            Phosphatidic Acid\n        \n    \n    \n        \n            Phosphatidylethanolamine\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
+    "text": "Lipid Interactomes\n\n  \n      \n          Phosphatidic Acid\n      \n  \n  \n      \n          Phosphatidylethanolamine\n      \n  \n\n    \n\n    \n        \n            Phosphatidylinositol (PI)\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
     "crumbs": [
       "Explore by Lipid Probe"
     ]
@@ -44,7 +44,7 @@
     "href": "LipidProbe/Sphingosine.html",
     "title": "Trifunctional Sphingosine",
     "section": "",
-    "text": "Native Sphingosine.\n\n\n\n\n\n\n\n\n\nTrifunctional Sphingosine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Sphingosine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Sphingosine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Sphingolipids",
@@ -56,7 +56,7 @@
     "href": "LipidProbe/Sphingosine.html#structure",
     "title": "Trifunctional Sphingosine",
     "section": "",
-    "text": "Native Sphingosine.\n\n\n\n\n\n\n\n\n\nTrifunctional Sphingosine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Sphingosine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Sphingosine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Sphingolipids",
@@ -104,7 +104,7 @@
     "href": "LipidProbe/PhosphatidylinositolTrisphosphate.html",
     "title": "Trifunctional Phosphatidylinositol 3,4,5-trisphosphate",
     "section": "",
-    "text": "Native PI(3,4,5)P3.\n\n\n\n\n\n\n\n\n\nTrifunctional PI(3,4,5)P3.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native PI(3,4,5)P3.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI(3,4,5)P3.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -116,7 +116,7 @@
     "href": "LipidProbe/PhosphatidylinositolTrisphosphate.html#structure",
     "title": "Trifunctional Phosphatidylinositol 3,4,5-trisphosphate",
     "section": "",
-    "text": "Native PI(3,4,5)P3.\n\n\n\n\n\n\n\n\n\nTrifunctional PI(3,4,5)P3.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native PI(3,4,5)P3.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI(3,4,5)P3.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -140,7 +140,7 @@
     "href": "LipidProbe/Phosphatidylethanolamine.html",
     "title": "Trifunctional Phosphatidylethanolamine",
     "section": "",
-    "text": "Native Phosphatidylethanolamine.\n\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.",
+    "text": "(A) Native Phosphatidylethanolamine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Phosphatidylethanolamine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -152,7 +152,7 @@
     "href": "LipidProbe/Phosphatidylethanolamine.html#structure",
     "title": "Trifunctional Phosphatidylethanolamine",
     "section": "",
-    "text": "Native Phosphatidylethanolamine.\n\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.",
+    "text": "(A) Native Phosphatidylethanolamine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Phosphatidylethanolamine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -231,7 +231,7 @@
     "href": "LipidProbe/1-10_FattyAcid.html#structure",
     "title": "Trifunctional 1-10 Fatty Acid",
     "section": "Structure",
-    "text": "Structure\n\n\n\n\n\n\n\n \n\n\n\n\n\nNative Fatty Acid.\n\n\n\n\n\n\n\n\n\nTrifunctional 1-10 Fatty Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "Structure\n\n\n\n\n\n\n\n \n\n\n\n\n\n(A) Native Fatty Acid.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional 1-10 Fatty Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Fatty Acids",
@@ -620,7 +620,7 @@
     "href": "LipidProbe/8-3_FattyAcid.html#structure",
     "title": "Trifunctional 8-3 Fatty Acid",
     "section": "Structure",
-    "text": "Structure\n\n\n\n\n\n\n\n \n\n\n\n\n\nNative Fatty Acid.\n\n\n\n\n\n\n\n\n\nTrifunctional 8-3 Fatty Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "Structure\n\n\n\n\n\n\n\n \n\n\n\n\n\n(A) Native Fatty Acid.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional 8-3 Fatty Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Fatty Acids",
@@ -698,7 +698,7 @@
     "href": "LipidProbe/PhosphatidicAcid.html",
     "title": "Trifunctional Phosphatidic Acid",
     "section": "",
-    "text": "Native Phosphatidic Acid.\n\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidic Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Phosphatidic Acid.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Phosphatidic Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -710,7 +710,7 @@
     "href": "LipidProbe/PhosphatidicAcid.html#structure",
     "title": "Trifunctional Phosphatidic Acid",
     "section": "",
-    "text": "Native Phosphatidic Acid.\n\n\n\n\n\n\n\n\n\nTrifunctional Phosphatidic Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Phosphatidic Acid.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Phosphatidic Acid.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -758,7 +758,7 @@
     "href": "LipidProbe/PhosphatidylinositolBisphosphate.html",
     "title": "Trifunctional Phosphatidylinositol 4,5-bisphosphate",
     "section": "",
-    "text": "Native PI(4,5)P2.\n\n\n\n\n\n\n\n\n\nTrifunctional PI(4,5)P2.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native PI(4,5)P2.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI(4,5)P2.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -770,7 +770,7 @@
     "href": "LipidProbe/PhosphatidylinositolBisphosphate.html#structure",
     "title": "Trifunctional Phosphatidylinositol 4,5-bisphosphate",
     "section": "",
-    "text": "Native PI(4,5)P2.\n\n\n\n\n\n\n\n\n\nTrifunctional PI(4,5)P2.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native PI(4,5)P2.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI(4,5)P2.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Glycerophospholipids",
@@ -794,7 +794,7 @@
     "href": "LipidProbe/Sphinganine.html",
     "title": "Trifunctional Sphinganine",
     "section": "",
-    "text": "Native Sphinganine.\n\n\n\n\n\n\n\n\n\nTrifunctional Sphinganine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Sphinganine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Sphinganine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Sphingolipids",
@@ -806,7 +806,7 @@
     "href": "LipidProbe/Sphinganine.html#structure",
     "title": "Trifunctional Sphinganine",
     "section": "",
-    "text": "Native Sphinganine.\n\n\n\n\n\n\n\n\n\nTrifunctional Sphinganine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "text": "(A) Native Sphinganine.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional Sphinganine.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
     "crumbs": [
       "Explore by Lipid Probe",
       "Sphingolipids",
@@ -868,5 +868,26 @@
     "crumbs": [
       "Search by Protein"
     ]
+  },
+  {
+    "objectID": "LipidProbe/Phosphatidylinositol.html",
+    "href": "LipidProbe/Phosphatidylinositol.html",
+    "title": "Trifunctional Phosphatidylinositol",
+    "section": "",
+    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume."
+  },
+  {
+    "objectID": "LipidProbe/Phosphatidylinositol.html#structure",
+    "href": "LipidProbe/Phosphatidylinositol.html#structure",
+    "title": "Trifunctional Phosphatidylinositol",
+    "section": "",
+    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume."
+  },
+  {
+    "objectID": "LipidProbe/Phosphatidylinositol.html#protein-interactome",
+    "href": "LipidProbe/Phosphatidylinositol.html#protein-interactome",
+    "title": "Trifunctional Phosphatidylinositol",
+    "section": "Protein interactome",
+    "text": "Protein interactome\nData in pre-processing – check back soon!"
   }
 ]

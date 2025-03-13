@@ -12,9 +12,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[-0.01,99.99], [100]]"}
-![Native Phosphatidylethanolamine.](/LipidProbe/Structures/PE.png)
+![(A) Native Phosphatidylethanolamine.](/LipidProbe/Structures/PE.png)
 
-![Trifunctional Phosphatidylethanolamine.](/LipidProbe/Structures/TF_PE.png)
+![(B) Trifunctional Phosphatidylethanolamine.](/LipidProbe/Structures/TF_PE.png)
 
 Chemical structures drawn by Berit Blume.
 :::

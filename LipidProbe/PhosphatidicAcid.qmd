@@ -11,9 +11,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[-15,85], [100]]"}
-![Native Phosphatidic Acid.](/LipidProbe/Structures/PA.png)
+![(A) Native Phosphatidic Acid.](/LipidProbe/Structures/PA.png)
 
-![Trifunctional Phosphatidic Acid.](/LipidProbe/Structures/TF_PA.png)
+![(B) Trifunctional Phosphatidic Acid.](/LipidProbe/Structures/TF_PA.png)
 
 Chemical structures drawn by Berit Blume.
 :::

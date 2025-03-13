@@ -12,9 +12,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[100], [100]]"}
-![Native Sphingosine.](/LipidProbe/Structures/Sphingosine.png)
+![(A) Native Sphingosine.](/LipidProbe/Structures/Sphingosine.png)
 
-![Trifunctional Sphingosine.](/LipidProbe/Structures/TF_Sphingosine.png)
+![(B) Trifunctional Sphingosine.](/LipidProbe/Structures/TF_Sphingosine.png)
 
 Chemical structures drawn by Berit Blume.
 :::

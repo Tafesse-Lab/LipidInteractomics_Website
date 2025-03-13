@@ -8,9 +8,9 @@ prefer-html: true
 
 :::{.border}
 ::: {layout="[[-1.5,98.5], [100]]"}
-![Native PI(3,4,5)P~3~.](/LipidProbe/Structures/PI(3,4)P2.png)
+![(A) Native PI(3,4,5)P~3~.](/LipidProbe/Structures/PI(3,4)P2.png)
 
-![Trifunctional PI(3,4,5)P~3~.](/LipidProbe/Structures/TF_PI(3,4,5)P3.png)
+![(B) Trifunctional PI(3,4,5)P~3~.](/LipidProbe/Structures/TF_PI(3,4,5)P3.png)
 
 Chemical structures drawn by Berit Blume.
 :::

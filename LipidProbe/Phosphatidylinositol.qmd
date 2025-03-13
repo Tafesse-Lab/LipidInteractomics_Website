@@ -1,0 +1,22 @@
+---
+title: "Trifunctional Phosphatidylinositol"
+subtitle: "PI"
+prefer-html: true
+callout-icon: false
+---
+
+## Structure
+
+:::{.border}
+::: {layout="[[100], [100]]"}
+![(A) Native PI.](/LipidProbe/Structures/PI.png)
+
+![(B) Trifunctional PI.](/LipidProbe/Structures/TF_PI.png)
+
+Chemical structures drawn by Berit Blume.
+:::
+:::
+
+## Protein interactome
+
+Data in pre-processing -- check back soon!
