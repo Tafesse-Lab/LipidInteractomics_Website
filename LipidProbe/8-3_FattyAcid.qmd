@@ -112,15 +112,15 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
+
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  dplyr::select(gene_name, hit_annotation, logFC, pvalue, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
           fdr = signif(fdr, digits = 3)) |>
-  arrange(hit_annotation) |>
-  arrange(LipidProbe)
+  arrange(hit_annotation, -logFC) 
 
 ## Creates a reactive dataframe
 data_reactive <- crosstalk::SharedData$new(data)
@@ -131,14 +131,14 @@ htmltools::tags$div(
                   label = "Enrichment criteria:", 
                   sharedData = data_reactive,
                   group = ~hit_annotation,
-									inline=TRUE)
+                  inline="true")
 )
 
 ## Displays the reactive dataframe
-datatable(data_reactive,
-				  caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+datatable(data_reactive, 
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value", "FDR"))
 
 ```
 :::

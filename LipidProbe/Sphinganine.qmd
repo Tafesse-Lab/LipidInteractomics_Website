@@ -130,7 +130,7 @@ data <- data |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
           fdr = signif(fdr, digits = 3)) |>
-  arrange(hit_annotation) 
+  arrange(hit_annotation, -logFC) 
 
 ## Creates a reactive dataframe
 data_reactive <- crosstalk::SharedData$new(data)
@@ -148,14 +148,14 @@ htmltools::tags$div(
 datatable(data_reactive, 
           caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "FDR"))
+                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value", "FDR"))
 
 ```
 :::
 
 <br> 
 
-{{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download">}}
+{{< downloadthis DataSets/Spa_Huh7_SF_2024.csv dname="Spa_Huh7_SF_ACS-Chem-Bio_download">}}
 
 
 ::::
