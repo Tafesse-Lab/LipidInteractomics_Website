@@ -18,8 +18,15 @@ execute:
   freeze: auto
   
 website:
-  
+  announcement: 
+    content: "<i class='bi bi-cone-striped'></i> **Hardhat Zone** - Site is still under construction. Please excuse any incomplete sections as we build this tool."
+    color: "#f8d7da"
+    background: "#721c24" 
+    position: below-navbar 
+    dismissable: true
   title: "Lipid Interactome Repository"
+  repo-url: https://github.com/gaelenDG/LipidInteractomics_Website
+  repo-actions: [source, issue]
   navbar:
     left:
       - text: "Background"
