@@ -1,0 +1,176 @@
+---
+title: "Lipid Probe Template"
+format: html
+prefer-html: true
+callout-icon: false
+---
+
+
+
+## Structure
+
+
+:::{.border}
+::: {layout="[[100], [100]]"}
+![(A) Native structure.]()
+
+![(B) Trifunctional structure.]()
+
+Chemical structures drawn by Berit Blume.
+:::
+:::
+
+
+## Protein interactome
+
+:::: {.callout-tip}
+
+### Cell background: 
+
+::: {.callout-note collapse="true"}
+
+{{< include StudyInformation_includes/template_include.qmd >}}
+
+:::
+
+::: {.panel-tabset}
+
+<!-- CHANGE THIS TO POINT TO THE NEW DATASET -->
+
+```{r setup, echo=FALSE, warning=FALSE, include = FALSE}
+## intitialize libraries
+library(here)
+
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
+
+# Opening the datatable for this page
+data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv"))
+
+# Organizing the hit annotations as factors
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+```
+
+##### Volcano plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+VolcanoPlotStandardized(data)
+```
+:::
+
+##### Ranked order plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+RankedOrderPlotStandard(data)
+```
+:::
+
+
+##### MA Plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+MAStandard(data)
+
+```
+:::
+:::
+
+
+## Gene Ontology Analysis
+
+**In beta: GO analysis still under development**
+
+:::::{.border}
+::::{#fig-PE_GOplots}
+::: {.panel-tabset}
+
+#### Cell Compartment
+
+<!-- CHANGE THIS TO THE CORRECT DOT PLOT, RENDERED VIA FUNCTIONS CALLED IN Resources/Run_GO_DOTplots.R -->
+<iframe src="/LipidProbe/GO_plots/Sph_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
+
+#### Molecular Function
+
+<!-- CHANGE THESE IF THE MF AND BP DOT PLOTS WORK PROPERLY -->
+(No MF pathways identified among enriched hits and candidates.)
+
+#### Biological Process
+
+(No BP pathways identified among enriched hits and candidates.)
+
+:::
+
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)
+
+::::
+:::::
+
+## Data exploration and download
+
+Check the boxes below to filter by significance thresholds.
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+data <- data |>
+  dplyr::select(gene_name, hit_annotation, logFC, pvalue, fdr) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3),
+          fdr = signif(fdr, digits = 3)) |>
+  arrange(hit_annotation, -logFC) 
+
+## Creates a reactive dataframe
+data_reactive <- crosstalk::SharedData$new(data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = data_reactive,
+                  group = ~hit_annotation,
+                  inline="true")
+)
+
+## Displays the reactive dataframe
+datatable(data_reactive, 
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+          options = list(pageLength = 10),
+                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value", "FDR"))
+
+```
+
+:::
+
+<br>
+
+<!-- CHANGE THIS TO THE CORRECT NEW DATASET -->
+{{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download">}}
+
+::::
+
+
+
+:::: {.callout-tip}
+
+### Cell background: HeLa
+
+
+::: {.callout-note collapse="true"}
+
+{{< include /StudyInformation_includes/DH_2017_include.qmd >}}
+
+:::
+
+::::

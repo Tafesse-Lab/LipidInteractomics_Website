@@ -3,6 +3,8 @@ project:
   render:
     - "*.qmd"
     - "!StudyInformation_includes/"
+    - "!LipidProbe/template_lipidprobe.qmd"
+    - "!IndividualStudies/template_study.qmd"
     - "!WeeklyTeamMeeting_notes.md"
     - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
 bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
