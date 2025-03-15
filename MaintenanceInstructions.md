@@ -16,7 +16,7 @@ The _quarto.yml page is described further below, but here it should be mentioned
 
 ### Basic overview
 
-This site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: <https://quarto.org/docs/websites>{target="_blank"}. 
+This site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: <https://quarto.org/docs/websites>{target="_blank"}. The site is hosted on Netlify, and the repository is on GitHub. The data is stored in .csv files. The site is built using the Bootstrap framework, and the ggplot2 and plotly packages are used to make the plots.
 
 The overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of [Bootswatch](https://bootswatch.com/){target="_blank"} themes, or if you're feeling ambitious you can design your own theme.
 
@@ -30,13 +30,13 @@ Cloning the GitHub repository should be sufficient for gaining access to all of 
 
 ### Quarto formatting
 
-I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).
+I have found that Quarto is highly documented and it's pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty ok answer).
 
 As a reference to help get you started, I very much appreciated [this blog post](https://blog.posertinlab.com/posts/2023-06-09-writing-a-dissertation-in-quarto/){target="_blank"} by Richard Posert about using Quarto.
 
 I honestly get the most confused when it comes to formatting the _quarto.yml file because there aren't many fully-fleshed examples out there for all the options. This is where I've (embarrassingly) leaned on ChatGPT for help -- it's not always right, but it's usually close enough that you can make it work properly anyways.
 
-If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
+If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the _quarto.yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the desired .qmd file, then the text to display on the page) -- if you don't add these, the page will remain unlinked and you'll need to know the whole URL to find it (like this maintenance page).
 
 If your data looks at all like [Alix's](https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025){target="_blank"} or [Scotty's](https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024){target="_blank"}, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting across all the pages.
 
@@ -54,7 +54,7 @@ The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidPr
 
 1) Duplicate the template file under the /StudyInformation_includes folder, populate each section with the appropriate details about the study being added. This "include" file will be linked to the actual data pages and allows for a single point to edit the details across all the pages.
 
-2) Duplicate the template file under the /IndividualStudies folder, edit "include" link to point to the new file made in Step 1. 
+2) Duplicate the template file under the /IndividualStudies folder, edit "include" link to point to the new file made in Step 1.
 	* Copy full dataset to the /IndividualStudies/DataTables folder with an appropriate name.
 	* Edit the setup/data wrangling R chunk to open and prepare the data -- make sure the read_csv() call points to the location of the dataset being added. If needed, adjust the order of lipid probes depicted under the factor(pull()) function call -- change the values of the levels vector to reflect the probes (the default is simply alphabetical)
 	* Don't yet adjust the Gene Ontology sections - we'll return to this in Step 5.
@@ -89,5 +89,3 @@ The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidPr
 6) Finally, we need to update the _quarto.yml file so that the new .qmd files are organized under the correct lipid class
 	* e.g. if the new probe is a sphingolipid, make sure to place its link there
 	* If the new probes are a distinct class, make a new category of probe (use the existing categories as a template)
-
-

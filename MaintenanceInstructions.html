@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,10 +31,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="MaintenanceInstructions_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="MaintenanceInstructions_files/libs/quarto-html/anchor.min.js"></script>
 <link href="MaintenanceInstructions_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="MaintenanceInstructions_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="MaintenanceInstructions_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="MaintenanceInstructions_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="MaintenanceInstructions_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="MaintenanceInstructions_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="MaintenanceInstructions_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="maintenance">Maintenance</h2>
 <section id="basic-overview" class="level3">
 <h3 class="anchored" data-anchor-id="basic-overview">Basic overview</h3>
-<p>This site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: <a href="https://quarto.org/docs/websites" target="_blank">https://quarto.org/docs/websites</a>.</p>
+<p>This site was built using Quarto. This is a form of R Markdown that is highly documented, and one can learn how to modify this site here: <a href="https://quarto.org/docs/websites" target="_blank">https://quarto.org/docs/websites</a>. The site is hosted on Netlify, and the repository is on GitHub. The data is stored in .csv files. The site is built using the Bootstrap framework, and the ggplot2 and plotly packages are used to make the plots.</p>
 <p>The overarching formatting of the site is controlled within the _quarto.yml file. Here one can update the site theme from the array of <a href="https://bootswatch.com/" target="_blank">Bootswatch</a> themes, or if you’re feeling ambitious you can design your own theme.</p>
-<p>When making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.</p>
+<p>When making updates to the site, one first edits/makes a file, then you use the Bash command “quarto render –to html”. This will update the site directory within the _site folder. There are a lot of ways to do the editing, but it’s nicest to use the IDE Visual Studio Code because there’s a terminal in-window and you can see nice previews of what the site will look like without leaving the program.</p>
 </section>
 <section id="github-repository" class="level3">
 <h3 class="anchored" data-anchor-id="github-repository">GitHub repository</h3>
@@ -97,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="quarto-formatting" class="level3">
 <h3 class="anchored" data-anchor-id="quarto-formatting">Quarto formatting</h3>
-<p>I have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty good answer).</p>
+<p>I have found that Quarto is highly documented and it’s pretty easy to figure out how to format or change the way things look (if all else fails, ask ChatGPT and you usually get a pretty ok answer).</p>
 <p>As a reference to help get you started, I very much appreciated <a href="https://blog.posertinlab.com/posts/2023-06-09-writing-a-dissertation-in-quarto/" target="_blank">this blog post</a> by Richard Posert about using Quarto.</p>
 <p>I honestly get the most confused when it comes to formatting the _quarto.yml file because there aren’t many fully-fleshed examples out there for all the options. This is where I’ve (embarrassingly) leaned on ChatGPT for help – it’s not always right, but it’s usually close enough that you can make it work properly anyways.</p>
-<p>If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the .yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the .html file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).</p>
-<p>If your data looks at all like <a href="https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025" target="_blank">Alix’s</a> or <a href="https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024" target="_blank">Scotty’s</a>, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting.</p>
+<p>If you want to add a page, you need to make a new .qmd file in the proper subfolder and render it as an .html file (conveniently, the Preview button in VS Code does that for you, but you can use whatever IDE you want). Then you need to add two lines to the _quarto.yml file so that the page is properly linked on the sidebar or navbar (first the href to denote the file path to the desired .qmd file, then the text to display on the page) – if you don’t add these, the page will remain unlinked and you’ll need to know the whole URL to find it (like this maintenance page).</p>
+<p>If your data looks at all like <a href="https://lipidinteractomicsrepository.netlify.app/individualstudies/at_2025" target="_blank">Alix’s</a> or <a href="https://lipidinteractomicsrepository.netlify.app/individualstudies/sf_2024" target="_blank">Scotty’s</a>, the ggplot functions I built in the ggplot_styles.R file will apply. Call the RankedOrderPlotStandard(), VolcanoPlotStandardized(), and MAStandard() functions to produce these plots with the same standardized formatting. On that note, you can alter the ggplot_styles.R file to change the standardized formatting across all the pages.</p>
 <p>There are a ton of things you can do within html divs, but I haven’t dipped my toes in those yet - use these to finely adjust how elements of each page look.</p>
 <p>In order to make sure the author information is identical on all appropriate pages, I made an “include” folder with each study included thus far. This enables you to call the same study information on each probe/study page without worrying that they’re somehow different.</p>
 </section>
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="step-by-step-instructions-for-adding-a-new-study" class="level2">
 <h2 class="anchored" data-anchor-id="step-by-step-instructions-for-adding-a-new-study">Step-by-step instructions for adding a new study</h2>
-<p>(Assumes that you’re adding a new study which utilized TMT and Frank’s FragPipe data analysis pipeline. Anything else will have to be somewhat custom made.)</p>
+<p>(Assumes that you’re adding a new study which utilized TMT and Frank’s FragPipe data analysis pipeline. Anything else will have to be somewhat custom made – as a starting point, just follow these steps as best you can, then adjust from there.)</p>
 <ol type="1">
 <li><p>Duplicate the template file under the /StudyInformation_includes folder, populate each section with the appropriate details about the study being added. This “include” file will be linked to the actual data pages and allows for a single point to edit the details across all the pages.</p></li>
 <li><p>Duplicate the template file under the /IndividualStudies folder, edit “include” link to point to the new file made in Step 1.</p>
@@ -197,18 +197,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -240,7 +229,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -275,7 +302,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -323,7 +354,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
