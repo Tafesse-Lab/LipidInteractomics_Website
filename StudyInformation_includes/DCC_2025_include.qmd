@@ -1,0 +1,65 @@
+
+## Study details
+
+#### Authors
+
+#### Journal
+ChemR&Chi;iv
+
+<https://doi.org/10.26434/chemrxiv-2025-j8nqz>{target="_blank"}
+
+#### Abstract
+Most eukaryotic membranes comprise phospholipids bearing two hydrophobic tails, but N-
+acylphosphatidylethanolamine (NAPE) stands out as a long-known but poorly understood
+phospholipid with three hydrophobic groups. What little attention that NAPE has received has been
+devoted to understanding its metabolic functions as a precursor to N-acylethanolamines, bioactive
+lipids that act as endocannabinoids. Yet, levels of NAPE increase during myocardial infarction and
+ischemia, suggesting potential signaling roles for this lipid. Here, we exploit photoaffinity labeling
+(PAL) to identify NAPE-interacting proteins and elucidate signaling functions of NAPE. By
+positioning diazirine and alkyne groups in metabolically distinct regions of the NAPE molecule,
+we ensured that our PAL probe reported on interactions of NAPE and not NAE. Our studies
+identified several NAPE interactors, including two single-pass transmembrane proteins,
+CD147/Basigin and CD44, both of which serve as chaperones for monocarboxylate transporters
+(MCTs) from the SLC16A family that mediate lactate flux across the plasma membrane.
+Functional studies revealed that NAPE stimulates lactate efflux by MCTs dependent upon CD147
+and CD44, establishing NAPE as a bona fide signaling lipid and pointing to potential physiological
+roles in metabolic and energy homeostasis that may be pathologically relevant in ischemia.
+
+#### Lipid probes utilized
+
+<a href="/LipidProbe/N-Acylphosphatidylethanolamine.qmd" class="hover-preview">Bifunctional NAPE</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/BF_NAPE.png" alt="Bifunctional NAPE" />
+</span>
+
+#### Cell line analyzed
+
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+
+#### Uncaging & Crosslinking timeline
+
+| Lipid Probe | Uptake time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| LEI-401    | 30 min  | 60 min | 30 min  |
+
+#### Mass spectrometry quantification method
+
+SILAC
+
+::: {.callout-note collapse="true"}
+<!-- ##### ProteomeXchange details
+
+**ProteomeXchange title:** Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome
+
+**ProteomeXchange accession:** PXD059960
+
+**PubMed ID:** Not applicable
+
+**Publication DOI:** 10.1039/D4CC03599B
+
+**Project Webpage:** http://www.ebi.ac.uk/pride/archive/projects/PXD059960
+
+**FTP Download:** https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960 -->
+:::
+
+#### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>

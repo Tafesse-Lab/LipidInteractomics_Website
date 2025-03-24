@@ -57,7 +57,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # write.csv(AT_2025, "LipidProbe/DataSets/PA_HeLa_AT_2025.csv")
 
 
-data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) 
+data <- readr::read_csv(paste0(here::here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) 
 
 # Organize the hit annotations as factors
 data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)

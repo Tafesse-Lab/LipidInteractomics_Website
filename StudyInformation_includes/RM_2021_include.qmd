@@ -14,7 +14,7 @@ We synthesized the first multifunctionalized phosphoinositide polyphosphate deri
 
 #### Lipid probes utilized
 
-[PI(3,4,5)P~3~](/LipidProbe/PhosphatidylinositolTrisphosphate.qmd)
+[Trifunctional PI(3,4,5)P~3~](/LipidProbe/PhosphatidylinositolTrisphosphate.qmd)
 
 #### Cell line analyzed
 

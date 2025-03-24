@@ -16,11 +16,11 @@ Lipid-mediated signaling events regulate many cellular processes. Investigations
 
 #### Lipid probes utilized
 
-[Sphingosine](/LipidProbe/Sphingosine.qmd)
+[Trifunctional Sphingosine](/LipidProbe/Sphingosine.qmd)
 
-[Diacylglycerol](/LipidProbe/Diacylglycerol.qmd)
+[Trifunctional Diacylglycerol](/LipidProbe/Diacylglycerol.qmd)
 
-[8-3 Fatty acid](/LipidProbe/8-3_FattyAcid.qmd)
+[Trifunctional 8-3 Fatty acid](/LipidProbe/8-3_FattyAcid.qmd)
 
 #### Cell line analyzed
 

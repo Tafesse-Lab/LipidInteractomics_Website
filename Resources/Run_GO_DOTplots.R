@@ -140,3 +140,28 @@ MF_enrichment_plots(AT_2025, "dot", "PE-PA_AT_2025_MF-DOTplot")
 
 BP_enrichment_plots(AT_2025, "dot", "PE-PA_AT_2025_BP-DOTplot")
 # BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")
+
+
+# DCC_2025
+
+/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FilteredDataset.csv
+
+DCC_2025 <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FilteredDataset.csv")) |>
+  group_by(gene_name) |>
+  summarise(logFC = mean(logFC),
+            pvalue = mean(pvalue),
+            numReplicates = n()) |>
+  arrange(-(numReplicates)) |>
+  mutate(LipidProbe = "BF-NAPE",
+         hit_annotation = case_when(numReplicates == 1 ~ "no hit",
+                                    numReplicates == 2 ~ "enriched candidate",
+                                    numReplicates == 3 ~ "enriched hit"))
+
+CC_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_CC-DOTplot")
+# CC_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_CC-CNETplot")
+
+MF_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_MF-DOTplot")
+# MF_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_MF-CNETplot")
+
+BP_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_BP-DOTplot")
+# BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")

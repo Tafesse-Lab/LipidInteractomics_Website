@@ -88,11 +88,10 @@ DH_2017_VennData <- list("Sph proteins" = as.list(Sph_proteins$gene_name), "FA p
 
 #### Heat map
 
-Depicted below are the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA.
-
 :::{.border}
 
 ```{r Making Heat Map, echo=FALSE, fig.height=10, warning=FALSE}
+#| fig-cap: "Heat map depicts the average PSM count for two replicates each of UV-irradiated samples treated with trifunctionalized Sph, DAG, and FA. Color denotes the "
 
 # Create the heatmap
 heatmaply(long_data = DH_2017_data_HeatMap,
@@ -112,7 +111,7 @@ heatmaply(long_data = DH_2017_data_HeatMap,
 :::{.border}
 
 ```{r Making Venn Diagram, echo=FALSE, warning=FALSE, width = 8}
-
+#| fig-cap: "A Venn diagram depicts the overlapping identification of proteins between the three lipid probes. There are 41 proteins uniquely identified after enrichment with tf-Sph, 130 proteins uniquely identified after enrichment with tf-DAG, and no proteins uniquely identified to tf-8:3-FA."
 
 ggvenn <- ggvenn(DH_2017_VennData,
                       show_percentage = FALSE,
@@ -146,6 +145,7 @@ ggvenn
 #### Biological Process
 
 <iframe src="/IndividualStudies/GO_plots/DH_2017_BP_DOTPLOT.html" width="100%" height="500px"></iframe>
+
 :::
 
 GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview)

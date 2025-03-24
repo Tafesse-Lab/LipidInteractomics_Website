@@ -1,0 +1,228 @@
+Description,gene_name,logFC,pvalue,Replicate
+"3-ketoacyl-CoA thiolase, peroxisomal isoform a [Homo sapiens]",ACAA1,3.294,0.00052811,A
+alpha-centractin [Homo sapiens],ACTR1A,1.575,0.044109185,A
+aminoacyl tRNA synthase complex-interacting multifunctional protein 2 isoform a [Homo sapiens],AIMP2; JTV1,1.894,0.038262597,A
+annexin A4 isoform a [Homo sapiens],ANXA4,2.276,4.18034E-07,A
+AP-1 complex subunit beta-1 isoform a [Homo sapiens],AP1B1,2.603,1.05458E-07,A
+bleomycin hydrolase [Homo sapiens],BLMH,4.366,3.53051E-14,A
+basigin isoform X1 [Homo sapiens],CD147,6.298,1E-17,A
+calpain-2 catalytic subunit isoform 1 [Homo sapiens],CAPN2,1.713,0.004759382,A
+"cysteine--tRNA ligase, cytoplasmic isoform X1 [Homo sapiens]",CARS1,100,1E-17,A
+CD44 antigen isoform X1 [Homo sapiens],CD44,100,1E-17,A
+cyclin-dependent kinase 1 isoform X1 [Homo sapiens],CDK1,1.578,0.042503864,A
+"2',3'-cyclic-nucleotide 3'-phosphodiesterase isoform 1 [Homo sapiens]",CNP,100,1E-17,A
+COP9 signalosome complex subunit 3 isoform 1 [Homo sapiens],COPS3,100,1E-17,A
+coronin-1C isoform a [Homo sapiens],CORO1C,3.348,3.66411E-06,A
+adapter molecule crk isoform a [Homo sapiens],CRK,2.39,0.000488803,A
+cathepsin Z preproprotein [Homo sapiens],CTSZ,1.86,0.016950889,A
+cullin-1 [Homo sapiens],CUL1,1.977,0.007481101,A
+cullin-4B isoform 1 [Homo sapiens],CUL4B,1.633,0.019566281,A
+D-dopachrome decarboxylase isoform a [Homo sapiens],DDT,1.894,0.033688057,A
+protein diaphanous homolog 1 isoform X1 [Homo sapiens],DIAPH1,1.686,0.007550949,A
+dynamin-1-like protein isoform 5 [Homo sapiens],DNM1L,2.062,0.000271501,A
+developmentally-regulated GTP-binding protein 2 isoform 1 [Homo sapiens],DRG2,100,1E-17,A
+cytoplasmic dynein 1 light intermediate chain 2 isoform 1 [Homo sapiens],DYNC1LI2,2.442,0.016104435,A
+eukaryotic translation initiation factor 3 subunit B isoform 1 [Homo sapiens],EIF3B,1.589,0.036140028,A
+eukaryotic translation initiation factor 3 subunit F [Homo sapiens],EIF3F,1.918,0.003058017,A
+eukaryotic initiation factor 4A-III [Homo sapiens],EIF4A3,1.701,0.036749405,A
+ribosomal RNA small subunit methyltransferase NEP1 isoform 1 [Homo sapiens],EMG1,100,1E-17,A
+metastasis-associated protein MTA2 isoform 1 [Homo sapiens],EML3; MTA2,100,1E-17,A
+peptidyl-prolyl cis-trans isomerase FKBP1A isoform a [Homo sapiens],FKBP1A,1.881,0.00026232,A
+peptidyl-prolyl cis-trans isomerase FKBP3 isoform X1 [Homo sapiens],FKBP3,1.861,0.044142504,A
+"1,4-alpha-glucan-branching enzyme [Homo sapiens]",GBE1,2.099,0.003053682,A
+glutamate--cysteine ligase regulatory subunit isoform X1 [Homo sapiens],GCLM,1.673,0.010904183,A
+"grpE protein homolog 1, mitochondrial precursor [Homo sapiens]",GRPEL1,100,1E-17,A
+histone H3.2 [Homo sapiens],H3C13; H3C14; H3C15,2.626,3.78342E-12,A
+"histidine--tRNA ligase, cytoplasmic isoform 1 [Homo sapiens]",HARS1,1.667,0.017138568,A
+histidine triad nucleotide-binding protein 1 [Homo sapiens],HINT1; LOC117799002,1.979,0.012393002,A
+heterogeneous nuclear ribonucleoprotein A0 [Homo sapiens],HNRNPA0,1.594,0.03321259,A
+"isoleucine--tRNA ligase, cytoplasmic isoform 4 [Homo sapiens]",IARS1,1.659,0.01865417,A
+integrin alpha-V isoform 1 preproprotein [Homo sapiens],ITGAV,100,1E-17,A
+laminin subunit beta-1 isoform X1 [Homo sapiens],LAMB1,100,1E-17,A
+galectin-3-binding protein precursor [Homo sapiens],LGALS3BP,3.119,3.93871E-07,A
+60S ribosomal protein L38 [Homo sapiens],LOC100605420; LOC101841064; LOC109045122; LOC109900071; LOC110502952; LOC111158085; LOC112259300; LOC113080025; LOC113938310; LOC118890498; rpl38; Rpl38; RPL38,4.158,1E-17,A
+ubiquitin thioesterase OTUB1 [Homo sapiens],LOC111150055; OTUB1,1.785,0.010514917,A
+protein mago nashi homolog 2 isoform 1 [Homo sapiens],MAGOHB,2.093,0.019422309,A
+dual specificity mitogen-activated protein kinase kinase 2 isoform X1 [Homo sapiens],MAP2K2,2.251,0.035067826,A
+mitogen-activated protein kinase 1 [Homo sapiens],MAPK1,100,1E-17,A
+"methionine--tRNA ligase, cytoplasmic [Homo sapiens]",MARS1,1.863,0.000279174,A
+"28S ribosomal protein S27, mitochondrial isoform 1 [Homo sapiens]",MRPS27,2.095,0.012893123,A
+myosin light polypeptide 6 isoform 1 [Homo sapiens],MYL6,1.834,0.000942075,A
+nucleoside diphosphate kinase A isoform a [Homo sapiens],NME1,1.832,0.000523031,A
+cleavage and polyadenylation specificity factor subunit 5 [Homo sapiens],NUDT21,1.968,0.002623373,A
+nuclear pore complex protein Nup155 isoform 1 [Homo sapiens],NUP155,1.934,0.003112046,A
+protein-L-isoaspartate(D-aspartate) O-methyltransferase isoform 2 [Homo sapiens],PCMT1,2.436,0.000253456,A
+plectin isoform X2 [Homo sapiens],PLEC,100,1E-17,A
+phosphomevalonate kinase isoform 1 [Homo sapiens],PMVK,9.151,1E-17,A
+serine/threonine-protein phosphatase 2A catalytic subunit alpha isoform isoform 1 [Homo sapiens],PPP2CA,3.069,8.1779E-13,A
+cAMP-dependent protein kinase catalytic subunit alpha isoform 3 [Homo sapiens],PRKACA,1.78,0.045258021,A
+proteasome subunit beta type-6 isoform 1 [Homo sapiens],PSMB6,1.786,0.016431653,A
+26S proteasome regulatory subunit 7 isoform 1 [Homo sapiens],PSMC2,1.664,0.015266836,A
+poly(U)-binding-splicing factor PUF60 isoform i [Homo sapiens],PUF60,1.724,0.045659649,A
+"glycogen phosphorylase, liver form isoform 1 [Homo sapiens]",PYGL,1.771,0.013906729,A
+ras-related protein Rab-7a [Homo sapiens],RAB7A,1.586,0.037674188,A
+ras-related protein Rab-8A [Homo sapiens],RAB8A,100,1E-17,A
+E3 SUMO-protein ligase RanBP2 isoform X6 [Homo sapiens],RANBP2,2.392,0.006262137,A
+replication factor C subunit 2 isoform 1 [Homo sapiens],RFC2,2.508,0.000981493,A
+replication factor C subunit 5 isoform X1 [Homo sapiens],RFC5,100,1E-17,A
+60S ribosomal protein L18 isoform 1 [Homo sapiens],RPL18,1.614,0.024690669,A
+60S ribosomal protein L36 [Homo sapiens],RPL36,1.61,0.026353436,A
+40S ribosomal protein S11 [Homo sapiens],RPS11,4.027,1E-17,A
+40S ribosomal protein S5 [Homo sapiens],RPS5,2.045,5.88276E-06,A
+RNA-splicing ligase RtcB homolog [Homo sapiens],RTCB,2.027,1.48424E-05,A
+GTP-binding protein SAR1b [Homo sapiens],SAR1B,2.206,0.043343655,A
+protein transport protein Sec23A isoform X1 [Homo sapiens],SEC23A,2.202,0.001414826,A
+serpin B12 isoform X1 [Homo sapiens],SERPINB12,4.717,2.57633E-07,A
+structural maintenance of chromosomes protein 4 isoform X1 [Homo sapiens],SMC4,1.855,0.010492806,A
+U5 small nuclear ribonucleoprotein 200 kDa helicase [Homo sapiens],SNRNP200,1.627,0.019953659,A
+small nuclear ribonucleoprotein Sm D3 [Homo sapiens],SNRPD3,1.804,0.000896791,A
+small nuclear ribonucleoprotein-associated protein N isoform a [Homo sapiens],SNRPN,2.243,5.76657E-08,A
+sorting nexin-12 isoform 1 [Homo sapiens],SNX12,100,1E-17,A
+"single-stranded DNA-binding protein, mitochondrial precursor [Homo sapiens]",SSBP1,2.758,1.17684E-13,A
+FACT complex subunit SSRP1 [Homo sapiens],SSRP1,1.769,0.001720052,A
+FACT complex subunit SPT16 [Homo sapiens],SUPT16H,1.705,0.02261484,A
+thimet oligopeptidase [Homo sapiens],THOP1,2.122,0.006436408,A
+SUMO-activating enzyme subunit 2 isoform X1 [Homo sapiens],UBA2,2.9,6.75309E-09,A
+ubiquitin-conjugating enzyme E2 K isoform 1 [Homo sapiens],UBE2K,1.82,0.003209714,A
+ubiquitin carboxyl-terminal hydrolase 5 isoform 1 [Homo sapiens],USP5,1.631,0.018913141,A
+valine--tRNA ligase isoform X1 [Homo sapiens],VARS1,1.82,0.001119452,A
+synaptic vesicle membrane protein VAT-1 homolog [Homo sapiens],VAT1,2.415,0.012997707,A
+"3-ketoacyl-CoA thiolase, mitochondrial [Homo sapiens]",ACAA2,1.711,0.007576647,B
+beta-actin-like protein 2 [Homo sapiens],ACTBL2,1.723,2.94593E-05,B
+adenylosuccinate synthetase isozyme 2 isoform 1 [Homo sapiens],ADSS2,1.688,0.001061622,B
+annexin A4 isoform a [Homo sapiens],ANXA4,1.536,0.003247568,B
+annexin A6 isoform 1 [Homo sapiens],ANXA6,1.761,0.018309292,B
+adenine phosphoribosyltransferase isoform a [Homo sapiens],APRT,100,1E-17,B
+"branched-chain-amino-acid aminotransferase, cytosolic isoform X1 [Homo sapiens]",BCAT1,1.636,0.016965219,B
+basigin isoform X1 [Homo sapiens],CD147,8.643,1E-17,B
+basic leucine zipper and W2 domain-containing protein 2 isoform X1 [Homo sapiens],BZW2,1.592,0.006021683,B
+macrophage-capping protein isoform 1 [Homo sapiens],CAPG,100,1E-17,B
+CCN family member 1 precursor [Homo sapiens],CCN1,100,1E-17,B
+CD44 antigen isoform X1 [Homo sapiens],CD44,3.492,8.88178E-16,B
+cytoskeleton-associated protein 4 [Homo sapiens],CKAP4,1.585,0.001032435,B
+COP9 signalosome complex subunit 2 isoform 2 [Homo sapiens],Cops2; COPS2; LOC101356833; LOC111162519,2.229,0.000972259,B
+COP9 signalosome complex subunit 4 isoform 3 [Homo sapiens],COPS4,1.805,0.014866153,B
+coatomer subunit zeta-1 isoform 1 [Homo sapiens],COPZ1,1.976,0.010027524,B
+"carnitine O-palmitoyltransferase 1, liver isoform isoform X1 [Homo sapiens]",CPT1A,2.005,0.024668236,B
+eukaryotic initiation factor 4A-III [Homo sapiens],DDX48; EIF4A3,1.689,0.006197269,B
+ATP-dependent RNA helicase DHX30 isoform X1 [Homo sapiens],DHX30,1.644,0.039856706,B
+"delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial isoform X1 [Homo sapiens]",ECH1,1.767,0.000493509,B
+eukaryotic translation initiation factor 3 subunit F [Homo sapiens],EIF3F,1.505,0.009880782,B
+phenylalanine--tRNA ligase alpha subunit [Homo sapiens],FARSA,1.6,0.001067223,B
+squalene synthase isoform 3 [Homo sapiens],FDFT1,3.168,7.6116E-06,B
+peptidyl-prolyl cis-trans isomerase FKBP1A isoform a [Homo sapiens],Fkbp1a; FKBP1A,1.615,0.005469199,B
+"glutamate dehydrogenase 1, mitochondrial isoform a precursor [Homo sapiens]",GLUD1,1.688,0.005503937,B
+GMP synthase [glutamine-hydrolyzing] isoform X1 [Homo sapiens],GMPS,1.503,0.006699899,B
+hexokinase-1 isoform a [Homo sapiens],HK1,100,1E-17,B
+"major histocompatibility complex, class I, B precursor [Homo sapiens]",HLA-B,2.146,2.69312E-05,B
+"HLA class I histocompatibility antigen, C alpha chain precursor [Homo sapiens]",HLA-C,1.713,0.019435858,B
+insulin-like growth factor 2 mRNA-binding protein 3 isoform X1 [Homo sapiens],IGF2BP3,1.546,0.044243217,B
+kinectin isoform X1 [Homo sapiens],KTN1,1.652,0.011764441,B
+galectin-3-binding protein precursor [Homo sapiens],LGALS3BP,1.638,0.003212181,B
+ubiquitin-40S ribosomal protein S27a precursor [Homo sapiens],LOC100411672; LOC101361983; LOC102746862; LOC102816131; LOC111148109; LOC111534944; LOC112620074; LOC116566029; rps27a; Rps27a; RPS27A; rps27a.S,1.557,0.002013892,B
+cell surface glycoprotein MUC18 precursor [Homo sapiens],MCAM,100,1E-17,B
+major vault protein isoform 1 [Homo sapiens],MVP,100,1E-17,B
+condensin complex subunit 2 isoform 1 [Homo sapiens],NCAPH,100,1E-17,B
+protein Niban 2 isoform X2 [Homo sapiens],NIBAN2,3.491,1E-17,B
+nuclear RNA export factor 1 isoform 1 [Homo sapiens],NXF1,1.844,0.0272396,B
+"2-oxoglutarate dehydrogenase, mitochondrial isoform X1 [Homo sapiens]",OGDH,1.541,0.042790145,B
+polyadenylate-binding protein 4 isoform 1 [Homo sapiens],PABPC4,1.706,0.021903089,B
+perilipin-3 isoform 1 [Homo sapiens],PLIN3,1.527,0.032929941,B
+mitochondrial-processing peptidase subunit beta isoform X1 [Homo sapiens],PMPCB,100,1E-17,B
+DNA-directed RNA polymerases I and III subunit RPAC1 isoform 1 [Homo sapiens],POLR1C,100,1E-17,B
+cAMP-dependent protein kinase catalytic subunit alpha isoform 3 [Homo sapiens],PRKACA,1.915,0.00242087,B
+cAMP-dependent protein kinase type II-alpha regulatory subunit isoform a [Homo sapiens],PRKAR2A,4.3,3.20267E-08,B
+glucosidase 2 subunit beta isoform 3 precursor [Homo sapiens],PRKCSH,1.547,0.044798254,B
+proteasome subunit alpha type-2 [Homo sapiens],PSMA2,1.523,0.004285804,B
+peroxidasin homolog precursor [Homo sapiens],PXDN,1.872,0.027376082,B
+ran GTPase-activating protein 1 isoform X1 [Homo sapiens],RANGAP1,1.852,0.010568785,B
+regulator of chromosome condensation isoform a [Homo sapiens],RCC1,1.758,0.00092399,B
+replication factor C subunit 2 isoform 1 [Homo sapiens],RFC2,5.524,2.36658E-10,B
+replication protein A 70 kDa DNA-binding subunit isoform 1 [Homo sapiens],RPA1,2.039,0.002386565,B
+60S ribosomal protein L36 [Homo sapiens],RPL36,1.535,0.003274649,B
+60S acidic ribosomal protein P2 [Homo sapiens],RPLP2,3.89,1.24587E-07,B
+40S ribosomal protein S11 [Homo sapiens],RPS11,1.608,0.000581504,B
+ribosome-binding protein 1 isoform 1 [Homo sapiens],RRBP1,100,1E-17,B
+scavenger receptor class B member 1 isoform 5 [Homo sapiens],SCARB1,2.889,3.55271E-15,B
+"succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial isoform X1 [Homo sapiens]",SDHA,1.545,0.002635093,B
+protein transport protein Sec23A isoform X1 [Homo sapiens],SEC23A,100,1E-17,B
+structural maintenance of chromosomes protein 4 isoform X1 [Homo sapiens],SMC4,2.118,8.617E-06,B
+small nuclear ribonucleoprotein F isoform 1 [Homo sapiens],SNRPF,100,1E-17,B
+signal recognition particle subunit SRP68 isoform 1 [Homo sapiens],SRP68,1.957,0.001024225,B
+serrate RNA effector molecule homolog isoform X1 [Homo sapiens],SRRT,1.771,0.020433728,B
+"single-stranded DNA-binding protein, mitochondrial precursor [Homo sapiens]",SSBP1,2.54,1.9984E-15,B
+FACT complex subunit SSRP1 [Homo sapiens],SSRP1,1.538,0.00310073,B
+cohesin subunit SA-2 isoform a [Homo sapiens],STAG2,2.017,0.025371572,B
+transcription elongation factor SPT6 isoform X1 [Homo sapiens],SUPT6H,100,1E-17,B
+nesprin-1 isoform X1 [Homo sapiens],SYNE2,1.579,0.03631639,B
+TATA-binding protein-associated factor 2N isoform 1 [Homo sapiens],TAF15,2.115,0.005572776,B
+TAR DNA-binding protein 43 isoform X1 [Homo sapiens],TARDBP,1.718,5.34829E-05,B
+thimet oligopeptidase [Homo sapiens],THOP1,100,1E-17,B
+mitochondrial import receptor subunit TOM40 homolog [Homo sapiens],TOMM40,2.009,0.000113377,B
+tubulin gamma-2 chain isoform X2 [Homo sapiens],TUBG2,100,1E-17,B
+ubiquitin-conjugating enzyme E2 K isoform 1 [Homo sapiens],UBE2K,1.658,0.001587034,B
+ubiquitin carboxyl-terminal hydrolase 14 isoform a [Homo sapiens],USP14,1.982,0.008077381,B
+aldo-keto reductase family 1 member A1 [Homo sapiens],AKR1A1,100,1E-17,C
+AP-1 complex subunit beta-1 isoform a [Homo sapiens],AP1B1,2.966,0.000210458,C
+basigin isoform X1 [Homo sapiens],CD147,6.523,1E-17,C
+basic leucine zipper and W2 domain-containing protein 2 isoform X1 [Homo sapiens],BZW2,3.004,0.000152065,C
+CD44 antigen isoform X1 [Homo sapiens],CD44,3.976,2.63149E-08,C
+cyclin-dependent-like kinase 5 isoform 1 [Homo sapiens],CDK5,100,1E-17,C
+copine-2 [Homo sapiens],CPNE2,100,1E-17,C
+cysteine-rich protein 2 isoform 2 [Homo sapiens],CRIP2,2.844,0.000580043,C
+dolichol-phosphate mannosyltransferase subunit 1 isoform 1 [Homo sapiens],DPM1,3.243,1.93394E-05,C
+dipeptidyl peptidase 3 isoform 1 [Homo sapiens],DPP3,3.862,7.43707E-08,C
+"deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondrial isoform 1 precursor [Homo sapiens]",DUT,2.39,0.019381303,C
+elongation factor 1-alpha 2 [Homo sapiens],EEF1A2,2.744,0.001310793,C
+eukaryotic translation initiation factor 3 subunit C-like protein [Homo sapiens],EIF3CL,2.495,0.009032742,C
+eukaryotic initiation factor 4A-III [Homo sapiens],EIF4A3,100,1E-17,C
+eukaryotic translation initiation factor 5B [Homo sapiens],EIF5B,3.885,6.00851E-08,C
+exosome complex component RRP43 isoform X1 [Homo sapiens],EXOSC1,100,1E-17,C
+glutamate--cysteine ligase regulatory subunit isoform 1 [Homo sapiens],GCLM,2.255,0.048967796,C
+rab GDP dissociation inhibitor alpha [Homo sapiens],GDI1,2.612,0.00373253,C
+guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1 isoform X1 [Homo sapiens],GNB1,2.698,0.001889698,C
+gelsolin isoform a precursor [Homo sapiens],GSN,3.513,1.75802E-06,C
+vigilin isoform a [Homo sapiens],HDLBP,100,1E-17,C
+"HLA class I histocompatibility antigen, C alpha chain precursor [Homo sapiens]",HLA-C,2.537,0.006607836,C
+heterogeneous nuclear ribonucleoprotein A0 [Homo sapiens],HNRNPA0,2.696,0.001930242,C
+heterogeneous nuclear ribonucleoprotein M isoform X2 [Homo sapiens],HNRNPM,2.338,0.02804143,C
+peroxisomal multifunctional enzyme type 2 isoform 1 [Homo sapiens],HSD17B4,2.498,0.008860214,C
+insulin-like growth factor 2 mRNA-binding protein 3 isoform X1 [Homo sapiens],IGF2BP3,2.263,0.046626119,C
+importin-9 [Homo sapiens],IPO9,4.165,4.64161E-09,C
+microtubule-associated protein RP/EB family member 1 [Homo sapiens],MAPRE1,2.962,0.000217404,C
+macrophage migration inhibitory factor [Homo sapiens],MIF,100,1E-17,C
+condensin complex subunit 1 [Homo sapiens],NCAPD2,2.453,0.012379485,C
+nuclear pore complex protein Nup155 isoform 1 [Homo sapiens],NUP155,2.701,0.001847092,C
+palladin isoform X1 [Homo sapiens],PALLD,2.304,0.035179723,C
+"pyruvate carboxylase, mitochondrial isoform X1 [Homo sapiens]",PC,100,1E-17,C
+"pyruvate dehydrogenase E1 component subunit beta, mitochondrial isoform 1 precursor [Homo sapiens]",PDHB,2.699,0.001879327,C
+mitochondrial-processing peptidase subunit beta isoform X1 [Homo sapiens],PMPCB,4.061,1.20787E-08,C
+inorganic pyrophosphatase [Homo sapiens],PPA1,2.301,0.036063722,C
+serine/threonine-protein phosphatase 2A catalytic subunit alpha isoform isoform 1 [Homo sapiens],PPP2CA,2.791,0.000900747,C
+cAMP-dependent protein kinase catalytic subunit alpha isoform 3 [Homo sapiens],PRKACA ,2.541,0.006435485,C
+26S proteasome regulatory subunit 4 isoform a [Homo sapiens],PSMC1,2.67,0.002369552,C
+26S proteasome non-ATPase regulatory subunit 14 [Homo sapiens],PSMD14,2.418,0.015852492,C
+pseudouridylate synthase 7 homolog isoform a [Homo sapiens],PUS7,100,1E-17,C
+ras-related protein Ral-A isoform X1 [Homo sapiens],RALA,3.702,3.18263E-07,C
+ran GTPase-activating protein 1 isoform X1 [Homo sapiens],RANGAP1,100,1E-17,C
+protein RCC2 [Homo sapiens],RCC2,3.507,1.84859E-06,C
+reticulocalbin-2 isoform b precursor [Homo sapiens],RCN2,3.234,2.08847E-05,C
+60S ribosomal protein L31 isoform 1 [Homo sapiens],RPL31,3.692,3.47919E-07,C
+60S ribosomal protein L36 [Homo sapiens],RPL36,2.981,0.000185166,C
+ribosome-binding protein 1 isoform 1 [Homo sapiens],RRBP1,3.549,1.27346E-06,C
+GTP-binding protein SAR1b [Homo sapiens],SAR1B,100,1E-17,C
+protein sel-1 homolog 1 isoform 1 precursor [Homo sapiens],SEL1L,2.6,0.0041025,C
+ADP/ATP translocase 3 [Homo sapiens],SLC25A6,3.207,2.64243E-05,C
+sodium-coupled neutral amino acid transporter 2 isoform 1 [Homo sapiens],SLC38A2,5.724,3.33067E-15,C
+signal recognition particle receptor subunit beta [Homo sapiens],SRPRB,2.382,0.020539892,C
+"single-stranded DNA-binding protein, mitochondrial precursor [Homo sapiens]",SSBP1,2.729,0.001478807,C
+FACT complex subunit SSRP1 isoform X3 [Homo sapiens],SSRP1,2.482,0.00997192,C
+cohesin subunit SA-2 isoform a [Homo sapiens],STAG2,100,1E-17,C
+protein SGT1 homolog isoform B [Homo sapiens],SUGT1,2.354,0.024999211,C
+transforming growth factor-beta-induced protein ig-h3 precursor [Homo sapiens],TGFBI,100,1E-17,C
+mitochondrial import inner membrane translocase subunit TIM44 [Homo sapiens],TIMM44,3.218,2.39992E-05,C
+mitochondrial import inner membrane translocase subunit TIM50 isoform 1 [Homo sapiens],TIMM50,100,1E-17,C
+thymopoietin isoform alpha [Homo sapiens],TMPO,3.314,1.0353E-05,C
+ubiquitin-conjugating enzyme E2 K isoform 1 [Homo sapiens],UBE2K,2.399,0.018280601,C
+ubiquitin-conjugating enzyme E2 variant 2 isoform X1 [Homo sapiens],UBE2V2,2.33,0.029617631,C
+exportin-T isoform X1 [Homo sapiens],XPOT,2.444,0.013164476,C
