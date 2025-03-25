@@ -7,10 +7,10 @@ library(shiny)
 library(here)
 
 # File path for testing
-df <- read_csv(paste0(here(), "/ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))
+#df <- read_csv(paste0(here(), "/ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))
 
 # File path for deploying to Shinyapps.io
-#df <- read_csv("combinedProbeDatasets_TMT.csv")
+df <- read_csv("combinedProbeDatasets_TMT.csv")
 
 probeOptions <- unique(df$LipidProbe)
 

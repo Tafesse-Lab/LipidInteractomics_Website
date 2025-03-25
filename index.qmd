@@ -40,7 +40,7 @@ See our [Data Analysis Overview](/Background/DataAnalysisAndStatistics.qmd) for 
 
    <a href="LipidProbe/N-Acylphosphatidylethanolamine.qmd" style="text-decoration: none;">
       <button style="background-color:rgb(41, 188, 204); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
-          N-Acylphosphatidylethanolamine
+          N-Acylphosphatidylethanolamine (NAPE)
       </button>
   </a>
 

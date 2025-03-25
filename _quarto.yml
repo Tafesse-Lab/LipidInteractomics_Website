@@ -71,6 +71,8 @@ website:
                 text: "Phosphatidylethanolamine"
               - href: LipidProbe/N-Acylphosphatidylethanolamine.qmd
                 text: "NAPE"
+              - href: LipidProbe/Phosphatidylinositol.qmd
+                text: "PI"
               - href: LipidProbe/PhosphatidylinositolBisphosphate.qmd
                 text: "PI(4,5)P~2~"
               - href: LipidProbe/PhosphatidylinositolTrisphosphate.qmd

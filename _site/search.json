@@ -34,7 +34,7 @@
     "href": "index.html#lipid-interactomes",
     "title": "The Lipid Interactome Repository",
     "section": "Lipid Interactomes",
-    "text": "Lipid Interactomes\n\n  \n      \n          Phosphatidic Acid\n      \n  \n  \n      \n          Phosphatidylethanolamine\n      \n  \n\n   \n      \n          N-Acylphosphatidylethanolamine\n      \n  \n\n    \n\n    \n        \n            Phosphatidylinositol (PI)\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
+    "text": "Lipid Interactomes\n\n  \n      \n          Phosphatidic Acid\n      \n  \n  \n      \n          Phosphatidylethanolamine\n      \n  \n\n   \n      \n          N-Acylphosphatidylethanolamine (NAPE)\n      \n  \n\n    \n\n    \n        \n            Phosphatidylinositol (PI)\n        \n    \n\n    \n\n    \n        \n            PI(4,5)P2\n        \n    \n\n    \n        \n            PI(3,4,5)P3\n        \n    \n\n    \n    \n        \n            Diacylglycerol\n        \n    \n\n    \n    \n        \n            Sphinganine\n        \n    \n    \n        \n            Sphingosine\n        \n    \n\n    \n    \n        \n            8-3 Fatty Acid\n        \n    \n\n    \n        \n            1-10 Fatty Acid",
     "crumbs": [
       "Explore by Lipid Probe"
     ]
@@ -116,21 +116,36 @@
     "href": "LipidProbe/Phosphatidylinositol.html",
     "title": "Trifunctional Phosphatidylinositol",
     "section": "",
-    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume."
+    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "crumbs": [
+      "Explore by Lipid Probe",
+      "Glycerophospholipids",
+      "PI"
+    ]
   },
   {
     "objectID": "LipidProbe/Phosphatidylinositol.html#structure",
     "href": "LipidProbe/Phosphatidylinositol.html#structure",
     "title": "Trifunctional Phosphatidylinositol",
     "section": "",
-    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume."
+    "text": "(A) Native PI.\n\n\n\n\n\n\n\n\n\n(B) Trifunctional PI.\n\n\n\n\n\n\nChemical structures drawn by Berit Blume.",
+    "crumbs": [
+      "Explore by Lipid Probe",
+      "Glycerophospholipids",
+      "PI"
+    ]
   },
   {
     "objectID": "LipidProbe/Phosphatidylinositol.html#protein-interactome",
     "href": "LipidProbe/Phosphatidylinositol.html#protein-interactome",
     "title": "Trifunctional Phosphatidylinositol",
     "section": "Protein interactome",
-    "text": "Protein interactome\nData in pre-processing – check back soon!"
+    "text": "Protein interactome\nData in pre-processing – check back soon!",
+    "crumbs": [
+      "Explore by Lipid Probe",
+      "Glycerophospholipids",
+      "PI"
+    ]
   },
   {
     "objectID": "LipidProbe/PhosphatidicAcid.html",
@@ -626,7 +641,7 @@
     "href": "IndividualStudies/StudyOverview.html",
     "title": "Overview of Interactomics Studies",
     "section": "",
-    "text": "ReuseCC BY 4.0",
+    "text": "Chiu et al. 2025\n\n\nPhotoaffinity Labeling Reveals a Role for the Unusual Triply Acylated Phospholipid N-Acylphosphatidylethanolamine in Lactate Homeostasis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFarley et al. 2024\n\n\nTrifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFarley et al. 2024 B\n\n\nTrifunctional fatty acid derivatives: the impact of diazirine placement\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHöglinger et al. 2017\n\n\nTrifunctional lipid probes for comprehensive studies of single lipid species in living cells\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMuller et al. 2021\n\n\nSynthesis and Cellular Labeling of Multifunctional Phosphatidylinositol Bis- and Trisphosphate Derivatives\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThomas et al. 2025\n\n\nTrifunctional lipid derivatives: PE’s mitochondrial interactome\n\n\n\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0",
     "crumbs": [
       "Explore Individual Studies"
     ]
