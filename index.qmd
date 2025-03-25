@@ -2,8 +2,8 @@
 title: "The Lipid Interactome Repository"
 format: 
   html:
-    embed-resources: true
-standalone: true
+    embed-resources: false
+standalone: false
 ---
 
 ## Site Overview

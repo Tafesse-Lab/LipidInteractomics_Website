@@ -1,7 +1,9 @@
 ---
 title: "Trifunctional Phosphatidylinositol 4,5-*bis*phosphate"
 subtitle: "PI(4,5)P~2~"
-prefer-html: true
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

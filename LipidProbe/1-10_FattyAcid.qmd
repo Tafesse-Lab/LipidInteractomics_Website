@@ -1,6 +1,8 @@
 ---
 title: "Trifunctional 1-10 Fatty Acid"
-prefer-html: true
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

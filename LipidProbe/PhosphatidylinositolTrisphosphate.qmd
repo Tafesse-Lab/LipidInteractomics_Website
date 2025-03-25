@@ -1,7 +1,10 @@
 ---
 title: "Trifunctional Phosphatidylinositol 3,4,5-*tris*phosphate"
 subtitle: "PI(3,4,5)P~3~"
-prefer-html: true
+format: 
+  html:
+    embed-resources: false
+callout-icon: false
 ---
 
 ## Structure

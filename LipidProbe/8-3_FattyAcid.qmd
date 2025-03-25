@@ -1,7 +1,8 @@
 ---
 title: "Trifunctional 8-3 Fatty Acid"
-prefer-html: true
-html: default
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

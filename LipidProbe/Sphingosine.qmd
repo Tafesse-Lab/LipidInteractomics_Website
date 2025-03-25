@@ -1,7 +1,8 @@
 ---
 title: "Trifunctional Sphingosine"
-format: html
-prefer-html: true
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

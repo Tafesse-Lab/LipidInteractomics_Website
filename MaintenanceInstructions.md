@@ -6,7 +6,7 @@ date: 2025/01/09
 
 ## Site Organization
 
-I've done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that... 
+I've done my best to make the site organization logical, but really only the next person to try to update this site can be the judge on whether I succeeded in that...
 
 Under the "IndividualStudies" folder are the .qmd files that define the preparation of each corresponding .html page. The data going into these .qmd files is stored under the "DataTables" subfolder. Under the "LipidProbe" folder are the .qmd files that define the pages on each individual probe. Much of the information is copied between the two sets of pages, so be careful when making changes to one, as corresponding changes should be made elsewhere!
 
@@ -24,9 +24,9 @@ When making updates to the site, one first edits/makes a file, then you use the 
 
 ### GitHub repository
 
-After changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: <git@github.com:gaelenDG/LipidInteractomics_Website.git>. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.
+After changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: <git@github.com:Tafesse-Lab/LipidInteractomics_Website.git>. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.
 
-Cloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Gaelen, the repository administrator. More details will go here once a more formal pull request workflow is in place!
+Cloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Fikadu, the repository administrator. As of March 2025, there is no official push/pull request system in place, so be careful when making changes to the site.
 
 ### Quarto formatting
 
@@ -59,7 +59,6 @@ The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidPr
 	* Edit the setup/data wrangling R chunk to open and prepare the data -- make sure the read_csv() call points to the location of the dataset being added. If needed, adjust the order of lipid probes depicted under the factor(pull()) function call -- change the values of the levels vector to reflect the probes (the default is simply alphabetical)
 	* Don't yet adjust the Gene Ontology sections - we'll return to this in Step 5.
 
-
 3) If new study utilizes new lipid probes, make as many duplicates as appropriate of the template file under the /LipidProbe folder (i.e., if there are two lipid probes analyzed in the study at hand.)
 	* Prepare individual copies of the dataset filtered for each lipid probe, place them in the /LipidProbe/Datasets folder (I know that the /Datasets folder doesn't match the /DataTable folder, I'll work on fixing that someday).
 	* Make sure the cell type referenced is accurate, link to the appropriate "include" to add the correct study details.
@@ -89,3 +88,11 @@ The Shiny app embedded in the iframe in the [Probe vs Probe Comparisons](LipidPr
 6) Finally, we need to update the _quarto.yml file so that the new .qmd files are organized under the correct lipid class
 	* e.g. if the new probe is a sphingolipid, make sure to place its link there
 	* If the new probes are a distinct class, make a new category of probe (use the existing categories as a template)
+
+## Troubleshooting
+
+If you're having trouble with the site, the first thing to do is to check the terminal in Visual Studio Code to see if there are any errors. If there are, they will be displayed there. If you can't figure out what's wrong, you can always ask ChatGPT for help. If you're still stuck, you can ask Gaelen for help.
+
+One specific thing I've noticed is that the git remote should be via ssh instead of html -- not sure exactly why, it just seems to work better that way.
+
+I've also noticed an annoying trend that the <quarto render> action doesn't work due to the docx formatting... I've been habitually rendering using the command <quarto render --to html>, and that seems to work just fine.

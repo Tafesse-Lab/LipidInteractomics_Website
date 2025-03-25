@@ -1,9 +1,9 @@
 ---
 title: "Bifunctional N-Acylphosphatidylethanolamine"
 subtitle: "NAPE"
-prefer-html: true
-format:
-  html: default
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

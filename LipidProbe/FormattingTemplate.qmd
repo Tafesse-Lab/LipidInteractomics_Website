@@ -1,6 +1,9 @@
 ---
 title: "Formatting Template"
 subtitle: "HTML page of individual lipid probe data"
+format: 
+  html:
+    embed-resources: false
 ---
 
 ## Structure

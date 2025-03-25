@@ -2,7 +2,7 @@
 title: "Höglinger et al. 2017"
 subtitle: "Trifunctional lipid probes for comprehensive studies of single lipid species in living cells"
 date: 2017-02-14
-format:
+format: 
   html:
     embed-resources: false
 standalone: false

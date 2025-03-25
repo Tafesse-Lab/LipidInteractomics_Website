@@ -1,7 +1,9 @@
 ---
 title: "Trifunctional Phosphatidylinositol"
 subtitle: "PI"
-prefer-html: true
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
 ---
 

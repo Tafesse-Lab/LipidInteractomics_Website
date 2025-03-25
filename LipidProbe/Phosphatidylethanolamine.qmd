@@ -1,10 +1,10 @@
 ---
 title: "Trifunctional Phosphatidylethanolamine"
 prefer-html: true
-format:
-  html: default
+format: 
+  html:
+    embed-resources: false
 callout-icon: false
-
 ---
 
 

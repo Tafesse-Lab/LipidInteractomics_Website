@@ -92,8 +92,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="github-repository" class="level3">
 <h3 class="anchored" data-anchor-id="github-repository">GitHub repository</h3>
-<p>After changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: <a href="mailto:git@github.com:gaelenDG/LipidInteractomics_Website.git" class="email">git@github.com:gaelenDG/LipidInteractomics_Website.git</a>. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.</p>
-<p>Cloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Gaelen, the repository administrator. More details will go here once a more formal pull request workflow is in place!</p>
+<p>After changes are made to the .qmd files and then rendered, the changes can then be pushed to the GitHub repository: <a href="mailto:git@github.com:Tafesse-Lab/LipidInteractomics_Website.git" class="email">git@github.com:Tafesse-Lab/LipidInteractomics_Website.git</a>. Netlify will pull the changes and automatically deploy the updated site! See site owners for Netlify login information and .git access.</p>
+<p>Cloning the GitHub repository should be sufficient for gaining access to all of the files in this website - though collaborators will need to be added manually by Fikadu, the repository administrator. As of March 2025, there is no official push/pull request system in place, so be careful when making changes to the site.</p>
 </section>
 <section id="quarto-formatting" class="level3">
 <h3 class="anchored" data-anchor-id="quarto-formatting">Quarto formatting</h3>
@@ -158,6 +158,12 @@ ul.task-list li input[type="checkbox"] {
 <li>If the new probes are a distinct class, make a new category of probe (use the existing categories as a template)</li>
 </ul></li>
 </ol>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<p>If you’re having trouble with the site, the first thing to do is to check the terminal in Visual Studio Code to see if there are any errors. If there are, they will be displayed there. If you can’t figure out what’s wrong, you can always ask ChatGPT for help. If you’re still stuck, you can ask Gaelen for help.</p>
+<p>One specific thing I’ve noticed is that the git remote should be via ssh instead of html – not sure exactly why, it just seems to work better that way.</p>
+<p>I’ve also noticed an annoying trend that the <quarto render=""> action doesn’t work due to the docx formatting… I’ve been habitually rendering using the command &lt;quarto render –to html&gt;, and that seems to work just fine.</quarto></p>
 </section>
 
 </main>

@@ -1,5 +1,8 @@
 ---
 title: "Comparing the Enriched Hits of Different Probes"
+format: 
+  html:
+    embed-resources: false
 ---
 
 ## Ratiometric data

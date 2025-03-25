@@ -44,6 +44,8 @@ The **Lipid Interactome** incorporates interactive data exploration tools to enh
 
 ## Repository Structure
 
+The `_site` directory contains the generated static files for the website, organized into subdirectories for different sections and functionalities.
+
 ```         
 _site                                                
 	├── 404.html                                         
