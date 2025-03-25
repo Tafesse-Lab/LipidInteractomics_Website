@@ -29,7 +29,9 @@ website:
   title: "Lipid Interactome Repository"
   repo-url: https://github.com/gaelenDG/LipidInteractomics_Website
   repo-actions: [source, issue]
+  favicon: Resources/Logo.png
   navbar:
+    pinned: true
     left:
       - text: "Background"
         menu:
