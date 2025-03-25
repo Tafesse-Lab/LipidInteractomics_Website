@@ -88,7 +88,7 @@ MAStandard <- function(data) {
         geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
                                     "LogFC: ", logFC, "\n",
                                     "p-value: ", pvalue, "\n",
-                                    "AveExper: ", AveExpr, "\n"))) +
+                                    "AveExpr: ", AveExpr, "\n"))) +
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
         scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+

@@ -20,11 +20,6 @@ Chemical structures drawn by Berit Blume.
 :::
 :::
 
-
-:::{.border}
-![Trifunctional Phosphatidylethanolamine. Chemical structure drawn by Berit Blume.](/LipidProbe/Structures/TF_PE.png)
-:::
-
 ## Protein Interactome
 
 :::: {.callout-tip}
@@ -113,7 +108,7 @@ print("Data not yet provided.")
 
 
 
-## Gene Ontology Analysis
+#### Gene Ontology Analysis
 
 **In beta: GO analysis still under development**
 
@@ -121,15 +116,15 @@ print("Data not yet provided.")
 ::::{#fig-PE_GOplots}
 ::: {.panel-tabset}
 
-#### Cell Compartment
+##### Cell Compartment
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
-#### Molecular Function
+##### Molecular Function
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_MF-DOTplot.html" width="100%" height="500px"></iframe>
 
-#### Biological Process
+##### Biological Process
 
 <iframe src="/LipidProbe/GO_plots/PE_AT_2025_BP-DOTplot.html" width="100%" height="500px"></iframe>
 
@@ -139,7 +134,7 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 ::::
 :::::
 
-## Data exploration and download
+#### Data exploration and download
 
 Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
 

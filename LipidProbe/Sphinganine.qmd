@@ -29,6 +29,8 @@ Chemical structures drawn by Berit Blume.
 
 :::
 
+#### Data visualization
+
 
 ::: {.panel-tabset}
 
@@ -89,7 +91,7 @@ MAStandard(data)
 :::
 
 
-## Gene Ontology Analysis
+#### Gene Ontology Analysis
 
 **In beta: GO analysis still under development**
 
@@ -97,15 +99,15 @@ MAStandard(data)
 ::::{#fig-PE_GOplots}
 ::: {.panel-tabset}
 
-#### Cell Compartment
+##### Cell Compartment
 
 <iframe src="/LipidProbe/GO_plots/Spa_SF_2024_CC-DOTplot.html" width="100%" height="500px"></iframe>
 
-#### Molecular Function
+##### Molecular Function
 
 <iframe src="/LipidProbe/GO_plots/Spa_SF_2024_MF-DOTplot.html" width="100%" height="500px"></iframe>
 
-#### Biological Process
+##### Biological Process
 
 (No BP pathways identified among enriched hits and candidates.)
 
@@ -116,7 +118,7 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 ::::
 :::::
 
-## Data exploration and download
+#### Data exploration and download
 
 Check the boxes below to filter by significance thresholds.
 

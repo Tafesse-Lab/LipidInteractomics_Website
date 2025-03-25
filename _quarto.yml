@@ -69,6 +69,8 @@ website:
                 text: "Phosphatidic Acid"
               - href: LipidProbe/Phosphatidylethanolamine.qmd
                 text: "Phosphatidylethanolamine"
+              - href: LipidProbe/N-Acylphosphatidylethanolamine.qmd
+                text: "NAPE"
               - href: LipidProbe/PhosphatidylinositolBisphosphate.qmd
                 text: "PI(4,5)P~2~"
               - href: LipidProbe/PhosphatidylinositolTrisphosphate.qmd
@@ -92,6 +94,8 @@ website:
       - section: "IndividualStudies/StudyOverview.qmd"
         text: "Explore Individual Studies"
         contents:
+          - href: IndividualStudies/DCC_2025.qmd
+            text: "Chiu et al. 2025"
           - href: IndividualStudies/AT_2025.qmd
             text: "Thomas et al. 2025"
           - href: IndividualStudies/SF_2024.qmd

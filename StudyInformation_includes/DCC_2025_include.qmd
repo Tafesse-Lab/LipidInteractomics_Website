@@ -3,6 +3,8 @@
 
 #### Authors
 
+Din-Chi Chiu, Hening Lin, Jeremy M. Baskin
+
 #### Journal
 ChemR&Chi;iv
 
@@ -46,20 +48,5 @@ roles in metabolic and energy homeostasis that may be pathologically relevant in
 
 SILAC
 
-::: {.callout-note collapse="true"}
-<!-- ##### ProteomeXchange details
-
-**ProteomeXchange title:** Trifunctional lipid derivatives: PEâ€™s mi-tochondrial interactome
-
-**ProteomeXchange accession:** PXD059960
-
-**PubMed ID:** Not applicable
-
-**Publication DOI:** 10.1039/D4CC03599B
-
-**Project Webpage:** http://www.ebi.ac.uk/pride/archive/projects/PXD059960
-
-**FTP Download:** https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/01/PXD059960 -->
-:::
 
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>

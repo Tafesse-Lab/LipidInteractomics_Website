@@ -101,7 +101,7 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 ::::
 :::::
 
-## Data exploration and download
+## Data exploration
 
 Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
 

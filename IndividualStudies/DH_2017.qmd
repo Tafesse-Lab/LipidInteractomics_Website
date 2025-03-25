@@ -152,6 +152,9 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 ::::
 :::::
 
+
+## Data exploration
+
 :::{.border}
 ```{r Building Datatable, echo=FALSE, warning=FALSE}
 DH_2017_data_reactive <- crosstalk::SharedData$new(DH_2017_data)

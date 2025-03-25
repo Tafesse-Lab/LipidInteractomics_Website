@@ -37,7 +37,6 @@ RM_2021_data <- readr::read_csv("DataTables/RM_Angewandte_2021_download.csv")
 
 ## Data download
 
-
 {{< downloadthis DataTables/RM_Angewandte_2021_download.csv dname="RM_Angewandte_2021">}}
 
 
