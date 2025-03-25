@@ -7,12 +7,13 @@ callout-icon: false
 ## Structure
 
 :::{.border}
-
+![(A) Trifunctional Diacylglycerol. Preliminary structure collected from Höglinger et al. 2017](/LipidProbe/Structures/TF_DAG.png)
 :::
 
 ## Protein interactome
 
 ::::{.callout-tip}
+
 ### Cell background: HeLa
 
 ::: {.callout-note collapse="true"}

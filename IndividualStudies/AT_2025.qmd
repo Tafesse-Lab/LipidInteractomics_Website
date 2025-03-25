@@ -1,6 +1,7 @@
 ---
 title: "Thomas et al. 2025"
 subtitle: "Trifunctional lipid derivatives: PE’s mitochondrial interactome"
+date: 2024-12-26
 format: 
   html:
     embed-resources: false

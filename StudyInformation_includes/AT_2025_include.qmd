@@ -22,7 +22,7 @@ Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes
 
 <a href="/LipidProbe/Phosphatidylethanolamine.qmd" class="hover-preview">Trifunctional Phosphatidylethanolamine</a>
 <span class="hover-image">
-  <img src="/LipidProbe/Structures/TF_PE.png" alt="PPhosphatidylethanolamine" />
+  <img src="/LipidProbe/Structures/TF_PE.png" alt="Phosphatidylethanolamine" />
 </span>
 
 #### Cell line analyzed

@@ -1,6 +1,7 @@
 ---
 title: "Farley et al. 2024"
 subtitle: "Trifunctional Sphinganine: A New Tool to Dissect Sphingolipid Function"
+date: 2024-02-16
 format: 
   html:
     embed-resources: false

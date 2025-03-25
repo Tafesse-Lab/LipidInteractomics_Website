@@ -1,6 +1,7 @@
 ---
 title: "Farley et al. 2024 B"
 subtitle: "Trifunctional fatty acid derivatives: the impact of diazirine placement"
+date: 2024-05-25
 format: 
   html:
     embed-resources: false

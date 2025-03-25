@@ -10,8 +10,9 @@ listing:
   fields: 
     - title
     - subtitle
+    - date
     - image
-  sort: "title"
+  sort: "date desc"
   page-size: 10
 standalone: true
 ---
