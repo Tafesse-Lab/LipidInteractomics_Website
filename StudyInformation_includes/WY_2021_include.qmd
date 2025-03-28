@@ -1,0 +1,38 @@
+## Study details
+
+##### Authors
+
+Weizhi Yu, Zhi Lin, Christina M. Woo, Jeremy M. Baskin
+
+##### Journal
+
+ACS Chemical Biology
+
+<https://doi.org/10.1021/acschembio.1c00584>{target="_blank"}
+
+##### Abstract
+
+Alcohol consumption leads to formation of phosphatidylethanol (PEth) via the transphosphatidylation activity of phospholipase D (PLD) enzymes. Though this non-natural phospholipid routinely serves as a biomarker of chronic alcoholism, its pathophysiological roles remain unknown. We use a minimalist diazirine alkyne alcohol as an ethanol surrogate to generate clickable, photoaffinity lipid reporters of PEth localization and lipid–protein interactions via PLD-mediated transphosphatidylation. We use these tools to visualize phosphatidyl alcohols in a manner compatible with standard permeabilization and immunofluorescence methods. We also use click chemistry tagging, enrichment, and proteomics analysis to define the phosphatidyl alcohol interactome. Our analysis reveals an enrichment of putative interactors at various membrane locations, and we validate one such interaction with the single-pass transmembrane protein basigin/CD147. This study provides a comprehensive view of the molecular interactions of phosphatidyl alcohols with the cellular proteome and points to future work to connect such interactions to potential pathophysiological roles of PEth.
+
+##### Lipid probes utilized
+
+PDAA
+
+<!-- 
+<a href="/LipidProbe/N-Acylphosphatidylethanolamine.qmd" class="hover-preview">Bifunctional NAPE</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/BF_NAPE.png" alt="Bifunctional NAPE" />
+</span> -->
+
+
+##### Cell line analyzed
+
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+
+#### Uncaging & Crosslinking timeline
+
+
+
+##### Mass spectrometry quantification method
+
+PSM

@@ -25,12 +25,13 @@ library(here)
 source(paste0(here::here(), "/Resources/ggplot_styles.R"))
 
 data <- readr::read_csv(paste0(here::here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv")) |> 
-  group_by(gene_name) |>
+  group_by(gene_ID) |>
   filter(gene_name != "", ratio_MvsL != "") |>
-  summarise(logFC = mean(log2(ratio_MvsL)),
+  summarise(gene_name = gene_name,
+            logFC = mean(log2(ratio_MvsL)),
             pvalue = mean(pvalue),
             numReplicates = n(),
-            AveExpr = log10(mean(mean(L_abundance), mean(M_abundance)))) |>
+            AveExpr = log10(mean(L_abundance) + mean(M_abundance))/2) |>
   arrange(-logFC) |>
   mutate(LipidProbe = "BF-NAPE",
          hit_annotation = case_when(.default = "no hit",

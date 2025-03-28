@@ -1,0 +1,877 @@
+Accession,gene_name,logFC,numReplicates,AveExpr,LipidProbe,hit_annotation
+NP_000010.1,"acetyl-CoA acetyltransferase, mitochondrial precursor [Homo sapiens]",2.990337519021125,1,5.353609783246689,PDAA,no hit
+NP_000024.2,ATP-binding cassette sub-family D member 1 [Homo sapiens],2.990337519021125,2,6.345377262098051,PDAA,enriched candidate
+NP_000024.2,ATP-binding cassette sub-family D member 1 [Homo sapiens],2.990337519021125,2,6.345377262098051,PDAA,enriched candidate
+NP_000108.1,emerin [Homo sapiens],2.990337519021125,1,5.411727503495583,PDAA,no hit
+NP_000192.2,intercellular adhesion molecule 1 precursor [Homo sapiens],2.990337519021125,1,5.470140822425273,PDAA,no hit
+NP_000405.1,peroxisomal multifunctional enzyme type 2 isoform 2 [Homo sapiens],2.990337519021125,1,5.452091811334996,PDAA,no hit
+NP_000427.1,"succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial precursor [Homo sapiens]",2.990337519021125,1,5.446658450868934,PDAA,no hit
+NP_000584.2,antigen peptide transporter 1 isoform 1 [Homo sapiens],2.990337519021125,1,5.112505270575644,PDAA,no hit
+NP_000867.2,cation-independent mannose-6-phosphate receptor precursor [Homo sapiens],2.990337519021125,1,5.192623504927589,PDAA,no hit
+NP_001008895.1,cullin-4A isoform 1 [Homo sapiens],2.990337519021125,1,5.124794818788586,PDAA,no hit
+NP_001020262.1,ATP-binding cassette sub-family F member 1 isoform a [Homo sapiens],2.990337519021125,1,5.698864118599067,PDAA,no hit
+NP_001036015.1,structural maintenance of chromosomes protein 2 [Homo sapiens],2.990337519021125,1,6.043466994822006,PDAA,no hit
+NP_001036041.1,ribosome-binding protein 1 [Homo sapiens],2.990337519021125,1,5.568512441557419,PDAA,no hit
+NP_001041675.1,chloride channel CLIC-like protein 1 isoform 1 precursor [Homo sapiens],2.990337519021125,1,5.224718672821823,PDAA,no hit
+NP_001073027.1,heterogeneous nuclear ribonucleoprotein U-like protein 2 [Homo sapiens],2.990337519021125,1,5.885232340422124,PDAA,no hit
+NP_001129676.1,protein RCC2 [Homo sapiens],2.990337519021125,1,6.049091072442579,PDAA,no hit
+NP_001132929.1,B-cell receptor-associated protein 31 isoform a [Homo sapiens],2.990337519021125,1,5.911036628888145,PDAA,no hit
+NP_001243239.1,"glutaminase kidney isoform, mitochondrial isoform 2 [Homo sapiens]",2.990337519021125,1,5.403912536175015,PDAA,no hit
+NP_001245238.1,probable 28S rRNA (cytosine(4447)-C(5))-methyltransferase isoform 3 [Homo sapiens],2.990337519021125,1,5.4987495379982265,PDAA,no hit
+NP_001247422.1,radixin isoform 1 [Homo sapiens],2.990337519021125,1,5.110333692489443,PDAA,no hit
+NP_001265045.1,neural cell adhesion molecule L1 isoform 1 precursor [Homo sapiens],2.990337519021125,1,5.890695475201368,PDAA,no hit
+NP_001265135.1,solute carrier family 43 member 3 isoform 2 [Homo sapiens],2.990337519021125,1,6.050951602813259,PDAA,no hit
+NP_001269633.1,protein disulfide-isomerase A6 isoform a [Homo sapiens],2.990337519021125,1,5.516876247188567,PDAA,no hit
+NP_001304160.1,mitochondrial carrier homolog 2 isoform 1x [Homo sapiens],2.990337519021125,1,6.236171427212788,PDAA,no hit
+NP_001316473.1,phosphatidylserine synthase 2 isoform 1 [Homo sapiens],2.990337519021125,1,5.3955705332024,PDAA,no hit
+NP_001338588.1,zinc transporter ZIP14 isoform d [Homo sapiens],2.990337519021125,1,5.937183336629245,PDAA,no hit
+NP_001340232.1,protein FAM49B isoform 3 [Homo sapiens],2.990337519021125,1,5.262833746940532,PDAA,no hit
+NP_001341664.1,"ATP-dependent 6-phosphofructokinase, muscle type isoform 3 [Homo sapiens]",2.990337519021125,1,5.436524011021431,PDAA,no hit
+NP_001485.2,rab GDP dissociation inhibitor beta isoform 1 [Homo sapiens],2.990337519021125,1,5.625554455098767,PDAA,no hit
+NP_001488.2,"beta-1,4-galactosyltransferase 1 [Homo sapiens]",2.990337519021125,1,4.995291962193069,PDAA,no hit
+NP_001530.1,dnaJ homolog subfamily A member 1 isoform 1 [Homo sapiens],2.990337519021125,1,5.692194850633111,PDAA,no hit
+NP_001627.2,ADP/ATP translocase 3 [Homo sapiens],2.990337519021125,1,5.580725308206155,PDAA,no hit
+NP_001949.1,elongation factor 1-alpha 2 [Homo sapiens],2.990337519021125,1,5.7989038381512,PDAA,no hit
+NP_002026.1,3-ketodihydrosphingosine reductase precursor [Homo sapiens],2.990337519021125,1,5.599399063340027,PDAA,no hit
+NP_002195.1,integrin alpha-3 preproprotein [Homo sapiens],2.990337519021125,1,6.066605656896388,PDAA,no hit
+NP_002796.4,26S proteasome regulatory subunit 8 isoform 1 [Homo sapiens],2.990337519021125,1,5.340841138051129,PDAA,no hit
+NP_002797.3,26S proteasome regulatory subunit 10B [Homo sapiens],2.990337519021125,1,5.453614856960951,PDAA,no hit
+NP_003283.2,nucleoprotein TPR [Homo sapiens],2.990337519021125,1,4.878423497389645,PDAA,no hit
+NP_003553.2,mitochondrial 2-oxoglutarate/malate carrier protein isoform 1 [Homo sapiens],2.990337519021125,1,5.546811739354002,PDAA,no hit
+NP_003671.1,"tyrosine--tRNA ligase, cytoplasmic [Homo sapiens]",2.990337519021125,1,5.655628870919883,PDAA,no hit
+NP_003891.1,sequestosome-1 isoform 1 [Homo sapiens],2.990337519021125,1,5.615715852004857,PDAA,no hit
+NP_004085.1,eukaryotic translation initiation factor 2 subunit 1 [Homo sapiens],2.990337519021125,2,5.799295383581063,PDAA,enriched candidate
+NP_004085.1,eukaryotic translation initiation factor 2 subunit 1 [Homo sapiens],2.990337519021125,2,5.799295383581063,PDAA,enriched candidate
+NP_004730.2,metastasis-associated protein MTA2 isoform 1 [Homo sapiens],2.990337519021125,1,5.732429201985823,PDAA,no hit
+NP_004791.1,transmembrane 9 superfamily member 2 precursor [Homo sapiens],2.990337519021125,2,6.439940754045761,PDAA,enriched candidate
+NP_004791.1,transmembrane 9 superfamily member 2 precursor [Homo sapiens],2.990337519021125,2,6.439940754045761,PDAA,enriched candidate
+NP_005056.3,protein sel-1 homolog 1 isoform 1 precursor [Homo sapiens],2.990337519021125,1,5.610971069959488,PDAA,no hit
+NP_005619.1,neutral amino acid transporter B(0) isoform 1 [Homo sapiens],2.990337519021125,1,6.25935710833566,PDAA,no hit
+NP_005753.1,transcription intermediary factor 1-beta [Homo sapiens],2.990337519021125,1,6.277291929264286,PDAA,no hit
+NP_005794.1,flotillin-1 isoform 1 [Homo sapiens],2.990337519021125,1,5.691394495894009,PDAA,no hit
+NP_005800.3,peroxiredoxin-2 [Homo sapiens],2.990337519021125,1,5.974285102779641,PDAA,no hit
+NP_006294.2,aminoacyl tRNA synthase complex-interacting multifunctional protein 2 isoform a [Homo sapiens],2.990337519021125,1,5.459139499755368,PDAA,no hit
+NP_006311.2,membrane-associated progesterone receptor component 2 [Homo sapiens],2.990337519021125,1,6.87630252432695,PDAA,no hit
+NP_006658.1,membrane-associated progesterone receptor component 1 isoform 1 [Homo sapiens],2.990337519021125,1,6.287215338371395,PDAA,no hit
+NP_006849.1,transmembrane emp24 domain-containing protein 1 precursor [Homo sapiens],2.990337519021125,2,6.294337885746698,PDAA,enriched candidate
+NP_006849.1,transmembrane emp24 domain-containing protein 1 precursor [Homo sapiens],2.990337519021125,2,6.294337885746698,PDAA,enriched candidate
+NP_055045.2,signal recognition particle subunit SRP68 isoform 1 [Homo sapiens],2.990337519021125,1,5.895102647167268,PDAA,no hit
+NP_055109.1,translocating chain-associated membrane protein 1 isoform 1 [Homo sapiens],2.990337519021125,1,6.14782368024012,PDAA,no hit
+NP_055555.1,eukaryotic initiation factor 4A-III [Homo sapiens],2.990337519021125,1,5.94068216580582,PDAA,no hit
+NP_056146.1,nicastrin isoform 1 precursor [Homo sapiens],2.990337519021125,1,6.696743805412181,PDAA,no hit
+NP_056274.3,atlastin-3 isoform 1 [Homo sapiens],2.990337519021125,1,5.952078138713664,PDAA,no hit
+NP_056474.2,ribosomal L1 domain-containing protein 1 [Homo sapiens],2.990337519021125,1,5.436597817116419,PDAA,no hit
+NP_057110.3,retinol dehydrogenase 11 isoform 1 precursor [Homo sapiens],2.990337519021125,1,5.619127715261919,PDAA,no hit
+NP_057156.1,vesicle transport protein GOT1B [Homo sapiens],2.990337519021125,1,6.101609466866011,PDAA,no hit
+NP_057212.1,coatomer subunit gamma-1 [Homo sapiens],2.990337519021125,1,5.519187273232801,PDAA,no hit
+NP_064628.1,mitochondrial import receptor subunit TOM22 homolog [Homo sapiens],2.990337519021125,1,5.848518697800633,PDAA,no hit
+NP_071760.2,dnaJ homolog subfamily C member 1 precursor [Homo sapiens],2.990337519021125,1,6.2663553480785765,PDAA,no hit
+NP_110400.1,tubulin beta-1 chain [Homo sapiens],2.990337519021125,1,5.479483532917035,PDAA,no hit
+NP_110416.1,minor histocompatibility antigen H13 isoform 1 [Homo sapiens],2.990337519021125,3,6.7611629102732085,PDAA,enriched hit
+NP_110416.1,minor histocompatibility antigen H13 isoform 1 [Homo sapiens],2.990337519021125,3,6.7611629102732085,PDAA,enriched hit
+NP_110416.1,minor histocompatibility antigen H13 isoform 1 [Homo sapiens],2.990337519021125,3,6.7611629102732085,PDAA,enriched hit
+NP_542193.3,BRI3-binding protein precursor [Homo sapiens],2.990337519021125,1,4.751066934347007,PDAA,no hit
+NP_569735.1,carbohydrate sulfotransferase 14 [Homo sapiens],2.990337519021125,1,6.309237182026785,PDAA,no hit
+NP_710154.1,inhibitor of nuclear factor kappa-B kinase-interacting protein isoform 1 [Homo sapiens],2.990337519021125,1,6.02486732915099,PDAA,no hit
+NP_722550.1,reticulon-4 isoform B [Homo sapiens],2.990337519021125,1,5.928891416684402,PDAA,no hit
+NP_787128.2,26S proteasome non-ATPase regulatory subunit 13 isoform 2 [Homo sapiens],2.990337519021125,1,5.534925192927692,PDAA,no hit
+NP_852136.1,replication factor C subunit 2 isoform 1 [Homo sapiens],2.990337519021125,1,5.749791033612976,PDAA,no hit
+NP_955392.1,tumor protein D54 isoform a [Homo sapiens],2.990337519021125,1,5.617341630371958,PDAA,no hit
+XP_005247421.1,PREDICTED: Golgi integral membrane protein 4 isoform X1 [Homo sapiens],2.990337519021125,2,6.710434008688526,PDAA,enriched candidate
+XP_005247421.1,PREDICTED: Golgi integral membrane protein 4 isoform X1 [Homo sapiens],2.990337519021125,2,6.710434008688526,PDAA,enriched candidate
+XP_005251292.1,PREDICTED: aspartyl/asparaginyl beta-hydroxylase isoform X8 [Homo sapiens],2.990337519021125,1,6.227550928169037,PDAA,no hit
+XP_005253288.1,PREDICTED: CD44 antigen isoform X1 [Homo sapiens],2.990337519021125,2,7.225394386432213,PDAA,enriched candidate
+XP_005253288.1,PREDICTED: CD44 antigen isoform X1 [Homo sapiens],2.990337519021125,2,7.225394386432213,PDAA,enriched candidate
+XP_005256246.1,PREDICTED: inactive hydroxysteroid dehydrogenase-like protein 1 isoform X1 [Homo sapiens],2.990337519021125,1,5.956503045297048,PDAA,no hit
+XP_005257584.1,PREDICTED: coiled-coil domain-containing protein 47 isoform X1 [Homo sapiens],2.990337519021125,2,6.301341555937489,PDAA,enriched candidate
+XP_005257584.1,PREDICTED: coiled-coil domain-containing protein 47 isoform X1 [Homo sapiens],2.990337519021125,2,6.301341555937489,PDAA,enriched candidate
+XP_005261752.1,PREDICTED: ran GTPase-activating protein 1 isoform X1 [Homo sapiens],2.990337519021125,1,5.25311521170911,PDAA,no hit
+XP_005264438.1,PREDICTED: transmembrane protein 214 isoform X1 [Homo sapiens],2.990337519021125,1,6.004804284684072,PDAA,no hit
+XP_005264475.1,PREDICTED: girdin isoform X1 [Homo sapiens],2.990337519021125,1,5.7287823855236315,PDAA,no hit
+XP_006722643.1,PREDICTED: thioredoxin-like protein 1 isoform X1 [Homo sapiens],2.990337519021125,1,5.320449011419956,PDAA,no hit
+XP_011535273.1,PREDICTED: presenilin-1 isoform X1 [Homo sapiens],2.990337519021125,1,5.566533569957491,PDAA,no hit
+XP_011538619.1,PREDICTED: sphingosine-1-phosphate lyase 1 isoform X1 [Homo sapiens],2.990337519021125,1,6.131627204213892,PDAA,no hit
+XP_011541109.1,PREDICTED: dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3A isoform X1 [Homo sapiens],2.990337519021125,1,5.742976073933761,PDAA,no hit
+XP_016858228.1,PREDICTED: far upstream element-binding protein 1 isoform X1 [Homo sapiens],2.990337519021125,1,5.6951255743292775,PDAA,no hit
+XP_016859678.1,PREDICTED: septin-2 isoform X1 [Homo sapiens],2.990337519021125,1,5.775573826664297,PDAA,no hit
+XP_016860268.1,"PREDICTED: spectrin beta chain, non-erythrocytic 1 isoform X1 [Homo sapiens]",2.990337519021125,1,5.563930461821862,PDAA,no hit
+XP_016860272.1,PREDICTED: signal transducer and activator of transcription 1-alpha/beta isoform X1 [Homo sapiens],2.990337519021125,1,5.833523190268027,PDAA,no hit
+XP_016869212.1,PREDICTED: 60S ribosomal protein L8 isoform X1 [Homo sapiens],2.990337519021125,1,5.319721719433888,PDAA,no hit
+XP_016871898.1,PREDICTED: CDGSH iron-sulfur domain-containing protein 1 isoform X1 [Homo sapiens],2.990337519021125,2,5.84793106248708,PDAA,enriched candidate
+XP_016871898.1,PREDICTED: CDGSH iron-sulfur domain-containing protein 1 isoform X1 [Homo sapiens],2.990337519021125,2,5.84793106248708,PDAA,enriched candidate
+XP_016879224.1,PREDICTED: large neutral amino acids transporter small subunit 1 isoform X1 [Homo sapiens],2.990337519021125,1,7.0221955463838555,PDAA,no hit
+NP_001157289.1,7-dehydrocholesterol reductase [Homo sapiens],2.874724441421322,1,6.087374216570661,PDAA,no hit
+NP_003792.1,glycosylphosphatidylinositol anchor attachment 1 protein [Homo sapiens],2.8539905729682946,1,6.546374212539971,PDAA,no hit
+NP_057406.2,ras-related protein Rab-14 [Homo sapiens],2.7806925327319663,1,6.130948367865443,PDAA,no hit
+XP_005273819.1,"PREDICTED: carnitine O-palmitoyltransferase 1, liver isoform isoform X1 [Homo sapiens]",2.6028693113307675,1,6.517349012079468,PDAA,no hit
+NP_003135.2,translocon-associated protein subunit alpha isoform 1 precursor [Homo sapiens],2.602227526269939,1,7.02089150201904,PDAA,no hit
+XP_011538278.1,PREDICTED: transmembrane 9 superfamily member 3 isoform X1 [Homo sapiens],2.577740917301008,1,6.7192762144958795,PDAA,no hit
+NP_055929.1,ankyrin repeat and LEM domain-containing protein 2 [Homo sapiens],2.5334770152310755,1,6.654914736872313,PDAA,no hit
+XP_005264337.1,PREDICTED: hexokinase-2 isoform X1 [Homo sapiens],2.4664391954733462,1,5.967113575155557,PDAA,no hit
+XP_005259732.1,PREDICTED: membralin isoform X1 [Homo sapiens],2.45352050944096,1,6.310664824936055,PDAA,no hit
+NP_006491.2,cell surface glycoprotein MUC18 precursor [Homo sapiens],2.453059972408993,1,5.956613755333688,PDAA,no hit
+NP_001309906.1,sideroflexin-1 isoform 1 [Homo sapiens],2.436297237993699,1,6.346963186583684,PDAA,no hit
+NP_004484.1,3-hydroxyacyl-CoA dehydrogenase type-2 isoform 1 [Homo sapiens],2.419037365586333,1,6.189966458134916,PDAA,no hit
+XP_011538773.1,PREDICTED: heterogeneous nuclear ribonucleoprotein R isoform X1 [Homo sapiens],2.406161072916822,1,6.450365941873951,PDAA,no hit
+NP_001681.2,V-type proton ATPase catalytic subunit A [Homo sapiens],2.2638156080918312,2,5.960251118819986,PDAA,enriched candidate
+NP_001681.2,V-type proton ATPase catalytic subunit A [Homo sapiens],2.2638156080918312,2,5.960251118819986,PDAA,enriched candidate
+NP_001001.2,40S ribosomal protein S6 [Homo sapiens],2.2543093719941716,1,6.644745864417595,PDAA,no hit
+NP_036585.1,transducin beta-like protein 2 precursor [Homo sapiens],2.24585897422601,2,6.683726659904537,PDAA,enriched candidate
+NP_036585.1,transducin beta-like protein 2 precursor [Homo sapiens],2.24585897422601,2,6.683726659904537,PDAA,enriched candidate
+NP_006280.3,talin-1 [Homo sapiens],2.2453799655731297,3,6.109292407565583,PDAA,enriched hit
+NP_006280.3,talin-1 [Homo sapiens],2.2453799655731297,3,6.109292407565583,PDAA,enriched hit
+NP_006280.3,talin-1 [Homo sapiens],2.2453799655731297,3,6.109292407565583,PDAA,enriched hit
+NP_064502.9,"leucine--tRNA ligase, cytoplasmic isoform 1 [Homo sapiens]",2.2259420517844246,1,5.908932357260732,PDAA,no hit
+NP_005848.2,CAAX prenyl protease 1 homolog [Homo sapiens],2.207816419491656,1,6.1772482490748555,PDAA,no hit
+NP_002806.2,26S proteasome non-ATPase regulatory subunit 11 [Homo sapiens],2.19395215732881,1,6.360934220075346,PDAA,no hit
+NP_110409.2,cleft lip and palate transmembrane protein 1-like protein [Homo sapiens],2.193024790152519,1,6.698047324935027,PDAA,no hit
+XP_011536806.1,PREDICTED: serine/threonine-protein phosphatase PP1-gamma catalytic subunit isoform X1 [Homo sapiens],2.1807627463903962,1,5.8930363162223145,PDAA,no hit
+NP_067026.3,signal recognition particle receptor subunit beta [Homo sapiens],2.145786756594613,2,7.320233269658708,PDAA,enriched candidate
+NP_067026.3,signal recognition particle receptor subunit beta [Homo sapiens],2.145786756594613,2,7.320233269658708,PDAA,enriched candidate
+NP_001027454.1,thymopoietin isoform beta [Homo sapiens],2.1335160611138573,3,6.18202893013278,PDAA,enriched hit
+NP_001027454.1,thymopoietin isoform beta [Homo sapiens],2.1335160611138573,3,6.18202893013278,PDAA,enriched hit
+NP_001027454.1,thymopoietin isoform beta [Homo sapiens],2.1335160611138573,3,6.18202893013278,PDAA,enriched hit
+NP_004512.1,kinesin-1 heavy chain [Homo sapiens],2.1084582989947505,2,5.736397451671233,PDAA,enriched candidate
+NP_004512.1,kinesin-1 heavy chain [Homo sapiens],2.1084582989947505,2,5.736397451671233,PDAA,enriched candidate
+NP_001173.2,alpha-aminoadipic semialdehyde dehydrogenase isoform 1 precursor [Homo sapiens],2.091144588777585,3,7.131747776555115,PDAA,enriched hit
+NP_001173.2,alpha-aminoadipic semialdehyde dehydrogenase isoform 1 precursor [Homo sapiens],2.091144588777585,3,7.131747776555115,PDAA,enriched hit
+NP_001173.2,alpha-aminoadipic semialdehyde dehydrogenase isoform 1 precursor [Homo sapiens],2.091144588777585,3,7.131747776555115,PDAA,enriched hit
+NP_004209.2,ras-related protein Rab-11B [Homo sapiens],2.0899962972964685,1,6.25306591710052,PDAA,no hit
+XP_011532966.1,PREDICTED: calnexin isoform X2 [Homo sapiens],2.0590220859499926,1,7.433460819231581,PDAA,no hit
+NP_001337404.1,adenylyl cyclase-associated protein 1 isoform a [Homo sapiens],2.047392620609437,1,6.008658366516659,PDAA,no hit
+XP_005248174.1,PREDICTED: transmembrane protein 33 isoform X1 [Homo sapiens],1.9769878416450455,2,6.942342687235251,PDAA,enriched candidate
+XP_005248174.1,PREDICTED: transmembrane protein 33 isoform X1 [Homo sapiens],1.9769878416450455,2,6.942342687235251,PDAA,enriched candidate
+NP_006450.2,erlin-1 isoform a [Homo sapiens],1.9599835150529206,1,6.056410297973495,PDAA,no hit
+NP_001310912.1,catenin alpha-1 isoform 1 [Homo sapiens],1.9520052942241435,1,6.259009608891824,PDAA,no hit
+NP_000932.3,NADPH--cytochrome P450 reductase [Homo sapiens],1.9477525532609805,3,7.447535349225878,PDAA,enriched hit
+NP_000932.3,NADPH--cytochrome P450 reductase [Homo sapiens],1.9477525532609805,3,7.447535349225878,PDAA,enriched hit
+NP_000932.3,NADPH--cytochrome P450 reductase [Homo sapiens],1.9477525532609805,3,7.447535349225878,PDAA,enriched hit
+NP_036256.2,cysteine and histidine-rich domain-containing protein 1 isoform a [Homo sapiens],1.9441614729622918,1,5.950619203658621,PDAA,no hit
+NP_001609.2,poly [ADP-ribose] polymerase 1 [Homo sapiens],1.923396436180922,1,6.375198742343008,PDAA,no hit
+XP_011512434.1,PREDICTED: lysophosphatidylcholine acyltransferase 1 isoform X1 [Homo sapiens],1.9162570054457975,2,6.826088635315939,PDAA,enriched candidate
+XP_011512434.1,PREDICTED: lysophosphatidylcholine acyltransferase 1 isoform X1 [Homo sapiens],1.9162570054457975,2,6.826088635315939,PDAA,enriched candidate
+NP_002379.3,DNA replication licensing factor MCM3 isoform 1 [Homo sapiens],1.9075019070756696,1,5.991342378556599,PDAA,no hit
+XP_011510613.1,PREDICTED: structural maintenance of chromosomes protein 4 isoform X1 [Homo sapiens],1.8566837354549675,1,5.906970437655076,PDAA,no hit
+NP_057175.1,eukaryotic translation initiation factor 3 subunit L isoform 1 [Homo sapiens],1.855480354750962,1,6.155142056456476,PDAA,no hit
+NP_002038.2,glycine--tRNA ligase isoform 1 precursor [Homo sapiens],1.8436465753302125,1,6.328549393392139,PDAA,no hit
+NP_835361.1,adenosine 3'-phospho 5'-phosphosulfate transporter 1 isoform a precursor [Homo sapiens],1.7656156701081285,1,6.015577489965029,PDAA,no hit
+XP_011512974.1,PREDICTED: serpin B6 isoform X1 [Homo sapiens],1.7616315346727873,1,5.812101920992006,PDAA,no hit
+NP_037425.1,transformer-2 protein homolog alpha isoform 1 [Homo sapiens],1.7613948415925282,1,5.860342700556134,PDAA,no hit
+XP_016877209.1,PREDICTED: alpha-actinin-1 isoform X1 [Homo sapiens],1.7456767262726514,2,6.071065323594945,PDAA,enriched candidate
+XP_016877209.1,PREDICTED: alpha-actinin-1 isoform X1 [Homo sapiens],1.7456767262726514,2,6.071065323594945,PDAA,enriched candidate
+NP_064555.2,nicalin isoform 1 precursor [Homo sapiens],1.7438517097862762,2,6.060103063505019,PDAA,enriched candidate
+NP_064555.2,nicalin isoform 1 precursor [Homo sapiens],1.7438517097862762,2,6.060103063505019,PDAA,enriched candidate
+NP_055040.2,serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform [Homo sapiens],1.6554755673179455,1,6.226437400958896,PDAA,no hit
+NP_001258851.1,signal peptidase complex catalytic subunit SEC11A isoform 3 [Homo sapiens],1.6419104959503619,1,6.577310542086278,PDAA,no hit
+NP_060557.3,nucleoporin NDC1 isoform 1 [Homo sapiens],1.6316888599530897,3,6.800838243511678,PDAA,enriched hit
+NP_060557.3,nucleoporin NDC1 isoform 1 [Homo sapiens],1.6316888599530897,3,6.800838243511678,PDAA,enriched hit
+NP_060557.3,nucleoporin NDC1 isoform 1 [Homo sapiens],1.6316888599530897,3,6.800838243511678,PDAA,enriched hit
+NP_000117.1,"electron transfer flavoprotein subunit alpha, mitochondrial isoform a [Homo sapiens]",1.6211157317639868,1,5.986304438105415,PDAA,no hit
+NP_003267.1,thymopoietin isoform alpha [Homo sapiens],1.5880365176554498,2,6.167927706104236,PDAA,enriched candidate
+NP_003267.1,thymopoietin isoform alpha [Homo sapiens],1.5880365176554498,2,6.167927706104236,PDAA,enriched candidate
+NP_003277.1,DNA topoisomerase 1 [Homo sapiens],1.5791037159774737,1,5.806240310857688,PDAA,no hit
+XP_011522035.1,PREDICTED: fatty aldehyde dehydrogenase isoform X1 [Homo sapiens],1.5767092774012186,2,7.065295802437436,PDAA,enriched candidate
+XP_011522035.1,PREDICTED: fatty aldehyde dehydrogenase isoform X1 [Homo sapiens],1.5767092774012186,2,7.065295802437436,PDAA,enriched candidate
+NP_001099008.1,myb-binding protein 1A isoform 1 [Homo sapiens],1.5719105168056,1,5.667383012855522,PDAA,no hit
+NP_077734.1,cytosolic phospholipase A2 isoform 1 [Homo sapiens],1.5647975364933124,1,6.288743354078737,PDAA,no hit
+NP_001279.2,chloride intracellular channel protein 1 [Homo sapiens],1.5630132118074354,2,6.275444459224843,PDAA,enriched candidate
+NP_001279.2,chloride intracellular channel protein 1 [Homo sapiens],1.5630132118074354,2,6.275444459224843,PDAA,enriched candidate
+NP_001002.1,40S ribosomal protein S7 [Homo sapiens],1.5376886314767706,1,5.948882477412785,PDAA,no hit
+XP_016875270.1,PREDICTED: 60S ribosomal protein L6 isoform X1 [Homo sapiens],1.5111067269835647,1,6.581067853578051,PDAA,no hit
+XP_016864369.1,PREDICTED: WD repeat-containing protein 1 isoform X1 [Homo sapiens],1.506675470756436,1,6.127344386837348,PDAA,no hit
+NP_055567.2,signal peptidase complex subunit 2 [Homo sapiens],1.5043334983881378,1,6.08659059814848,PDAA,no hit
+NP_149129.2,caldesmon isoform 1 [Homo sapiens],1.4849338044424147,2,5.971099232120433,PDAA,enriched candidate
+NP_149129.2,caldesmon isoform 1 [Homo sapiens],1.4849338044424147,2,5.971099232120433,PDAA,enriched candidate
+NP_001036816.1,tropomyosin alpha-3 chain isoform Tpm3.2cy [Homo sapiens],1.4583472931139578,1,6.298941942845671,PDAA,no hit
+XP_016856452.1,PREDICTED: polypeptide N-acetylgalactosaminyltransferase 2 isoform X1 [Homo sapiens],1.455298477065214,1,5.739554347459707,PDAA,no hit
+NP_057018.1,nucleolar protein 58 [Homo sapiens],1.4501468120120968,1,5.8597665359186,PDAA,no hit
+NP_057215.3,ras-related protein Rab-10 [Homo sapiens],1.448173421709452,1,5.851901896745118,PDAA,no hit
+NP_009193.2,protein/nucleic acid deglycase DJ-1 [Homo sapiens],1.4407173990921658,1,6.148273958896302,PDAA,no hit
+XP_006720201.1,PREDICTED: kinectin isoform X1 [Homo sapiens],1.4404217345679449,1,6.102463726495024,PDAA,no hit
+NP_733765.1,sarcoplasmic/endoplasmic reticulum calcium ATPase 2 isoform b [Homo sapiens],1.4394894153309519,3,7.096638422097134,PDAA,enriched hit
+NP_733765.1,sarcoplasmic/endoplasmic reticulum calcium ATPase 2 isoform b [Homo sapiens],1.4394894153309519,3,7.096638422097134,PDAA,enriched hit
+NP_733765.1,sarcoplasmic/endoplasmic reticulum calcium ATPase 2 isoform b [Homo sapiens],1.4394894153309519,3,7.096638422097134,PDAA,enriched hit
+NP_004883.3,vesicle-trafficking protein SEC22b precursor [Homo sapiens],1.438223470535334,1,6.451215786717634,PDAA,no hit
+NP_003123.2,spermidine synthase [Homo sapiens],1.3916621586348308,1,6.231249221356646,PDAA,no hit
+XP_011507753.1,PREDICTED: ceramide synthase 2 isoform X1 [Homo sapiens],1.3811390765164404,2,6.119464313445799,PDAA,enriched candidate
+XP_011507753.1,PREDICTED: ceramide synthase 2 isoform X1 [Homo sapiens],1.3811390765164404,2,6.119464313445799,PDAA,enriched candidate
+NP_006319.1,RNA-binding protein 14 isoform 1 [Homo sapiens],1.325043078722147,1,5.731679442515057,PDAA,no hit
+NP_002854.3,"glycogen phosphorylase, liver form isoform 1 [Homo sapiens]",1.3077342133046086,1,5.611696729996426,PDAA,no hit
+XP_011540530.1,PREDICTED: F-actin-capping protein subunit beta isoform X1 [Homo sapiens],1.2853787017090132,1,6.218895329287215,PDAA,no hit
+NP_001276033.1,glucosidase 2 subunit beta isoform 3 precursor [Homo sapiens],1.2776443173022365,1,5.902072060348962,PDAA,no hit
+NP_009123.1,FACT complex subunit SPT16 [Homo sapiens],1.276982140037565,1,6.237859627784671,PDAA,no hit
+XP_016873515.1,PREDICTED: 26S protease regulatory subunit 6A isoform X1 [Homo sapiens],1.2661551095532086,1,5.868204317365931,PDAA,no hit
+XP_011517227.1,PREDICTED: niban-like protein 1 isoform X2 [Homo sapiens],1.2513988930866873,1,6.096910550490574,PDAA,no hit
+NP_006657.1,ruvB-like 2 isoform 1 [Homo sapiens],1.2447380610593228,1,5.649226149767941,PDAA,no hit
+NP_001518.3,histone deacetylase 2 [Homo sapiens],1.2334703636727102,1,5.946985120639502,PDAA,no hit
+NP_001165131.1,NADH-cytochrome b5 reductase 3 isoform 3 [Homo sapiens],1.2324948776212183,1,6.222536412210257,PDAA,no hit
+NP_004035.2,bifunctional purine biosynthesis protein PURH [Homo sapiens],1.220884868624796,1,6.459615738498357,PDAA,no hit
+NP_002788.1,proteasome subunit beta type-5 isoform 1 [Homo sapiens],1.2018731008541668,1,5.9109580298542594,PDAA,no hit
+NP_001171669.1,src substrate cortactin isoform c [Homo sapiens],1.1898119949691335,1,5.684663395416478,PDAA,no hit
+NP_006507.2,"solute carrier family 2, facilitated glucose transporter member 1 [Homo sapiens]",1.1868942063892627,1,6.4254552144451225,PDAA,no hit
+NP_002256.2,importin subunit beta-1 isoform 1 [Homo sapiens],1.1849289217948584,1,6.404601124070575,PDAA,no hit
+XP_016873238.1,PREDICTED: caprin-1 isoform X1 [Homo sapiens],1.1716054850812307,1,5.936728303797586,PDAA,no hit
+NP_000810.1,trifunctional purine biosynthetic protein adenosine-3 isoform 1 [Homo sapiens],1.1630810357813122,1,5.610645356205777,PDAA,no hit
+NP_002558.1,phosphatidylethanolamine-binding protein 1 [Homo sapiens],1.1590308951269668,1,5.801920113827641,PDAA,no hit
+NP_006421.2,T-complex protein 1 subunit delta isoform a [Homo sapiens],1.1532693668926397,1,6.963693828365667,PDAA,no hit
+NP_005564.1,lamin-B1 isoform 1 [Homo sapiens],1.1472259531831783,1,6.203254110611257,PDAA,no hit
+NP_002061.1,guanine nucleotide-binding protein G(i) subunit alpha-2 isoform 1 [Homo sapiens],1.1447911117009975,1,5.728106126152977,PDAA,no hit
+NP_976251.1,long-chain-fatty-acid--CoA ligase 3 [Homo sapiens],1.144116918776402,1,6.0636033952647725,PDAA,no hit
+NP_001677.2,"ATP synthase subunit beta, mitochondrial precursor [Homo sapiens]",1.116411713919562,1,6.813247285248315,PDAA,no hit
+NP_005947.3,"C-1-tetrahydrofolate synthase, cytoplasmic [Homo sapiens]",1.112228221046256,1,6.508937154411897,PDAA,no hit
+NP_001285.1,cleft lip and palate transmembrane protein 1 isoform 2 [Homo sapiens],1.100887852895366,1,6.769149991531831,PDAA,no hit
+XP_011515669.1,PREDICTED: protein LYRIC isoform X1 [Homo sapiens],1.0918065038704095,2,6.592077475640705,PDAA,enriched candidate
+XP_011515669.1,PREDICTED: protein LYRIC isoform X1 [Homo sapiens],1.0918065038704095,2,6.592077475640705,PDAA,enriched candidate
+NP_001030335.1,60S ribosomal protein L38 [Homo sapiens],1.0651169455177385,1,6.422812174711938,PDAA,no hit
+NP_004102.1,flap endonuclease 1 [Homo sapiens],1.0538956830470996,1,5.568483612201184,PDAA,no hit
+NP_002188.1,cytoplasmic aconitate hydratase [Homo sapiens],1.0511873299729597,1,5.518568763016241,PDAA,no hit
+NP_005887.2,isocitrate dehydrogenase [NADP] cytoplasmic [Homo sapiens],1.04013554603997,1,6.109986230319719,PDAA,no hit
+XP_011531399.1,PREDICTED: exportin-1 isoform X1 [Homo sapiens],1.0262991909761663,1,6.286540936479934,PDAA,no hit
+NP_001091868.1,coatomer subunit alpha isoform 1 [Homo sapiens],1.0246659405065808,1,6.121884667802807,PDAA,no hit
+NP_000886.1,leukotriene A-4 hydrolase isoform 1 [Homo sapiens],1.022635881483689,1,5.619984974349418,PDAA,no hit
+NP_005907.3,DNA replication licensing factor MCM7 isoform 1 [Homo sapiens],1.017491570524852,1,6.24194566427948,PDAA,no hit
+XP_016872629.1,PREDICTED: protein YIF1A isoform X2 [Homo sapiens],1.0080599294669064,1,6.5237043396990195,PDAA,no hit
+NP_037415.1,methionine adenosyltransferase 2 subunit beta isoform 1 [Homo sapiens],1.0042928014877912,1,5.674514084421292,PDAA,no hit
+NP_001091974.1,probable ATP-dependent RNA helicase DDX17 isoform 3 [Homo sapiens],0.9855977017302644,1,6.174079543357358,PDAA,no hit
+NP_005959.2,heterogeneous nuclear ribonucleoprotein M isoform a [Homo sapiens],0.9791566995971746,1,6.605942976578501,PDAA,no hit
+NP_057671.2,chromobox protein homolog 3 [Homo sapiens],0.975313237539579,1,5.925688174652217,PDAA,no hit
+NP_031401.1,TAR DNA-binding protein 43 [Homo sapiens],0.9619564819928437,1,5.602338808775477,PDAA,no hit
+NP_000111.1,epoxide hydrolase 1 [Homo sapiens],0.9600486110879345,2,6.635920973764436,PDAA,enriched candidate
+NP_000111.1,epoxide hydrolase 1 [Homo sapiens],0.9600486110879345,2,6.635920973764436,PDAA,enriched candidate
+NP_001138880.1,non-POU domain-containing octamer-binding protein isoform 1 [Homo sapiens],0.9597772284190711,1,6.514304977046892,PDAA,no hit
+NP_938148.1,neutral alpha-glucosidase AB isoform 2 precursor [Homo sapiens],0.9565907764628214,1,6.386654077503359,PDAA,no hit
+NP_001896.2,CTP synthase 1 isoform a [Homo sapiens],0.9533972710716059,1,6.151531173400485,PDAA,no hit
+XP_016882820.1,PREDICTED: alpha-actinin-4 isoform X3 [Homo sapiens],0.9494844734112373,1,7.081343357499737,PDAA,no hit
+NP_001093131.1,eukaryotic translation initiation factor 3 subunit C-like protein [Homo sapiens],0.9361249860854652,1,6.1229321893122775,PDAA,no hit
+NP_006808.1,endoplasmic reticulum resident protein 29 isoform 1 precursor [Homo sapiens],0.9343263385006777,1,5.884402088879522,PDAA,no hit
+NP_000692.2,sodium/potassium-transporting ATPase subunit alpha-1 isoform a [Homo sapiens],0.9232637412871689,3,7.276593194727993,PDAA,enriched hit
+NP_000692.2,sodium/potassium-transporting ATPase subunit alpha-1 isoform a [Homo sapiens],0.9232637412871689,3,7.276593194727993,PDAA,enriched hit
+NP_000692.2,sodium/potassium-transporting ATPase subunit alpha-1 isoform a [Homo sapiens],0.9232637412871689,3,7.276593194727993,PDAA,enriched hit
+NP_006079.1,tubulin beta-4B chain [Homo sapiens],0.9173692340919235,1,7.176187588466665,PDAA,no hit
+NP_005207.2,dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit precursor [Homo sapiens],0.916519161231788,1,6.182345874488673,PDAA,no hit
+NP_919223.1,heterogeneous nuclear ribonucleoprotein A3 isoform a [Homo sapiens],0.9105545849833421,1,6.077881134691232,PDAA,no hit
+NP_037473.3,obg-like ATPase 1 isoform 1 [Homo sapiens],0.8994116634610734,1,5.96902422413761,PDAA,no hit
+XP_016882662.1,PREDICTED: basigin isoform X1 [Homo sapiens],0.8990932498319131,3,6.784079643015717,PDAA,enriched hit
+XP_016882662.1,PREDICTED: basigin isoform X1 [Homo sapiens],0.8990932498319131,3,6.784079643015717,PDAA,enriched hit
+XP_016882662.1,PREDICTED: basigin isoform X1 [Homo sapiens],0.8990932498319131,3,6.784079643015717,PDAA,enriched hit
+NP_006383.2,nucleolar protein 56 [Homo sapiens],0.8775508219723545,1,5.685575495404025,PDAA,no hit
+NP_005689.2,secretory carrier-associated membrane protein 3 isoform 1 [Homo sapiens],0.8773694280397457,2,6.594161825408599,PDAA,enriched candidate
+NP_005689.2,secretory carrier-associated membrane protein 3 isoform 1 [Homo sapiens],0.8773694280397457,2,6.594161825408599,PDAA,enriched candidate
+NP_001484.1,rab GDP dissociation inhibitor alpha [Homo sapiens],0.8755526290755116,1,5.468789299449335,PDAA,no hit
+NP_001129125.1,polyadenylate-binding protein 4 isoform 1 [Homo sapiens],0.8716732368548437,1,6.288831644105895,PDAA,no hit
+NP_060555.2,importin-9 [Homo sapiens],0.8525142231833991,2,6.004922842000355,PDAA,enriched candidate
+NP_060555.2,importin-9 [Homo sapiens],0.8525142231833991,2,6.004922842000355,PDAA,enriched candidate
+NP_001145.1,annexin A5 [Homo sapiens],0.8514830003486153,1,7.082862607767901,PDAA,no hit
+XP_016857543.1,"PREDICTED: splicing factor, proline- and glutamine-rich isoform X1 [Homo sapiens]",0.8397443715325315,1,6.913414678415574,PDAA,no hit
+NP_001264153.1,transgelin-2 isoform a [Homo sapiens],0.8306194604480694,1,6.663764655482349,PDAA,no hit
+NP_006730.2,DNA replication licensing factor MCM5 [Homo sapiens],0.8291360355932991,1,6.108918282015915,PDAA,no hit
+NP_001273433.1,heat shock protein 105 kDa isoform 3 [Homo sapiens],0.8244176452408905,1,6.3079747689813805,PDAA,no hit
+NP_000998.1,"40S ribosomal protein S4, X isoform X isoform [Homo sapiens]",0.8237053151570795,1,6.667132811257206,PDAA,no hit
+NP_006784.1,"thioredoxin-dependent peroxide reductase, mitochondrial isoform a precursor [Homo sapiens]",0.8168229585255871,1,6.145639378297339,PDAA,no hit
+NP_002145.3,heat shock 70 kDa protein 4 [Homo sapiens],0.806479755820142,3,6.6678743363394615,PDAA,enriched hit
+NP_002145.3,heat shock 70 kDa protein 4 [Homo sapiens],0.806479755820142,3,6.6678743363394615,PDAA,enriched hit
+NP_002145.3,heat shock 70 kDa protein 4 [Homo sapiens],0.806479755820142,3,6.6678743363394615,PDAA,enriched hit
+NP_006351.2,eukaryotic translation initiation factor 3 subunit M isoform 1 [Homo sapiens],0.8021044566468376,1,5.5960136962554845,PDAA,no hit
+NP_872590.1,proliferating cell nuclear antigen [Homo sapiens],0.7979562240553548,1,6.101107334536758,PDAA,no hit
+NP_064504.2,zinc finger CCCH-type antiviral protein 1 isoform 1 [Homo sapiens],0.7877656011734384,1,5.465548120554071,PDAA,no hit
+NP_001288172.1,rho GDP-dissociation inhibitor 1 isoform e [Homo sapiens],0.7823765705667647,1,6.299764652373336,PDAA,no hit
+XP_011522506.1,PREDICTED: septin-9 isoform X1 [Homo sapiens],0.782309913369863,1,5.610212765079596,PDAA,no hit
+NP_005906.2,DNA replication licensing factor MCM6 [Homo sapiens],0.7761642383005132,1,6.380296805671676,PDAA,no hit
+NP_005902.1,S-adenosylmethionine synthase isoform type-2 [Homo sapiens],0.7678392961689093,1,6.232875398228732,PDAA,no hit
+NP_006182.2,proliferation-associated protein 2G4 [Homo sapiens],0.7610228168480466,1,6.50391487406503,PDAA,no hit
+NP_001290043.1,tubulin alpha-1C chain isoform a [Homo sapiens],0.7602394990360182,3,6.6728276342758175,PDAA,enriched hit
+NP_001290043.1,tubulin alpha-1C chain isoform a [Homo sapiens],0.7602394990360182,3,6.6728276342758175,PDAA,enriched hit
+NP_001290043.1,tubulin alpha-1C chain isoform a [Homo sapiens],0.7602394990360182,3,6.6728276342758175,PDAA,enriched hit
+XP_016865174.1,"PREDICTED: succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial isoform X1 [Homo sapiens]",0.7419554850489174,1,5.863547897368627,PDAA,no hit
+NP_003397.1,14-3-3 protein zeta/delta [Homo sapiens],0.7307384049221541,1,6.552400095118647,PDAA,no hit
+NP_006105.1,mitochondrial import receptor subunit TOM40 homolog [Homo sapiens],0.7305311360415603,1,5.950530722308372,PDAA,no hit
+NP_002782.1,proteasome subunit alpha type-6 isoform a [Homo sapiens],0.7300473928192366,1,6.192722507196187,PDAA,no hit
+XP_011531960.1,PREDICTED: acylamino-acid-releasing enzyme isoform X1 [Homo sapiens],0.7229800991661905,1,5.705142909217286,PDAA,no hit
+XP_005262724.1,PREDICTED: UDP-glucose 6-dehydrogenase isoform X1 [Homo sapiens],0.7159478128971237,1,5.872511974352812,PDAA,no hit
+NP_001155901.1,programmed cell death 6-interacting protein isoform 2 [Homo sapiens],0.7144813399201739,1,6.076449435071606,PDAA,no hit
+NP_009057.1,transitional endoplasmic reticulum ATPase isoform 1 [Homo sapiens],0.7068124707258141,3,6.753029197835048,PDAA,enriched hit
+NP_009057.1,transitional endoplasmic reticulum ATPase isoform 1 [Homo sapiens],0.7068124707258141,3,6.753029197835048,PDAA,enriched hit
+NP_009057.1,transitional endoplasmic reticulum ATPase isoform 1 [Homo sapiens],0.7068124707258141,3,6.753029197835048,PDAA,enriched hit
+XP_011519391.1,PREDICTED: importin-5 isoform X1 [Homo sapiens],0.7017090754786262,1,6.573674185649525,PDAA,no hit
+NP_004517.2,DNA replication licensing factor MCM2 [Homo sapiens],0.7013565882328923,1,6.215807496524138,PDAA,no hit
+NP_001257368.1,actin-related protein 2/3 complex subunit 5 isoform 2 [Homo sapiens],0.7007218940827062,1,5.938750230489528,PDAA,no hit
+NP_001231513.1,C7orf55-LUC7L2 protein [Homo sapiens],0.6964127026065157,1,5.493944573346378,PDAA,no hit
+NP_001146.2,annexin A6 isoform 1 [Homo sapiens],0.6831217756551355,1,6.176366470500885,PDAA,no hit
+NP_001193880.1,monocarboxylate transporter 4 [Homo sapiens],0.6727310300838569,1,5.649243791712021,PDAA,no hit
+NP_001596.2,"alanine--tRNA ligase, cytoplasmic [Homo sapiens]",0.6705702271088096,2,5.528408774541747,PDAA,enriched candidate
+NP_001596.2,"alanine--tRNA ligase, cytoplasmic [Homo sapiens]",0.6705702271088096,2,5.528408774541747,PDAA,enriched candidate
+NP_002798.2,26S proteasome non-ATPase regulatory subunit 1 isoform 1 [Homo sapiens],0.6676878962163038,1,5.643305884516025,PDAA,no hit
+NP_004090.4,erythrocyte band 7 integral membrane protein isoform a [Homo sapiens],0.6673265905247057,2,6.197578208468442,PDAA,enriched candidate
+NP_004090.4,erythrocyte band 7 integral membrane protein isoform a [Homo sapiens],0.6673265905247057,2,6.197578208468442,PDAA,enriched candidate
+NP_001091.1,"actin, alpha skeletal muscle [Homo sapiens]",0.6647981705813839,1,7.08621055189186,PDAA,no hit
+NP_976221.1,vigilin isoform a [Homo sapiens],0.6587834601896052,1,5.638724506268353,PDAA,no hit
+NP_001344.2,aldo-keto reductase family 1 member C1 [Homo sapiens],0.6533997205568278,1,6.339348613403799,PDAA,no hit
+NP_001753.1,T-complex protein 1 subunit zeta isoform a [Homo sapiens],0.6484799142891466,2,6.73510437939012,PDAA,enriched candidate
+NP_001753.1,T-complex protein 1 subunit zeta isoform a [Homo sapiens],0.6484799142891466,2,6.73510437939012,PDAA,enriched candidate
+NP_001157789.1,filamin-B isoform 1 [Homo sapiens],0.6343229684807667,1,5.847606019776818,PDAA,no hit
+NP_001311230.1,dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 2 isoform 4 precursor [Homo sapiens],0.6330668125103402,1,5.864301095493481,PDAA,no hit
+XP_016875261.1,PREDICTED: GTP-binding nuclear protein Ran isoform X1 [Homo sapiens],0.6306252654085069,1,7.372243113265996,PDAA,no hit
+NP_001340.2,"aspartate--tRNA ligase, cytoplasmic isoform 1 [Homo sapiens]",0.630477159973525,1,6.036995723744886,PDAA,no hit
+NP_055205.2,staphylococcal nuclease domain-containing protein 1 [Homo sapiens],0.6206996415944213,2,6.343381834259792,PDAA,enriched candidate
+NP_055205.2,staphylococcal nuclease domain-containing protein 1 [Homo sapiens],0.6206996415944213,2,6.343381834259792,PDAA,enriched candidate
+XP_006714812.1,PREDICTED: ras GTPase-activating protein-binding protein 1 isoform X1 [Homo sapiens],0.6184298427184736,1,6.026834841414709,PDAA,no hit
+NP_001138303.1,prohibitin-2 isoform 1 [Homo sapiens],0.6178322988151805,1,6.461087269079416,PDAA,no hit
+NP_006816.2,cytoskeleton-associated protein 4 [Homo sapiens],0.6133370258076383,3,7.1576286972171195,PDAA,enriched hit
+NP_006816.2,cytoskeleton-associated protein 4 [Homo sapiens],0.6133370258076383,3,7.1576286972171195,PDAA,enriched hit
+NP_006816.2,cytoskeleton-associated protein 4 [Homo sapiens],0.6133370258076383,3,7.1576286972171195,PDAA,enriched hit
+NP_937818.1,nucleoside diphosphate kinase A isoform a [Homo sapiens],0.6105673168715562,1,6.7071341379955,PDAA,no hit
+NP_001019.1,40S ribosomal protein S25 [Homo sapiens],0.6094405927566333,1,6.879529711610221,PDAA,no hit
+NP_004628.4,ras-related protein Rab-7a [Homo sapiens],0.608312987998537,1,6.553979652700074,PDAA,no hit
+NP_000173.2,"trifunctional enzyme subunit alpha, mitochondrial precursor [Homo sapiens]",0.6074855173472962,1,5.512996975249176,PDAA,no hit
+XP_016865667.1,PREDICTED: heterogeneous nuclear ribonucleoprotein Q isoform X4 [Homo sapiens],0.6045479275577303,1,6.570958038751662,PDAA,no hit
+NP_000977.1,60S ribosomal protein L24 [Homo sapiens],0.6028126947199377,1,6.83956964376361,PDAA,no hit
+NP_057381.3,prenylcysteine oxidase 1 precursor [Homo sapiens],0.5998034347479626,2,6.2260639378899825,PDAA,enriched candidate
+NP_057381.3,prenylcysteine oxidase 1 precursor [Homo sapiens],0.5998034347479626,2,6.2260639378899825,PDAA,enriched candidate
+NP_054706.1,vinculin isoform meta-VCL [Homo sapiens],0.5918265814425752,3,6.223102652215793,PDAA,enriched hit
+NP_054706.1,vinculin isoform meta-VCL [Homo sapiens],0.5918265814425752,3,6.223102652215793,PDAA,enriched hit
+NP_054706.1,vinculin isoform meta-VCL [Homo sapiens],0.5918265814425752,3,6.223102652215793,PDAA,enriched hit
+NP_036526.2,prefoldin subunit 2 [Homo sapiens],0.5869483166450005,1,5.663652336122501,PDAA,no hit
+NP_001275905.1,X-ray repair cross-complementing protein 6 isoform 1 [Homo sapiens],0.5796024471662182,1,6.724557178763883,PDAA,no hit
+XP_016862508.1,PREDICTED: protein SEC13 homolog isoform X1 [Homo sapiens],0.5708303664491128,1,5.7497632196729676,PDAA,no hit
+NP_001748.1,carbonyl reductase [NADPH] 1 isoform 1 [Homo sapiens],0.5704444023918906,1,6.26393947411992,PDAA,no hit
+NP_001229971.1,"HLA class I histocompatibility antigen, Cw-1 alpha chain precursor [Homo sapiens]",0.5694026061910717,2,6.13876751949869,PDAA,no hit
+NP_001229971.1,"HLA class I histocompatibility antigen, Cw-1 alpha chain precursor [Homo sapiens]",0.5694026061910717,2,6.13876751949869,PDAA,no hit
+NP_001302466.1,L-lactate dehydrogenase B chain isoform LDHBx [Homo sapiens],0.5688995127642746,1,7.429697450947797,PDAA,no hit
+XP_006716248.1,PREDICTED: protein disulfide-isomerase A4 isoform X1 [Homo sapiens],0.566811284125956,1,6.174285496799266,PDAA,no hit
+XP_016859290.1,PREDICTED: glutamine--fructose-6-phosphate aminotransferase [isomerizing] 1 isoform X1 [Homo sapiens],0.5665006294937651,2,5.868373218109556,PDAA,no hit
+XP_016859290.1,PREDICTED: glutamine--fructose-6-phosphate aminotransferase [isomerizing] 1 isoform X1 [Homo sapiens],0.5665006294937651,2,5.868373218109556,PDAA,no hit
+XP_005249419.1,PREDICTED: valine--tRNA ligase isoform X1 [Homo sapiens],0.5542180366112799,1,6.182219105648711,PDAA,no hit
+NP_060979.2,leucine-rich repeat-containing protein 59 [Homo sapiens],0.5541399581352282,1,6.681878066294259,PDAA,no hit
+NP_036350.2,interleukin enhancer-binding factor 3 isoform a [Homo sapiens],0.5535932904541143,1,6.43766032759523,PDAA,no hit
+NP_001309365.1,heterogeneous nuclear ribonucleoprotein H3 isoform a [Homo sapiens],0.5499957403771587,1,5.782575639871138,PDAA,no hit
+NP_060918.2,cullin-associated NEDD8-dissociated protein 1 isoform 1 [Homo sapiens],0.5469386006749728,1,5.845813241770247,PDAA,no hit
+NP_001004.2,40S ribosomal protein S9 isoform a [Homo sapiens],0.5395433759619381,1,6.950788911140254,PDAA,no hit
+XP_011536709.1,PREDICTED: plasma membrane calcium-transporting ATPase 1 isoform X1 [Homo sapiens],0.5344354607839072,2,5.7104804283272,PDAA,no hit
+XP_011536709.1,PREDICTED: plasma membrane calcium-transporting ATPase 1 isoform X1 [Homo sapiens],0.5344354607839072,2,5.7104804283272,PDAA,no hit
+NP_478059.1,phosphoserine aminotransferase isoform 1 [Homo sapiens],0.5313963333288534,1,5.76366768148197,PDAA,no hit
+XP_011520775.1,PREDICTED: heme oxygenase 2 isoform X1 [Homo sapiens],0.5262312165420289,1,5.359357246262307,PDAA,no hit
+NP_001019399.1,ADP-ribosylation factor 1 [Homo sapiens],0.5128754254998587,1,6.673235853956118,PDAA,no hit
+NP_005909.2,"malate dehydrogenase, mitochondrial isoform 1 precursor [Homo sapiens]",0.5107044474614284,1,6.801731347120879,PDAA,no hit
+NP_001104547.1,ezrin [Homo sapiens],0.5048183564135016,1,5.964044647500028,PDAA,no hit
+XP_011532847.1,PREDICTED: heterogeneous nuclear ribonucleoprotein H isoform X1 [Homo sapiens],0.5020954221407958,3,6.6861956913156,PDAA,no hit
+XP_011532847.1,PREDICTED: heterogeneous nuclear ribonucleoprotein H isoform X1 [Homo sapiens],0.5020954221407958,3,6.6861956913156,PDAA,no hit
+XP_011532847.1,PREDICTED: heterogeneous nuclear ribonucleoprotein H isoform X1 [Homo sapiens],0.5020954221407958,3,6.6861956913156,PDAA,no hit
+XP_016868657.1,PREDICTED: elongation factor 1-delta isoform X1 [Homo sapiens],0.4966347844926471,1,6.618752395415053,PDAA,no hit
+NP_000996.2,40S ribosomal protein S3 isoform 1 [Homo sapiens],0.4950900994516205,1,7.302639692512686,PDAA,no hit
+NP_001531.1,heat shock protein beta-1 [Homo sapiens],0.48357493822134057,1,6.74130410870653,PDAA,no hit
+NP_954657.1,"keratin, type I cytoskeletal 18 [Homo sapiens]",0.4367639679768933,2,6.479366777959097,PDAA,no hit
+NP_954657.1,"keratin, type I cytoskeletal 18 [Homo sapiens]",0.4367639679768933,2,6.479366777959097,PDAA,no hit
+NP_005608.1,40S ribosomal protein S14 [Homo sapiens],0.43657257158034657,1,6.637225813410124,PDAA,no hit
+NP_002941.1,dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1 precursor [Homo sapiens],0.43614895967934153,1,6.35449761948404,PDAA,no hit
+NP_001072993.1,multifunctional protein ADE2 isoform 1 [Homo sapiens],0.4325007536270711,1,6.563936193236567,PDAA,no hit
+NP_002794.1,26S proteasome regulatory subunit 7 isoform 1 [Homo sapiens],0.42960958023284945,1,5.88254827889322,PDAA,no hit
+NP_004896.1,peroxiredoxin-6 [Homo sapiens],0.4252619273969396,1,6.887795085766093,PDAA,no hit
+NP_003633.1,histone acetyltransferase type B catalytic subunit [Homo sapiens],0.4192021048439152,2,6.386035966127071,PDAA,no hit
+NP_003633.1,histone acetyltransferase type B catalytic subunit [Homo sapiens],0.4192021048439152,2,6.386035966127071,PDAA,no hit
+NP_001347.3,ATP-dependent RNA helicase DDX3X isoform 1 [Homo sapiens],0.4141200461217638,1,6.684901648340222,PDAA,no hit
+NP_006126.1,F-actin-capping protein subunit alpha-1 [Homo sapiens],0.4041332323224589,2,5.9303023388268254,PDAA,no hit
+NP_006126.1,F-actin-capping protein subunit alpha-1 [Homo sapiens],0.4041332323224589,2,5.9303023388268254,PDAA,no hit
+NP_006752.1,14-3-3 protein epsilon [Homo sapiens],0.40159019700906384,1,6.558464805716233,PDAA,no hit
+NP_001307526.1,probable ATP-dependent RNA helicase DDX5 isoform b [Homo sapiens],0.37708225999534317,1,6.477205180836955,PDAA,no hit
+NP_005991.1,tubulin alpha-4A chain isoform 1 [Homo sapiens],0.3604794752874003,1,6.4073433238925395,PDAA,no hit
+NP_000962.2,60S ribosomal protein L7 [Homo sapiens],0.3505332137534838,1,7.273342779853217,PDAA,no hit
+NP_000894.1,NAD(P)H dehydrogenase [quinone] 1 isoform a [Homo sapiens],0.34909384712824476,1,6.340807405617841,PDAA,no hit
+XP_005252522.1,"PREDICTED: ATP-dependent 6-phosphofructokinase, platelet type isoform X1 [Homo sapiens]",0.34404083404640007,3,6.547968293211284,PDAA,no hit
+XP_005252522.1,"PREDICTED: ATP-dependent 6-phosphofructokinase, platelet type isoform X1 [Homo sapiens]",0.34404083404640007,3,6.547968293211284,PDAA,no hit
+XP_005252522.1,"PREDICTED: ATP-dependent 6-phosphofructokinase, platelet type isoform X1 [Homo sapiens]",0.34404083404640007,3,6.547968293211284,PDAA,no hit
+NP_036525.1,phosphoribosylformylglycinamidine synthase [Homo sapiens],0.3437737368829086,1,5.851574936549773,PDAA,no hit
+XP_016880252.1,PREDICTED: prohibitin isoform X2 [Homo sapiens],0.3404273593982947,1,6.616875309370374,PDAA,no hit
+NP_000969.1,60S ribosomal protein L23 [Homo sapiens],0.3384339354597654,1,6.538894739457375,PDAA,no hit
+NP_000958.1,60S ribosomal protein L3 isoform a [Homo sapiens],0.31963336712364043,1,6.368093490913724,PDAA,no hit
+NP_001193943.1,serpin H1 precursor [Homo sapiens],0.31337317844952484,1,6.5708516702712005,PDAA,no hit
+NP_001005386.1,actin-related protein 2 isoform a [Homo sapiens],0.313031566712084,2,5.79683917164341,PDAA,no hit
+NP_001005386.1,actin-related protein 2 isoform a [Homo sapiens],0.313031566712084,2,5.79683917164341,PDAA,no hit
+NP_000960.2,60S ribosomal protein L5 [Homo sapiens],0.3089378094297075,1,6.702764790691276,PDAA,no hit
+XP_005259725.1,PREDICTED: far upstream element-binding protein 2 isoform X1 [Homo sapiens],0.29937397139943966,1,6.318167420036699,PDAA,no hit
+NP_005498.1,cofilin-1 [Homo sapiens],0.27778617289706986,1,6.470838803108436,PDAA,no hit
+NP_002152.2,"isoleucine--tRNA ligase, cytoplasmic [Homo sapiens]",0.2755148078922569,1,5.940724154688144,PDAA,no hit
+NP_573566.2,"leucine-rich PPR motif-containing protein, mitochondrial precursor [Homo sapiens]",0.2711513374161538,1,6.169959901591922,PDAA,no hit
+XP_011537064.1,PREDICTED: centrosomal protein of 290 kDa isoform X9 [Homo sapiens],0.2659167618117677,1,5.35942828860286,PDAA,no hit
+NP_001185774.1,RBM14-RBM4 protein isoform 1 [Homo sapiens],0.2536924525297968,2,6.292316350459961,PDAA,no hit
+NP_001185774.1,RBM14-RBM4 protein isoform 1 [Homo sapiens],0.2536924525297968,2,6.292316350459961,PDAA,no hit
+NP_000875.2,inosine-5'-monophosphate dehydrogenase 2 [Homo sapiens],0.2496160329705841,1,6.2496404302736766,PDAA,no hit
+XP_016869381.1,PREDICTED: epiplakin isoform X4 [Homo sapiens],0.24854683983805925,2,6.1912852491144355,PDAA,no hit
+XP_016869381.1,PREDICTED: epiplakin isoform X4 [Homo sapiens],0.24854683983805925,2,6.1912852491144355,PDAA,no hit
+XP_016882687.1,PREDICTED: ubiquitin-60S ribosomal protein L40 isoform X1 [Homo sapiens],0.24836189296505795,1,7.567386352960467,PDAA,no hit
+NP_005042.1,glutamine--tRNA ligase isoform a [Homo sapiens],0.2470329432256193,2,6.155083499555676,PDAA,no hit
+NP_005042.1,glutamine--tRNA ligase isoform a [Homo sapiens],0.2470329432256193,2,6.155083499555676,PDAA,no hit
+NP_008855.1,serine/arginine-rich splicing factor 1 isoform 1 [Homo sapiens],0.23517587875594348,1,6.607646487777148,PDAA,no hit
+NP_002119.1,high mobility group protein B1 [Homo sapiens],0.2183167868352709,3,6.3465966671412035,PDAA,no hit
+NP_002119.1,high mobility group protein B1 [Homo sapiens],0.2183167868352709,3,6.3465966671412035,PDAA,no hit
+NP_002119.1,high mobility group protein B1 [Homo sapiens],0.2183167868352709,3,6.3465966671412035,PDAA,no hit
+NP_001091678.1,heterogeneous nuclear ribonucleoprotein F [Homo sapiens],0.21566181314591804,1,6.113893206472575,PDAA,no hit
+NP_003312.3,"elongation factor Tu, mitochondrial precursor [Homo sapiens]",0.19838025327034225,1,6.484006022749027,PDAA,no hit
+NP_005403.2,"serine hydroxymethyltransferase, mitochondrial isoform 1 precursor [Homo sapiens]",0.1955798738021759,1,6.100348996889938,PDAA,no hit
+NP_001814.2,creatine kinase B-type [Homo sapiens],0.18523144757953913,1,6.239367623670982,PDAA,no hit
+NP_006817.1,14-3-3 protein theta [Homo sapiens],0.18321340970553646,1,5.9777080475761135,PDAA,no hit
+NP_066964.1,X-ray repair cross-complementing protein 5 [Homo sapiens],0.1801810502043284,1,5.638389856259648,PDAA,no hit
+NP_003923.2,hsc70-interacting protein isoform 1 [Homo sapiens],0.17633088909109107,1,6.2381739838736,PDAA,no hit
+NP_002799.3,26S proteasome non-ATPase regulatory subunit 2 isoform 1 [Homo sapiens],0.167579238249012,1,6.2135247207927256,PDAA,no hit
+NP_009035.3,60S ribosomal protein L10a [Homo sapiens],0.1528053866364294,1,6.427246134056264,PDAA,no hit
+NP_001269581.1,stress-induced-phosphoprotein 1 isoform a [Homo sapiens],0.15117927834642408,2,6.221737554992121,PDAA,no hit
+NP_001269581.1,stress-induced-phosphoprotein 1 isoform a [Homo sapiens],0.15117927834642408,2,6.221737554992121,PDAA,no hit
+NP_005547.3,"keratin, type II cytoskeletal 7 [Homo sapiens]",0.15007536812559152,3,7.22303367718018,PDAA,no hit
+NP_005547.3,"keratin, type II cytoskeletal 7 [Homo sapiens]",0.15007536812559152,3,7.22303367718018,PDAA,no hit
+NP_005547.3,"keratin, type II cytoskeletal 7 [Homo sapiens]",0.15007536812559152,3,7.22303367718018,PDAA,no hit
+NP_001406.1,eukaryotic translation initiation factor 2 subunit 3 [Homo sapiens],0.10893645600961488,1,6.117987976236927,PDAA,no hit
+NP_005313.1,histone H1.5 [Homo sapiens],0.10489111602482293,1,6.4372371537607105,PDAA,no hit
+NP_001245282.1,116 kDa U5 small nuclear ribonucleoprotein component isoform a [Homo sapiens],0.08152207190319283,2,6.279151739825801,PDAA,no hit
+NP_001245282.1,116 kDa U5 small nuclear ribonucleoprotein component isoform a [Homo sapiens],0.08152207190319283,2,6.279151739825801,PDAA,no hit
+NP_001181876.1,eukaryotic translation initiation factor 4 gamma 1 isoform 6 [Homo sapiens],0.0789160131523099,2,6.2169456526603915,PDAA,no hit
+NP_001181876.1,eukaryotic translation initiation factor 4 gamma 1 isoform 6 [Homo sapiens],0.0789160131523099,2,6.2169456526603915,PDAA,no hit
+XP_011528279.1,PREDICTED: adenylosuccinate lyase isoform X1 [Homo sapiens],0.07646907220412302,1,5.9054624218191645,PDAA,no hit
+NP_060802.1,ATP-dependent RNA helicase DDX19A isoform 1 [Homo sapiens],0.07516376106247513,1,5.390290369423618,PDAA,no hit
+NP_005038.1,26S proteasome non-ATPase regulatory subunit 5 isoform 1 [Homo sapiens],0.07331254627889372,1,5.508194594845108,PDAA,no hit
+NP_001096137.1,proteasome subunit alpha type-4 isoform 1 [Homo sapiens],0.06555522152654403,1,6.109198721196201,PDAA,no hit
+NP_001349.2,pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15 [Homo sapiens],0.04503321155677753,1,6.059471537406847,PDAA,no hit
+NP_001191020.1,40S ribosomal protein S10 [Homo sapiens],0.03968947815641677,1,6.002661348123064,PDAA,no hit
+NP_003502.1,histone H2A type 1 [Homo sapiens],0.03723363642291577,1,7.7472007008340515,PDAA,no hit
+NP_001124160.1,high mobility group protein B2 [Homo sapiens],0.03138904138835663,2,5.581532774402913,PDAA,no hit
+NP_001124160.1,high mobility group protein B2 [Homo sapiens],0.03138904138835663,2,5.581532774402913,PDAA,no hit
+NP_000627.2,"superoxide dismutase [Mn], mitochondrial isoform A precursor [Homo sapiens]",0.028717508928958857,1,5.957808406933003,PDAA,no hit
+NP_065916.2,ATP-dependent RNA helicase DHX36 isoform 1 [Homo sapiens],0.021619779757763524,1,5.616040542152926,PDAA,no hit
+NP_001092006.1,ubiquitin carboxyl-terminal hydrolase 5 isoform 1 [Homo sapiens],0.005949266331186642,1,5.976375228251352,PDAA,no hit
+NP_001306935.1,rac GTPase-activating protein 1 isoform c [Homo sapiens],0,1,6.390618423476521,PDAA,no hit
+NP_002943.2,40S ribosomal protein S2 [Homo sapiens],0,1,6.845808280894488,PDAA,no hit
+NP_003534.1,histone H4 [Homo sapiens],-9.174531570796951e-4,1,8.02054493707385,PDAA,no hit
+NP_005989.3,T-complex protein 1 subunit gamma isoform a [Homo sapiens],-0.02757004069287783,2,6.784973738573658,PDAA,no hit
+NP_005989.3,T-complex protein 1 subunit gamma isoform a [Homo sapiens],-0.02757004069287783,2,6.784973738573658,PDAA,no hit
+NP_005130.1,annexin A3 [Homo sapiens],-0.031056803370868913,1,5.43828139834754,PDAA,no hit
+NP_954659.1,matrin-3 isoform a [Homo sapiens],-0.048379957881706126,1,5.988529656306641,PDAA,no hit
+NP_006422.1,T-complex protein 1 subunit beta isoform 1 [Homo sapiens],-0.061159137118421913,2,6.540312468274476,PDAA,no hit
+NP_006422.1,T-complex protein 1 subunit beta isoform 1 [Homo sapiens],-0.061159137118421913,2,6.540312468274476,PDAA,no hit
+NP_001012680.1,4F2 cell-surface antigen heavy chain isoform b [Homo sapiens],-0.06312332402952148,3,7.230843834428808,PDAA,no hit
+NP_001012680.1,4F2 cell-surface antigen heavy chain isoform b [Homo sapiens],-0.06312332402952148,3,7.230843834428808,PDAA,no hit
+NP_001012680.1,4F2 cell-surface antigen heavy chain isoform b [Homo sapiens],-0.06312332402952148,3,7.230843834428808,PDAA,no hit
+XP_011512465.1,PREDICTED: pachytene checkpoint protein 2 homolog isoform X1 [Homo sapiens],-0.06735442482268983,1,6.211119374804539,PDAA,no hit
+NP_001000.2,40S ribosomal protein S5 [Homo sapiens],-0.09231474998367917,1,6.271258032410067,PDAA,no hit
+NP_004519.1,microsomal glutathione S-transferase 3 [Homo sapiens],-0.09684402412191506,1,5.85943928218881,PDAA,no hit
+NP_150254.1,60S ribosomal protein L13 isoform 1 [Homo sapiens],-0.12107702406576859,1,6.62949792249889,PDAA,no hit
+NP_055577.1,delta(24)-sterol reductase precursor [Homo sapiens],-0.12482234039791518,1,6.828571729917674,PDAA,no hit
+XP_006714132.1,PREDICTED: PDZ and LIM domain protein 5 isoform X6 [Homo sapiens],-0.13518485143159475,2,6.139864723153016,PDAA,no hit
+XP_006714132.1,PREDICTED: PDZ and LIM domain protein 5 isoform X6 [Homo sapiens],-0.13518485143159475,2,6.139864723153016,PDAA,no hit
+NP_001143.2,ADP/ATP translocase 2 [Homo sapiens],-0.1387651723138461,1,6.463274018936936,PDAA,no hit
+NP_036611.2,14-3-3 protein gamma [Homo sapiens],-0.1412917842396424,1,5.664422459486094,PDAA,no hit
+NP_006406.1,serine palmitoyltransferase 1 isoform a [Homo sapiens],-0.14475621481876688,2,6.1199657792856375,PDAA,no hit
+NP_006406.1,serine palmitoyltransferase 1 isoform a [Homo sapiens],-0.14475621481876688,2,6.1199657792856375,PDAA,no hit
+NP_001036143.1,rho-related GTP-binding protein RhoC precursor [Homo sapiens],-0.15897505405275902,1,5.702526880804987,PDAA,no hit
+NP_057086.2,saccharopine dehydrogenase-like oxidoreductase [Homo sapiens],-0.15904379335666885,2,6.998571068763499,PDAA,no hit
+NP_057086.2,saccharopine dehydrogenase-like oxidoreductase [Homo sapiens],-0.15904379335666885,2,6.998571068763499,PDAA,no hit
+NP_000843.1,glutathione S-transferase P [Homo sapiens],-0.19879828051879445,2,6.729095535968901,PDAA,no hit
+NP_000843.1,glutathione S-transferase P [Homo sapiens],-0.19879828051879445,2,6.729095535968901,PDAA,no hit
+NP_036601.2,pre-mRNA-processing factor 6 [Homo sapiens],-0.21957043875727233,2,5.4888290895554785,PDAA,no hit
+NP_036601.2,pre-mRNA-processing factor 6 [Homo sapiens],-0.21957043875727233,2,5.4888290895554785,PDAA,no hit
+NP_001306115.1,hepatoma-derived growth factor isoform d [Homo sapiens],-0.22096006776980248,1,5.710244035704701,PDAA,no hit
+NP_001243211.1,"keratin, type II cytoskeletal 8 isoform 1 [Homo sapiens]",-0.23816963599225982,3,7.335375498991511,PDAA,no hit
+NP_001243211.1,"keratin, type II cytoskeletal 8 isoform 1 [Homo sapiens]",-0.23816963599225982,3,7.335375498991511,PDAA,no hit
+NP_001243211.1,"keratin, type II cytoskeletal 8 isoform 1 [Homo sapiens]",-0.23816963599225982,3,7.335375498991511,PDAA,no hit
+NP_005013.1,profilin-1 [Homo sapiens],-0.257050803727902,2,7.435944287280823,PDAA,no hit
+NP_005013.1,profilin-1 [Homo sapiens],-0.257050803727902,2,7.435944287280823,PDAA,no hit
+XP_006717308.1,"PREDICTED: spectrin alpha chain, non-erythrocytic 1 isoform X1 [Homo sapiens]",-0.2636009594565265,2,6.207182488334313,PDAA,no hit
+XP_006717308.1,"PREDICTED: spectrin alpha chain, non-erythrocytic 1 isoform X1 [Homo sapiens]",-0.2636009594565265,2,6.207182488334313,PDAA,no hit
+NP_001336387.1,small nuclear ribonucleoprotein-associated protein N [Homo sapiens],-0.2865670541677394,1,5.954080802649092,PDAA,no hit
+NP_002464.1,myosin-9 [Homo sapiens],-0.3061638489609311,3,7.378069453186674,PDAA,no hit
+NP_002464.1,myosin-9 [Homo sapiens],-0.3061638489609311,3,7.378069453186674,PDAA,no hit
+NP_002464.1,myosin-9 [Homo sapiens],-0.3061638489609311,3,7.378069453186674,PDAA,no hit
+NP_006827.1,eIF-2-alpha kinase activator GCN1 [Homo sapiens],-0.3314535617044463,2,5.967861921773466,PDAA,no hit
+NP_006827.1,eIF-2-alpha kinase activator GCN1 [Homo sapiens],-0.3314535617044463,2,5.967861921773466,PDAA,no hit
+NP_005304.3,protein disulfide-isomerase A3 precursor [Homo sapiens],-0.3338396476461729,2,6.524810280922496,PDAA,no hit
+NP_005304.3,protein disulfide-isomerase A3 precursor [Homo sapiens],-0.3338396476461729,2,6.524810280922496,PDAA,no hit
+NP_001020092.1,60S ribosomal protein L9 [Homo sapiens],-0.3341897669141942,1,6.532678053372746,PDAA,no hit
+NP_001333374.1,neuroblast differentiation-associated protein AHNAK isoform 1 [Homo sapiens],-0.34660060535089965,2,6.4815082450328525,PDAA,no hit
+NP_001333374.1,neuroblast differentiation-associated protein AHNAK isoform 1 [Homo sapiens],-0.34660060535089965,2,6.4815082450328525,PDAA,no hit
+NP_000997.1,40S ribosomal protein S3a isoform 1 [Homo sapiens],-0.3587080769642963,2,6.353029580632472,PDAA,no hit
+NP_000997.1,40S ribosomal protein S3a isoform 1 [Homo sapiens],-0.3587080769642963,2,6.353029580632472,PDAA,no hit
+NP_006420.1,T-complex protein 1 subunit eta isoform a [Homo sapiens],-0.3597025219898664,3,6.794630374469871,PDAA,no hit
+NP_006420.1,T-complex protein 1 subunit eta isoform a [Homo sapiens],-0.3597025219898664,3,6.794630374469871,PDAA,no hit
+NP_006420.1,T-complex protein 1 subunit eta isoform a [Homo sapiens],-0.3597025219898664,3,6.794630374469871,PDAA,no hit
+NP_004138.1,developmentally-regulated GTP-binding protein 1 [Homo sapiens],-0.4020149754807001,2,5.892859247068263,PDAA,no hit
+NP_004138.1,developmentally-regulated GTP-binding protein 1 [Homo sapiens],-0.4020149754807001,2,5.892859247068263,PDAA,no hit
+NP_000959.2,60S ribosomal protein L4 [Homo sapiens],-0.4044062277456355,2,6.282979938352692,PDAA,no hit
+NP_000959.2,60S ribosomal protein L4 [Homo sapiens],-0.4044062277456355,2,6.282979938352692,PDAA,no hit
+NP_002878.2,"arginine--tRNA ligase, cytoplasmic [Homo sapiens]",-0.4102130936411932,2,6.247442480723181,PDAA,no hit
+NP_002878.2,"arginine--tRNA ligase, cytoplasmic [Homo sapiens]",-0.4102130936411932,2,6.247442480723181,PDAA,no hit
+XP_005253521.1,PREDICTED: ATP-dependent DNA helicase Q1 isoform X1 [Homo sapiens],-0.42983404246180257,2,6.225540304270481,PDAA,no hit
+XP_005253521.1,PREDICTED: ATP-dependent DNA helicase Q1 isoform X1 [Homo sapiens],-0.42983404246180257,2,6.225540304270481,PDAA,no hit
+NP_036205.1,T-complex protein 1 subunit epsilon isoform a [Homo sapiens],-0.4537135565148738,2,6.5638155069800925,PDAA,no hit
+NP_036205.1,T-complex protein 1 subunit epsilon isoform a [Homo sapiens],-0.4537135565148738,2,6.5638155069800925,PDAA,no hit
+XP_005250918.1,PREDICTED: polyadenylate-binding protein 1 isoform X1 [Homo sapiens],-0.4575217654541661,2,7.062794547315572,PDAA,no hit
+XP_005250918.1,PREDICTED: polyadenylate-binding protein 1 isoform X1 [Homo sapiens],-0.4575217654541661,2,7.062794547315572,PDAA,no hit
+NP_005712.1,actin-related protein 3 isoform 1 [Homo sapiens],-0.4687623179102012,1,6.3105475165592555,PDAA,no hit
+NP_001290203.1,ATP-citrate synthase isoform 3 [Homo sapiens],-0.4772453303871793,2,7.033530754582468,PDAA,no hit
+NP_001290203.1,ATP-citrate synthase isoform 3 [Homo sapiens],-0.4772453303871793,2,7.033530754582468,PDAA,no hit
+NP_002511.1,nucleophosmin isoform 1 [Homo sapiens],-0.49730708100202037,2,7.426434216332465,PDAA,no hit
+NP_002511.1,nucleophosmin isoform 1 [Homo sapiens],-0.49730708100202037,2,7.426434216332465,PDAA,no hit
+NP_001024.1,ribonucleoside-diphosphate reductase large subunit isoform 1 [Homo sapiens],-0.49887231374402763,2,5.868081055228832,PDAA,no hit
+NP_001024.1,ribonucleoside-diphosphate reductase large subunit isoform 1 [Homo sapiens],-0.49887231374402763,2,5.868081055228832,PDAA,no hit
+XP_005259654.1,PREDICTED: polypyrimidine tract-binding protein 1 isoform X1 [Homo sapiens],-0.5366425960611463,2,6.755928781687398,PDAA,no hit
+XP_005259654.1,PREDICTED: polypyrimidine tract-binding protein 1 isoform X1 [Homo sapiens],-0.5366425960611463,2,6.755928781687398,PDAA,no hit
+NP_036558.3,splicing factor 3B subunit 3 [Homo sapiens],-0.5399896178530472,2,6.637201847599772,PDAA,no hit
+NP_036558.3,splicing factor 3B subunit 3 [Homo sapiens],-0.5399896178530472,2,6.637201847599772,PDAA,no hit
+NP_705618.1,nuclear pore complex protein Nup155 isoform 1 [Homo sapiens],-0.5419358659827345,3,6.351072242799201,PDAA,no hit
+NP_705618.1,nuclear pore complex protein Nup155 isoform 1 [Homo sapiens],-0.5419358659827345,3,6.351072242799201,PDAA,no hit
+NP_705618.1,nuclear pore complex protein Nup155 isoform 1 [Homo sapiens],-0.5419358659827345,3,6.351072242799201,PDAA,no hit
+XP_005251033.1,PREDICTED: plectin isoform X3 [Homo sapiens],-0.5456913611658365,3,7.406212469931532,PDAA,no hit
+XP_005251033.1,PREDICTED: plectin isoform X3 [Homo sapiens],-0.5456913611658365,3,7.406212469931532,PDAA,no hit
+XP_005251033.1,PREDICTED: plectin isoform X3 [Homo sapiens],-0.5456913611658365,3,7.406212469931532,PDAA,no hit
+NP_003861.1,ras GTPase-activating-like protein IQGAP1 [Homo sapiens],-0.5616031173164249,3,6.686437674359149,PDAA,no hit
+NP_003861.1,ras GTPase-activating-like protein IQGAP1 [Homo sapiens],-0.5616031173164249,3,6.686437674359149,PDAA,no hit
+NP_003861.1,ras GTPase-activating-like protein IQGAP1 [Homo sapiens],-0.5616031173164249,3,6.686437674359149,PDAA,no hit
+NP_542165.1,spliceosome RNA helicase DDX39B [Homo sapiens],-0.5750796197260786,1,5.901423828925376,PDAA,no hit
+XP_016885777.1,"PREDICTED: HLA class I histocompatibility antigen, A-1 alpha chain isoform X1 [Homo sapiens]",-0.5772312668151027,3,6.113918022109757,PDAA,no hit
+XP_016885777.1,"PREDICTED: HLA class I histocompatibility antigen, A-1 alpha chain isoform X1 [Homo sapiens]",-0.5772312668151027,3,6.113918022109757,PDAA,no hit
+XP_016885777.1,"PREDICTED: HLA class I histocompatibility antigen, A-1 alpha chain isoform X1 [Homo sapiens]",-0.5772312668151027,3,6.113918022109757,PDAA,no hit
+NP_000963.1,60S ribosomal protein L7a [Homo sapiens],-0.5881095212588696,2,6.899789069253816,PDAA,no hit
+NP_000963.1,60S ribosomal protein L7a [Homo sapiens],-0.5881095212588696,2,6.899789069253816,PDAA,no hit
+NP_001012.1,40S ribosomal protein S17 [Homo sapiens],-0.6073768891088789,1,6.300062265271213,PDAA,no hit
+NP_005023.2,plastin-3 isoform 1 [Homo sapiens],-0.6109341782922737,3,6.4249205487182826,PDAA,no hit
+NP_005023.2,plastin-3 isoform 1 [Homo sapiens],-0.6109341782922737,3,6.4249205487182826,PDAA,no hit
+NP_005023.2,plastin-3 isoform 1 [Homo sapiens],-0.6109341782922737,3,6.4249205487182826,PDAA,no hit
+NP_001914.3,DNA damage-binding protein 1 [Homo sapiens],-0.6158470863846306,2,6.399883576005448,PDAA,no hit
+NP_001914.3,DNA damage-binding protein 1 [Homo sapiens],-0.6158470863846306,2,6.399883576005448,PDAA,no hit
+XP_011535012.1,PREDICTED: heterogeneous nuclear ribonucleoproteins C1/C2 isoform X1 [Homo sapiens],-0.6221397043651979,2,7.133055499398551,PDAA,no hit
+XP_011535012.1,PREDICTED: heterogeneous nuclear ribonucleoproteins C1/C2 isoform X1 [Homo sapiens],-0.6221397043651979,2,7.133055499398551,PDAA,no hit
+NP_004334.1,calreticulin precursor [Homo sapiens],-0.6253767404617969,2,6.441497751369484,PDAA,no hit
+NP_004334.1,calreticulin precursor [Homo sapiens],-0.6253767404617969,2,6.441497751369484,PDAA,no hit
+NP_002783.1,proteasome subunit alpha type-7 [Homo sapiens],-0.6357192516095602,2,6.713306442458162,PDAA,no hit
+NP_002783.1,proteasome subunit alpha type-7 [Homo sapiens],-0.6357192516095602,2,6.713306442458162,PDAA,no hit
+XP_011508942.1,"PREDICTED: carbamoyl-phosphate synthase [ammonia], mitochondrial isoform X1 [Homo sapiens]",-0.6501850138811553,2,6.8984363867348435,PDAA,no hit
+XP_011508942.1,"PREDICTED: carbamoyl-phosphate synthase [ammonia], mitochondrial isoform X1 [Homo sapiens]",-0.6501850138811553,2,6.8984363867348435,PDAA,no hit
+NP_001087240.1,"thioredoxin reductase 1, cytoplasmic isoform 5 [Homo sapiens]",-0.6607502399846754,1,6.009313239689421,PDAA,no hit
+NP_000984.1,60S ribosomal protein L31 isoform 1 [Homo sapiens],-0.6627452928451643,1,6.462877174912662,PDAA,no hit
+NP_001158886.1,L-lactate dehydrogenase A chain isoform 3 [Homo sapiens],-0.676632223451541,3,7.5404911444546086,PDAA,no hit
+NP_001158886.1,L-lactate dehydrogenase A chain isoform 3 [Homo sapiens],-0.676632223451541,3,7.5404911444546086,PDAA,no hit
+NP_001158886.1,L-lactate dehydrogenase A chain isoform 3 [Homo sapiens],-0.676632223451541,3,7.5404911444546086,PDAA,no hit
+NP_001058.2,DNA topoisomerase 2-alpha [Homo sapiens],-0.6773383624295461,1,5.568581703015919,PDAA,no hit
+NP_114414.2,eukaryotic translation initiation factor 2A isoform 1 [Homo sapiens],-0.6849090067299866,2,5.990271988959132,PDAA,no hit
+NP_114414.2,eukaryotic translation initiation factor 2A isoform 1 [Homo sapiens],-0.6849090067299866,2,5.990271988959132,PDAA,no hit
+NP_003477.4,large neutral amino acids transporter small subunit 1 [Homo sapiens],-0.7056655273665831,1,6.835193925805912,PDAA,no hit
+NP_003079.1,fascin [Homo sapiens],-0.7075769613268976,2,7.137000675293813,PDAA,no hit
+NP_003079.1,fascin [Homo sapiens],-0.7075769613268976,2,7.137000675293813,PDAA,no hit
+XP_016885266.1,PREDICTED: ubiquitin-like modifier-activating enzyme 1 isoform X1 [Homo sapiens],-0.7121614463669403,2,6.986732890652266,PDAA,no hit
+XP_016885266.1,PREDICTED: ubiquitin-like modifier-activating enzyme 1 isoform X1 [Homo sapiens],-0.7121614463669403,2,6.986732890652266,PDAA,no hit
+NP_000683.3,"aldehyde dehydrogenase X, mitochondrial precursor [Homo sapiens]",-0.7157976449918064,1,6.4755589950754615,PDAA,no hit
+NP_001393.1,elongation factor 1-alpha 1 [Homo sapiens],-0.7229242877650757,2,7.804931235767706,PDAA,no hit
+NP_001393.1,elongation factor 1-alpha 1 [Homo sapiens],-0.7229242877650757,2,7.804931235767706,PDAA,no hit
+NP_001310342.1,delta-1-pyrroline-5-carboxylate synthase isoform 1 [Homo sapiens],-0.7307406271384158,2,6.28363238839964,PDAA,no hit
+NP_001310342.1,delta-1-pyrroline-5-carboxylate synthase isoform 1 [Homo sapiens],-0.7307406271384158,2,6.28363238839964,PDAA,no hit
+NP_001307.2,exportin-2 isoform 1 [Homo sapiens],-0.7371643568627393,3,6.430144173154041,PDAA,no hit
+NP_001307.2,exportin-2 isoform 1 [Homo sapiens],-0.7371643568627393,3,6.430144173154041,PDAA,no hit
+NP_001307.2,exportin-2 isoform 1 [Homo sapiens],-0.7371643568627393,3,6.430144173154041,PDAA,no hit
+NP_112740.1,heterogeneous nuclear ribonucleoprotein D-like isoform a [Homo sapiens],-0.7391147096011159,2,6.3731291483902925,PDAA,no hit
+NP_112740.1,heterogeneous nuclear ribonucleoprotein D-like isoform a [Homo sapiens],-0.7391147096011159,2,6.3731291483902925,PDAA,no hit
+NP_002100.2,"histidine--tRNA ligase, cytoplasmic isoform 1 [Homo sapiens]",-0.7391454988138748,1,6.327739653307038,PDAA,no hit
+NP_001307540.1,importin subunit alpha-1 [Homo sapiens],-0.7424524169980673,3,6.637865357187956,PDAA,no hit
+NP_001307540.1,importin subunit alpha-1 [Homo sapiens],-0.7424524169980673,3,6.637865357187956,PDAA,no hit
+NP_001307540.1,importin subunit alpha-1 [Homo sapiens],-0.7424524169980673,3,6.637865357187956,PDAA,no hit
+NP_001348.2,ATP-dependent RNA helicase A [Homo sapiens],-0.7563153906099913,2,6.701096095790694,PDAA,no hit
+NP_001348.2,ATP-dependent RNA helicase A [Homo sapiens],-0.7563153906099913,2,6.701096095790694,PDAA,no hit
+XP_016878726.1,PREDICTED: multidrug resistance-associated protein 1 isoform X1 [Homo sapiens],-0.7568593132033925,1,5.960662530389554,PDAA,no hit
+NP_001003.1,40S ribosomal protein S8 [Homo sapiens],-0.7578441574819279,2,7.44996193833487,PDAA,no hit
+NP_001003.1,40S ribosomal protein S8 [Homo sapiens],-0.7578441574819279,2,7.44996193833487,PDAA,no hit
+NP_112738.1,heterogeneous nuclear ribonucleoprotein D0 isoform a [Homo sapiens],-0.7596347373782333,2,7.066131530421418,PDAA,no hit
+NP_112738.1,heterogeneous nuclear ribonucleoprotein D0 isoform a [Homo sapiens],-0.7596347373782333,2,7.066131530421418,PDAA,no hit
+NP_057376.2,"heat shock protein 75 kDa, mitochondrial isoform 1 precursor [Homo sapiens]",-0.771137308499068,2,6.587218835142533,PDAA,no hit
+NP_057376.2,"heat shock protein 75 kDa, mitochondrial isoform 1 precursor [Homo sapiens]",-0.771137308499068,2,6.587218835142533,PDAA,no hit
+XP_011525056.1,PREDICTED: glucose-6-phosphate isomerase isoform X1 [Homo sapiens],-0.780453711500757,2,6.93103149293542,PDAA,no hit
+XP_011525056.1,PREDICTED: glucose-6-phosphate isomerase isoform X1 [Homo sapiens],-0.780453711500757,2,6.93103149293542,PDAA,no hit
+NP_001303303.1,"malate dehydrogenase, peroxisomal isoform MDH1x [Homo sapiens]",-0.7814235346697878,2,6.552790602229396,PDAA,no hit
+NP_001303303.1,"malate dehydrogenase, peroxisomal isoform MDH1x [Homo sapiens]",-0.7814235346697878,2,6.552790602229396,PDAA,no hit
+XP_005249786.1,PREDICTED: heterogeneous nuclear ribonucleoproteins A2/B1 isoform X1 [Homo sapiens],-0.7885189338530552,3,7.011125920744978,PDAA,no hit
+XP_005249786.1,PREDICTED: heterogeneous nuclear ribonucleoproteins A2/B1 isoform X1 [Homo sapiens],-0.7885189338530552,3,7.011125920744978,PDAA,no hit
+XP_005249786.1,PREDICTED: heterogeneous nuclear ribonucleoproteins A2/B1 isoform X1 [Homo sapiens],-0.7885189338530552,3,7.011125920744978,PDAA,no hit
+NP_733821.1,lamin isoform A [Homo sapiens],-0.791741299046814,3,7.386362319298204,PDAA,no hit
+NP_733821.1,lamin isoform A [Homo sapiens],-0.791741299046814,3,7.386362319298204,PDAA,no hit
+NP_733821.1,lamin isoform A [Homo sapiens],-0.791741299046814,3,7.386362319298204,PDAA,no hit
+NP_002005.1,peptidyl-prolyl cis-trans isomerase FKBP4 [Homo sapiens],-0.7962243062283267,3,6.703940111651236,PDAA,no hit
+NP_002005.1,peptidyl-prolyl cis-trans isomerase FKBP4 [Homo sapiens],-0.7962243062283267,3,6.703940111651236,PDAA,no hit
+NP_002005.1,peptidyl-prolyl cis-trans isomerase FKBP4 [Homo sapiens],-0.7962243062283267,3,6.703940111651236,PDAA,no hit
+XP_011525922.1,PREDICTED: ATP-dependent RNA helicase DDX39A isoform X1 [Homo sapiens],-0.8029192469409598,1,5.5309517157513515,PDAA,no hit
+NP_005808.3,perilipin-3 isoform 1 [Homo sapiens],-0.8144948769503402,2,6.5591371823649824,PDAA,no hit
+NP_005808.3,perilipin-3 isoform 1 [Homo sapiens],-0.8144948769503402,2,6.5591371823649824,PDAA,no hit
+XP_011529261.1,PREDICTED: moesin isoform X1 [Homo sapiens],-0.8184870312358692,3,6.3620681795281895,PDAA,no hit
+XP_011529261.1,PREDICTED: moesin isoform X1 [Homo sapiens],-0.8184870312358692,3,6.3620681795281895,PDAA,no hit
+XP_011529261.1,PREDICTED: moesin isoform X1 [Homo sapiens],-0.8184870312358692,3,6.3620681795281895,PDAA,no hit
+NP_110379.2,T-complex protein 1 subunit alpha isoform a [Homo sapiens],-0.8234219361177062,2,6.770207409590728,PDAA,no hit
+NP_110379.2,T-complex protein 1 subunit alpha isoform a [Homo sapiens],-0.8234219361177062,2,6.770207409590728,PDAA,no hit
+NP_000678.1,adenosylhomocysteinase isoform 1 [Homo sapiens],-0.8388005466700199,3,6.89087841003439,PDAA,no hit
+NP_000678.1,adenosylhomocysteinase isoform 1 [Homo sapiens],-0.8388005466700199,3,6.89087841003439,PDAA,no hit
+NP_000678.1,adenosylhomocysteinase isoform 1 [Homo sapiens],-0.8388005466700199,3,6.89087841003439,PDAA,no hit
+NP_001395.1,elongation factor 1-gamma [Homo sapiens],-0.8435620919064508,3,6.714946653082928,PDAA,no hit
+NP_001395.1,elongation factor 1-gamma [Homo sapiens],-0.8435620919064508,3,6.714946653082928,PDAA,no hit
+NP_001395.1,elongation factor 1-gamma [Homo sapiens],-0.8435620919064508,3,6.714946653082928,PDAA,no hit
+NP_006588.1,heat shock cognate 71 kDa protein isoform 1 [Homo sapiens],-0.8509300336298589,3,7.628292355141086,PDAA,no hit
+NP_006588.1,heat shock cognate 71 kDa protein isoform 1 [Homo sapiens],-0.8509300336298589,3,7.628292355141086,PDAA,no hit
+NP_006588.1,heat shock cognate 71 kDa protein isoform 1 [Homo sapiens],-0.8509300336298589,3,7.628292355141086,PDAA,no hit
+NP_001407.1,eukaryotic initiation factor 4A-I isoform 1 [Homo sapiens],-0.8577757259923593,3,7.1596185439612166,PDAA,no hit
+NP_001407.1,eukaryotic initiation factor 4A-I isoform 1 [Homo sapiens],-0.8577757259923593,3,7.1596185439612166,PDAA,no hit
+NP_001407.1,eukaryotic initiation factor 4A-I isoform 1 [Homo sapiens],-0.8577757259923593,3,7.1596185439612166,PDAA,no hit
+NP_002622.2,"6-phosphogluconate dehydrogenase, decarboxylating isoform 1 [Homo sapiens]",-0.8580062486364044,2,6.813552255635442,PDAA,no hit
+NP_002622.2,"6-phosphogluconate dehydrogenase, decarboxylating isoform 1 [Homo sapiens]",-0.8580062486364044,2,6.813552255635442,PDAA,no hit
+NP_003290.1,endoplasmin precursor [Homo sapiens],-0.8716968042095559,3,6.83358621701336,PDAA,no hit
+NP_003290.1,endoplasmin precursor [Homo sapiens],-0.8716968042095559,3,6.83358621701336,PDAA,no hit
+NP_003290.1,endoplasmin precursor [Homo sapiens],-0.8716968042095559,3,6.83358621701336,PDAA,no hit
+NP_003371.2,vimentin [Homo sapiens],-0.8827251232450712,3,7.930547750302682,PDAA,no hit
+NP_003371.2,vimentin [Homo sapiens],-0.8827251232450712,3,7.930547750302682,PDAA,no hit
+NP_003371.2,vimentin [Homo sapiens],-0.8827251232450712,3,7.930547750302682,PDAA,no hit
+NP_001245367.1,"threonine--tRNA ligase, cytoplasmic isoform 2 [Homo sapiens]",-0.8876693394613628,2,7.026249364841494,PDAA,no hit
+NP_001245367.1,"threonine--tRNA ligase, cytoplasmic isoform 2 [Homo sapiens]",-0.8876693394613628,2,7.026249364841494,PDAA,no hit
+NP_008835.5,DNA-dependent protein kinase catalytic subunit isoform 1 [Homo sapiens],-0.9035102864665183,2,6.697033418636444,PDAA,no hit
+NP_008835.5,DNA-dependent protein kinase catalytic subunit isoform 1 [Homo sapiens],-0.9035102864665183,2,6.697033418636444,PDAA,no hit
+NP_001367.2,cytoplasmic dynein 1 heavy chain 1 [Homo sapiens],-0.9153331252966996,2,6.349618080093556,PDAA,no hit
+NP_001367.2,cytoplasmic dynein 1 heavy chain 1 [Homo sapiens],-0.9153331252966996,2,6.349618080093556,PDAA,no hit
+NP_005336.3,heat shock 70 kDa protein 1A [Homo sapiens],-0.9163538679116985,2,7.213576352530492,PDAA,no hit
+NP_005336.3,heat shock 70 kDa protein 1A [Homo sapiens],-0.9163538679116985,2,7.213576352530492,PDAA,no hit
+NP_001002858.1,annexin A2 isoform 1 [Homo sapiens],-0.9168594319882639,3,7.768564672788736,PDAA,no hit
+NP_001002858.1,annexin A2 isoform 1 [Homo sapiens],-0.9168594319882639,3,7.768564672788736,PDAA,no hit
+NP_001002858.1,annexin A2 isoform 1 [Homo sapiens],-0.9168594319882639,3,7.768564672788736,PDAA,no hit
+NP_037368.1,ataxin-10 isoform 1 [Homo sapiens],-0.9191796081780916,2,6.102016943752898,PDAA,no hit
+NP_037368.1,ataxin-10 isoform 1 [Homo sapiens],-0.9191796081780916,2,6.102016943752898,PDAA,no hit
+NP_000909.2,protein disulfide-isomerase precursor [Homo sapiens],-0.9262259257855279,3,6.84182230907776,PDAA,no hit
+NP_000909.2,protein disulfide-isomerase precursor [Homo sapiens],-0.9262259257855279,3,6.84182230907776,PDAA,no hit
+NP_000909.2,protein disulfide-isomerase precursor [Homo sapiens],-0.9262259257855279,3,6.84182230907776,PDAA,no hit
+NP_006382.1,importin-7 [Homo sapiens],-0.9299653177617389,2,6.757036839365102,PDAA,no hit
+NP_006382.1,importin-7 [Homo sapiens],-0.9299653177617389,2,6.757036839365102,PDAA,no hit
+XP_006719137.1,PREDICTED: L-lactate dehydrogenase B chain isoform X1 [Homo sapiens],-0.9415833137746779,1,5.914928515210238,PDAA,no hit
+NP_001121620.1,transferrin receptor protein 1 isoform 1 [Homo sapiens],-0.9417644582927114,3,6.771591311608685,PDAA,no hit
+NP_001121620.1,transferrin receptor protein 1 isoform 1 [Homo sapiens],-0.9417644582927114,3,6.771591311608685,PDAA,no hit
+NP_001121620.1,transferrin receptor protein 1 isoform 1 [Homo sapiens],-0.9417644582927114,3,6.771591311608685,PDAA,no hit
+NP_004719.2,nucleolar RNA helicase 2 isoform 1 [Homo sapiens],-0.9431065965203658,3,6.657493017329779,PDAA,no hit
+NP_004719.2,nucleolar RNA helicase 2 isoform 1 [Homo sapiens],-0.9431065965203658,3,6.657493017329779,PDAA,no hit
+NP_004719.2,nucleolar RNA helicase 2 isoform 1 [Homo sapiens],-0.9431065965203658,3,6.657493017329779,PDAA,no hit
+NP_001017963.2,heat shock protein HSP 90-alpha isoform 1 [Homo sapiens],-0.9506038897256297,3,7.435990489706943,PDAA,no hit
+NP_001017963.2,heat shock protein HSP 90-alpha isoform 1 [Homo sapiens],-0.9506038897256297,3,7.435990489706943,PDAA,no hit
+NP_001017963.2,heat shock protein HSP 90-alpha isoform 1 [Homo sapiens],-0.9506038897256297,3,7.435990489706943,PDAA,no hit
+NP_000933.1,peptidyl-prolyl cis-trans isomerase B precursor [Homo sapiens],-0.9700813758613029,3,6.450875527861161,PDAA,no hit
+NP_000933.1,peptidyl-prolyl cis-trans isomerase B precursor [Homo sapiens],-0.9700813758613029,3,6.450875527861161,PDAA,no hit
+NP_000933.1,peptidyl-prolyl cis-trans isomerase B precursor [Homo sapiens],-0.9700813758613029,3,6.450875527861161,PDAA,no hit
+NP_001276675.1,glyceraldehyde-3-phosphate dehydrogenase isoform 1 [Homo sapiens],-0.9815468196662525,3,8.356081004588447,PDAA,no hit
+NP_001276675.1,glyceraldehyde-3-phosphate dehydrogenase isoform 1 [Homo sapiens],-0.9815468196662525,3,8.356081004588447,PDAA,no hit
+NP_001276675.1,glyceraldehyde-3-phosphate dehydrogenase isoform 1 [Homo sapiens],-0.9815468196662525,3,8.356081004588447,PDAA,no hit
+NP_004125.3,"stress-70 protein, mitochondrial precursor [Homo sapiens]",-0.987332924604889,2,7.156616200633192,PDAA,no hit
+NP_004125.3,"stress-70 protein, mitochondrial precursor [Homo sapiens]",-0.987332924604889,2,7.156616200633192,PDAA,no hit
+NP_000980.1,60S ribosomal protein L30 [Homo sapiens],-0.9902153574467496,2,7.290604215599993,PDAA,no hit
+NP_000980.1,60S ribosomal protein L30 [Homo sapiens],-0.9902153574467496,2,7.290604215599993,PDAA,no hit
+NP_060225.4,tRNA (cytosine(34)-C(5))-methyltransferase isoform 1 [Homo sapiens],-0.9968170105190661,2,6.052129172659027,PDAA,no hit
+NP_060225.4,tRNA (cytosine(34)-C(5))-methyltransferase isoform 1 [Homo sapiens],-0.9968170105190661,2,6.052129172659027,PDAA,no hit
+NP_001041659.1,regulator of chromosome condensation isoform a [Homo sapiens],-0.9977335095285844,2,6.385749203296686,PDAA,no hit
+NP_001041659.1,regulator of chromosome condensation isoform a [Homo sapiens],-0.9977335095285844,2,6.385749203296686,PDAA,no hit
+NP_001258898.1,heat shock protein HSP 90-beta isoform a [Homo sapiens],-1.007842876764407,3,7.599357338061407,PDAA,no hit
+NP_001258898.1,heat shock protein HSP 90-beta isoform a [Homo sapiens],-1.007842876764407,3,7.599357338061407,PDAA,no hit
+NP_001258898.1,heat shock protein HSP 90-beta isoform a [Homo sapiens],-1.007842876764407,3,7.599357338061407,PDAA,no hit
+NP_000967.1,60S ribosomal protein L12 [Homo sapiens],-1.016633885818167,2,6.8914053495491325,PDAA,no hit
+NP_000967.1,60S ribosomal protein L12 [Homo sapiens],-1.016633885818167,2,6.8914053495491325,PDAA,no hit
+NP_005338.1,78 kDa glucose-regulated protein precursor [Homo sapiens],-1.0302693197389083,3,7.492465719433469,PDAA,no hit
+NP_005338.1,78 kDa glucose-regulated protein precursor [Homo sapiens],-1.0302693197389083,3,7.492465719433469,PDAA,no hit
+NP_005338.1,78 kDa glucose-regulated protein precursor [Homo sapiens],-1.0302693197389083,3,7.492465719433469,PDAA,no hit
+NP_001230106.1,fructose-bisphosphate aldolase A isoform 2 [Homo sapiens],-1.0334781611506711,3,7.477407530971285,PDAA,no hit
+NP_001230106.1,fructose-bisphosphate aldolase A isoform 2 [Homo sapiens],-1.0334781611506711,3,7.477407530971285,PDAA,no hit
+NP_001230106.1,fructose-bisphosphate aldolase A isoform 2 [Homo sapiens],-1.0334781611506711,3,7.477407530971285,PDAA,no hit
+XP_006720633.1,PREDICTED: pyruvate kinase PKM isoform X1 [Homo sapiens],-1.0423235149014682,3,8.20152410679492,PDAA,no hit
+XP_006720633.1,PREDICTED: pyruvate kinase PKM isoform X1 [Homo sapiens],-1.0423235149014682,3,8.20152410679492,PDAA,no hit
+XP_006720633.1,PREDICTED: pyruvate kinase PKM isoform X1 [Homo sapiens],-1.0423235149014682,3,8.20152410679492,PDAA,no hit
+NP_002131.2,heterogeneous nuclear ribonucleoprotein K isoform a [Homo sapiens],-1.0440352319184534,3,7.258649599570272,PDAA,no hit
+NP_002131.2,heterogeneous nuclear ribonucleoprotein K isoform a [Homo sapiens],-1.0440352319184534,3,7.258649599570272,PDAA,no hit
+NP_002131.2,heterogeneous nuclear ribonucleoprotein K isoform a [Homo sapiens],-1.0440352319184534,3,7.258649599570272,PDAA,no hit
+NP_001524.2,heterogeneous nuclear ribonucleoprotein L isoform a [Homo sapiens],-1.0464585984100525,3,6.835917995182151,PDAA,no hit
+NP_001524.2,heterogeneous nuclear ribonucleoprotein L isoform a [Homo sapiens],-1.0464585984100525,3,6.835917995182151,PDAA,no hit
+NP_001524.2,heterogeneous nuclear ribonucleoprotein L isoform a [Homo sapiens],-1.0464585984100525,3,6.835917995182151,PDAA,no hit
+NP_114032.2,heterogeneous nuclear ribonucleoprotein U isoform a [Homo sapiens],-1.050840713314201,3,7.485033562356928,PDAA,no hit
+NP_114032.2,heterogeneous nuclear ribonucleoprotein U isoform a [Homo sapiens],-1.050840713314201,3,7.485033562356928,PDAA,no hit
+NP_114032.2,heterogeneous nuclear ribonucleoprotein U isoform a [Homo sapiens],-1.050840713314201,3,7.485033562356928,PDAA,no hit
+XP_011539528.1,PREDICTED: D-3-phosphoglycerate dehydrogenase isoform X1 [Homo sapiens],-1.0585835801167365,3,7.060230232195186,PDAA,no hit
+XP_011539528.1,PREDICTED: D-3-phosphoglycerate dehydrogenase isoform X1 [Homo sapiens],-1.0585835801167365,3,7.060230232195186,PDAA,no hit
+XP_011539528.1,PREDICTED: D-3-phosphoglycerate dehydrogenase isoform X1 [Homo sapiens],-1.0585835801167365,3,7.060230232195186,PDAA,no hit
+NP_004757.1,coatomer subunit beta' [Homo sapiens],-1.0596868696029618,1,5.995793507401695,PDAA,no hit
+NP_002258.2,importin subunit alpha-4 [Homo sapiens],-1.075304505281145,1,5.059869967215745,PDAA,no hit
+NP_004437.2,bifunctional glutamate/proline--tRNA ligase [Homo sapiens],-1.0870559962184787,3,6.344067316409531,PDAA,no hit
+NP_004437.2,bifunctional glutamate/proline--tRNA ligase [Homo sapiens],-1.0870559962184787,3,6.344067316409531,PDAA,no hit
+NP_004437.2,bifunctional glutamate/proline--tRNA ligase [Homo sapiens],-1.0870559962184787,3,6.344067316409531,PDAA,no hit
+NP_006187.2,poly(rC)-binding protein 1 [Homo sapiens],-1.0933107648939187,2,6.087219937480171,PDAA,no hit
+NP_006187.2,poly(rC)-binding protein 1 [Homo sapiens],-1.0933107648939187,2,6.087219937480171,PDAA,no hit
+NP_002127.1,heterogeneous nuclear ribonucleoprotein A1 isoform a [Homo sapiens],-1.0979832278673718,2,6.623204066846106,PDAA,no hit
+NP_002127.1,heterogeneous nuclear ribonucleoprotein A1 isoform a [Homo sapiens],-1.0979832278673718,2,6.623204066846106,PDAA,no hit
+NP_000993.1,60S acidic ribosomal protein P0 [Homo sapiens],-1.0982046693938843,2,7.017736635464368,PDAA,no hit
+NP_000993.1,60S acidic ribosomal protein P0 [Homo sapiens],-1.0982046693938843,2,7.017736635464368,PDAA,no hit
+NP_006089.1,receptor of activated protein C kinase 1 [Homo sapiens],-1.1019763394293656,2,6.814954567467422,PDAA,no hit
+NP_006089.1,receptor of activated protein C kinase 1 [Homo sapiens],-1.1019763394293656,2,6.814954567467422,PDAA,no hit
+XP_006724323.1,PREDICTED: eukaryotic translation initiation factor 3 subunit L isoform X1 [Homo sapiens],-1.1094546583107503,2,6.3596775270104136,PDAA,no hit
+XP_006724323.1,PREDICTED: eukaryotic translation initiation factor 3 subunit L isoform X1 [Homo sapiens],-1.1094546583107503,2,6.3596775270104136,PDAA,no hit
+NP_006576.2,T-complex protein 1 subunit theta isoform 1 [Homo sapiens],-1.1113399840082354,3,7.034322060467464,PDAA,no hit
+NP_006576.2,T-complex protein 1 subunit theta isoform 1 [Homo sapiens],-1.1113399840082354,3,7.034322060467464,PDAA,no hit
+NP_006576.2,T-complex protein 1 subunit theta isoform 1 [Homo sapiens],-1.1113399840082354,3,7.034322060467464,PDAA,no hit
+NP_002261.3,transportin-1 isoform 1 [Homo sapiens],-1.1177680462482678,3,6.516500456343947,PDAA,no hit
+NP_002261.3,transportin-1 isoform 1 [Homo sapiens],-1.1177680462482678,3,6.516500456343947,PDAA,no hit
+NP_002261.3,transportin-1 isoform 1 [Homo sapiens],-1.1177680462482678,3,6.516500456343947,PDAA,no hit
+NP_000282.1,phosphoglycerate kinase 1 [Homo sapiens],-1.1259376540046366,3,7.343067049478076,PDAA,no hit
+NP_000282.1,phosphoglycerate kinase 1 [Homo sapiens],-1.1259376540046366,3,7.343067049478076,PDAA,no hit
+NP_000282.1,phosphoglycerate kinase 1 [Homo sapiens],-1.1259376540046366,3,7.343067049478076,PDAA,no hit
+XP_005257069.1,PREDICTED: clathrin heavy chain 1 isoform X1 [Homo sapiens],-1.1295953193136068,3,7.632665285761289,PDAA,no hit
+XP_005257069.1,PREDICTED: clathrin heavy chain 1 isoform X1 [Homo sapiens],-1.1295953193136068,3,7.632665285761289,PDAA,no hit
+XP_005257069.1,PREDICTED: clathrin heavy chain 1 isoform X1 [Homo sapiens],-1.1295953193136068,3,7.632665285761289,PDAA,no hit
+NP_001171712.1,voltage-dependent anion-selective channel protein 2 isoform 1 [Homo sapiens],-1.130887184682205,2,7.184518545787852,PDAA,no hit
+NP_001171712.1,voltage-dependent anion-selective channel protein 2 isoform 1 [Homo sapiens],-1.130887184682205,2,7.184518545787852,PDAA,no hit
+NP_006301.3,puromycin-sensitive aminopeptidase isoform 1 [Homo sapiens],-1.1410922761837616,2,6.720999703978722,PDAA,no hit
+NP_006301.3,puromycin-sensitive aminopeptidase isoform 1 [Homo sapiens],-1.1410922761837616,2,6.720999703978722,PDAA,no hit
+NP_002565.1,peroxiredoxin-1 [Homo sapiens],-1.143813242951624,2,7.619865664079443,PDAA,no hit
+NP_002565.1,peroxiredoxin-1 [Homo sapiens],-1.143813242951624,2,7.619865664079443,PDAA,no hit
+NP_001952.1,elongation factor 2 [Homo sapiens],-1.1595342547180922,3,7.378372287272968,PDAA,no hit
+NP_001952.1,elongation factor 2 [Homo sapiens],-1.1595342547180922,3,7.378372287272968,PDAA,no hit
+NP_001952.1,elongation factor 2 [Homo sapiens],-1.1595342547180922,3,7.378372287272968,PDAA,no hit
+XP_016870146.1,PREDICTED: annexin A1 isoform X1 [Homo sapiens],-1.1747039089883962,3,7.2030106063017785,PDAA,no hit
+XP_016870146.1,PREDICTED: annexin A1 isoform X1 [Homo sapiens],-1.1747039089883962,3,7.2030106063017785,PDAA,no hit
+XP_016870146.1,PREDICTED: annexin A1 isoform X1 [Homo sapiens],-1.1747039089883962,3,7.2030106063017785,PDAA,no hit
+NP_000393.4,glucose-6-phosphate 1-dehydrogenase isoform a [Homo sapiens],-1.176101845744379,3,6.496988504163576,PDAA,no hit
+NP_000393.4,glucose-6-phosphate 1-dehydrogenase isoform a [Homo sapiens],-1.176101845744379,3,6.496988504163576,PDAA,no hit
+NP_000393.4,glucose-6-phosphate 1-dehydrogenase isoform a [Homo sapiens],-1.176101845744379,3,6.496988504163576,PDAA,no hit
+NP_009109.3,serine-threonine kinase receptor-associated protein [Homo sapiens],-1.184131202768711,2,6.448345774008644,PDAA,no hit
+NP_009109.3,serine-threonine kinase receptor-associated protein [Homo sapiens],-1.184131202768711,2,6.448345774008644,PDAA,no hit
+NP_004095.4,fatty acid synthase [Homo sapiens],-1.1844496889992397,3,7.2338806555428645,PDAA,no hit
+NP_004095.4,fatty acid synthase [Homo sapiens],-1.1844496889992397,3,7.2338806555428645,PDAA,no hit
+NP_004095.4,fatty acid synthase [Homo sapiens],-1.1844496889992397,3,7.2338806555428645,PDAA,no hit
+NP_001104026.1,filamin-A isoform 2 [Homo sapiens],-1.203125026380846,3,7.80598137317261,PDAA,no hit
+NP_001104026.1,filamin-A isoform 2 [Homo sapiens],-1.203125026380846,3,7.80598137317261,PDAA,no hit
+NP_001104026.1,filamin-A isoform 2 [Homo sapiens],-1.203125026380846,3,7.80598137317261,PDAA,no hit
+NP_004915.2,alpha-actinin-4 isoform 1 [Homo sapiens],-1.2086151132413958,2,6.853077067766505,PDAA,no hit
+NP_004915.2,alpha-actinin-4 isoform 1 [Homo sapiens],-1.2086151132413958,2,6.853077067766505,PDAA,no hit
+NP_821133.1,tubulin beta chain isoform b [Homo sapiens],-1.2129030675148669,3,7.334925021352968,PDAA,no hit
+NP_821133.1,tubulin beta chain isoform b [Homo sapiens],-1.2129030675148669,3,7.334925021352968,PDAA,no hit
+NP_821133.1,tubulin beta chain isoform b [Homo sapiens],-1.2129030675148669,3,7.334925021352968,PDAA,no hit
+NP_006036.1,probable phospholipid-transporting ATPase IIA [Homo sapiens],-1.2304784173920864,1,5.6174598230164845,PDAA,no hit
+NP_002147.2,"60 kDa heat shock protein, mitochondrial [Homo sapiens]",-1.2440931137924518,3,7.730599870779387,PDAA,no hit
+NP_002147.2,"60 kDa heat shock protein, mitochondrial [Homo sapiens]",-1.2440931137924518,3,7.730599870779387,PDAA,no hit
+NP_002147.2,"60 kDa heat shock protein, mitochondrial [Homo sapiens]",-1.2440931137924518,3,7.730599870779387,PDAA,no hit
+NP_001340275.1,alpha-enolase isoform 3 [Homo sapiens],-1.310227285167719,3,7.917559031753926,PDAA,no hit
+NP_001340275.1,alpha-enolase isoform 3 [Homo sapiens],-1.310227285167719,3,7.917559031753926,PDAA,no hit
+NP_001340275.1,alpha-enolase isoform 3 [Homo sapiens],-1.310227285167719,3,7.917559031753926,PDAA,no hit
+NP_000971.1,60S ribosomal protein L18a [Homo sapiens],-1.3380475765567965,2,7.014122494690785,PDAA,no hit
+NP_000971.1,60S ribosomal protein L18a [Homo sapiens],-1.3380475765567965,2,7.014122494690785,PDAA,no hit
+NP_001092.1,"actin, cytoplasmic 1 [Homo sapiens]",-1.3610468351706881,3,8.213729876501072,PDAA,no hit
+NP_001092.1,"actin, cytoplasmic 1 [Homo sapiens]",-1.3610468351706881,3,8.213729876501072,PDAA,no hit
+NP_001092.1,"actin, cytoplasmic 1 [Homo sapiens]",-1.3610468351706881,3,8.213729876501072,PDAA,no hit
+XP_011532356.1,PREDICTED: transketolase isoform X1 [Homo sapiens],-1.366062925607657,3,7.604819070249382,PDAA,no hit
+XP_011532356.1,PREDICTED: transketolase isoform X1 [Homo sapiens],-1.366062925607657,3,7.604819070249382,PDAA,no hit
+XP_011532356.1,PREDICTED: transketolase isoform X1 [Homo sapiens],-1.366062925607657,3,7.604819070249382,PDAA,no hit
+NP_976319.1,ribonuclease inhibitor [Homo sapiens],-1.4055911573100137,1,6.213215613068345,PDAA,no hit
+NP_005372.2,nucleolin [Homo sapiens],-1.4121000379910575,3,6.989331144785538,PDAA,no hit
+NP_005372.2,nucleolin [Homo sapiens],-1.4121000379910575,3,6.989331144785538,PDAA,no hit
+NP_005372.2,nucleolin [Homo sapiens],-1.4121000379910575,3,6.989331144785538,PDAA,no hit
+XP_005248694.1,PREDICTED: heterogeneous nuclear ribonucleoprotein Q isoform X3 [Homo sapiens],-1.4144732157904647,2,6.704427806026251,PDAA,no hit
+XP_005248694.1,PREDICTED: heterogeneous nuclear ribonucleoprotein Q isoform X3 [Homo sapiens],-1.4144732157904647,2,6.704427806026251,PDAA,no hit
+XP_016880861.1,PREDICTED: puromycin-sensitive aminopeptidase isoform X1 [Homo sapiens],-1.4165669121655187,1,7.524162995845989,PDAA,no hit
+NP_001152759.1,triosephosphate isomerase isoform 2 [Homo sapiens],-1.4186068912809993,3,7.360483206755039,PDAA,no hit
+NP_001152759.1,triosephosphate isomerase isoform 2 [Homo sapiens],-1.4186068912809993,3,7.360483206755039,PDAA,no hit
+NP_001152759.1,triosephosphate isomerase isoform 2 [Homo sapiens],-1.4186068912809993,3,7.360483206755039,PDAA,no hit
+NP_001010.2,40S ribosomal protein S15a [Homo sapiens],-1.4188103540391577,2,6.927545678737693,PDAA,no hit
+NP_001010.2,40S ribosomal protein S15a [Homo sapiens],-1.4188103540391577,2,6.927545678737693,PDAA,no hit
+NP_000413.1,"keratin, type I cytoskeletal 17 [Homo sapiens]",-1.4877600977351828,3,6.743175130470859,PDAA,no hit
+NP_000413.1,"keratin, type I cytoskeletal 17 [Homo sapiens]",-1.4877600977351828,3,6.743175130470859,PDAA,no hit
+NP_000413.1,"keratin, type I cytoskeletal 17 [Homo sapiens]",-1.4877600977351828,3,6.743175130470859,PDAA,no hit
+NP_066953.1,peptidyl-prolyl cis-trans isomerase A isoform 1 [Homo sapiens],-1.5514553568072627,2,7.606284253629489,PDAA,no hit
+NP_066953.1,peptidyl-prolyl cis-trans isomerase A isoform 1 [Homo sapiens],-1.5514553568072627,2,7.606284253629489,PDAA,no hit
+NP_079348.1,prostaglandin E synthase 2 isoform 1 [Homo sapiens],-1.5646986374550145,1,6.285625258896964,PDAA,no hit
+XP_005272132.1,PREDICTED: voltage-dependent anion-selective channel protein 1 isoform X1 [Homo sapiens],-1.6042599983367456,3,7.449159454888481,PDAA,no hit
+XP_005272132.1,PREDICTED: voltage-dependent anion-selective channel protein 1 isoform X1 [Homo sapiens],-1.6042599983367456,3,7.449159454888481,PDAA,no hit
+XP_005272132.1,PREDICTED: voltage-dependent anion-selective channel protein 1 isoform X1 [Homo sapiens],-1.6042599983367456,3,7.449159454888481,PDAA,no hit
+XP_016882252.1,PREDICTED: interleukin enhancer-binding factor 3 isoform X1 [Homo sapiens],-1.6052824851007519,1,6.81560703651512,PDAA,no hit
+XP_016876440.1,PREDICTED: creatine kinase B-type isoform X1 [Homo sapiens],-1.6320389433431481,1,6.5322853250154305,PDAA,no hit
+XP_016881278.1,"PREDICTED: ATP synthase subunit alpha, mitochondrial isoform X1 [Homo sapiens]",-1.671756324524651,3,6.900590737150499,PDAA,no hit
+XP_016881278.1,"PREDICTED: ATP synthase subunit alpha, mitochondrial isoform X1 [Homo sapiens]",-1.671756324524651,3,6.900590737150499,PDAA,no hit
+XP_016881278.1,"PREDICTED: ATP synthase subunit alpha, mitochondrial isoform X1 [Homo sapiens]",-1.671756324524651,3,6.900590737150499,PDAA,no hit
+NP_002516.2,nardilysin isoform a [Homo sapiens],-1.6786223069915924,1,6.444690821311456,PDAA,no hit
+NP_000970.1,60S ribosomal protein L18 isoform 1 [Homo sapiens],-1.736097847247232,2,7.0733664665160525,PDAA,no hit
+NP_000970.1,60S ribosomal protein L18 isoform 1 [Homo sapiens],-1.736097847247232,2,7.0733664665160525,PDAA,no hit
+NP_003744.1,eukaryotic translation initiation factor 3 subunit D [Homo sapiens],-1.7447057630140523,1,6.474670487216998,PDAA,no hit
+NP_001317598.1,"serine--tRNA ligase, cytoplasmic isoform b [Homo sapiens]",-1.7473977177564994,1,6.4907313202984085,PDAA,no hit
+XP_016861839.1,PREDICTED: inosine-5'-monophosphate dehydrogenase 2 isoform X3 [Homo sapiens],-1.7629362943006683,2,6.543778286846688,PDAA,no hit
+XP_016861839.1,PREDICTED: inosine-5'-monophosphate dehydrogenase 2 isoform X3 [Homo sapiens],-1.7629362943006683,2,6.543778286846688,PDAA,no hit
+NP_006077.2,tubulin beta-3 chain isoform 1 [Homo sapiens],-1.7911664712215793,1,6.618627179654912,PDAA,no hit
+NP_938149.2,neutral alpha-glucosidase AB isoform 3 precursor [Homo sapiens],-1.8163827568304163,1,6.892885371942645,PDAA,no hit
+XP_005254853.1,PREDICTED: kinesin-like protein KIF23 isoform X1 [Homo sapiens],-1.8258180249563016,2,6.9082531581157705,PDAA,no hit
+XP_005254853.1,PREDICTED: kinesin-like protein KIF23 isoform X1 [Homo sapiens],-1.8258180249563016,2,6.9082531581157705,PDAA,no hit
+NP_001184222.1,dihydropyrimidinase-related protein 2 isoform 1 [Homo sapiens],-1.828547205297373,1,5.687390686237798,PDAA,no hit
+NP_001123561.1,lysine--tRNA ligase isoform 1 [Homo sapiens],-1.9758976783000126,1,6.110631848993099,PDAA,no hit
+XP_016856050.1,PREDICTED: alpha-taxilin isoform X1 [Homo sapiens],-1.9986249132802767,1,5.8472029814331385,PDAA,no hit
+NP_005311.1,histone H1.3 [Homo sapiens],-2.0572056108019425,2,6.6201629147881835,PDAA,no hit
+NP_005311.1,histone H1.3 [Homo sapiens],-2.0572056108019425,2,6.6201629147881835,PDAA,no hit
+NP_001303249.1,"procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 isoform 1 precursor [Homo sapiens]",-2.108044459913419,1,5.942836032821144,PDAA,no hit
+NP_001007074.1,60S ribosomal protein L32 [Homo sapiens],-2.116279653509504,2,6.40190630076219,PDAA,no hit
+NP_001007074.1,60S ribosomal protein L32 [Homo sapiens],-2.116279653509504,2,6.40190630076219,PDAA,no hit
+NP_001227.1,carbonyl reductase [NADPH] 3 [Homo sapiens],-2.1461045717381593,1,6.88860413496693,PDAA,no hit
+NP_001291217.1,40S ribosomal protein SA isoform 2 [Homo sapiens],-2.211504105193711,1,6.50471651940442,PDAA,no hit
+NP_005879.1,"phosphate carrier protein, mitochondrial isoform a precursor [Homo sapiens]",-2.2507964939079947,1,5.347248013187457,PDAA,no hit
+NP_001166289.1,phosphoglucomutase-1 isoform 2 [Homo sapiens],-2.2551683004076346,1,6.385894272334017,PDAA,no hit
+XP_006714129.1,PREDICTED: PDZ and LIM domain protein 5 isoform X1 [Homo sapiens],-2.2805665728417703,1,6.598598354589036,PDAA,no hit
+NP_008969.2,A disintegrin and metalloproteinase with thrombospondin motifs 5 preproprotein [Homo sapiens],-2.2816810534231786,1,5.879851776507742,PDAA,no hit
+NP_006073.2,tubulin alpha-1B chain [Homo sapiens],-2.2895066171949847,1,7.286012577386342,PDAA,no hit
+XP_016880250.1,PREDICTED: profilin-1 isoform X1 [Homo sapiens],-2.320094937028408,1,7.902861099638815,PDAA,no hit
+NP_005007.2,poly(rC)-binding protein 2 isoform a [Homo sapiens],-2.3507609551155633,1,7.124505789856622,PDAA,no hit
+NP_000974.1,60S ribosomal protein L22 [Homo sapiens],-2.486160743015085,1,6.86508181501453,PDAA,no hit
+NP_001247435.1,40S ribosomal protein S3 isoform 2 [Homo sapiens],-2.5278675690920793,1,7.554235335513122,PDAA,no hit
+XP_011523673.1,PREDICTED: ubiquitin carboxyl-terminal hydrolase 32 isoform X1 [Homo sapiens],-2.5687740498851315,1,5.515523838387482,PDAA,no hit
+NP_001688.1,"ATP synthase subunit O, mitochondrial precursor [Homo sapiens]",-2.581756001453508,1,6.865759025092887,PDAA,no hit
+NP_000972.1,60S ribosomal protein L19 isoform 1 [Homo sapiens],-2.58865664189479,3,7.475485015964933,PDAA,no hit
+NP_000972.1,60S ribosomal protein L19 isoform 1 [Homo sapiens],-2.58865664189479,3,7.475485015964933,PDAA,no hit
+NP_000972.1,60S ribosomal protein L19 isoform 1 [Homo sapiens],-2.58865664189479,3,7.475485015964933,PDAA,no hit
+NP_001304310.1,heat shock 70 kDa protein 4L isoform 2 [Homo sapiens],-2.6427388320003566,1,5.452912743997382,PDAA,no hit
+NP_003080.2,U1 small nuclear ribonucleoprotein 70 kDa isoform 1 [Homo sapiens],-2.747047386463062,2,5.538526725074079,PDAA,no hit
+NP_003080.2,U1 small nuclear ribonucleoprotein 70 kDa isoform 1 [Homo sapiens],-2.747047386463062,2,5.538526725074079,PDAA,no hit
+XP_005264612.1,PREDICTED: CAD protein isoform X1 [Homo sapiens],-2.775381904126652,1,6.117223035729807,PDAA,no hit
+NP_003518.2,histone H2B type 1-O [Homo sapiens],-2.8753100943555117,1,7.126429212729558,PDAA,no hit
+NP_000415.2,"keratin, type II cytoskeletal 5 [Homo sapiens]",-2.949226862868417,2,7.086140783376085,PDAA,no hit
+NP_000415.2,"keratin, type II cytoskeletal 5 [Homo sapiens]",-2.949226862868417,2,7.086140783376085,PDAA,no hit
+XP_011531962.1,PREDICTED: acylamino-acid-releasing enzyme isoform X3 [Homo sapiens],-2.972744245261138,1,6.240039901746315,PDAA,no hit
+NP_005546.2,"keratin, type II cytoskeletal 6B [Homo sapiens]",-2.9808670414252143,1,5.509035112706905,PDAA,no hit
+NP_005548.2,"keratin, type I cytoskeletal 16 [Homo sapiens]",-3.274643649327817,3,6.3590703673282905,PDAA,no hit
+NP_005548.2,"keratin, type I cytoskeletal 16 [Homo sapiens]",-3.274643649327817,3,6.3590703673282905,PDAA,no hit
+NP_005548.2,"keratin, type I cytoskeletal 16 [Homo sapiens]",-3.274643649327817,3,6.3590703673282905,PDAA,no hit
+NP_064551.3,"methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial isoform 1 precursor [Homo sapiens]",-3.328034734047221,3,6.386137906702309,PDAA,no hit
+NP_064551.3,"methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial isoform 1 precursor [Homo sapiens]",-3.328034734047221,3,6.386137906702309,PDAA,no hit
+NP_064551.3,"methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial isoform 1 precursor [Homo sapiens]",-3.328034734047221,3,6.386137906702309,PDAA,no hit
+NP_004550.2,nuclease-sensitive element-binding protein 1 [Homo sapiens],-3.378254276089373,3,6.866985977157381,PDAA,no hit
+NP_004550.2,nuclease-sensitive element-binding protein 1 [Homo sapiens],-3.378254276089373,3,6.866985977157381,PDAA,no hit
+NP_004550.2,nuclease-sensitive element-binding protein 1 [Homo sapiens],-3.378254276089373,3,6.866985977157381,PDAA,no hit
+NP_001008.1,40S ribosomal protein S13 [Homo sapiens],-3.4556532793998613,1,6.622166509691167,PDAA,no hit
+NP_056229.2,60S ribosomal protein L36 [Homo sapiens],-3.4556532793998613,1,6.742312429143177,PDAA,no hit
+XP_016880042.1,PREDICTED: acetyl-CoA carboxylase 1 isoform X1 [Homo sapiens],-3.5662538046802554,3,7.616332373287097,PDAA,no hit
+XP_016880042.1,PREDICTED: acetyl-CoA carboxylase 1 isoform X1 [Homo sapiens],-3.5662538046802554,3,7.616332373287097,PDAA,no hit
+XP_016880042.1,PREDICTED: acetyl-CoA carboxylase 1 isoform X1 [Homo sapiens],-3.5662538046802554,3,7.616332373287097,PDAA,no hit
+NP_006296.1,acidic leucine-rich nuclear phosphoprotein 32 family member A [Homo sapiens],-3.6150824890974915,1,6.424401749668217,PDAA,no hit
+XP_005257400.1,"PREDICTED: keratin, type I cytoskeletal 10 isoform X1 [Homo sapiens]",-3.694357902949219,3,8.478513365458427,PDAA,no hit
+XP_005257400.1,"PREDICTED: keratin, type I cytoskeletal 10 isoform X1 [Homo sapiens]",-3.694357902949219,3,8.478513365458427,PDAA,no hit
+XP_005257400.1,"PREDICTED: keratin, type I cytoskeletal 10 isoform X1 [Homo sapiens]",-3.694357902949219,3,8.478513365458427,PDAA,no hit
+NP_000414.2,"keratin, type II cytoskeletal 2 epidermal [Homo sapiens]",-3.696962343926476,3,7.459738911654606,PDAA,no hit
+NP_000414.2,"keratin, type II cytoskeletal 2 epidermal [Homo sapiens]",-3.696962343926476,3,7.459738911654606,PDAA,no hit
+NP_000414.2,"keratin, type II cytoskeletal 2 epidermal [Homo sapiens]",-3.696962343926476,3,7.459738911654606,PDAA,no hit
+NP_705694.2,"keratin, type I cytoskeletal 13 isoform a [Homo sapiens]",-3.7097757730289134,3,6.475912970791581,PDAA,no hit
+NP_705694.2,"keratin, type I cytoskeletal 13 isoform a [Homo sapiens]",-3.7097757730289134,3,6.475912970791581,PDAA,no hit
+NP_705694.2,"keratin, type I cytoskeletal 13 isoform a [Homo sapiens]",-3.7097757730289134,3,6.475912970791581,PDAA,no hit
+NP_000217.2,"keratin, type I cytoskeletal 9 [Homo sapiens]",-3.715174773190575,3,8.321680090674077,PDAA,no hit
+NP_000217.2,"keratin, type I cytoskeletal 9 [Homo sapiens]",-3.715174773190575,3,8.321680090674077,PDAA,no hit
+NP_000217.2,"keratin, type I cytoskeletal 9 [Homo sapiens]",-3.715174773190575,3,8.321680090674077,PDAA,no hit
+NP_006112.3,"keratin, type II cytoskeletal 1 [Homo sapiens]",-3.750266737315185,3,8.549977033988432,PDAA,no hit
+NP_006112.3,"keratin, type II cytoskeletal 1 [Homo sapiens]",-3.750266737315185,3,8.549977033988432,PDAA,no hit
+NP_006112.3,"keratin, type II cytoskeletal 1 [Homo sapiens]",-3.750266737315185,3,8.549977033988432,PDAA,no hit
+NP_000517.2,"keratin, type I cytoskeletal 14 [Homo sapiens]",-3.7716004413081237,2,6.669046670982524,PDAA,no hit
+NP_000517.2,"keratin, type I cytoskeletal 14 [Homo sapiens]",-3.7716004413081237,2,6.669046670982524,PDAA,no hit
+XP_016873358.1,"PREDICTED: pyruvate carboxylase, mitochondrial isoform X1 [Homo sapiens]",-3.781809568277674,3,7.2881498045922255,PDAA,no hit
+XP_016873358.1,"PREDICTED: pyruvate carboxylase, mitochondrial isoform X1 [Homo sapiens]",-3.781809568277674,3,7.2881498045922255,PDAA,no hit
+XP_016873358.1,"PREDICTED: pyruvate carboxylase, mitochondrial isoform X1 [Homo sapiens]",-3.781809568277674,3,7.2881498045922255,PDAA,no hit
+XP_006713522.1,PREDICTED: structural maintenance of chromosomes protein 4 isoform X3 [Homo sapiens],-3.881210695795196,1,7.870497964916186,PDAA,no hit
+NP_001009931.1,hornerin [Homo sapiens],-4.041677194503569,3,6.528362126614678,PDAA,no hit
+NP_001009931.1,hornerin [Homo sapiens],-4.041677194503569,3,6.528362126614678,PDAA,no hit
+NP_001009931.1,hornerin [Homo sapiens],-4.041677194503569,3,6.528362126614678,PDAA,no hit
+NP_005545.1,"keratin, type II cytoskeletal 6C [Homo sapiens]",-4.462940170465869,3,6.751653420166149,PDAA,no hit
+NP_005545.1,"keratin, type II cytoskeletal 6C [Homo sapiens]",-4.462940170465869,3,6.751653420166149,PDAA,no hit
+NP_005545.1,"keratin, type II cytoskeletal 6C [Homo sapiens]",-4.462940170465869,3,6.751653420166149,PDAA,no hit
+NP_002263.3,"keratin, type II cytoskeletal 4 [Homo sapiens]",-8.393697399499523,2,6.479027423927399,PDAA,no hit
+NP_002263.3,"keratin, type II cytoskeletal 4 [Homo sapiens]",-8.393697399499523,2,6.479027423927399,PDAA,no hit
+NP_002268.2,"keratin, type I cuticular Ha1 [Homo sapiens]",-10.297374860528324,1,4.91974880117605,PDAA,no hit
+NP_002270.1,"keratin, type I cuticular Ha3-II [Homo sapiens]",-10.297374860528324,1,5.142872957761696,PDAA,no hit
+NP_002274.1,"keratin, type II cuticular Hb5 isoform 1 [Homo sapiens]",-10.297374860528324,1,4.805793512209162,PDAA,no hit
+NP_149022.3,"keratin, type II cuticular Hb2 [Homo sapiens]",-10.297374860528324,1,4.943680932214391,PDAA,no hit
