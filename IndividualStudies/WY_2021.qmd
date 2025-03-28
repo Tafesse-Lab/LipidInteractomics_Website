@@ -324,7 +324,7 @@ htmltools::tags$div(
 ## Displays the reactive dataframe
 datatable(data_reactive, 
           caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.",
-          options = list(pageLength = 15),
+          options = list(pageLength = 10),
                          colnames = c("Accession", "Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "Num Replicate IDs"),
                          rownames=FALSE)
 

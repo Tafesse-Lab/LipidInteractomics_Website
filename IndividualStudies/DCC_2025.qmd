@@ -26,7 +26,7 @@ source(paste0(here::here(), "/Resources/ggplot_styles.R"))
 
 data <- readr::read_csv(paste0(here::here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv")) |> 
   group_by(gene_ID) |>
-  filter(gene_name != "", ratio_MvsL != "") |>
+  filter(ratio_MvsL != "") |>
   summarise(gene_name = gene_name,
             logFC = mean(log2(ratio_MvsL)),
             pvalue = mean(pvalue),
@@ -153,7 +153,7 @@ htmltools::tags$div(
 ## Displays the reactive dataframe
 datatable(data_reactive, 
           caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.",
-          options = list(pageLength = 15),
+          options = list(pageLength = 10),
                          colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Num Replicate IDs"),
                          rownames=FALSE)
 
