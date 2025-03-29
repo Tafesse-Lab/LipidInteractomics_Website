@@ -127,13 +127,11 @@ ggvenn
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-data2 <- data |>
+data <- data |>
   dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, numReplicates) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
-  arrange(hit_annotation, numReplicates, -logFC, )
-
-unique(data2$gene_name)
+  arrange(hit_annotation, numReplicates, -logFC)
 
 ## Creates a reactive dataframe
 data_reactive <- crosstalk::SharedData$new(data)
