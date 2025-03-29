@@ -25,10 +25,9 @@ library(here)
 source(paste0(here::here(), "/Resources/ggplot_styles.R"))
 
 data <- readr::read_csv(paste0(here::here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv")) |> 
-  group_by(gene_ID) |>
+  group_by(gene_name) |>
   filter(ratio_MvsL != "") |>
-  summarise(gene_name = gene_name,
-            logFC = mean(log2(ratio_MvsL)),
+  summarise(logFC = mean(log2(ratio_MvsL)),
             pvalue = mean(pvalue),
             numReplicates = n(),
             AveExpr = log10(mean(L_abundance) + mean(M_abundance))/2) |>
@@ -128,12 +127,13 @@ ggvenn
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-data <- data |>
+data2 <- data |>
   dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, numReplicates) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
-  arrange(-logFC) |>
-  arrange(hit_annotation)
+  arrange(hit_annotation, numReplicates, -logFC, )
+
+unique(data2$gene_name)
 
 ## Creates a reactive dataframe
 data_reactive <- crosstalk::SharedData$new(data)
