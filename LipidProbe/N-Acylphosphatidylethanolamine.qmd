@@ -12,9 +12,9 @@ callout-icon: false
 
 :::{.border}
 ::: {layout="[[-0.01,99.99], [100]]"}
-<!-- ![(A) Native N-Acylphosphatidylethanolamine.](/LipidProbe/Structures/PE.png) -->
+![(A) Native N-Acylphosphatidylethanolamine.](/LipidProbe/Structures/NAPE.png)
 
-![(B) Bifunctional N-Acylphosphatidylethanolamine.](/LipidProbe/Structures/BF_NAPE.png)
+![(B) Bifunctional N-Acylphosphatidylethanolamine.](/LipidProbe/Structures/BF-NAPE.png)
 
 :::
 :::
@@ -25,25 +25,9 @@ callout-icon: false
 library(here)
 
 ## Opening the source file for the ggplot custom theme
-source(paste0(here::here(), "/Resources/ggplot_styles.R"))
+source(here::here("Resources/ggplot_styles.R"))
 
-data <- readr::read_csv(paste0(here::here(), "/LipidProbe/DataSets/DCC_2025_ChemrXiv_FullDataset.csv")) |> 
-  group_by(gene_name) |>
-  filter(gene_name != "" & ratio_MvsL != "" & L_abundance != "" & M_abundance != "") |>
-  summarise(logFC = mean(log2(ratio_MvsL)),
-            pvalue = mean(pvalue),
-            numReplicates = n(),
-            AveExpr = log10(mean(mean(L_abundance), mean(M_abundance)))) |>
-  arrange(logFC) |>
-  mutate(LipidProbe = "BF-NAPE",
-         hit_annotation = case_when(.default = "no hit",
-                                    logFC >= 0.5849625 & pvalue <= 0.01 & numReplicates == 2 ~ "enriched candidate",
-                                    logFC >= 0.5849625 & pvalue <= 0.01 & numReplicates == 3 ~ "enriched hit")) |>
-  glimpse()
-
-median_logFC <- median(data$logFC)
-
-data$logFC <- data$logFC - median_logFC
+data <- readr::read_csv(here::here("LipidProbe/DataSets/DCC_2025_ChemrXiv_Download.csv"))
 
 # Organize the hit annotations as factors
 data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
@@ -175,12 +159,6 @@ datatable(data_reactive,
 :::
 
 <br>
-
-```{r save_csv, include=FALSE, echo=FALSE, warning=FALSE}
-
-# write_csv(data, paste0(here(), "/LipidProbe/DataSets/DCC_2025_ChemrXiv_Download.csv"))
-
-```
 
 {{< downloadthis DataSets/DCC_2025_ChemrXiv_Download.csv dname="DCC_2025_ChemrXiv_Download">}}
 

@@ -119,7 +119,7 @@ MASpecial <- function(data) {
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
         scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+
-        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 1.1 * max(abs(data$logFC))))+
+        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 5))+
         scale_shape_manual(values = c("enriched hit" = 21,
                                     "hit" = 21,
                                     "enriched candidate" = 24,
@@ -177,6 +177,40 @@ MASpecial <- function(data) {
 ```
 
 
+```{r HiddenDataWrangling, include=FALSE, echo=FALSE}
+
+
+# RawData <- read_csv(here::here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData.csv")) |>
+#   filter(Coverage != 0 & Fold_change != 0) |>
+#   mutate(gene_name = gene_name...3) |>
+#   group_by(gene_name) |>
+#   summarise(logFC = mean(log2(Fold_change)),
+#             # pvalue = mean(pvalue),
+#             numReplicates = n(),
+#             AveExpr = log10(mean(Control_abundance) + mean(Sample_abundance)/2)) |>
+#   arrange(-logFC)
+  
+
+# median_logFC <- median(RawData$logFC)
+
+# RawData$logFC <- RawData$logFC - median_logFC
+
+
+# RawData <- RawData |> 
+#   mutate(LipidProbe = "PDAA",
+#         AveExpr = case_when(.default = AveExpr,
+#                               AveExpr == -Inf ~ 0),
+#                               hit_annotation = case_when(.default = "no hit",
+#                                                           logFC >= 0.5849625 & numReplicates == 2 ~ "enriched candidate",
+#                                                           logFC >= 0.5849625 & numReplicates == 3 ~ "enriched hit")) |>         
+#   glimpse()
+
+
+# write_csv(RawData, here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
+
+
+```
+
 ```{r Setup_Data_Wrangling, include=FALSE, echo=FALSE}
 ## intitialize libraries
 library(here)
@@ -184,40 +218,12 @@ library(biomaRt)
 library(rentrez)
 
 ## Opening the source file for the ggplot custom theme
-source(paste0(here(), "/Resources/ggplot_styles.R"))
+source(here("Resources/ggplot_styles.R"))
 
-RawData <- read_csv(paste0(here::here(), "/IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData.csv")) |>
-  filter(Coverage != 0 & Fold_change != 0) |>
-  mutate(gene_name = gene_name...3) |>
-  group_by(gene_name) |>
-  summarise(logFC = mean(log2(Fold_change)),
-            # pvalue = mean(pvalue),
-            numReplicates = n(),
-            AveExpr = log10(mean(Control_abundance) + mean(Sample_abundance)/2)) |>
-  arrange(-logFC)
-  
-
-median_logFC <- median(RawData$logFC)
-
-RawData$logFC <- RawData$logFC - median_logFC
-
-
-RawData <- RawData |> 
-  mutate(LipidProbe = "PDAA",
-        AveExpr = case_when(.default = AveExpr,
-                              AveExpr == -Inf ~ 0),
-                              hit_annotation = case_when(.default = "no hit",
-                                                          logFC >= 0.5849625 & numReplicates == 2 ~ "enriched candidate",
-                                                          logFC >= 0.5849625 & numReplicates == 3 ~ "enriched hit")) |>         
-  glimpse()
-
-nrow(RawData |> filter(hit_annotation == "enriched hit"))
+data <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
 
 # Organize the hit annotations as factors
-RawData$hit_annotation <- factor(pull(RawData, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
-
-
-# write_csv(RawData, paste0(here(), "/IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
 
 ```
 
@@ -232,7 +238,7 @@ RawData$hit_annotation <- factor(pull(RawData, hit_annotation), levels = c("enri
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Yu et al., 2021, 2024](/IndividualStudies/WY_2021.qmd). Black proteins are identified in only one replicate, Purple enriched candidates are defined as proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01, and Orange enriched hits are defined as proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01)."
 
-RankedOrderPlotSpecial(RawData)
+RankedOrderPlotSpecial(data)
 ```
 
 ##### MA plot
@@ -240,7 +246,7 @@ RankedOrderPlotSpecial(RawData)
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). Black proteins are identified in only one replicate, Purple enriched candidates are defined as proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01, and Orange enriched hits are defined as proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01)."
 
-MASpecial(RawData)
+MASpecial(data)
 ```
 
 
@@ -251,8 +257,8 @@ MASpecial(RawData)
 ###### Wrangling for the Venn Diagram ######
 # Read the dataset
 
-VennData <- read_csv("DataTables/WY_2021_ACSChemBio_RawData.csv")  |>
-  mutate(gene_name = Description)
+VennData <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData.csv")) |>
+  mutate(gene_name = gene_name...3)
 
 # Separates out each of the genesets, then forces them back together in a vectorized list.
 A_proteins <- VennData |>
@@ -296,7 +302,7 @@ ggvenn
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
-data <- RawData |>
+data <- data |>
   dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, numReplicates) |>
   mutate(logFC = signif(logFC, digits=3)) |>
   arrange(-logFC) |>
@@ -326,12 +332,9 @@ datatable(data_reactive,
 
 ```
 
-
-
 :::
 
 <br>
-
 
 ## Data download
 
