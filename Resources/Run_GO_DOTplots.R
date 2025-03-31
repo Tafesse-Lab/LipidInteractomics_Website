@@ -165,3 +165,16 @@ MF_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_MF-DOTplot")
 
 BP_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_BP-DOTplot")
 # BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")
+
+## WY_2021
+
+WY_2021 <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
+
+CC_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_CC-DOTplot")
+# CC_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_CC-CNETplot")
+
+MF_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_MF-DOTplot")
+# MF_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_MF-CNETplot")
+
+BP_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_BP-DOTplot")
+# BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")

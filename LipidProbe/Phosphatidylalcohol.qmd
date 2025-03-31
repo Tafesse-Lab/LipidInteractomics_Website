@@ -1,0 +1,355 @@
+---
+title: "Phosphatidyl diazirine alkyne alcohol"
+subtitle: "PDAA"
+format: 
+  html:
+    embed-resources: false
+callout-icon: false
+---
+
+## Structure
+
+:::{.border}
+::: {layout="[[100], [-25, 50, -25], [100]]"}
+![(A) Native Phosphatidylethanol.](/LipidProbe/Structures/POH.png)
+
+![(B) Diazirine alkyne alcohol.](/LipidProbe/Structures/DAA.png)
+
+![(C) Phosphatidyl diazirine alkyne alcohol (PDAA).](/LipidProbe/Structures/PDAA.png)
+
+Temporary chemical structures drawn by Gaelen Guzman.
+:::
+:::
+
+## Protein Interactome
+
+
+::: {.callout-note collapse="true"}
+
+{{< include /StudyInformation_includes/WY_2021_include.qmd >}}
+
+:::
+
+
+```{r NewPlottingFunctions, include=FALSE, echo=FALSE}
+RankedOrderPlotSpecial <- function(data) {
+    ################
+    #' A standardized Ranked Order plot theme
+    #' Requires an input dataframe with the columns "gene_name", "LipidProbe", "logFC", "pvalue", and "hit_annotation"
+    ################
+
+    # Applies ID column to each probe
+    data <- data |>
+      group_by(LipidProbe) |>
+      arrange(logFC, .by_group = TRUE) |>
+      mutate(ID = row_number()) |>
+      ungroup()
+
+    # First makes a ggplot template to later apply ggplotly
+    RankedOrderPlots <- data |>
+        ggplot(aes(x = ID,
+                   y = logFC,
+                   color = factor(hit_annotation),
+                   fill = factor(hit_annotation),
+                   shape = factor(hit_annotation),
+                   alpha = factor(hit_annotation),
+                   size = factor(hit_annotation))) +
+        geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
+                                    "LogFC: ", logFC, "\n"))) +
+        geom_hline(yintercept = 0, linetype = 2) +
+        geom_vline(xintercept = 0, linetype = 2) +
+        scale_shape_manual(values = c("enriched hit" = 21,
+                                    "hit" = 21,
+                                    "enriched candidate" = 24,
+                                    "candidate" = 24,
+                                    "no hit" = 22), 
+                        name = "Trend") +
+        scale_color_manual(values = c("enriched hit" = "black",
+                                    "hit" = "black",
+                                    "enriched candidate" = "black",
+                                    "candidate" = "black",
+                                    "no hit" = "black"), 
+                        name = "Trend") +
+        scale_fill_manual(values = c("enriched hit" = "orange",
+                                    "hit" = "orange",
+                                    "enriched candidate" = "purple",
+                                    "candidate" = "purple",
+                                    "no hit" = "black"), 
+                        name = "Trend") +
+        scale_alpha_manual(values = c("enriched hit" = 0.8,
+                                    "hit" = 0.8,
+                                    "enriched candidate" = 0.5,
+                                    "candidate" = 0.5,
+                                    "no hit" = 0.25), 
+                        name = "Trend") +
+        scale_size_manual(values = c("enriched hit" = 4,
+                                    "hit" = 4,
+                                    "enriched candidate" = 2,
+                                    "candidate" = 2, 
+                                    "no hit" = 0.75), 
+                        name = "Trend") +
+        facet_wrap(~LipidProbe) +
+        ylab("Log2 fold-change") +
+        xlab("Ranked-order gene") +
+        theme_minimal() +
+        theme(text = element_text(family = "serif")) +
+        theme(panel.border = element_rect(color = NA, fill = NA)) +
+        theme(legend.title = element_text(size = 12, face = "bold")) +
+        theme(axis.title = element_text(size = 12, face = "bold")) +
+        theme(legend.text = element_text(size = 12))  +
+        theme(strip.text = element_text(
+    size = 20))
+    m <- list(l=50, r = 50, b= 100, pad = 4)
+	
+    RankedOrderPlotly <- ggplotly(RankedOrderPlots,
+                            tooltip = c("text", dynamicTicks = TRUE),
+                            hovermode = "closest",
+                            autosize = T,
+                            margin = m) |>
+                    layout(showlegend = FALSE)
+    
+    return(RankedOrderPlotly)
+}
+
+
+MASpecial <- function(data) {
+
+    ################
+    #' A standardized MA plot function
+    #' Receives a dataframe. Needs to have the following columns for the aes() to work: AveExpr, logFC, hit_annotation, gene_name.
+    #' Dynamically determines the limits of the plot under the scale_x/y_scontinuous calls
+    #' Produces first a facet-wrapped ggplot, then converts it to a plotly plot.
+    ################
+
+    MAPlots <- data |>
+        ggplot(aes(x = AveExpr,
+                   y = logFC,
+                   color = factor(hit_annotation),
+                   fill = factor(hit_annotation),
+                   shape = factor(hit_annotation),
+                   alpha = factor(hit_annotation),
+                   size = factor(hit_annotation))) +
+        geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
+                                    "LogFC: ", logFC, "\n",
+                                    "AveExpr: ", AveExpr, "\n"))) +
+        geom_hline(yintercept = 0, linetype = 2) +
+        geom_vline(xintercept = 0, linetype = 2) +
+        scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+
+        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 5))+
+        scale_shape_manual(values = c("enriched hit" = 21,
+                                    "hit" = 21,
+                                    "enriched candidate" = 24,
+                                    "candidate" = 24,
+                                    "no hit" = 22), 
+                        name = "Trend") +
+        scale_color_manual(values = c("enriched hit" = "black",
+                                    "hit" = "black",
+                                    "enriched candidate" = "black",
+                                    "candidate" = "black",
+                                    "no hit" = "black"), 
+                        name = "Trend") +
+        scale_fill_manual(values = c("enriched hit" = "orange",
+                                    "hit" = "orange",
+                                    "enriched candidate" = "purple",
+                                    "candidate" = "purple",
+                                    "no hit" = "black"), 
+                        name = "Trend") +
+        scale_alpha_manual(values = c("enriched hit" = 0.8,
+                                    "hit" = 0.8,
+                                    "enriched candidate" = 0.5,
+                                    "candidate" = 0.5,
+                                    "no hit" = 0.25), 
+                        name = "Trend") +
+        scale_size_manual(values = c("enriched hit" = 4,
+                                    "hit" = 4,
+                                    "enriched candidate" = 2,
+                                    "candidate" = 2, 
+                                    "no hit" = 0.75), 
+                        name = "Trend") +
+        facet_wrap(~LipidProbe) +
+        ylab("Log2 fold-change") +
+        xlab("Average Ion Intensity") +
+        theme_minimal() +
+        theme(text = element_text(family = "serif")) +
+        theme(panel.border = element_rect(color = NA, fill = NA)) +
+        theme(legend.title = element_text(size = 12, face = "bold")) +
+        theme(axis.title = element_text(size = 12, face = "bold")) +
+        theme(legend.text = element_text(size = 12)) +
+        theme(strip.text = element_text(
+    size = 20))
+
+    m <- list(l=50, r = 50, b= 100, pad = 4)
+	
+    MAPlotly <- ggplotly(MAPlots,
+                            tooltip = c("text", dynamicTicks = TRUE),
+                            hovermode = "closest",
+                            autosize = T,
+                            margin = m) |>
+                    layout(showlegend = FALSE)
+    
+    return(MAPlotly)
+}
+
+```
+
+
+
+```{r PDAA_setup, include=FALSE, echo=FALSE}
+## intitialize libraries
+library(here)
+library(biomaRt)
+library(rentrez)
+
+## Opening the source file for the ggplot custom theme
+source(here("Resources/ggplot_styles.R"))
+
+data <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
+
+# Organize the hit annotations as factors
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
+
+```
+
+
+#### Data visualization
+
+::::{.border}
+::: {.panel-tabset}
+
+
+
+##### Ranked order plot
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+RankedOrderPlotSpecial(data)
+```
+
+
+
+##### MA Plot
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+
+MASpecial(data)
+
+```
+
+
+##### Venn Diagram
+
+```{r Venn_wrangling, include=FALSE, warning=FALSE}
+
+###### Wrangling for the Venn Diagram ######
+# Read the dataset
+
+VennData <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData.csv")) |>
+  mutate(gene_name = gene_name...3)
+
+# Separates out each of the genesets, then forces them back together in a vectorized list.
+A_proteins <- VennData |>
+  filter(Trial == 1) |>
+  dplyr::select(gene_name)
+
+B_proteins <- VennData |>
+  filter(Trial == 2) |>
+  dplyr::select(gene_name)
+
+C_proteins <- VennData |>
+  filter(Trial == 3) |>
+  dplyr::select(gene_name)
+
+VennList <- list("Trial 1" = as.list(A_proteins$gene_name), "Trial 2" = as.list(B_proteins$gene_name), "Trial 3" = as.list(C_proteins$gene_name))
+```
+
+```{r NAPE_Venn, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). A Venn diagram depicts the overlapping identification of proteins between the three trials (replicates)."
+
+ggvenn <- ggvenn(VennList,
+                      show_percentage = FALSE,
+                      show_elements = FALSE,
+                      fill_color = c("orange", "purple", "blue")) +
+        labs(x = "", y = "") +
+        theme_minimal()
+
+ggvenn
+
+```
+
+:::
+::::
+
+
+#### Gene Ontology Analysis
+
+**In beta: GO analysis still under development**
+
+:::::{.border}
+::::{#fig-PE_GOplots}
+::: {.panel-tabset}
+
+##### Cell Compartment
+
+<iframe src="/LipidProbe/GO_plots/PDAA_WY_2021_CC-DOTplot.html" width="100%" height="500px"></iframe>
+
+##### Molecular Function
+
+No enriched molecular functions identified among enriched hits and candidates.
+
+##### Biological Process
+
+No enriched biological processes identified among enriched hits and candidates.
+
+:::
+
+GO Dot plots display the enrichment of GO terms among the proteins enriched to the probe. For these analyses, only proteins categorized as "enriched candidates" and "enriched hits" were subject to GO analysis. The Cell Compartment analysis assesses whether the list of enriched proteins contains a statistically significant number of proteins in the same cellular region; appropriately, the Molecular Function and Biological Process analyses does the same for molecular function and biological process, respectively. [Click here for more information about Gene Ontology Analysis.](/Background/DataAnalysisAndStatistics.qmd#gene-ontology-overview) 
+::::
+:::::
+
+
+
+#### Data exploration and download
+
+Check the boxes below to filter by significance thresholds.
+
+:::{.border}
+```{r PDAA_DataTable, echo=FALSE, warning=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+data <- data |>
+  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, numReplicates) |>
+  mutate(logFC = signif(logFC, digits=3)) |>
+  arrange(-logFC) |>
+  arrange(hit_annotation)
+
+## Creates a reactive dataframe
+data_reactive <- crosstalk::SharedData$new(data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "LipidProbe",
+                  label = "Lipid probe in pulldown:", 
+                  sharedData = data_reactive,
+                  group = ~LipidProbe),
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = data_reactive,
+                  group = ~hit_annotation)
+)
+
+## Displays the reactive dataframe
+datatable(data_reactive, 
+          caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.",
+          options = list(pageLength = 10),
+                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "Num Replicate IDs"),
+                         rownames=FALSE)
+
+```
+:::
+
+<br> 
+
+{{< downloadthis DataSets/PDAA_WY_2021_ACSChemBio_Download.csv dname="PDAA_WY_2021_ACSChemBio_download">}}

@@ -16,13 +16,10 @@ Alcohol consumption leads to formation of phosphatidylethanol (PEth) via the tra
 
 ##### Lipid probes utilized
 
-PDAA
-
-<!-- 
-<a href="/LipidProbe/N-Acylphosphatidylethanolamine.qmd" class="hover-preview">Bifunctional NAPE</a>
+<a href="/LipidProbe/PhosphatidylAlcohol.qmd" class="hover-preview">Phosphatidyl Alcohol</a>
 <span class="hover-image">
-  <img src="/LipidProbe/Structures/BF_NAPE.png" alt="Bifunctional NAPE" />
-</span> -->
+  <img src="/LipidProbe/Structures/PDAA.png" alt="Phosphatidyl diazirine alkyne alcohol" />
+</span>
 
 
 ##### Cell line analyzed

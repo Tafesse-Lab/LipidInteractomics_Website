@@ -54,10 +54,10 @@ website:
     search: true
     collapse-level: 3
     contents:
-      - href: SearchByProtein/SearchByProtein.qmd
-        text: "Search by Protein"
-        contents:
-          - section: ""
+      # - href: SearchByProtein/SearchByProtein.qmd
+      #   text: "Search by Protein"
+      #   contents:
+      #     - section: ""
       - href: LipidProbe/EnrichedHitsComparison.qmd
         text: "Probe vs Probe Comparisons"
         contents:
@@ -71,6 +71,8 @@ website:
                 text: "Phosphatidic Acid"
               - href: LipidProbe/Phosphatidylethanolamine.qmd
                 text: "Phosphatidylethanolamine"
+              - href: LipidProbe/Phosphatidylalcohol.qmd
+                text: "Phosphatidyl Alcohol"
               - href: LipidProbe/N-Acylphosphatidylethanolamine.qmd
                 text: "NAPE"
               - href: LipidProbe/Phosphatidylinositol.qmd
@@ -106,6 +108,8 @@ website:
             text: "Farley et al., 2024; A"
           - href: IndividualStudies/SF_2024_B.qmd
             text: "Farley et al., 2024; B"
+          - href: IndividualStudies/WY_2021.qmd
+            text: "Yu et al., 2021"
           - href: IndividualStudies/RM_2021.qmd
             text: "Muller et al., 2021"
           - href: IndividualStudies/DH_2017.qmd

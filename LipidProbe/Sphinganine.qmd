@@ -32,7 +32,7 @@ Chemical structures drawn by Berit Blume.
 
 #### Data visualization
 
-
+::::{.border}
 ::: {.panel-tabset}
 
 ```{r setup, echo=FALSE, warning=FALSE, include = FALSE}
@@ -60,28 +60,24 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 ##### Volcano plot
 
-:::{.border}
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 VolcanoPlotStandardized(data)
 ```
-:::
 
 ##### Ranked order plot
 
-:::{.border}
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 RankedOrderPlotStandard(data)
 ```
-:::
+
 
 
 ##### MA Plot
 
-:::{.border}
 ```{r, echo=FALSE, warning=FALSE}
 #| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
@@ -89,7 +85,7 @@ MAStandard(data)
 
 ```
 :::
-:::
+::::
 
 
 #### Gene Ontology Analysis
