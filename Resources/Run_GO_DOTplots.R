@@ -144,7 +144,6 @@ BP_enrichment_plots(AT_2025, "dot", "PE-PA_AT_2025_BP-DOTplot")
 
 # DCC_2025
 
-/Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FilteredDataset.csv
 
 DCC_2025 <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FilteredDataset.csv")) |>
   group_by(gene_name) |>
@@ -170,11 +169,11 @@ BP_enrichment_plots(DCC_2025, "dot", "NAPE_DCC_2025_BP-DOTplot")
 
 WY_2021 <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
 
-CC_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_CC-DOTplot")
+CC_enrichment_plots(WY_2021, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_CC-DOTplot")
 # CC_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_CC-CNETplot")
 
-MF_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_MF-DOTplot")
+MF_enrichment_plots(WY_2021, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_MF-DOTplot")
 # MF_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_MF-CNETplot")
 
-BP_enrichment_plots(WY_2021, "dot", "PDAA_WY_2021_BP-DOTplot")
+BP_enrichment_plots(WY_2021, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_BP-DOTplot")
 # BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")
