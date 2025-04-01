@@ -16,6 +16,7 @@ authors:
   - name: "Gaelen Guzman"
     affiliations:
       - name:  "Oregon Health & Science University"
+        department: Molecular Microbiology and Immunology
         address: 3222 SW Research Dr
         city: Portland
         state: OR
@@ -23,22 +24,34 @@ authors:
     orcid: 0000-0002-7696-6034
     corresponding: true
     email: gaelen.guzman@lipidinteractome.org
+  - name: "André Nadler"
+    affiliations:
+      - name: "Max Plank Institute"
+        department: "Molecular Cell Biology and Genetics"
+        city: Dresden
+        country: Germany
+        postal-code: 01307
+    orcid: 0000-0001-6329-3910
   - name: "Frank Stein"
     affiliations:
-      - name: "Proteomics Core Facility, European Molecular Biology Laboratory"
+      - name: "European Molecular Biology Laboratory"
+        department: "Proteomics Core Facility"
         city: Heidelberg
         country: Germany
         postal-code: 69117
     orcid: 0000-0001-9695-1692
   - name: Jeremy M. Baskin
     affiliations:
-      - name: "Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology, Cornell University"
+      - name: "Cornell University"
+        department: "Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology"
         city: Ithaca
         state: NY
         postal-code: 14853
+    orcid: 0000-0003-2939-3138
   - name: "Carsten Schultz"
     affiliations:
       - name:  "Oregon Health & Science University"
+        department: "Chemical Physiology and Biochemistry"
         address: 3222 SW Research Dr
         city: Portland
         state: OR
@@ -47,6 +60,7 @@ authors:
   - name: "Fikadu Tafesse"
     affiliations:
       - name:  "Oregon Health & Science University"
+        department: Molecular Microbiology and Immunology
         address: 3222 SW Research Dr
         city: Portland
         state: OR
@@ -63,9 +77,9 @@ ___
 
 ## Authors
 
-Gaelen Guzman^1,^*, Frank Stein^2^, Jeremy M. Baskin^3^, Carsten Schulz^1^, Fikadu G. Tafesse^1^
+Gaelen Guzman^1,^*, André Nadler^2^, Frank Stein^3^, Jeremy M. Baskin^4^, Carsten Schulz^1^, Fikadu G. Tafesse^1^
 
-^1^ = Departments of Molecular Immunology and Immunology and  Chemical Physiology and Biochemistry, Oregon Health & Science University, Portland, OR, USA; ^2^ = Proteomics Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany; ^3^ = Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology, Cornell University, Ithaca, NY, USA; * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
+^1^ = Departments of Molecular Immunology and Immunology and  Chemical Physiology and Biochemistry, Oregon Health & Science University, Portland, OR, USA; ^2^ = Max Plank Institute of Molecular Cell Biology and Genetics, Dresden Germany; ^3^ = Proteomics Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany; ^4^ = Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology, Cornell University, Ithaca, NY, USA; * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
 :::
 
 ## Summary
@@ -189,6 +203,10 @@ ANOVA
 ## Contributions
 
 GG designed, implemented, and wrote the majority of the LipidInteractome repository and manuscript. FS wrote the data analysis section of the repository, provided significant intellectual contribution to the repository design, and edited the manuscript. AN provided substantial editing of the repository and manuscript. JMB edited the manuscript and contributed data to the repository. CS and FT provided significant intellectual contribution and text editing of the repository and manuscript, and oversaw the site development. 
+
+## Funding
+
+This work was supported by funding from the National Institutes of Health (NIAID R01 AI141549-02, to FGT, CS; NIGMS R01 GM 127631 to C.S., and R01 GM151682 to JMB).
 
 ## Conflicts of Interest
 

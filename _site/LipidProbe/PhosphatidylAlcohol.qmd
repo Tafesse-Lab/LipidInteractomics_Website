@@ -31,168 +31,6 @@ Temporary chemical structures drawn by Gaelen Guzman.
 :::
 
 
-```{r NewPlottingFunctions, include=FALSE, echo=FALSE}
-RankedOrderPlotSpecial <- function(data) {
-    ################
-    #' A standardized Ranked Order plot theme
-    #' Requires an input dataframe with the columns "gene_name", "LipidProbe", "logFC", "pvalue", and "hit_annotation"
-    ################
-
-    # Applies ID column to each probe
-    data <- data |>
-      group_by(LipidProbe) |>
-      arrange(logFC, .by_group = TRUE) |>
-      mutate(ID = row_number()) |>
-      ungroup()
-
-    # First makes a ggplot template to later apply ggplotly
-    RankedOrderPlots <- data |>
-        ggplot(aes(x = ID,
-                   y = logFC,
-                   color = factor(hit_annotation),
-                   fill = factor(hit_annotation),
-                   shape = factor(hit_annotation),
-                   alpha = factor(hit_annotation),
-                   size = factor(hit_annotation))) +
-        geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
-                                    "LogFC: ", logFC, "\n"))) +
-        geom_hline(yintercept = 0, linetype = 2) +
-        geom_vline(xintercept = 0, linetype = 2) +
-        scale_shape_manual(values = c("enriched hit" = 21,
-                                    "hit" = 21,
-                                    "enriched candidate" = 24,
-                                    "candidate" = 24,
-                                    "no hit" = 22), 
-                        name = "Trend") +
-        scale_color_manual(values = c("enriched hit" = "black",
-                                    "hit" = "black",
-                                    "enriched candidate" = "black",
-                                    "candidate" = "black",
-                                    "no hit" = "black"), 
-                        name = "Trend") +
-        scale_fill_manual(values = c("enriched hit" = "orange",
-                                    "hit" = "orange",
-                                    "enriched candidate" = "purple",
-                                    "candidate" = "purple",
-                                    "no hit" = "black"), 
-                        name = "Trend") +
-        scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                    "hit" = 0.8,
-                                    "enriched candidate" = 0.5,
-                                    "candidate" = 0.5,
-                                    "no hit" = 0.25), 
-                        name = "Trend") +
-        scale_size_manual(values = c("enriched hit" = 4,
-                                    "hit" = 4,
-                                    "enriched candidate" = 2,
-                                    "candidate" = 2, 
-                                    "no hit" = 0.75), 
-                        name = "Trend") +
-        facet_wrap(~LipidProbe) +
-        ylab("Log2 fold-change") +
-        xlab("Ranked-order gene") +
-        theme_minimal() +
-        theme(text = element_text(family = "serif")) +
-        theme(panel.border = element_rect(color = NA, fill = NA)) +
-        theme(legend.title = element_text(size = 12, face = "bold")) +
-        theme(axis.title = element_text(size = 12, face = "bold")) +
-        theme(legend.text = element_text(size = 12))  +
-        theme(strip.text = element_text(
-    size = 20))
-    m <- list(l=50, r = 50, b= 100, pad = 4)
-	
-    RankedOrderPlotly <- ggplotly(RankedOrderPlots,
-                            tooltip = c("text", dynamicTicks = TRUE),
-                            hovermode = "closest",
-                            autosize = T,
-                            margin = m) |>
-                    layout(showlegend = FALSE)
-    
-    return(RankedOrderPlotly)
-}
-
-
-MASpecial <- function(data) {
-
-    ################
-    #' A standardized MA plot function
-    #' Receives a dataframe. Needs to have the following columns for the aes() to work: AveExpr, logFC, hit_annotation, gene_name.
-    #' Dynamically determines the limits of the plot under the scale_x/y_scontinuous calls
-    #' Produces first a facet-wrapped ggplot, then converts it to a plotly plot.
-    ################
-
-    MAPlots <- data |>
-        ggplot(aes(x = AveExpr,
-                   y = logFC,
-                   color = factor(hit_annotation),
-                   fill = factor(hit_annotation),
-                   shape = factor(hit_annotation),
-                   alpha = factor(hit_annotation),
-                   size = factor(hit_annotation))) +
-        geom_point(aes(text = paste0("Gene name: ", gene_name, "\n",
-                                    "LogFC: ", logFC, "\n",
-                                    "AveExpr: ", AveExpr, "\n"))) +
-        geom_hline(yintercept = 0, linetype = 2) +
-        geom_vline(xintercept = 0, linetype = 2) +
-        scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+
-        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 5))+
-        scale_shape_manual(values = c("enriched hit" = 21,
-                                    "hit" = 21,
-                                    "enriched candidate" = 24,
-                                    "candidate" = 24,
-                                    "no hit" = 22), 
-                        name = "Trend") +
-        scale_color_manual(values = c("enriched hit" = "black",
-                                    "hit" = "black",
-                                    "enriched candidate" = "black",
-                                    "candidate" = "black",
-                                    "no hit" = "black"), 
-                        name = "Trend") +
-        scale_fill_manual(values = c("enriched hit" = "orange",
-                                    "hit" = "orange",
-                                    "enriched candidate" = "purple",
-                                    "candidate" = "purple",
-                                    "no hit" = "black"), 
-                        name = "Trend") +
-        scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                    "hit" = 0.8,
-                                    "enriched candidate" = 0.5,
-                                    "candidate" = 0.5,
-                                    "no hit" = 0.25), 
-                        name = "Trend") +
-        scale_size_manual(values = c("enriched hit" = 4,
-                                    "hit" = 4,
-                                    "enriched candidate" = 2,
-                                    "candidate" = 2, 
-                                    "no hit" = 0.75), 
-                        name = "Trend") +
-        facet_wrap(~LipidProbe) +
-        ylab("Log2 fold-change") +
-        xlab("Average Ion Intensity") +
-        theme_minimal() +
-        theme(text = element_text(family = "serif")) +
-        theme(panel.border = element_rect(color = NA, fill = NA)) +
-        theme(legend.title = element_text(size = 12, face = "bold")) +
-        theme(axis.title = element_text(size = 12, face = "bold")) +
-        theme(legend.text = element_text(size = 12)) +
-        theme(strip.text = element_text(
-    size = 20))
-
-    m <- list(l=50, r = 50, b= 100, pad = 4)
-	
-    MAPlotly <- ggplotly(MAPlots,
-                            tooltip = c("text", dynamicTicks = TRUE),
-                            hovermode = "closest",
-                            autosize = T,
-                            margin = m) |>
-                    layout(showlegend = FALSE)
-    
-    return(MAPlotly)
-}
-
-```
-
-
 
 ```{r PDAA_setup, include=FALSE, echo=FALSE}
 ## intitialize libraries
@@ -216,65 +54,80 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 ::::{.border}
 ::: {.panel-tabset}
 
+##### Volcano plots
 
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). Black proteins are designated as not statistically significant. Orange \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed."
+
+VolcanoPlotStandardized(data)
+
+```
 
 ##### Ranked order plot
 
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+#| fig-cap: "Data as reported in [Yu et al., 2021, 2024](/IndividualStudies/WY_2021.qmd). Black proteins are designated as not statistically significant. Orange \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed."
 
-RankedOrderPlotSpecial(data)
+RankedOrderPlotStandard(data)
 ```
 
-
-
-##### MA Plot
+##### MA plot
 
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+#| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). Black proteins are designated as not statistically significant. Orange \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed."
 
-MASpecial(data)
-
+MAStandard(data)
 ```
 
 
-##### Venn Diagram
+<!-- ##### Venn Diagram -->
 
 ```{r Venn_wrangling, include=FALSE, warning=FALSE}
 
-###### Wrangling for the Venn Diagram ######
-# Read the dataset
+# ###### Wrangling for the Venn Diagram ######
+# # Read the dataset
 
-VennData <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData.csv")) |>
-  mutate(gene_name = gene_name...3)
+# VennData <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData2.csv"))
 
-# Separates out each of the genesets, then forces them back together in a vectorized list.
-A_proteins <- VennData |>
-  filter(Trial == 1) |>
-  dplyr::select(gene_name)
+# # Convert wide format to long format
+# VennData <- VennData |> 
+#   mutate(logFC_1 = log2(Sample_1 / Control_1),
+#          logFC_2 = log2(Sample_2 / Control_2),
+#          logFC_3 = log2(Sample_3 / Control_3)) |>
+#   pivot_longer(cols = c(8,9,10)) |>
+#   select(gene_name, name, value) |>
+#   filter(!is.na(value)) |> 
+#   mutate(Replicate = case_when(name == "logFC_1" ~ 1,
+#                                name == "logFC_2" ~ 2,
+#                                name == "logFC_3" ~ 3))
+                               
+# # Separates out each of the genesets, then forces them back together in a vectorized list.
+# A_proteins <- VennData |>
+#   filter(Replicate == 1) |>
+#   dplyr::select(gene_name)
 
-B_proteins <- VennData |>
-  filter(Trial == 2) |>
-  dplyr::select(gene_name)
+# B_proteins <- VennData |>
+#   filter(Replicate == 2) |>
+#   dplyr::select(gene_name)
 
-C_proteins <- VennData |>
-  filter(Trial == 3) |>
-  dplyr::select(gene_name)
+# C_proteins <- VennData |>
+#   filter(Replicate == 3) |>
+#   dplyr::select(gene_name)
 
-VennList <- list("Trial 1" = as.list(A_proteins$gene_name), "Trial 2" = as.list(B_proteins$gene_name), "Trial 3" = as.list(C_proteins$gene_name))
+# VennList <- list("Trial 1" = as.list(A_proteins$gene_name), "Trial 2" = as.list(B_proteins$gene_name), "Trial 3" = as.list(C_proteins$gene_name))
 ```
 
-```{r NAPE_Venn, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). A Venn diagram depicts the overlapping identification of proteins between the three trials (replicates)."
+```{r NAPE_Venn, include=FALSE, echo=FALSE, warning=FALSE}
+# #| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). A Venn diagram depicts the overlapping identification of proteins between the three trials (replicates)."
 
-ggvenn <- ggvenn(VennList,
-                      show_percentage = FALSE,
-                      show_elements = FALSE,
-                      fill_color = c("orange", "purple", "blue")) +
-        labs(x = "", y = "") +
-        theme_minimal()
+# ggvenn <- ggvenn(VennList,
+#                       show_percentage = FALSE,
+#                       show_elements = FALSE,
+#                       fill_color = c("orange", "purple", "blue")) +
+#         labs(x = "", y = "") +
+#         theme_minimal()
 
-ggvenn
+# ggvenn
 
 ```
 
@@ -320,8 +173,9 @@ Check the boxes below to filter by significance thresholds.
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, numReplicates) |>
+  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue) |>
   mutate(logFC = signif(logFC, digits=3)) |>
+  mutate(pvalue = signif(pvalue, digits=3)) |>
   arrange(-logFC) |>
   arrange(hit_annotation)
 
@@ -342,9 +196,9 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(data_reactive, 
-          caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.",
+          caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed.",
           options = list(pageLength = 10),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "Num Replicate IDs"),
+                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value"),
                          rownames=FALSE)
 
 ```

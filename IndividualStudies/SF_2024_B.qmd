@@ -134,7 +134,7 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(data_reactive, options = list(pageLength = 15))
+datatable(data_reactive, options = list(pageLength = 10))
 
 ```
 :::
