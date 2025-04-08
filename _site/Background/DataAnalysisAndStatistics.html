@@ -368,7 +368,8 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-DataAnalysis_TMTPipeline" id="toc-sec-DataAnalysis_TMTPipeline" class="nav-link active" data-scroll-target="#sec-DataAnalysis_TMTPipeline">TMT quantitative mass spec pipeline</a></li>
+  <li><a href="#sec-DataAnalysis_TMTPipeline" id="toc-sec-DataAnalysis_TMTPipeline" class="nav-link active" data-scroll-target="#sec-DataAnalysis_TMTPipeline">TMT quantitative mass spectrometry pipeline</a></li>
+  <li><a href="#sec-SILAC_DataAnalysis" id="toc-sec-SILAC_DataAnalysis" class="nav-link" data-scroll-target="#sec-SILAC_DataAnalysis">SILAC quantitative and mass spectrometry pipeline</a></li>
   <li><a href="#sec-DataAnalysis_visualization" id="toc-sec-DataAnalysis_visualization" class="nav-link" data-scroll-target="#sec-DataAnalysis_visualization">Visualizing proteomics data</a>
   <ul class="collapse">
   <li><a href="#volcano-plots" id="toc-volcano-plots" class="nav-link" data-scroll-target="#volcano-plots">Volcano Plots</a></li>
@@ -403,13 +404,17 @@ div.csl-indent {
 
 
 <section id="sec-DataAnalysis_TMTPipeline" class="level2">
-<h2 class="anchored" data-anchor-id="sec-DataAnalysis_TMTPipeline">TMT quantitative mass spec pipeline</h2>
+<h2 class="anchored" data-anchor-id="sec-DataAnalysis_TMTPipeline">TMT quantitative mass spectrometry pipeline</h2>
 <p>To ensure consistency across all publicly available mass spectrometry datasets that used TMT isobaric mass tagging, we applied the same standardized analysis pipeline previously published in Farley et al.&nbsp;(2024, A), Farley et al.&nbsp;(2024, B), and Thomas et al.&nbsp;(2025)<span class="citation" data-cites="farleyTrifunctionalSphinganineNew2024a farleyTrifunctionalFattyAcid2024 thomasTrifunctionalLipidDerivatives2025"><sup><a href="#ref-farleyTrifunctionalSphinganineNew2024a" role="doc-biblioref">1</a>–<a href="#ref-thomasTrifunctionalLipidDerivatives2025" role="doc-biblioref">3</a></sup></span>. This approach allows for better comparability between datasets. Several of the datasets included in this repository were generated and analyzed at the European Molecular Biosciences Laboratories (EMBL) in Heidelberg, Germany, where Dr.&nbsp;Frank Stein developed and implemented the data analysis pipeline.</p>
 <p>In summary, we processed the mass spectrometry (MS) data using FragPipe<span class="citation" data-cites="yuAnalysisDIAProteomics2023"><sup><a href="#ref-yuAnalysisDIAProteomics2023" role="doc-biblioref">4</a></sup></span>. The protein search was performed using a UniProt FASTA database with one entry per gene, excluding isoforms and minimizing TrEMBL entries. Common contaminants and reversed sequences were also included for validation. Proteins were included in the final dataset if they contained at least two razor peptides, as FragPipe applies the Occam’s Razor principle, assigning shared peptides to the protein with the highest supporting evidence.</p>
 <p>For the database search, we included post-translational modifications (PTMs) such as oxidation (M), acetylation (N-term), and carbamidomethylation (C). The raw files were analyzed using FragPipe’s protein.tsv output, which was used as the basis for downstream quantification.</p>
 <p>To account for potential technical variations across experiments, we applied a normalization step using the ‘removeBatchEffect’ function from the limma package to correct for batch effects in log2-transformed TMT reporter ion intensities<span class="citation" data-cites="huberVarianceStabilizationApplied2002 ritchieLimmaPowersDifferential2015"><sup><a href="#ref-huberVarianceStabilizationApplied2002" role="doc-biblioref">5</a>,<a href="#ref-ritchieLimmaPowersDifferential2015" role="doc-biblioref">6</a></sup></span>. Further normalization was carried out using the ‘normalizeVSN’ function of the same package. We identified differentially expressed proteins using the moderated t-test within limma, incorporating replicate information into the statistical model through the ‘lmFit’ function.</p>
 <p>For the protein-lipid probe interaction experiments (+/- UV exposure), proteins were categorized based on their enrichment in the +UV condition. Proteins showing a log2 fold-change of at least 1 and a p-value below 0.05 were classified as “enriched hits,” while those showing similar enrichment trends but with p-values above 0.05 were labeled as “enriched candidates.”</p>
 <p>To better understand the biological significance of the detected proteins, we conducted gene ontology (GO) enrichment analysis using the ‘compareCluster’ function from the ‘clusterProfiler’ package<span class="citation" data-cites="yuClusterProfilerPackageComparing2012"><sup><a href="#ref-yuClusterProfilerPackageComparing2012" role="doc-biblioref">7</a></sup></span>. This method evaluates whether specific GO terms are overrepresented in the dataset compared to a background gene set. We performed enrichment analysis for three GO categories: Cellular Component (CC), Molecular Function (MF), and Biological Process (BP). The reference database used was ‘org.Pf.plasmo.db.’ To quantify enrichment, we calculated the odds ratio by comparing the proportion of genes associated with each GO term in our dataset (‘GeneRatio’) with the proportion in the reference background set (‘BgRatio’). A value greater than 1 suggests that a given GO term is more prevalent in our dataset than expected by chance.</p>
+</section>
+<section id="sec-SILAC_DataAnalysis" class="level2">
+<h2 class="anchored" data-anchor-id="sec-SILAC_DataAnalysis">SILAC quantitative and mass spectrometry pipeline</h2>
+<p>In this repository, only one dataset utilized SILAC to quantify protein interactors, <a href="../IndividualStudies/DCC_2025.html">Chiu et al.&nbsp;2025</a>, and so an <em>ad hoc</em> method was applied to coerce the data into the framework of the standardized data visualizations of the site. The results are as reported in Chiu et al.&nbsp;2025<span class="citation" data-cites="chiuPhotoaffinityLabelingReveals2025"><sup><a href="#ref-chiuPhotoaffinityLabelingReveals2025" role="doc-biblioref">8</a></sup></span>.</p>
 <!-- 
 ## PSM quantitative mass spec analysis
 
@@ -483,6 +488,9 @@ div.csl-indent {
 </div>
 <div id="ref-yuClusterProfilerPackageComparing2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">7. </div><div class="csl-right-inline">Yu, G., Wang, L.-G., Han, Y. &amp; He, Q.-Y. <a href="https://doi.org/10.1089/omi.2011.0118"><span class="nocase">clusterProfiler</span>: An <span>R Package</span> for <span>Comparing Biological Themes Among Gene Clusters</span></a>. <em>OMICS: A Journal of Integrative Biology</em> <strong>16</strong>, 284–287 (2012).</div>
+</div>
+<div id="ref-chiuPhotoaffinityLabelingReveals2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Chiu, D.-C., Lin, H. &amp; Baskin, J. M. Photoaffinity <span>Labeling Reveals</span> a <span>Role</span> for the <span>Unusual Triply Acylated Phospholipid N-Acylphosphatidylethanolamine</span> in <span>Lactate Homeostasis</span>. <a href="https://chemrxiv.org/engage/chemrxiv/article-details/67c722106dde43c9087866fd">https://chemrxiv.org/engage/chemrxiv/article-details/67c722106dde43c9087866fd</a> (2025) doi:<a href="https://doi.org/10.26434/chemrxiv-2025-j8nqz">10.26434/chemrxiv-2025-j8nqz</a>.</div>
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

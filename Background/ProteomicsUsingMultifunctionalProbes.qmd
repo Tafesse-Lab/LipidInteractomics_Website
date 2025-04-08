@@ -91,13 +91,52 @@ Label-free quantification is a practical and widely used method for proteomics r
 
 #### Isotopic Label-based quantification
 
-All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to significant cost and difficult sample preparation. 
+All label-based mass spectrometry quantification methods use stable isotopes to distinguish the source of proteins within a pooled collective of several experimental samples. Previously, the technique known as Stable Isotope Labeling with Amino acids in Cell Culture (SILAC) was common, though this has fallen out of use due to significant cost and difficult sample preparation.
+
+An early (and still used) form of isotopic labeling was known as Stable Isotope Labeling with Amino acids in Cell culture (SILAC). This method allows for quantification of the relative protein abundances between two or three conditions in cell culture. 
 
 Modern isotopic label-based techniques such as iTRAQ (isotopic Tagging for Relative and Absolute  Quantification) and TMT (Tandem Mass Tagging) have become the norm. Isotopic labeling is a powerful quantitative mass spectrometry technique that enables the simultaneous analysis of multiple samples in a single MS run. This approach improves efficiency and allows for precise relative quantification of proteins across experimental conditions. For the purposes of this overview, we will focus on TMT as it has greater capacity for samples per experiment (16+ as opposed to 8), and the techniques are fundamentally similar.
 
-##### How It Works
+##### How SILAC Works:
 
-1.  **Chemical Labeling:** Each sample is chemically tagged with a unique TMT label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.
+1. **Isotopic Labeling:** Independent cell culturing conditions are pre-treated with media containing with differing amino acid composition, encoding the peptides of each condition with either "heavy" arginine and lysine residues (containing C~13~ isotopes) or "light" (containing a standard proportion of C~12~ isotopes). Media treatments are typically for several days or weeks to allow for substantial incorporation of heavy/light labeled isotopes into cells (this is typically dependent on the rate of cell division).
+
+2. **Experimental conditions:** After isotopic labeling, the experimental conditions can be applied. In the case of lipid probe interactions studies, one would treat the cells with probe, and either uncage via UV irradiation or leave caged for control. The cells are then collected, lysed and protein is collected.
+
+3. **Sample pooling:** After protein collection, samples can be pooled, digested, and desalted.
+
+4. **Mass Spectrometry Analysis:** 
+
+  -   **MS1 (Peptide Isolation):** Heavy and Light peptides will differ in m/z depending on their composition of lysine and arginine (a heavy peptide with a single lysine residue will be 6 daltons heavier than its light counterpart). These Heavy/Light peptide pairs will be isolated independently for MS2 analysis.
+
+    -   **MS2 (Peptide Sequencing & Tag Fragmentation):** Peptides are fragmented for sequence identification.
+
+5. **Quantification:** The relative abundance of a given peptide can be calculated from the Heavy/Light MS1 ratio -- thus, the quantification data is collected at the MS1 level, and is limited by the MS1 duty cycle. For this reason, SILAC can have a high sensitivity to abundant peptides "swamping" the signal of less abundant peptides. A high degree of fractionation is frequently needed to maximize protein identifications. 
+
+6. **Comparison and Statistics:** The fold-change in protein abundance is directly encoded in the Heavy/Light ratio of SILAC peptide pairs. Typically a Student's t-test can be used to calculate the statistical significance of each protein.
+
+##### Advantages of SILAC
+
+- **Simple and Robust:** Because the isotopic labeling is accomplished via media feeding, there are no challenging chemical reactions and a high degree of incorporation can be achieved reliably *in vitro*. Similarly, the sample pooling occurs at a very early stage in the sample preparation process, limiting any biasing losses of one sample or its control. 
+
+##### Disadvantages/Limitations of SILAC
+
+- **Long Label Incorporation Time:** Because the rate of label incorporation is dependent on the cell division rate, slowly-dividing cells (e.g. neurons, organoids) can be prohibitively expensive to perform.
+
+- **Low Factor of Multiplexing:** As of this writing, only two or three conditions can be compared within a single multiplex cassette.
+
+- **MS1 Quantification Sacrifices Protein IDs:** Because SILAC quantification is at the MS1 level, one can only acquire data for half as many unique peptide IDs (or one third, in the case of Triple SILAC).
+
+- **Limited to Laboratory Samples:** Because the samples must be pre-treated with heavy or light media, only cell cultures or small lab animals are conducive to SILAC analysis. It is impossible (or prohibitively expensive) to investigate biopsied human samples or larger tissues using SILAC.
+
+##### SILAC Conclusion
+
+While SILAC is a powerful technique, its limitations have resulted in a general reduction in its use in interaction experiments. Among the datasets presented in this repository at the time of writing, only the dataset presented in [Chiu et al. 2025](/IndividualStudies/DCC_2025.qmd) was prepared using SILAC[@chiuPhotoaffinityLabelingReveals2025].
+
+
+##### How TMT & iTRAQ Work:
+
+1.  **Chemical Labeling:** Each sample is chemically tagged with a unique TMT or iTRAQ label, which consists of a reactive group binding to peptides and a mass reporter for sample differentiation.
 
 2.  **Sample Pooling:** Labeled samples are combined into a single pooled group, reducing the need for separate MS runs.
 
@@ -105,13 +144,13 @@ Modern isotopic label-based techniques such as iTRAQ (isotopic Tagging for Relat
 
     -   **MS1 (Peptide Isolation):** Peptides are separated and detected based on their mass-to-charge ratio (m/z).
 
-    -   **MS2 (Peptide Sequencing & Tag Fragmentation):** Peptides are fragmented for sequence identification, and TMT mass tags fragment to generate reporter ions.
+    -   **MS2 (Peptide Sequencing & Tag Fragmentation):** Peptides are fragmented for sequence identification, and TMT/iTRAQ mass tags fragment to generate reporter ions.
 
 4.  **Quantification:** The intensity of reporter ions reveals the relative abundance of peptides across the original samples.
 
-5.  **Comparison Across Samples:** Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing many samples to be analyzed in a single experiment or large-scale study.
+5.  **Comparison Across Samples:** Within a TMT cassette (typically 16 samples), relative protein abundance is calculated from the reporter ion intensities. A pooled control channel enables comparison across cassettes, allowing many samples to be analyzed in a single experiment or large-scale study. iTRAQ has fallen out of favor somewhat because it is limited to 4 samples per cassette, though it is still commonly used.
 
-##### Advantages of TMT Labeling
+##### Advantages of TMT/iTRAQ Labeling
 
 -   **Increased Throughput & Efficiency:** Enables multiplexing of many samples (e.g., 16 or more), reducing the number of separate MS runs.
 
@@ -131,5 +170,5 @@ Modern isotopic label-based techniques such as iTRAQ (isotopic Tagging for Relat
 
 ##### Conclusion
 
-TMT-based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.
+TMT- or iTRAQ based mass spectrometry is a valuable tool for large-scale proteomics, offering high-throughput, precise, and deep proteome coverage. While it requires advanced instrumentation and careful sample preparation, its ability to multiplex multiple samples in a single run makes it an attractive option for high-confidence protein quantification.
 
