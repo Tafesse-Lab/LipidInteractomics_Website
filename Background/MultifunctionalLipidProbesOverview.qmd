@@ -16,7 +16,7 @@ crossref:
 
 **This repository is still under construction, please forgive us for incomplete sections as we build features!**
 
-Functionalized lipid probes are a toolset intended to fuse several niche biotechnologies. This overview will serve as a summary of the capabilities, nuances, and limitations of their utility. Please find additional resources and published primary and review articles below for greater detail.
+Functionalized lipid probes are a toolset intended to fuse several niche biotechnologies. This overview will serve as a summary of the capabilifties, nuances, and limitations of their utility. Please find additional resources and published primary and review articles below for greater detail.
 
 ## Introduction: Why Study Lipid Interactomes?
 

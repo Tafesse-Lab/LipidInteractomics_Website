@@ -6,6 +6,7 @@ project:
     - "!LipidProbe/template_lipidprobe.qmd"
     - "!IndividualStudies/template_study.qmd"
     - "!WeeklyTeamMeeting_notes.md"
+    - "!HourlyTracking/"
     # - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
 bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
@@ -83,6 +84,8 @@ website:
                 text: "PI(3,4,5)P~3~"
               - href: LipidProbe/Diacylglycerol.qmd
                 text: "Diacylglycerol"
+              - href: LipidProbe/Glycosylphosphatidylinositol.qmd
+                text: "GPI"
           - section: "Sphingolipids"
             contents:
               - href: LipidProbe/Sphinganine.qmd
@@ -108,6 +111,8 @@ website:
             text: "Farley et al., 2024; A"
           - href: IndividualStudies/SF_2024_B.qmd
             text: "Farley et al., 2024; B"
+          - href: IndividualStudies/SK_2024.qmd
+            text: Kundu et al. 2024
           - href: IndividualStudies/WY_2021.qmd
             text: "Yu et al., 2021"
           - href: IndividualStudies/RM_2021.qmd

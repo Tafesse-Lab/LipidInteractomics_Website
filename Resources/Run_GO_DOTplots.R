@@ -177,3 +177,16 @@ MF_enrichment_plots(WY_2021, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_MF-DOTplo
 
 BP_enrichment_plots(WY_2021, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_BP-DOTplot")
 # BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")
+
+## SK_2024
+
+SK_2024 <- read_csv(here("IndividualStudies/DataTables/SK_2024_ChemEuro.csv"))
+
+CC_enrichment_plots(SK_2024, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_CC-DOTplot")
+# CC_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_CC-CNETplot")
+
+MF_enrichment_plots(SK_2024, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_MF-DOTplot")
+# MF_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_MF-CNETplot")
+
+BP_enrichment_plots(SK_2024, "dot", "/LipidProbe/GO_plots/PDAA_WY_2021_BP-DOTplot")
+# BP_enrichment_plots(AT_2025, "cnet", "PE-PA_AT_2025_BP-CNETplot")

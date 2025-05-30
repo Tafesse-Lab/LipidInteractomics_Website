@@ -1,0 +1,143 @@
+---
+title: "Bifunctional Glycosylphosphatidylinositol (GPI)"
+prefer-html: true
+format: 
+  html:
+    embed-resources: false
+callout-icon: false
+---
+
+## Structure
+
+(Still working on this section, please forgive us for the incomplete structure!)
+
+
+## Protein Interactome
+
+::::{.callout-tip}
+### Cell background: HeLa
+
+
+::: {.callout-note collapse="true"}
+
+{{< include /StudyInformation_includes/SK_2024_include.qmd >}}
+
+:::
+
+
+#### Data visualization
+ 
+```{r setup, echo=FALSE, include=FALSE}
+
+## intitialize libraries
+library(here)
+
+## Opening the source file for the ggplot custom theme
+source(paste0(here(), "/Resources/ggplot_styles.R"))
+
+```
+
+```{r, echo=FALSE, include=FALSE}
+
+
+
+data <- readr::read_csv(here::here("LipidProbe/DataSets/bf-GPI_SK_2024_ChemEuro.csv"))
+
+# Organize the hit annotations as factors
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "enriched candidate", "no hit", "NA"), ordered=TRUE)
+
+```
+
+
+::: {.panel-tabset}
+
+##### Volcano plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+
+VolcanoPlotStandardized(data)
+
+```
+:::
+
+
+##### Ranked-order plots
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+
+RankedOrderPlotStandard(data)
+```
+:::
+
+
+##### MA Plot
+
+:::{.border}
+```{r, echo=FALSE, warning=FALSE}
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+
+MAStandard(data)
+
+```
+
+:::
+:::
+
+
+#### Gene Ontology Analysis
+
+**In beta: GO analysis still under development**
+
+:::::{.border}
+::::{#fig-PE_GOplots}
+::: {.panel-tabset}
+
+##### Cell Compartment
+
+
+
+#### Data exploration and download
+
+Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.
+
+:::{.border}
+```{r, echo=FALSE}
+
+# Here is the code to make the filterable lists shown in the crosstalk table below
+
+data <- data |>
+  dplyr::select(gene_name, hit_annotation, logFC, pvalue) |>
+  mutate(logFC = signif(logFC, digits=3),
+          pvalue = signif(pvalue, digits=3)) |>
+  arrange(hit_annotation, -logFC) 
+
+## Creates a reactive dataframe
+data_reactive <- crosstalk::SharedData$new(data)
+
+htmltools::tags$div(
+  class = "filter-container",
+  filter_checkbox(id = "hit_annotation",
+                  label = "Enrichment criteria:", 
+                  sharedData = data_reactive,
+                  group = ~hit_annotation,
+                  inline="true")
+)
+
+## Displays the reactive dataframe
+datatable(data_reactive, 
+          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
+          options = list(pageLength = 10),
+                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value"))              
+
+```
+:::
+
+<br>
+
+{{< downloadthis LipidProbe/DataSets/bf-GPI_SK_2024_ChemEuro.csv dname="bf-GPI_SK_2024_ChemEuro">}}
+
+::::

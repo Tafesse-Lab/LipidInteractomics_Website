@@ -49,6 +49,7 @@
 
 # get_gene_symbol <- Vectorize(get_gene_symbol)
 
+# get_gene_symbol("BAG37094.1")
 
 
 # DCC_2025_RawData <- read_csv(here("IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv"))
