@@ -55,7 +55,7 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a Fold-change or p-value threshold of significance (p < 0.05 & logFC > 1), and Orange proteins surpass the threshold of significance (p < 0.05 & logFC > 2)."
 
 VolcanoPlotStandardized(data)
 
@@ -67,7 +67,7 @@ VolcanoPlotStandardized(data)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. The left panel depicts the results of a pulldown using trifunctionalized phosphatidic acid; the right panel depicts the results of the pulldown using trifunctionalized phosphatidylethanolamine. Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a Fold-change or p-value threshold of significance (p < 0.05 & logFC > 1), and Orange proteins surpass the threshold of significance (p < 0.05 & logFC > 2)."
 
 RankedOrderPlotStandard(data)
 ```
@@ -78,7 +78,7 @@ RankedOrderPlotStandard(data)
 
 :::{.border}
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV."
+#| fig-cap: "Data as reported in [Kundu et al., 2024](/IndividualStudies/SK_2024.qmd). MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are unenriched or depleted in the presence of probe, Purple proteins are enriched to the probe but fall below a Fold-change or p-value threshold of significance (p < 0.05 & logFC > 1), and Orange proteins surpass the threshold of significance (p < 0.05 & logFC > 2)."
 
 MAStandard(data)
 

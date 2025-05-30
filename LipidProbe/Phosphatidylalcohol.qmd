@@ -74,7 +74,7 @@ RankedOrderPlotStandard(data)
 ##### MA plot
 
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). Black proteins are designated as not statistically significant. Orange \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed."
+#| fig-cap: "Data as reported in [Yu et al., 2021](/IndividualStudies/WY_2021.qmd). MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis).  Black proteins are designated as not statistically significant. Orange \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed."
 
 MAStandard(data)
 ```

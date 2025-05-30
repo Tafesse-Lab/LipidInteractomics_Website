@@ -79,7 +79,7 @@ RankedOrderPlotStandard(data)
 ##### MA Plot
 
 ```{r, echo=FALSE, warning=FALSE}
-#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
+#| fig-cap: "Data as reported in [Farley et al., 2024](/IndividualStudies/SF_2024.qmd). MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis).  Black proteins are unenriched or depleted in the presence of probe, Purple enriched candidates are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and Orange enriched hits are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV)."
 
 MAStandard(data)
 
