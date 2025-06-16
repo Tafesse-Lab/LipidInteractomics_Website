@@ -16,7 +16,7 @@ library(here)
 source(paste0(here(), "/Resources/ggplot_styles.R"))
 
 # Opening the datatable for this page IN FINAL RENDER
-data <- readr::read_csv(paste0(here(), "/IndividualStudies/DataTables/SF_Chem_Comm_2024_download.csv"))
+data <- readr::read_csv(here("IndividualStudies/DataTables/SF_ChemComm_2024_download.csv"))
 
 # Organizing the hit annotations as factors
 data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit", "NA"), ordered = TRUE)
@@ -111,9 +111,10 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, fdr) |>
+  dplyr::select(gene_name, protein_id, LipidProbe, hit_annotation, logFC, pvalue, AveExpr, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
+          AveExpr = signif(AveExpr, digits=3),
           fdr = signif(fdr, digits = 3)) |>
   arrange(hit_annotation) |>
   arrange(LipidProbe)
@@ -141,5 +142,5 @@ datatable(data_reactive, options = list(pageLength = 10))
 
 ## Data download
 
-{{< downloadthis DataTables/SF_Chem_Comm_2024_download.csv dname="SF_Chem_Comm_2024">}}
+{{< downloadthis DataTables/SF_ChemComm_2024_download.csv dname="SF_Chem_Comm_2024">}}
 
