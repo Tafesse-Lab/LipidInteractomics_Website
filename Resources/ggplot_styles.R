@@ -91,8 +91,8 @@ MAStandard <- function(data) {
                                     "AveExpr: ", AveExpr, "\n"))) +
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
-        scale_x_continuous(limits = c(0.9 * min(abs(data$AveExpr)), 1.1 * max(abs(data$AveExpr))))+
-        scale_y_continuous(limits = c(-1.1 * max(abs(data$logFC)), 1.1 * max(abs(data$logFC))))+
+        scale_x_continuous(limits = c(0.9 * min(safe_abs(data$AveExpr)), 1.1 * max(safe_abs(data$AveExpr))))+
+        scale_y_continuous(limits = c(-1.1 * max(safe_abs(data$logFC)), 1.1 * max(safe_abs(data$logFC))))+
         scale_shape_manual(values = c("enriched hit" = 21,
                                     "hit" = 21,
                                     "enriched candidate" = 24,

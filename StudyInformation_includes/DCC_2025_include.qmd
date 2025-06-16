@@ -17,7 +17,7 @@ Most eukaryotic membranes comprise phospholipids bearing two hydrophobic tails, 
 
 <a href="/LipidProbe/N-Acylphosphatidylethanolamine.qmd" class="hover-preview">Bifunctional NAPE</a>
 <span class="hover-image">
-  <img src="/Structures/BF-NAPE.png" alt="Bifunctional NAPE" />
+  <img src="/LipidProbe/Structures/BF-NAPE.png" alt="Bifunctional NAPE" />
 </span>
 
 #### Cell line analyzed

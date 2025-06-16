@@ -14,28 +14,6 @@ standalone: false
 
 :::
 
-```{r HiddenOriginalDataWrangling, include=FALSE, echo=FALSE}
-
-# data <- readr::read_csv(paste0(here::here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv")) |> 
-#   group_by(gene_name) |>
-#   filter(ratio_MvsL != "") |>
-#   summarise(logFC = mean(log2(ratio_MvsL)),
-#             pvalue = mean(pvalue),
-#             numReplicates = n(),
-#             AveExpr = log10(mean(L_abundance) + mean(M_abundance))/2) |>
-#   arrange(-logFC) |>
-#   mutate(LipidProbe = "BF-NAPE",
-#          hit_annotation = case_when(.default = "no hit",
-#                                     logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 2 ~ "enriched candidate",
-#                                     logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 3 ~ "enriched hit")) |>
-#   glimpse()
-
-# median_logFC <- median(data$logFC)
-
-# data$logFC <- data$logFC - median_logFC
-
-```
-
 ## Data visualization
  
 
@@ -57,7 +35,7 @@ data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched h
 
 #### Volcano plots
 
-```{r, echo=FALSE, warning=FALSE}
+```{r Volcanoplots, echo=FALSE, warning=FALSE}
 #| fig-cap: "Volcano plots depict the relative enrichment of each protein versus non-crosslinked control (x-axis) and the statistical significance of each protein following a Student's t-test (y-axis, -log10 transformed). Black proteins are identified in only one replicate, Purple enriched candidates are defined as proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01, and Orange enriched hits are defined as proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01)."
 
 VolcanoPlotStandardized(data)
@@ -67,7 +45,7 @@ VolcanoPlotStandardized(data)
 
 #### Ranked-order plots
 
-```{r, echo=FALSE, warning=FALSE}
+```{r ROplots, echo=FALSE, warning=FALSE}
 #| fig-cap: "Ranked-order plots depict the relative enrichment of each protein versus non-crosslinked control (y-axis) from lowest to highest. Black proteins are identified in only one replicate, Purple enriched candidates are defined as proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05, and Orange enriched hits are defined as proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05)."
 
 RankedOrderPlotStandard(data)
@@ -76,7 +54,7 @@ RankedOrderPlotStandard(data)
 
 #### MA Plots
 
-```{r, echo=FALSE, warning=FALSE}
+```{r MAplots, echo=FALSE, warning=FALSE}
 #| fig-cap: "MA plots depict the average abundance of each protein in the crosslinked and uncrosslinked conditions (x-axis) versus the log2-transformed fold-change between the crosslinked and uncrosslinked conditions (y-axis). Black proteins are identified in only one replicate, Purple enriched candidates are defined as proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05, and Orange enriched hits are defined as proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05)."
 
 MAStandard(data)
@@ -90,8 +68,7 @@ MAStandard(data)
 
 ###### Wrangling for the Venn Diagram ######
 # Read the dataset
-VennData <- readr::read_csv(paste0(here::here(), "/IndividualStudies/DataTables/DCC_2025_ChemrXiv_FullDataset.csv")) |>
-  
+VennData <- readr::read_csv(here("IndividualStudies/DataTables/DataWrangling/DCC_2025_ChemrXiv_FullDataset.csv")) |>
   filter(ratio_MvsL > log2(1.5), pvalue < 0.05) |>
   glimpse()
 
@@ -136,7 +113,7 @@ ggvenn
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, numReplicates) |>
+  dplyr::select(gene_name, gene_ID, LipidProbe, hit_annotation, logFC, pvalue, numReplicates) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
   arrange(hit_annotation, numReplicates, -logFC)
@@ -160,7 +137,7 @@ htmltools::tags$div(
 datatable(data_reactive, 
           caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.05.",
           options = list(pageLength = 10),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Num Replicate IDs"),
+                         colnames = c("Gene Name", "Gene ID/Accession", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Num Replicate IDs"),
                          rownames=FALSE)
 
 ```
