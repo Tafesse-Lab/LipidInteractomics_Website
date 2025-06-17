@@ -12,7 +12,8 @@ source(here::here("Resources/ggplot_styles.R"))
 ############################################################
 
 
-# Coercing original data handoff into standardized format for my plotting functions
+# 1 -  Coercing original data handoff into standardized format for my plotting functions
+
 #   - averaging logFC and pvalues for the ids of each protein by replicate, counting the number of reps for each protein
 #   - adding statistical annotation based on the publication's cutoffs
 #   - maintained the original statistical output from the publication
@@ -39,3 +40,19 @@ median_logFC <- median(data$logFC)
 data$logFC <- data$logFC - median_logFC
 
 write_csv(data, here("IndividualStudies/DataTables/DCC_2025_ChemrXiv_Download.csv"))
+
+
+# 2 - Adding to compare lipid probes page
+
+data <- readr::read_csv(here::here("IndividualStudies/DataTables/DCC_2025_ChemrXiv_Download.csv")) |>
+  dplyr::select(LipidProbe, gene_name, logFC, pvalue, hit_annotation) |>
+  mutate(CellLine = "HeLa") |>
+  glimpse()
+
+CombinedProbeData <- read_csv(here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv")) |>
+  # dplyr::select(-`...1`) |>
+  glimpse() |>
+  rbind(data)
+
+write_csv(CombinedProbeData, here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))  
+

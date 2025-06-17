@@ -75,7 +75,9 @@ library(here)
 </html>
 ```
 
-This Shiny app plots the enrichment results of two user-selected datasets against each other for visual comparison of protein enrichment toward each lipid probe. Use the dropdown menus to select lipid probes to plot against each other and visualize the enriched hits of each probe. Proteins missing in one dataset are temporarily assigned a logFC of 0 for visualization -- thus, they will appear along one axis. Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. The significance thresholds for each dataset are as defined on the respective lipid probe or studies page -- this page is intended for a simple qualitative comparison of hits between datasets.
+This Shiny app plots the enrichment results of two user-selected datasets against each other for visual comparison of protein enrichment toward each lipid probe. Use the dropdown menus to select lipid probes to plot against each other and visualize the enriched hits of each probe. Proteins missing in one dataset are temporarily assigned a logFC of 0 for visualization -- thus, they will appear along one axis. Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. The red dashed line denotes the line of best fit between the datasets, determined via linear regression (the red text denotes the line formula and adjusted R^2^ value).
+
+Note that the significance thresholds for each dataset are as defined on the respective lipid probe or studies page and are not the same between studies -- this page is intended for a simple qualitative comparison of hits between datasets.
 :::
 
 <!-- 

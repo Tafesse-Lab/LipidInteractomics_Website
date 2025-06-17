@@ -5,14 +5,16 @@ library(plotly)
 library(readr)
 library(shiny)
 library(here)
-
 # File path for testing
-#df <- read_csv(paste0(here(), "/ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))
+# df <- read_csv("~/LipidInteractomics_Website_local/LipidInteractomics_Website/ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv") 
+
 
 # File path for deploying to Shinyapps.io
-df <- read_csv("combinedProbeDatasets_TMT.csv")
+df <- read_csv("combinedProbeDatasets_TMT.csv") |>
+   mutate(probeOptions = paste0(LipidProbe, " - ", CellLine))
 
-probeOptions <- unique(df$LipidProbe)
+
+probeOptions <- unique(df$probeOptions)
 
 # Shiny App
 ui <- fluidPage(
@@ -35,20 +37,14 @@ server <- function(input, output, session) {
 	# Creating filtered datasets for the probes selected
 	xData <- reactive({
 		xData <- df |>
-			filter(LipidProbe == input$probe1) 
+			filter(probeOptions == input$probe1) 
 		return(xData)
 	})
 
 	yData <- reactive({
 		yData <- df |>
-			filter(LipidProbe == input$probe2) 
+			filter(probeOptions == input$probe2) 
 		return(yData)
-	})
-
-	zData <- reactive({
-		zData <- df |>
-			filter(LipidProbe == input$probe3) 
-		return(zData)
 	})
 
 	# The output call for making the plot - includes some data wrangling to make sure the selected probes are handled properly. A

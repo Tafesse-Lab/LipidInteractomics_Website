@@ -11,6 +11,7 @@ source(here::here("Resources/ggplot_styles.R"))
 
 ############################################################
 
+# 1 - Coercing data handoff into standard format
 
 RawData <- read_csv(here::here("IndividualStudies/DataTables/WY_2021_ACSChemBio_RawData2.csv"))
 
@@ -62,3 +63,22 @@ data <- t_test_results |>
   left_join(averaged_data)
 
 write_csv(data, here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
+
+############################################################
+
+# 2 - Adding to compare lipid probes page
+
+data <- readr::read_csv(here::here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv")) |>
+  dplyr::select(LipidProbe, gene_name, logFC, pvalue, hit_annotation) |>
+  mutate(CellLine = "HeLa") |>
+  glimpse()
+
+CombinedProbeData <- read_csv(here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv")) |>
+  # dplyr::select(-`...1`) |>
+  glimpse() |>
+  rbind(data)
+
+CombinedProbeData |> filter(LipidProbe == "PDAA")
+
+write_csv(CombinedProbeData, here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))  
+
