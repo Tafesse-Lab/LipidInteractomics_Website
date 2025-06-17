@@ -361,7 +361,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#ratiometric-data" id="toc-ratiometric-data" class="nav-link active" data-scroll-target="#ratiometric-data">Ratiometric data</a></li>
-  <li><a href="#shared-hits" id="toc-shared-hits" class="nav-link" data-scroll-target="#shared-hits">Shared hits</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/blob/main/LipidProbe/EnrichedHitsComparison.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -389,11 +388,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="ratiometric-data" class="level2">
 <h2 class="anchored" data-anchor-id="ratiometric-data">Ratiometric data</h2>
-<p>For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via <a href="../Background/MultifunctionalLipidProbesOverview.html#sec-TMT">Tandem Mass Tagging</a>.</p>
-<p>Use the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. Depicted are only the proteins present in the datasets of both probes.</p>
+<p>While the results of proteomics data resulting from distinct mass spectrometry analyses should not be directly compared quantitatively (i.e.&nbsp;performing statistical comparison between datasets collected on different instruments using different methods), one may qualitatively compare the results of different analyses and assess whether hits are co-enriched between different lipid probe affinity handles. We have prepared the visualization tool below to enable this to be done visually.</p>
 <!-- Data wrangling, will comment out most of this when it's all done. 
 Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->
 <div class="border">
+<div id="fig-ProbeVsProbeComparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ProbeVsProbeComparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 
 
@@ -403,7 +404,7 @@ Pulling the enriched hits from each probe, then making a long dataframe that can
   <style>
     iframe {
       width: 100%;
-      height: 90vh;
+      height: 75vh;
       border: none;
     }
   </style>
@@ -413,11 +414,16 @@ Pulling the enriched hits from each probe, then making a long dataframe that can
 
 
 </div>
-</section>
-<section id="shared-hits" class="level2">
-<h2 class="anchored" data-anchor-id="shared-hits">Shared hits</h2>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ProbeVsProbeComparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: This Shiny app plots the enrichment results of two user-selected datasets against each other for visual comparison of protein enrichment toward each lipid probe. Use the dropdown menus to select lipid probes to plot against each other and visualize the enriched hits of each probe. Proteins missing in one dataset are temporarily assigned a logFC of 0 for visualization – thus, they will appear along one axis. Black proteins are unenriched in respect to both probes; Purple proteins are “enriched” with respect to only the probe on the x-axis; Green proteins are “enriched” with respect to only the probe on the y-axis; and Orange proteins are “enriched” in both probes. The significance thresholds for each dataset are as defined on the respective lipid probe or studies page – this page is intended for a simple qualitative comparison of hits between datasets.
+</figcaption>
+</figure>
+</div>
+<!-- 
+## Shared hits -->
 
 
+</div>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->

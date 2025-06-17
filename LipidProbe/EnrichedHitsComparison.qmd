@@ -7,9 +7,7 @@ format:
 
 ## Ratiometric data
 
-For a select subset of the lipid probes depicted on this repository, one can directly compare their enrichment of proteins. In the case of the trifunctionalized PE, PA, Sph, Spa, 8-3 FA, and 1-10 FA probes, all were analyzed using quantitative mass spectrometry via [Tandem Mass Tagging](/Background/MultifunctionalLipidProbesOverview.qmd#sec-TMT). 
-
-Use the dropdown menu below to select two lipid probes to plot against each other and visualize the enriched hits of each probe. Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. Depicted are only the proteins present in the datasets of both probes.
+While the results of proteomics data resulting from distinct mass spectrometry analyses should not be directly compared quantitatively (i.e. performing statistical comparison between datasets collected on different instruments using different methods), one may qualitatively compare the results of different analyses and assess whether hits are co-enriched between different lipid probe affinity handles. We have prepared the visualization tool below to enable this to be done visually.
 
 <!-- Data wrangling, will comment out most of this when it's all done. 
 Pulling the enriched hits from each probe, then making a long dataframe that can be plopped into a Venn diagram adjacent visualization -->
@@ -55,6 +53,7 @@ library(here)
 ```
 
 :::{.border}
+:::{#fig-ProbeVsProbeComparison}
 ```{=html}
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +64,7 @@ library(here)
   <style>
     iframe {
       width: 100%;
-      height: 90vh;
+      height: 75vh;
       border: none;
     }
   </style>
@@ -75,38 +74,41 @@ library(here)
 </body>
 </html>
 ```
+
+This Shiny app plots the enrichment results of two user-selected datasets against each other for visual comparison of protein enrichment toward each lipid probe. Use the dropdown menus to select lipid probes to plot against each other and visualize the enriched hits of each probe. Proteins missing in one dataset are temporarily assigned a logFC of 0 for visualization -- thus, they will appear along one axis. Black proteins are unenriched in respect to both probes; Purple proteins are "enriched" with respect to only the probe on the x-axis; Green proteins are "enriched" with respect to only the probe on the y-axis; and Orange proteins are "enriched" in both probes. The significance thresholds for each dataset are as defined on the respective lipid probe or studies page -- this page is intended for a simple qualitative comparison of hits between datasets.
 :::
 
-## Shared hits
+<!-- 
+## Shared hits -->
 
 ```{r, echo=FALSE, warning=FALSE, include=FALSE}
 # Making a dataset for a venn diagram maker! This will all be commented out at the end.
 
-PA_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) |>
-  filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# PA_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PA_HeLa_AT_2025.csv")) |>
+#   filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-PE_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv")) |>
-	filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# PE_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/PE_HeLa_AT_2025.csv")) |>
+# 	filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-Spa_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
-	filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# Spa_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
+# 	filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-Sph_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
-	filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# Sph_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv")) |>
+# 	filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-FA_8_3_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
-	filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# FA_8_3_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/8-3_FA_Huh7_SF_2024.csv")) |>
+# 	filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-FA_1_10_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv")) |>
-	filter(hit_annotation == "enriched hit") |>
-	select(LipidProbe, gene_name)
+# FA_1_10_data <- read_csv(paste0(here(), "/LipidProbe/DataSets/1-10_FA_Huh7_SF_2024.csv")) |>
+# 	filter(hit_annotation == "enriched hit") |>
+# 	select(LipidProbe, gene_name)
 
-combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
+# combinedDataset <- rbind(PA_data, PE_data, Spa_data, Sph_data, FA_8_3_data, FA_1_10_data)
 
 # write.csv(combinedDataset, paste0(here(), "/LipidProbe/DataSets/combinedProbeDatasets_VennDiagram.csv"))
 ```
