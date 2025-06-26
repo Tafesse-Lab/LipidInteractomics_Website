@@ -112,14 +112,15 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 ## Data exploration and download
 
 :::{.border}
-```{r, echo=FALSE, warning=FALSE}
+```{r datatable, echo=FALSE, warning=FALSE}
 
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, hit_annotation, logFC, pvalue, fdr) |>
+  dplyr::select(gene_name, protein_id, hit_annotation, logFC, pvalue, AveExpr, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
+          AveExpr = signif(AveExpr, digits=3),
           fdr = signif(fdr, digits = 3)) |>
   arrange(hit_annotation, -logFC) 
 
@@ -137,11 +138,11 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(data_reactive, 
-          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
-                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value", "FDR"))
-
+                         colnames = c("Gene Name", "Accession #", "Hit Annotation", "LogFC", "p value", "AveExpr (log10)", "FDR"))
 ```
+
+This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. 'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.
 :::
 
 <br>

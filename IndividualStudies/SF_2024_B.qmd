@@ -135,9 +135,12 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(data_reactive, options = list(pageLength = 10))
+datatable(data_reactive,
+         options = list(pageLength = 10))
 
 ```
+
+This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. 'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.
 :::
 
 ## Data download
