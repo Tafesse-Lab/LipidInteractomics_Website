@@ -96,7 +96,7 @@ This site can be viewed at [LipidInteractome.org](lipidinteractome.org) all data
 
 ### Data Submission & Contact
 
-If you would like to submit a relevant dataset, see our [Data Submission Page](https://www.lipidinteractome.org/DataSubmission.html) for details, contact info, and instructions. For site feedback and additional questions, please email the site administrators at <Contact.Us@lipidinteractome.org>
+If you would like to submit a relevant dataset, see our [Data Submission Page](https://lipidinteractome.org/contactus/datasubmission) for details, contact info, and instructions. For site feedback and additional questions, please email the site administrators at <Contact.Us@lipidinteractome.org>
 
 ### Keywords
 
@@ -120,7 +120,7 @@ By providing a centralized platform for lipid interactome data, the Lipid Intera
 
 The Lipid Interactome is an interactive discovery platform built using Quarto, designed to centralize and enhance the study of lipid–protein interactions through curated datasets and dynamic visualization tools. Each page seamlessly integrates R-generated figures, embedding scripts directly into the source material to ensure reproducibility and transparency. The repository currently hosts data from seven published studies, with an expandable framework that supports the incorporation of future datasets as the field progresses.
 
-At its core, the Lipid Interactome enables the direct comparison of lipid interactomes across studies, providing researchers with invaluable insights into the diverse roles that bioactive lipids play in cellular processes. By leveraging standardized data formatting and interactive visualization—including study-specific analysis pages, lipid probe aggregation, and cross-study comparisons via a Shiny application—the platform facilitates intuitive exploration of protein–lipid interactions. As a living repository, we actively encourage researchers to contribute their findings through our [Data Submission](https://www.lipidinteractome.org/contactus/datasubmission) page, ensuring that this resource continues to evolve alongside advancements in lipidomics research.
+At its core, the Lipid Interactome enables the direct comparison of lipid interactomes across studies, providing researchers with invaluable insights into the diverse roles that bioactive lipids play in cellular processes. By leveraging standardized data formatting and interactive visualization—including study-specific analysis pages, lipid probe aggregation, and cross-study comparisons via a Shiny application—the platform facilitates intuitive exploration of protein–lipid interactions. As a living repository, we actively encourage researchers to contribute their findings through our [Data Submission](https://lipidinteractome.org/contactus/datasubmission) page, ensuring that this resource continues to evolve alongside advancements in lipidomics research.
 
 ### FAIR data principles
 
@@ -128,7 +128,7 @@ The Lipid Interactome database was developed with the FAIR (Findable, Accessib
 
 #### Findable
 
-To address the fragmented nature of lipid interactome studies, we have established a centralized platform where researchers can interact with the results of individual studies or explore aggregated findings across multiple studies on a given lipid. The repository is structured to facilitate intuitive navigation between experimental datasets, offering clear entry points for study-specific and lipid-specific analyses. Because this resource is intended as a living repository, we actively invite researchers to contribute their findings following the submission guidelines detailed on our [Data Submission](https://www.lipidinteractome.org/contactus/datasubmission) page.
+To address the fragmented nature of lipid interactome studies, we have established a centralized platform where researchers can interact with the results of individual studies or explore aggregated findings across multiple studies on a given lipid. The repository is structured to facilitate intuitive navigation between experimental datasets, offering clear entry points for study-specific and lipid-specific analyses. Because this resource is intended as a living repository, we actively invite researchers to contribute their findings following the submission guidelines detailed on our [Data Submission](https://lipidinteractome.org/contactus/datasubmission) page.
 
 #### Accessible
 
