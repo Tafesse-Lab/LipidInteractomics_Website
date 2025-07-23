@@ -5,7 +5,7 @@ account: gaelen-guzman
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15095731
-bundleId: 10638844
+bundleId: 10639648
 url: https://gaelen-guzman.shinyapps.io/CompareLipidProbes/
 version: 1
 asMultiple: FALSE

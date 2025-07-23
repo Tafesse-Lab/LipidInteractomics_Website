@@ -5,6 +5,8 @@ library(plotly)
 library(readr)
 library(shiny)
 library(duckplyr)
+library(shinycssloaders)
+
 
 # Load plotting function source
 
@@ -37,7 +39,7 @@ ui <- fluidPage(
       selectInput("probe2", "Select Second LipidProbe:", choices = probeOptions, selected = probeOptions[2])
     ),
     mainPanel(
-      plotlyOutput("logFCPlot"),
+      withSpinner(plotlyOutput("logFCPlot")),
 
     )
   )

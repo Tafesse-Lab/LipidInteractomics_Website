@@ -11,6 +11,10 @@ standalone: false
 Two lipid probes, PA and PE for a single cell line
  -->
 
+## NB: This is a test page with the re-analyzed data from Frank
+
+I see from this new analysis that the publication only included the results from the membrane prep -- and excluded the cytosol fraction. Just because Frank provided both sets in his re-worked analysis, I wanted to incorporate both here to see if we want to display both online; if we decide we don't want the cytosol prep, I can easily remove that section!
+
 ::: {.callout-note collapse="true"}
 
 {{< include /StudyInformation_includes/AT_2025_include.qmd >}}
