@@ -141,6 +141,6 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 
 <br>
 
-{{< downloadthis LipidProbe/DataSets/bf-GPI_SK_2024_ChemEuro.csv dname="bf-GPI_SK_2024_ChemEuro">}}
+{{< downloadthis DataSets/bf-GPI_SK_2024_ChemEuro.csv dname="bf-GPI_SK_2024_ChemEuro">}}
 
 ::::
