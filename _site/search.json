@@ -1162,5 +1162,15 @@
     "title": "Search enrichment by protein",
     "section": "Data vis of selected proteins",
     "text": "Data vis of selected proteins\nStill in beta: a plot that highlights the selected protein out of all the datasets on our site"
+  },
+  {
+    "objectID": "index.html#lipid-interactomes-1",
+    "href": "index.html#lipid-interactomes-1",
+    "title": "The Lipid Interactome Repository",
+    "section": "Lipid Interactomes",
+    "text": "Lipid Interactomes\n\n{% include “_includes/lipid-buttons.jinja” %}",
+    "crumbs": [
+      "Explore by Lipid Probe"
+    ]
   }
 ]

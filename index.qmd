@@ -2,13 +2,13 @@
 title: "The Lipid Interactome Repository"
 format: 
   html:
+    template-engine: jinja
     embed-resources: false
+    
 standalone: false
 ---
 
 ## Site Overview
-
-<!-- **This repository is still under construction, please forgive us for incomplete sections as we build features!** -->
 
 The goal of this site is to increase the accessibility of proteomics data utilizing multi-functionalized lipid analogs/probes to identify the lipid:protein interactions of biologically active lipids. 
 
@@ -41,7 +41,7 @@ See our [Data Analysis Overview](/Background/DataAnalysisAndStatistics.qmd) for 
   
 
   <a href="LipidProbe/Phosphatidylalcohol.qmd" style="text-decoration: none;">
-      <button style="background-color:rgb(41, 204, 131); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
+      <button style="background-color:rgba(41, 204, 131, 1); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; margin: 10px; cursor: pointer;">
           Phosphatidyl Alcohol
       </button>
   </a>
