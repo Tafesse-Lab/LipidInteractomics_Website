@@ -94,9 +94,9 @@ MAStandard <- function(data) {
         scale_x_continuous(limits = c(0.9 * min(safe_abs(data$AveExpr)), 1.1 * max(safe_abs(data$AveExpr))))+
         scale_y_continuous(limits = c(-1.1 * max(safe_abs(data$logFC)), 1.1 * max(safe_abs(data$logFC))))+
         scale_shape_manual(values = c("enriched hit" = 21,
-                                    "hit" = 21,
+                                    "hit" = 22,
                                     "enriched candidate" = 24,
-                                    "candidate" = 24,
+                                    "candidate" = 22,
                                     "no hit" = 22), 
                         name = "Trend") +
         scale_color_manual(values = c("enriched hit" = "black",
@@ -106,21 +106,21 @@ MAStandard <- function(data) {
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_fill_manual(values = c("enriched hit" = "orange",
-                                    "hit" = "orange",
+                                    "hit" = "black",
                                     "enriched candidate" = "purple",
-                                    "candidate" = "purple",
+                                    "candidate" = "black",
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                    "hit" = 0.8,
+                                    "hit" = 0.25,
                                     "enriched candidate" = 0.5,
-                                    "candidate" = 0.5,
+                                    "candidate" = 0.25,
                                     "no hit" = 0.25), 
                         name = "Trend") +
         scale_size_manual(values = c("enriched hit" = 4,
-                                    "hit" = 4,
+                                    "hit" = 0.75,
                                     "enriched candidate" = 2,
-                                    "candidate" = 2, 
+                                    "candidate" = 0.75, 
                                     "no hit" = 0.75), 
                         name = "Trend") +
         facet_wrap(~LipidProbe) +
@@ -175,9 +175,9 @@ RankedOrderPlotStandard <- function(data) {
         geom_hline(yintercept = 0, linetype = 2) +
         geom_vline(xintercept = 0, linetype = 2) +
         scale_shape_manual(values = c("enriched hit" = 21,
-                                    "hit" = 21,
+                                    "hit" = 22,
                                     "enriched candidate" = 24,
-                                    "candidate" = 24,
+                                    "candidate" = 22,
                                     "no hit" = 22), 
                         name = "Trend") +
         scale_color_manual(values = c("enriched hit" = "black",
@@ -187,21 +187,21 @@ RankedOrderPlotStandard <- function(data) {
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_fill_manual(values = c("enriched hit" = "orange",
-                                    "hit" = "orange",
+                                    "hit" = "black",
                                     "enriched candidate" = "purple",
-                                    "candidate" = "purple",
+                                    "candidate" = "black",
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                    "hit" = 0.8,
+                                    "hit" = 0.25,
                                     "enriched candidate" = 0.5,
-                                    "candidate" = 0.5,
+                                    "candidate" = 0.25,
                                     "no hit" = 0.25), 
                         name = "Trend") +
         scale_size_manual(values = c("enriched hit" = 4,
-                                    "hit" = 4,
+                                    "hit" = 0.75,
                                     "enriched candidate" = 2,
-                                    "candidate" = 2, 
+                                    "candidate" = 0.75, 
                                     "no hit" = 0.75), 
                         name = "Trend") +
         facet_wrap(~LipidProbe) +
@@ -253,9 +253,9 @@ VolcanoPlotStandardized <- function(data) {
         scale_x_continuous(limits=c(-1.1 * limits[1], 1.1* limits[1])) +
         scale_y_continuous(limits=c(0, 1.1 * limits[2])) +
         scale_shape_manual(values = c("enriched hit" = 21,
-                                    "hit" = 21,
+                                    "hit" = 22,
                                     "enriched candidate" = 24,
-                                    "candidate" = 24,
+                                    "candidate" = 22,
                                     "no hit" = 22), 
                         name = "Trend") +
         scale_color_manual(values = c("enriched hit" = "black",
@@ -265,21 +265,21 @@ VolcanoPlotStandardized <- function(data) {
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_fill_manual(values = c("enriched hit" = "orange",
-                                    "hit" = "orange",
+                                    "hit" = "black",
                                     "enriched candidate" = "purple",
-                                    "candidate" = "purple",
+                                    "candidate" = "black",
                                     "no hit" = "black"), 
                         name = "Trend") +
         scale_alpha_manual(values = c("enriched hit" = 0.8,
-                                    "hit" = 0.8,
+                                    "hit" = 0.25,
                                     "enriched candidate" = 0.5,
-                                    "candidate" = 0.5,
+                                    "candidate" = 0.25,
                                     "no hit" = 0.25), 
                         name = "Trend") +
         scale_size_manual(values = c("enriched hit" = 4,
-                                    "hit" = 4,
+                                    "hit" = 0.75,
                                     "enriched candidate" = 2,
-                                    "candidate" = 2, 
+                                    "candidate" = 0.75, 
                                     "no hit" = 0.75), 
                         name = "Trend") +
         facet_wrap(~LipidProbe, ncol = 2) +

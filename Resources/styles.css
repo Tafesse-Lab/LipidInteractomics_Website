@@ -62,28 +62,29 @@
 .sidebar-item.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
   font-size: 1.2em;  /* Increase font size */
   font-weight: bold; /* Make bold */
-  color: #003366;    /* Dark blue */
+  color: #dfecf6;    /* Dark blue */
 }
 
 /* Style second-level sidebar headers */
 .sidebar-section.depth1 > .sidebar-item.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
   font-size: 1.1em;  
   font-weight: bold;  
-  color: #0055aa; /* Slightly lighter blue */
-  margin-left: 0px; /* Indent for hierarchy */
+  color: #a6cff9; /* Slightly lighter blue */
+  margin-left: 2px; /* Indent for hierarchy */
 }
 
 /* Style third-level sidebar headers */
 .sidebar-section.depth2 > .sidebar-item.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
   font-size: 1.0em;  
   font-weight: bold;  
-  color: #0077cc; /* Even lighter blue */
-  margin-left: 20px; /* More indentation */
+  color: #6daedd; /* Even lighter blue */
+  margin-left: 30px; /* More indentation */
 }
 
 /* Style normal sidebar items (links to pages) */
 .sidebar-item .sidebar-item-text {
   font-size: 1em;  /* Keep normal text size */
   font-weight: normal;
+  color: #88c1f6; /* Even lighter blue */
 }
 

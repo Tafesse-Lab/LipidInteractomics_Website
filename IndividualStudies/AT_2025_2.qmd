@@ -65,11 +65,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 data <- readr::read_csv(here("IndividualStudies/DataTables/AT_ChemicalCommunications_2025_membrane_download.csv"))
 
 # Organize the hit annotations as factors
-data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit",  "NA"), ordered=TRUE)  
-
-data |>
-  arrange(hit_annotation) |>
-  glimpse()
+data$hit_annotation <- factor(pull(data, hit_annotation), levels = c("enriched hit", "hit", "enriched candidate", "candidate", "no hit",  "NA"), ordered=TRUE)
 
 ```
 
@@ -161,8 +157,6 @@ htmltools::tags$div(
                   sharedData = data_reactive,
                   group = ~hit_annotation)
 )
-
-?crosstalk::filter_checkbox()
 
 ## Displays the reactive dataframe
 datatable(data_reactive, options = list(pageLength = 10))

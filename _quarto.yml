@@ -53,7 +53,8 @@ website:
    
   sidebar:
     search: true
-    collapse-level: 1
+    collapse-level: 2
+
     contents:
       # - href: SearchByProtein/SearchByProtein.qmd
       #   text: "Search by Protein"

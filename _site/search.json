@@ -399,11 +399,11 @@
     ]
   },
   {
-    "objectID": "IndividualStudies/RM_2021.html#data-visualization",
-    "href": "IndividualStudies/RM_2021.html#data-visualization",
+    "objectID": "IndividualStudies/RM_2021.html#data-exploration",
+    "href": "IndividualStudies/RM_2021.html#data-exploration",
     "title": "Muller et al. 2021",
-    "section": "Data visualization",
-    "text": "Data visualization\n\nHeat map\n\n\nVenn Diagram",
+    "section": "Data exploration",
+    "text": "Data exploration\nCheck the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds.\n\n\n\n\n\nLipid probe in pulldown:\n\n\n\n\nPI(3,4,5)P3\n\n\n\n\n\n\nEnrichment criteria:\n\n\n\n\nenriched hit\n\n\n\n\n\nhit\n\n\n\n\n\nenriched candidate\n\n\n\n\n\ncandidate\n\n\n\n\n\nno hit\n\n\n\n\n\n\nCellular fraction\n\n\n\n\nCytosol (+UV vs -UV)\n\n\n\n\n\nMembrane (+UV vs -UV)\n\n\n\n\n\n\n\n\n\n\n\n\nNB: Data analysis overview pending.",
     "crumbs": [
       "Explore Individual Studies",
       "Muller et al., 2021"
@@ -1154,7 +1154,7 @@
     "href": "SearchByProtein/SearchByProtein.html",
     "title": "Search enrichment by protein",
     "section": "",
-    "text": "Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification\nProtein name:\n“No hit” proteins are unenriched or depleted in the presence of probe, “enriched candidates” are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and “enriched hits” are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV"
+    "text": "Use the search bar below to filter for a protein among the results of all studies which utilized TMT-based quantification\nProtein name:\n\n\n\n\n\n\n\n\nWarning in instance$preRenderHook(instance): It seems your data is too big for\nclient-side DataTables. You may consider server-side processing:\nhttps://rstudio.github.io/DT/server.html\n“No hit” proteins are unenriched or depleted in the presence of probe, “enriched candidates” are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and “enriched hits” are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV"
   },
   {
     "objectID": "SearchByProtein/SearchByProtein.html#data-vis-of-selected-proteins",
@@ -1162,15 +1162,5 @@
     "title": "Search enrichment by protein",
     "section": "Data vis of selected proteins",
     "text": "Data vis of selected proteins\nStill in beta: a plot that highlights the selected protein out of all the datasets on our site"
-  },
-  {
-    "objectID": "index.html#lipid-interactomes-1",
-    "href": "index.html#lipid-interactomes-1",
-    "title": "The Lipid Interactome Repository",
-    "section": "Lipid Interactomes",
-    "text": "Lipid Interactomes\n\n{% include “_includes/lipid-buttons.jinja” %}",
-    "crumbs": [
-      "Explore by Lipid Probe"
-    ]
   }
 ]
