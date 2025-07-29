@@ -4,7 +4,6 @@ subtitle: "PI(4,5)P~2~"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 ## Structure

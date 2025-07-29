@@ -133,6 +133,9 @@ format:
     css: Resources/styles.css
     toc: true
     sidebar: true
+    include-in-header: 
+      - text: |
+          <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
   docx:
     fig-height: 5
     reference-doc: Resources/custom-reference-doc.docx

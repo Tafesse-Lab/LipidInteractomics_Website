@@ -4,7 +4,6 @@ subtitle: "NAPE"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 

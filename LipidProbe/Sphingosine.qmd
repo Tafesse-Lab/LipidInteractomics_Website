@@ -3,7 +3,6 @@ title: "Trifunctional Sphingosine"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 
@@ -24,9 +23,11 @@ Chemical structures drawn by Berit Blume.
 
 ## Protein interactome
 
-:::: {.callout-tip}
-
-### Cell background: Huh7
+:::{.cells collapse="true"}
+::::{.cells-header}
+Cell background: Huh7
+::::
+::::{.cells-container}
 
 ::: {.callout-note collapse="true"}
 
@@ -169,12 +170,14 @@ datatable(data_reactive,
 {{< downloadthis DataSets/Sph_Huh7_SF_2024.csv dname="Sph_Huh7_SF_ACS-Chem-Bio_download">}}
 
 ::::
+:::
 
 
-
-:::: {.callout-tip}
-
-### Cell background: HeLa
+:::{.cells collapse="true"}
+::::{.cells-header}
+Cell background: HeLa
+::::
+::::{.cells-container}
 
 
 ::: {.callout-note collapse="true"}
@@ -183,4 +186,7 @@ datatable(data_reactive,
 
 :::
 
+**\*Data presentation still in development.**
+
 ::::
+:::

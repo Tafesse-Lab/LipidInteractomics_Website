@@ -3,7 +3,6 @@ title: "Trifunctional 1-10 Fatty Acid"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 :::{.content-hidden unless-format="html"}

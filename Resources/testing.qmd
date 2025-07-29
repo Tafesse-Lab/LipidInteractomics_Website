@@ -1,0 +1,35 @@
+::: todo
+Remember to complete this section.
+:::
+
+::: test
+This information is crucial for understanding the concept.
+:::
+
+::: {.thumbs-up title="That was a hard task!"}
+You did a great job completing this task.
+:::
+
+::: {.cells}
+Does this do it??
+:::
+
+:::{.cells}
+::::{.cells-header}
+Membrane fraction
+::::
+::::{.cells-container}
+* Know how to make your own callouts.
+* Be able to mess with some SCSS/CSS styling.
+::::
+:::
+
+
+::: {.callout-tip}
+
+## Membrane Fraction
+
+* content
+* content
+* content
+:::

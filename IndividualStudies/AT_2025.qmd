@@ -4,8 +4,9 @@ subtitle: "Trifunctional lipid derivatives: PE’s mitochondrial interactome"
 date: 2024-12-26
 format: 
   html:
-    embed-resources: true
-standalone: true
+    embed-resources: false
+
+standalone: false
 ---
 <!-- Data overview
 Two lipid probes, PA and PE for a single cell line
@@ -17,9 +18,12 @@ Two lipid probes, PA and PE for a single cell line
 
 :::
 
-::: {.callout-tip}
 
-## Membrane Fraction
+:::{.cells collapse="true"}
+::::{.cells-header}
+Membrane Fraction
+::::
+::::{.cells-container}
 
 ### Data visualization
  
@@ -101,7 +105,9 @@ MAStandard(data)
 ```
 
 :::
+::::
 :::
+
 <!-- 
 ### Gene Ontology Analysis
 
@@ -169,9 +175,11 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 
 :::
 
-:::{.callout-tip}
-
-## Cytosolic Fraction
+:::{.cells collapse="true"}
+::::{.cells-header}
+Cytosolic Fraction
+::::
+::::{.cells-container}
 
 ### Data visualization
  
@@ -325,4 +333,5 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 
 {{< downloadthis DataTables/AT_ChemicalCommunications_2025_cytosol_download.csv dname="AT_ChemicalCommunications_2025">}}
 
+::::
 :::

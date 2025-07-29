@@ -3,7 +3,6 @@ title: "Trifunctional Sphinganine"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 ## Structure

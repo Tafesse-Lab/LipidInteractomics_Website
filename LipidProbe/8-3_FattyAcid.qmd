@@ -3,7 +3,6 @@ title: "Trifunctional 8-3 Fatty Acid"
 format: 
   html:
     embed-resources: false
-callout-icon: false
 ---
 
 *Greater context to the distinction between the 8-3 Fatty Acid and 1-10 Fatty Acid probes can be found in the [Diazirine Overview](/Background/MultifunctionalLipidProbesOverview.qmd#sec-DiazirinePlacement)*

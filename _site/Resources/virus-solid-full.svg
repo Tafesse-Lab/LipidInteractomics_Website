@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 640 640"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="virus-solid-full.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.63297843"
+     inkscape:cx="155.61352"
+     inkscape:cy="212.48749"
+     inkscape:window-width="1888"
+     inkscape:window-height="1120"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <!--!Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+  <path
+     d="M360 104C360 81.9 342.1 64 320 64C297.9 64 280 81.9 280 104C280 148.1 226.7 170.1 195.5 139C179.9 123.4 154.6 123.4 138.9 139C123.2 154.6 123.3 179.9 138.9 195.6C170.1 226.8 148 280.1 103.9 280.1C81.8 280.1 63.9 298 63.9 320.1C63.9 342.2 81.8 360.1 103.9 360.1C148 360.1 170 413.4 138.9 444.6C123.3 460.2 123.3 485.5 138.9 501.2C154.5 516.9 179.8 516.8 195.5 501.2C226.7 470 280 492.1 280 536.2C280 558.3 297.9 576.2 320 576.2C342.1 576.2 360 558.3 360 536.2C360 492.1 413.3 470.1 444.5 501.2C460.1 516.8 485.4 516.8 501.1 501.2C516.8 485.6 516.7 460.3 501.1 444.6C469.9 413.4 492 360.1 536.1 360.1C558.2 360.1 576.1 342.2 576.1 320.1C576.1 298 558.2 280.1 536.1 280.1C492 280.1 470 226.8 501.1 195.6C516.7 180 516.7 154.7 501.1 139C485.5 123.3 460.2 123.4 444.5 139C413.3 170.1 360 148.1 360 104zM224 288C224 270.3 238.3 256 256 256C273.7 256 288 270.3 288 288C288 305.7 273.7 320 256 320C238.3 320 224 305.7 224 288zM384 320C401.7 320 416 334.3 416 352C416 369.7 401.7 384 384 384C366.3 384 352 369.7 352 352C352 334.3 366.3 320 384 320z"
+     id="path1"
+     style="fill:none;stroke:#d4aa00;stroke-opacity:1;stroke-width:32" />
+</svg>
