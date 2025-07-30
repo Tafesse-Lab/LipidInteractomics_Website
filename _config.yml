@@ -1,0 +1,43 @@
+name: "Lipid Interactome Repository"
+output_dir: "_site"
+navbar:
+  title: "Lipid Interactome Repository"
+  left:
+    - text: "Background"
+      menu:
+        - text: "Multifunctional Lipid Probes Overview"
+          href: Background/MultifunctionalLipidProbesOverview.html
+        - text: "Mass spectrometry Overview"
+          href: Background/ProteomicsUsingMultifunctionalProbes.html
+        - text: "Data analysis and statistical testing"
+          href: Background/DataAnalysisAndStatistics.html
+    - text: "Contact us"
+      menu:
+        - text: "About"
+          href: ContactUs/about.html
+        - text: "Submit your data"
+          href: ContactUs/DataSubmission.html
+  right: []
+output:
+  html_document:
+    theme: materia
+    css: Resources/styles.css
+    toc: true
+    toc_depth: 2
+    includes:
+      in_header: Resources/theme_customizations.scss
+    highlight: textmate
+    df_print: paged
+    number_sections: true
+    fig_caption: true
+    self_contained: true
+    mainfont: Charter
+  pdf_document:
+    latex_engine: pdflatex
+    toc: true
+    number_sections: true
+    fig_caption: true
+bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
+csl: Resources/nature.csl
+license: "CC by"
+copyright: "Gaelen Guzman, 2025"

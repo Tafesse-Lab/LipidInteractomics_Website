@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Submit a dataset to the Lipid Interactome Repository – Lipid Interactome Repository</title>
+<title>bioinformatics_reviewerresponseletter – Lipid Interactome Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Submit a dataset to the Lipid Interactome Repository</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -356,75 +356,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#study-metadata" id="toc-study-metadata" class="nav-link active" data-scroll-target="#study-metadata">Study metadata</a></li>
-  <li><a href="#mass-spectrometry-data-formatting" id="toc-mass-spectrometry-data-formatting" class="nav-link" data-scroll-target="#mass-spectrometry-data-formatting">Mass spectrometry data formatting</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/blob/main/ContactUs/DataSubmission.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Submit a dataset to the Lipid Interactome Repository</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<p><strong>This repository is still under construction, please forgive us for incomplete sections as we build features!</strong></p>
-<p>We are in the process of building a data submission form here – check back soon for this functionality!</p>
-<p>In the meantime, email us at <a href="mailto:Contact.Us@LipidInteractome.org" target="_blank">Contact.Us@LipidInteractome.org</a> to discuss data handoff and study details.</p>
-<section id="study-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="study-metadata">Study metadata</h3>
-<p>In addition to the DOI and basic details of the study, we will need additional metadata to describe how the study was performed and how the reported data were collected.</p>
-<p>In brief, we will need:</p>
-<ul>
-<li>The lipid probes analyzed, and their structure if novel</li>
-<li>The cell line analyzed</li>
-<li>The mass spectrometry quantification method (i.e., TMT or PSM)</li>
-<li>The details of mass spectrometry data acquisition (Instrument, LC gradient)</li>
-<li>The details of data analysis (e.g., LIMMA analysis, ANOVA testing, etc.)</li>
-</ul>
-</section>
-<section id="mass-spectrometry-data-formatting" class="level3">
-<h3 class="anchored" data-anchor-id="mass-spectrometry-data-formatting">Mass spectrometry data formatting</h3>
-<p>The ideal dataset to incorporate into this site will have the following columns:</p>
-<ul>
-<li><strong>gene_name</strong></li>
-<li><strong>LipidProbe</strong> - Which lipid probe was applied in the analysis (especially if there are several)</li>
-<li><strong>comparison</strong> - The ratiometric comparison reflected by the logFC (i.e.&nbsp;+UV versus -UV)</li>
-<li><strong>logFC</strong> - the log2 transformed fold-change between the conditions in the comparison</li>
-<li><strong>pvalue</strong> - the results of an appropriate statistical test. Ideally share the methods used</li>
-<li><strong>AveExpr</strong> - the average ion intensity between the two conditions in the reported comparison (for MA plots)</li>
-<li><strong>hit_annotation</strong> - A statistical representation of the significance of each protein. The standardized nomenclature used in Thomas et al.&nbsp;2025, Farley et al.&nbsp;2024, and Farley et al.&nbsp;2024 has the following:
-<ul>
-<li><strong>“no hit”</strong> = unenriched or depleted in the presence of probe</li>
-<li><strong>“enriched candidates”</strong> are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold</li>
-<li><strong>“enriched hits”</strong> are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.</li>
-</ul></li>
-<li><strong>FDR</strong> - The false discovery rate of the protein.</li>
-</ul>
-<p>If only some of these data are available, reach out to us at <a href="mailto:Contact.Us@LipidInteractome.org" target="_blank">Contact.Us@LipidInteractome.org</a> to discuss the best depictions of your data.</p>
-
-
-</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -849,4 +791,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/blob/main/ContactUs/DataSubmission.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/blob/main/BioinformaticsApplicationNote/Bioinformatics_ReviewerResponseLetter.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/LipidInteractomics_Website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

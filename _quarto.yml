@@ -122,6 +122,8 @@ website:
             text: "Höglinger et al., 2017"
 
 format:
+  pdf: 
+    pdf-engine: pdflatex
   html:
     lightbox:
       match: auto
@@ -136,6 +138,3 @@ format:
     include-in-header: 
       - text: |
           <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
-  docx:
-    fig-height: 5
-    reference-doc: Resources/custom-reference-doc.docx
