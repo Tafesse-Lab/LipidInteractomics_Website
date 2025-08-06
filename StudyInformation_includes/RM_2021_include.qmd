@@ -22,6 +22,10 @@ We synthesized the first multifunctionalized phosphoinositide polyphosphate deri
 
 #### Mass spectrometry quantification method
 
-Peptide spectral counting
+Peptide spectral counting *(in original publication)*
+
+Label free quantification *(as reported here, enabled via fresh analysis by Frank Stein, EMBL)*
 
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+
+Samples were split into membrane and cytosolic fractions and analyzed as independent mass spec samples. Additional *No Probe* controls were included for raw input, though not used in displaying the data on this site.

@@ -1,5 +1,5 @@
 ---
-title: "July 2025 Lipid Interactome Monthly Invoice"
+titlJuly 2025 Lipid Interactome Monthly Invoice"
 author: "Gaelen Guzman"
 date: "2025 08 04"
 output: 
