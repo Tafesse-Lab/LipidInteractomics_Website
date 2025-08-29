@@ -1,0 +1,1451 @@
+gene_name,protein_id,Protein.Description,LipidProbe,sample,logFC,AveExpr,pvalue,hit_annotation
+GNAI2,P04899,Guanine nucleotide-binding protein G(i) subunit alpha-2,PA,membrane,0.814372628,21.20886622,0.002987459,candidate
+NDUFA4,O00483,Cytochrome c oxidase subunit NDUFA4,PA,membrane,1.012739789,19.36633726,0.003308567,candidate
+PON2,Q15165,Serum paraoxonase/arylesterase 2,PA,membrane,0.650440118,18.75073349,0.003644064,candidate
+RALB,P11234,Ras-related protein Ral-B,PA,membrane,0.613889346,19.80889367,0.00371878,candidate
+RALA,P11233,Ras-related protein Ral-A,PA,membrane,0.805115465,22.30226981,0.003790709,candidate
+SLC25A6,P12236,ADP/ATP translocase 3,PA,membrane,0.99595301,20.50797732,0.004107347,candidate
+NCLN,Q969V3,Nicalin,PA,membrane,0.870811065,16.61514508,0.00414413,candidate
+CD55,P08174,Complement decay-accelerating factor,PA,membrane,0.634250637,23.84802786,0.004214198,candidate
+JUP,P14923,Junction plakoglobin,PA,membrane,0.724652395,22.80662439,0.004225073,candidate
+CANX,P27824,Calnexin,PA,membrane,0.73064941,25.23591437,0.004516046,candidate
+SLC25A22,Q9H936,Mitochondrial glutamate carrier 1,PA,membrane,0.638598038,17.96429672,0.004603273,candidate
+GNA11,P29992,Guanine nucleotide-binding protein subunit alpha-11,PA,membrane,0.593693727,21.90866517,0.004631885,candidate
+EFNB1,P98172,Ephrin-B1,PA,membrane,0.714657383,17.76371385,0.005957625,candidate
+CISD2,Q8N5K1,CDGSH iron-sulfur domain-containing protein 2,PA,membrane,1.02499332,21.96880273,0.006026811,candidate
+CRTAP,O75718,Cartilage-associated protein,PA,membrane,0.665574084,19.48037538,0.006162992,candidate
+NOMO1,Q15155,Nodal modulator 1,PA,membrane,0.742475842,21.25579301,0.006426076,candidate
+PPIB,P23284,Peptidyl-prolyl cis-trans isomerase B,PA,membrane,0.744612562,24.85003382,0.006603049,candidate
+AIFM1,O95831,"Apoptosis-inducing factor 1, mitochondrial",PA,membrane,0.914034627,18.98813274,0.007092342,candidate
+SLC25A5,P05141,ADP/ATP translocase 2,PA,membrane,1.161540993,23.60863597,0.007330911,candidate
+PYCR1,P32322,"Pyrroline-5-carboxylate reductase 1, mitochondrial",PA,membrane,0.936345849,18.30974353,0.007356484,candidate
+ETFB,P38117,Electron transfer flavoprotein subunit beta,PA,membrane,0.832750741,20.9392935,0.007851596,candidate
+HADH,Q16836,"Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial",PA,membrane,0.710929707,18.26883404,0.007897372,candidate
+RAB13,P51153,Ras-related protein Rab-13,PA,membrane,0.920070704,21.6262584,0.007987679,candidate
+GSTK1,Q9Y2Q3,Glutathione S-transferase kappa 1,PA,membrane,0.616053651,20.794324369999998,0.008310655,candidate
+BASP1,P80723,Brain acid soluble protein 1,PA,membrane,1.645317376,23.41103032,0.008664325,candidate
+ATP5PO,P48047,"ATP synthase subunit O, mitochondrial",PA,membrane,0.757600906,20.52672254,0.009388119,candidate
+ATP5F1E,P56381,"ATP synthase subunit epsilon, mitochondrial",PA,membrane,0.74089716,19.67912705,0.009632151,candidate
+OXCT1,P55809,"Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial",PA,membrane,0.626569375,21.7605609,0.009755765,candidate
+GNAS,Q5JWF2,Guanine nucleotide-binding protein G(s) subunit alpha isoforms XLas,PA,membrane,0.631697379,23.11018255,0.009802636,candidate
+PDHB,P11177,"Pyruvate dehydrogenase E1 component subunit beta, mitochondrial",PA,membrane,0.96141754,19.07848591,0.009962099,candidate
+ACAA2,P42765,"3-ketoacyl-CoA thiolase, mitochondrial",PA,membrane,0.715828653,18.57848581,0.010670155,candidate
+SSBP1,Q04837,"Single-stranded DNA-binding protein, mitochondrial",PA,membrane,0.955186676,18.84172621,0.010876428,candidate
+CLPTM1L,Q96KA5,Lipid scramblase CLPTM1L,PA,membrane,0.810843444,18.50454928,0.013498478,candidate
+FAS,P25445,Tumor necrosis factor receptor superfamily member 6,PA,membrane,0.995034041,19.4058056,0.014447448,candidate
+COX4I1,P13073,"Cytochrome c oxidase subunit 4 isoform 1, mitochondrial",PA,membrane,0.727666951,21.48128348,0.014914175,candidate
+HSPA9,P38646,"Stress-70 protein, mitochondrial",PA,membrane,1.063634965,24.36163996,0.015553062,candidate
+FH,P07954,"Fumarate hydratase, mitochondrial",PA,membrane,0.801636408,21.18584942,0.015643225,candidate
+TOR1AIP1,Q5JTV8,Torsin-1A-interacting protein 1,PA,membrane,0.926643735,19.25526855,0.016182204,candidate
+TRMT10C,Q7L0Y3,tRNA methyltransferase 10 homolog C,PA,membrane,0.660070102,18.76206443,0.016734663,candidate
+DECR2,Q9NUI1,"Peroxisomal 2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-producing]",PA,membrane,0.702639284,16.29040184,0.018064711,candidate
+CRELD2,Q6UXH1,Protein disulfide isomerase CRELD2,PA,membrane,0.595632512,18.66198806,0.018115048,candidate
+RAB34,Q9BZG1,Ras-related protein Rab-34,PA,membrane,0.588732377,19.87555721,0.018358542,candidate
+GNAI3,P08754,Guanine nucleotide-binding protein G(i) subunit alpha-3,PA,membrane,0.618778982,23.357584,0.01885562,candidate
+ATP5PB,P24539,"ATP synthase F(0) complex subunit B1, mitochondrial",PA,membrane,0.635526731,20.96036489,0.020555623,candidate
+SEC63,Q9UGP8,Translocation protein SEC63 homolog,PA,membrane,0.806277752,19.0789413,0.020927325,candidate
+RPN2,P04844,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 2,PA,membrane,0.632614634,21.95535998,0.022510232,candidate
+SLC25A11,Q02978,Mitochondrial 2-oxoglutarate/malate carrier protein,PA,membrane,0.714619917,17.57678401,0.022772446,candidate
+PRKCSH,P14314,Glucosidase 2 subunit beta,PA,membrane,0.590789309,23.66876665,0.022789075,candidate
+SCCPDH,Q8NBX0,Saccharopine dehydrogenase-like oxidoreductase,PA,membrane,0.651484694,18.73698275,0.02328053,candidate
+NPM1,P06748,Nucleophosmin,PA,membrane,0.619615309,23.4320719,0.024067514,candidate
+CD9,P21926,CD9 antigen,PA,membrane,0.823790502,21.39181596,0.024433459,candidate
+ATP5F1A,P25705,"ATP synthase subunit alpha, mitochondrial",PA,membrane,0.820982669,23.6922543,0.025066988,candidate
+CS,O75390,"Citrate synthase, mitochondrial",PA,membrane,0.845272896,19.95319981,0.025214852,candidate
+TRAP1,Q12931,"Heat shock protein 75 kDa, mitochondrial",PA,membrane,0.80123228,20.54970353,0.026555105,candidate
+MDH2,P40926,"Malate dehydrogenase, mitochondrial",PA,membrane,0.676314864,22.39469081,0.027049331,candidate
+STEAP4,Q687X5,Metalloreductase STEAP4,PA,membrane,0.594157674,21.13782805,0.027133902,candidate
+SLC25A3,Q00325,"Phosphate carrier protein, mitochondrial",PA,membrane,0.756081027,23.54654185,0.027387618,candidate
+RAB35,Q15286,Ras-related protein Rab-35,PA,membrane,0.672002208,22.22297918,0.027618503,candidate
+PPIF,P30405,"Peptidyl-prolyl cis-trans isomerase F, mitochondrial",PA,membrane,0.82515646,20.32682237,0.027720838,candidate
+GLUD1,P00367,"Glutamate dehydrogenase 1, mitochondrial",PA,membrane,0.919663447,20.37539729,0.027961656,candidate
+ECH1,Q13011,"Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial",PA,membrane,0.914069883,20.01295868,0.02853621,candidate
+STX4,Q12846,Syntaxin-4,PA,membrane,0.814577255,18.70223548,0.029190941,candidate
+RDH11,Q8TC12,Retinol dehydrogenase 11,PA,membrane,0.704686015,19.56687742,0.02951196,candidate
+IQGAP1,P46940,Ras GTPase-activating-like protein IQGAP1,PA,membrane,1.06518002,23.6439439,0.02971747,candidate
+ACAT1,P24752,"Acetyl-CoA acetyltransferase, mitochondrial",PA,membrane,0.740361932,21.0377508,0.030547563,candidate
+CD44,P16070,CD44 antigen,PA,membrane,0.65384097,24.26944201,0.033237886,candidate
+ATP5F1C,P36542,"ATP synthase subunit gamma, mitochondrial",PA,membrane,0.874008714,20.41805594,0.033701134,candidate
+SLIRP,Q9GZT3,"SRA stem-loop-interacting RNA-binding protein, mitochondrial",PA,membrane,0.864377862,19.92272683,0.035686629,candidate
+CTTN,Q14247,Src substrate cortactin,PA,membrane,0.698945766,19.81546467,0.0385771,candidate
+DPM1,O60762,Dolichol-phosphate mannosyltransferase subunit 1,PA,membrane,0.689620376,18.83884158,0.038772941,candidate
+SHMT2,P34897,"Serine hydroxymethyltransferase, mitochondrial",PA,membrane,0.746894372,19.69566979,0.040830277,candidate
+LRRC59,Q96AG4,Leucine-rich repeat-containing protein 59,PA,membrane,0.655657265,21.53055737,0.042511953,candidate
+BSG,P35613,Basigin,PA,membrane,0.877915397,23.73736592,0.043968621,candidate
+RDX,P35241,Radixin,PA,membrane,0.947030775,22.77986462,0.044251505,candidate
+FAM162A,Q96A26,Protein FAM162A,PA,membrane,0.626520659,19.27324673,0.04564965,candidate
+MET,P08581,Hepatocyte growth factor receptor,PA,membrane,0.843207897,20.71625227,1.81e-5,enriched hit
+LANCL1,O43813,Glutathione S-transferase LANCL1,PA,membrane,0.836679579,20.86614856,1.94e-5,enriched hit
+EGFR,P00533,Epidermal growth factor receptor,PA,membrane,1.006911727,22.88505221,6.86e-5,enriched hit
+L1CAM,P32004,Neural cell adhesion molecule L1,PA,membrane,1.249798365,23.80540969,1.03763e-4,enriched hit
+SRPRA,P08240,Signal recognition particle receptor subunit alpha,PA,membrane,1.141453836,20.35226406,1.06094e-4,enriched hit
+SPCS2,Q15005,Signal peptidase complex subunit 2,PA,membrane,0.935182811,22.28444329,1.13337e-4,enriched hit
+SLC30A1,Q9Y6M5,Proton-coupled zinc antiporter SLC30A1,PA,membrane,0.862212961,20.57118977,1.48602e-4,enriched hit
+EPHB4,P54760,Ephrin type-B receptor 4,PA,membrane,0.646666559,20.15735538,2.29419e-4,enriched hit
+UQCRH,P07919,"Cytochrome b-c1 complex subunit 6, mitochondrial",PA,membrane,0.978579586,18.02298199,3.49967e-4,enriched hit
+STOM,P27105,Stomatin,PA,membrane,0.896043397,22.62848501,3.624e-4,enriched hit
+INPP5A,Q14642,Inositol polyphosphate-5-phosphatase A,PA,membrane,0.659962236,18.97274026,4.76231e-4,enriched hit
+SLC9A3R1,O14745,Na(+)/H(+) exchange regulatory cofactor NHE-RF1,PA,membrane,0.864023259,21.8627385,7.37908e-4,enriched hit
+PDIA3,P30101,Protein disulfide-isomerase A3,PA,membrane,0.921552911,24.40784171,7.75518e-4,enriched hit
+ATP2B1,P20020,Plasma membrane calcium-transporting ATPase 1,PA,membrane,0.633330711,23.46488784,0.00109012,enriched hit
+ATP1B1,P05026,Sodium/potassium-transporting ATPase subunit beta-1,PA,membrane,0.729977764,22.69482238,0.001115083,enriched hit
+TMEM214,Q6NUQ4,Transmembrane protein 214,PA,membrane,1.131716506,19.45141302,0.001158618,enriched hit
+LYPD3,O95274,Ly6/PLAUR domain-containing protein 3,PA,membrane,0.675648943,20.85147601,0.001197297,enriched hit
+IGF1R,P08069,Insulin-like growth factor 1 receptor,PA,membrane,0.59057038,20.2769184,0.001256012,enriched hit
+GNA13,Q14344,Guanine nucleotide-binding protein subunit alpha-13,PA,membrane,0.690755835,20.97043031,0.001266038,enriched hit
+NIBAN2,Q96TA1,Protein Niban 2,PA,membrane,0.926908496,21.22975702,0.001283953,enriched hit
+GNAI1,P63096,Guanine nucleotide-binding protein G(i) subunit alpha-1,PA,membrane,0.691088638,21.5239396,0.00129898,enriched hit
+IDH3A,P50213,"Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial",PA,membrane,0.700508079,19.64694039,0.00134162,enriched hit
+RCN1,Q15293,Reticulocalbin-1,PA,membrane,0.625222827,18.69887173,0.001375218,enriched hit
+TCOF1,Q13428,Treacle protein,PA,membrane,0.706099677,17.69548229,0.001454748,enriched hit
+ATP2B4,P23634,Plasma membrane calcium-transporting ATPase 4,PA,membrane,0.603165674,21.28773168,0.00167296,enriched hit
+SRPRB,Q9Y5M8,Signal recognition particle receptor subunit beta,PA,membrane,1.081500898,21.67277202,0.001931942,enriched hit
+HYOU1,Q9Y4L1,Hypoxia up-regulated protein 1,PA,membrane,0.698008553,21.80318594,0.00214135,enriched hit
+CPS1,P31327,"Carbamoyl-phosphate synthase [ammonia], mitochondrial",PA,membrane,0.817005614,23.39989519,0.002309086,enriched hit
+RHOF,Q9HBH0,Rho-related GTP-binding protein RhoF,PA,membrane,0.706858331,19.07603145,0.002624873,enriched hit
+STRAP,Q9Y3F4,Serine-threonine kinase receptor-associated protein,PA,membrane,-1.345694527,22.67066521,3.01e-6,no hit
+PCBP1,Q15365,Poly(rC)-binding protein 1,PA,membrane,-1.382690558,22.78560782,4.79e-6,no hit
+TPT1,P13693,Translationally-controlled tumor protein,PA,membrane,-1.659130136,22.57664202,5.91e-6,no hit
+MAP4,P27816,Microtubule-associated protein 4,PA,membrane,-1.061188264,21.34103645,1.36e-5,no hit
+SEC24C,P53992,Protein transport protein Sec24C,PA,membrane,-1.033395703,22.03681321,1.52e-5,no hit
+PDCD6,O75340,Programmed cell death protein 6,PA,membrane,-1.685511231,24.10198726,2.07e-5,no hit
+UBE2D3,P61077,Ubiquitin-conjugating enzyme E2 D3,PA,membrane,-1.042554633,19.92334166,4.04e-5,no hit
+MAPRE1,Q15691,Microtubule-associated protein RP/EB family member 1,PA,membrane,-1.183033915,21.33678766,4.57e-5,no hit
+EEF1G,P26641,Elongation factor 1-gamma,PA,membrane,-1.331204073,23.245,4.9e-5,no hit
+EIF4E,P06730,Eukaryotic translation initiation factor 4E,PA,membrane,-0.785964702,20.57954719,6.31e-5,no hit
+ATXN10,Q9UBB4,Ataxin-10,PA,membrane,-0.89702211,21.15965809,7.89e-5,no hit
+UBE2V1,Q13404,Ubiquitin-conjugating enzyme E2 variant 1,PA,membrane,-1.00681564,20.39497783,8.14e-5,no hit
+BZW1,Q7L1Q6,eIF5-mimic protein 2,PA,membrane,-1.137876845,23.75805658,8.73e-5,no hit
+SEC23A,Q15436,Protein transport protein Sec23A,PA,membrane,-0.720505929,21.1590017,1.70508e-4,no hit
+MAGOH,P61326,Protein mago nashi homolog,PA,membrane,-0.782690224,19.45365236,2.0034e-4,no hit
+VPS29,Q9UBQ0,Vacuolar protein sorting-associated protein 29,PA,membrane,-0.853062744,21.15294301,2.5865e-4,no hit
+SEC13,P55735,Protein SEC13 homolog,PA,membrane,-1.097363086,22.27813723,2.81095e-4,no hit
+PDCD6IP,Q8WUM4,Programmed cell death 6-interacting protein,PA,membrane,-0.694344105,23.36282173,4.38664e-4,no hit
+APRT,P07741,Adenine phosphoribosyltransferase,PA,membrane,-0.972882878,20.93893507,4.39363e-4,no hit
+COPE,O14579,Coatomer subunit epsilon,PA,membrane,-0.640094354,20.45922257,4.45912e-4,no hit
+EIF4G1,Q04637,Eukaryotic translation initiation factor 4 gamma 1,PA,membrane,-0.908761196,23.52716923,4.69772e-4,no hit
+AP3B1,O00203,AP-3 complex subunit beta-1,PA,membrane,-0.797823011,19.74193684,5.34763e-4,no hit
+SEC31A,O94979,Protein transport protein Sec31A,PA,membrane,-0.965313129,23.25025423,6.26977e-4,no hit
+MAGEA1,P43355,Melanoma-associated antigen 1,PA,membrane,-0.679895541,18.54090785,7.70714e-4,no hit
+UBAP2L,Q14157,Ubiquitin-associated protein 2-like,PA,membrane,-1.307221511,21.641581,7.73944e-4,no hit
+TUBA1C,Q9BQE3,Tubulin alpha-1C chain,PA,membrane,-0.891865074,23.10128637,8.45955e-4,no hit
+SARS1,P49591,"Serine--tRNA ligase, cytoplasmic",PA,membrane,-0.962329681,18.20492025,8.96864e-4,no hit
+SEC11A,P67812,Signal peptidase complex catalytic subunit SEC11A,PA,membrane,0.50602214,18.95777345,0.001029223,no hit
+SYAP1,Q96A49,Synapse-associated protein 1,PA,membrane,-1.037346158,21.0192683,0.00118154,no hit
+PCBP2,Q15366,Poly(rC)-binding protein 2,PA,membrane,-1.086626714,21.336559,0.00119467,no hit
+RAB23,Q9ULC3,Ras-related protein Rab-23,PA,membrane,0.516950335,20.45124489,0.001308131,no hit
+YWHAZ,P63104,14-3-3 protein zeta/delta,PA,membrane,-0.800560853,23.51103207,0.00145707,no hit
+AARS1,P49588,"Alanine--tRNA ligase, cytoplasmic",PA,membrane,-0.845751894,21.34142772,0.0014638,no hit
+ATXN2L,Q8WWM7,Ataxin-2-like protein,PA,membrane,-0.792595669,19.79145654,0.001792245,no hit
+RRAS2,P62070,Ras-related protein R-Ras2,PA,membrane,0.556811994,22.13089354,0.001814491,no hit
+FAM114A1,Q8IWE2,Protein NOXP20,PA,membrane,-1.068328359,19.69671918,0.00188821,no hit
+ANO6,Q4KMQ2,Anoctamin-6,PA,membrane,0.557598527,19.52363217,0.001888305,no hit
+RAB18,Q9NP72,Ras-related protein Rab-18,PA,membrane,-0.527992099,22.11015584,0.001954729,no hit
+IST1,P53990,IST1 homolog,PA,membrane,-0.719387865,20.37967487,0.001982471,no hit
+PPIA,P62937,Peptidyl-prolyl cis-trans isomerase A,PA,membrane,-0.796899862,23.62141094,0.001986004,no hit
+NAA50,Q9GZZ1,N-alpha-acetyltransferase 50,PA,membrane,-0.97131122,19.91226021,0.00203204,no hit
+EEF1B2,P24534,Elongation factor 1-beta,PA,membrane,-1.153053364,21.11263304,0.002081156,no hit
+GSTO1,P78417,Glutathione S-transferase omega-1,PA,membrane,-0.830209247,20.17533047,0.002194114,no hit
+EIF2B1,Q14232,Translation initiation factor eIF-2B subunit alpha,PA,membrane,-0.709819476,20.28680217,0.002223685,no hit
+GNAO1,P09471,Guanine nucleotide-binding protein G(o) subunit alpha,PA,membrane,0.565637706,18.55356084,0.002243979,no hit
+HARS1,P12081,"Histidine--tRNA ligase, cytoplasmic",PA,membrane,-0.620582821,20.25764362,0.00229644,no hit
+GANAB,Q14697,Neutral alpha-glucosidase AB,PA,membrane,0.53971279,23.50012261,0.002317742,no hit
+PRRC1,Q96M27,Protein PRRC1,PA,membrane,-0.70960079,22.56171243,0.002514238,no hit
+SRI,P30626,Sorcin,PA,membrane,-0.849274186,20.38516031,0.002752856,no hit
+TRAPPC4,Q9Y296,Trafficking protein particle complex subunit 4,PA,membrane,-0.490056411,18.08554512,0.002808542,no hit
+EIF4B,P23588,Eukaryotic translation initiation factor 4B,PA,membrane,-1.162526966,19.45242267,0.002828993,no hit
+RAC1,P63000,Ras-related C3 botulinum toxin substrate 1,PA,membrane,0.578191879,22.6547974,0.002981113,no hit
+HSDL2,Q6YN16,Hydroxysteroid dehydrogenase-like protein 2,PA,membrane,0.488771489,19.42986051,0.003072979,no hit
+TARS1,P26639,"Threonine--tRNA ligase 1, cytoplasmic",PA,membrane,-0.970612302,22.36958537,0.003196557,no hit
+YWHAQ,P27348,14-3-3 protein theta,PA,membrane,-0.939000792,21.83803488,0.003258787,no hit
+NARS1,O43776,"Asparagine--tRNA ligase, cytoplasmic",PA,membrane,-0.780707969,20.44526644,0.003378702,no hit
+KRAS,P01116,GTPase KRas,PA,membrane,0.539809177,20.04929436,0.003510607,no hit
+ARF4,P18085,ADP-ribosylation factor 4,PA,membrane,-0.637106276,20.11201889,0.003634583,no hit
+SPG21,Q9NZD8,Maspardin,PA,membrane,-0.502393825,19.82407398,0.003795893,no hit
+ANXA5,P08758,Annexin A5,PA,membrane,-0.987635409,22.66858186,0.003889624,no hit
+HSPB1,P04792,Heat shock protein beta-1,PA,membrane,-0.794186167,22.81187775,0.00391163,no hit
+TSN,Q15631,Translin,PA,membrane,-0.631224917,20.1827488,0.004063043,no hit
+PFN1,P07737,Profilin-1,PA,membrane,-0.649910479,21.94694962,0.004166832,no hit
+PCNA,P12004,Proliferating cell nuclear antigen,PA,membrane,-0.980502706,23.53245146,0.004187632,no hit
+BLVRA,P53004,Biliverdin reductase A,PA,membrane,-0.456231312,19.22073555,0.004256805,no hit
+PGLS,O95336,6-phosphogluconolactonase,PA,membrane,-0.769133914,19.62917519,0.004356041,no hit
+USO1,O60763,General vesicular transport factor p115,PA,membrane,-0.438476455,20.08642233,0.004671705,no hit
+HSD17B4,P51659,Peroxisomal multifunctional enzyme type 2,PA,membrane,0.58088323,22.73398428,0.004742045,no hit
+TSFM,P43897,"Elongation factor Ts, mitochondrial",PA,membrane,0.511269412,17.35497218,0.004812906,no hit
+GOT1,P17174,"Aspartate aminotransferase, cytoplasmic",PA,membrane,-0.665779207,20.04886898,0.004891071,no hit
+CD320,Q9NPF0,CD320 antigen,PA,membrane,0.423395926,19.77089438,0.004934873,no hit
+SORD,Q00796,Sorbitol dehydrogenase,PA,membrane,-0.560171656,19.33906031,0.00496019,no hit
+SLC26A6,Q9BXS9,Solute carrier family 26 member 6,PA,membrane,0.582496942,19.33184128,0.004971952,no hit
+PARVA,Q9NVD7,Alpha-parvin,PA,membrane,-0.738455206,20.5903544,0.005118469,no hit
+IPO5,O00410,Importin-5,PA,membrane,-0.827568255,23.01788652,0.005233335,no hit
+GNB4,Q9HAV0,Guanine nucleotide-binding protein subunit beta-4,PA,membrane,0.551162093,22.53675064,0.005294464,no hit
+SERPINB6,P35237,Serpin B6,PA,membrane,-0.667382744,21.26810887,0.005613881,no hit
+UBE2I,P63279,SUMO-conjugating enzyme UBC9,PA,membrane,-0.421188396,18.8246435,0.005943866,no hit
+PGM1,P36871,Phosphoglucomutase-1,PA,membrane,-0.954228922,22.32745613,0.005953264,no hit
+PDIA6,Q15084,Protein disulfide-isomerase A6,PA,membrane,0.507134385,22.28669064,0.006150012,no hit
+PUM1,Q14671,Pumilio homolog 1,PA,membrane,-0.981141697,18.32320807,0.006197886,no hit
+RAD23B,P54727,UV excision repair protein RAD23 homolog B,PA,membrane,-0.763520175,20.59993797,0.006431999,no hit
+PRSS21,Q9Y6M0,Testisin,PA,membrane,0.554076532,20.3781156,0.006671997,no hit
+UBAP2,Q5T6F2,Ubiquitin-associated protein 2,PA,membrane,-1.026707243,18.69385209,0.006785138,no hit
+UBE2N,P61088,Ubiquitin-conjugating enzyme E2 N,PA,membrane,-0.660567402,20.0040813,0.006814146,no hit
+EDC4,Q6P2E9,Enhancer of mRNA-decapping protein 4,PA,membrane,-0.456840055,20.39535036,0.006815831,no hit
+SCAMP3,O14828,Secretory carrier-associated membrane protein 3,PA,membrane,-0.595162216,22.18862771,0.006943676,no hit
+WDR5,P61964,WD repeat-containing protein 5,PA,membrane,0.520368606,18.53383403,0.006955753,no hit
+SRM,P19623,Spermidine synthase,PA,membrane,-0.668331174,19.61369812,0.006985307,no hit
+S100A4,P26447,Protein S100-A4,PA,membrane,-1.046104827,22.27767875,0.007032242,no hit
+RABGGTB,P53611,Geranylgeranyl transferase type-2 subunit beta,PA,membrane,-0.797497025,19.31059097,0.007065376,no hit
+ABCC1,P33527,Multidrug resistance-associated protein 1,PA,membrane,0.463904084,19.48298313,0.007117715,no hit
+TAGLN2,P37802,Transgelin-2,PA,membrane,-0.672878036,23.33101245,0.007205044,no hit
+YWHAB,P31946,14-3-3 protein beta/alpha,PA,membrane,-0.859578144,22.77272968,0.00726845,no hit
+IPO7,O95373,Importin-7,PA,membrane,-0.848857245,22.06061616,0.007281667,no hit
+DDT,P30046,D-dopachrome decarboxylase,PA,membrane,-0.737842235,18.89813436,0.007321805,no hit
+PHGDH,O43175,D-3-phosphoglycerate dehydrogenase,PA,membrane,-0.625964223,21.69450848,0.007500514,no hit
+UBE2M,P61081,NEDD8-conjugating enzyme Ubc12,PA,membrane,-0.974575408,18.71860043,0.007921717,no hit
+RNPEP,Q9H4A4,Aminopeptidase B,PA,membrane,-0.716356088,19.62781538,0.008080413,no hit
+ARHGDIA,P52565,Rho GDP-dissociation inhibitor 1,PA,membrane,-0.849795511,21.92145152,0.008100637,no hit
+MYG1,Q9HB07,MYG1 exonuclease,PA,membrane,-0.63600962,18.30122017,0.008200249,no hit
+PLIN4,Q96Q06,Perilipin-4,PA,membrane,-0.525330687,20.17934901,0.008247121,no hit
+FAM114A2,Q9NRY5,Protein FAM114A2,PA,membrane,-0.794580078,19.1867619,0.00886078,no hit
+CYP51A1,Q16850,Lanosterol 14-alpha demethylase,PA,membrane,0.581261183,20.60047623,0.0089804,no hit
+PRRC2A,P48634,Protein PRRC2A,PA,membrane,-0.880201625,17.47888291,0.009373016,no hit
+KIRREL1,Q96J84,Kin of IRRE-like protein 1,PA,membrane,0.477927478,17.68296228,0.009683157,no hit
+DPP3,Q9NY33,Dipeptidyl peptidase 3,PA,membrane,-0.661481218,20.72969148,0.009808663,no hit
+GDI2,P50395,Rab GDP dissociation inhibitor beta,PA,membrane,-0.531460605,22.29925556,0.009827651,no hit
+NOTCH2,Q04721,Neurogenic locus notch homolog protein 2,PA,membrane,0.561251124,17.86202797,0.009999679,no hit
+SAR1A,Q9NR31,GTP-binding protein SAR1a,PA,membrane,-0.600890891,21.76423772,0.010022208,no hit
+PPP2CB,P62714,Serine/threonine-protein phosphatase 2A catalytic subunit beta isoform,PA,membrane,-0.536084286,20.89308121,0.010147874,no hit
+UBE2K,P61086,Ubiquitin-conjugating enzyme E2 K,PA,membrane,-0.830321686,18.91818303,0.010213456,no hit
+TRIM28,Q13263,Transcription intermediary factor 1-beta,PA,membrane,0.581228323,19.65272123,0.010379806,no hit
+ACTC1,P68032,"Actin, alpha cardiac muscle 1",PA,membrane,0.584763948,21.82210314,0.010401795,no hit
+ANXA7,P20073,Annexin A7,PA,membrane,-0.879266538,21.72079349,0.010439174,no hit
+TXN,P10599,Thioredoxin,PA,membrane,-0.925938165,20.91026001,0.010558488,no hit
+SFN,P31947,14-3-3 protein sigma,PA,membrane,-0.952523137,21.34302185,0.010657998,no hit
+FDPS,P14324,Farnesyl pyrophosphate synthase,PA,membrane,-0.778289147,21.80870856,0.010877872,no hit
+TNPO1,Q92973,Transportin-1,PA,membrane,-0.715812542,22.89896798,0.010886456,no hit
+TXNDC5,Q8NBS9,Thioredoxin domain-containing protein 5,PA,membrane,0.461495025,22.31475574,0.01108655,no hit
+CMBL,Q96DG6,Carboxymethylenebutenolidase homolog,PA,membrane,-0.666346139,19.06068301,0.011861255,no hit
+INF2,Q27J81,Inverted formin-2,PA,membrane,0.463891618,17.48118303,0.01200705,no hit
+UGGT1,Q9NYU2,UDP-glucose:glycoprotein glucosyltransferase 1,PA,membrane,0.437353059,19.44349558,0.012096653,no hit
+SERPINB5,P36952,Serpin B5,PA,membrane,-0.889974312,21.51436509,0.012225948,no hit
+MMP15,P51511,Matrix metalloproteinase-15,PA,membrane,0.351382338,22.48889099,0.01225499,no hit
+TALDO1,P37837,Transaldolase,PA,membrane,-1.085382607,22.64474083,0.012416336,no hit
+LDHA,P00338,L-lactate dehydrogenase A chain,PA,membrane,-0.90985506,23.20088927,0.012514293,no hit
+ESD,P10768,S-formylglutathione hydrolase,PA,membrane,-0.784472552,19.54061418,0.012756431,no hit
+PLS3,P13797,Plastin-3,PA,membrane,0.552117264,24.3551843,0.012778932,no hit
+SLC16A1,P53985,Monocarboxylate transporter 1,PA,membrane,0.539473065,22.972979809999998,0.012843023,no hit
+AXL,P30530,Tyrosine-protein kinase receptor UFO,PA,membrane,0.553937445,19.19549153,0.012856322,no hit
+NUDT5,Q9UKK9,ADP-sugar pyrophosphatase,PA,membrane,-0.863028315,20.02956522,0.013306693,no hit
+MIF,P14174,Macrophage migration inhibitory factor,PA,membrane,-1.004913073,22.01089929,0.013744434,no hit
+AKR1B1,P15121,Aldo-keto reductase family 1 member B1,PA,membrane,-0.680486315,21.47172009,0.013924897,no hit
+MYL6,P60660,Myosin light polypeptide 6,PA,membrane,0.511518574,20.84307997,0.014180911,no hit
+EIF4G2,P78344,Eukaryotic translation initiation factor 4 gamma 2,PA,membrane,-0.69020573,21.95091875,0.014312564,no hit
+UFL1,O94874,E3 UFM1-protein ligase 1,PA,membrane,0.409787427,18.51915177,0.015092975,no hit
+NIBAN1,Q9BZQ8,Protein Niban 1,PA,membrane,0.51416475,18.51850392,0.015154485,no hit
+ACO1,P21399,Cytoplasmic aconitate hydratase,PA,membrane,-0.458749831,20.20769667,0.015174045,no hit
+SERBP1,Q8NC51,Plasminogen activator inhibitor 1 RNA-binding protein,PA,membrane,-1.591718355,22.69307242,0.015272705,no hit
+PLOD2,O00469,"Procollagen-lysine,2-oxoglutarate 5-dioxygenase 2",PA,membrane,0.489964624,20.05299757,0.015286722,no hit
+YWHAG,P61981,14-3-3 protein gamma,PA,membrane,-0.649263794,22.1471741,0.015289248,no hit
+RAB32,Q13637,Ras-related protein Rab-32,PA,membrane,0.425561505,18.52945532,0.015302984,no hit
+TNFAIP8,O95379,Tumor necrosis factor alpha-induced protein 8,PA,membrane,0.426659007,19.79887282,0.015599222,no hit
+SUMO2,P61956,Small ubiquitin-related modifier 2,PA,membrane,-0.939603522,19.9201128,0.016268574,no hit
+GNAQ,P50148,Guanine nucleotide-binding protein G(q) subunit alpha,PA,membrane,0.561800095,19.47984835,0.016322624,no hit
+CACYBP,Q9HB71,Calcyclin-binding protein,PA,membrane,-0.787640879,20.70782463,0.016805429,no hit
+ABCC4,O15439,ATP-binding cassette sub-family C member 4,PA,membrane,0.523404696,18.55421216,0.016980882,no hit
+CNN2,Q99439,Calponin-2,PA,membrane,-0.427612795,19.98097239,0.017247624,no hit
+ITPA,Q9BY32,Inosine triphosphate pyrophosphatase,PA,membrane,-0.703587479,18.37298971,0.017274402,no hit
+MCTS1,Q9ULC4,Malignant T-cell-amplified sequence 1,PA,membrane,-0.709721812,18.24585903,0.017509661,no hit
+PLAA,Q9Y263,Phospholipase A-2-activating protein,PA,membrane,-0.541789675,19.41412819,0.01768495,no hit
+NUTF2,P61970,Nuclear transport factor 2,PA,membrane,-0.627472651,18.28156045,0.017707071,no hit
+NPEPPS,P55786,Puromycin-sensitive aminopeptidase,PA,membrane,-0.392821747,21.77458066,0.01808034,no hit
+YWHAH,Q04917,14-3-3 protein eta,PA,membrane,-0.654773859,21.80188024,0.018528474,no hit
+RHOG,P84095,Rho-related GTP-binding protein RhoG,PA,membrane,0.376609866,21.99638949,0.018787917,no hit
+SPCS3,P61009,Signal peptidase complex subunit 3,PA,membrane,0.470008103,19.80335358,0.019027868,no hit
+PRDX6,P30041,Peroxiredoxin-6,PA,membrane,-0.714091367,23.18319082,0.019215126,no hit
+RRM1,P23921,Ribonucleoside-diphosphate reductase large subunit,PA,membrane,-0.499868696,20.03560781,0.019358985,no hit
+PTGR1,Q14914,Prostaglandin reductase 1,PA,membrane,-0.674594377,19.58055068,0.019579694,no hit
+TM9SF2,Q99805,Transmembrane 9 superfamily member 2,PA,membrane,-0.708100506,22.20822205,0.01967642,no hit
+TUBB,P07437,Tubulin beta chain,PA,membrane,-0.592275809,23.48913112,0.019751778,no hit
+HADHA,P40939,"Trifunctional enzyme subunit alpha, mitochondrial",PA,membrane,0.552159993,19.57503092,0.020139861,no hit
+PGD,P52209,"6-phosphogluconate dehydrogenase, decarboxylating",PA,membrane,-0.786990707,19.75942883,0.020235864,no hit
+RAP1A,P62834,Ras-related protein Rap-1A,PA,membrane,0.509753409,19.55483643,0.020489823,no hit
+ZNF598,Q86UK7,E3 ubiquitin-protein ligase ZNF598,PA,membrane,-0.737494509,19.00173196,0.021015081,no hit
+ACOX1,Q15067,Peroxisomal acyl-coenzyme A oxidase 1,PA,membrane,0.549418926,19.59506369,0.021139289,no hit
+PGAM1,P18669,Phosphoglycerate mutase 1,PA,membrane,-0.875617818,22.81494882,0.022166212,no hit
+PPA1,Q15181,Inorganic pyrophosphatase,PA,membrane,-0.81759565,21.94119133,0.022462099,no hit
+HSPH1,Q92598,Heat shock protein 105 kDa,PA,membrane,-0.45915529,21.43735215,0.023045724,no hit
+TENM3,Q9P273,Teneurin-3,PA,membrane,0.473674245,17.3745411,0.02318862,no hit
+PLXNB2,O15031,Plexin-B2,PA,membrane,0.42832795,24.07284467,0.024018935,no hit
+CD46,P15529,Membrane cofactor protein,PA,membrane,0.449834279,21.38186345,0.024404722,no hit
+EWSR1,Q01844,RNA-binding protein EWS,PA,membrane,-0.489455721,19.18135506,0.025032526,no hit
+PRPS1,P60891,Ribose-phosphate pyrophosphokinase 1,PA,membrane,-0.449043072,17.57924334,0.0251642,no hit
+B4GALT1,P15291,"Beta-1,4-galactosyltransferase 1",PA,membrane,-0.583888336,20.09930729,0.025475766,no hit
+PLIN3,O60664,Perilipin-3,PA,membrane,-0.804414155,21.97667336,0.02596093,no hit
+NMT1,P30419,Glycylpeptide N-tetradecanoyltransferase 1,PA,membrane,-1.058310352,20.92303535,0.02686288,no hit
+KPNB1,Q14974,Importin subunit beta-1,PA,membrane,-0.623620285,23.28785656,0.026909459,no hit
+LDHB,P07195,L-lactate dehydrogenase B chain,PA,membrane,-0.879732033,23.09270015,0.026916288,no hit
+VDAC3,Q9Y277,Voltage-dependent anion-selective channel protein 3,PA,membrane,0.499737617,19.39272586,0.026931675,no hit
+PTPRJ,Q12913,Receptor-type tyrosine-protein phosphatase eta,PA,membrane,0.45519095,21.41858815,0.027138102,no hit
+PTGFRN,Q9P2B2,Prostaglandin F2 receptor negative regulator,PA,membrane,0.576921701,24.1518171,0.028039918,no hit
+SEC23B,Q15437,Protein transport protein Sec23B,PA,membrane,-0.567555816,21.31748571,0.028156456,no hit
+ATP11A,P98196,Phospholipid-transporting ATPase IH,PA,membrane,0.38784224899999997,18.15226865,0.028702228,no hit
+CSE1L,P55060,Exportin-2,PA,membrane,-0.667859475,22.87853031,0.029189869,no hit
+OLR1,P78380,Oxidized low-density lipoprotein receptor 1,PA,membrane,0.558496141,20.72890154,0.029331664,no hit
+PSME3,P61289,Proteasome activator complex subunit 3,PA,membrane,-0.467114626,21.13914282,0.02975695,no hit
+CLINT1,Q14677,Clathrin interactor 1,PA,membrane,-0.83148804,21.19387236,0.029987773,no hit
+USP5,P45974,Ubiquitin carboxyl-terminal hydrolase 5,PA,membrane,-0.499686577,19.91192223,0.030178897,no hit
+HPD,P32754,4-hydroxyphenylpyruvate dioxygenase,PA,membrane,-0.593408372,21.75832163,0.030260917,no hit
+PITPNB,P48739,Phosphatidylinositol transfer protein beta isoform,PA,membrane,-0.573434115,21.42643002,0.031270711,no hit
+CAND1,Q86VP6,Cullin-associated NEDD8-dissociated protein 1,PA,membrane,-0.456541465,21.35746751,0.031298991,no hit
+SDC1,P18827,Syndecan-1,PA,membrane,0.539743366,18.79794664,0.031462993,no hit
+BTF3,P20290,Transcription factor BTF3,PA,membrane,-1.053309269,20.58420146,0.032016289,no hit
+TFG,Q92734,Protein TFG,PA,membrane,-0.798269285,19.44342118,0.03203245,no hit
+SH3GLB1,Q9Y371,Endophilin-B1,PA,membrane,-0.511332778,20.73293834,0.032036031,no hit
+PGP,A6NDG6,Glycerol-3-phosphate phosphatase,PA,membrane,-0.451579526,19.69364046,0.03222517,no hit
+API5,Q9BZZ5,Apoptosis inhibitor 5,PA,membrane,-0.550196516,21.10702583,0.033019408,no hit
+RPS28,P62857,40S ribosomal protein S28,PA,membrane,-0.517982667,21.38726571,0.033240588,no hit
+ANXA11,P50995,Annexin A11,PA,membrane,-0.590639422,20.33126084,0.033544163,no hit
+SUPT16H,Q9Y5B9,FACT complex subunit SPT16,PA,membrane,0.498260003,18.88565205,0.034626061,no hit
+PSME2,Q9UL46,Proteasome activator complex subunit 2,PA,membrane,-0.647595038,21.83323762,0.034654726,no hit
+CLTA,P09496,Clathrin light chain A,PA,membrane,-0.593223838,21.23164177,0.035285407,no hit
+CLIC4,Q9Y696,Chloride intracellular channel protein 4,PA,membrane,0.299613927,21.60365909,0.035856342,no hit
+HSPA4,P34932,Heat shock 70 kDa protein 4,PA,membrane,-0.508587288,22.7410395,0.036053609,no hit
+DDOST,P39656,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit,PA,membrane,0.52327033,23.03866095,0.036848247,no hit
+ABHD14B,Q96IU4,Putative protein-lysine deacylase ABHD14B,PA,membrane,-0.457962302,17.96796735,0.037006821,no hit
+PDHX,O00330,"Pyruvate dehydrogenase protein X component, mitochondrial",PA,membrane,0.490514678,18.38522952,0.037462144,no hit
+APOL2,Q9BQE5,Apolipoprotein L2,PA,membrane,0.352404387,20.61599482,0.037598421,no hit
+S100A6,P06703,Protein S100-A6,PA,membrane,-1.238316204,23.4559728,0.037680593,no hit
+MYDGF,Q969H8,Myeloid-derived growth factor,PA,membrane,0.481565102,20.26115855,0.038441664,no hit
+ADAM10,O14672,Disintegrin and metalloproteinase domain-containing protein 10,PA,membrane,0.392548151,19.5456824,0.038913622,no hit
+NSDHL,Q15738,"Sterol-4-alpha-carboxylate 3-dehydrogenase, decarboxylating",PA,membrane,0.544363703,21.73326973,0.039837553,no hit
+NUBP1,P53384,Cytosolic Fe-S cluster assembly factor NUBP1,PA,membrane,-0.735217099,17.65888399,0.040351167,no hit
+XPO7,Q9UIA9,Exportin-7,PA,membrane,-0.426600716,18.30475657,0.040551704,no hit
+SORT1,Q99523,Sortilin,PA,membrane,-0.359243892,19.23461681,0.040619182,no hit
+RAB31,Q13636,Ras-related protein Rab-31,PA,membrane,0.377934639,21.63766888,0.040645914,no hit
+ALDOC,P09972,Fructose-bisphosphate aldolase C,PA,membrane,-0.455296875,18.80107232,0.040720433,no hit
+PUF60,Q9UHX1,Poly(U)-binding-splicing factor PUF60,PA,membrane,-0.368160048,20.93721131,0.041045984,no hit
+UBA1,P22314,Ubiquitin-like modifier-activating enzyme 1,PA,membrane,-0.626340145,22.73847742,0.041085383,no hit
+ANXA1,P04083,Annexin A1,PA,membrane,-0.343848472,20.46633891,0.041378297,no hit
+TYMP,P19971,Thymidine phosphorylase,PA,membrane,-0.342184791,17.66247359,0.042241316,no hit
+PARK7,Q99497,Parkinson disease protein 7,PA,membrane,-0.659335533,20.95250995,0.043519671,no hit
+PPP2R1A,P30153,Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform,PA,membrane,-0.67096325,22.37568788,0.043946983,no hit
+ARF5,P84085,ADP-ribosylation factor 5,PA,membrane,-0.577432558,18.69824154,0.043986177,no hit
+NAA20,P61599,N-alpha-acetyltransferase 20,PA,membrane,-0.31561722,17.72029078,0.044094805,no hit
+PRDX1,Q06830,Peroxiredoxin-1,PA,membrane,-0.827460678,25.17696,0.044228293,no hit
+CALM1,P0DP23,Calmodulin-1,PA,membrane,0.520030154,21.72273714,0.044239906,no hit
+BUB3,O43684,Mitotic checkpoint protein BUB3,PA,membrane,-0.377800169,20.07637819,0.044446298,no hit
+AP2A1,O95782,AP-2 complex subunit alpha-1,PA,membrane,0.340959264,20.75117356,0.044703026,no hit
+RMDN1,Q96DB5,Regulator of microtubule dynamics protein 1,PA,membrane,0.527512826,19.23078238,0.044791229,no hit
+FKBP4,Q02790,Peptidyl-prolyl cis-trans isomerase FKBP4,PA,membrane,-0.447942805,19.98468402,0.045231221,no hit
+SSR4,P51571,Translocon-associated protein subunit delta,PA,membrane,0.519639121,22.55833495,0.045494115,no hit
+HSPA4L,O95757,Heat shock 70 kDa protein 4L,PA,membrane,-0.314372422,19.54853584,0.046116929,no hit
+AP1B1,Q10567,AP-1 complex subunit beta-1,PA,membrane,-0.417874646,21.59317433,0.046170707,no hit
+PTGES,O14684,Prostaglandin E synthase,PA,membrane,0.395245248,20.02369584,0.046276056,no hit
+NECTIN2,Q92692,Nectin-2,PA,membrane,0.325029401,21.73010969,0.046375708,no hit
+ICAM1,P05362,Intercellular adhesion molecule 1,PA,membrane,0.441810752,22.36689845,0.046408968,no hit
+DSP,P15924,Desmoplakin,PA,membrane,-0.552058461,22.54851272,0.046998206,no hit
+ERBIN,Q96RT1,Erbin,PA,membrane,0.360248365,19.10746774,0.048082481,no hit
+BTN2A1,Q7KYR7,Butyrophilin subfamily 2 member A1,PA,membrane,0.359596212,18.36929773,0.048486333,no hit
+RTN4,Q9NQC3,Reticulon-4,PA,membrane,-0.466158877,21.92716584,0.048781968,no hit
+ARPC5L,Q9BPX5,Actin-related protein 2/3 complex subunit 5-like protein,PA,membrane,0.437052462,17.77043972,0.049102412,no hit
+ACADM,P11310,"Medium-chain specific acyl-CoA dehydrogenase, mitochondrial",PA,membrane,0.474185801,19.45417321,0.04914575,no hit
+ANP32B,Q92688,Acidic leucine-rich nuclear phosphoprotein 32 family member B,PA,membrane,-0.729212267,18.87144801,0.049419697,no hit
+NNMT,P40261,Nicotinamide N-methyltransferase,PA,membrane,-0.930682286,20.01688719,0.049720252,no hit
+SDHA,P31040,"Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial",PA,membrane,0.566119353,21.06973098,0.04996927,no hit
+DYNLL1,P63167,"Dynein light chain 1, cytoplasmic",PA,membrane,-0.613681974,20.68198747,0.050244589,no hit
+OCIAD1,Q9NX40,OCIA domain-containing protein 1,PA,membrane,0.421921674,18.89468688,0.050258263,no hit
+HIBADH,P31937,"3-hydroxyisobutyrate dehydrogenase, mitochondrial",PA,membrane,0.766728441,17.31081027,0.050460178,no hit
+GIGYF2,Q6Y7W6,GRB10-interacting GYF protein 2,PA,membrane,-0.964350863,18.41127301,0.05113453,no hit
+HSD17B10,Q99714,3-hydroxyacyl-CoA dehydrogenase type-2,PA,membrane,0.504087204,21.20980756,0.05133291,no hit
+NOP16,Q9Y3C1,Nucleolar protein 16,PA,membrane,-0.812901154,18.41481103,0.051357601,no hit
+RP2,O75695,Protein XRP2,PA,membrane,0.491020718,22.68573531,0.05146065,no hit
+NME2,P22392,Nucleoside diphosphate kinase B,PA,membrane,-0.550386759,20.61577855,0.051628302,no hit
+SLC29A2,Q14542,Equilibrative nucleoside transporter 2,PA,membrane,0.550531629,18.01309577,0.051792387,no hit
+PRMT1,Q99873,Protein arginine N-methyltransferase 1,PA,membrane,-0.330480106,19.40461039,0.051998221,no hit
+BST2,Q10589,Bone marrow stromal antigen 2,PA,membrane,-0.436181118,21.479096470000002,0.052020385,no hit
+RNH1,P13489,Ribonuclease inhibitor,PA,membrane,-0.472877117,20.08380736,0.052069497,no hit
+PA2G4,Q9UQ80,Proliferation-associated protein 2G4,PA,membrane,-0.850659432,23.44492625,0.052721436000000003,no hit
+PAK2,Q13177,Serine/threonine-protein kinase PAK 2,PA,membrane,-0.482366903,20.03983199,0.05331875,no hit
+PTGES3,Q15185,Prostaglandin E synthase 3,PA,membrane,-0.538621143,20.21386776,0.053908281,no hit
+DHCR7,Q9UBM7,7-dehydrocholesterol reductase,PA,membrane,0.513087476,21.68210403,0.054102119,no hit
+S100A11,P31949,Protein S100-A11,PA,membrane,-0.834861432,21.48856321,0.054112674,no hit
+SKP1,P63208,S-phase kinase-associated protein 1,PA,membrane,-0.536141099,20.55017996,0.054551589,no hit
+GPRC5C,Q9NQ84,G-protein coupled receptor family C group 5 member C,PA,membrane,0.503354524,18.7483469,0.054555849,no hit
+PTP4A2,Q12974,Protein tyrosine phosphatase type IVA 2,PA,membrane,0.479306756,19.12474323,0.05465604,no hit
+NAPRT,Q6XQN6,Nicotinate phosphoribosyltransferase,PA,membrane,-0.370388642,18.35882471,0.05468443,no hit
+ERP29,P30040,Endoplasmic reticulum resident protein 29,PA,membrane,0.827680758,22.47308826,0.054734249,no hit
+SLC35B2,Q8TB61,Adenosine 3'-phospho 5'-phosphosulfate transporter 1,PA,membrane,-0.373290351,20.76021841,0.054802092,no hit
+F11R,Q9Y624,Junctional adhesion molecule A,PA,membrane,0.534073332,22.29702609,0.055327197,no hit
+GLO1,Q04760,Lactoylglutathione lyase,PA,membrane,-0.779278396,20.93949864,0.055497557,no hit
+HSP90B1,P14625,Endoplasmin,PA,membrane,0.714457204,24.46919624,0.055710584,no hit
+EXOC7,Q9UPT5,Exocyst complex component 7,PA,membrane,0.348995042,18.19175895,0.055786032,no hit
+ABCG2,Q9UNQ0,Broad substrate specificity ATP-binding cassette transporter ABCG2,PA,membrane,0.77979968,21.19702126,0.056071937,no hit
+GPI,P06744,Glucose-6-phosphate isomerase,PA,membrane,-0.540853661,22.2410408,0.056432185,no hit
+CD59,P13987,CD59 glycoprotein,PA,membrane,0.421792769,22.79090798,0.05685811,no hit
+PRDX3,P30048,"Thioredoxin-dependent peroxide reductase, mitochondrial",PA,membrane,1.115283864,21.95756559,0.05710882,no hit
+PSAT1,Q9Y617,Phosphoserine aminotransferase,PA,membrane,-0.296958857,19.41139001,0.057887297,no hit
+HSPA1A,P0DMV8,Heat shock 70 kDa protein 1A,PA,membrane,-0.395750204,24.18389212,0.05789079,no hit
+COQ9,O75208,"Ubiquinone biosynthesis protein COQ9, mitochondrial",PA,membrane,0.609435455,19.55592816,0.057993294,no hit
+LTA4H,P09960,Leukotriene A-4 hydrolase,PA,membrane,-0.697666921,19.85731156,0.058119294,no hit
+PRKACB,P22694,cAMP-dependent protein kinase catalytic subunit beta,PA,membrane,-0.297166053,19.02193626,0.058169993,no hit
+SELENBP1,Q13228,Methanethiol oxidase,PA,membrane,-0.53532413,19.55702247,0.058306831,no hit
+ANP32A,P39687,Acidic leucine-rich nuclear phosphoprotein 32 family member A,PA,membrane,-0.707793407,22.0384119,0.058398852,no hit
+USP14,P54578,Ubiquitin carboxyl-terminal hydrolase 14,PA,membrane,-0.508232872,20.86712568,0.058507874,no hit
+TUBA4A,P68366,Tubulin alpha-4A chain,PA,membrane,-0.549833674,20.01861834,0.058819533,no hit
+PGK1,P00558,Phosphoglycerate kinase 1,PA,membrane,-0.646573941,24.02077641,0.059023932,no hit
+WDR1,O75083,WD repeat-containing protein 1,PA,membrane,0.678880022,20.03280854,0.059232226,no hit
+SERPINB1,P30740,Leukocyte elastase inhibitor,PA,membrane,-0.631646405,19.83269659,0.05974525,no hit
+EIF4A1,P60842,Eukaryotic initiation factor 4A-I,PA,membrane,-0.980290284,23.17611231,0.059966974,no hit
+SLC25A24,Q6NUK1,Calcium-binding mitochondrial carrier protein SCaMC-1,PA,membrane,0.770450674,20.65730826,0.060328645,no hit
+APEX1,P27695,DNA-(apurinic or apyrimidinic site) endonuclease,PA,membrane,-0.714744641,19.58808486,0.060688939,no hit
+BPNT1,O95861,"3'(2'),5'-bisphosphate nucleotidase 1",PA,membrane,-0.357929633,19.15030578,0.061227556,no hit
+ITGA6,P23229,Integrin alpha-6,PA,membrane,0.51915841,23.62991905,0.061259475,no hit
+MRPL12,P52815,"39S ribosomal protein L12, mitochondrial",PA,membrane,0.553811772,18.71092266,0.06170934,no hit
+ELOB,Q15370,Elongin-B,PA,membrane,-0.536099835,19.49697668,0.063114597,no hit
+NACA,E9PAV3,"Nascent polypeptide-associated complex subunit alpha, muscle-specific form",PA,membrane,-0.841832127,18.17955363,0.063376533,no hit
+TKT,P29401,Transketolase,PA,membrane,-0.407148079,21.92008871,0.064050161,no hit
+PRKAR2A,P13861,cAMP-dependent protein kinase type II-alpha regulatory subunit,PA,membrane,-0.251124796,20.45745616,0.064053712,no hit
+ALDH3A2,P51648,Aldehyde dehydrogenase family 3 member A2,PA,membrane,0.517120092,19.28337854,0.064646258,no hit
+RAN,P62826,GTP-binding nuclear protein Ran,PA,membrane,-0.338646276,21.0146424,0.064941475,no hit
+EIF4A2,Q14240,Eukaryotic initiation factor 4A-II,PA,membrane,-0.515360263,18.68742585,0.065492266,no hit
+TMCO1,Q9UM00,Calcium load-activated calcium channel,PA,membrane,0.819445358,20.20846888,0.065659858,no hit
+OTUB1,Q96FW1,Ubiquitin thioesterase OTUB1,PA,membrane,-0.383743673,16.50849374,0.066557035,no hit
+RNF185,Q96GF1,E3 ubiquitin-protein ligase RNF185,PA,membrane,0.463202967,18.40711372,0.066646196,no hit
+GLOD4,Q9HC38,Glyoxalase domain-containing protein 4,PA,membrane,-0.633399826,19.59714794,0.066975541,no hit
+PHB1,P35232,Prohibitin 1,PA,membrane,0.724335386,21.80531573,0.068202264,no hit
+ETFA,P13804,"Electron transfer flavoprotein subunit alpha, mitochondrial",PA,membrane,0.702988672,20.58729454,0.068746291,no hit
+LRPPRC,P42704,"Leucine-rich PPR motif-containing protein, mitochondrial",PA,membrane,0.625929327,21.89348662,0.069163853,no hit
+RBBP4,Q09028,Histone-binding protein RBBP4,PA,membrane,0.440767767,18.50274133,0.06919865,no hit
+MLEC,Q14165,Malectin,PA,membrane,0.360288296,21.12812674,0.069441439,no hit
+GNB2,P62879,Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-2,PA,membrane,0.485694158,20.46608196,0.069494724,no hit
+ALDOA,P04075,Fructose-bisphosphate aldolase A,PA,membrane,-0.458233843,24.58225981,0.069617574,no hit
+SDHB,P21912,"Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial",PA,membrane,0.55125564,19.95135406,0.069682467,no hit
+SEC61B,P60468,Protein transport protein Sec61 subunit beta,PA,membrane,0.375367228,19.65892802,0.07004473,no hit
+RAB8A,P61006,Ras-related protein Rab-8A,PA,membrane,0.346606014,23.87166636,0.070143237,no hit
+ACSL3,O95573,Fatty acid CoA ligase Acsl3,PA,membrane,0.729171895,20.73962676,0.070231087,no hit
+AGL,P35573,Glycogen debranching enzyme,PA,membrane,-0.51912347,22.76184066,0.070336966,no hit
+HMOX2,P30519,Heme oxygenase 2,PA,membrane,0.455590536,21.65515009,0.070867431,no hit
+GPX8,Q8TED1,Probable glutathione peroxidase 8,PA,membrane,0.682629836,19.2618463,0.071227371,no hit
+SGTA,O43765,Small glutamine-rich tetratricopeptide repeat-containing protein alpha,PA,membrane,-0.575012556,20.54362523,0.071405822,no hit
+ENO1,P06733,Alpha-enolase,PA,membrane,-0.598615523,23.54466325,0.071412558,no hit
+DNPH1,O43598,2'-deoxynucleoside 5'-phosphate N-hydrolase 1,PA,membrane,-0.633725281,19.93988718,0.071723329,no hit
+PFDN5,Q99471,Prefoldin subunit 5,PA,membrane,-0.686111941,18.87687182,0.071889052,no hit
+PEBP1,P30086,Phosphatidylethanolamine-binding protein 1,PA,membrane,-0.949301434,20.05736514,0.072001146,no hit
+CIB1,Q99828,Calcium and integrin-binding protein 1,PA,membrane,0.308160501,19.27306431,0.072251031,no hit
+CPM,P14384,Carboxypeptidase M,PA,membrane,0.452062815,22.28765006,0.072842286,no hit
+MSLN,Q13421,Mesothelin,PA,membrane,0.438908804,21.04629603,0.072899751,no hit
+SCAMP2,O15127,Secretory carrier-associated membrane protein 2,PA,membrane,-0.26657537,20.8031318,0.073414472,no hit
+STX6,O43752,Syntaxin-6,PA,membrane,-0.360473099,19.71565637,0.073452524,no hit
+HSPA5,P11021,Endoplasmic reticulum chaperone BiP,PA,membrane,0.69477864,26.11231537,0.073624235,no hit
+TUBB4B,P68371,Tubulin beta-4B chain,PA,membrane,-0.465930934,20.40353784,0.074029231,no hit
+NAA15,Q9BXJ9,"N-alpha-acetyltransferase 15, NatA auxiliary subunit",PA,membrane,-0.920259057,22.31434445,0.074394284,no hit
+DHCR24,Q15392,Delta(24)-sterol reductase,PA,membrane,0.424472885,20.09361992,0.074609504,no hit
+IGSF8,Q969P0,Immunoglobulin superfamily member 8,PA,membrane,0.595388104,21.63283823,0.074676219,no hit
+YWHAE,P62258,14-3-3 protein epsilon,PA,membrane,-0.553349062,23.90955175,0.075974833,no hit
+CDH10,Q9Y6N8,Cadherin-10,PA,membrane,0.396791187,19.10254549,0.076091228,no hit
+SLC12A2,P55011,Solute carrier family 12 member 2,PA,membrane,0.425066975,17.47464022,0.076218505,no hit
+NAA10,P41227,N-alpha-acetyltransferase 10,PA,membrane,-0.563260191,19.48824595,0.076559899,no hit
+EDF1,O60869,Endothelial differentiation-related factor 1,PA,membrane,-0.856054582,19.95785636,0.076975524,no hit
+SAE1,Q9UBE0,SUMO-activating enzyme subunit 1,PA,membrane,-0.559017131,20.66713569,0.077179021,no hit
+C4BPA,P04003,C4b-binding protein alpha chain,PA,membrane,0.553706165,18.85171762,0.077731722,no hit
+AUP1,Q9Y679,Lipid droplet-regulating VLDL assembly factor AUP1,PA,membrane,0.475415103,18.59721571,0.077779649,no hit
+ARL15,Q9NXU5,ADP-ribosylation factor-like protein 15,PA,membrane,0.343342058,19.24375498,0.078113327,no hit
+TXNRD1,Q16881,"Thioredoxin reductase 1, cytoplasmic",PA,membrane,-0.389310149,21.25515829,0.078258409,no hit
+USP10,Q14694,Ubiquitin carboxyl-terminal hydrolase 10,PA,membrane,-0.576323566,21.26950171,0.078333165,no hit
+POR,P16435,NADPH--cytochrome P450 reductase,PA,membrane,0.541490156,23.58262631,0.078335062,no hit
+SLC5A6,Q9Y289,Sodium-dependent multivitamin transporter,PA,membrane,-0.253308973,19.69814819,0.078837037,no hit
+SFXN1,Q9H9B4,Sideroflexin-1,PA,membrane,0.691894171,20.69938028,0.078939567,no hit
+APEH,P13798,Acylamino-acid-releasing enzyme,PA,membrane,-0.351424744,19.29005666,0.078991066,no hit
+LARP4,Q71RC2,La-related protein 4,PA,membrane,-0.724346337,20.03750905,0.079038022,no hit
+CAPZA1,P52907,F-actin-capping protein subunit alpha-1,PA,membrane,-0.368566285,20.98396886,0.079535866,no hit
+CCT8,P50990,T-complex protein 1 subunit theta,PA,membrane,0.397019036,24.9511629,0.081861447,no hit
+GNG12,Q9UBI6,Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-12,PA,membrane,0.398450385,22.74681487,0.08198016,no hit
+UQCRC1,P31930,"Cytochrome b-c1 complex subunit 1, mitochondrial",PA,membrane,0.571315496,21.08820209,0.082106949,no hit
+DPAGT1,Q9H3H5,UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferase,PA,membrane,0.365397343,19.88671387,0.082198357,no hit
+VMP1,Q96GC9,Vacuole membrane protein 1,PA,membrane,0.484298644,19.954471560000002,0.082235866,no hit
+RHOC,P08134,Rho-related GTP-binding protein RhoC,PA,membrane,0.507857714,16.61220432,0.082920021,no hit
+TXLNA,P40222,Alpha-taxilin,PA,membrane,-0.725119264,21.4409782,0.08328052,no hit
+SLC25A13,Q9UJS0,"Electrogenic aspartate/glutamate antiporter SLC25A13, mitochondrial",PA,membrane,0.502327131,18.86690501,0.083343281,no hit
+NUDT21,O43809,Cleavage and polyadenylation specificity factor subunit 5,PA,membrane,0.261897142,20.27188962,0.083357854,no hit
+ACSL4,O60488,Long-chain-fatty-acid--CoA ligase 4,PA,membrane,0.728571681,21.38888515,0.083413996,no hit
+SSR1,P43307,Translocon-associated protein subunit alpha,PA,membrane,0.630271661,19.46858834,0.083498846,no hit
+GSTM3,P21266,Glutathione S-transferase Mu 3,PA,membrane,-0.500832413,20.31643222,0.083586735,no hit
+ARFGAP1,Q8N6T3,ADP-ribosylation factor GTPase-activating protein 1,PA,membrane,-0.300681646,20.22658659,0.083593244,no hit
+SEC24D,O94855,Protein transport protein Sec24D,PA,membrane,-0.461769617,18.22452602,0.083942186,no hit
+GOT2,P00505,"Aspartate aminotransferase, mitochondrial",PA,membrane,0.667069433,22.51987098,0.084276891,no hit
+LIFR,P42702,Leukemia inhibitory factor receptor,PA,membrane,0.29522583,19.2555063,0.085082621,no hit
+SBDS,Q9Y3A5,Ribosome maturation protein SBDS,PA,membrane,-0.647129715,20.34418956,0.085116652,no hit
+DBN1,Q16643,Drebrin,PA,membrane,0.7345977,17.33579626,0.085381722,no hit
+MSN,P26038,Moesin,PA,membrane,1.135129977,25.33407919,0.085590795,no hit
+PLAUR,Q03405,Urokinase plasminogen activator surface receptor,PA,membrane,0.318935428,18.28379684,0.085804761,no hit
+GNB1,P62873,Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1,PA,membrane,0.344045015,21.07107931,0.086229364,no hit
+PSMA5,P28066,Proteasome subunit alpha type-5,PA,membrane,-0.366372401,19.71837902,0.086310157,no hit
+TAPBP,O15533,Tapasin,PA,membrane,0.463082213,19.39962263,0.086375204,no hit
+SEC24B,O95487,Protein transport protein Sec24B,PA,membrane,-0.540481623,17.93002556,0.087952685,no hit
+DAG1,Q14118,Dystroglycan 1,PA,membrane,0.552173143,22.24666385,0.087967147,no hit
+EEF1A1,P68104,Elongation factor 1-alpha 1,PA,membrane,-1.14977478,24.13774704,0.088125867,no hit
+ARCN1,P48444,Coatomer subunit delta,PA,membrane,-0.482191141,18.36017788,0.088169887,no hit
+GDA,Q9Y2T3,Guanine deaminase,PA,membrane,-0.407363752,20.50797128,0.08860023,no hit
+ATP1A1,P05023,Sodium/potassium-transporting ATPase subunit alpha-1,PA,membrane,0.439731686,25.53469749,0.088676493,no hit
+EIF5B,O60841,Eukaryotic translation initiation factor 5B,PA,membrane,-0.903880933,21.62652951,0.089019864,no hit
+PIPSL,A2A3N6,Putative PIP5K1A and PSMD4-like protein,PA,membrane,0.413831411,18.34369324,0.089222026,no hit
+NPR1,P16066,Atrial natriuretic peptide receptor 1,PA,membrane,0.515657423,17.10375482,0.089494214,no hit
+HPDL,Q96IR7,4-hydroxyphenylpyruvate dioxygenase-like protein,PA,membrane,0.429955356,18.40419526,0.090302669,no hit
+ERMP1,Q7Z2K6,Endoplasmic reticulum metallopeptidase 1,PA,membrane,0.435177691,20.40241946,0.090347281,no hit
+HADHB,P55084,"Trifunctional enzyme subunit beta, mitochondrial",PA,membrane,0.614925179,18.54311175,0.091194972,no hit
+RTN4RL2,Q86UN3,Reticulon-4 receptor-like 2,PA,membrane,0.365372071,20.31179079,0.091640418,no hit
+TLN1,Q9Y490,Talin-1,PA,membrane,0.280601454,20.951697,0.09164449,no hit
+FAF2,Q96CS3,FAS-associated factor 2,PA,membrane,0.477372054,17.52832792,0.092280708,no hit
+TPD52L2,O43399,Tumor protein D54,PA,membrane,-0.554466271,20.74437037,0.092354525,no hit
+ATL2,Q8NHH9,Atlastin-2,PA,membrane,0.448186869,19.54170123,0.092373068,no hit
+RPN1,P04843,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1,PA,membrane,0.746374904,22.84923866,0.093690116,no hit
+NPTX1,Q15818,Neuronal pentraxin-1,PA,membrane,0.389712579,20.44346055,0.093779667,no hit
+RPL14,P50914,60S ribosomal protein L14,PA,membrane,-1.052200059,22.25312641,0.093847475,no hit
+EIF4A3,P38919,Eukaryotic initiation factor 4A-III,PA,membrane,-0.567386593,20.35993692,0.094003841,no hit
+LRRC57,Q8N9N7,Leucine-rich repeat-containing protein 57,PA,membrane,0.291886108,18.58931593,0.09449177,no hit
+ACTR1A,P61163,Alpha-centractin,PA,membrane,-0.593232398,19.39826571,0.094739651,no hit
+RPS12,P25398,40S ribosomal protein S12,PA,membrane,-0.501675655,23.04291794,0.09485453,no hit
+ABHD16A,O95870,Phosphatidylserine lipase ABHD16A,PA,membrane,0.243159295,18.31443469,0.095185526,no hit
+LGALS1,P09382,Galectin-1,PA,membrane,0.35610519,24.46809639,0.095522062,no hit
+AGPS,O00116,"Alkyldihydroxyacetonephosphate synthase, peroxisomal",PA,membrane,0.385449975,19.14539833,0.095712067,no hit
+GCN1,Q92616,eIF-2-alpha kinase activator GCN1,PA,membrane,-0.699859866,22.79070213,0.095788332,no hit
+DSTN,P60981,Destrin,PA,membrane,0.342267023,19.68402033,0.095968742,no hit
+GTF2I,P78347,General transcription factor II-I,PA,membrane,0.385309213,21.01040123,0.098197717,no hit
+VDAC2,P45880,Voltage-dependent anion-selective channel protein 2,PA,membrane,0.592883951,22.54852612,0.098433274,no hit
+MCAM,P43121,Cell surface glycoprotein MUC18,PA,membrane,0.592334352,23.50246047,0.098838484,no hit
+UQCRFS1,P47985,"Cytochrome b-c1 complex subunit Rieske, mitochondrial",PA,membrane,0.282415184,17.89907727,0.099283711,no hit
+POGLUT3,Q7Z4H8,Protein O-glucosyltransferase 3,PA,membrane,0.381786345,19.61180653,0.099475544,no hit
+RUSF1,Q96GQ5,RUS family member 1,PA,membrane,0.397551522,18.26101249,0.099871653,no hit
+EIF3K,Q9UBQ5,Eukaryotic translation initiation factor 3 subunit K,PA,membrane,-0.359053562,21.95925266,0.100808793,no hit
+CLMP,Q9H6B4,CXADR-like membrane protein,PA,membrane,0.30078298,17.00599502,0.101304567,no hit
+FAM234A,Q9H0X4,Protein FAM234A,PA,membrane,0.471000473,21.46646661,0.101977292,no hit
+TMX4,Q9H1E5,Thioredoxin-related transmembrane protein 4,PA,membrane,0.290564742,18.70464877,0.102126269,no hit
+MME,P08473,Neprilysin,PA,membrane,-0.676933837,20.74711492,0.102522547,no hit
+SNRPB,P14678,Small nuclear ribonucleoprotein-associated proteins B and B',PA,membrane,-0.523502231,18.62365765,0.102903532,no hit
+TPI1,P60174,Triosephosphate isomerase,PA,membrane,-0.637602177,22.83692774,0.103529239,no hit
+ATP2A2,P16615,Sarcoplasmic/endoplasmic reticulum calcium ATPase 2,PA,membrane,0.489939905,23.25806782,0.103729693,no hit
+G3BP2,Q9UN86,Ras GTPase-activating protein-binding protein 2,PA,membrane,-0.826197812,20.69043659,0.104498006,no hit
+ROBO1,Q9Y6N7,Roundabout homolog 1,PA,membrane,0.329847124,20.76104703,0.104869432,no hit
+PHB2,Q99623,Prohibitin-2,PA,membrane,0.897526933,22.35070351,0.105501936,no hit
+COLGALT1,Q8NBJ5,Procollagen galactosyltransferase 1,PA,membrane,0.430447429,21.2924859,0.105990173,no hit
+HSPD1,P10809,"60 kDa heat shock protein, mitochondrial",PA,membrane,0.852030586,25.0427557,0.106465233,no hit
+ITGA5,P08648,Integrin alpha-5,PA,membrane,0.388689824,21.98580745,0.109340673,no hit
+SUCLG2,Q96I99,"Succinate--CoA ligase [GDP-forming] subunit beta, mitochondrial",PA,membrane,0.72652007,19.33303854,0.109621823,no hit
+ALG5,Q9Y673,Dolichyl-phosphate beta-glucosyltransferase,PA,membrane,0.413995373,19.43024524,0.10991451000000001,no hit
+CYB5R3,P00387,NADH-cytochrome b5 reductase 3,PA,membrane,0.427991749,22.55077761,0.110905552,no hit
+PSMA7,O14818,Proteasome subunit alpha type-7,PA,membrane,-0.310057993,19.47602635,0.111170393,no hit
+MFSD12,Q6NUT3,Major facilitator superfamily domain-containing protein 12,PA,membrane,0.542240012,16.88416107,0.111259944,no hit
+RPLP1,P05386,60S acidic ribosomal protein P1,PA,membrane,-0.906734267,19.24566518,0.111714338,no hit
+CLU,P10909,Clusterin,PA,membrane,0.304287861,19.03123831,0.112569024,no hit
+UGDH,O60701,UDP-glucose 6-dehydrogenase,PA,membrane,-0.351032911,19.57518516,0.113649369,no hit
+OAT,P04181,"Ornithine aminotransferase, mitochondrial",PA,membrane,0.319509474,17.51521831,0.114134507,no hit
+PNP,P00491,Purine nucleoside phosphorylase,PA,membrane,-0.535895389,19.96113367,0.114538905,no hit
+ADAM9,Q13443,Disintegrin and metalloproteinase domain-containing protein 9,PA,membrane,0.396316536,20.43586199,0.114959989,no hit
+DLAT,P10515,"Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial",PA,membrane,0.516160607,18.31192523,0.115454535,no hit
+GLRX3,O76003,Glutaredoxin-3,PA,membrane,-0.386455168,18.59470693,0.117093256,no hit
+SNTB2,Q13425,Beta-2-syntrophin,PA,membrane,0.366467722,18.98277481,0.119173754,no hit
+GDPD3,Q7L5L3,Lysophospholipase D GDPD3,PA,membrane,0.327916547,18.87696265,0.12033431,no hit
+HDGF,P51858,Hepatoma-derived growth factor,PA,membrane,-0.549938821,19.87568728,0.120491344,no hit
+MTCH2,Q9Y6C9,Mitochondrial carrier homolog 2,PA,membrane,0.477407959,19.22558045,0.121543174,no hit
+MAT2A,P31153,S-adenosylmethionine synthase isoform type-2,PA,membrane,-0.372008496,20.65974114,0.121827659,no hit
+PGRMC1,O00264,Membrane-associated progesterone receptor component 1,PA,membrane,0.377183635,23.07725856,0.122388479,no hit
+TMEM115,Q12893,Transmembrane protein 115,PA,membrane,-0.462411969,15.73600823,0.122628704,no hit
+CKAP4,Q07065,Cytoskeleton-associated protein 4,PA,membrane,0.805625446,22.50010481,0.123608831,no hit
+STT3A,P46977,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3A,PA,membrane,0.373084726,21.20104152,0.125278968,no hit
+SEPTIN7,Q16181,Septin-7,PA,membrane,-0.74536083,21.67045755,0.125641599,no hit
+CADM1,Q9BY67,Cell adhesion molecule 1,PA,membrane,0.355920318,21.72164744,0.126010584,no hit
+FKBP3,Q00688,Peptidyl-prolyl cis-trans isomerase FKBP3,PA,membrane,-0.676842577,20.59004709,0.12648431,no hit
+GET3,O43681,ATPase GET3,PA,membrane,-0.323143478,20.21539006,0.126618223,no hit
+EPB41L2,O43491,Band 4.1-like protein 2,PA,membrane,0.638128354,21.85371868,0.127053598,no hit
+DYNC1H1,Q14204,Cytoplasmic dynein 1 heavy chain 1,PA,membrane,-0.691359104,22.64482579,0.127581794,no hit
+G3BP1,Q13283,Ras GTPase-activating protein-binding protein 1,PA,membrane,-0.765222443,22.97181014,0.127910883,no hit
+TPP2,P29144,Tripeptidyl-peptidase 2,PA,membrane,0.656417105,21.39541228,0.128073113,no hit
+CNP,P09543,"2',3'-cyclic-nucleotide 3'-phosphodiesterase",PA,membrane,0.71541673,21.03236341,0.128317936,no hit
+DMD,P11532,Dystrophin,PA,membrane,0.4012506,19.23087737,0.129293387,no hit
+PRDX2,P32119,Peroxiredoxin-2,PA,membrane,-0.681020408,23.12138375,0.130028331,no hit
+CSNK1G2,P78368,Casein kinase I isoform gamma-2,PA,membrane,0.483553723,18.63317965,0.13057692,no hit
+VDAC1,P21796,Voltage-dependent anion-selective channel protein 1,PA,membrane,0.526294563,23.17871334,0.130693525,no hit
+EIF5A,P63241,Eukaryotic translation initiation factor 5A-1,PA,membrane,-0.737488425,21.756801,0.130847916,no hit
+ANXA3,P12429,Annexin A3,PA,membrane,-0.46384218,19.99368559,0.131501699,no hit
+RPS27A,P62979,Ubiquitin-40S ribosomal protein S27a,PA,membrane,-0.332864961,23.26614622,0.132060527,no hit
+BZW2,Q9Y6E2,eIF5-mimic protein 1,PA,membrane,-0.385022405,21.84975941,0.132353699,no hit
+TOMM22,Q9NS69,Mitochondrial import receptor subunit TOM22 homolog,PA,membrane,0.690853666,18.15662967,0.132705988,no hit
+CNPY3,Q9BT09,Protein canopy homolog 3,PA,membrane,0.408041437,19.81817465,0.133477213,no hit
+S100A16,Q96FQ6,Protein S100-A16,PA,membrane,-0.357668132,20.07290908,0.133899585,no hit
+UQCRC2,P22695,"Cytochrome b-c1 complex subunit 2, mitochondrial",PA,membrane,0.297221044,21.37058922,0.134044844,no hit
+FAM120A,Q9NZB2,Constitutive coactivator of PPAR-gamma-like protein 1,PA,membrane,-0.543240264,20.07479675,0.134756442,no hit
+STXBP3,O00186,Syntaxin-binding protein 3,PA,membrane,0.506306904,20.4516435,0.135756441,no hit
+MDH1,P40925,"Malate dehydrogenase, cytoplasmic",PA,membrane,-0.44858367,20.59332843,0.135965161,no hit
+SOD2,P04179,"Superoxide dismutase [Mn], mitochondrial",PA,membrane,0.838389356,19.06671892,0.136338167,no hit
+TMEM205,Q6UW68,Transmembrane protein 205,PA,membrane,0.287294294,18.52987791,0.13687651,no hit
+TSG101,Q99816,Tumor susceptibility gene 101 protein,PA,membrane,-0.464012185,17.40072969,0.137680224,no hit
+CBR1,P16152,Carbonyl reductase [NADPH] 1,PA,membrane,-0.229017156,18.81213208,0.138282024,no hit
+ACTN1,P12814,Alpha-actinin-1,PA,membrane,0.664120172,21.10618393,0.1392688,no hit
+GRB2,P62993,Growth factor receptor-bound protein 2,PA,membrane,-0.397957607,20.00772096,0.139631126,no hit
+S100P,P25815,Protein S100-P,PA,membrane,-0.920398263,19.25636406,0.1401097,no hit
+PYGB,P11216,"Glycogen phosphorylase, brain form",PA,membrane,-0.423733497,19.98736162,0.140572537,no hit
+DLD,P09622,"Dihydrolipoyl dehydrogenase, mitochondrial",PA,membrane,0.701517851,21.9948431,0.140624512,no hit
+VKORC1,Q9BQB6,Vitamin K epoxide reductase complex subunit 1,PA,membrane,0.595879499,19.93238498,0.141170998,no hit
+CLPP,Q16740,"ATP-dependent Clp protease proteolytic subunit, mitochondrial",PA,membrane,0.409087925,20.06466728,0.141535103,no hit
+PSMA2,P25787,Proteasome subunit alpha type-2,PA,membrane,-0.21987371,19.35612445,0.141815814,no hit
+CD81,P60033,CD81 antigen,PA,membrane,0.502282298,18.94899386,0.142017337,no hit
+BPNT2,Q9NX62,"Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase",PA,membrane,-0.257088689,20.2512306,0.142136566,no hit
+MTDH,Q86UE4,Protein LYRIC,PA,membrane,0.445904967,17.76888124,0.142827037,no hit
+ATP6V1B2,P21281,"V-type proton ATPase subunit B, brain isoform",PA,membrane,0.334565697,17.81367277,0.142886729,no hit
+RPL38,P63173,60S ribosomal protein L38,PA,membrane,-1.334569371,22.40061371,0.143774649,no hit
+VAPA,Q9P0L0,Vesicle-associated membrane protein-associated protein A,PA,membrane,0.402223588,20.9733874,0.143852125,no hit
+RHOA,P61586,Transforming protein RhoA,PA,membrane,0.287012767,23.34508855,0.144233482,no hit
+POTEKP,Q9BYX7,Putative beta-actin-like protein 3,PA,membrane,0.340361939,20.57308651,0.144432174,no hit
+PEF1,Q9UBV8,Peflin,PA,membrane,-0.3708719,19.18757056,0.144469319,no hit
+FKBP10,Q96AY3,Peptidyl-prolyl cis-trans isomerase FKBP10,PA,membrane,0.394884941,22.95086542,0.145317338,no hit
+LMBRD1,Q9NUN5,Lysosomal cobalamin transport escort protein LMBD1,PA,membrane,0.312207619,18.35254618,0.146329183,no hit
+TAOK1,Q7L7X3,Serine/threonine-protein kinase TAO1,PA,membrane,-0.352987474,18.62259628,0.146433463,no hit
+CNOT1,A5YKK6,CCR4-NOT transcription complex subunit 1,PA,membrane,-0.58193574,20.74959795,0.146930699,no hit
+HRAS,P01112,GTPase HRas,PA,membrane,0.334882867,19.11730794,0.147073038,no hit
+METAP2,P50579,Methionine aminopeptidase 2,PA,membrane,-0.703805463,19.73187351,0.14759581,no hit
+AP2S1,P53680,AP-2 complex subunit sigma,PA,membrane,0.279694535,18.03522827,0.147773652,no hit
+ASPH,Q12797,Aspartyl/asparaginyl beta-hydroxylase,PA,membrane,0.739886614,21.29020236,0.14924579,no hit
+SERPINH1,P50454,Serpin H1,PA,membrane,0.720214266,23.15971977,0.151138195,no hit
+STT3B,Q8TCJ2,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3B,PA,membrane,0.901042473,17.67731107,0.151517027,no hit
+NEGR1,Q7Z3B1,Neuronal growth regulator 1,PA,membrane,0.250768529,20.85183714,0.151904521,no hit
+YBX1,P67809,Y-box-binding protein 1,PA,membrane,-0.89670666,21.25605276,0.15206587,no hit
+DLG1,Q12959,Disks large homolog 1,PA,membrane,0.251064982,19.22909833,0.152530598,no hit
+THOP1,P52888,Thimet oligopeptidase,PA,membrane,-0.269512925,17.46276283,0.152667085,no hit
+P4HA1,P13674,Prolyl 4-hydroxylase subunit alpha-1,PA,membrane,0.420946012,22.62230855,0.152778689,no hit
+CYBA,P13498,Cytochrome b-245 light chain,PA,membrane,0.453419207,20.76696294,0.153052492,no hit
+IDH1,O75874,Isocitrate dehydrogenase [NADP] cytoplasmic,PA,membrane,-0.425318343,20.030549100000002,0.153140054,no hit
+PLP2,Q04941,Proteolipid protein 2,PA,membrane,-0.404407661,18.34675807,0.153692692,no hit
+CD58,P19256,Lymphocyte function-associated antigen 3,PA,membrane,0.276660601,19.58350672,0.153825228,no hit
+CAPN2,P17655,Calpain-2 catalytic subunit,PA,membrane,-0.349806397,19.18452765,0.153950565,no hit
+ST13,P50502,Hsc70-interacting protein,PA,membrane,-0.491521942,20.25841761,0.15421045,no hit
+SLC2A1,P11166,"Solute carrier family 2, facilitated glucose transporter member 1",PA,membrane,0.326133511,23.23071939,0.154977775,no hit
+GOLT1B,Q9Y3E0,Vesicle transport protein GOT1B,PA,membrane,-0.347293675,20.66837266,0.155172867,no hit
+PTPN1,P18031,Tyrosine-protein phosphatase non-receptor type 1,PA,membrane,0.530317638,17.56707535,0.155195222,no hit
+NRDC,O43847,Nardilysin,PA,membrane,-0.266076335,17.60520901,0.155869664,no hit
+KIF23,Q02241,Kinesin-like protein KIF23,PA,membrane,0.86771193,20.97735155,0.156001487,no hit
+FXR1,P51114,RNA-binding protein FXR1,PA,membrane,-0.703950962,20.78111201,0.156941784,no hit
+SLC6A9,P48067,Sodium- and chloride-dependent glycine transporter 1,PA,membrane,0.25812945,20.54895327,0.157331159,no hit
+ITGB1,P05556,Integrin beta-1,PA,membrane,0.565090106,24.80502514,0.158283719,no hit
+PLOD1,Q02809,"Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1",PA,membrane,0.298904823,18.89352367,0.158517906,no hit
+DNAJB11,Q9UBS4,DnaJ homolog subfamily B member 11,PA,membrane,0.698758686,19.2515392,0.158802192,no hit
+NPTN,Q9Y639,Neuroplastin,PA,membrane,0.610968101,21.81182448,0.158877318,no hit
+PPP1R18,Q6NYC8,Phostensin,PA,membrane,0.377460257,17.76532683,0.160282815,no hit
+HNRNPA2B1,P22626,Heterogeneous nuclear ribonucleoproteins A2/B1,PA,membrane,-0.284184446,21.30799433,0.160678455,no hit
+TECR,Q9NZ01,Very-long-chain enoyl-CoA reductase,PA,membrane,0.578844758,20.61659578,0.160771091,no hit
+KDSR,Q06136,3-ketodihydrosphingosine reductase,PA,membrane,0.328561034,21.4578221,0.160851377,no hit
+RACGAP1,Q9H0H5,Rac GTPase-activating protein 1,PA,membrane,0.80015769,20.87486025,0.161871388,no hit
+HPRT1,P00492,Hypoxanthine-guanine phosphoribosyltransferase,PA,membrane,-0.637532032,18.6784286,0.162172769,no hit
+LYN,P07948,Tyrosine-protein kinase Lyn,PA,membrane,0.526243065,19.07684168,0.162754435,no hit
+ARPC3,O15145,Actin-related protein 2/3 complex subunit 3,PA,membrane,0.272987561,20.33981322,0.163584798,no hit
+XPO1,O14980,Exportin-1,PA,membrane,-0.377151022,21.41333699,0.165562088,no hit
+CFL1,P23528,Cofilin-1,PA,membrane,0.357873837,23.43714274,0.167197831,no hit
+LSS,P48449,Lanosterol synthase,PA,membrane,0.210106174,20.5455377,0.168720816,no hit
+TXNL1,O43396,Thioredoxin-like protein 1,PA,membrane,-0.456200824,19.07641128,0.168810804,no hit
+CMPK1,P30085,UMP-CMP kinase,PA,membrane,-0.458226907,19.65386179,0.169047644,no hit
+SEPTIN10,Q9P0V9,Septin-10,PA,membrane,-0.653064978,20.00361216,0.169742179,no hit
+CERS2,Q96G23,Ceramide synthase 2,PA,membrane,0.344956562,19.52845186,0.169851677,no hit
+MIA3,Q5JRA6,Transport and Golgi organization protein 1 homolog,PA,membrane,0.665683222,16.94988849,0.170911258,no hit
+TXLNG,Q9NUQ3,Gamma-taxilin,PA,membrane,-0.577832287,20.8834541,0.17123897,no hit
+ESYT1,Q9BSJ8,Extended synaptotagmin-1,PA,membrane,0.484022334,20.97716176,0.17150143,no hit
+TSPAN8,P19075,Tetraspanin-8,PA,membrane,0.781685954,19.99545087,0.17164656,no hit
+RAP1B,P61224,Ras-related protein Rap-1b,PA,membrane,0.321145717,24.04002261,0.171783997,no hit
+CRELD1,Q96HD1,Protein disulfide isomerase CRELD1,PA,membrane,0.261276934,18.99428676,0.17225059,no hit
+NIT2,Q9NQR4,Omega-amidase NIT2,PA,membrane,-0.29603631,18.52010501,0.173028293,no hit
+MGST1,P10620,Microsomal glutathione S-transferase 1,PA,membrane,0.484738443,21.43340999,0.173308329,no hit
+PAFAH1B1,P43034,Platelet-activating factor acetylhydrolase IB subunit beta,PA,membrane,-0.642753988,19.05741031,0.1734674,no hit
+RPA1,P27694,Replication protein A 70 kDa DNA-binding subunit,PA,membrane,-0.262158267,19.24452931,0.173512532,no hit
+HPCAL1,P37235,Hippocalcin-like protein 1,PA,membrane,-0.49626815,21.5014862,0.17466919,no hit
+GSPT1,P15170,Eukaryotic peptide chain release factor GTP-binding subunit ERF3A,PA,membrane,-0.515423252,20.89527198,0.174977472,no hit
+NNT,Q13423,"NAD(P) transhydrogenase, mitochondrial",PA,membrane,0.427617328,17.50107296,0.175013095,no hit
+NUP210,Q8TEM1,Nuclear pore membrane glycoprotein 210,PA,membrane,0.312570587,17.54822019,0.175872386,no hit
+PALS2,Q9NZW5,Protein PALS2,PA,membrane,0.352826944,20.16170953,0.175998177,no hit
+PSMB2,P49721,Proteasome subunit beta type-2,PA,membrane,-0.371381642,20.64840589,0.176216858,no hit
+ABCF2,Q9UG63,ATP-binding cassette sub-family F member 2,PA,membrane,-0.654996222,22.09361721,0.176639218,no hit
+NASP,P49321,Nuclear autoantigenic sperm protein,PA,membrane,-0.388005566,22.02833914,0.177069451,no hit
+ADK,P55263,Adenosine kinase,PA,membrane,-0.336607207,18.96157813,0.178893816,no hit
+MYO1B,O43795,Unconventional myosin-Ib,PA,membrane,0.671941152,20.98499295,0.179071349,no hit
+COX5A,P20674,"Cytochrome c oxidase subunit 5A, mitochondrial",PA,membrane,0.590266485,18.99378633,0.179083759,no hit
+CYC1,P08574,"Cytochrome c1, heme protein, mitochondrial",PA,membrane,0.460735728,18.89709524,0.179434016,no hit
+RPLP0,P05388,60S acidic ribosomal protein P0,PA,membrane,-0.667674067,22.30264549,0.17979139,no hit
+GEMIN5,Q8TEQ6,Gem-associated protein 5,PA,membrane,-0.587955816,20.85778129,0.180367813,no hit
+MARCKS,P29966,Myristoylated alanine-rich C-kinase substrate,PA,membrane,0.557573651,19.77903547,0.180689856,no hit
+EIF5,P55010,Eukaryotic translation initiation factor 5,PA,membrane,-0.489000113,19.22066273,0.181795063,no hit
+FUS,P35637,RNA-binding protein FUS,PA,membrane,-0.365849084,20.6378928,0.182744593,no hit
+IKBIP,Q70UQ0,Inhibitor of nuclear factor kappa-B kinase-interacting protein,PA,membrane,0.641817837,17.28795329,0.183007071,no hit
+EPB41L1,Q9H4G0,Band 4.1-like protein 1,PA,membrane,0.602014874,19.2884622,0.18325282,no hit
+ACTN4,O43707,Alpha-actinin-4,PA,membrane,0.922218142,24.23763788,0.183329336,no hit
+PABPC1,P11940,Polyadenylate-binding protein 1,PA,membrane,-0.630119002,24.21336036,0.183804025,no hit
+ITGA1,P56199,Integrin alpha-1,PA,membrane,0.49113638,23.7902444,0.184583985,no hit
+METTL7A,Q9H8H3,Putative methyltransferase-like protein 7A,PA,membrane,0.357433527,19.20528588,0.184766376,no hit
+RAP2C,Q9Y3L5,Ras-related protein Rap-2c,PA,membrane,0.358702367,20.94884519,0.185261849,no hit
+MBOAT7,Q96N66,Lysophospholipid acyltransferase 7,PA,membrane,0.473522103,21.15090251,0.1866082,no hit
+SEPTIN6,Q14141,Septin-6,PA,membrane,-0.459227729,19.49301454,0.186651999,no hit
+SEPTIN2,Q15019,Septin-2,PA,membrane,-0.582607433,21.13641739,0.186812507,no hit
+ARPC2,O15144,Actin-related protein 2/3 complex subunit 2,PA,membrane,0.600123475,19.94486273,0.187162091,no hit
+SYNGR2,O43760,Synaptogyrin-2,PA,membrane,-0.368752676,23.70597856,0.187929129,no hit
+SNRNP70,P08621,U1 small nuclear ribonucleoprotein 70 kDa,PA,membrane,-0.710078446,19.87591706,0.187943742,no hit
+CAPRIN1,Q14444,Caprin-1,PA,membrane,-0.846406766,22.51499439,0.188741693,no hit
+TPD52,P55327,Tumor protein D52,PA,membrane,-0.408238867,19.03345466,0.189798099,no hit
+ANXA4,P09525,Annexin A4,PA,membrane,-0.328814737,20.44480682,0.190680226,no hit
+CHMP6,Q96FZ7,Charged multivesicular body protein 6,PA,membrane,0.650461154,18.97499389,0.190688014,no hit
+QARS1,P47897,Glutamine--tRNA ligase,PA,membrane,0.266726077,20.27250349,0.191147623,no hit
+FDFT1,P37268,Squalene synthase,PA,membrane,0.425187038,20.97080569,0.191233484,no hit
+TOR1AIP2,Q8NFQ8,Torsin-1A-interacting protein 2,PA,membrane,0.38633714,21.49141117,0.192076724,no hit
+ECI2,O75521,Enoyl-CoA delta isomerase 2,PA,membrane,0.486619502,20.20966323,0.192222021,no hit
+CAT,P04040,Catalase,PA,membrane,0.418795734,21.74368313,0.192393161,no hit
+GSS,P48637,Glutathione synthetase,PA,membrane,-0.25187262,19.9201646,0.192401739,no hit
+GNG5,P63218,Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-5,PA,membrane,0.295276978,21.2473397,0.193509096,no hit
+CISD1,Q9NZ45,CDGSH iron-sulfur domain-containing protein 1,PA,membrane,0.371064441,19.75460577,0.193786879,no hit
+ATP5F1B,P06576,"ATP synthase subunit beta, mitochondrial",PA,membrane,0.504722104,23.704151,0.194272179,no hit
+ACTR3,P61158,Actin-related protein 3,PA,membrane,0.580757571,20.21934688,0.19457402,no hit
+TMEM259,Q4ZIN3,Membralin,PA,membrane,0.433971247,19.72502466,0.194578842,no hit
+PC,P11498,"Pyruvate carboxylase, mitochondrial",PA,membrane,0.299887838,18.01429804,0.19968039,no hit
+RSU1,Q15404,Ras suppressor protein 1,PA,membrane,-0.346798298,19.45161435,0.199743626,no hit
+CLTC,Q00610,Clathrin heavy chain 1,PA,membrane,-0.58344903,23.97824767,0.199943655,no hit
+MYO1C,O00159,Unconventional myosin-Ic,PA,membrane,0.762812906,22.58191033,0.200117587,no hit
+TM9SF4,Q92544,Transmembrane 9 superfamily member 4,PA,membrane,-0.343776127,21.25835945,0.200844949,no hit
+ECHS1,P30084,"Enoyl-CoA hydratase, mitochondrial",PA,membrane,0.644135774,22.64441547,0.20091599499999999,no hit
+CTNND1,O60716,Catenin delta-1,PA,membrane,0.426531279,17.8583185,0.201162898,no hit
+SKIC8,Q9GZS3,SKI8 subunit of superkiller complex protein,PA,membrane,-0.397407667,19.08300886,0.201326701,no hit
+LARP1,Q6PKG0,La-related protein 1,PA,membrane,-0.46569172,20.15023106,0.201806066,no hit
+TARDBP,Q13148,TAR DNA-binding protein 43,PA,membrane,-0.562865466,19.41400504,0.202517645,no hit
+CUTA,O60888,Protein CutA,PA,membrane,-0.232035065,19.86332486,0.203978076,no hit
+HMGB1,P09429,High mobility group protein B1,PA,membrane,-0.510994576,20.54597003,0.204000527,no hit
+CAPZB,P47756,F-actin-capping protein subunit beta,PA,membrane,-0.299633964,21.60565911,0.204691825,no hit
+DDX20,Q9UHI6,Probable ATP-dependent RNA helicase DDX20,PA,membrane,-0.54363381,19.28159217,0.205498416,no hit
+TMX3,Q96JJ7,Protein disulfide-isomerase TMX3,PA,membrane,0.367483464,20.95633832,0.20563177,no hit
+EIF3M,Q7L2H7,Eukaryotic translation initiation factor 3 subunit M,PA,membrane,-0.681462522,19.89538069,0.205645679,no hit
+PURA,Q00577,Transcriptional activator protein Pur-alpha,PA,membrane,-0.657966403,19.52289946,0.206079171,no hit
+ECI1,P42126,"Enoyl-CoA delta isomerase 1, mitochondrial",PA,membrane,0.554463027,20.65775419,0.2062855,no hit
+CLUH,O75153,Clustered mitochondria protein homolog,PA,membrane,-0.474573449,20.27636457,0.20630031,no hit
+GARS1,P41250,Glycine--tRNA ligase,PA,membrane,-0.347558014,19.53969869,0.206579223,no hit
+SLC43A3,Q8NBI5,Equilibrative nucleobase transporter 1,PA,membrane,0.266220926,23.125470580000002,0.207197357,no hit
+PPA2,Q9H2U2,"Inorganic pyrophosphatase 2, mitochondrial",PA,membrane,0.354218702,17.35825034,0.208002998,no hit
+LXN,Q9BS40,Latexin,PA,membrane,-0.426799727,18.16682932,0.209452226,no hit
+CAPG,P40121,Macrophage-capping protein,PA,membrane,-0.324627022,19.62454061,0.209990864,no hit
+CYFIP1,Q7L576,Cytoplasmic FMR1-interacting protein 1,PA,membrane,0.529495555,17.97214569,0.20999585,no hit
+DCTN2,Q13561,Dynactin subunit 2,PA,membrane,-0.16922936,19.19673506,0.210207444,no hit
+SYNJ2BP,P57105,Synaptojanin-2-binding protein,PA,membrane,0.432890198,18.54107692,0.210241153,no hit
+SEC23IP,Q9Y6Y8,SEC23-interacting protein,PA,membrane,-0.49205922,20.95768986,0.210265228,no hit
+PODXL,O00592,Podocalyxin,PA,membrane,0.352561315,23.03584377,0.210381766,no hit
+TMX2,Q9Y320,Thioredoxin-related transmembrane protein 2,PA,membrane,0.428316474,21.78177836,0.210491862,no hit
+SFT2D3,Q587I9,Vesicle transport protein SFT2C,PA,membrane,-0.282776385,16.45173865,0.210928387,no hit
+ABCF1,Q8NE71,ATP-binding cassette sub-family F member 1,PA,membrane,-0.631721972,20.75658584,0.211606215,no hit
+GDE1,Q9NZC3,Glycerophosphodiester phosphodiesterase 1,PA,membrane,0.305309701,19.13413814,0.211859937,no hit
+RPL7,P18124,60S ribosomal protein L7,PA,membrane,-0.701040242,23.09357298,0.211942078,no hit
+ZMPSTE24,O75844,CAAX prenyl protease 1 homolog,PA,membrane,0.41201244,22.96269997,0.212001088,no hit
+VASN,Q6EMK4,Vasorin,PA,membrane,0.301626373,19.60910745,0.212441997,no hit
+EZR,P15311,Ezrin,PA,membrane,0.75438576,23.76831338,0.212792077,no hit
+PLS1,Q14651,Plastin-1,PA,membrane,0.208566815,18.06680599,0.213715497,no hit
+CSDE1,O75534,Cold shock domain-containing protein E1,PA,membrane,-0.704461001,21.92949546,0.214167749,no hit
+HSPA13,P48723,Heat shock 70 kDa protein 13,PA,membrane,0.279005961,20.3096273,0.214534479,no hit
+DDX6,P26196,Probable ATP-dependent RNA helicase DDX6,PA,membrane,-0.480208191,20.89930455,0.215064952,no hit
+RPS25,P62851,40S ribosomal protein S25,PA,membrane,-0.876401163,23.73419303,0.215092992,no hit
+CAPZA2,P47755,F-actin-capping protein subunit alpha-2,PA,membrane,-0.345423732,19.70862535,0.215248236,no hit
+DSG2,Q14126,Desmoglein-2,PA,membrane,0.219861728,22.59903722,0.215414019,no hit
+TMEM230,Q96A57,Transmembrane protein 230,PA,membrane,-0.432991495,18.06322385,0.216026454,no hit
+DDX3X,O00571,ATP-dependent RNA helicase DDX3X,PA,membrane,-0.577699148,22.6417999,0.216568998,no hit
+CLPTM1,O96005,Putative lipid scramblase CLPTM1,PA,membrane,0.338231462,21.91416527,0.217661099,no hit
+VIM,P08670,Vimentin,PA,membrane,-0.570895723,23.26535519,0.220172667,no hit
+SLC1A5,Q15758,Neutral amino acid transporter B(0),PA,membrane,0.249354796,23.33931246,0.220820133,no hit
+RPS7,P62081,40S ribosomal protein S7,PA,membrane,-0.786140908,23.89686842,0.221815067,no hit
+RPS10,P46783,40S ribosomal protein S10,PA,membrane,-0.644498881,23.21066573,0.22186396,no hit
+EEF2,P13639,Elongation factor 2,PA,membrane,-0.649703471,23.90103498,0.222481431,no hit
+POLD1,P28340,DNA polymerase delta catalytic subunit,PA,membrane,0.426102839,18.92673224,0.22280408300000001,no hit
+LAMB1,P07942,Laminin subunit beta-1,PA,membrane,0.277735931,19.38340498,0.223317989,no hit
+PI4K2A,Q9BTU6,Phosphatidylinositol 4-kinase type 2-alpha,PA,membrane,0.19639013,18.57865213,0.223393961,no hit
+MTHFD1,P11586,"C-1-tetrahydrofolate synthase, cytoplasmic",PA,membrane,-0.55566891,21.11017508,0.223744564,no hit
+PSME1,Q06323,Proteasome activator complex subunit 1,PA,membrane,-0.613265819,20.70797371,0.223824291,no hit
+ATP5PD,O75947,"ATP synthase subunit d, mitochondrial",PA,membrane,0.525606099,20.38986318,0.224255456,no hit
+ATL3,Q6DD88,Atlastin-3,PA,membrane,0.186134311,22.31377479,0.226522503,no hit
+ITGA3,P26006,Integrin alpha-3,PA,membrane,0.301445236,23.1563721,0.227531742,no hit
+ACO2,Q99798,"Aconitate hydratase, mitochondrial",PA,membrane,0.461328909,20.13385828,0.228606489,no hit
+PEDS1,A5PLL7,Plasmanylethanolamine desaturase,PA,membrane,-0.388173061,17.79627497,0.229467802,no hit
+COMT,P21964,Catechol O-methyltransferase,PA,membrane,0.282868536,22.0958137,0.229736296,no hit
+PGRMC2,O15173,Membrane-associated progesterone receptor component 2,PA,membrane,0.511154774,22.64941626,0.230672277,no hit
+LGALS3,P17931,Galectin-3,PA,membrane,0.215752229,23.61945478,0.231673564,no hit
+SCAMP1,O15126,Secretory carrier-associated membrane protein 1,PA,membrane,-0.326640784,22.36589434,0.23240987,no hit
+SACM1L,Q9NTJ5,Phosphatidylinositol-3-phosphatase SAC1,PA,membrane,0.471149363,19.36189017,0.232567839,no hit
+SLC22A18,Q96BI1,Solute carrier family 22 member 18,PA,membrane,0.401146742,19.36626462,0.232958776,no hit
+FARSB,Q9NSD9,Phenylalanine--tRNA ligase beta subunit,PA,membrane,-0.477769624,21.11934935,0.233497148,no hit
+AP2M1,Q96CW1,AP-2 complex subunit mu,PA,membrane,0.562545749,18.49743501,0.233926784,no hit
+NCEH1,Q6PIU2,Neutral cholesterol ester hydrolase 1,PA,membrane,0.343477574,22.49043783,0.234332796,no hit
+WLS,Q5T9L3,Protein wntless homolog,PA,membrane,0.241917615,21.06043891,0.235105837,no hit
+SLC38A5,Q8WUX1,Sodium-coupled neutral amino acid transporter 5,PA,membrane,0.357309759,21.64665682,0.23565857,no hit
+TMEM43,Q9BTV4,Transmembrane protein 43,PA,membrane,0.210304037,20.32943404,0.236543588,no hit
+RPS15A,P62244,40S ribosomal protein S15a,PA,membrane,-0.63411026,22.85824235,0.236787568,no hit
+CORO1C,Q9ULV4,Coronin-1C,PA,membrane,0.487951663,21.75801802,0.237118433,no hit
+GORASP2,Q9H8Y8,Golgi reassembly-stacking protein 2,PA,membrane,-0.394279486,19.31453098,0.237126817,no hit
+RTN3,O95197,Reticulon-3,PA,membrane,-0.377902465,20.75128982,0.238071159,no hit
+NUP214,P35658,Nuclear pore complex protein Nup214,PA,membrane,0.199848944,19.10292287,0.238267684,no hit
+SLC44A1,Q8WWI5,Choline transporter-like protein 1,PA,membrane,0.459230458,19.54380019,0.239051819,no hit
+FXR2,P51116,RNA-binding protein FXR2,PA,membrane,-0.51279652,20.90990153,0.239659314,no hit
+FOLR1,P15328,Folate receptor alpha,PA,membrane,0.480706982,22.57240817,0.240298255,no hit
+FLOT2,Q14254,Flotillin-2,PA,membrane,0.345883231,20.90409988,0.240667197,no hit
+SLC31A1,O15431,High affinity copper uptake protein 1,PA,membrane,0.313739314,21.67376344,0.240953012,no hit
+HTATIP2,Q9BUP3,Oxidoreductase HTATIP2,PA,membrane,0.406284402,20.77703036,0.241282419,no hit
+MINPP1,Q9UNW1,Multiple inositol polyphosphate phosphatase 1,PA,membrane,0.216771453,19.47939938,0.24211871,no hit
+RPS11,P62280,40S ribosomal protein S11,PA,membrane,-0.742914309,23.03124588,0.242503975,no hit
+SEPTIN9,Q9UHD8,Septin-9,PA,membrane,-0.571622669,20.62282783,0.242816206,no hit
+MOGS,Q13724,Mannosyl-oligosaccharide glucosidase,PA,membrane,0.325040362,18.09275932,0.243130177,no hit
+DCXR,Q7Z4W1,L-xylulose reductase,PA,membrane,0.389887223,18.76619983,0.244104965,no hit
+HLA-H,P01893,"Putative HLA class I histocompatibility antigen, alpha chain H",PA,membrane,0.30323353,22.17885765,0.244506716,no hit
+ENG,P17813,Endoglin,PA,membrane,0.252465924,21.09545145,0.246806525,no hit
+RPL36,Q9Y3U8,60S ribosomal protein L36,PA,membrane,-0.891539891,21.91470485,0.247393571,no hit
+RNF5,Q99942,E3 ubiquitin-protein ligase RNF5,PA,membrane,0.271632698,15.34721401,0.248402997,no hit
+GRPEL1,Q9HAV7,"GrpE protein homolog 1, mitochondrial",PA,membrane,0.382051128,17.84609381,0.249022296,no hit
+YKT6,O15498,Synaptobrevin homolog YKT6,PA,membrane,-0.198322628,18.72060647,0.249228582,no hit
+RPL11,P62913,60S ribosomal protein L11,PA,membrane,-0.719758147,21.76274687,0.249340241,no hit
+AK2,P54819,"Adenylate kinase 2, mitochondrial",PA,membrane,0.461237312,22.37643978,0.24982743,no hit
+FUNDC2,Q9BWH2,FUN14 domain-containing protein 2,PA,membrane,0.392387335,19.27438144,0.250303151,no hit
+PPP3CA,Q08209,Protein phosphatase 3 catalytic subunit alpha,PA,membrane,-0.209688811,20.39345478,0.25105735,no hit
+ANXA2,P07355,Annexin A2,PA,membrane,0.202843576,25.62343332,0.251373619,no hit
+P4HB,P07237,Protein disulfide-isomerase,PA,membrane,0.51464194,25.36471579,0.25152498,no hit
+ALPP,P05187,"Alkaline phosphatase, placental type",PA,membrane,0.388317636,21.15663176,0.251667894,no hit
+RPL24,P83731,60S ribosomal protein L24,PA,membrane,-0.801595676,23.50143547,0.251766355,no hit
+EIF1AX,P47813,"Eukaryotic translation initiation factor 1A, X-chromosomal",PA,membrane,-0.779830438,20.76714892,0.254184501,no hit
+MVP,Q14764,Major vault protein,PA,membrane,-0.369573019,19.70581591,0.254351746,no hit
+M6PR,P20645,Cation-dependent mannose-6-phosphate receptor,PA,membrane,-0.413873047,23.27435831,0.254480105,no hit
+RPS23,P62266,40S ribosomal protein S23,PA,membrane,-0.720609665,22.53976506,0.254551137,no hit
+RPL10,P27635,60S ribosomal protein L10,PA,membrane,-0.522427885,22.87079843,0.256037463,no hit
+TAP1,Q03518,Antigen peptide transporter 1,PA,membrane,0.214297746,18.99062441,0.258017899,no hit
+RPS3,P23396,40S ribosomal protein S3,PA,membrane,-0.704760994,23.81079942,0.258510659,no hit
+LONP1,P36776,"Lon protease homolog, mitochondrial",PA,membrane,0.546623733,19.77286634,0.260354379,no hit
+SVIP,Q8NHG7,Small VCP/p97-interacting protein,PA,membrane,0.471780046,18.57351957,0.260889526,no hit
+RPL4,P36578,60S ribosomal protein L4,PA,membrane,-0.781865611,24.37096079,0.261436501,no hit
+PSMA1,P25786,Proteasome subunit alpha type-1,PA,membrane,-0.167544759,20.46041541,0.26418415,no hit
+PLEC,Q15149,Plectin,PA,membrane,-0.364453139,23.26581315,0.26450812,no hit
+RPL5,P46777,60S ribosomal protein L5,PA,membrane,-0.535447229,23.98272342,0.265023336,no hit
+RPS2,P15880,40S ribosomal protein S2,PA,membrane,-0.807862177,23.32812182,0.266059763,no hit
+RPL22,P35268,60S ribosomal protein L22,PA,membrane,-0.834790613,21.59820832,0.26617747,no hit
+SLC5A3,P53794,Sodium/myo-inositol cotransporter,PA,membrane,0.227089655,19.78057154,0.266797504,no hit
+SSB,P05455,Lupus La protein,PA,membrane,-0.424838839,21.61758484,0.267332578,no hit
+NPR3,P17342,Atrial natriuretic peptide receptor 3,PA,membrane,0.278272811,21.37926205,0.267505787,no hit
+CAP1,Q01518,Adenylyl cyclase-associated protein 1,PA,membrane,-0.324558174,22.05729309,0.268330742,no hit
+RPL34,P49207,60S ribosomal protein L34,PA,membrane,-0.866635054,22.97863035,0.269559331,no hit
+RPS14,P62263,40S ribosomal protein S14,PA,membrane,-0.623362823,22.44805796,0.27039778,no hit
+TPM4,P67936,Tropomyosin alpha-4 chain,PA,membrane,0.367090648,20.58704091,0.270477776,no hit
+TUFM,P49411,"Elongation factor Tu, mitochondrial",PA,membrane,0.498355553,22.61435003,0.271824868,no hit
+CD109,Q6YHK3,CD109 antigen,PA,membrane,0.381339329,24.26470353,0.27250818,no hit
+LGALS3BP,Q08380,Galectin-3-binding protein,PA,membrane,0.199746058,20.28507232,0.272620641,no hit
+ERGIC1,Q969X5,Endoplasmic reticulum-Golgi intermediate compartment protein 1,PA,membrane,-0.153239681,20.9454797,0.273112207,no hit
+FARP1,Q9Y4F1,"FERM, ARHGEF and pleckstrin domain-containing protein 1",PA,membrane,0.281923289,19.699451410000002,0.274018045,no hit
+FUBP1,Q96AE4,Far upstream element-binding protein 1,PA,membrane,-0.241436466,23.56013824,0.274271357,no hit
+IGF2BP3,O00425,Insulin-like growth factor 2 mRNA-binding protein 3,PA,membrane,-0.523217509,21.17656811,0.275606368,no hit
+RPS20,P60866,40S ribosomal protein S20,PA,membrane,-0.681887629,21.99730975,0.276143012,no hit
+RPS15,P62841,40S ribosomal protein S15,PA,membrane,-0.535361059,21.19761878,0.276440159,no hit
+SCP2,P22307,Sterol carrier protein 2,PA,membrane,0.470368349,20.52820033,0.27892421,no hit
+ADPGK,Q9BRR6,ADP-dependent glucokinase,PA,membrane,0.189489128,19.57929901,0.279846254,no hit
+APMAP,Q9HDC9,Adipocyte plasma membrane-associated protein,PA,membrane,0.335392963,22.93259955,0.279950663,no hit
+AHCY,P23526,Adenosylhomocysteinase,PA,membrane,-0.233421121,19.44033709,0.280093145,no hit
+RANBP2,P49792,E3 SUMO-protein ligase RanBP2,PA,membrane,0.194494866,17.8932662,0.280388242,no hit
+RPL23A,P62750,60S ribosomal protein L23a,PA,membrane,-0.743988082,22.76455738,0.280960645,no hit
+PRRC2C,Q9Y520,Protein PRRC2C,PA,membrane,-0.390465659,18.70187186,0.283047171,no hit
+RPS17,P08708,40S ribosomal protein S17,PA,membrane,-0.686998413,21.91186688,0.283503203,no hit
+RPL9P9,P32969,60S ribosomal protein L9,PA,membrane,-0.777525643,21.6987877,0.283732722,no hit
+EIF3G,O75821,Eukaryotic translation initiation factor 3 subunit G,PA,membrane,-0.547011142,20.97038447,0.285397725,no hit
+RPS6,P62753,40S ribosomal protein S6,PA,membrane,-0.73981641,23.07830141,0.285428783,no hit
+ERH,P84090,Enhancer of rudimentary homolog,PA,membrane,-0.375473512,20.53459871,0.285677585,no hit
+YTHDF3,Q7Z739,YTH domain-containing family protein 3,PA,membrane,-0.295902528,19.86481414,0.2857477,no hit
+FLOT1,O75955,Flotillin-1,PA,membrane,0.289377723,20.07152784,0.285872032,no hit
+PDHA1,P08559,"Pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial",PA,membrane,0.436237946,19.34709266,0.286099405,no hit
+SLC33A1,O00400,Acetyl-coenzyme A transporter 1,PA,membrane,0.467258422,18.96539829,0.286333564,no hit
+SYNCRIP,O60506,Heterogeneous nuclear ribonucleoprotein Q,PA,membrane,-0.556337848,22.79910977,0.286808745,no hit
+RPS18,P62269,40S ribosomal protein S18,PA,membrane,-0.693748991,23.64983913,0.287005365,no hit
+SCD,O00767,Stearoyl-CoA desaturase,PA,membrane,0.388075863,20.51205902,0.287247478,no hit
+ACADVL,P49748,"Very long-chain specific acyl-CoA dehydrogenase, mitochondrial",PA,membrane,0.24441932,18.19372032,0.287722072,no hit
+RPL7A,P62424,60S ribosomal protein L7a,PA,membrane,-0.724354375,23.68470121,0.288688866,no hit
+EMC1,Q8N766,ER membrane protein complex subunit 1,PA,membrane,0.367357844,18.52119141,0.289139442,no hit
+DAB2,P98082,Disabled homolog 2,PA,membrane,0.146113004,18.5506001,0.289584334,no hit
+LDLR,P01130,Low-density lipoprotein receptor,PA,membrane,-0.261988552,22.70892172,0.289751614,no hit
+ERLIN1,O75477,Erlin-1,PA,membrane,0.665319576,19.64054787,0.290014024,no hit
+LRPAP1,P30533,Alpha-2-macroglobulin receptor-associated protein,PA,membrane,0.341339123,18.76621326,0.291142092,no hit
+COPB2,P35606,Coatomer subunit beta',PA,membrane,-0.365165844,19.93501687,0.292103183,no hit
+RPS5,P46782,40S ribosomal protein S5,PA,membrane,-0.683881158,23.08834219,0.292138594,no hit
+RPS29,P62273,40S ribosomal protein S29,PA,membrane,-0.526783886,21.62319109,0.292664564,no hit
+VBP1,P61758,Prefoldin subunit 3,PA,membrane,-0.33189221,19.51887467,0.292888515,no hit
+FMR1,Q06787,Fragile X messenger ribonucleoprotein 1,PA,membrane,-0.486615014,20.74689827,0.293284816,no hit
+FYN,P06241,Tyrosine-protein kinase Fyn,PA,membrane,0.40746542,19.67941101,0.293331662,no hit
+YIPF5,Q969M3,Protein YIPF5,PA,membrane,-0.294752958,19.36653322,0.293511749,no hit
+JAK1,P23458,Tyrosine-protein kinase JAK1,PA,membrane,0.369908736,19.61936012,0.295058211,no hit
+COPA,P53621,Coatomer subunit alpha,PA,membrane,-0.385010361,20.23007427,0.295221427,no hit
+FAM3C,Q92520,Protein FAM3C,PA,membrane,-0.231723919,21.47801459,0.296128969,no hit
+ISOC1,Q96CN7,Isochorismatase domain-containing protein 1,PA,membrane,-0.197638721,17.41737035,0.296170706,no hit
+JTB,O76095,Protein JTB,PA,membrane,-0.366001612,18.49855392,0.296964702,no hit
+GPRC5A,Q8NFJ5,Retinoic acid-induced protein 3,PA,membrane,0.40595858,21.18020268,0.296982171,no hit
+MYO1E,Q12965,Unconventional myosin-Ie,PA,membrane,0.477405432,20.71237501,0.297330292,no hit
+RPL13,P26373,60S ribosomal protein L13,PA,membrane,-0.679115039,23.50430783,0.29789116,no hit
+LIMA1,Q9UHB6,LIM domain and actin-binding protein 1,PA,membrane,0.55899129,21.66864015,0.298453494,no hit
+TBL2,Q9Y4P3,Transducin beta-like protein 2,PA,membrane,0.559727696,18.26915441,0.298463465,no hit
+RPL28,P46779,60S ribosomal protein L28,PA,membrane,-0.685101113,22.90038365,0.298740649,no hit
+CLCC1,Q96S66,Chloride channel CLIC-like protein 1,PA,membrane,0.331859491,20.01649155,0.300066396,no hit
+HLA-A,P04439,"HLA class I histocompatibility antigen, A alpha chain",PA,membrane,0.1999958,22.7050362,0.30013902,no hit
+RPL35,P42766,60S ribosomal protein L35,PA,membrane,-0.807910845,21.77958315,0.300806233,no hit
+ARL6IP1,Q15041,ADP-ribosylation factor-like protein 6-interacting protein 1,PA,membrane,-0.297278975,19.85485977,0.300966383,no hit
+ATP6AP2,O75787,Renin receptor,PA,membrane,0.280809694,21.21784408,0.301524955,no hit
+DRG1,Q9Y295,Developmentally-regulated GTP-binding protein 1,PA,membrane,-0.696708017,19.44268338,0.303197007,no hit
+FARSA,Q9Y285,Phenylalanine--tRNA ligase alpha subunit,PA,membrane,-0.387973565,19.40567158,0.30364296,no hit
+RPL26,P61254,60S ribosomal protein L26,PA,membrane,-0.772003302,23.76919687,0.303718906,no hit
+CCDC47,Q96A33,PAT complex subunit CCDC47,PA,membrane,0.491552573,20.48248134,0.303953225,no hit
+RPS16,P62249,40S ribosomal protein S16,PA,membrane,-0.667863402,23.87190411,0.304219703,no hit
+KARS1,Q15046,Lysine--tRNA ligase,PA,membrane,0.301976455,19.78084712,0.304252667,no hit
+POGLUT1,Q8NBL1,Protein O-glucosyltransferase 1,PA,membrane,0.217786185,17.648967,0.305311686,no hit
+DDR1,Q08345,Epithelial discoidin domain-containing receptor 1,PA,membrane,0.130253986,19.26250731,0.305793028,no hit
+CD276,Q5ZPR3,CD276 antigen,PA,membrane,0.367852788,22.78827005,0.305931578,no hit
+PODXL2,Q9NZ53,Podocalyxin-like protein 2,PA,membrane,0.232924367,19.09924763,0.305975692,no hit
+RPS3A,P61247,40S ribosomal protein S3a,PA,membrane,-0.631096417,23.87848178,0.307505798,no hit
+CXADR,P78310,Coxsackievirus and adenovirus receptor,PA,membrane,0.274597776,22.06137943,0.309359274,no hit
+RPS4X,P62701,"40S ribosomal protein S4, X isoform",PA,membrane,-0.625645751,23.98155655,0.309913833,no hit
+RBMS1,P29558,"RNA-binding motif, single-stranded-interacting protein 1",PA,membrane,-0.550325607,18.52473423,0.310442012,no hit
+PSMB6,P28072,Proteasome subunit beta type-6,PA,membrane,-0.35735164,21.00147732,0.310530876,no hit
+GEMIN4,P57678,Gem-associated protein 4,PA,membrane,-0.302208274,20.49428291,0.310829371,no hit
+RPS24,P62847,40S ribosomal protein S24,PA,membrane,-0.583528286,22.32844508,0.311778648,no hit
+CYB5B,O43169,Cytochrome b5 type B,PA,membrane,0.419206093,21.12280106,0.312138042,no hit
+ATP6AP1,Q15904,V-type proton ATPase subunit S1,PA,membrane,0.31459875,21.95252816,0.313359332,no hit
+GPC1,P35052,Glypican-1,PA,membrane,0.303752093,19.55780753,0.316067094,no hit
+SLC29A1,Q99808,Equilibrative nucleoside transporter 1,PA,membrane,0.340156195,22.43540178,0.316420703,no hit
+COPG1,Q9Y678,Coatomer subunit gamma-1,PA,membrane,-0.384315995,19.91957315,0.316677923,no hit
+TSPAN4,O14817,Tetraspanin-4,PA,membrane,0.507235497,19.90662629,0.316903716,no hit
+PABPC4,Q13310,Polyadenylate-binding protein 4,PA,membrane,-0.445144821,22.97088429,0.317875656,no hit
+STX10,O60499,Syntaxin-10,PA,membrane,-0.220856321,19.82801086,0.318696882,no hit
+UQCRB,P14927,Cytochrome b-c1 complex subunit 7,PA,membrane,0.372421413,20.13207317,0.318920889,no hit
+PSMB1,P20618,Proteasome subunit beta type-1,PA,membrane,-0.254078364,21.11934912,0.319050599,no hit
+TRIP10,Q15642,Cdc42-interacting protein 4,PA,membrane,-0.25830664,19.13915314,0.319098355,no hit
+POLE3,Q9NRF9,DNA polymerase epsilon subunit 3,PA,membrane,-0.296218323,17.24697227,0.319101577,no hit
+GPD2,P43304,"Glycerol-3-phosphate dehydrogenase, mitochondrial",PA,membrane,0.222892154,20.601406,0.31912988,no hit
+SEC61A1,P61619,Protein transport protein Sec61 subunit alpha isoform 1,PA,membrane,0.193421697,20.54090705,0.320552804,no hit
+ACLY,P53396,ATP-citrate synthase,PA,membrane,-0.436627494,21.97115705,0.321756713,no hit
+RPL37,P61927,60S ribosomal protein L37,PA,membrane,-0.715865602,21.51628059,0.322275093,no hit
+FAU,P62861,FAU ubiquitin-like and ribosomal protein S30,PA,membrane,-0.83312766,20.96841232,0.323628069,no hit
+NAPA,P54920,Alpha-soluble NSF attachment protein,PA,membrane,-0.224419629,21.65889725,0.324432429,no hit
+CELF1,Q92879,CUGBP Elav-like family member 1,PA,membrane,-0.16508717,19.80733005,0.324625803,no hit
+CALR,P27797,Calreticulin,PA,membrane,0.309343944,25.4217317,0.324830537,no hit
+RPL10A,P62906,60S ribosomal protein L10a,PA,membrane,-0.747344119,23.66129452,0.325347145,no hit
+RPL17,P18621,60S ribosomal protein L17,PA,membrane,-0.703062847,23.07740732,0.325539052,no hit
+MAT2B,Q9NZL9,Methionine adenosyltransferase 2 subunit beta,PA,membrane,-0.250493467,18.56165257,0.325769528,no hit
+GOLPH3,Q9H4A6,Golgi phosphoprotein 3,PA,membrane,-0.232688994,19.18507821,0.326593249,no hit
+PDIA4,P13667,Protein disulfide-isomerase A4,PA,membrane,0.507128136,24.09102423,0.327084041,no hit
+RCC2,Q9P258,Protein RCC2,PA,membrane,-0.393322349,20.82429134,0.32746436,no hit
+ARPC4,P59998,Actin-related protein 2/3 complex subunit 4,PA,membrane,0.321621102,19.90342231,0.327685645,no hit
+GLG1,Q92896,Golgi apparatus protein 1,PA,membrane,-0.205494282,19.95881539,0.32801754,no hit
+RPS26,P62854,40S ribosomal protein S26,PA,membrane,-0.57250845,21.3752046,0.328316049,no hit
+RUVBL2,Q9Y230,RuvB-like 2,PA,membrane,-0.323348261,19.42915605,0.328549155,no hit
+GAA,P10253,Lysosomal alpha-glucosidase,PA,membrane,-0.173800892,20.15504562,0.330197016,no hit
+PSMA3,P25788,Proteasome subunit alpha type-3,PA,membrane,-0.346893931,21.86611312,0.330452468,no hit
+DYNC1LI1,Q9Y6G9,Cytoplasmic dynein 1 light intermediate chain 1,PA,membrane,-0.24891767,19.09458135,0.331460815,no hit
+VCL,P18206,Vinculin,PA,membrane,0.197640377,19.32820927,0.33253147,no hit
+DDX39B,Q13838,Spliceosome RNA helicase DDX39B,PA,membrane,-0.160222631,20.32746758,0.332596344,no hit
+DARS1,P14868,"Aspartate--tRNA ligase, cytoplasmic",PA,membrane,0.293004547,20.82797151,0.333069341,no hit
+SUMF2,Q8NBJ7,Inactive C-alpha-formylglycine-generating enzyme 2,PA,membrane,0.231439097,18.37438038,0.333380425,no hit
+HSPA8,P11142,Heat shock cognate 71 kDa protein,PA,membrane,-0.281991978,25.00659913,0.333785984,no hit
+RPL12,P30050,60S ribosomal protein L12,PA,membrane,-0.570213984,22.10933183,0.335133618,no hit
+RPL21,P46778,60S ribosomal protein L21,PA,membrane,-0.636186838,23.00667146,0.33587862,no hit
+EFHD2,Q96C19,EF-hand domain-containing protein D2,PA,membrane,0.187820401,18.73480483,0.335907458,no hit
+RPS27,P42677,40S ribosomal protein S27,PA,membrane,-0.590363868,20.3152708,0.337476002,no hit
+UBXN4,Q92575,UBX domain-containing protein 4,PA,membrane,0.169305036,18.12272981,0.338270352,no hit
+PFAS,O15067,Phosphoribosylformylglycinamidine synthase,PA,membrane,-0.202646247,19.29166326,0.339216509,no hit
+DEGS1,O15121,Sphingolipid delta(4)-desaturase DES1,PA,membrane,0.146337059,19.95853694,0.340967373,no hit
+SERINC3,Q13530,Serine incorporator 3,PA,membrane,-0.141968607,20.54681741,0.343063808,no hit
+RBMX,P38159,"RNA-binding motif protein, X chromosome",PA,membrane,-0.350623343,19.39747829,0.343868162,no hit
+RPLP2,P05387,60S acidic ribosomal protein P2,PA,membrane,-0.536452601,22.2140978,0.344344757,no hit
+RPL30,P62888,60S ribosomal protein L30,PA,membrane,-0.593791009,22.63177364,0.347949974,no hit
+RPL3,P39023,60S ribosomal protein L3,PA,membrane,-0.551223413,24.43124103,0.348639517,no hit
+VAT1,Q99536,Synaptic vesicle membrane protein VAT-1 homolog,PA,membrane,-0.282613345,22.62538738,0.348648287,no hit
+RPL13A,P40429,60S ribosomal protein L13a,PA,membrane,-0.661962017,23.32081693,0.349246291,no hit
+TMEM165,Q9HC07,Transmembrane protein 165,PA,membrane,-0.341521096,20.18684277,0.350480853,no hit
+PLOD3,O60568,Multifunctional procollagen lysine hydroxylase and glycosyltransferase LH3,PA,membrane,0.310690242,20.1417387,0.350592197,no hit
+CNPY2,Q9Y2B0,Protein canopy homolog 2,PA,membrane,0.325023338,19.91605555,0.351245753,no hit
+TMEM132A,Q24JP5,Transmembrane protein 132A,PA,membrane,0.149774136,17.02083144,0.351871289,no hit
+RPL29,P47914,60S ribosomal protein L29,PA,membrane,-0.716215639,22.93333157,0.352381872,no hit
+RAB27B,O00194,Ras-related protein Rab-27B,PA,membrane,0.272893119,20.17307622,0.352486645,no hit
+TXNDC17,Q9BRA2,Thioredoxin domain-containing protein 17,PA,membrane,-0.293899958,18.93249439,0.354620624,no hit
+PSMB4,P28070,Proteasome subunit beta type-4,PA,membrane,-0.291997053,20.24494639,0.354959416,no hit
+XRCC6,P12956,X-ray repair cross-complementing protein 6,PA,membrane,-0.379381733,22.76042955,0.35521538,no hit
+SLC1A4,P43007,Neutral amino acid transporter A,PA,membrane,0.254014861,19.95547774,0.355338328,no hit
+LYPLA2,O95372,Acyl-protein thioesterase 2,PA,membrane,-0.124272896,19.09721706,0.356384117,no hit
+HNRNPC,P07910,Heterogeneous nuclear ribonucleoproteins C1/C2,PA,membrane,-0.425877389,21.4876122,0.357229296,no hit
+RPL23,P62829,60S ribosomal protein L23,PA,membrane,-0.659526278,22.77756589,0.358243011,no hit
+P4HA2,O15460,Prolyl 4-hydroxylase subunit alpha-2,PA,membrane,0.267260929,22.23081221,0.358339567,no hit
+ARF3,P61204,ADP-ribosylation factor 3,PA,membrane,-0.22059057,22.02152105,0.358750606,no hit
+GGH,Q92820,Gamma-glutamyl hydrolase,PA,membrane,-0.187822326,21.36034881,0.35927176,no hit
+RPL18,Q07020,60S ribosomal protein L18,PA,membrane,-0.653707961,22.91270414,0.360134937,no hit
+RPL27,P61353,60S ribosomal protein L27,PA,membrane,-0.595770915,23.35836009,0.361174094,no hit
+SYPL1,Q16563,Synaptophysin-like protein 1,PA,membrane,-0.424859513,21.00129059,0.362111716,no hit
+ITGA2,P17301,Integrin alpha-2,PA,membrane,0.348647316,23.32320354,0.362872194,no hit
+PLA2G4A,P47712,Cytosolic phospholipase A2,PA,membrane,-0.115195394,18.88509397,0.36382798,no hit
+RAB1B,Q9H0U4,Ras-related protein Rab-1B,PA,membrane,-0.332931226,21.48827758,0.364107774,no hit
+VAMP8,Q9BV40,Vesicle-associated membrane protein 8,PA,membrane,0.182993377,21.24952149,0.365671353,no hit
+RANGAP1,P46060,Ran GTPase-activating protein 1,PA,membrane,0.224527801,21.35638977,0.365809354,no hit
+SQSTM1,Q13501,Sequestosome-1,PA,membrane,0.500312698,18.90708741,0.367067656,no hit
+FKBP9,O95302,Peptidyl-prolyl cis-trans isomerase FKBP9,PA,membrane,0.25868234,21.92373351,0.36741509,no hit
+BAIAP2L1,Q9UHR4,Brain-specific angiogenesis inhibitor 1-associated protein 2-like protein 1,PA,membrane,0.339740519,21.19999604,0.367682531,no hit
+PMPCB,O75439,Mitochondrial-processing peptidase subunit beta,PA,membrane,0.29735194,20.4228808,0.368139188,no hit
+RPL39,P62891,60S ribosomal protein L39,PA,membrane,-0.598960973,20.75775074,0.370363238,no hit
+ENDOD1,O94919,Endonuclease domain-containing 1 protein,PA,membrane,-0.199464887,18.60774865,0.370577496,no hit
+ACTL6A,O96019,Actin-like protein 6A,PA,membrane,-0.15707312,17.28727886,0.371020757,no hit
+S100A13,Q99584,Protein S100-A13,PA,membrane,-0.398929477,20.38796997,0.371793397,no hit
+ITFG1,Q8TB96,T-cell immunomodulatory protein,PA,membrane,0.184690334,18.22171258,0.371840697,no hit
+PCYOX1,Q9UHG3,Prenylcysteine oxidase 1,PA,membrane,0.310881671,23.00982497,0.372112791,no hit
+EIF2S3,P41091,Eukaryotic translation initiation factor 2 subunit 3,PA,membrane,-0.483036456,21.90531693,0.373425774,no hit
+SLC2A3,P11169,"Solute carrier family 2, facilitated glucose transporter member 3",PA,membrane,0.341022575,23.43608779,0.374835029,no hit
+SLC7A6,Q92536,Y+L amino acid transporter 2,PA,membrane,0.252995686,19.52179556,0.375498729,no hit
+SLC4A2,P04920,Anion exchange protein 2,PA,membrane,0.400740645,17.9462436,0.376456346,no hit
+HLA-C,P10321,"HLA class I histocompatibility antigen, C alpha chain",PA,membrane,0.208516935,20.98887691,0.376750957,no hit
+RPL36A,P83881,60S ribosomal protein L36a,PA,membrane,-0.560638016,22.30325201,0.376999039,no hit
+HDLBP,Q00341,Vigilin,PA,membrane,-0.375644099,23.06871801,0.377753544,no hit
+SIGMAR1,Q99720,Sigma non-opioid intracellular receptor 1,PA,membrane,0.295428544,20.59695193,0.379016721,no hit
+MATR3,P43243,Matrin-3,PA,membrane,-0.337424937,20.05773089,0.379104116,no hit
+NQO2,P16083,Ribosyldihydronicotinamide dehydrogenase [quinone],PA,membrane,-0.271883186,20.52364241,0.379654955,no hit
+VKORC1L1,Q8N0U8,Vitamin K epoxide reductase complex subunit 1-like protein 1,PA,membrane,0.269808317,20.17326578,0.379782807,no hit
+ESYT2,A0FGR8,Extended synaptotagmin-2,PA,membrane,0.519889725,16.56218362,0.380149869,no hit
+TBC1D10B,Q4KMP7,TBC1 domain family member 10B,PA,membrane,0.371989686,17.80593809,0.381955982,no hit
+PTTG1IP,P53801,Pituitary tumor-transforming gene 1 protein-interacting protein,PA,membrane,0.274058648,19.3714426,0.382311239,no hit
+CSPG4,Q6UVK1,Chondroitin sulfate proteoglycan 4,PA,membrane,0.225712781,24.66809818,0.386054217,no hit
+TSR1,Q2NL82,Pre-rRNA-processing protein TSR1 homolog,PA,membrane,-0.315196448,17.50626424,0.386230597,no hit
+PPP1CA,P62136,Serine/threonine-protein phosphatase PP1-alpha catalytic subunit,PA,membrane,0.169067148,20.70331179,0.386314738,no hit
+HNRNPA1,P09651,Heterogeneous nuclear ribonucleoprotein A1,PA,membrane,-0.388598569,21.59301106,0.386462714,no hit
+RPS8,P62241,40S ribosomal protein S8,PA,membrane,-0.505653506,23.16537456,0.387489905,no hit
+CDC42,P60953,Cell division control protein 42 homolog,PA,membrane,0.132842208,21.48570615,0.388873192,no hit
+SMN2,Q16637,Survival motor neuron protein,PA,membrane,-0.384989873,19.34031356,0.3911796,no hit
+FLNA,P21333,Filamin-A,PA,membrane,0.490313089,23.48841371,0.391511033,no hit
+REEP6,Q96HR9,Receptor expression-enhancing protein 6,PA,membrane,-0.285812662,20.32876461,0.393316797,no hit
+PICALM,Q13492,Phosphatidylinositol-binding clathrin assembly protein,PA,membrane,-0.134013364,18.6436087,0.395970906,no hit
+ARPC5,O15511,Actin-related protein 2/3 complex subunit 5,PA,membrane,0.186590828,18.99528846,0.397558911,no hit
+CPNE3,O75131,Copine-3,PA,membrane,-0.153107189,20.71093036,0.398324914,no hit
+RAB2A,P61019,Ras-related protein Rab-2A,PA,membrane,-0.233710959,23.51285636,0.399433814,no hit
+RPL18A,Q02543,60S ribosomal protein L18a,PA,membrane,-0.497607061,22.77680002,0.402819888,no hit
+ILVBL,A1L0T0,2-hydroxyacyl-CoA lyase 2,PA,membrane,0.169933446,19.05228103,0.404044095,no hit
+IL1RAP,Q9NPH3,Interleukin-1 receptor accessory protein,PA,membrane,0.228441708,19.37093692,0.404397903,no hit
+RPL35A,P18077,60S ribosomal protein L35a,PA,membrane,-0.563576769,22.37081049,0.405212873,no hit
+RPL15,P61313,60S ribosomal protein L15,PA,membrane,-0.563090193,23.3060637,0.405457709,no hit
+STIP1,P31948,Stress-induced-phosphoprotein 1,PA,membrane,-0.208511278,19.76757184,0.406948822,no hit
+LAMTOR2,Q9Y2Q5,Ragulator complex protein LAMTOR2,PA,membrane,-0.189404003,20.00838843,0.407011089,no hit
+TMEM33,P57088,Transmembrane protein 33,PA,membrane,0.268194429,22.18914589,0.407348041,no hit
+RPS13,P62277,40S ribosomal protein S13,PA,membrane,-0.524631799,23.18372454,0.407594129,no hit
+MPZL1,O95297,Myelin protein zero-like protein 1,PA,membrane,0.28942487,21.13035919,0.408062346,no hit
+PTPRF,P10586,Receptor-type tyrosine-protein phosphatase F,PA,membrane,0.315523141,22.32250165,0.40892523,no hit
+COPB1,P53618,Coatomer subunit beta,PA,membrane,-0.227032846,19.41765526,0.409619062,no hit
+VARS1,P26640,Valine--tRNA ligase,PA,membrane,-0.178160833,19.54827054,0.410231496,no hit
+HM13,Q8TCT9,Minor histocompatibility antigen H13,PA,membrane,0.330205535,22.2135192,0.412126648,no hit
+TM9SF3,Q9HD45,Transmembrane 9 superfamily member 3,PA,membrane,-0.316515567,21.99207461,0.412375793,no hit
+IGF2BP1,Q9NZI8,Insulin-like growth factor 2 mRNA-binding protein 1,PA,membrane,-0.375291848,21.9065519,0.413930247,no hit
+RAB1A,P62820,Ras-related protein Rab-1A,PA,membrane,-0.2399205,24.61900393,0.414166946,no hit
+EIF2A,Q9BY44,Eukaryotic translation initiation factor 2A,PA,membrane,-0.368045871,21.0898583,0.414188426,no hit
+MOB1B,Q7L9L4,MOB kinase activator 1B,PA,membrane,-0.146991409,18.96895453,0.415339561,no hit
+RPL8,P62917,60S ribosomal protein L8,PA,membrane,-0.565567132,24.22113088,0.415859884,no hit
+IMPDH2,P12268,Inosine-5'-monophosphate dehydrogenase 2,PA,membrane,0.245841849,20.08392765,0.417624008,no hit
+RPL32,P62910,60S ribosomal protein L32,PA,membrane,-0.525285182,22.83384119,0.418273576,no hit
+KTN1,Q86UP2,Kinectin,PA,membrane,0.33332972,19.59324668,0.418743569,no hit
+SCRIB,Q14160,Protein scribble homolog,PA,membrane,0.15635093,21.10372534,0.419356603,no hit
+RPL6,Q02878,60S ribosomal protein L6,PA,membrane,-0.639456254,23.93218112,0.421495535,no hit
+TMED2,Q15363,Transmembrane emp24 domain-containing protein 2,PA,membrane,-0.360337217,22.74143921,0.422098574,no hit
+SURF4,O15260,Surfeit locus protein 4,PA,membrane,-0.18459353,21.84708108,0.422142836,no hit
+LAMC1,P11047,Laminin subunit gamma-1,PA,membrane,0.173992218,19.9321569,0.423321659,no hit
+IER3IP1,Q9Y5U9,Immediate early response 3-interacting protein 1,PA,membrane,-0.371601581,19.64161129,0.424734575,no hit
+FLNB,O75369,Filamin-B,PA,membrane,0.215013153,22.53202843,0.426341435,no hit
+VPS45,Q9NRW7,Vacuolar protein sorting-associated protein 45,PA,membrane,0.321576198,18.39614399,0.426477226,no hit
+PLD3,Q8IV08,5'-3' exonuclease PLD3,PA,membrane,0.22006136,19.53319885,0.430402277,no hit
+RHOB,P62745,Rho-related GTP-binding protein RhoB,PA,membrane,0.130775751,21.51353327,0.431418587,no hit
+RPSA,P08865,40S ribosomal protein SA,PA,membrane,-0.354606515,24.34735474,0.43161783,no hit
+RPS19,P39019,40S ribosomal protein S19,PA,membrane,-0.565160858,23.67593128,0.43171779,no hit
+PSMD8,P48556,26S proteasome non-ATPase regulatory subunit 8,PA,membrane,-0.14647874,20.26793354,0.432968281,no hit
+BCAP31,P51572,B-cell receptor-associated protein 31,PA,membrane,0.177733341,24.14749569,0.433958759,no hit
+HNRNPL,P14866,Heterogeneous nuclear ribonucleoprotein L,PA,membrane,-0.270581728,21.67694061,0.436516826,no hit
+ETF1,P62495,Eukaryotic peptide chain release factor subunit 1,PA,membrane,-0.307084956,19.4765023,0.438703321,no hit
+CDK5RAP3,Q96JB5,CDK5 regulatory subunit-associated protein 3,PA,membrane,0.155863287,19.07877071,0.438848707,no hit
+PSMA4,P25789,Proteasome subunit alpha type-4,PA,membrane,-0.164206902,19.77856889,0.438892589,no hit
+LYPLA1,O75608,Acyl-protein thioesterase 1,PA,membrane,-0.180566379,19.82794505,0.440176432,no hit
+TJP1,Q07157,Tight junction protein ZO-1,PA,membrane,-0.140685683,17.7964725,0.440808023,no hit
+NAXE,Q8NCW5,NAD(P)H-hydrate epimerase,PA,membrane,-0.153980905,19.77812136,0.4418545,no hit
+SLC7A2,P52569,Cationic amino acid transporter 2,PA,membrane,-0.150091909,19.82082591,0.441887122,no hit
+ADRM1,Q16186,Proteasomal ubiquitin receptor ADRM1,PA,membrane,-0.213012034,17.0744901,0.44287851,no hit
+IMPA1,P29218,Inositol monophosphatase 1,PA,membrane,-0.264554116,18.57000898,0.444304408,no hit
+EIF2S1,P05198,Eukaryotic translation initiation factor 2 subunit 1,PA,membrane,-0.380703955,22.21546167,0.444812277,no hit
+UBE2L3,P68036,Ubiquitin-conjugating enzyme E2 L3,PA,membrane,-0.381293451,19.02112076,0.445703051,no hit
+DDX1,Q92499,ATP-dependent RNA helicase DDX1,PA,membrane,-0.350130883,20.73130073,0.446248644,no hit
+EIF3I,Q13347,Eukaryotic translation initiation factor 3 subunit I,PA,membrane,-0.213920738,21.51409615,0.447580153,no hit
+STX7,O15400,Syntaxin-7,PA,membrane,-0.194271723,21.27234007,0.448282418,no hit
+RRBP1,Q9P2E9,Ribosome-binding protein 1,PA,membrane,-0.332114424,20.44690621,0.448540823,no hit
+DAZAP1,Q96EP5,DAZ-associated protein 1,PA,membrane,-0.177658726,18.35827853,0.448623105,no hit
+TMED1,Q13445,Transmembrane emp24 domain-containing protein 1,PA,membrane,-0.261379943,21.59783839,0.448765982,no hit
+SLC35F6,Q8N357,Solute carrier family 35 member F6,PA,membrane,-0.319245264,18.69633777,0.448900562,no hit
+DNAJC13,O75165,DnaJ homolog subfamily C member 13,PA,membrane,-0.142174071,19.21276485,0.448986827,no hit
+ELAVL1,Q15717,ELAV-like protein 1,PA,membrane,-0.209445813,20.98965086,0.449649215,no hit
+CRIP2,P52943,Cysteine-rich protein 2,PA,membrane,0.409637352,17.81301937,0.449738857,no hit
+DDR2,Q16832,Discoidin domain-containing receptor 2,PA,membrane,0.113653209,20.78264371,0.450369127,no hit
+ERO1A,Q96HE7,ERO1-like protein alpha,PA,membrane,0.294331806,22.15539134,0.451731191,no hit
+AFAP1,Q8N556,Actin filament-associated protein 1,PA,membrane,0.187266022,17.81924481,0.45382015,no hit
+KLHL13,Q9P2N7,Kelch-like protein 13,PA,membrane,0.137320537,17.7947635,0.455518027,no hit
+SPR,P35270,Sepiapterin reductase,PA,membrane,-0.143225889,18.24194863,0.456917419,no hit
+LPCAT2,Q7L5N7,Lysophosphatidylcholine acyltransferase 2,PA,membrane,0.151208218,19.3962054,0.457145132,no hit
+RTCB,Q9Y3I0,RNA-splicing ligase RtcB homolog,PA,membrane,-0.251909769,21.10103487,0.459016552,no hit
+DERL1,Q9BUN8,Derlin-1,PA,membrane,0.271207902,19.43180359,0.459689943,no hit
+TNFRSF10B,O14763,Tumor necrosis factor receptor superfamily member 10B,PA,membrane,0.143442961,18.85785997,0.460487995,no hit
+BET1,O15155,BET1 homolog,PA,membrane,-0.279651862,20.26311866,0.461428543,no hit
+RAB5B,P61020,Ras-related protein Rab-5B,PA,membrane,0.156727272,19.67886309,0.462259366,no hit
+RAB3D,O95716,Ras-related protein Rab-3D,PA,membrane,0.216799982,18.12619203,0.463296869,no hit
+HNRNPH1,P31943,Heterogeneous nuclear ribonucleoprotein H,PA,membrane,-0.294453369,19.60359112,0.463761757,no hit
+RPL37A,P61513,60S ribosomal protein L37a,PA,membrane,-0.581469319,21.7793845,0.464591221,no hit
+SET,Q01105,Protein SET,PA,membrane,-0.532779699,20.53350432,0.466128374,no hit
+RUVBL1,Q9Y265,RuvB-like 1,PA,membrane,-0.325998086,19.42941765,0.466383302,no hit
+GOLM2,Q6P4E1,Protein GOLM2,PA,membrane,-0.209242749,20.15649128,0.466497976,no hit
+RTRAF,Q9Y224,"RNA transcription, translation and transport factor protein",PA,membrane,-0.279506793,21.27459264,0.467195345,no hit
+NCL,P19338,Nucleolin,PA,membrane,0.1968999,23.79135251,0.467934008,no hit
+MSH2,P43246,DNA mismatch repair protein Msh2,PA,membrane,-0.177541316,18.1057011,0.467983456,no hit
+RACK1,P63244,Receptor of activated protein C kinase 1,PA,membrane,-0.347533461,23.50502391,0.468059565,no hit
+RAB5A,P20339,Ras-related protein Rab-5A,PA,membrane,0.115636707,19.50933805,0.468511714,no hit
+ADAM15,Q13444,Disintegrin and metalloproteinase domain-containing protein 15,PA,membrane,0.155926639,19.15025816,0.469543637,no hit
+COL5A1,P20908,Collagen alpha-1(V) chain,PA,membrane,0.405787718,18.94443536,0.473600213,no hit
+MYOF,Q9NZM1,Myoferlin,PA,membrane,0.198570012,23.1369027,0.474394047,no hit
+RPL19,P84098,60S ribosomal protein L19,PA,membrane,-0.389351919,23.15983943,0.477226883,no hit
+REEP5,Q00765,Receptor expression-enhancing protein 5,PA,membrane,-0.257054638,23.18019621,0.477503025,no hit
+ERGIC3,Q9Y282,Endoplasmic reticulum-Golgi intermediate compartment protein 3,PA,membrane,-0.242198729,21.93705231,0.478192956,no hit
+NEU1,Q99519,Sialidase-1,PA,membrane,0.244736512,18.29418345,0.479279647,no hit
+DNAJC2,Q99543,DnaJ homolog subfamily C member 2,PA,membrane,-0.22485719,19.79152165,0.482064209,no hit
+TMEM109,Q9BVC6,Transmembrane protein 109,PA,membrane,0.199933231,22.2205127,0.484173728,no hit
+FUBP3,Q96I24,Far upstream element-binding protein 3,PA,membrane,-0.290658362,20.93162251,0.484943708,no hit
+TMEM59,Q9BXS4,Transmembrane protein 59,PA,membrane,0.249089536,18.58513234,0.485492578,no hit
+EIF3A,Q14152,Eukaryotic translation initiation factor 3 subunit A,PA,membrane,-0.396992012,23.58454722,0.485731077,no hit
+XRCC5,P13010,X-ray repair cross-complementing protein 5,PA,membrane,-0.323253184,23.07361608,0.486332281,no hit
+SLC7A5,Q01650,Large neutral amino acids transporter small subunit 1,PA,membrane,0.209039241,23.98763116,0.490465091,no hit
+C17orf75,Q9HAS0,Protein Njmu-R1,PA,membrane,-0.17600887,19.81252809,0.490626262,no hit
+CCT7,Q99832,T-complex protein 1 subunit eta,PA,membrane,0.416537261,23.47916654,0.490696146,no hit
+RECQL,P46063,ATP-dependent DNA helicase Q1,PA,membrane,-0.409428139,20.71913951,0.491139539,no hit
+SPTBN1,Q01082,"Spectrin beta chain, non-erythrocytic 1",PA,membrane,0.148455714,21.03785271,0.491272845,no hit
+SCFD1,Q8WVM8,Sec1 family domain-containing protein 1,PA,membrane,-0.14376469,18.23246069,0.491560959,no hit
+EIF3L,Q9Y262,Eukaryotic translation initiation factor 3 subunit L,PA,membrane,-0.391476645,21.59096641,0.492150767,no hit
+LACTB2,Q53H82,Endoribonuclease LACTB2,PA,membrane,-0.231086648,20.32720239,0.493555781,no hit
+SFPQ,P23246,"Splicing factor, proline- and glutamine-rich",PA,membrane,-0.216345707,20.14369205,0.493995419,no hit
+EIF3B,P55884,Eukaryotic translation initiation factor 3 subunit B,PA,membrane,-0.271880961,21.89717612,0.494208284,no hit
+RPL31,P62899,60S ribosomal protein L31,PA,membrane,-0.464620357,22.20620036,0.494609369,no hit
+SCAMP4,Q969E2,Secretory carrier-associated membrane protein 4,PA,membrane,-0.15438269,19.865311,0.494867026,no hit
+DAD1,P61803,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit DAD1,PA,membrane,0.281196777,19.79493599,0.496278215,no hit
+ACTR2,P61160,Actin-related protein 2,PA,membrane,0.357573444,19.79059565,0.496941192,no hit
+SMC2,O95347,Structural maintenance of chromosomes protein 2,PA,membrane,-0.257954572,20.9587575,0.499679067,no hit
+RAB21,Q9UL25,Ras-related protein Rab-21,PA,membrane,0.108339954,19.63329417,0.499952471,no hit
+FERMT2,Q96AC1,Fermitin family homolog 2,PA,membrane,0.271511343,20.22814761,0.501058275,no hit
+RPS9,P46781,40S ribosomal protein S9,PA,membrane,-0.418532879,24.05891222,0.503282183,no hit
+HNRNPD,Q14103,Heterogeneous nuclear ribonucleoprotein D0,PA,membrane,-0.16250068,21.3080603,0.505101258,no hit
+RAB30,Q15771,Ras-related protein Rab-30,PA,membrane,-0.105597175,18.20865546,0.505174161,no hit
+CTSC,P53634,Dipeptidyl peptidase 1,PA,membrane,-0.132605772,22.49095962,0.506255006,no hit
+RABAC1,Q9UI14,Prenylated Rab acceptor protein 1,PA,membrane,-0.217886804,21.2212241,0.506826548,no hit
+PDCD10,Q9BUL8,Programmed cell death protein 10,PA,membrane,-0.166804296,19.99215504,0.506874585,no hit
+UPF1,Q92900,Regulator of nonsense transcripts 1,PA,membrane,-0.319942298,21.58499068,0.508121761,no hit
+FLVCR1,Q9Y5Y0,Feline leukemia virus subgroup C receptor-related protein 1,PA,membrane,0.159675148,21.35338027,0.508907876,no hit
+EBP,Q15125,"3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase",PA,membrane,0.134274186,19.03544382,0.510685402,no hit
+KHSRP,Q92945,Far upstream element-binding protein 2,PA,membrane,-0.09621396,20.53575849,0.511088922,no hit
+FEN1,P39748,Flap endonuclease 1,PA,membrane,-0.311860173,22.03703461,0.512960005,no hit
+SLC38A2,Q96QD8,Sodium-coupled neutral amino acid symporter 2,PA,membrane,-0.246972342,20.40751959,0.513324236,no hit
+TMPO,P42166,"Lamina-associated polypeptide 2, isoform alpha",PA,membrane,0.117009318,17.76403784,0.514115644,no hit
+EPHX1,P07099,Epoxide hydrolase 1,PA,membrane,0.2100688,23.30177639,0.516333703,no hit
+DPM3,Q9P2X0,Dolichol-phosphate mannosyltransferase subunit 3,PA,membrane,0.256828713,20.45882014,0.516686561,no hit
+DHX29,Q7Z478,ATP-dependent RNA helicase DHX29,PA,membrane,-0.20408402,19.20464457,0.517477389,no hit
+AP2B1,P63010,AP-2 complex subunit beta,PA,membrane,-0.105255545,22.35051666,0.518363591,no hit
+LPCAT3,Q6P1A2,Lysophospholipid acyltransferase 5,PA,membrane,0.214578595,20.17003624,0.519008503,no hit
+BANF1,O75531,Barrier-to-autointegration factor,PA,membrane,-0.090584261,21.34488115,0.519480071,no hit
+UBL3,O95164,Ubiquitin-like protein 3,PA,membrane,0.161048884,19.62966198,0.519886344,no hit
+CCT2,P78371,T-complex protein 1 subunit beta,PA,membrane,0.372082039,24.04224746,0.521706054,no hit
+VAPB,O95292,Vesicle-associated membrane protein-associated protein B/C,PA,membrane,0.129132968,20.43543628,0.521785594,no hit
+RAB6A,P20340,Ras-related protein Rab-6A,PA,membrane,-0.126610986,22.29015896,0.521905194,no hit
+NAP1L1,P55209,Nucleosome assembly protein 1-like 1,PA,membrane,-0.251078637,19.2567801,0.52362787,no hit
+POFUT1,Q9H488,GDP-fucose protein O-fucosyltransferase 1,PA,membrane,0.133890945,19.23200345,0.524048437,no hit
+TMED4,Q7Z7H5,Transmembrane emp24 domain-containing protein 4,PA,membrane,-0.167905963,21.03372694,0.524444368,no hit
+ERAP1,Q9NZ08,Endoplasmic reticulum aminopeptidase 1,PA,membrane,0.200320028,21.6844119,0.524736818,no hit
+SRP72,O76094,Signal recognition particle subunit SRP72,PA,membrane,-0.192042783,19.96518277,0.527860896,no hit
+ABCE1,P61221,ATP-binding cassette sub-family E member 1,PA,membrane,-0.353493965,20.07331814,0.528457017,no hit
+NCAPG,Q9BPX3,Condensin complex subunit 3,PA,membrane,-0.241334171,18.10099554,0.530898607,no hit
+SNAP23,O00161,Synaptosomal-associated protein 23,PA,membrane,0.164008754,20.63101162,0.530984906,no hit
+TMED7,Q9Y3B3,Transmembrane emp24 domain-containing protein 7,PA,membrane,-0.345222137,21.5646462,0.531823239,no hit
+YIPF1,Q9Y548,Protein YIPF1,PA,membrane,-0.1471264,17.28247275,0.531947409,no hit
+SFT2D2,O95562,Vesicle transport protein SFT2B,PA,membrane,-0.264983805,18.41446538,0.532901073,no hit
+SLC38A1,Q9H2H9,Sodium-coupled neutral amino acid symporter 1,PA,membrane,-0.212464118,22.92800292,0.533740349,no hit
+SLC3A2,P08195,4F2 cell-surface antigen heavy chain,PA,membrane,0.185665396,26.966763190000002,0.535891328,no hit
+ATP1B3,P54709,Sodium/potassium-transporting ATPase subunit beta-3,PA,membrane,0.229453579,23.06483943,0.538484432,no hit
+HNRNPK,P61978,Heterogeneous nuclear ribonucleoprotein K,PA,membrane,-0.191136383,22.85429971,0.539710963,no hit
+DERL2,Q9GZP9,Derlin-2,PA,membrane,0.156257325,18.67973145,0.539911943,no hit
+EIF3E,P60228,Eukaryotic translation initiation factor 3 subunit E,PA,membrane,-0.290343133,22.23010603,0.54169743,no hit
+VAMP7,P51809,Vesicle-associated membrane protein 7,PA,membrane,-0.129492263,21.99840529,0.544861019,no hit
+EIF3H,O15372,Eukaryotic translation initiation factor 3 subunit H,PA,membrane,-0.245818086,20.63128506,0.546285041,no hit
+PVR,P15151,Poliovirus receptor,PA,membrane,0.220969203,21.6547081,0.547353422,no hit
+EIF3C,Q99613,Eukaryotic translation initiation factor 3 subunit C,PA,membrane,-0.279671069,23.29000906,0.548690764,no hit
+RPL27A,P46776,60S ribosomal protein L27a,PA,membrane,-0.302948894,22.70689341,0.54917416,no hit
+NCSTN,Q92542,Nicastrin,PA,membrane,0.203871002,19.74520521,0.549499569,no hit
+ACTBL2,Q562R1,Beta-actin-like protein 2,PA,membrane,0.142108275,18.83710658,0.551412819,no hit
+LRP8,Q14114,Low-density lipoprotein receptor-related protein 8,PA,membrane,-0.135805254,20.10776598,0.552076073,no hit
+LMAN2,Q12907,Vesicular integral-membrane protein VIP36,PA,membrane,-0.168788151,23.01261787,0.554210742,no hit
+HNRNPR,O43390,Heterogeneous nuclear ribonucleoprotein R,PA,membrane,-0.167601032,20.3349757,0.555031394,no hit
+PSMA6,P60900,Proteasome subunit alpha type-6,PA,membrane,-0.137385317,21.29591482,0.555166795,no hit
+PDCD4,Q53EL6,Programmed cell death protein 4,PA,membrane,-0.193440275,19.48888688,0.555214823,no hit
+MARS1,P56192,"Methionine--tRNA ligase, cytoplasmic",PA,membrane,0.162556416,19.87057311,0.558542455,no hit
+DDB1,Q16531,DNA damage-binding protein 1,PA,membrane,0.103733543,21.7787686,0.560517006,no hit
+TSPO,P30536,Translocator protein,PA,membrane,0.275291483,19.66729598,0.560652861,no hit
+TEX264,Q9Y6I9,Testis-expressed protein 264,PA,membrane,0.133548336,18.43011237,0.561181718,no hit
+MOV10,Q9HCE1,Helicase MOV-10,PA,membrane,-0.166343004,19.96157106,0.563316567,no hit
+ARL8B,Q9NVJ2,ADP-ribosylation factor-like protein 8B,PA,membrane,-0.12394385,22.19756326,0.565094819,no hit
+H2BC12,O60814,Histone H2B type 1-K,PA,membrane,-0.437403869,22.70015508,0.565323633,no hit
+PLA2G15,Q8NCC3,Phospholipase A2 group XV,PA,membrane,-0.12757151,17.80063029,0.567702996,no hit
+CLN3,Q13286,Battenin,PA,membrane,-0.197806423,17.82387617,0.567835255,no hit
+SMC4,Q9NTJ3,Structural maintenance of chromosomes protein 4,PA,membrane,-0.163464392,18.87157627,0.568325749,no hit
+NCKAP1,Q9Y2A7,Nck-associated protein 1,PA,membrane,0.317660712,20.14059726,0.569920237,no hit
+SLC39A14,Q15043,Metal cation symporter ZIP14,PA,membrane,0.130069124,20.88751039,0.57042892,no hit
+SGPP1,Q9BX95,Sphingosine-1-phosphate phosphatase 1,PA,membrane,0.100182139,18.60245368,0.571921602,no hit
+CYRIB,Q9NUQ9,CYFIP-related Rac1 interactor B,PA,membrane,0.142140336,21.41085806,0.57228217,no hit
+PKM,P14618,Pyruvate kinase PKM,PA,membrane,-0.157900892,23.062914,0.572427394,no hit
+PSMB5,P28074,Proteasome subunit beta type-5,PA,membrane,-0.102075655,20.62645337,0.57254529,no hit
+TMEM87A,Q8NBN3,Transmembrane protein 87A,PA,membrane,-0.178368592,20.06637144,0.573632476,no hit
+SLC7A1,P30825,High affinity cationic amino acid transporter 1,PA,membrane,-0.151860849,21.31233901,0.575724007,no hit
+EIF3D,O15371,Eukaryotic translation initiation factor 3 subunit D,PA,membrane,-0.289634857,21.66622633,0.576202683,no hit
+PSAP,P07602,Prosaposin,PA,membrane,-0.178815095,20.71752169,0.576472896,no hit
+GYS1,P13807,"Glycogen [starch] synthase, muscle",PA,membrane,-0.229789349,20.17035222,0.57669669,no hit
+RAB43,Q86YS6,Ras-related protein Rab-43,PA,membrane,-0.09964304,18.50671954,0.576860887,no hit
+DAGLB,Q8NCG7,Diacylglycerol lipase-beta,PA,membrane,-0.118497075,20.14885947,0.578206908,no hit
+APOO,Q9BUR5,MICOS complex subunit MIC26,PA,membrane,0.344092559,18.9249074,0.58105099,no hit
+CELSR2,Q9HCU4,Cadherin EGF LAG seven-pass G-type receptor 2,PA,membrane,0.168633598,17.53549879,0.582665343,no hit
+SCARB1,Q8WTV0,Scavenger receptor class B member 1,PA,membrane,0.183550027,22.32686769,0.584153909,no hit
+ADH5,P11766,Alcohol dehydrogenase class-3,PA,membrane,-0.180327745,18.7661671,0.584514031,no hit
+LAMTOR1,Q6IAA8,Ragulator complex protein LAMTOR1,PA,membrane,-0.150132619,20.52509512,0.584761253,no hit
+TTYH3,Q9C0H2,Protein tweety homolog 3,PA,membrane,-0.174811873,20.48486502,0.587403679,no hit
+CKB,P12277,Creatine kinase B-type,PA,membrane,-0.087551532,17.49528738,0.58794513,no hit
+PSEN2,P49810,Presenilin-2,PA,membrane,-0.163516291,16.98328351,0.588656546,no hit
+KIF5B,P33176,Kinesin-1 heavy chain,PA,membrane,-0.180174702,18.42337287,0.590047209,no hit
+VLDLR,P98155,Very low-density lipoprotein receptor,PA,membrane,-0.172928216,20.14261236,0.590462632,no hit
+GPR108,Q9NPR9,Protein GPR108,PA,membrane,-0.145125824,19.79296803,0.590791825,no hit
+ECE1,P42892,Endothelin-converting enzyme 1,PA,membrane,0.186136236,22.29295537,0.592751434,no hit
+DHX36,Q9H2U1,ATP-dependent DNA/RNA helicase DHX36,PA,membrane,0.184853522,17.9016817,0.593798269,no hit
+IARS2,Q9NSE4,"Isoleucine--tRNA ligase, mitochondrial",PA,membrane,0.092391667,18.73382278,0.594900115,no hit
+AAAS,Q9NRG9,Aladin,PA,membrane,0.113491237,18.08424633,0.595566422,no hit
+AP1M1,Q9BXS5,AP-1 complex subunit mu-1,PA,membrane,-0.186291818,18.72687985,0.596624007,no hit
+IGF2R,P11717,Cation-independent mannose-6-phosphate receptor,PA,membrane,0.142965675,24.30739659,0.597293611,no hit
+DCTN1,Q14203,Dynactin subunit 1,PA,membrane,-0.15535272,19.16109189,0.598072412,no hit
+TMED9,Q9BVK6,Transmembrane emp24 domain-containing protein 9,PA,membrane,-0.183830931,22.36263039,0.598984621,no hit
+PTBP1,P26599,Polypyrimidine tract-binding protein 1,PA,membrane,-0.24837736,22.27388801,0.601041421,no hit
+DNASE2,O00115,Deoxyribonuclease-2-alpha,PA,membrane,0.200026776,20.56864937,0.601913061,no hit
+B2M,P61769,Beta-2-microglobulin,PA,membrane,0.116070367,19.27332797,0.604308857,no hit
+G6PD,P11413,Glucose-6-phosphate 1-dehydrogenase,PA,membrane,-0.170398535,19.47861644,0.604431804,no hit
+NCS1,P62166,Neuronal calcium sensor 1,PA,membrane,0.141086867,19.37255782,0.606631356,no hit
+EGLN1,Q9GZT9,Egl nine homolog 1,PA,membrane,-0.074231945,17.88708303,0.609197608,no hit
+TNFRSF10A,O00220,Tumor necrosis factor receptor superfamily member 10A,PA,membrane,0.100006566,17.08623846,0.610186093,no hit
+SNX6,Q9UNH7,Sorting nexin-6,PA,membrane,-0.139039104,18.84959963,0.614482953,no hit
+SDCBP,O00560,Syntenin-1,PA,membrane,0.121234484,19.86760217,0.614506715,no hit
+ITGAV,P06756,Integrin alpha-V,PA,membrane,0.160030292,23.53629186,0.616975782,no hit
+PKN2,Q16513,Serine/threonine-protein kinase N2,PA,membrane,0.213414877,21.40279093,0.618527088,no hit
+RARS1,P54136,"Arginine--tRNA ligase, cytoplasmic",PA,membrane,0.130937302,20.64738719,0.624439457,no hit
+SDC4,P31431,Syndecan-4,PA,membrane,0.164119558,19.50146323,0.624480813,no hit
+ADGRE5,P48960,Adhesion G protein-coupled receptor E5,PA,membrane,0.150213788,21.60151884,0.625601598,no hit
+SPRYD7,Q5W111,SPRY domain-containing protein 7,PA,membrane,-0.180953615,19.64283498,0.62665815,no hit
+ACBD3,Q9H3P7,Golgi resident protein GCP60,PA,membrane,-0.090949107,18.52946814,0.628022728,no hit
+CSTB,P04080,Cystatin-B,PA,membrane,-0.179017984,18.18438703,0.628534073,no hit
+RETSAT,Q6NUM9,"All-trans-retinol 13,14-reductase",PA,membrane,0.128658376,19.72170061,0.628938196,no hit
+DDX46,Q7L014,Probable ATP-dependent RNA helicase DDX46,PA,membrane,-0.116855868,18.94608989,0.631118624,no hit
+SRP9,P49458,Signal recognition particle 9 kDa protein,PA,membrane,-0.083272081,19.94614534,0.63401868,no hit
+DSG1,Q02413,Desmoglein-1,PA,membrane,0.089879163,17.95640334,0.635556546,no hit
+AIMP1,Q12904,Aminoacyl tRNA synthase complex-interacting multifunctional protein 1,PA,membrane,0.114145075,20.08389807,0.635579736,no hit
+RHEB,Q15382,GTP-binding protein Rheb,PA,membrane,0.067046567,20.44338164,0.639114675,no hit
+TMEM63A,O94886,CSC1-like protein 1,PA,membrane,-0.087459723,17.46412265,0.639503425,no hit
+FAM177A1,Q8N128,Protein FAM177A1,PA,membrane,0.067152457,18.64296942,0.642260762,no hit
+LMNA,P02545,Prelamin-A/C,PA,membrane,-0.239485868,21.77229171,0.64357301200000006,no hit
+RSL1D1,O76021,Ribosomal L1 domain-containing protein 1,PA,membrane,-0.16144102,19.21842328,0.643675984,no hit
+RAB5C,P51148,Ras-related protein Rab-5C,PA,membrane,0.121198731,23.42992358,0.644097708,no hit
+TXNDC12,O95881,Thioredoxin domain-containing protein 12,PA,membrane,0.135027536,21.5604,0.646819076,no hit
+RAB14,P61106,Ras-related protein Rab-14,PA,membrane,-0.11261754,23.24609277,0.647275112,no hit
+COPS4,Q9BT78,COP9 signalosome complex subunit 4,PA,membrane,0.058752521,16.94636288,0.652022012,no hit
+EIF3F,O00303,Eukaryotic translation initiation factor 3 subunit F,PA,membrane,-0.112157597,21.67579614,0.652505621,no hit
+CCT3,P49368,T-complex protein 1 subunit gamma,PA,membrane,0.306237914,23.77489049,0.655329162,no hit
+TNKS1BP1,Q9C0C2,182 kDa tankyrase-1-binding protein,PA,membrane,-0.167277719,18.27041984,0.65602885,no hit
+PFKM,P08237,"ATP-dependent 6-phosphofructokinase, muscle type",PA,membrane,-0.135460442,19.24659583,0.657715077,no hit
+CDK1,P06493,Cyclin-dependent kinase 1,PA,membrane,-0.163814412,19.65594073,0.65871389,no hit
+ATP2C1,P98194,Calcium-transporting ATPase type 2C member 1,PA,membrane,-0.075018423,19.0593567,0.658936329,no hit
+H1-4,P10412,Histone H1.4,PA,membrane,-0.313383119,20.53925896,0.659368397,no hit
+TGOLN2,O43493,Trans-Golgi network integral membrane protein 2,PA,membrane,0.194186271,19.08816595,0.659396419,no hit
+CTSD,P07339,Cathepsin D,PA,membrane,-0.121429664,21.00074339,0.660372813,no hit
+TMED10,P49755,Transmembrane emp24 domain-containing protein 10,PA,membrane,-0.157020754,23.82569323,0.660888031,no hit
+SCARB2,Q14108,Lysosome membrane protein 2,PA,membrane,0.192772784,21.9047387,0.660958594,no hit
+RRAS,P10301,Ras-related protein R-Ras,PA,membrane,0.072079894,21.17849514,0.663219874,no hit
+RAB27A,P51159,Ras-related protein Rab-27A,PA,membrane,0.142226364,20.98906674,0.663756071,no hit
+TPP1,O14773,Tripeptidyl-peptidase 1,PA,membrane,-0.119804188,20.9072113,0.663847792,no hit
+VCP,P55072,Transitional endoplasmic reticulum ATPase,PA,membrane,0.152796859,23.01995218,0.664026353,no hit
+UBQLN1,Q9UMX0,Ubiquilin-1,PA,membrane,-0.125292136,19.22595493,0.66909561,no hit
+SLC38A7,Q9NVC3,Sodium-coupled neutral amino acid transporter 7,PA,membrane,-0.138752197,18.12284494,0.66971417,no hit
+PSEN1,P49768,Presenilin-1,PA,membrane,-0.130347865,19.48791088,0.670956022,no hit
+CLCN7,P51798,H(+)/Cl(-) exchange transporter 7,PA,membrane,0.091944515,19.56367894,0.672135589,no hit
+ARL6IP5,O75915,PRA1 family protein 3,PA,membrane,0.157769374,22.53811629,0.672601501,no hit
+LAMP1,P11279,Lysosome-associated membrane glycoprotein 1,PA,membrane,0.150498509,21.19851108,0.672675841,no hit
+GLA,P06280,Alpha-galactosidase A,PA,membrane,0.167540741,19.87153924,0.672807803,no hit
+RAB10,P61026,Ras-related protein Rab-10,PA,membrane,0.07264413,22.45663993,0.672826005,no hit
+TCP1,P17987,T-complex protein 1 subunit alpha,PA,membrane,0.2910603,23.54998961,0.673946151,no hit
+GALNT7,Q86SF2,N-acetylgalactosaminyltransferase 7,PA,membrane,-0.107572261,20.44430595,0.675691679,no hit
+TFRC,P02786,Transferrin receptor protein 1,PA,membrane,-0.106266134,25.52901288,0.675920136,no hit
+CCT5,P48643,T-complex protein 1 subunit epsilon,PA,membrane,0.287805828,24.03152112,0.677060407,no hit
+IFITM1,P13164,Interferon-induced transmembrane protein 1,PA,membrane,-0.227717881,18.51935831,0.678066022,no hit
+EIF2S2,P20042,Eukaryotic translation initiation factor 2 subunit 2,PA,membrane,-0.2100367,21.13200724,0.680914094,no hit
+PROCR,Q9UNN8,Endothelial protein C receptor,PA,membrane,0.117541833,20.83371021,0.680965556,no hit
+ATP6V0A1,Q93050,V-type proton ATPase 116 kDa subunit a 1,PA,membrane,0.068108431,20.16569529,0.681126411,no hit
+LNPK,Q9C0E8,Endoplasmic reticulum junction formation protein lunapark,PA,membrane,0.091051521,19.81042217,0.682533036,no hit
+DDX23,Q9BUQ8,Probable ATP-dependent RNA helicase DDX23,PA,membrane,-0.118324581,17.77386278,0.683397918,no hit
+DDX19A,Q9NUU7,ATP-dependent RNA helicase DDX19A,PA,membrane,-0.199463518,18.34339083,0.68449856,no hit
+HEXA,P06865,Beta-hexosaminidase subunit alpha,PA,membrane,-0.105305847,22.03032316,0.687985209,no hit
+CCT4,P50991,T-complex protein 1 subunit delta,PA,membrane,0.285260632,23.66399863,0.689016347,no hit
+PLIN2,Q99541,Perilipin-2,PA,membrane,0.060782683,18.65591433,0.691457418,no hit
+PRSS56,P0CW18,Serine protease 56,PA,membrane,0.105335987,19.1422194,0.692018946,no hit
+CD151,P48509,CD151 antigen,PA,membrane,0.11679077,21.64712744,0.692498638,no hit
+HEXB,P07686,Beta-hexosaminidase subunit beta,PA,membrane,-0.156045767,23.07258104,0.693778334,no hit
+S100A10,P60903,Protein S100-A10,PA,membrane,0.094119237,22.31960706,0.696652564,no hit
+H2AC17,P0C0S8,Histone H2A type 1,PA,membrane,-0.253435216,21.71704241,0.697693415,no hit
+GOLM1,Q8NBJ4,Golgi membrane protein 1,PA,membrane,0.072930824,18.97535662,0.702747956,no hit
+MYH9,P35579,Myosin-9,PA,membrane,0.140011324,22.07991163,0.704615021,no hit
+TMX1,Q9H3N1,Thioredoxin-related transmembrane protein 1,PA,membrane,0.122809224,20.60229501,0.705130146,no hit
+NDUFS3,O75489,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitochondrial",PA,membrane,0.146634363,19.85958752,0.706642545,no hit
+DDX21,Q9NR30,Nucleolar RNA helicase 2,PA,membrane,-0.1506976,19.57184532,0.707292965,no hit
+RPS21,P63220,40S ribosomal protein S21,PA,membrane,-0.091193733,21.920261,0.709703993,no hit
+CDC37,Q16543,Hsp90 co-chaperone Cdc37,PA,membrane,-0.068378971,19.72398842,0.713370358,no hit
+FLII,Q13045,Protein flightless-1 homolog,PA,membrane,-0.11417554,18.42416679,0.713849924,no hit
+DHX15,O43143,ATP-dependent RNA helicase DHX15,PA,membrane,-0.063751213,19.59130067,0.714150856,no hit
+ALDH7A1,P49419,Alpha-aminoadipic semialdehyde dehydrogenase,PA,membrane,0.156801242,20.54780858,0.715975976,no hit
+EIF3J,O75822,Eukaryotic translation initiation factor 3 subunit J,PA,membrane,0.095427944,19.90497437,0.716423486,no hit
+HNRNPM,P52272,Heterogeneous nuclear ribonucleoprotein M,PA,membrane,-0.133457798,21.61084903,0.719109591,no hit
+SEC22B,O75396,Vesicle-trafficking protein SEC22b,PA,membrane,-0.090174592,23.39039486,0.71962335,no hit
+NSF,P46459,Vesicle-fusing ATPase,PA,membrane,-0.154848613,20.40674375,0.720371555,no hit
+SRP68,Q9UHB9,Signal recognition particle subunit SRP68,PA,membrane,-0.10600267,18.7513477,0.724140153,no hit
+LNPEP,Q9UIQ6,Leucyl-cystinyl aminopeptidase,PA,membrane,-0.12144585,21.85534514,0.724361815,no hit
+ILK,Q13418,Integrin-linked protein kinase,PA,membrane,-0.107662311,19.47457838,0.730380263,no hit
+LUC7L2,Q9Y383,Putative RNA-binding protein Luc7-like 2,PA,membrane,0.122609671,18.40277988,0.730510069,no hit
+TOMM40,O96008,Mitochondrial import receptor subunit TOM40 homolog,PA,membrane,0.121062875,18.82689667,0.732125858,no hit
+EFEMP1,Q12805,EGF-containing fibulin-like extracellular matrix protein 1,PA,membrane,0.064924327,18.64179927,0.733297456,no hit
+SLC20A1,Q8WUM9,Sodium-dependent phosphate transporter 1,PA,membrane,-0.056720219,19.33494821,0.733678072,no hit
+PACSIN2,Q9UNF0,Protein kinase C and casein kinase substrate in neurons protein 2,PA,membrane,-0.092811076,19.28550056,0.733829525,no hit
+SLC52A2,Q9HAB3,"Solute carrier family 52, riboflavin transporter, member 2",PA,membrane,-0.128649752,20.32352773,0.736052335,no hit
+RBM39,Q14498,RNA-binding protein 39,PA,membrane,-0.112312369,18.55401359,0.737050536,no hit
+AHNAK,Q09666,Neuroblast differentiation-associated protein AHNAK,PA,membrane,0.066988534,24.35375033,0.737510399,no hit
+EPRS1,P07814,Bifunctional glutamate/proline--tRNA ligase,PA,membrane,-0.087049434,22.56204329,0.739550441,no hit
+ZC3HAV1,Q7Z2W4,Zinc finger CCCH-type antiviral protein 1,PA,membrane,0.076316862,18.85269016,0.740138163,no hit
+OSMR,Q99650,Oncostatin-M-specific receptor subunit beta,PA,membrane,0.068193706,17.24893537,0.742409853,no hit
+PLCB3,Q01970,"1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase beta-3",PA,membrane,0.066944512,17.09549406,0.745236381,no hit
+FASN,P49327,Fatty acid synthase,PA,membrane,-0.088525157,21.11367202,0.746575838,no hit
+GART,P22102,Trifunctional purine biosynthetic protein adenosine-3,PA,membrane,-0.073500052,18.52411409,0.74958734,no hit
+EHD2,Q9NZN4,EH domain-containing protein 2,PA,membrane,0.102007087,20.42450068,0.749882692,no hit
+TPBG,Q13641,Trophoblast glycoprotein,PA,membrane,0.063155277,20.14250566,0.752027256,no hit
+CCT6A,P40227,T-complex protein 1 subunit zeta,PA,membrane,0.223516329,23.39533609,0.75215594,no hit
+ERP44,Q9BS26,Endoplasmic reticulum resident protein 44,PA,membrane,0.063525997,22.41938575,0.75277573,no hit
+VAMP3,Q15836,Vesicle-associated membrane protein 3,PA,membrane,-0.054859241,20.40453731,0.75326109,no hit
+ATP6V0D1,P61421,V-type proton ATPase subunit d 1,PA,membrane,0.051476059,21.64771734,0.755985589,no hit
+DNAJA1,P31689,DnaJ homolog subfamily A member 1,PA,membrane,-0.175004874,21.71917831,0.757369035,no hit
+VPS35,Q96QK1,Vacuolar protein sorting-associated protein 35,PA,membrane,-0.087674461,18.74748619,0.761482159,no hit
+CTNNA1,P35221,Catenin alpha-1,PA,membrane,0.107348544,20.86629432,0.770402861,no hit
+RAB7A,P51149,Ras-related protein Rab-7a,PA,membrane,0.078940107,24.40104964,0.770923245,no hit
+CAVIN1,Q6NZI2,Caveolae-associated protein 1,PA,membrane,-0.092250906,17.00987767,0.771179623,no hit
+H1-2,P16403,Histone H1.2,PA,membrane,-0.205462741,22.23853975,0.775032209,no hit
+PDLIM1,O00151,PDZ and LIM domain protein 1,PA,membrane,0.073104955,19.87435394,0.775931625,no hit
+PACSIN3,Q9UKS6,Protein kinase C and casein kinase substrate in neurons protein 3,PA,membrane,0.066560235,19.05979881,0.778300858,no hit
+SLC6A6,P31641,Sodium- and chloride-dependent taurine transporter,PA,membrane,0.081454178,18.69343955,0.778711094,no hit
+SCPEP1,Q9HB40,Retinoid-inducible serine carboxypeptidase,PA,membrane,-0.103656574,20.2112726,0.778865981,no hit
+NRAS,P01111,GTPase NRas,PA,membrane,0.046404907,21.85890003,0.78078338,no hit
+COPS7A,Q9UBW8,COP9 signalosome complex subunit 7a,PA,membrane,0.052683207,18.60457115,0.781021806,no hit
+NSUN2,Q08J23,RNA cytosine C(5)-methyltransferase NSUN2,PA,membrane,-0.085521902,22.95030743,0.782007195,no hit
+SLC16A3,O15427,Monocarboxylate transporter 4,PA,membrane,-0.104070927,23.33812878,0.785075719,no hit
+HFE,Q30201,Hereditary hemochromatosis protein,PA,membrane,-0.055698398,17.72596683,0.786213151,no hit
+BAIAP2,Q9UQB8,Brain-specific angiogenesis inhibitor 1-associated protein 2,PA,membrane,0.110954528,18.94598525,0.787407425,no hit
+ABHD17B,Q5VST6,Alpha/beta hydrolase domain-containing protein 17B,PA,membrane,-0.059982748,19.38928682,0.788785975,no hit
+TWF1,Q12792,Twinfilin-1,PA,membrane,0.069084568,19.18268761,0.790955333,no hit
+MCM3,P25205,DNA replication licensing factor MCM3,PA,membrane,0.075982101,19.17382134,0.792115029,no hit
+GLB1,P16278,Beta-galactosidase,PA,membrane,0.083746975,20.81533775,0.793378333,no hit
+STK26,Q9P289,Serine/threonine-protein kinase 26,PA,membrane,-0.035524579,20.80164282,0.79358786,no hit
+PARP1,P09874,Poly [ADP-ribose] polymerase 1,PA,membrane,0.097637261,22.40047149,0.794933462,no hit
+LARS1,Q9P2J5,"Leucine--tRNA ligase, cytoplasmic",PA,membrane,-0.087529523,18.47327954,0.79710412,no hit
+TMOD3,Q9NYL9,Tropomodulin-3,PA,membrane,0.070642515,18.96622764,0.797348375,no hit
+GALNT2,Q10471,Polypeptide N-acetylgalactosaminyltransferase 2,PA,membrane,-0.06699476,21.53642277,0.797485486,no hit
+IL6ST,P40189,Interleukin-6 receptor subunit beta,PA,membrane,0.051328962,20.2847811,0.801608352,no hit
+CKAP5,Q14008,Cytoskeleton-associated protein 5,PA,membrane,-0.078945912,19.04496796,0.80481543,no hit
+PPT1,P50897,Palmitoyl-protein thioesterase 1,PA,membrane,-0.086001298,21.24340021,0.804840177,no hit
+RER1,O15258,Protein RER1,PA,membrane,0.056903128,18.48381513,0.808430732,no hit
+SND1,Q7KZF4,Staphylococcal nuclease domain-containing protein 1,PA,membrane,-0.131959897,24.03823372,0.808496832,no hit
+RAB11B,Q15907,Ras-related protein Rab-11B,PA,membrane,-0.058541277,23.45315321,0.808548491,no hit
+ATP5MG,O75964,"ATP synthase subunit g, mitochondrial",PA,membrane,0.071852514,20.15400731,0.811949754,no hit
+SLC39A11,Q8N1S5,Zinc transporter ZIP11,PA,membrane,-0.047591797,18.40844843,0.812498141,no hit
+CLIC1,O00299,Chloride intracellular channel protein 1,PA,membrane,-0.056446451,22.91837476,0.812679909,no hit
+CTSA,P10619,Lysosomal protective protein,PA,membrane,-0.08906695,21.81466576,0.816611987,no hit
+ATP6V1A,P38606,V-type proton ATPase catalytic subunit A,PA,membrane,0.037434027,19.76208296,0.82142668,no hit
+IARS1,P41252,"Isoleucine--tRNA ligase, cytoplasmic",PA,membrane,0.067502499999999993,20.83144277,0.825081216,no hit
+ALDH9A1,P49189,4-trimethylaminobutyraldehyde dehydrogenase,PA,membrane,-0.050181069,20.49551469,0.829717074,no hit
+LRP1,Q07954,Prolow-density lipoprotein receptor-related protein 1,PA,membrane,-0.049508582,22.73609045,0.830728493,no hit
+ANTXR1,Q9H6X2,Anthrax toxin receptor 1,PA,membrane,0.03957741,21.05344633,0.83139179,no hit
+SLC19A2,O60779,Thiamine transporter 1,PA,membrane,-0.042188722,18.41212681,0.831646692,no hit
+TSPAN3,O60637,Tetraspanin-3,PA,membrane,-0.075909934,19.96590182,0.83531576,no hit
+SLC11A2,P49281,Natural resistance-associated macrophage protein 2,PA,membrane,0.049827331,18.53014307,0.836356617,no hit
+ABCB6,Q9NP58,ATP-binding cassette sub-family B member 6,PA,membrane,-0.062822464,18.57499853,0.839081417,no hit
+ASS1,P00966,Argininosuccinate synthase,PA,membrane,0.060580402,20.4177356,0.847849531,no hit
+ATP11C,Q8NB49,Phospholipid-transporting ATPase IG,PA,membrane,-0.054156958,20.57553431,0.849169259,no hit
+HCCS,P53701,Holocytochrome c-type synthase,PA,membrane,-0.052494484,19.38581336,0.852980576,no hit
+NCAPH,Q15003,Condensin complex subunit 2,PA,membrane,-0.063866852,19.05992551,0.857185705,no hit
+CSRP1,P21291,Cysteine and glycine-rich protein 1,PA,membrane,-0.075717798,19.08727343,0.858351832,no hit
+BCL2L12,Q9HB09,Bcl-2-like protein 12,PA,membrane,-0.035281267,18.0688455,0.861579187,no hit
+DDX5,P17844,Probable ATP-dependent RNA helicase DDX5,PA,membrane,-0.052827437,21.73837038,0.862397714,no hit
+KIAA0319L,Q8IZA0,Dyslexia-associated protein KIAA0319-like protein,PA,membrane,0.036518653,16.99379383,0.86415944,no hit
+YIF1B,Q5BJH7,Protein YIF1B,PA,membrane,-0.043688063,20.64717909,0.86446595,no hit
+TNFSF9,P41273,Tumor necrosis factor ligand superfamily member 9,PA,membrane,0.051723661,17.26545878,0.866096456,no hit
+HNRNPU,Q00839,Heterogeneous nuclear ribonucleoprotein U,PA,membrane,0.066159588,22.68899737,0.866458037,no hit
+RAB4A,P20338,Ras-related protein Rab-4A,PA,membrane,0.031572268,20.78042755,0.867285013,no hit
+TMED5,Q9Y3A6,Transmembrane emp24 domain-containing protein 5,PA,membrane,-0.030957891,20.64010149,0.867657025,no hit
+RAB9A,P51151,Ras-related protein Rab-9A,PA,membrane,-0.045424783,21.40952862,0.867670065,no hit
+NUP155,O75694,Nuclear pore complex protein Nup155,PA,membrane,-0.049521774,18.38846777,0.868517297,no hit
+AP3M1,Q9Y2T2,AP-3 complex subunit mu-1,PA,membrane,0.056251045,18.36603163,0.869626171,no hit
+LAMTOR3,Q9UHA4,Ragulator complex protein LAMTOR3,PA,membrane,0.046236331,18.3316421,0.87056853,no hit
+SLC19A1,P41440,Reduced folate transporter,PA,membrane,0.040296184,19.58758638,0.870798903,no hit
+H3-3B,P84243,Histone H3.3,PA,membrane,-0.112064091,22.44377517,0.871727843,no hit
+GOLIM4,O00461,Golgi integral membrane protein 4,PA,membrane,-0.034948939,17.83926115,0.877167905,no hit
+CPA4,Q9UI42,Carboxypeptidase A4,PA,membrane,0.048204966,18.98266273,0.881240783,no hit
+MPST,P25325,3-mercaptopyruvate sulfurtransferase,PA,membrane,0.031699737,20.68711511,0.882610464,no hit
+SPTAN1,Q13813,"Spectrin alpha chain, non-erythrocytic 1",PA,membrane,0.045380545,21.13987673,0.883236892,no hit
+TMEM106B,Q9NUM4,Transmembrane protein 106B,PA,membrane,0.06486458,20.80983064,0.883554695,no hit
+ITGB5,P18084,Integrin beta-5,PA,membrane,0.033142866,21.53560282,0.883949065,no hit
+DDX17,Q92841,Probable ATP-dependent RNA helicase DDX17,PA,membrane,-0.031126108,19.17927706,0.885074229,no hit
+PRKDC,P78527,DNA-dependent protein kinase catalytic subunit,PA,membrane,0.049767006,22.98044877,0.886496296,no hit
+ATIC,P31939,Bifunctional purine biosynthesis protein ATIC,PA,membrane,-0.034686554,17.12385384,0.88695145,no hit
+COTL1,Q14019,Coactosin-like protein,PA,membrane,-0.032839876,22.7647681,0.889046031,no hit
+SRP14,P37108,Signal recognition particle 14 kDa protein,PA,membrane,-0.041670408,21.46870103,0.891104426,no hit
+HSP90AB1,P08238,Heat shock protein HSP 90-beta,PA,membrane,-0.03593356,23.40757355,0.892194683,no hit
+YARS1,P54577,"Tyrosine--tRNA ligase, cytoplasmic",PA,membrane,-0.026184065,21.2129248,0.901379927,no hit
+SLCO4A1,Q96BD0,Solute carrier organic anion transporter family member 4A1,PA,membrane,0.041795911,20.72197933,0.90205157,no hit
+CPD,O75976,Carboxypeptidase D,PA,membrane,0.029093506,22.4728285,0.903763027,no hit
+GAPDH,P04406,Glyceraldehyde-3-phosphate dehydrogenase,PA,membrane,0.067231307,25.01447192,0.903882364,no hit
+H4C16,P62805,Histone H4,PA,membrane,-0.06393157,21.76043505,0.90607533,no hit
+ILF2,Q12905,Interleukin enhancer-binding factor 2,PA,membrane,-0.020177371,19.86429363,0.907069776,no hit
+HSP90AA1,P07900,Heat shock protein HSP 90-alpha,PA,membrane,-0.029493444,22.80158284,0.907286407,no hit
+PRPF19,Q9UMS4,Pre-mRNA-processing factor 19,PA,membrane,0.032129533,19.68227621,0.908012464,no hit
+ACP2,P11117,Lysosomal acid phosphatase,PA,membrane,0.051491778,21.35412272,0.909914228,no hit
+SLC39A1,Q9NY26,Zinc transporter ZIP1,PA,membrane,-0.036002475,18.35047786,0.911180738,no hit
+LMAN1,P49257,Protein ERGIC-53,PA,membrane,-0.057314003,22.40620131,0.913066743,no hit
+RBBP7,Q16576,Histone-binding protein RBBP7,PA,membrane,-0.023631661,21.39438648,0.914206824,no hit
+NAGLU,P54802,Alpha-N-acetylglucosaminidase,PA,membrane,0.021436873,18.80451855,0.915931504,no hit
+CHORDC1,Q9UHD1,Cysteine and histidine-rich domain-containing protein 1,PA,membrane,0.033059277,18.18102997,0.917848439,no hit
+ALYREF,Q86V81,THO complex subunit 4,PA,membrane,-0.031232147,19.19089245,0.917997169,no hit
+KPNA2,P52292,Importin subunit alpha-1,PA,membrane,0.016953381,20.76972365,0.921214055,no hit
+HNRNPF,P52597,Heterogeneous nuclear ribonucleoprotein F,PA,membrane,-0.051714627,20.15848456,0.921245285,no hit
+NONO,Q15233,Non-POU domain-containing octamer-binding protein,PA,membrane,-0.019692413,20.72186816,0.922951764,no hit
+FSCN1,Q16658,Fascin,PA,membrane,0.032485296,23.08412271,0.925010336,no hit
+LMO7,Q8WWI1,LIM domain only protein 7,PA,membrane,-0.03532278,19.74823011,0.92757293,no hit
+SRSF3,P84103,Serine/arginine-rich splicing factor 3,PA,membrane,0.032799685,19.97623918,0.930294033,no hit
+NPC1,O15118,NPC intracellular cholesterol transporter 1,PA,membrane,0.027380697,21.56878409,0.934129685,no hit
+ORMDL2,Q53FV1,ORM1-like protein 2,PA,membrane,0.029873135,19.73480752,0.938042408,no hit
+MCM5,P33992,DNA replication licensing factor MCM5,PA,membrane,0.023227069,18.12489684,0.938658576,no hit
+PRDX4,Q13162,Peroxiredoxin-4,PA,membrane,-0.017085886,19.92138453,0.940337194,no hit
+VASP,P50552,Vasodilator-stimulated phosphoprotein,PA,membrane,0.019306851,19.77820238,0.944391788,no hit
+DHX9,Q08211,ATP-dependent RNA helicase A,PA,membrane,-0.026954246,21.6486446,0.946280838,no hit
+MANF,P55145,Mesencephalic astrocyte-derived neurotrophic factor,PA,membrane,-0.020491807,19.0188272,0.951564351,no hit
+VPS26A,O75436,Vacuolar protein sorting-associated protein 26A,PA,membrane,0.016589186,18.65209099,0.953323754,no hit
+SNRNP200,O75643,U5 small nuclear ribonucleoprotein 200 kDa helicase,PA,membrane,-0.016592786000000002,19.56526371,0.955779027,no hit
+ILF3,Q12906,Interleukin enhancer-binding factor 3,PA,membrane,-0.019169852,21.87758655,0.957765547,no hit
+SPNS1,Q9H2V7,Protein spinster homolog 1,PA,membrane,-0.018846228,17.98132423,0.958874335,no hit
+ARL1,P40616,ADP-ribosylation factor-like protein 1,PA,membrane,-0.010032514,19.56482724,0.959519303,no hit
+NAPG,Q99747,Gamma-soluble NSF attachment protein,PA,membrane,-0.00882926,19.78484931,0.960598398,no hit
+CTSZ,Q9UBR2,Cathepsin Z,PA,membrane,0.024723114,20.32730399,0.960809214,no hit
+RETREG3,Q86VR2,Reticulophagy regulator 3,PA,membrane,0.007003755,19.88482266,0.965973656,no hit
+MYADM,Q96S97,Myeloid-associated differentiation marker,PA,membrane,-0.014229949,17.88552819,0.967234425,no hit
+PRC1,O43663,Protein regulator of cytokinesis 1,PA,membrane,-0.012030889,17.39830092,0.969933723,no hit
+TM7SF3,Q9NS93,Transmembrane 7 superfamily member 3,PA,membrane,-0.015485799,18.68756225,0.97206157,no hit
+CD63,P08962,CD63 antigen,PA,membrane,0.012589104,21.46619982,0.976980496,no hit
+GBA1,P04062,Lysosomal acid glucosylceramidase,PA,membrane,-0.006864325,22.89532493,0.983893281,no hit
+SERINC1,Q9NRX5,Serine incorporator 1,PA,membrane,0.004897316,19.20035008,0.986845934,no hit
+HNRNPUL1,Q9BUJ2,Heterogeneous nuclear ribonucleoprotein U-like protein 1,PA,membrane,-0.0044305,18.98242793,0.987615895,no hit
+ZDHHC20,Q5W0Z9,Palmitoyltransferase ZDHHC20,PA,membrane,-0.002348632,19.92035024,0.990119689,no hit
+ANKH,Q9HCJ1,Progressive ankylosis protein homolog,PA,membrane,0.003286602,19.64196444,0.990855527,no hit
+CBX3,Q13185,Chromobox protein homolog 3,PA,membrane,-0.0017177,19.2962672,0.992613813,no hit
+DSC2,Q02487,Desmocollin-2,PA,membrane,-0.001459384,19.42207332,0.996023896,no hit

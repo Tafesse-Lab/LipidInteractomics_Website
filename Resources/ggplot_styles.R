@@ -308,8 +308,6 @@ VolcanoPlotStandardized <- function(data) {
     return(VolcanoPlotly)
 }
 
-data <- read_csv(here("IndividualStudies/DataTables/WY_2021_ACSChemBio_Download.csv"))
-
 CC_enrichment_plots <- function(data, plotReturnType, filename){
 
 	################

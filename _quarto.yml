@@ -31,6 +31,7 @@ website:
   repo-url: https://github.com/gaelenDG/LipidInteractomics_Website
   repo-actions: [source, issue]
   favicon: Resources/Logo.png
+  google-analytics: ""
   navbar:
     pinned: true
     left:

@@ -123,7 +123,7 @@ ggvenn
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue, numReplicates) |>
+  dplyr::select(gene_name, gene_ID, hit_annotation, logFC, pvalue, numReplicates) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
   arrange(-logFC) |>
@@ -134,10 +134,6 @@ data_reactive <- crosstalk::SharedData$new(data)
 
 htmltools::tags$div(
   class = "filter-container",
-  filter_checkbox(id = "LipidProbe",
-                  label = "Lipid probe in pulldown:", 
-                  sharedData = data_reactive,
-                  group = ~LipidProbe),
   filter_checkbox(id = "hit_annotation",
                   label = "Enrichment criteria:", 
                   sharedData = data_reactive,
@@ -146,14 +142,13 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(data_reactive, 
-          caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.",
           options = list(pageLength = 15),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Num Replicate IDs"),
+                         colnames = c("Gene Name", "Accession #", "Hit Annotation", "LogFC", "p value", "Num Replicate IDs"),
                          rownames=FALSE)
 
 ```
 
-
+This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. logFC ratios are median normalized. \"Num Replicate IDs\" denotes the number of replicates in which the protein was identified. As above, \"enriched hit\" denotes proteins identified in all three replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01. \"enriched candidates\" are proteins identified in two replicates & fold-change > 1.5 (logFC 0.585) & pvalue < 0.01.
 
 :::
 

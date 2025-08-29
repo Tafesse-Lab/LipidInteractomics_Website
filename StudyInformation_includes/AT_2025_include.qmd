@@ -59,3 +59,9 @@ Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 
 Cell lysates were separated into membrane and cytosolic fractions. This publication reports the results of just the membrane fraction.
+
+#### Data wrangling
+Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_wrangling.R dname="AT_ChemComm2025_wrangling">}}
+

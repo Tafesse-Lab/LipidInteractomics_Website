@@ -23,9 +23,9 @@ Chemical structures drawn by Berit Blume.
 ```{r setup, echo=FALSE, include=FALSE}
 ## intitialize libraries
 library(here)
-
+here()
 ## Opening the source file for the ggplot custom theme
-source(paste0(here(), "/Resources/ggplot_styles.R"))
+source((here("Resources/ggplot_styles.R")))
 
 
 # Opening the datatable for this page
@@ -165,7 +165,7 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 ```{r, echo=FALSE}
 
 RM_2021_data <- RM_2021_data |>
-  select(-hit_annotation_method) |>
+  select(-hit_annotation_method, -Protein.Description) |>
   mutate(
     logFC = signif(logFC, digits = 4),
     pvalue = signif(pvalue, digits = 4),
@@ -196,7 +196,9 @@ htmltools::tags$div(
 )
 
 ## Displays the reactive dataframe
-datatable(data_reactive, options = list(pageLength = 10))
+datatable(data_reactive, 
+          options = list(pageLength = 10),
+          colnames = c("Rank", "Gene Name", "Accession #","Lipid Probe", "Fraction", "LogFC", "p value", "FDR", "Hit Annotation"))
 
 ```
 

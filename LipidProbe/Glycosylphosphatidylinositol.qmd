@@ -33,12 +33,9 @@ library(here)
 
 ## Opening the source file for the ggplot custom theme
 source(paste0(here(), "/Resources/ggplot_styles.R"))
-
 ```
 
 ```{r, echo=FALSE, include=FALSE}
-
-
 
 data <- readr::read_csv(here::here("LipidProbe/DataSets/bf-GPI_SK_2024_ChemEuro.csv"))
 
@@ -109,7 +106,7 @@ Check the boxes below to filter the dataset by which lipid probe was used in the
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, hit_annotation, logFC, pvalue) |>
+  dplyr::select(gene_name, Accession, hit_annotation, logFC, pvalue) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3)) |>
   arrange(hit_annotation, -logFC) 
@@ -129,7 +126,7 @@ htmltools::tags$div(
 ## Displays the reactive dataframe
 datatable(data_reactive, 
           options = list(pageLength = 10),
-                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value"))              
+          colnames = c("Rank", "Gene Name", "Accession #", "Hit Annotation", "LogFC", "p value"))              
 
 ```
 

@@ -139,7 +139,7 @@ htmltools::tags$div(
 ## Displays the reactive dataframe
 datatable(data_reactive, 
           options = list(pageLength = 15),
-                         colnames = c("Gene Name","Protein ID/Accession", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Average Expression", "FDR"))
+                         colnames = c("Gene Name","Accession #", "Lipid Probe", "Hit Annotation", "LogFC", "p value", "Average Expression", "FDR"))
 
 ```
 

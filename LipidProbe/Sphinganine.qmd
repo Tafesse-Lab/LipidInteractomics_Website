@@ -39,7 +39,7 @@ Chemical structures drawn by Berit Blume.
 library(here)
 
 ## Opening the source file for the ggplot custom theme
-source(paste0(here(), "/Resources/ggplot_styles.R"))
+source(here("Resources/ggplot_styles.R"))
 
 
 #  SF_2024_data <- readr::read_csv("LipidProbe/DataSets/SF_ACS-Chem-Bio_2024_download.csv") |>
@@ -48,7 +48,7 @@ source(paste0(here(), "/Resources/ggplot_styles.R"))
 # 	write.csv(SF_2024_data, "LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")
 
 # Opening the datatable for this page
-data <- readr::read_csv(paste0(here(), "/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv")) |>
+data <- readr::read_csv(here("LipidProbe/DataSets/Spa_Huh7_SF_2024.csv"), ) |>
 	filter(LipidProbe == "Spa")
 
 # Organizing the hit annotations as factors
@@ -124,7 +124,7 @@ Check the boxes below to filter by significance thresholds.
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, hit_annotation, logFC, pvalue, fdr) |>
+  dplyr::select(gene_name, protein_id, hit_annotation, logFC, pvalue, fdr) |>
   mutate(logFC = signif(logFC, digits=3),
           pvalue = signif(pvalue, digits=3),
           fdr = signif(fdr, digits = 3)) |>
@@ -144,11 +144,12 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(data_reactive, 
-          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV", 
           options = list(pageLength = 10),
-                         colnames = c("Rank", "Gene Name", "Hit Annotation", "LogFC", "p value", "FDR"))
+                         colnames = c("Rank", "Gene Name","Accession #", "Hit Annotation", "LogFC", "p value", "FDR"))
 
 ```
+
+'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a false discovery rate less than 0.2 and a fold change of at least 1.5-fold, and 'enriched hits' are defined as proteins with a false discovery rate less than 0.05 and a fold change of at least 2-fold in the +UV over the -UV.
 :::
 
 <br> 

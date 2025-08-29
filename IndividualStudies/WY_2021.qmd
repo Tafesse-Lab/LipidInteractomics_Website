@@ -151,7 +151,7 @@ GO Dot plots display the enrichment of GO terms among the proteins enriched to t
 # Here is the code to make the filterable lists shown in the crosstalk table below
 
 data <- data |>
-  dplyr::select(gene_name, LipidProbe, hit_annotation, logFC, pvalue) |>
+  dplyr::select(gene_name, Accession, LipidProbe, hit_annotation, logFC, pvalue) |>
   mutate(logFC = signif(logFC, digits=3)) |>
   mutate(pvalue = signif(pvalue, digits=3)) |>
   arrange(-logFC) |>
@@ -176,7 +176,7 @@ htmltools::tags$div(
 datatable(data_reactive, 
           caption = "This datatable contains all the data plotted above. Check the boxes below to filter the dataset by which lipid probe was used in the pulldown and by significance thresholds. \"enriched hit\" denotes proteins with fold-changes > 1.5 (logFC > 0.5) pvalue < 0.05. Only proteins identified in all three replicates are displayed.",
           options = list(pageLength = 10),
-                         colnames = c("Gene Name", "Lipid Probe", "Hit Annotation", "LogFC", "p value"),
+                         colnames = c("Gene Name", "Accession #", "Lipid Probe", "Hit Annotation", "LogFC", "p value"),
                          rownames=FALSE)
 
 ```

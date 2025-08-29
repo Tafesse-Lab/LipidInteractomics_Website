@@ -42,3 +42,9 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 16-channel Tandem Mass Tagging (TMT16)
 
 ##### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
+
+#### Data wrangling
+Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SF_2024_ChemComm_wrangling.R dname="SF_2024_ChemComm_wrangling">}}
+

@@ -111,11 +111,11 @@ htmltools::tags$div(
 
 ## Displays the reactive dataframe
 datatable(data_reactive, 
-          caption = "'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a p-value < 0.05 and a fold-change > 2 (log2FC > 1) for the bf-GPI versus control probe, and 'enriched hits' are defined as proteins with a p-value < 0.05 and a fold change of at least 4-fold (log2FC >2) for the bf-GPI versus control probe", 
           options = list(pageLength = 15),
-                         colnames = c("Gene Name", "Gene ID/Accession", "Lipid Probe", "Hit Annotation", "LogFC", "p value"))
+                         colnames = c("Gene Name", "Accession #", "Lipid Probe", "Hit Annotation", "LogFC", "p value"))
 
 ```
+'No hit' proteins are unenriched or depleted in the presence of probe, 'enriched candidates' are defined as proteins with a p-value < 0.05 and a fold-change > 2 (log2FC > 1) for the bf-GPI versus control probe, and 'enriched hits' are defined as proteins with a p-value < 0.05 and a fold change of at least 4-fold (log2FC >2) for the bf-GPI versus control probe
 :::
 
 

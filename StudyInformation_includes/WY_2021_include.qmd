@@ -33,3 +33,8 @@ Alcohol consumption leads to formation of phosphatidylethanol (PEth) via the tra
 ##### Mass spectrometry quantification method
 
 PSM
+
+#### Data wrangling
+Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/WY_2021_wrangling.R dname="WY_2021_wrangling">}}

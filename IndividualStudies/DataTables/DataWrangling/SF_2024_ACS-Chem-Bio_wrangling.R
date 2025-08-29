@@ -12,7 +12,7 @@ source(here::here("Resources/ggplot_styles.R"))
 
 ############################################################
 
-data <- read_csv(here("IndividualStudies/DataTables/DataWrangling/SF_ACS-ChemBio_2024_Limma_results_V3.csv")) |>
+data <- read_csv(here("LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SF_ACS-ChemBio_2024_Limma_results_V3.csv")) |>
   glimpse()
 
 
@@ -26,4 +26,14 @@ data <- data |>
   select(gene_name, protein_id, LipidProbe, hit_annotation, logFC, pvalue, AveExpr, fdr) |>
   glimpse() 
 
-write_csv(data, here("IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv"))
+# write_csv(data, here("LipidInteractomics_Website/IndividualStudies/DataTables/SF_ACS-Chem-Bio_2024_download.csv"))
+
+Sph_data <- data |>
+  filter(LipidProbe == "Sph")
+
+write_csv(Sph_data, here("LipidInteractomics_Website/LipidProbe/DataSets/Sph_Huh7_SF_2024.csv"))
+
+Spa_data <- data |>
+  filter(LipidProbe == "Spa")
+
+write_csv(Spa_data, here("LipidInteractomics_Website/LipidProbe/DataSets/Spa_Huh7_SF_2024.csv"))

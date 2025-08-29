@@ -7,7 +7,7 @@
 library(here)
 
 ## Opening the source file for the ggplot custom theme
-source(here::here("Resources/ggplot_styles.R"))
+source(here::here("LipidInteractomics_Website/Resources/ggplot_styles.R"))
 
 ############################################################
 
@@ -17,7 +17,7 @@ source(here::here("Resources/ggplot_styles.R"))
 #   - averaging logFC and pvalues for the ids of each protein by replicate, counting the number of reps for each protein
 #   - adding statistical annotation based on the publication's cutoffs
 #   - maintained the original statistical output from the publication
-data <- readr::read_csv(here("IndividualStudies/DataTables/DataWrangling/DCC_2025_ChemrXiv_FullDataset.csv")) |>
+data <- readr::read_csv(here("LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/DCC_2025_ChemrXiv_FullDataset.csv")) |>
   glimpse() |>
   group_by(gene_name) |>
   filter(ratio_MvsL != "") |>
