@@ -19,11 +19,10 @@ Two lipid probes, PA and PE for a single cell line
 :::
 
 
-:::{.cells collapse="true"}
-::::{.cells-header}
-Membrane Fraction
-::::
-::::{.cells-container}
+:::{.callout-warning collapse="false"}
+
+### Membrane Fraction
+
 
 ### Data visualization
  
@@ -81,7 +80,6 @@ MAStandard(data)
 ```
 
 :::
-::::
 :::
 
 <!-- 
@@ -157,13 +155,12 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 
 {{< downloadthis DataTables/AT_ChemicalCommunications_2025_membrane_download.csv dname="AT_ChemicalCommunications_2025">}}
 
+<!-- End of .callout-warning -->
 :::
 
-:::{.cells collapse="true"}
-::::{.cells-header}
-Cytosolic Fraction
-::::
-::::{.cells-container}
+:::{.callout-warning collapse="false"}
+
+### Cytosolic Fraction
 
 ### Data visualization
  
@@ -294,5 +291,6 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 
 {{< downloadthis DataTables/AT_ChemicalCommunications_2025_cytosol_download.csv dname="AT_ChemicalCommunications_2025">}}
 
-::::
+
+<!-- End of .callout-warning -->
 :::

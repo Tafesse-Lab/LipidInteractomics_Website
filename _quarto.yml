@@ -17,8 +17,8 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 
-# execute:
-#   freeze: auto
+execute:
+  freeze: auto
   
 website:
   announcement: 
