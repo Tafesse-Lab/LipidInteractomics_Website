@@ -21,7 +21,7 @@ Chemical structures drawn by Berit Blume.
 
 ## Protein interactome
 
-::::{.callout-tip}
+::::{.callout-warning collapse="false"}
 ### Cell background: Huh7
 
 <!-- R setup, reading dataframes and minor data wrangling -->
@@ -149,7 +149,7 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 {{< downloadthis DataSets/8-3_FA_Huh7_SF_2024.csv dname="8-3_FA_Huh7_SF_ACS-Chem-Bio_2024">}}
 ::::
 
-::::{.callout-tip}
+::::{.callout-warning collapse="false"}
 ### Cell background: HeLa
 
 :::: {.callout-note collapse="true"}
@@ -157,5 +157,9 @@ This datatable contains all the data plotted above. Check the boxes below to fil
 {{< include /StudyInformation_includes/DH_2017_include.qmd >}}
 
 ::::
+
+**\*PSM data presentation still in development.**
+
+See [Höglinger et al. 2017](https://lipidinteractome.org/individualstudies/dh_2017) for results in context with Diacylglycerol and 8-3 Fatty Acid data. 
 
 ::::

@@ -23,4 +23,10 @@ format:
 
 :::
 
+
+**\*PSM data presentation still in development.**
+
+See [Höglinger et al. 2017](https://lipidinteractome.org/individualstudies/dh_2017) for results in context with Diacylglycerol and 8-3 Fatty Acid data. 
+
+
 ::::
