@@ -23,7 +23,8 @@ library(shinycssloaders)
 # ))
 
 # File path for deploying to Shinyapps.io
-source("combinedProbeDatasets_TMT.csv")
+
+source("PlottingFunction.R")
 
 df <- read_csv("combinedProbeDatasets_TMT.csv") |>
   mutate(probeOptions = paste0(LipidProbe, " - ", CellLine))

@@ -48,3 +48,7 @@ Use the download button below to download the R script used to wrangle the autho
 
 {{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SF_2024_ChemComm_wrangling.R dname="SF_2024_ChemComm_wrangling">}}
 
+Use the download button below to download the original data file prior to wrangling: 
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SF_ChemComm_2024_Limma_results_V3.csv dname="SF_2024_ChemComm_OriginalData">}}
+

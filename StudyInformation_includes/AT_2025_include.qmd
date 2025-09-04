@@ -65,3 +65,8 @@ Use the download button below to download the R script used to wrangle the autho
 
 {{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_wrangling.R dname="AT_ChemComm2025_wrangling">}}
 
+Use the download buttons below to download the original data file prior to wrangling: 
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_cytosol.csv dname="AT_2025_Cytosol_OriginalData">}}
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_membrane.csv dname="AT_2025_Membrane_OriginalData">}}

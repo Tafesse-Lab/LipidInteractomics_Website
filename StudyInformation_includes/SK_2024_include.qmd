@@ -41,3 +41,10 @@ Use the download button below to download the R script used to wrangle the autho
 
 {{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SK_2024_wrangling.R dname="SK_2024_wrangling">}}
 
+
+Use the download button below to download the original data file prior to wrangling: 
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/SK_2024_fullDataset_originalHandoff.csv dname="SK_2024_ChemEuro_OriginalData">}}
+
+
+

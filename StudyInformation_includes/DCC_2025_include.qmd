@@ -37,8 +37,19 @@ SILAC
 
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 
+None 
+
+#### Lipid interactomics data analysis
+
+Data as submitted by the original authors was not normalized. To make these results more similar to the other datasets presented here, we performed median normalization to center the distribution around a logFC value of 0 (see the R file below for wrangling). We also needed to do an Ensemble query to find the gene names for the accession numbers of proteins identified in this dataset. 
+
 #### Data wrangling
 Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:
 
 {{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/DCC_2025_wrangling.R dname="DCC_2025_wrangling">}}
+
+Use the download button below to download the original data file prior to wrangling: 
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/DCC_2025_ChemrXiv_FullDataset.csv dname="DCC_2025_OriginalData">}}
+
 

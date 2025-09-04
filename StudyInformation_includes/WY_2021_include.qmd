@@ -38,3 +38,8 @@ PSM
 Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:
 
 {{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/WY_2021_wrangling.R dname="WY_2021_wrangling">}}
+
+Use the download button below to download the original data file prior to wrangling: 
+
+{{< downloadthis /Users/gaelenguzman/LipidInteractomics_Website_local/LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/WY_2021_ACSChemBio_RawData2.csv dname="WY_2021_ACS-ChemBio_OriginalData">}}
+
