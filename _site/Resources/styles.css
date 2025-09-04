@@ -163,6 +163,7 @@
   background-color: #ffffff;
 }
 
+
 /* Header bar */
 .callout-warning > .callout-header {
   margin-left: 0;
@@ -173,17 +174,29 @@
   background-color: #f7eec2;
   font-size: 1em;
   font-weight: bold;
-
-  /* Replace default warning icon with your custom SVG */
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  background-image: url('virus-solid-full.svg');
-
   border-radius: 4px;
   display: flex;
   align-items: center;
 }
+
+/* Remove default icon */
+.callout-warning > .callout-header::before {
+  content: none !important;
+}
+
+/* Add custom SVG as an icon */
+.callout-warning > .callout-header::before {
+  content: "";
+  display: inline-block;
+  width: 20px;         /* size of icon box */
+  height: 20px;
+  margin-right: 8px;   /* spacing before text */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("virus-solid-full.svg");
+}
+
 
 /* Body content */
 .callout-warning > .callout-body {
