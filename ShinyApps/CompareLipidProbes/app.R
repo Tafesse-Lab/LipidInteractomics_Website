@@ -43,13 +43,13 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput(
         "probe1",
-        "Select First LipidProbe:",
+        "Select First Lipid Probe:",
         choices = probeOptions,
         selected = probeOptions[1]
       ),
       selectInput(
         "probe2",
-        "Select Second LipidProbe:",
+        "Select Second Lipid Probe:",
         choices = probeOptions,
         selected = probeOptions[2]
       )

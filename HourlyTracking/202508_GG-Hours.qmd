@@ -1,5 +1,6 @@
 ---
-title: August 2025 Lipid Interactome Monthly Invoice
+title: Lipid Interactome Monthly Invoice
+subtitle: August 2025
 author: "Gaelen Guzman"
 date: "2025 09 04"
 output: 
@@ -20,7 +21,7 @@ header-includes:
 
 Dear Dr. Schultz,
 
-Please find below the hours I logged for the month of August 2025, with descriptions of each day's activity. In total, I performed 4 hours of work at an hourly rate of $50 (USD), for a total bill of $200. 
+Please find below the hours I logged for the month of August 2025, with descriptions of each day's activity. In total, I performed 5 hours of work at an hourly rate of $50 (USD), for a total bill of $250. 
 
 Please forward payments to the following account:
 
