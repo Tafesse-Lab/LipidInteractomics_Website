@@ -462,6 +462,74 @@ Note
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+document.addEventListener("DOMContentLoaded", function () {
+  // Find both patterns
+  const roots = document.querySelectorAll(
+    '.callout-cell.collapsible, .cells[collapse="true"], .cells[data-collapse="true"], .cells.collapsible'
+  );
+
+  roots.forEach(root =&gt; {
+    if (root.dataset.collapsibleInit === "1") return; // avoid double init
+    root.dataset.collapsibleInit = "1";
+
+    // 1) Find or create a header (prefer a direct child heading)
+    let header =
+      root.querySelector(':scope &gt; .callout-header, :scope &gt; .cells-header, :scope &gt; h1, :scope &gt; h2, :scope &gt; h3, :scope &gt; h4, :scope &gt; h5, :scope &gt; h6');
+
+    if (!header) {
+      // fallback: use first element as header if available
+      header = root.firstElementChild;
+      if (!header) return; // nothing to do
+    }
+
+    // Normalize header class based on container type
+    const isCells = root.classList.contains('cells');
+    header.classList.add(isCells ? 'cells-header' : 'callout-header');
+
+    // 2) Find or build the content wrapper
+    let content = root.querySelector(':scope &gt; .callout-content, :scope &gt; .cells-container');
+    if (!content) {
+      content = document.createElement('div');
+      content.className = isCells ? 'cells-container' : 'callout-content';
+      // Move all siblings after header into content
+      let sib = header.nextSibling;
+      while (sib) {
+        const next = sib.nextSibling;
+        content.appendChild(sib);
+        sib = next;
+      }
+      root.appendChild(content);
+    }
+
+    // 3) A11y + initial state
+    header.setAttribute('role', 'button');
+    header.setAttribute('tabindex', '0');
+
+    const startsOpen =
+      root.classList.contains('open') ||
+      root.getAttribute('open') === 'true' ||
+      root.getAttribute('data-open') === 'true';
+
+    const setOpen = (open) =&gt; {
+      content.style.display = open ? '' : 'none';
+      root.classList.toggle('open', open);
+      header.setAttribute('aria-expanded', String(open));
+    };
+
+    setOpen(!!startsOpen);
+
+    // 4) Toggle handlers (click + keyboard)
+    const toggle = () =&gt; setOpen(content.style.display === 'none');
+
+    header.addEventListener('click', toggle);
+    header.addEventListener('keydown', (e) =&gt; {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+});
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

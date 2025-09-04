@@ -1,0 +1,15 @@
+---
+title: "Trifunctional Phosphatidic Acid"
+prefer-html: true
+format: 
+  html:
+    embed-resources: false
+---
+
+
+::: {.callout-warning collapse="true"}
+### Membrane Fraction
+
+Body 
+
+:::

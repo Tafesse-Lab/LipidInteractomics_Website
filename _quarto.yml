@@ -2,7 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!StudyInformation_includes/"
+    # - "!StudyInformation_includes/"
     - "!LipidProbe/template_lipidprobe.qmd"
     - "!IndividualStudies/template_study.qmd"
     - "!WeeklyTeamMeeting_notes.md"
@@ -139,3 +139,4 @@ format:
     include-in-header: 
       - text: |
           <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
+    include-after-body: Resources/scripts.js

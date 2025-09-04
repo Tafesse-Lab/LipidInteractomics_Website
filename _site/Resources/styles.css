@@ -57,7 +57,7 @@
 }
 
 
-/* Set the size of the image */
+/* Set the size of the hover image */
 .hover-image img {
   width: 300px; /* Adjust to desired width */
   height: auto; /* Maintains aspect ratio */
@@ -101,17 +101,10 @@
 }
 
 
-/* Style custom callout icon */
-.callout-cell {
-  border-left: 4px solid #e8c92e;
-  background-color: #ffffff;
-  padding: 1rem 1rem 1rem 3.5rem; /* Leave space for the icon */
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  position: relative;
-}
+/* Style custom callout icon for the celltype blocks */
+/* Several items are defined below for this custom callout */
 
-.callout-cell::before {
+.cells::before {
   content: '';
   position: absolute;
   left: 1rem;
@@ -155,5 +148,48 @@
   color: black;
   background-color: white;
   /*border-left: 4px solid #d4aa00ff; */
+  border-bottom-right-radius: 10px;
+}
+
+/* End of definition for custom cell callout block  */
+
+
+/* Override Quarto's callout-warning container */
+.callout-warning {
+  margin: 1em 0;
+  border: 1px solid gray;
+  border-left: 4px solid #d4aa00ff;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Header bar */
+.callout-warning > .callout-header {
+  margin-left: 0;
+  padding-left: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: black;
+  background-color: #f7eec2;
+  font-size: 1em;
+  font-weight: bold;
+
+  /* Replace default warning icon with your custom SVG */
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-image: url('virus-solid-full.svg');
+
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* Body content */
+.callout-warning > .callout-body {
+  padding-left: 5px;
+  padding-top: -10px;
+  color: black;
+  background-color: white;
   border-bottom-right-radius: 10px;
 }

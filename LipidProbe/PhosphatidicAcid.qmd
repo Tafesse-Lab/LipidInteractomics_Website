@@ -9,7 +9,7 @@ format:
 
 ## Structure
 
-:::{.border}
+::: {.border}
 ::: {layout="[[-15,85], [100]]"}
 ![(A) Native Phosphatidic Acid.](/LipidProbe/Structures/PA.png)
 
@@ -19,11 +19,10 @@ Chemical structures drawn by Berit Blume.
 :::
 :::
 
-
-
 ## Protein Interactome
 
-::::{.callout-tip}
+:::: {.callout-tip}
+
 ### Cell background: HeLa
 
 ::: {.callout-note collapse="true"}
@@ -32,12 +31,12 @@ Chemical structures drawn by Berit Blume.
 
 :::
 
+
 :::{.cells collapse="true"}
 ::::{.cells-header}
 Membrane Fraction
 ::::
 ::::{.cells-container}
-
 
 #### Data visualization
  
@@ -106,7 +105,7 @@ MAStandard(data)
 **In beta: GO analysis still under development**
 
 :::::{.border}
-::::{#fig-PE_GOplots}
+::::{#fig-PA_GOplots}
 ::: {.panel-tabset}
 
 ##### Cell Compartment

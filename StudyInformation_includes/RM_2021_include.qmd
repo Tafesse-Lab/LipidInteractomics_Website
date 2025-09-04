@@ -24,11 +24,17 @@ We synthesized the first multifunctionalized phosphoinositide polyphosphate deri
 
 Peptide spectral counting *(in original publication)*
 
-Label free quantification *(as reported here, enabled via fresh analysis by Frank Stein, EMBL)*
+Label free quantification *(as reported here, enabled via fresh analysis by Frank Stein, EMBL -- details below)*
 
 #### Additional sample preparation <span class="help-symbol" title="e.g. sub-cellular fractionation, depletion, etc.">?</span>
 
 Samples were split into membrane and cytosolic fractions and analyzed as independent mass spec samples. Additional *No Probe* controls were included for raw input, though not used in displaying the data on this site.
+
+#### Data analysis
+
+**The authors of this paper were unable to provide the original results of their dataset, and we applied a label-free quantification data pipeline to their mass spectrometry files, publicly-available on ProteomExchange**
+
+For this analysis, raw protein intensities were processed by first selecting unique proteins supported by at least two razor peptides. Batch effects were then removed, and missing values were imputed using a hybrid strategy: KNN imputation was applied to high-confidence proteins with replicate-level missingness, while low-confidence proteins were assigned minimum detected values (MinDet). The data were subsequently variance-stabilized and normalized, after which differential abundance testing was performed using the limma framework. Parallel analyses were also carried out with the fdrtool package, with significance thresholds defined consistently across methods. Proteins were classified according to standard criteria: hits (FDR < 0.05 and |fold-change| > 1.5), candidates (FDR < 0.2 and |fold-change| > 1.5), enriched candidates (FDR < 0.2 and fold-change > 1.5), enriched hits (FDR < 0.05 and fold-change > 1.5), and all others as non-significant.
 
 #### Data wrangling
 Use the download button below to download the R script used to wrangle the authors' original submission into the data visualization tools on the Lipid Interactome:

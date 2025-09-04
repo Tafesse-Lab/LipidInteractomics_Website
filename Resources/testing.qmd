@@ -25,7 +25,7 @@ Membrane fraction
 :::
 
 
-::: {.callout-tip}
+::: {.callout-warning collapse="false"}
 
 ## Membrane Fraction
 

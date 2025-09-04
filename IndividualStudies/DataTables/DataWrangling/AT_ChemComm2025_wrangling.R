@@ -17,7 +17,7 @@ dataRaw <- readr::read_csv(here(
   "LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_membrane.csv"
 ))
 
-data <- dataRaw |>
+MembraneData <- dataRaw |>
   mutate(
     gene_name = Gene,
     protein_id = Protein.ID,
@@ -50,13 +50,23 @@ data <- dataRaw |>
 
 # write_csv(data, here("IndividualStudies/DataTables/AT_ChemicalCommunications_2025_membrane_download.csv"))
 
-PA_data <- data |>
+PA_data <- MembraneData |>
   filter(LipidProbe == "PA")
-write_csv(PA_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PA_membrane_HeLa_AT_2025.csv"))
+write_csv(
+  PA_data,
+  here(
+    "LipidInteractomics_Website/LipidProbe/DataSets/PA_membrane_HeLa_AT_2025.csv"
+  )
+)
 
-PE_data <- data |>
+PE_data <- MembraneData |>
   filter(LipidProbe == "PE")
-write_csv(PE_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PE_membrane_HeLa_AT_2025.csv"))
+write_csv(
+  PE_data,
+  here(
+    "LipidInteractomics_Website/LipidProbe/DataSets/PE_membrane_HeLa_AT_2025.csv"
+  )
+)
 
 
 # Cytosol dataset second
@@ -64,7 +74,7 @@ dataRaw <- readr::read_csv(here(
   "LipidInteractomics_Website/IndividualStudies/DataTables/DataWrangling/AT_ChemComm2025_cytosol.csv"
 ))
 
-data <- dataRaw |>
+CytosolData <- dataRaw |>
   mutate(
     gene_name = Gene,
     protein_id = Protein.ID,
@@ -97,10 +107,39 @@ data <- dataRaw |>
 
 # write_csv(data, here("IndividualStudies/DataTables/AT_ChemicalCommunications_2025_cytosol_download.csv"))
 
-PA_data <- data |>
+PA_data <- CytosolData |>
   filter(LipidProbe == "PA")
-write_csv(PA_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PA_cytosol_HeLa_AT_2025.csv"))
 
-PE_data <- data |>
+# write_csv(PA_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PA_cytosol_HeLa_AT_2025.csv"))
+
+PE_data <- CytosolData |>
   filter(LipidProbe == "PE")
-write_csv(PE_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PE_cytosol_HeLa_AT_2025.csv"))
+# write_csv(PE_data, here("LipidInteractomics_Website/LipidProbe/DataSets/PE_cytosol_HeLa_AT_2025.csv"))
+
+##### Add membrane and cytosol data to the shiny app
+
+bigDataSet <- read_csv(here(
+  "LipidInteractomics_Website/ShinyApps/CompareLipidProbes/combinedProbeDatasets_TMT.csv"
+)) |>
+  filter(!LipidProbe %in% c("PA", "PE"))
+
+
+MembraneData <- MembraneData |>
+  mutate(CellLine = "HeLa - Membrane") |>
+  select(LipidProbe, gene_name, logFC, pvalue, hit_annotation, CellLine)
+
+CytosolData <- CytosolData |>
+  mutate(CellLine = "HeLa - Cytosol") |>
+  select(LipidProbe, gene_name, logFC, pvalue, hit_annotation, CellLine)
+
+bigDataSet <- bigDataSet |>
+  rbind(MembraneData) |>
+  rbind(CytosolData) |>
+  glimpse()
+
+write_csv(
+  bigDataSet,
+  file = here(
+    "LipidInteractomics_Website/ShinyApps/CompareLipidProbes/combinedProbeDatasets_TMT.csv"
+  )
+)
