@@ -17,8 +17,8 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 
-execute:
-  freeze: auto
+# execute:
+#   freeze: auto
   
 website:
   announcement: 
@@ -139,4 +139,3 @@ format:
     include-in-header: 
       - text: |
           <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
-    include-after-body: Resources/scripts.js
