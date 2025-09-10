@@ -1,6 +1,6 @@
 ---
-title: "The Lipid Interactome"
-subtitle: "An interactive and open access platform for exploring cellular lipid-protein interactomes"
+title: "The Lipid Interactome:"
+subtitle: "An interactive and open access platform for exploring cellular lipid-protein interactions"
 date: 2025-02-04
 keywords:
   - Lipid-protein interactions
@@ -84,9 +84,9 @@ ___
 
 ## Authors
 
-Gaelen Guzman^1,^*, André Nadler^2^, Frank Stein^3^, Jeremy M. Baskin^4^, Carsten Schulz^1^, Fikadu G. Tafesse^1^
+Gaelen Guzman^1,^*, André Nadler^3^, Frank Stein^4^, Jeremy M. Baskin^5^, Carsten Schulz^2^, Fikadu G. Tafesse^1,2^
 
-^1^ = Departments of Molecular Immunology and Immunology and  Chemical Physiology and Biochemistry, Oregon Health & Science University, Portland, OR, USA; ^2^ = Max Plank Institute of Molecular Cell Biology and Genetics, Dresden Germany; ^3^ = Proteomics Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany; ^4^ = Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology, Cornell University, Ithaca, NY, USA; * = Corresponding author: <gaelen.guzman@lipidinteractome.org>
+^1^Department of Molecular Immunology & Immunology, Oregon Health & Science University, Portland, OR, USA; ^2^Chemical Physiology and Biochemistry, Oregon Health & Science University, Portland, OR, USA; ^3^Max Plank Institute of Molecular Cell Biology and Genetics, Dresden Germany; ^4^Proteomics Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany; ^5^Department of Chemistry and Chemical Biology and Weill Institute for Cell and Molecular Biology, Cornell University, Ithaca, NY, USA; *Corresponding author: <gaelen.guzman@lipidinteractome.org>
 :::
 
 ## Summary

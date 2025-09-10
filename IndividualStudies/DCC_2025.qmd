@@ -1,7 +1,7 @@
 ---
 title: "Chiu et al. 2025"
 subtitle: "Photoaffinity Labeling Reveals a Role for the Unusual Triply Acylated Phospholipid N-Acylphosphatidylethanolamine in Lactate Homeostasis"
-date: 2025-03-06
+date: 2025-09-05
 format: 
   html:
     embed-resources: false
