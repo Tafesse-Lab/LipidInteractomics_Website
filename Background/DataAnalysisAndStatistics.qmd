@@ -67,7 +67,7 @@ The datasets incorporated into the [Probe vs Probe Comparison](https://lipidinte
 ### Probe vs Probe Comparison tool {#sec-ProbevsProbeComparisonBackground}
 
 * This embedded Shiny app allows the user to select two datasets to visually compare along the axes of a scatter plot.
-* **Crucially, this tool is not intended for quantitative comparisons, as described in greater detail above in [@sec-DataAlignment].**
+* **Crucially, this tool is not intended for quantitative comparisons, as described in greater detail above in [Data Alignment @sec-DataAlignment].**
 * The statistical annotations of each dataset are compared and distinguished along the axes and denoted by color: 
   * Black proteins are unenriched in respect to both probes.
   * Purple proteins are “enriched” with respect to only the probe on the x-axis.
