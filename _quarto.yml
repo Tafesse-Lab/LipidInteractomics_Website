@@ -18,7 +18,7 @@ copyright:
   year: 2025
 
 execute:
-  freeze: auto
+  freeze: false
   
 website:
   announcement: 
