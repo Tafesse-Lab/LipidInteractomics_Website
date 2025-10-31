@@ -29,7 +29,7 @@ For numerous reasons, it is fundamentally unreasonable to quantitatively compare
 
 With this in mind, the Lipid Interactome seeks to align disparate datasets as much as possible and enable qualitative, visual comparisons between datasets. Each dataset is curated from its original source (either directly from the authors, or gathered from publicly available supplemental data) and wrangled to fit a standardized format, with common column headers and annotations of statistical significance. 
 
-The datasets incorporated into the [Probe vs Probe Comparison](https://lipidinteractome.org/lipidprobe/enrichedhitscomparison) tool each consist of normalized ratiometric data of fundamentally similar form, with qualitatively comparable statistical annotations. 
+The datasets incorporated into the [Probe vs Probe Comparison](https://lipidinteractome.org/probevsprobe/enrichedhitscomparison) tool each consist of normalized ratiometric data of fundamentally similar form, with qualitatively comparable statistical annotations. 
 
 ## Visualizing proteomics data {#sec-DataAnalysis_visualization}
 
@@ -55,7 +55,7 @@ The datasets incorporated into the [Probe vs Probe Comparison](https://lipidinte
 ### Heat Maps
 
 * In cases where ratiometric data is not available, heat maps have been employed to display relative enrichment between conditions. 
-  * For example, [Höglinger et al. 2017](https://lipidinteractome.org/individualstudies/dh_2017) reports only peptide spectral mapping counts. In this case, we have excluded the data from the [Probe vs Probe Comparison](https://lipidinteractome.org/lipidprobe/enrichedhitscomparison) tool, as it is incompatible with this visualization technique.
+  * For example, [Höglinger et al. 2017](https://lipidinteractome.org/individualstudies/dh_2017) reports only peptide spectral mapping counts. In this case, we have excluded the data from the [Probe vs Probe Comparison](https://lipidinteractome.org/probevsprobe/enrichedhitscomparison) tool, as it is incompatible with this visualization technique.
 
 ### Gene Ontology Overview {#sec-DataAnalysis_GeneOntology}
 
