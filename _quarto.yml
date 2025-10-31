@@ -2,12 +2,12 @@ project:
   type: website
   render:
     - "*.qmd"
-    # - "!StudyInformation_includes/"
+    - "!StudyInformation_includes/"
     - "!LipidProbe/template_lipidprobe.qmd"
     - "!IndividualStudies/template_study.qmd"
     - "!WeeklyTeamMeeting_notes.md"
     - "!HourlyTracking/"
-    # - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
+    - "!BioinformaticsApplicationNote/GG_2025_applicationNote.qmd"
 bibliography: Resources/TrifunctionalLipidProbes_bibliography.bib
 csl: Resources/nature.csl
 format-links: true
@@ -57,10 +57,6 @@ website:
     collapse-level: 2
 
     contents:
-      # - href: SearchByProtein/SearchByProtein.qmd
-      #   text: "Search by Protein"
-      #   contents:
-      #     - section: ""
       - href: ProbeVsProbeComparison/EnrichedHitsComparison.qmd
         text: "Probe vs Probe Comparisons"
         contents:
