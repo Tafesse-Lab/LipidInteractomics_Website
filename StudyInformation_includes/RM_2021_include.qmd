@@ -20,6 +20,10 @@ We synthesized the first multifunctionalized phosphoinositide polyphosphate deri
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
 
+**Species:** *Homo sapiens*
+
+**Cell type:** Epithelial (immortalized cervical cancer line)
+
 #### Mass spectrometry quantification method
 
 Peptide spectral counting *(in original publication)*

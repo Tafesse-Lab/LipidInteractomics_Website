@@ -2,7 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!StudyInformation_includes/"
+    # - "!StudyInformation_includes/"
     - "!LipidProbe/template_lipidprobe.qmd"
     - "!IndividualStudies/template_study.qmd"
     - "!WeeklyTeamMeeting_notes.md"

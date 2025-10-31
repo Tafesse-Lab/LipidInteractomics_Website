@@ -26,6 +26,10 @@ Alcohol consumption leads to formation of phosphatidylethanol (PEth) via the tra
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
 
+**Species:** *Homo sapiens*
+
+**Cell type:** Epithelial (immortalized cervical cancer line)
+
 #### Uncaging & Crosslinking timeline
 
 

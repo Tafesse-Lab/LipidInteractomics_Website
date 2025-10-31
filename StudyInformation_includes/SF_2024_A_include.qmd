@@ -29,6 +29,9 @@ Functions of the sphingolipids sphingosine and sphinganine in cells are not well
 
 [Huh7](https://huh7.com){target="_blank"}
 
+**Species:** *Homo sapiens*
+
+**Cell type:** hepatocyte derived cellular carcinoma cell
 
 #### Uncaging & Crosslinking timeline
 

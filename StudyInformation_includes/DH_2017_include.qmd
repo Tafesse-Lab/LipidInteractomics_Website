@@ -37,6 +37,10 @@ Lipid-mediated signaling events regulate many cellular processes. Investigations
 
 [HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
 
+**Species:** *Homo sapiens*
+
+**Cell type:** Epithelial (immortalized cervical cancer line)
+
 #### Uncaging & Crosslinking timeline
 
 | Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |

@@ -27,7 +27,11 @@ Phosphatidylethanolamine (PE) is a ubiquitous lipid species in higher eukaryotes
 
 #### Cell line analyzed
 
-[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"} 
+[HeLa](https://www.atcc.org/products/ccl-2){target="_blank"}
+
+**Species:** *Homo sapiens*
+
+**Cell type:** Epithelial (immortalized cervical cancer line)
 
 #### Uncaging & Crosslinking timeline
 
