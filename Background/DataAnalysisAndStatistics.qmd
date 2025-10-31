@@ -20,14 +20,16 @@ To better understand the biological significance of the detected proteins, we co
 
 In this repository, only one dataset utilized SILAC to quantify protein interactors, [Chiu et al. 2025](/IndividualStudies/DCC_2025.qmd), and so an *ad hoc* method was applied to coerce the data into the framework of the standardized data visualizations of the site. The results are as reported in Chiu et al. 2025[@chiuPhotoaffinityLabelingReveals2025].
 
-<!-- 
-## PSM quantitative mass spec analysis
 
-* Studies included in this repository which used a PSM-based analysis pipeline
-	- Hoglinger et al., 2017[@hoglingerTrifunctionalLipidProbes2017]
-	- Muller et al., 2021[@mullerSynthesisCellularLabeling2021]
+## Aligning datasets for presentation on this site {#sec-DataAlignment}
 
-* Need these details. -->
+As described above, many methods are used to produce interactome proteomics data, and aligning these methods for interoperability ad comparison is a significant hurdle. 
+
+For numerous reasons, it is fundamentally unreasonable to quantitatively compare the results of disparate proteomics datasets -- for example, even subtle changes in instrument settings can preclude comparison of datasets collected on the same mass spectrometer and sample handling differences between individuals performing the same techniques can produce differences between very-similar datasets. 
+
+With this in mind, the Lipid Interactome seeks to align disparate datasets as much as possible and enable qualitative, visual comparisons between datasets. Each dataset is curated from its original source (either directly from the authors, or gathered from publicly available supplemental data) and wrangled to fit a standardized format, with common column headers and annotations of statistical significance. 
+
+The datasets incorporated into the [Probe vs Probe Comparison](https://lipidinteractome.org/lipidprobe/enrichedhitscomparison) tool each consist of normalized ratiometric data of fundamentally similar form, with qualitatively comparable statistical annotations. 
 
 ## Visualizing proteomics data {#sec-DataAnalysis_visualization}
 
@@ -52,9 +54,22 @@ In this repository, only one dataset utilized SILAC to quantify protein interact
 
 ### Heat Maps
 
+* In cases where ratiometric data is not available, heat maps have been employed to display relative enrichment between conditions. 
+  * For example, [Höglinger et al. 2017](https://lipidinteractome.org/individualstudies/dh_2017) reports only peptide spectral mapping counts. In this case, we have excluded the data from the [Probe vs Probe Comparison](https://lipidinteractome.org/lipidprobe/enrichedhitscomparison) tool, as it is incompatible with this visualization technique.
+
 ### Gene Ontology Overview {#sec-DataAnalysis_GeneOntology}
 
+* **This tool is in development and is only available for some datasets.**
 * Gene Ontology (GO) analyses take a list of proteins and determines whether there is a greater than random enrichment of a biological feature. These features can include pathways, molecular functions, cellular compartments or biological processes. 
 * In each of the GO analyses presented on this site, we filtered according to a significance cutoff -- these cutoffs are explained on the respective data pages (either "enriched candidates" or "enriched hits", as in the TMT-based datasets, or unique subsets of probe enrichment, as in the PSM-based datasets). 
 * Enriched pathways are given statistical significance by assessing the likelihood that a pathway would be overrepresented through random chance.
 
+### Probe vs Probe Comparison tool {#sec-ProbevsProbeComparisonBackground}
+
+* This embedded Shiny app allows the user to select two datasets to visually compare along the axes of a scatter plot.
+* **Crucially, this tool is not intended for quantitative comparisons, as described in greater detail above in [@sec-DataAlignment].**
+* The statistical annotations of each dataset are compared and distinguished along the axes and denoted by color: 
+  * Black proteins are unenriched in respect to both probes.
+  * Purple proteins are “enriched” with respect to only the probe on the x-axis.
+  * Green proteins are “enriched” with respect to only the probe on the y-axis.
+  * Orange proteins are “enriched” in both probes. 

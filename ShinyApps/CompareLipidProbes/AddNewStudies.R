@@ -1,6 +1,3 @@
-
-
-
 smallDataset <- bigDataSet |>
   mutate(studyPointer = paste(LipidProbe, CellLine, sep = " - "))
 

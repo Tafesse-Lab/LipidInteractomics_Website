@@ -165,7 +165,7 @@ In addition to the pages for each independent publication, datasets are further 
 
 #### Comparative Analysis via Shiny Application
 
-Where study design permits, data has been integrated into an interactive Shiny application, allowing users to perform direct (though qualitative) probe-to-probe comparisons ([Probe vs Probe Comparisons](https://www.lipidinteractome.org/lipidprobe/enrichedhitscomparison)). This tool enables researchers to explore the similarity of lipid interactomes across experimental conditions via linear regression analysis, highlighting proteins that are significantly enriched in one dataset, both datasets, or neither. By providing an intuitive framework for interactome comparison, this feature aids in the identification of promising targets for further investigation. 
+Where study design permits, data has been integrated into an interactive Shiny application, allowing users to perform direct (though qualitative) probe-to-probe comparisons ([Probe vs Probe Comparisons](https://www.lipidinteractome.org/probevsprobecomparison/enrichedhitscomparison)). This tool enables researchers to explore the similarity of lipid interactomes across experimental conditions via linear regression analysis, highlighting proteins that are significantly enriched in one dataset, both datasets, or neither. By providing an intuitive framework for interactome comparison, this feature aids in the identification of promising targets for further investigation. 
 
 Because each publication utilizes distinct sample handling and data analysis techniques, we emphasize that these comparisons are qualitative -- we hope to discourage quantitative statements regarding relative enrichment between lipid probes (e.g. "Protein X is enriched 3x more to Lipid A than to Lipid B"). However, great utility lies in assessing co-enrichment (or orthogonal enrichment) of proteins to disparate lipid probes without quantitative comparison.  
 
@@ -183,11 +183,11 @@ While there are numerous ways to quantify the mass spectrometry (MS) data, the m
 :::
 </br>
 
-**We wish to emphasize that we will collaborate with data providers to prepare visualizations which best suit their datasets -- the example dataset above merely depicts an ideal case which allows for easy incorporation and cross-study comparison. As proteomics techniques have improved rapidly in recent years, we have done our best to incorporate all data structures into this repository**
+**We wish to emphasize that we will collaborate with data providers to prepare visualizations which best suit their datasets -- the example dataset above merely depicts an ideal case which allows for easy incorporation and cross-study comparison. As proteomics techniques have improved rapidly in recent years, we have done our best to incorporate all data structures into this repository.**
 
 Additionally, we are working on providing visualization functionality for studies which utilized Peptide Spectral Matching (PSM) to report enrichment toward lipid probes. Similarly, data-independent acquisitio (DIA) is a quickly emerging alternative to data-dependent acquisition (DDA; e.g. TMT) [@birhanuMassSpectrometrybasedProteomics2023; @boysClinicalApplicationsMass2023]; as with PSM datasets, we are working to incorporate DIA data formats.
 
-At present, we are accepting datasets as analyzed by the original researchers, including protein identifications, enrichment quantification, and the results of statistical testing. We are working to incorporate comprehensive details of the analysis workflow in each study.
+At present, we are accepting datasets as analyzed by the original researchers, including protein identifications, enrichment quantification, and the results of statistical testing. Summaries of both source and data wrangling can be found in the *Study Information* dropdown section of each data page. Further, the raw data (as provided directly by authors or pulled from publicly-available datasts) and data wrangling scripts are available for download in the same dropdown tabs.
 
 ## Discussion
 

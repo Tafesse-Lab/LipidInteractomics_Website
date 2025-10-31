@@ -38,7 +38,6 @@ probeOptions <- unique(df$probeOptions)
 # UI
 ui <- fluidPage(
   titlePanel("Interactive LogFC Comparison"),
-
   sidebarLayout(
     sidebarPanel(
       selectInput(
@@ -210,7 +209,6 @@ server <- function(input, output, session) {
           hit_annotation.x == "enriched hit" &
             hit_annotation.y == "enriched hit" ~
             "enriched on x- and y- axes",
-
           hit_annotation.x == "enriched hit" &
             hit_annotation.y == "enriched hit" &
             hit_annotation.z != "enriched hit" ~

@@ -1,0 +1,37 @@
+---
+format: 
+  docx:
+    reference-doc: custom-reference-doc.docx
+---
+
+Hello Dr. Ceci and Dr. Robinson,
+
+We are quite excited that our manuscript is acceptable for publication and are happy to incorporate further clarifications about our data handling and the steps taken to align each dataset within the framework of the site. We are again grateful to the reviewers for taking the time to thoughtfully consider our manuscripts and the changes we incorporated in this newest version of our manuscript and our site. 
+
+We see two fundamental suggestions between the reviewers: (1) clarification of the data handling and alignment and (2) establishment of a more robust/scalable data management model. 
+
+To the first point, we have added further clarifying text to the manuscript seeking to emphasize that the data incorporated on the site is acquired through direct communication with authors -- where possible -- and from publicly available datasets published with the original studies. Further, we have added a short note on the raw data download section of the *Study Information* dropdown tab on each page to describe the source of the associated dataset (either provided by the authors or pulled from the published dataset). 
+
+We have also sought to clarify the data handling by adding a similar summary note to the s*Study Information* dropdown tab of each page describing the data wrangling performed. For most datasets, this is merely the re-naming of data columns and the inclusion of a statistical significance column which allows for color-coding in the automated plotting functions -- where "significance" is as defined in each original publication. As such, we further emphasize that direct comparison between studies is still not intended to be a quantitative method, but to give lipid researchers a sense of the similarities and differences in the sets of enriched hits between different lipid probes. A section has been added to our [Data Analysis and Statistics](https://lipidinteractome.org/background/dataanalysisandstatistics) background page describing the limitations of the comparison tool -- and this section is linked on the comparison page.
+
+To the reviewers' second point regarding a scalable and AI-compatible data model, we wholeheartedly agree that our site's impact would be greatly increased with a more robust underlying data model. Notably, however, this first implementation of our site incorporates most, if not all, currently published lipid interactome datasets -- this is a developing field, and while interest is expanding (in part due to this effort), the scalability of the site is currently manageable via manual addition of new datasets.
+
+We seek to emphasize that the suggested features would require root-level changes that are currently beyond our reach in both funding and skillset. We firmly aim to reconstruct the site with greater data management and a more scalable structure in its next iteration. At present, we believe that the key features of the site are of great benefit to lipid researchers: there is no comparable resource that so improves the findability and accessibility of these datasets, nor any other effort to make these datasets interoperable (as incomplete as ours is), and the downloadability of these datasets dramatically increases the reusability of these datasets. 
+
+We hope that the clarifying changes to our manuscript and the above-noted sections of our site are sufficient to address the reviewers' concerns. We thank them again for their time and consideration, and we thank the editors at Bioinformatics for this opportunity to publish our Application Note.
+
+Best,
+
+Dr. Fikadu Tafesse
+
+
+---
+
+**Summary of revisions**
+
+* Clarifying text has been added to the manuscript to describe the source of datasets and the handling of data.
+
+* Descriptive text has been added to each *Study Information* section of the site in order to clarify the source of the dataset (i.e. provided by the authors or as published/publicly available) and the steps taken to wrangle the dataset into alignment with the visualization functions on the site.
+
+* A new section of the [Data Analysis and Statistics](https://lipidinteractome.org/background/dataanalysisandstatistics) background page clarifying the broad steps taken to align each dataset for inclusion in the site (e.g. column name alignment, the creation of a statistical annotation column, etc). This section is linked to from the dataset comparison tool to direct users who seek more information.
+

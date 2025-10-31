@@ -1,6 +1,6 @@
 ---
 title: Lipid Interactome Monthly Invoice
-subtitle: August 2025
+subtitle: Invoice Number 20250801
 author: "Gaelen Guzman"
 date: "2025 09 04"
 output: 
@@ -14,6 +14,7 @@ header-includes:
   - "\\fancyhead[L]{Gaelen Guzman}"
   - "\\fancyhead[C]{Lipid Interactome Monthly Invoice}"
   - "\\fancyhead[R]{2025 09 04}"
+  - "\\fancyhead[R]{Invoice Number 20250801}"
   - "\\fancyfoot{}"
   - "\\renewcommand{\\headrulewidth}{0.4pt}"
   - "\\renewcommand{\\footrulewidth}{0pt}"

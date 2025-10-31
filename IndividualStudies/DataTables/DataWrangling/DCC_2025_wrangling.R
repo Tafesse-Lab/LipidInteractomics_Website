@@ -21,16 +21,22 @@ data <- readr::read_csv(here("LipidInteractomics_Website/IndividualStudies/DataT
   glimpse() |>
   group_by(gene_name) |>
   filter(ratio_MvsL != "") |>
-  summarise(gene_ID = dplyr::first(gene_ID),
-            logFC = mean(log2(ratio_MvsL)),
-            pvalue = mean(pvalue),
-            numReplicates = n(),
-            AveExpr = log10(mean(L_abundance) + mean(M_abundance))/2) |>
+  summarise(
+    gene_ID = dplyr::first(gene_ID),
+    logFC = mean(log2(ratio_MvsL)),
+    pvalue = mean(pvalue),
+    numReplicates = n(),
+    AveExpr = log10(mean(L_abundance) + mean(M_abundance)) / 2
+  ) |>
   arrange(-logFC) |>
-  mutate(LipidProbe = "BF-NAPE",
-         hit_annotation = case_when(.default = "no hit",
-                                    logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 2 ~ "enriched candidate",
-                                    logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 3 ~ "enriched hit")) |>
+  mutate(
+    LipidProbe = "BF-NAPE",
+    hit_annotation = case_when(
+      .default = "no hit",
+      logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 2 ~ "enriched candidate",
+      logFC >= 0.5849625 & pvalue <= 0.05 & numReplicates == 3 ~ "enriched hit"
+    )
+  ) |>
   glimpse()
 
 
@@ -54,5 +60,4 @@ CombinedProbeData <- read_csv(here("ShinyApps/LipidInteractomics_ShinyApp/combin
   glimpse() |>
   rbind(data)
 
-write_csv(CombinedProbeData, here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))  
-
+write_csv(CombinedProbeData, here("ShinyApps/LipidInteractomics_ShinyApp/combinedProbeDatasets_TMT.csv"))

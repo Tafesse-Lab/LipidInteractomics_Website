@@ -61,7 +61,7 @@ website:
       #   text: "Search by Protein"
       #   contents:
       #     - section: ""
-      - href: LipidProbe/EnrichedHitsComparison.qmd
+      - href: ProbeVsProbeComparison/EnrichedHitsComparison.qmd
         text: "Probe vs Probe Comparisons"
         contents:
           - section: ""
