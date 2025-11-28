@@ -1,0 +1,75 @@
+---
+title: Lipid Interactome Monthly Invoice
+subtitle: Invoice Number 20251001
+author: "Gaelen Guzman"
+date: "2025 10 31"
+output: 
+  pdf_document:
+    keep_tex: true
+fontsize: 12pt
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{fancyhdr}"
+  - "\\pagestyle{fancy}"
+  - "\\fancyhead[L]{Gaelen Guzman}"
+  - "\\fancyhead[C]{Lipid Interactome Monthly Invoice}"
+  - "\\fancyhead[R]{2025 10 31}"
+  - "\\fancyhead[R]{Invoice Number 20251001}"
+  - "\\fancyfoot{}"
+  - "\\renewcommand{\\headrulewidth}{0.4pt}"
+  - "\\renewcommand{\\footrulewidth}{0pt}"
+---
+
+Dear Dr. Schultz,
+
+Please find below the hours I logged for the month of October 2025, with descriptions of each day's activity. In total, I performed 2 hours of work at an hourly rate of $50 (USD), for a total bill of $100. 
+
+Please forward payments to the following account:
+
+| | |
+| :--- | :--- |
+| Bank | Wells Fargo | 
+| Account name |  Gaelen Guzman | 
+| Address | 2925 SE Clinton St., Portland, OR 97202 |
+| Account number | 8583230647 | 
+| Routing number | 124103799 | 
+
+```{r, echo=FALSE, warning=FALSE, include = FALSE}
+# filepath: [Hours.csv](http://_vscodecontentref_/0)
+library(readr)
+library(kableExtra)
+library(knitr)
+library(dplyr)
+library(here)
+
+# Read the Hours.csv file and handle unnamed columns
+hours_data <- read_csv(here("HourlyTracking/hours.csv"), col_names = c("Date", "Hours", "Activity"), show_col_types = FALSE) |>
+  mutate(Date = as.Date(as.character(Date), format = "%Y%m%d")) |>
+  select(Date, Hours, Activity) |>
+  filter(Date >= as.Date("2025-10-01") & Date < as.Date("2025-11-01")) %>%  # Filter for April 2025
+  glimpse()
+ 
+sum(hours_data$Hours)
+
+```
+
+
+```{r, echo=FALSE}
+
+# Display the table with text wrapping for the "Activity" column
+kable(
+  hours_data,
+  format = "latex",
+  booktabs = TRUE,
+  caption = "Hours Logged",
+  label = "hours-logged"
+) %>%
+  column_spec(3, width = "10cm")  # Adjust the width of the "Activity" column
+```
+
+<br>
+
+Thank you,
+
+Gaelen Guzman
+

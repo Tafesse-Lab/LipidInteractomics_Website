@@ -13,3 +13,4 @@
 20250729,3," ""Got the data from Ana's PIP3 publication and the PA/PE data uploaded to their respective pages. Uploaded our manuscript to arXiv preprint server.""",
 20250828,5," ""Spent a long time going through the reviewer comments about the site -- included many changes to the data pages (adding accession numbers and download links to the data wrangling scripts and fixing captions and  adding membrane/cytosol data to the PA/PE pages. This is separate from writing the response letter and adding some edits to the manuscript.)""",
 20250903,5,"""Went through and added links to the studies on the shiny app, download links to the raw data files, figured out how to do custom collapsible panes and made sure every reviewer comment was addressed""",
+20251031, 2, "Incorporated reviewer-suggested changes throughout the site, wrote reviewer response letter, wrote new background sections about data analysis and wrangling."
