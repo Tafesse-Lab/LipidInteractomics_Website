@@ -22,6 +22,7 @@ library(heatmaply)
 library(ggvenn)
 library(scales)
 library(htmltools)
+library(data.table)
 
 ################ Helper Functions ################
 
@@ -291,7 +292,6 @@ VolcanoPlotStandardized <- function(data) {
 
   limits <- c(max(c(safe_abs(data$logFC, 4)), na.rm = TRUE), max(c(-safe_log10(data$pvalue, 8)), na.rm = TRUE))
 
-
   VolcanoPlots <- data |>
     ggplot(aes(
       x = logFC,
@@ -375,7 +375,6 @@ VolcanoPlotStandardized <- function(data) {
       size = 20
     ))
 
-
   m <- list(l = 50, r = 50, b = 100, pad = 10)
 
   VolcanoPlotly <- ggplotly(VolcanoPlots,
@@ -403,34 +402,47 @@ CC_enrichment_plots <- function(data, plotReturnType, filename) {
   ################
 
   # Making lookup table with ENTREZID identifiers from data
-  ID_LUT <- clusterProfiler::bitr(geneID = data$gene_name, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db)
-  names(ID_LUT) <- c("gene_name", "ENTREZID")
+  ID_LUT <- clusterProfiler::bitr(geneID = data$gene_name, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) |> as.data.table()
 
+  data <- as.data.table(data)
   # Merging ENTREZIDs to data
-  data <- left_join(data, ID_LUT)
+  data <- merge(
+    x = data, 
+    y = ID_LUT,
+    by.x = "gene_name",
+    by.y = "SYMBOL")
 
-  ego_Identification_data <- data %>%
-    mutate(sample = LipidProbe) |>
-    dplyr::select(ENTREZID, sample, hit_annotation) %>%
-    unique()
-
-  ego_Identification_data_enriched <- ego_Identification_data |>
-    filter((hit_annotation == "enriched candidate" | hit_annotation == "enriched hit"))
+  ego_Identification_data_enriched <- data[
+    !duplicated(data),
+    .(
+      sample = LipidProbe,
+      ENTREZID = ENTREZID,
+      sample = sample,
+      hit_annotation = hit_annotation
+    )
+  ] [
+    hit_annotation %chin% c("enriched candidate", "enriched hit")
+  ]
 
   # Initializes a ego results vector as NULL in the event that no pathways get identified
   ego_results_Identification_CC <- NULL
 
   # Attempts to identify pathways in the dataset
-  try(
-    ego_results_Identification_CC <- clusterProfiler::compareCluster(ENTREZID ~ sample,
-      data = ego_Identification_data_enriched, fun = "enrichGO",
+  ego_results_Identification_CC <- tryCatch({
+    clusterProfiler::compareCluster(
+      ENTREZID ~ sample,
+      data = ego_Identification_data_enriched,
+      fun = "enrichGO",
       OrgDb = org.Hs.eg.db,
       keyType = "ENTREZID",
       ont = "CC",
       readable = TRUE,
       universe = ID_LUT$ENTREZID
     )
-  )
+  }, error = function(e) {
+    message(e)
+    return(NULL)
+  })
 
   # If no pathway identified, returns text warning user.
   if (is.null(ego_results_Identification_CC)) {
@@ -443,8 +455,11 @@ CC_enrichment_plots <- function(data, plotReturnType, filename) {
     ego_results_Identification_CC_table <- ego_results_Identification_CC_table %>%
       group_by(ID, sample) %>%
       mutate(odds_ratio = calculateFE(GeneRatio, BgRatio))
-    ego_results_Identification_CC_table$Description <- factor(ego_results_Identification_CC_table$Description, levels = unique(rev(ego_results_Identification_CC_table$Description)))
-
+    ego_results_Identification_CC_table$Description <- factor(ego_results_Identification_CC_table$Description,
+                                                              levels = unique(rev(
+                                                                ego_results_Identification_CC_table$Description
+                                                              )))
+    
     ego_sub <- ego_results_Identification_CC_table %>%
       group_by(sample) %>%
       slice_head(n = 10)
@@ -453,11 +468,23 @@ CC_enrichment_plots <- function(data, plotReturnType, filename) {
     if (plotReturnType == "cnet") {
       cnet <- NULL
 
-      try(
-        # Makes the cnet plot
-        cnet <- clusterProfiler::cnetplot(ego_results_Identification_CC, categorySize = "pvalue") +
-          # ggtitle("Cellular compartment") +
-          customPlot
+      cc_results <- ego_results_Identification_CC@compareClusterResult
+      
+      cc_results$category_size <- as.numeric(cc_results$pvalue)
+      
+      cnet <- tryCatch(
+        {
+          clusterProfiler::cnetplot(
+            ego_results_Identification_CC,
+            showCategory = nrow(cc_results),
+            categorySize = cc_results$category_size
+          ) +
+            customPlot
+        },
+        error = function(e) {
+          message("Cnet plot failed: ", conditionMessage(e))
+          NULL
+        }
       )
 
       if (!is.null(cnet)) {
@@ -524,11 +551,9 @@ MF_enrichment_plots <- function(data, plotReturnType, filename) {
   # Initializes a ego results vector as NULL in the event that no pathways get identified
   ego_results_Identification_MF <- NULL
 
-  clusterProfiler::gseKEGG()
-
   # Attempts to identify pathways in the dataset
-  try(
-    ego_results_Identification_MF <- clusterProfiler::compareCluster(ENTREZID ~ sample,
+  ego_results_Identification_MF <- try(
+    clusterProfiler::compareCluster(ENTREZID ~ sample,
       data = ego_Identification_data_enriched, fun = "enrichGO",
       OrgDb = org.Hs.eg.db,
       keyType = "ENTREZID",
@@ -555,17 +580,26 @@ MF_enrichment_plots <- function(data, plotReturnType, filename) {
       group_by(sample) %>%
       slice_head(n = 10)
 
-
-
-
     if (plotReturnType == "cnet") {
       cnet <- NULL
+      
+      cc_results <- ego_results_Identification_CC@compareClusterResult
+      
+      cc_results$category_size <- as.numeric(cc_results$pvalue)
 
-      try(
-        # Makes the cnet plot
-        cnet <- clusterProfiler::cnetplot(ego_results_Identification_MF, categorySize = "pvalue") +
-          # ggtitle("Cellular compartment") +
-          customPlot
+      cnet <- tryCatch(
+        {
+          clusterProfiler::cnetplot(
+            ego_results_Identification_CC,
+            showCategory = nrow(cc_results),
+            categorySize = cc_results$category_size
+          ) +
+            customPlot
+        },
+        error = function(e) {
+          message("Cnet plot failed: ", conditionMessage(e))
+          NULL
+        }
       )
 
       if (!is.null(cnet)) {
@@ -624,8 +658,8 @@ BP_enrichment_plots <- function(data, plotReturnType, filename) {
   ego_results_Identification_BP <- NULL
 
   # Attempts to identify pathways in the dataset
-  try(
-    ego_results_Identification_BP <- clusterProfiler::compareCluster(ENTREZID ~ sample,
+  ego_results_Identification_BP <- try(
+    clusterProfiler::compareCluster(ENTREZID ~ sample,
       data = ego_Identification_data_enriched, fun = "enrichGO",
       OrgDb = org.Hs.eg.db,
       keyType = "ENTREZID",
@@ -654,12 +688,24 @@ BP_enrichment_plots <- function(data, plotReturnType, filename) {
 
     if (plotReturnType == "cnet") {
       cnet <- NULL
+      
+      cc_results <- ego_results_Identification_CC@compareClusterResult
+      
+      cc_results$category_size <- as.numeric(cc_results$pvalue)
 
-      try(
-        # Makes the cnet plot
-        cnet <- clusterProfiler::cnetplot(ego_results_Identification_BP, categorySize = "pvalue") +
-          # ggtitle("Cellular compartment") +
-          customPlot
+      cnet <- tryCatch(
+        {
+          clusterProfiler::cnetplot(
+            ego_results_Identification_CC,
+            showCategory = nrow(cc_results),
+            categorySize = cc_results$category_size
+          ) +
+            customPlot
+        },
+        error = function(e) {
+          message("Cnet plot failed: ", conditionMessage(e))
+          NULL
+        }
       )
 
       if (!is.null(cnet)) {
@@ -681,7 +727,7 @@ BP_enrichment_plots <- function(data, plotReturnType, filename) {
       theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 1))
 
       dot <- ggplotly(dot)
-      # Save as HTML (adjust the path as needed)
+      # Save as HTML (to the filepath provided)
       saveWidget(dot, file = paste0(here(), filename, ".html"), selfcontained = TRUE)
     }
   }

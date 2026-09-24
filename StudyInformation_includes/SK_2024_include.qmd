@@ -16,7 +16,7 @@ Glycosylphosphatidylinositols (GPIs) need to interact with other components in t
 
 Bifunctional Glycosylphosphatidylinositol (bf-GPI)
 
-Bifunctional phosphatidyl moiety with \alpha&-D-glucoside (Control)
+Bifunctional phosphatidyl moiety with $\alpha$-D-glucoside (Control)
 
 ##### Cell line analyzed
 

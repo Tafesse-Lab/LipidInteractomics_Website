@@ -1,0 +1,71 @@
+## Study details
+
+#### Authors
+
+Katelyn C. Cook^1^, Karen Palacio-Rodriguez^2^, Kristin Böhlig^1^, H. Mathilda Lennartz^1^, Swantje Lenz^1,3^, Andrej
+Shevchenko^1^, Alf Honigmann^4,5^, Gerhard Hummer^2,6^, Alexander von Appen^1,5^, André Nadler^1,5^
+
+#### Affiliations
+
+^1^ Max Planck Institute of Molecular Cell Biology and Genetics (Dresden, Germany)
+^2^ Department of Theoretical Biophysics, Max Planck Institute of Biophysics (Frankfurt am Main, Germany)
+^3^ Center for Systems Biology (Dresden, Germany)
+^4^ Biotechnologisches Zentrum, Center for Molecular and Cellular Bioengineering, Technische Universität Dresden (Dresden, Germany)
+^5^ Cluster of Excellence Physics of Life, TU Dresden (Dresden, Germany)
+^6^ Institute of Biophysics, Goethe University Frankfurt (Frankfurt am Main, Germany)
+
+#### Journal
+
+
+#### Abstract
+
+Organelle membrane identity is encoded by protein and lipid composition. Human cells produce thousands of distinct lipid species for this purpose. Yet, the precise molecular functions of most lipids remain unknown, owing to limited methods for *in situ* investigations of individual lipid species. Here, we use minimally modified bifunctional lipid probes to detect and functionally characterize lipid-protein interactions across time and subcellular compartments. We leverage this approach to map time-resolved protein interactomes of individual lipids representing major membrane lipid classes as they are transported through the organelle system of human cells. We identify hundreds of unique lipid-protein interaction candidates, measure lipid-induced protein abundance changes, and distinguish between directly and indirectly interacting subunits of associated protein complexes. Informed by this multimodal dataset, we interrogate the lipid specificity of membrane organizing complexes, in particular the selective co-association of phosphatidylethanolamine with the ancestral subunits of the nuclear pore (NDC1) and MICOS (MIC60) complexes. Using super-resolution microscopy and molecular dynamics simulations, we demonstrate that phosphatidylethanolamine stabilizes both NDC1 and MIC60 in highly curved membrane nanodomains, indicating that major membrane organizing complexes are positioned by selective lipid-protein interactions. Altogether, our experimental strategy provides a blueprint for discovering and characterizing cellular functions of individual lipids.
+
+#### Lipid probes utilized
+
+<!-- 
+<a href="/LipidProbe/Sphingosine.qmd" class="hover-preview">Bifunctional Sphingomyelin (18:1)</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_Sphingosine.png" alt="Trifunctional Sphingosine" />
+</span>
+
+<a href="/LipidProbe/Diacylglycerol.qmd" class="hover-preview">Bifunctional Phosphatidylethanolamine</a>
+<span class="hover-image">
+  <img src="/LipidProbe/Structures/TF_DAG.png" alt="Trifunctional Diacylglycerol" />
+</span> -->
+
+Bifunctional Sphingomyelin (18:1/Y~16~)
+
+Bifunctional Phosphatidylethanolamine (18:1/Y~16~)
+
+Bifunctional Phosphatidylcholine (18:1/Y~16~)
+
+Bifunctional Phosphatidylcholine (20:0/Y~16~)
+
+Bifunctional Phosphatidylcholine (14:0/Y~14~)
+
+*Probe notation is **Headgroup(acyl chain sn-1/acyl chain sn-2)**, with Yx denoting the bifunctional chain and x = number of carbons*
+
+#### Cell line analyzed
+
+[U2OS](https://www.atcc.org/products/htb-96){target="_blank"} 
+
+**Species:** *Homo sapiens*
+
+**Cell type:** Epithelial (immortalized osteosarcoma cell line)
+
+#### Protocol Overview
+
+##### Identification of False Lipid-binding Unspecific Background (FLUB) proteins
+
+##### Uncaging & Crosslinking timeline
+
+<!-- | Lipid Probe | Uptake time | Uncaging time | Interaction time | Crosslinking time |
+|:-------|:------:|:------:|:------:|:------:|
+| Sph |  5 min | 2.5 min  | 0 min | 2.5 min  |
+| DAG |  15 min | 2.5 min  | 0 min | 2.5 min  |
+| 8-3 FA |  15 min | 2.5 min  | 0 min | 2.5 min  | -->
+
+#### Mass spectrometry quantification method
+
+Label-free protein quantification (LFQ)

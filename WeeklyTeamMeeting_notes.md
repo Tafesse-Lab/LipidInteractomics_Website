@@ -154,3 +154,19 @@ To-do this week
 - Build a probe comparison page
   - Ideally we want a select list of proteins which only interact with a given probe (and not with any other probe), regardless of cell line
   - Probe comparison plotter?
+
+## 2026-07-26
+
+### General site notes after a year away
+
+- Would like to reformat data storage into a true database style, but that would be a LOT of work... Also unclear how it would work with the downloadable features... If I end up needing to store the base data anyways, this would be a little moot...
+- Should add author affiliations to each include page, silly to have left that out
+
+### Notes to self re: adding Cook et al. 2026 (from Andre)
+
+- General data format
+  - Many comparisons, 5x lipid probes, three timepoints for two, all also against a WCL background -- also a comparison between gentle and aggressive washes with SDS to identify direct binders vs affiliated proteins??? 
+  - FLUB confidence score gives one new axis to include...
+  - Additional comparison between affinity purification vs whole cell lysate... A measure of transcriptional/translational/proteasomal/global cellular effect of adding ectopic lipids. The scaled enrichment ratio is likely the best thing to include here
+  - Time series for SM and PE also begs for new visualization... Wise to include here, or better to leave to the paper?
+  - Finally, comparison of specific protein enrichment following extra harsh washes with SDS?? 
